@@ -1,0 +1,21 @@
+{
+  "name": "injective-lists",
+  "version": "1.0.0",
+  "description": "A way to store different lists in JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node ./generateTokens"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@injectivelabs/prettier-config": "1.0.3",
+    "@injectivelabs/token-metadata": "1.14.11-beta.20"
+  }
+}
