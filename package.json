@@ -4,8 +4,8 @@
   "description": "A way to store different lists in JSON format.",
   "main": "index.js",
   "scripts": {
-    "ibc": "ts-node ./getIbcTokens",
-    "test": "ts-node ./generateTokens"
+    "test": "ts-node ./generateTokens",
+    "external": "ts-node ./getExternalTokens"
   },
   "keywords": [],
   "author": "",

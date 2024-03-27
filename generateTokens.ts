@@ -1,4 +1,4 @@
-import { TokenType } from '@injectivelabs/token-metadata'
+import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { writeFileSync } from 'node:fs'
 import splTokens from './tokens/spl'
 import ibcTokens from './tokens/ibc'
@@ -9,7 +9,6 @@ import tokenFactoryTokens from './tokens/tokenFactory'
 
 const formatIbcTokens = () =>
   ibcTokens.map((token) => ({
-    isNative: false,
     ...token,
     denom: `ibc/${token.hash}`,
     tokenType: TokenType.Ibc
@@ -17,7 +16,6 @@ const formatIbcTokens = () =>
 
 const formatTokenFactoryTokens = () =>
   tokenFactoryTokens.map((token) => ({
-    isNative: false,
     ...token,
     denom: `factory/${token.creator}/${token.symbol.toLowerCase()}`,
     tokenType: TokenType.TokenFactory
@@ -32,13 +30,11 @@ const formatCw20Tokens = () => {
     (tokens, token) => [
       ...tokens,
       {
-        isNative: false,
         ...token,
         denom: `factory/${mainnetContractAdapter}/${token.address}`,
         tokenType: TokenType.Cw20
       },
       {
-        isNative: false,
         ...token,
         denom: `factory/${devnetTestnetContractAdapter}/${token.address}`,
         tokenType: TokenType.Cw20
@@ -50,7 +46,6 @@ const formatCw20Tokens = () => {
 
 const formatSplTokens = () =>
   splTokens.map((token) => ({
-    isNative: false,
     ...token,
     denom: token.address,
     tokenType: TokenType.Spl
@@ -58,7 +53,6 @@ const formatSplTokens = () =>
 
 const formatEvmTokens = () =>
   evmTokens.map((token) => ({
-    isNative: false,
     ...token,
     denom: token.address,
     tokenType: TokenType.Evm
@@ -66,7 +60,6 @@ const formatEvmTokens = () =>
 
 const formatErc20Tokens = () =>
   erc20Tokens.map((token) => ({
-    isNative: false,
     ...token,
     denom: `peggy${token.address}`,
     tokenType: TokenType.Erc20
@@ -84,7 +77,11 @@ const writeDataToFile = () => {
           ...formatCw20Tokens(),
           ...formatErc20Tokens(),
           ...formatTokenFactoryTokens()
-        ],
+        ].map((token) => ({
+          isNative: false,
+          ...token,
+          tokenVerification: TokenVerification.Verified
+        })),
         null,
         '\t'
       )

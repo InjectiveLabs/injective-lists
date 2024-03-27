@@ -5,6 +5,7 @@ import {
   TokenType,
   TokenVerification
 } from '@injectivelabs/token-metadata'
+import { symbolMeta } from './tokens/symbolMeta'
 
 /*
 experiment abstracting:
@@ -17,7 +18,7 @@ private async fetchAndCacheDenomTraces()
 from injective-ts
 */
 
-type IbcTokenMetadata = {
+type ApiTokenMetadata = {
   name: string
   symbol: string
   contractAddr: string
@@ -65,40 +66,58 @@ async function getDenomTrace(hash: string): Promise<
   }
 }
 
-async function ibcTokenMetadataToToken(
-  ibcTokenMetadata: IbcTokenMetadata[]
-): Promise<Token[]> {
+function getSymbolMeta(metadata: ApiTokenMetadata) {
+  const value = Object.values(symbolMeta).find(
+    (meta) => meta.symbol.toLowerCase() === metadata.symbol.toLowerCase()
+  )
+
+  if (!value) {
+    return
+  }
+
+  return { ...value, denom: metadata.contractAddr }
+}
+
+async function formatApiTokenMetadata(
+  tokenMetadata: ApiTokenMetadata[]
+): Promise<any[]> {
   return await Promise.all(
-    ibcTokenMetadata.map(async (metadata) => {
-      const { path, channelId, baseDenom } = (await getDenomTrace(
-        metadata.contractAddr
-      )) || {
-        path: '',
-        channelId: '',
-        baseDenom: metadata.symbol || 'Unknown'
+    tokenMetadata.map(async (metadata) => {
+      const meta = {
+        isNative: false,
+        ...(getSymbolMeta(metadata) || {
+          coinGeckoId: '',
+          name: metadata.name || 'Unknown',
+          decimals: metadata.decimals || 18,
+          denom: metadata.contractAddr || '',
+          symbol: metadata.symbol || 'Unknown',
+          logo: metadata.imageUrl || 'unknown.png'
+        }),
+        tokenType: TokenType.Unknown,
+        tokenVerification: TokenVerification.External
       }
 
-      return {
-        name: metadata.name || 'Unknown',
-        denom: metadata.contractAddr || '',
-        logo: metadata.imageUrl || 'unknown.png',
-        symbol: metadata.symbol || 'Unknown',
-        decimals: metadata.decimals || 18,
-        coinGeckoId: '',
-        tokenType: TokenType.Ibc,
-        tokenVerification: TokenVerification.External,
+      if (metadata.contractAddr.startsWith('ibc/')) {
+        const { path, channelId, baseDenom } = (await getDenomTrace(
+          metadata.contractAddr
+        )) || {
+          path: '',
+          channelId: '',
+          baseDenom: metadata.symbol || 'Unknown'
+        }
 
-        ibc: {
+        return {
+          ...meta,
           path,
-          channelId,
           baseDenom,
-          isNative: false,
+          channelId,
           tokenType: TokenType.Ibc,
-          decimals: metadata.decimals || 18,
-          symbol: metadata.symbol || 'Unknown',
-          hash: (metadata.contractAddr || '').replace('ibc/', '')
+          denom: metadata.contractAddr,
+          hash: metadata.contractAddr.replace('ibc/', '')
         }
       }
+
+      return meta
     })
   )
 }
@@ -108,16 +127,16 @@ async function ibcTokenMetadataToToken(
     const response = (await ibcTokenMetadataApi.get(
       'ibc/chain/injective-1/tokens'
     )) as {
-      data: IbcTokenMetadata[]
+      data: ApiTokenMetadata[]
     }
 
     if (!response.data || !Array.isArray(response.data)) {
       return
     }
 
-    const ibcTokens = await ibcTokenMetadataToToken(response.data)
+    const ibcTokens = await formatApiTokenMetadata(response.data)
 
-    writeFileSync('ibcTokens.json', JSON.stringify(ibcTokens, null, 2))
+    writeFileSync('externalTokens.json', JSON.stringify(ibcTokens, null, 2))
   } catch (e) {
     console.log(e)
 
