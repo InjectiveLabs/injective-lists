@@ -4,6 +4,7 @@
   "description": "A way to store different lists in JSON format.",
   "main": "index.js",
   "scripts": {
+    "ibc": "ts-node ./getIbcTokens",
     "test": "ts-node ./generateTokens"
   },
   "keywords": [],
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@injectivelabs/prettier-config": "1.0.3",
+    "@injectivelabs/utils": "1.14.11-beta.3",
     "@injectivelabs/token-metadata": "1.14.11-beta.20"
   }
 }
