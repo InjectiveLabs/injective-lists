@@ -4,8 +4,11 @@
   "description": "A way to store different lists in JSON format.",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node ./generateTokens",
-    "external": "ts-node ./getExternalTokens"
+    "tokens": "ts-node ./scripts/generateTokens && ts-node ./scripts/generateExternalTokens && ts-node ./scripts/generateSupplyTokens",
+    "tokens:patch": "ts-node ./scripts/generateTokens",
+    "tokens:supply": "ts-node ./scripts/generateSupplyTokens",
+    "tokens:external:clean": "ts-node ./scripts/generateExternalTokens --clean",
+    "test": "ts-node ./scripts/generateSupplyTokens"
   },
   "keywords": [],
   "author": "",

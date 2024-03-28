@@ -1,11 +1,12 @@
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { writeFileSync } from 'node:fs'
-import splTokens from './tokens/spl'
-import ibcTokens from './tokens/ibc'
-import evmTokens from './tokens/evm'
-import cw20Tokens from './tokens/cw20'
-import erc20Tokens from './tokens/erc20'
-import tokenFactoryTokens from './tokens/tokenFactory'
+import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import splTokens from '../tokens/spl'
+import ibcTokens from '../tokens/ibc'
+import evmTokens from '../tokens/evm'
+import cw20Tokens from '../tokens/cw20'
+import erc20Tokens from '../tokens/erc20'
+import tokenFactoryTokens from '../tokens/tokenFactory'
+import { symbolMeta } from '../tokens/symbolMeta'
 
 const formatIbcTokens = () =>
   ibcTokens.map((token) => ({
@@ -65,6 +66,18 @@ const formatErc20Tokens = () =>
     tokenType: TokenType.Erc20
   }))
 
+// perp market base tokens
+const symbolBaseTokens = () =>
+  Object.values(symbolMeta).map((meta) => {
+    return {
+      ...meta,
+      isNative: meta.symbol === 'INJ',
+      tokenType: 'symbol', // update to use TokenType.Symbol after pumping injective-ts
+      denom: meta.symbol.toLowerCase(),
+      address: meta.symbol.toLowerCase()
+    }
+  })
+
 const writeDataToFile = () => {
   try {
     writeFileSync(
@@ -76,7 +89,8 @@ const writeDataToFile = () => {
           ...formatIbcTokens(),
           ...formatCw20Tokens(),
           ...formatErc20Tokens(),
-          ...formatTokenFactoryTokens()
+          ...formatTokenFactoryTokens(),
+          ...symbolBaseTokens()
         ].map((token) => ({
           isNative: false,
           ...token,
