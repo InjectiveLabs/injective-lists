@@ -133,13 +133,5 @@ export const untaggedSymbolMeta = {
     name: 'Dogecoin',
     logo: 'dogecoin.webp',
     coinGeckoId: 'dogecoin'
-  },
-
-  W: {
-    decimals: 8, // todo: verify decimals places
-    name: 'W',
-    symbol: 'W',
-    coinGeckoId: '',
-    logo: 'wormhole.png'
   }
 }
