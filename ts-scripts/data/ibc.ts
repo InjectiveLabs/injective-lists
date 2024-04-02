@@ -356,12 +356,20 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.LVN,
-    isNative: true,
     baseDenom: 'ulvn',
     channelId: 'channel-8',
     source: TokenSource.Cosmos,
     path: 'transfer/channel-8',
     hash: '4971C5E4786D5995EC7EF894FCFA9CF2E127E95D5D53A982F6A062F3F410EDB8'
+  },
+  {
+    ...symbolMeta.BONUS,
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Arbitrum,
+    hash: 'DCF43489B9438BB7E462F1A1AD38C7898DF7F49649F9CC8FEBFC533A1192F3EF',
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5mejeW9oeeWU7B84t6CSjXskTumVWsapjsbpsivtVZQw'
   }
 ]
 

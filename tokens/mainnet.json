@@ -16153,7 +16153,7 @@
     "hash": "49265fcaa6cc20b59652c0b45b2283a260bb19fc183de95c29cca8e01f8b004c"
   },
   {
-    "isNative": true,
+    "isNative": false,
     "decimals": 6,
     "name": "Levana",
     "symbol": "LVN",
@@ -19503,18 +19503,20 @@
     "hash": "d9e839de6f40c036592b6cedb73841ee9a18987bc099dd112762a46afe72159b"
   },
   {
-    "denom": "ibc/dcf43489b9438bb7e462f1a1ad38c7898df7f49649f9cc8febfc533a1192f3ef",
+    "isNative": false,
+    "decimals": 8,
+    "symbol": "BONUS",
     "coinGeckoId": "",
-    "symbol": "ACTORY/WORMHOLE14EJQJYQ8UM4P3XFQJ74YLD5WAQLJF88FZ25YXNMA0CNGSPXE3LES00FPJX/5MEJEW9OEEWU7B84T6CSJXSKTUMVWSAPJSBPSIVTVZQW",
-    "name": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5mejeW9oeeWU7B84t6CSjXskTumVWsapjsbpsivtVZQw",
-    "decimals": 6,
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
-    "tokenType": "ibc",
-    "tokenVerification": "external",
-    "path": "transfer/channel-183",
-    "baseDenom": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5mejeW9oeeWU7B84t6CSjXskTumVWsapjsbpsivtVZQw",
+    "name": "Bonus Block",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/23b3d40b-e998-48d4-46e6-da3a996edf00/public",
     "channelId": "channel-183",
-    "hash": "dcf43489b9438bb7e462f1a1ad38c7898df7f49649f9cc8febfc533a1192f3ef"
+    "path": "transfer/channel-183",
+    "source": "arbitrum",
+    "hash": "DCF43489B9438BB7E462F1A1AD38C7898DF7F49649F9CC8FEBFC533A1192F3EF",
+    "baseDenom": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/5mejeW9oeeWU7B84t6CSjXskTumVWsapjsbpsivtVZQw",
+    "denom": "ibc/DCF43489B9438BB7E462F1A1AD38C7898DF7F49649F9CC8FEBFC533A1192F3EF",
+    "tokenType": "ibc",
+    "tokenVerification": "verified"
   },
   {
     "denom": "ibc/dd0f92d576a9a60487f17685a987ab6edb359e661d281ed31f3ae560650ecfcb",

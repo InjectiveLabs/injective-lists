@@ -1733,5 +1733,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Ethena',
     logo: 'ethena.webp',
     coinGeckoId: 'ethena'
+  },
+
+  BONUS: {
+    decimals: 8,
+    symbol: 'BONUS',
+    coinGeckoId: '',
+    name: 'Bonus Block',
+    logo: 'bonus-block.webp'
   }
 }
