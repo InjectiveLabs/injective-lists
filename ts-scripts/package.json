@@ -1,0 +1,25 @@
+{
+  "name": "injective-lists",
+  "version": "1.0.0",
+  "description": "A way to store different lists in JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "slugs:generate": "ts-node ./generateMarketSlugs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@injectivelabs/prettier-config": "1.0.3",
+    "@injectivelabs/networks": "1.14.11-beta.4",
+    "@injectivelabs/token-metadata": "1.14.11-beta.20",
+    "@injectivelabs/utils": "1.14.11-beta.3"
+  }
+}
