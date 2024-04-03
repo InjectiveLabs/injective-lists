@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - master
+      - chore/github-wofklow
 
 jobs:
   master:
-    name: "Deploy to master"
+    name: "Regenerate JSON files"
     runs-on: ubuntu-latest
     permissions: write-all
     env:
@@ -15,6 +16,11 @@ jobs:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: cd ts-scripts && yarn
+
       - name: Generate market slugs
         uses: borales/actions-yarn@v4
         with:
