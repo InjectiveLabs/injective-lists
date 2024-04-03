@@ -1,0 +1,48 @@
+name: Mito Devnet Deployments
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  master:
+    name: "Deploy to master"
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      ## Github Actions
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+    steps:
+      - name: Generate market slugs
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: slugs:generate
+          dir: "ts-scripts"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: generate json files"
+
+      - name: Rebuild mito
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: devnet.yaml
+          repo: mitoFinance/mito-ui
+          token: "${{ secrets.GH_TOKEN }}"
+
+      - name: Rebuild helix
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: devnet.yaml
+          repo: injectiveLabs/injective-helix
+          token: "${{ secrets.GH_TOKEN }}"
+
+      - name: Rebuild bridge
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: devnet.yaml
+          repo: injectiveLabs/injective-bridge
+          token: "${{ secrets.GH_TOKEN }}"
