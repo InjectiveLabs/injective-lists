@@ -26,6 +26,11 @@ jobs:
           cmd: slugs:generate
           dir: "ts-scripts"
 
+      - name: Set up Git user
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
