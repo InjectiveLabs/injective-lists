@@ -33,22 +33,25 @@ jobs:
           message: "chore: generate json files"
 
       - name: Rebuild mito
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: devnet.yaml
+          workflow: devnet.yml
+          ref: dev
           repo: mitoFinance/mito-ui
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild helix
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: devnet.yaml
+          workflow: devnet.yml
+          ref: dev
           repo: injectiveLabs/injective-helix
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild bridge
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          workflow: devnet.yaml
+          workflow: devnet.yml
+          ref: dev
           repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
