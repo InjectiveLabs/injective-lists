@@ -48,10 +48,13 @@ jobs:
           repo: injectiveLabs/injective-helix
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Rebuild bridge
+      - name: Rebuild bridge (devnet)
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
           ref: dev
           repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
+
+      - name: Rebuild bridge (mainnet)
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/660d7b9ab0d0ef0b0f685131
