@@ -12,7 +12,43 @@ import {
   testnetSlugs as testnetDerivativeSlugs,
   stagingSlugs as stagingDerivativeSlugs
 } from './data/market/derivative'
+import {
+  devnetSlugs as devnetExpiryFutureSlugs,
+  mainnetSlugs as mainnetExpiryFutureSlugs,
+  testnetSlugs as testnetExpiryFutureSlugs,
+  stagingSlugs as stagingExpiryFutureSlugs
+} from './data/market/expiryFutures'
+import {
+  cosmos as cosmosCategorySlugs,
+  solana as solanaCategorySlugs,
+  ethereum as ethereumCategorySlugs,
+  injective as injectiveCategorySlugs,
+  newMarkets as newMarketsCategorySlugs,
+  olpLowVolume as olpLowVolumeCategorySlugs,
+  experimental as experimentalCategorySlugs
+} from './data/market/category'
 import { getNetworkFileName } from './helper/utils'
+
+export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
+  let slugs = mainnetExpiryFutureSlugs
+
+  if (network === Network.Staging) {
+    slugs = [...slugs, ...stagingExpiryFutureSlugs]
+  }
+
+  if (isDevnet(network)) {
+    slugs = [...slugs, ...devnetExpiryFutureSlugs]
+  }
+
+  if (isTestnet(network)) {
+    slugs = [...slugs, ...testnetExpiryFutureSlugs]
+  }
+
+  writeFileSync(
+    `./../helix/trading/expiry/${getNetworkFileName(network)}.json`,
+    JSON.stringify(slugs, null, 2)
+  )
+}
 
 export const generateSpotMarketSlugs = async (network: Network) => {
   let slugs = mainnetSpotSlugs
@@ -56,12 +92,38 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
   )
 }
 
+export const generateMarketCategorySlugs = () => {
+  writeFileSync(
+    `./../helix/trading/market/category.json`,
+    JSON.stringify(
+      {
+        cosmosCategorySlugs,
+        solanaCategorySlugs,
+        ethereumCategorySlugs,
+        injectiveCategorySlugs,
+        newMarketsCategorySlugs,
+        olpLowVolumeCategorySlugs,
+        experimentalCategorySlugs
+      },
+      null,
+      2
+    )
+  )
+}
+
 generateSpotMarketSlugs(Network.Devnet)
 generateSpotMarketSlugs(Network.Staging)
 generateSpotMarketSlugs(Network.TestnetSentry)
 generateSpotMarketSlugs(Network.MainnetSentry)
 
+generateExpiryFuturesMarketSlugs(Network.Devnet)
+generateExpiryFuturesMarketSlugs(Network.Staging)
+generateExpiryFuturesMarketSlugs(Network.TestnetSentry)
+generateExpiryFuturesMarketSlugs(Network.MainnetSentry)
+
 generateDerivativeMarketSlugs(Network.Devnet)
 generateDerivativeMarketSlugs(Network.Staging)
 generateDerivativeMarketSlugs(Network.TestnetSentry)
 generateDerivativeMarketSlugs(Network.MainnetSentry)
+
+generateMarketCategorySlugs()

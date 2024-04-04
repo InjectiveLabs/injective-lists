@@ -41,14 +41,6 @@ jobs:
           repo: mitoFinance/mito-ui
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Rebuild helix
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: injectiveLabs/injective-helix
-          token: "${{ secrets.GH_TOKEN }}"
-
       - name: Rebuild bridge (devnet)
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
@@ -59,3 +51,19 @@ jobs:
 
       - name: Rebuild bridge (mainnet)
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/660d7b9ab0d0ef0b0f685131
+
+      - name: Rebuild helix (devnet)
+        uses: benc-uk/workflow-dispatch@v1.2.2
+        with:
+          workflow: devnet.yml
+          ref: dev
+          repo: injectiveLabs/injective-helix
+          token: "${{ secrets.GH_TOKEN }}"
+
+      - name: Rebuild helix
+        uses: benc-uk/workflow-dispatch@v1.2.2
+        with:
+          workflow: mainnet.yml
+          ref: master
+          repo: injectiveLabs/injective-helix
+          token: "${{ secrets.GH_TOKEN }}"
