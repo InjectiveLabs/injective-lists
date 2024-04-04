@@ -27,9 +27,12 @@ export const generateTokensList = async (network: Network) => {
 
   const logos = tokenImagePaths as Record<string, string>
 
+  const unknownLogo = logos['unknown.png']
+
   const formattedList = list.map((token) => ({
     ...token,
-    logo: logos[token.logo] || token.logo
+    logo: logos[token.logo] || unknownLogo,
+    externalLogo: token.logo
   }))
 
   writeFileSync(

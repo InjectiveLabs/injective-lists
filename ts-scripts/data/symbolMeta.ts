@@ -1749,5 +1749,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'W',
     coinGeckoId: '',
     logo: 'wormhole.png'
+  },
+
+  SAE: {
+    symbol: 'SAE',
+    decimals: 6,
+    logo: 'sae.png',
+    coinGeckoId: '',
+    name: 'SA World'
   }
 }

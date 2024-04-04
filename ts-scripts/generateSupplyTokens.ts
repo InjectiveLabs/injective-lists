@@ -1,6 +1,7 @@
 import { writeFileSync } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import * as externalTokens from '../tokens/externalTokens.json'
 import * as devnetStaticTokens from '../tokens/staticTokens/devnet.json'
 import * as mainnetStaticTokens from '../tokens/staticTokens/mainnet.json'
@@ -20,53 +21,74 @@ import {
   getNetworkFileName
 } from './helper/utils'
 
+// refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
 
 const mainnetStaticTokensMap = tokensToDenomMap([
   ...mainnetStaticTokens,
   ...externalTokens
 ])
+
+const devnetIbcSupplyTokens = devnetBankSupplyTokens.filter(
+  ({ tokenType }) => tokenType === TokenType.Ibc
+)
+const testnetIbcSupplyTokens = testnetBankSupplyTokens.filter(
+  ({ tokenType }) => tokenType === TokenType.Ibc
+)
+const mainnetIbcSupplyTokens = mainnetBankSupplyTokens.filter(
+  ({ tokenType }) => tokenType === TokenType.Ibc
+)
+
 const devnetStaticTokensMap = tokensToDenomMap(devnetStaticTokens)
 const testnetStaticTokensMap = tokensToDenomMap(testnetStaticTokens)
-const devnetSupplyTokensMap = tokensToDenomMap(devnetBankSupplyTokens)
-const testnetSupplyTokensMap = tokensToDenomMap(testnetBankSupplyTokens)
-const mainnetSupplyTokensMap = tokensToDenomMap(mainnetBankSupplyTokens)
+const devnetIbcSupplyTokensMap = tokensToDenomMap(devnetIbcSupplyTokens)
+const testnetIbcSupplyTokensMap = tokensToDenomMap(testnetIbcSupplyTokens)
+const mainnetIbcSupplyTokensMap = tokensToDenomMap(mainnetIbcSupplyTokens)
 
 export const generateSupplyToken = async (network: Network) => {
   let supplyDenoms = devnetBankSupplyDenoms
-  let existingTokensMap = devnetStaticTokensMap
-  let existingSupplyTokensMap = devnetSupplyTokensMap
-
-  if (isMainnet(network)) {
-    supplyDenoms = mainnetBankSupplyDenoms
-    existingTokensMap = mainnetStaticTokensMap
-    existingSupplyTokensMap = mainnetSupplyTokensMap
-  }
+  let existingStaticTokensMap = devnetStaticTokensMap
+  let existingIbcTokensMap = devnetIbcSupplyTokensMap
 
   if (isTestnet(network)) {
     supplyDenoms = testnetBankSupplyDenoms
-    existingTokensMap = testnetStaticTokensMap
-    existingSupplyTokensMap = testnetSupplyTokensMap
+    existingStaticTokensMap = testnetStaticTokensMap
+    existingIbcTokensMap = testnetIbcSupplyTokensMap
   }
 
-  if (shouldFlush) {
-    writeFileSync(
-      `./../tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
-      JSON.stringify([], null, 2)
-    )
+  if (isMainnet(network)) {
+    supplyDenoms = mainnetBankSupplyDenoms
+    existingStaticTokensMap = mainnetStaticTokensMap
+    existingIbcTokensMap = mainnetIbcSupplyTokensMap
   }
 
   try {
     const filteredDenoms = supplyDenoms.filter(
-      (denom) =>
-        shouldFlush ||
-        (!existingSupplyTokensMap[denom.toLowerCase()] &&
-          !existingTokensMap[denom.toLowerCase()])
+      (denom) => !existingStaticTokensMap[denom.toLowerCase()]
     )
 
     const supplyTokens = []
 
     for (const denom of filteredDenoms) {
+      // script optimization: use cached denomTrace data
+      const existingIbcToken = existingIbcTokensMap[denom.toLowerCase()]
+
+      if (!shouldFlush && existingIbcToken) {
+        supplyTokens.push(existingIbcToken)
+
+        continue
+      }
+
+      if (denom.startsWith('peggy') || denom.startsWith('0x')) {
+        const peggyToken = await fetchPeggyTokenMetaData(denom, network)
+
+        if (peggyToken) {
+          supplyTokens.push(peggyToken)
+
+          continue
+        }
+      }
+
       if (denom.startsWith('ibc/')) {
         const { path, channelId, baseDenom } = await getDenomTrace(
           denom,
@@ -119,10 +141,7 @@ export const generateSupplyToken = async (network: Network) => {
       })
     }
 
-    const filteredTokens = [
-      ...supplyTokens,
-      ...Object.values(existingSupplyTokensMap)
-    ].filter(({ denom }) => denom && !existingTokensMap[denom.toLowerCase()])
+    const filteredTokens = [...supplyTokens].filter(({ denom }) => denom)
 
     writeFileSync(
       `./../tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
@@ -137,6 +156,6 @@ export const generateSupplyToken = async (network: Network) => {
   } catch (e) {}
 }
 
-// generateSupplyToken(Network.Devnet)
+generateSupplyToken(Network.Devnet)
 generateSupplyToken(Network.MainnetSentry)
-// generateSupplyToken(Network.TestnetSentry)
+generateSupplyToken(Network.TestnetSentry)

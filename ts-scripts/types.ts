@@ -74,6 +74,13 @@ export interface TokenSymbolMeta {
   coinGeckoId: string
 }
 
+export interface AlchemyTokenSource {
+  decimals: number
+  logo: string
+  name: string
+  symbol: string
+}
+
 export interface PeggyTokenSource extends TokenSymbolMeta {
   address: string
 }

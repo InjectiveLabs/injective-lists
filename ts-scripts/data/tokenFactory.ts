@@ -307,6 +307,10 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.BONJO,
     decimals: 6,
     creator: 'inj1r35twz3smeeycsn4ugnd3w0l5h2lxe44ptuu4w'
+  },
+  {
+    ...symbolMeta.SAE,
+    creator: 'inj152mdu38fkkk4fl7ycrpdqxpm63w3ztadgtktyr'
   }
 ]
 

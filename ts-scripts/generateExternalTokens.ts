@@ -2,6 +2,7 @@ import { writeFileSync } from 'node:fs'
 import { Network } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import * as staticTokens from '../tokens/staticTokens/mainnet.json'
 import * as existingExternalTokens from '../tokens/externalTokens.json'
 import {
@@ -16,6 +17,7 @@ import { ApiTokenMetadata } from './types'
 
 /* Mainnet only */
 
+// refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
 
 const externalTokenMetadataApi = new HttpRestClient(
@@ -25,12 +27,13 @@ const externalTokenMetadataApi = new HttpRestClient(
   }
 )
 
-const staticTokensMap = tokensToDenomMap(staticTokens)
-const staticTokensAddressMap = cw20TokensToDenomMap(staticTokens)
-const existingExternalTokensMap = tokensToDenomMap(existingExternalTokens)
-const existingCw20ExternalTokensMap = cw20TokensToDenomMap(
-  existingExternalTokens
+const externalIbcTokens = existingExternalTokens.filter(
+  ({ tokenType }) => tokenType === TokenType.Ibc
 )
+
+const staticTokensMap = tokensToDenomMap(staticTokens)
+const existingIbcTokensMap = tokensToDenomMap(externalIbcTokens)
+const staticTokensAddressMap = cw20TokensToDenomMap(staticTokens)
 
 const formatApiTokenMetadata = async (
   tokenMetadata: ApiTokenMetadata[]
@@ -38,13 +41,7 @@ const formatApiTokenMetadata = async (
   const filteredTokenMetadata = tokenMetadata.filter((metadata) => {
     const denom = metadata.contractAddr.toLowerCase()
 
-    return (
-      shouldFlush ||
-      (!existingExternalTokensMap[denom] &&
-        !existingCw20ExternalTokensMap[denom] &&
-        !staticTokensMap[denom] &&
-        !staticTokensAddressMap[denom])
-    )
+    return !staticTokensMap[denom] && !staticTokensAddressMap[denom]
   })
 
   const externalTokens = [] as any
@@ -55,12 +52,31 @@ const formatApiTokenMetadata = async (
     const bankMetadata = getChainTokenMetadata(denom, Network.MainnetSentry)
     const cw20Metadata = getCw20TokenMetadata(denom, Network.MainnetSentry)
 
+    if (!shouldFlush) {
+      // script optimization: use cached denomTrace data
+      const existingIbcToken = existingIbcTokensMap[denom.toLowerCase()]
+
+      if (existingIbcToken) {
+        externalTokens.push(existingIbcToken)
+
+        continue
+      }
+    }
+
+    if (denom.startsWith('peggy') || denom.startsWith('0x')) {
+      const peggyToken = await fetchPeggyTokenMetaData(
+        denom,
+        Network.MainnetSentry
+      )
+
+      if (peggyToken) {
+        externalTokens.push(peggyToken)
+
+        continue
+      }
+    }
+
     if (cw20Metadata) {
-      console.log(`✅ cw20Metadata for ${denom} found!`, {
-        ...cw20Metadata,
-        name: tokenMetadata.name || cw20Metadata.name,
-        logo: tokenMetadata.imageUrl || cw20Metadata.logo
-      })
       externalTokens.push({
         ...cw20Metadata,
         name: tokenMetadata.name || cw20Metadata.name,
@@ -125,12 +141,7 @@ const generateExternalTokens = async () => {
     const filteredData = response.data.filter(
       ({ contractAddr }) => !staticTokensMap[contractAddr.toLowerCase()]
     )
-    const newExternalTokens = await formatApiTokenMetadata(filteredData)
-
-    const tokens = shouldFlush
-      ? newExternalTokens
-      : [...existingExternalTokens, ...newExternalTokens]
-
+    const tokens = await formatApiTokenMetadata(filteredData)
     const filteredTokens = tokens.filter(
       ({ denom }) =>
         denom &&
