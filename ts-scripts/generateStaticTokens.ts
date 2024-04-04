@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
 import {
   Network,
   getCw20AdapterContractForNetwork
@@ -169,27 +169,29 @@ const generateStaticTokens = (network: Network) => {
     list = getMainnetStaticTokenList()
   }
 
-  try {
-    writeFileSync(
-      `./../tokens/staticTokens/${getNetworkFileName(network)}.json`,
-      JSON.stringify(
-        [INJ_TOKEN, ...list, ...untaggedSymbolBaseTokens()]
-          .map((token) => ({
-            isNative: false,
-            ...token,
-            tokenVerification: TokenVerification.Verified
-          }))
-          .sort((a, b) => a.denom.localeCompare(b.denom)),
-        null,
-        '\t'
-      )
-    )
+  const data = JSON.stringify(
+    [INJ_TOKEN, ...list, ...untaggedSymbolBaseTokens()]
+      .map((token) => ({
+        isNative: false,
+        ...token,
+        tokenVerification: TokenVerification.Verified
+      }))
+      .sort((a, b) => a.denom.localeCompare(b.denom)),
+    null,
+    '\t'
+  )
 
-    console.log(`✅✅✅ GenerateStaticTokens ${network}`)
-  } catch (err) {
-    // eslint-disable-next-line no-console
-    console.error(err)
-  }
+  writeFile(
+    `./../tokens/staticTokens/${getNetworkFileName(network)}.json`,
+    data,
+    (err) => {
+      if (err) {
+        console.error(`Failed to generate static tokens ${network}:`, err)
+      } else {
+        console.log(`✅✅✅ GenerateStaticTokens ${network}`)
+      }
+    }
+  )
 }
 
 generateStaticTokens(Network.Devnet)

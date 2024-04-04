@@ -1,12 +1,7 @@
 import 'dotenv/config'
+import { writeFile, readdirSync, readFileSync, createReadStream } from 'node:fs'
 import axios from 'axios'
 import * as FormData from 'form-data'
-import {
-  readdirSync,
-  createReadStream,
-  writeFileSync,
-  readFileSync
-} from 'node:fs'
 import * as existingTokenImagePaths from '../tokens/tokenImagePaths.json'
 
 const extensions = ['png', 'jpg', 'jpeg', 'svg', 'webp']
@@ -35,18 +30,23 @@ const uploadImage = async (imageName: string) => {
       ` ✅ Uploaded image: ${data.data.result.filename} with url ${data.data.result.variants[0]}`
     )
 
-    await writeFileSync(
+    const updatedTokenImagePaths = JSON.stringify(
+      {
+        ...JSON.parse(readFileSync('./../tokens/tokenImagePaths.json', 'utf8')),
+        [imageName]: data.data.result.variants[0]
+      },
+      null,
+      2
+    )
+
+    await writeFile(
       './../tokens/tokenImagePaths.json',
-      JSON.stringify(
-        {
-          ...JSON.parse(
-            readFileSync('./../tokens/tokenImagePaths.json', 'utf8')
-          ),
-          [imageName]: data.data.result.variants[0]
-        },
-        null,
-        2
-      )
+      updatedTokenImagePaths,
+      (err) => {
+        if (err) {
+          console.error(`Error writing tokenImagePaths:`, err)
+        }
+      }
     )
 
     console.log('✅✅✅ UploadImages')

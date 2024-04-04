@@ -1,10 +1,10 @@
 import 'dotenv/config'
-import { readFileSync, writeFileSync } from 'node:fs'
-import { Network, isMainnet } from '@injectivelabs/networks'
+import { readFileSync, writeFile } from 'node:fs'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
+import { Network, isMainnet } from '@injectivelabs/networks'
+import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { getNetworkFileName } from './helper/utils'
 import { Token, AlchemyTokenSource } from './types'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 
 const alchemyMainnet = new Alchemy({
   apiKey: process.env.ALCHEMY_KEY,
@@ -65,26 +65,37 @@ export const fetchPeggyTokenMetaData = async (
     return
   }
 
-  const token = (await alchemy.core.getTokenMetadata(
-    formattedDenom
-  )) as AlchemyTokenSource
+  const token = (await alchemy.core
+    .getTokenMetadata(formattedDenom)
+    .catch(() => {
+      console.warn(
+        `Peggy: Failed to fetch token metadata for denom: ${formattedDenom} on ${network}`
+      )
+    })) as AlchemyTokenSource | undefined
 
-  if (!token.symbol || !token.name || !token.symbol) {
+  if (!token || !token.symbol || !token.name || !token.symbol) {
     return
   }
 
   const formattedToken = formatAlchemyToken(denom, token)
 
-  writeFileSync(
+  const data = JSON.stringify(
+    {
+      ...existingPeggyTokensMap,
+      [denom.toLowerCase()]: formattedToken
+    },
+    null,
+    2
+  )
+
+  writeFile(
     `./../tokens/peggyTokens/${getNetworkFileName(network)}.json`,
-    JSON.stringify(
-      {
-        ...existingPeggyTokensMap,
-        [denom.toLowerCase()]: formattedToken
-      },
-      null,
-      2
-    )
+    data,
+    (err) => {
+      if (err) {
+        console.error(`Error writing peggy token metadata ${network}:`, err)
+      }
+    }
   )
 
   return formattedToken

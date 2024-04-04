@@ -13,8 +13,7 @@
     "tokens:supply": "ts-node ./generateSupplyTokens",
     "tokens:supply:clean": "ts-node ./generateSupplyTokens --clean",
     "tokens:external": "ts-node ./generateExternalTokens",
-    "tokens:external:clean": "ts-node ./generateExternalTokens --clean",
-    "peggy": "ts-node ./fetchPeggyMetadata"
+    "tokens:external:clean": "ts-node ./generateExternalTokens --clean"
   },
   "keywords": [],
   "author": "",

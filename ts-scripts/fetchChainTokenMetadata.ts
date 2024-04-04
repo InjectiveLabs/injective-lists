@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
 import {
   Network,
   isDevnet,
@@ -73,18 +73,25 @@ export const fetchBankMetadata = async (network: Network) => {
     }
 
     // cache data in case of api error
-    writeFileSync(
-      `./../tokens/bankMetadata/${getNetworkFileName(network)}.json`,
-      JSON.stringify(
-        response.data.metadatas
-          .map(formatMetadata)
-          .sort((a, b) => a.denom.localeCompare(b.denom)),
-        null,
-        2
-      )
+    const data = JSON.stringify(
+      response.data.metadatas
+        .map(formatMetadata)
+        .sort((a, b) => a.denom.localeCompare(b.denom)),
+      null,
+      2
     )
 
-    console.log(`✅✅✅ fetchBankMetadata ${network}`)
+    writeFile(
+      `./../tokens/bankMetadata/${getNetworkFileName(network)}.json`,
+      data,
+      (err) => {
+        if (err) {
+          console.error(`Error writing bank metadata ${network}:`, err)
+        } else {
+          console.log(`✅✅✅ fetchBankMetadata ${network}`)
+        }
+      }
+    )
   } catch (e) {
     console.log(`Error fetching bank metadata ${network}:`, e)
   }
@@ -106,18 +113,25 @@ export const fetchSupplyDenoms = async (network: Network) => {
     }
 
     // cache data in case of api error
-    writeFileSync(
-      `./../tokens/bankSupplyDenoms/${getNetworkFileName(network)}.json`,
-      JSON.stringify(
-        response.data.supply
-          .map(({ denom }) => denom)
-          .sort((a, b) => a.localeCompare(b)),
-        null,
-        2
-      )
+    const data = JSON.stringify(
+      response.data.supply
+        .map(({ denom }) => denom)
+        .sort((a, b) => a.localeCompare(b)),
+      null,
+      2
     )
 
-    console.log(`✅✅✅ fetchSupplyDenoms ${network}`)
+    writeFile(
+      `./../tokens/bankSupplyDenoms/${getNetworkFileName(network)}.json`,
+      data,
+      (err) => {
+        if (err) {
+          console.error(`Error writing bank supply ${network}:`, err)
+        } else {
+          console.log(`✅✅✅ fetchSupplyDenoms ${network}`)
+        }
+      }
+    )
   } catch (e) {
     console.log(`Error fetching bank supply ${network}:`, e)
   }
@@ -178,17 +192,24 @@ export const fetchCw20ContractInfo = async (network: Network) => {
       }
     }
 
-    // cache data in case of api error
-    writeFileSync(
-      `./../tokens/cw20TokenMeta/${getNetworkFileName(network)}.json`,
-      JSON.stringify(
-        cw20contracts.sort((a, b) => a.denom.localeCompare(b.denom)),
-        null,
-        2
-      )
+    const data = JSON.stringify(
+      cw20contracts.sort((a, b) => a.denom.localeCompare(b.denom)),
+      null,
+      2
     )
 
-    console.log(`✅✅✅ fetchCw20ContractInfo ${network}`)
+    // cache data in case of api error
+    writeFile(
+      `./../tokens/cw20TokenMeta/${getNetworkFileName(network)}.json`,
+      data,
+      (err) => {
+        if (err) {
+          console.error(`Error writing cw20 contracts info ${network}:`, err)
+        } else {
+          console.log(`✅✅✅ fetchCw20ContractInfo ${network}`)
+        }
+      }
+    )
   } catch (e) {
     console.log(`Error fetching cw20 contracts info ${network}:`, e)
   }

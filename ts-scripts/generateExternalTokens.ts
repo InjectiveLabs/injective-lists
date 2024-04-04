@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
 import { Network } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
@@ -149,16 +149,19 @@ const generateExternalTokens = async () => {
         !staticTokensAddressMap[denom.toLowerCase()]
     )
 
-    writeFileSync(
-      './../tokens/externalTokens.json',
-      JSON.stringify(
-        filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
-        null,
-        2
-      )
+    const data = JSON.stringify(
+      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
+      null,
+      2
     )
 
-    console.log('✅✅✅ GenerateExternalTokens')
+    writeFile('./../tokens/externalTokens.json', data, (err) => {
+      if (err) {
+        console.error('Error writing external tokens:', err)
+      } else {
+        console.log('✅✅✅ GenerateExternalTokens')
+      }
+    })
   } catch (e) {
     console.log('Error generateExternalTokens', e)
 

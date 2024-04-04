@@ -1,4 +1,5 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
+import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import * as externalTokens from '../tokens/externalTokens.json'
 import * as devnetStaticTokens from '../tokens/staticTokens/devnet.json'
@@ -28,23 +29,40 @@ export const generateTokensList = async (network: Network) => {
   const logos = tokenImagePaths as Record<string, string>
 
   const unknownLogo = logos['unknown.png']
+  const injectiveLogo = logos['injective-v3.png']
 
-  const formattedList = list.map((token) => ({
-    ...token,
-    logo: logos[token.logo] || unknownLogo,
-    externalLogo: token.logo
-  }))
+  const formattedList = list.map((token) => {
+    if (token.denom.startsWith('share')) {
+      return {
+        ...token,
+        name: token.name === 'Unknown' ? token.denom : token.name,
+        logo: injectiveLogo,
+        externalLogo: unknownLogo,
+        tokenType: TokenType.InsuranceFund,
+        TokenVerification: TokenVerification.Verified
+      }
+    }
 
-  writeFileSync(
-    `./../tokens/${getNetworkFileName(network)}.json`,
-    JSON.stringify(
-      formattedList.sort((a, b) => a.denom.localeCompare(b.denom)),
-      null,
-      2
-    )
+    return {
+      ...token,
+      logo: logos[token.logo] || unknownLogo,
+      externalLogo: token.logo
+    }
+  })
+
+  const data = JSON.stringify(
+    formattedList.sort((a, b) => a.denom.localeCompare(b.denom)),
+    null,
+    2
   )
 
-  console.log(`✅✅✅ GenerateTokens ${network}`)
+  writeFile(`./../tokens/${getNetworkFileName(network)}.json`, data, (err) => {
+    if (err) {
+      console.error(`Error writing tokens ${network}:`, err)
+    } else {
+      console.log(`✅✅✅ GenerateTokens ${network}`)
+    }
+  })
 }
 
 generateTokensList(Network.Devnet)

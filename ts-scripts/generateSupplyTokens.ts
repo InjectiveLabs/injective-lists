@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
@@ -143,16 +143,23 @@ export const generateSupplyToken = async (network: Network) => {
 
     const filteredTokens = [...supplyTokens].filter(({ denom }) => denom)
 
-    writeFileSync(
-      `./../tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
-      JSON.stringify(
-        filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
-        null,
-        2
-      )
+    const data = JSON.stringify(
+      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
+      null,
+      2
     )
 
-    console.log(`✅✅✅ GenerateSupplyTokens ${network}`)
+    writeFile(
+      `./../tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
+      data,
+      (err) => {
+        if (err) {
+          console.error(`Error writing bank supply tokens ${network}:`, err)
+        } else {
+          console.log(`✅✅✅ GenerateSupplyTokens ${network}`)
+        }
+      }
+    )
   } catch (e) {}
 }
 

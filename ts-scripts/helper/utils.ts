@@ -46,6 +46,8 @@ export const getDenomTrace = async (
       channelId: data.denom_trace.path.split('/').pop() as string
     }
   } catch (e) {
+    console.error(`Failed to fetch denom trace for hash: ${hash}`, e)
+
     return {
       path: '',
       channelId: '',
@@ -129,13 +131,14 @@ export const tokensToDenomMap = (tokens: Token[]) => {
     const formattedDenom = token.denom.toLowerCase()
 
     if (!list[formattedDenom]) {
-      return { ...list, [formattedDenom]: token }
+      list[formattedDenom] = token
+
+      return list
     }
 
-    return {
-      ...list,
-      [formattedDenom]: { ...list[formattedDenom], ...token }
-    }
+    list[formattedDenom] = { ...list[formattedDenom], ...token }
+
+    return list
   }, {} as Record<string, Token>)
 }
 
@@ -144,13 +147,14 @@ export const cw20TokensToDenomMap = (tokens: Token[]) => {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
 
     if (!list[formattedDenom]) {
-      return { ...list, [formattedDenom]: token }
+      list[formattedDenom] = token
+
+      return list
     }
 
-    return {
-      ...list,
-      [formattedDenom]: { ...list[formattedDenom], ...token }
-    }
+    list[formattedDenom] = { ...list[formattedDenom], ...token }
+
+    return list
   }, {} as Record<string, Token>)
 }
 
@@ -159,12 +163,13 @@ export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
     const formattedDenom = metadata.denom.toLowerCase()
 
     if (!list[formattedDenom]) {
-      return { ...list, [formattedDenom]: metadata }
+      list[formattedDenom] = metadata
+
+      return list
     }
 
-    return {
-      ...list,
-      [formattedDenom]: { ...list[formattedDenom], ...metadata }
-    }
+    list[formattedDenom] = { ...list[formattedDenom], ...metadata }
+
+    return list
   }, {} as Record<string, BankMetadata>)
 }
