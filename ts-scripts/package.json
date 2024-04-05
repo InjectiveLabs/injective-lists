@@ -4,7 +4,16 @@
   "description": "A way to store different lists in JSON format.",
   "main": "index.js",
   "scripts": {
-    "slugs:generate": "ts-node ./generateMarketSlugs"
+    "slugs:generate": "ts-node ./generateMarketSlugs",
+    "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
+    "tokens:prepare": "ts-node ./fetchChainTokenMetadata && ts-node ./generateStaticTokens && ts-node ./generateExternalTokens && ts-node ./generateSupplyTokens && ts-node ./uploadImages && ts-node ./generateTokens",
+    "tokens:generate": "ts-node ./generateTokens",
+    "tokens:images": "ts-node ./uploadImages",
+    "tokens:static": "ts-node ./generateStaticTokens",
+    "tokens:supply": "ts-node ./generateSupplyTokens",
+    "tokens:supply:clean": "ts-node ./generateSupplyTokens --clean",
+    "tokens:external": "ts-node ./generateExternalTokens",
+    "tokens:external:clean": "ts-node ./generateExternalTokens --clean"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +23,8 @@
     "dotenv": "^16.4.5",
     "form-data": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.3",
+    "alchemy-sdk": "^2.6.3"
   },
   "devDependencies": {
     "@injectivelabs/prettier-config": "1.0.3",

@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs'
+import { writeFile } from 'node:fs'
 import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
 import {
   devnetSlugs as devnetSpotSlugs,
@@ -44,9 +44,17 @@ export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetExpiryFutureSlugs]
   }
 
-  writeFileSync(
+  writeFile(
     `./../helix/trading/expiry/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2)
+    JSON.stringify(slugs, null, 2),
+    (err) => {
+      if (err) {
+        console.error(
+          `Error writing expiry futures market slugs ${network}:`,
+          err
+        )
+      }
+    }
   )
 }
 
@@ -65,9 +73,14 @@ export const generateSpotMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetSpotSlugs]
   }
 
-  writeFileSync(
+  writeFile(
     `./../helix/trading/spot/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2)
+    JSON.stringify(slugs, null, 2),
+    (err) => {
+      if (err) {
+        console.error(`Error writing spot market slugs ${network}:`, err)
+      }
+    }
   )
 }
 
@@ -86,14 +99,19 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetDerivativeSlugs]
   }
 
-  writeFileSync(
+  writeFile(
     `./../helix/trading/derivative/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2)
+    JSON.stringify(slugs, null, 2),
+    (err) => {
+      if (err) {
+        console.error(`Error writing derivative market slugs ${network}:`, err)
+      }
+    }
   )
 }
 
 export const generateMarketCategorySlugs = () => {
-  writeFileSync(
+  writeFile(
     `./../helix/trading/market/category.json`,
     JSON.stringify(
       {
@@ -107,7 +125,12 @@ export const generateMarketCategorySlugs = () => {
       },
       null,
       2
-    )
+    ),
+    (err) => {
+      if (err) {
+        console.error('Error writing market category slugs:', err)
+      }
+    }
   )
 }
 
