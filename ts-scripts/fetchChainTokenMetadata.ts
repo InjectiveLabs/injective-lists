@@ -8,11 +8,14 @@ import {
 } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import { symbolMeta } from './data/symbolMeta'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { getNetworkFileName } from './helper/utils'
 import {
   Coin,
   Token,
   Metadata,
+  InsuranceFund,
   ExplorerPagination,
   ExplorerCw20Contract
 } from './types'
@@ -41,21 +44,34 @@ const formatCw20Contract = (
 ) => {
   const tokenInfo = contract.cw20_metadata?.token_info
 
-  const adapterContractAddress = getCw20AdapterContractForNetwork(
-    Network.Mainnet
-  )
+  const adapterContractAddress = getCw20AdapterContractForNetwork(network)
 
   return {
-    coinGeckoId: '',
-    logo: 'unknown.png',
-    name: tokenInfo?.name || contract.label || 'Unknown',
+    ...untaggedSymbolMeta.Unknown,
+    name: tokenInfo?.name || contract.label || untaggedSymbolMeta.Unknown.name,
     denom: `factory/${adapterContractAddress}/${contract.address}`,
-    address: contract.address,
     creator: contract.creator,
-    decimals: tokenInfo?.decimals || 18,
-    symbol: tokenInfo?.symbol || tokenInfo?.name || 'Unknown',
+    address: contract.address,
+    decimals: tokenInfo?.decimals || untaggedSymbolMeta.Unknown.decimals,
+    symbol:
+      tokenInfo?.symbol || tokenInfo?.name || untaggedSymbolMeta.Unknown.symbol,
     tokenType: TokenType.Cw20,
     tokenVerification: TokenVerification.Internal
+  }
+}
+
+const formatInsuranceFund = (insuranceFund: InsuranceFund): Token => {
+  const denom = insuranceFund.insurance_pool_token_denom
+
+  return {
+    denom,
+    decimals: 18,
+    coinGeckoId: '',
+    symbol: denom,
+    logo: symbolMeta.INJ.logo,
+    tokenType: TokenType.InsuranceFund,
+    tokenVerification: TokenVerification.Verified,
+    name: `${insuranceFund.market_ticker} Insurance Fund`
   }
 }
 
@@ -215,6 +231,45 @@ export const fetchCw20ContractInfo = async (network: Network) => {
   }
 }
 
+export const fetchInsuranceFunds = async (network: Network) => {
+  const endpoints = getNetworkEndpoints(network)
+  const insuranceApi = new HttpRestClient(
+    `${endpoints.rest}/injective/insurance/v1beta1/`,
+    {
+      timeout: 20000
+    }
+  )
+
+  try {
+    const response = (await insuranceApi.get('insurance_funds')) as {
+      data: { funds: InsuranceFund[] }
+    }
+
+    // cache data in case of api error
+    const data = JSON.stringify(
+      response.data.funds
+        .map(formatInsuranceFund)
+        .sort((a, b) => a.denom.localeCompare(b.denom)),
+      null,
+      2
+    )
+
+    writeFile(
+      `./../tokens/insuranceFunds/${getNetworkFileName(network)}.json`,
+      data,
+      (err) => {
+        if (err) {
+          console.error(`Error writing insurance funds ${network}:`, err)
+        } else {
+          console.log(`✅✅✅ fetchInsuranceFunds ${network}`)
+        }
+      }
+    )
+  } catch (e) {
+    console.log(`Error fetching insurance funds ${network}:`, e)
+  }
+}
+
 fetchBankMetadata(Network.Devnet)
 fetchBankMetadata(Network.TestnetSentry)
 fetchBankMetadata(Network.MainnetSentry)
@@ -223,3 +278,6 @@ fetchSupplyDenoms(Network.TestnetSentry)
 fetchSupplyDenoms(Network.MainnetSentry)
 fetchCw20ContractInfo(Network.TestnetSentry)
 fetchCw20ContractInfo(Network.MainnetSentry)
+fetchInsuranceFunds(Network.Devnet)
+fetchInsuranceFunds(Network.TestnetSentry)
+fetchInsuranceFunds(Network.MainnetSentry)

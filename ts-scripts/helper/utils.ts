@@ -7,6 +7,7 @@ import {
 } from '@injectivelabs/networks'
 import { TokenType } from '@injectivelabs/token-metadata'
 import { symbolMeta } from '../data/symbolMeta'
+import { untaggedSymbolMeta } from '../data/untaggedSymbolMeta'
 import { Token, BankMetadata, TokenSymbolMeta } from '../types'
 
 export const getDenomTrace = async (
@@ -22,7 +23,7 @@ export const getDenomTrace = async (
     return {
       path: '',
       channelId: '',
-      baseDenom: symbol || 'Unknown'
+      baseDenom: symbol || untaggedSymbolMeta.Unknown.symbol
     }
   }
 
@@ -51,7 +52,7 @@ export const getDenomTrace = async (
     return {
       path: '',
       channelId: '',
-      baseDenom: symbol || 'Unknown'
+      baseDenom: symbol || untaggedSymbolMeta.Unknown.symbol
     }
   }
 }
@@ -73,11 +74,11 @@ export const getSymbolMeta = ({
 
   if (!value) {
     return {
-      coinGeckoId: '',
       symbol: symbol,
-      name: name || 'Unknown',
-      decimals: decimals || 18,
-      logo: logo || 'unknown.png'
+      name: name || untaggedSymbolMeta.Unknown.name,
+      logo: logo || untaggedSymbolMeta.Unknown.logo,
+      coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
+      decimals: decimals || untaggedSymbolMeta.Unknown.decimals
     }
   }
 

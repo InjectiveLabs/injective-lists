@@ -1,5 +1,4 @@
 import { writeFile } from 'node:fs'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import * as externalTokens from '../tokens/externalTokens.json'
 import * as devnetStaticTokens from '../tokens/staticTokens/devnet.json'
@@ -10,6 +9,7 @@ import * as mainnetBankSupplyTokens from '../tokens/bankSupplyTokens/mainnet.jso
 import * as testnetBankSupplyTokens from '../tokens/bankSupplyTokens/testnet.json'
 import * as tokenImagePaths from '../tokens/tokenImagePaths.json'
 import { getNetworkFileName } from './helper/utils'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
 const devnetTokens = [...devnetStaticTokens, ...devnetBankSupplyTokens]
 const testnetTokens = [...testnetStaticTokens, ...testnetBankSupplyTokens]
@@ -28,24 +28,10 @@ export const generateTokensList = async (network: Network) => {
 
   const logos = tokenImagePaths as Record<string, string>
 
-  const unknownLogo = logos['unknown.png']
-  const injectiveLogo = logos['injective-v3.png']
-
   const formattedList = list.map((token) => {
-    if (token.denom.startsWith('share')) {
-      return {
-        ...token,
-        name: token.name === 'Unknown' ? token.denom : token.name,
-        logo: injectiveLogo,
-        externalLogo: unknownLogo,
-        tokenType: TokenType.InsuranceFund,
-        TokenVerification: TokenVerification.Verified
-      }
-    }
-
     return {
       ...token,
-      logo: logos[token.logo] || unknownLogo,
+      logo: logos[token.logo] || untaggedSymbolMeta.Unknown.logo,
       externalLogo: token.logo
     }
   })

@@ -12,7 +12,11 @@ import * as testnetBankSupplyDenoms from '../tokens/bankSupplyDenoms/testnet.jso
 import * as devnetBankSupplyTokens from '../tokens/bankSupplyTokens/devnet.json'
 import * as mainnetBankSupplyTokens from '../tokens/bankSupplyTokens/mainnet.json'
 import * as testnetBankSupplyTokens from '../tokens/bankSupplyTokens/testnet.json'
-import { getCw20TokenMetadata, getChainTokenMetadata } from './helper/getter'
+import {
+  getCw20TokenMetadata,
+  getChainTokenMetadata,
+  getInsuranceFundToken
+} from './helper/getter'
 import {
   getTokenType,
   getDenomTrace,
@@ -20,6 +24,8 @@ import {
   tokensToDenomMap,
   getNetworkFileName
 } from './helper/utils'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+
 
 // refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
@@ -79,6 +85,19 @@ export const generateSupplyToken = async (network: Network) => {
         continue
       }
 
+      if (denom.startsWith('share')) {
+        const insuranceToken = getInsuranceFundToken(
+          denom,
+          Network.MainnetSentry
+        )
+
+        if (insuranceToken) {
+          supplyTokens.push(insuranceToken)
+        }
+
+        continue
+      }
+
       if (denom.startsWith('peggy') || denom.startsWith('0x')) {
         const peggyToken = await fetchPeggyTokenMetaData(denom, network)
 
@@ -107,7 +126,7 @@ export const generateSupplyToken = async (network: Network) => {
           isNative: false,
           ...getSymbolMeta({
             name: denom,
-            symbol: 'Unknown'
+            symbol: baseDenom
           }),
           tokenType: TokenType.Ibc,
           tokenVerification: TokenVerification.Unverified
@@ -134,7 +153,7 @@ export const generateSupplyToken = async (network: Network) => {
           name: bankMetadata?.name,
           decimals: bankMetadata?.decimals,
           logo: bankMetadata?.logo,
-          symbol: bankMetadata?.symbol || 'Unknown'
+          symbol: bankMetadata?.symbol || untaggedSymbolMeta.Unknown.symbol
         }),
         tokenType: getTokenType(denom),
         tokenVerification: TokenVerification.Unverified

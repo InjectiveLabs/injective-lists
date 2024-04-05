@@ -12,7 +12,11 @@ import {
   tokensToDenomMap,
   cw20TokensToDenomMap
 } from './helper/utils'
-import { getCw20TokenMetadata, getChainTokenMetadata } from './helper/getter'
+import {
+  getCw20TokenMetadata,
+  getChainTokenMetadata,
+  getInsuranceFundToken
+} from './helper/getter'
 import { ApiTokenMetadata } from './types'
 
 /* Mainnet only */
@@ -50,7 +54,6 @@ const formatApiTokenMetadata = async (
     const denom = tokenMetadata.contractAddr.toLowerCase()
 
     const bankMetadata = getChainTokenMetadata(denom, Network.MainnetSentry)
-    const cw20Metadata = getCw20TokenMetadata(denom, Network.MainnetSentry)
 
     if (!shouldFlush) {
       // script optimization: use cached denomTrace data
@@ -61,6 +64,16 @@ const formatApiTokenMetadata = async (
 
         continue
       }
+    }
+
+    if (denom.startsWith('share')) {
+      const insuranceToken = getInsuranceFundToken(denom, Network.MainnetSentry)
+
+      if (insuranceToken) {
+        externalTokens.push(insuranceToken)
+      }
+
+      continue
     }
 
     if (denom.startsWith('peggy') || denom.startsWith('0x')) {
@@ -75,6 +88,8 @@ const formatApiTokenMetadata = async (
         continue
       }
     }
+
+    const cw20Metadata = getCw20TokenMetadata(denom, Network.MainnetSentry)
 
     if (cw20Metadata) {
       externalTokens.push({

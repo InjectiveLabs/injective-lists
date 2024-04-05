@@ -4,6 +4,8 @@ import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
 import { Network, isMainnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { getNetworkFileName } from './helper/utils'
+import { symbolMeta } from './data/symbolMeta'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Token, AlchemyTokenSource } from './types'
 
 const alchemyMainnet = new Alchemy({
@@ -38,8 +40,8 @@ const formatAlchemyToken = (
   return {
     ...token,
     denom,
-    coinGeckoId: '',
-    logo: token.logo || 'unknown.png',
+    coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
+    logo: token.logo || untaggedSymbolMeta.Unknown.logo,
     address: denom.replace('peggy', ''),
     tokenType: TokenType.Erc20,
     tokenVerification: TokenVerification.External

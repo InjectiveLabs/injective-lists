@@ -1,4 +1,12 @@
 export const untaggedSymbolMeta = {
+  Unknown: {
+    decimals: 18,
+    symbol: 'Unknown',
+    name: 'Unknown',
+    logo: 'unknown.png',
+    coinGeckoId: ''
+  },
+
   BTC: {
     decimals: 8,
     symbol: 'BTC',
