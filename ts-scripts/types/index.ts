@@ -47,13 +47,20 @@ export interface Token {
   decimals: number
   coinGeckoId: string
   denom: string
-  address?: string
+  address: string
   tokenType: string
   tokenVerification: string
+  externalLogo?: string
   isNative?: boolean
   source?: string
   hash?: string
   path?: string
   channelId?: string
   baseDenom?: string
+}
+
+export interface Cw20ContractSource extends Token {
+  label: string
+  codeId: number
+  creator: string
 }

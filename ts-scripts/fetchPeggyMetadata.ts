@@ -1,10 +1,12 @@
 import 'dotenv/config'
-import { readFileSync, writeFile } from 'node:fs'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
 import { Network, isMainnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
-import { getNetworkFileName } from './helper/utils'
-import { symbolMeta } from './data/symbolMeta'
+import {
+  updateJSONFile,
+  readJSONFile,
+  getNetworkFileName
+} from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Token, AlchemyTokenSource } from './types'
 
@@ -17,21 +19,6 @@ const alchemySepolia = new Alchemy({
   apiKey: process.env.ALCHEMY_SEPOLIA_KEY,
   network: AlchemyNetwork.ETH_SEPOLIA
 })
-
-const getExistingPeggyTokensMap = async (
-  network: Network
-): Promise<Record<string, any>> => {
-  try {
-    return JSON.parse(
-      readFileSync(
-        `./../tokens/peggyTokens/${getNetworkFileName(network)}.json`,
-        'utf8'
-      ) as any
-    )
-  } catch (e) {
-    return {}
-  }
-}
 
 const formatAlchemyToken = (
   denom: string,
@@ -52,7 +39,10 @@ export const fetchPeggyTokenMetaData = async (
   denom: string,
   network: Network
 ) => {
-  const existingPeggyTokensMap = await getExistingPeggyTokensMap(network)
+  const existingPeggyTokensMap = readJSONFile({
+    path: `tokens/peggyTokens/${getNetworkFileName(network)}.json`,
+    fallback: {}
+  })
   const existingPeggyToken = existingPeggyTokensMap[denom.toLowerCase()]
 
   if (existingPeggyToken) {
@@ -81,22 +71,11 @@ export const fetchPeggyTokenMetaData = async (
 
   const formattedToken = formatAlchemyToken(denom, token)
 
-  const data = JSON.stringify(
+  await updateJSONFile(
+    `tokens/peggyTokens/${getNetworkFileName(network)}.json`,
     {
       ...existingPeggyTokensMap,
       [denom.toLowerCase()]: formattedToken
-    },
-    null,
-    2
-  )
-
-  writeFile(
-    `./../tokens/peggyTokens/${getNetworkFileName(network)}.json`,
-    data,
-    (err) => {
-      if (err) {
-        console.error(`Error writing peggy token metadata ${network}:`, err)
-      }
     }
   )
 

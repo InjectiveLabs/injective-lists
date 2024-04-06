@@ -1,22 +1,23 @@
-import { writeFile } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
-import * as externalTokens from '../tokens/externalTokens.json'
-import * as devnetStaticTokens from '../tokens/staticTokens/devnet.json'
-import * as mainnetStaticTokens from '../tokens/staticTokens/mainnet.json'
-import * as testnetStaticTokens from '../tokens/staticTokens/testnet.json'
-import * as devnetBankSupplyTokens from '../tokens/bankSupplyTokens/devnet.json'
-import * as mainnetBankSupplyTokens from '../tokens/bankSupplyTokens/mainnet.json'
-import * as testnetBankSupplyTokens from '../tokens/bankSupplyTokens/testnet.json'
-import * as tokenImagePaths from '../tokens/tokenImagePaths.json'
-import { getNetworkFileName } from './helper/utils'
+import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName
+} from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
-const devnetTokens = [...devnetStaticTokens, ...devnetBankSupplyTokens]
-const testnetTokens = [...testnetStaticTokens, ...testnetBankSupplyTokens]
+const devnetTokens = [
+  ...readJSONFile({ path: 'tokens/staticTokens/devnet.json' }),
+  ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' })
+]
+const testnetTokens = [
+  ...readJSONFile({ path: 'tokens/staticTokens/testnet.json' }),
+  ...readJSONFile({ path: 'tokens/bankSupplyTokens/testnet.json' })
+]
 const mainnetTokens = [
-  ...mainnetStaticTokens,
-  ...mainnetBankSupplyTokens,
-  ...externalTokens
+  ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/bankSupplyTokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/externalTokens.json' })
 ]
 
 export const generateTokensList = async (network: Network) => {
@@ -26,29 +27,25 @@ export const generateTokensList = async (network: Network) => {
     ? testnetTokens
     : devnetTokens
 
-  const logos = tokenImagePaths as Record<string, string>
+  const logos = readJSONFile({ path: 'tokens/tokenImagePaths.json' }) as Record<
+    string,
+    string
+  >
 
   const formattedList = list.map((token) => {
     return {
       ...token,
-      logo: logos[token.logo] || untaggedSymbolMeta.Unknown.logo,
+      logo: logos[token.logo] || logos[untaggedSymbolMeta.Unknown.logo],
       externalLogo: token.logo
     }
   })
 
-  const data = JSON.stringify(
-    formattedList.sort((a, b) => a.denom.localeCompare(b.denom)),
-    null,
-    2
+  await updateJSONFile(
+    `tokens/${getNetworkFileName(network)}.json`,
+    formattedList.sort((a, b) => a.denom.localeCompare(b.denom))
   )
 
-  writeFile(`./../tokens/${getNetworkFileName(network)}.json`, data, (err) => {
-    if (err) {
-      console.error(`Error writing tokens ${network}:`, err)
-    } else {
-      console.log(`✅✅✅ GenerateTokens ${network}`)
-    }
-  })
+  console.log(`✅✅✅ GenerateTokens ${network}`)
 }
 
 generateTokensList(Network.Devnet)

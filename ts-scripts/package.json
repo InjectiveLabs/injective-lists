@@ -6,8 +6,7 @@
   "scripts": {
     "slugs:generate": "ts-node ./generateMarketSlugs",
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
-    "tokens:prepare": "ts-node ./fetchChainTokenMetadata && ts-node ./generateStaticTokens && ts-node ./generateExternalTokens && ts-node ./generateSupplyTokens && ts-node ./uploadImages && ts-node ./generateTokens",
-    "tokens:generate": "ts-node ./generateTokens",
+    "tokens:generate": "ts-node ./fetchChainTokenMetadata && ts-node ./generateStaticTokens && ts-node ./generateExternalTokens && ts-node ./generateSupplyTokens && ts-node ./uploadImages && ts-node ./generateTokens",
     "tokens:images": "ts-node ./uploadImages",
     "tokens:static": "ts-node ./generateStaticTokens",
     "tokens:supply": "ts-node ./generateSupplyTokens",
@@ -28,8 +27,9 @@
   },
   "devDependencies": {
     "@injectivelabs/prettier-config": "1.0.3",
-    "@injectivelabs/networks": "1.14.11-beta.4",
-    "@injectivelabs/token-metadata": "1.14.11-beta.20",
-    "@injectivelabs/utils": "1.14.11-beta.3"
+    "@injectivelabs/utils": "1.14.11-beta.3",
+    "@injectivelabs/networks": "1.14.11-beta.5",
+    "@injectivelabs/sdk-ts": "1.14.11-beta.40",
+    "@injectivelabs/token-metadata": "1.14.11-beta.31"
   }
 }

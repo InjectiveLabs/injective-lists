@@ -1,9 +1,11 @@
+import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
+import { dirname, resolve } from 'node:path'
 import { HttpRestClient } from '@injectivelabs/utils'
 import {
   Network,
-  getNetworkEndpoints,
   isMainnet,
-  isTestnet
+  isTestnet,
+  getNetworkEndpoints
 } from '@injectivelabs/networks'
 import { TokenType } from '@injectivelabs/token-metadata'
 import { symbolMeta } from '../data/symbolMeta'
@@ -40,6 +42,8 @@ export const getDenomTrace = async (
     const { data } = (await ibcDenomTraceApi.get(hash.replace('ibc/', ''))) as {
       data: { denom_trace: { path: string; base_denom: string } }
     }
+
+    console.log(`✅ Uploaded ${network} ibc token denom trace for ${hash}`)
 
     return {
       path: data.denom_trace.path,
@@ -143,7 +147,7 @@ export const tokensToDenomMap = (tokens: Token[]) => {
   }, {} as Record<string, Token>)
 }
 
-export const cw20TokensToDenomMap = (tokens: Token[]) => {
+export const tokensToAddressMap = (tokens: Token[]) => {
   return tokens.reduce((list, token) => {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
 
@@ -173,4 +177,53 @@ export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
 
     return list
   }, {} as Record<string, BankMetadata>)
+}
+
+export const isFileExist = (path: string) => {
+  const filePath = `./../../${path}`
+
+  return existsSync(resolve(__dirname, filePath))
+}
+
+export const readJSONFile = ({
+  path,
+  fallback = []
+}: {
+  path: string
+  fallback?: Array<any> | Record<string, any>
+}) => {
+  const filePath = `./../../${path}`
+
+  if (!isFileExist(path)) {
+    console.log(`readJSONFile: ${filePath} not found`)
+
+    return fallback
+  }
+
+  try {
+    return JSON.parse(readFileSync(resolve(__dirname, filePath), 'utf8'))
+  } catch (e: any) {
+    console.error(`Error reading JSON file: ${path}`, e)
+
+    return fallback
+  }
+}
+
+export const updateJSONFile = (path: string, data: any) => {
+  const filePath = `./../../${path}`
+  const dirPath = dirname(resolve(__dirname, filePath))
+
+  if (!isFileExist(dirPath)) {
+    try {
+      mkdirSync(dirPath, { recursive: true })
+    } catch (e: any) {
+      console.log('error creating directory', e)
+    }
+  }
+
+  try {
+    writeFileSync(resolve(__dirname, filePath), JSON.stringify(data, null, 2))
+  } catch (e: any) {
+    console.error(`Error updating JSON file: ${path}`, e)
+  }
 }
