@@ -52,7 +52,8 @@ export const mainnetSlugs = [
 	'sollegacy-usdt',
 	'arblegacy-usdt',
 	'wmaticlegacy-usdt',
-	'bonus-usdt'
+	'bonus-usdt',
+	'xiii-inj'
 ]
 
 export const devnetSlugs = ['proj-usdt', 'wbtc-inj', 'proj-inj']
