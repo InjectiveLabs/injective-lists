@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'xiii-inj',
   'w-usdt',
   'bonus-usdt',
   'ena-usdt',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'usdc-usdt',
   'andr-inj',
   'usde-usdt',
-  'whale-inj'
 ]
 
 export const experimental = [
@@ -110,7 +110,8 @@ export const injective = [
   'hdro-inj',
   'pyth-inj',
   'nonja-inj',
-  'lvn-inj'
+  'lvn-inj',
+  'xiii-inj'
 ]
 
 export const solana = [
