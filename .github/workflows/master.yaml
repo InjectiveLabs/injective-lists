@@ -22,6 +22,12 @@ jobs:
       - name: Install dependencies
         run: cd ts-scripts && yarn
 
+      - name: Generate tokens
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: tokens:generate
+          dir: "ts-scripts"
+
       - name: Generate market slugs
         uses: borales/actions-yarn@v4
         with:

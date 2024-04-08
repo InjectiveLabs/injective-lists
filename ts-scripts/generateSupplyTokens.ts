@@ -1,76 +1,78 @@
-import { writeFile } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import {
+  TokenType,
+  TokenVerification,
+  isCw20ContractAddress
+} from '@injectivelabs/token-metadata'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import * as externalTokens from '../tokens/externalTokens.json'
-import * as devnetStaticTokens from '../tokens/staticTokens/devnet.json'
-import * as mainnetStaticTokens from '../tokens/staticTokens/mainnet.json'
-import * as testnetStaticTokens from '../tokens/staticTokens/testnet.json'
-import * as devnetBankSupplyDenoms from '../tokens/bankSupplyDenoms/devnet.json'
-import * as mainnetBankSupplyDenoms from '../tokens/bankSupplyDenoms/mainnet.json'
-import * as testnetBankSupplyDenoms from '../tokens/bankSupplyDenoms/testnet.json'
-import * as devnetBankSupplyTokens from '../tokens/bankSupplyTokens/devnet.json'
-import * as mainnetBankSupplyTokens from '../tokens/bankSupplyTokens/mainnet.json'
-import * as testnetBankSupplyTokens from '../tokens/bankSupplyTokens/testnet.json'
+import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
 import {
-  getCw20TokenMetadata,
-  getChainTokenMetadata,
-  getInsuranceFundToken
-} from './helper/getter'
-import {
+  readJSONFile,
   getTokenType,
   getDenomTrace,
   getSymbolMeta,
+  updateJSONFile,
   tokensToDenomMap,
   getNetworkFileName
 } from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-
+import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
+import { Token } from './types'
 
 // refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
 
 const mainnetStaticTokensMap = tokensToDenomMap([
-  ...mainnetStaticTokens,
-  ...externalTokens
+  ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/externalTokens.json' })
 ])
 
-const devnetIbcSupplyTokens = devnetBankSupplyTokens.filter(
-  ({ tokenType }) => tokenType === TokenType.Ibc
-)
-const testnetIbcSupplyTokens = testnetBankSupplyTokens.filter(
-  ({ tokenType }) => tokenType === TokenType.Ibc
-)
-const mainnetIbcSupplyTokens = mainnetBankSupplyTokens.filter(
-  ({ tokenType }) => tokenType === TokenType.Ibc
-)
+const devnetIbcSupplyTokens = readJSONFile({
+  path: 'tokens/bankSupplyTokens/devnet.json'
+}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
+const testnetIbcSupplyTokens = readJSONFile({
+  path: 'tokens/bankSupplyTokens/testnet.json'
+}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
+const mainnetIbcSupplyTokens = readJSONFile({
+  path: 'tokens/bankSupplyTokens/mainnet.json'
+}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
 
-const devnetStaticTokensMap = tokensToDenomMap(devnetStaticTokens)
-const testnetStaticTokensMap = tokensToDenomMap(testnetStaticTokens)
+const devnetStaticTokensMap = tokensToDenomMap(
+  readJSONFile({ path: 'tokens/staticTokens/devnet.json' })
+)
+const testnetStaticTokensMap = tokensToDenomMap(
+  readJSONFile({ path: 'tokens/staticTokens/testnet.json' })
+)
 const devnetIbcSupplyTokensMap = tokensToDenomMap(devnetIbcSupplyTokens)
 const testnetIbcSupplyTokensMap = tokensToDenomMap(testnetIbcSupplyTokens)
 const mainnetIbcSupplyTokensMap = tokensToDenomMap(mainnetIbcSupplyTokens)
 
 export const generateSupplyToken = async (network: Network) => {
-  let supplyDenoms = devnetBankSupplyDenoms
+  let supplyDenoms = readJSONFile({
+    path: 'tokens/bankSupplyDenoms/devnet.json'
+  })
   let existingStaticTokensMap = devnetStaticTokensMap
   let existingIbcTokensMap = devnetIbcSupplyTokensMap
 
   if (isTestnet(network)) {
-    supplyDenoms = testnetBankSupplyDenoms
+    supplyDenoms = readJSONFile({
+      path: 'tokens/bankSupplyDenoms/testnet.json'
+    })
     existingStaticTokensMap = testnetStaticTokensMap
     existingIbcTokensMap = testnetIbcSupplyTokensMap
   }
 
   if (isMainnet(network)) {
-    supplyDenoms = mainnetBankSupplyDenoms
+    supplyDenoms = readJSONFile({
+      path: 'tokens/bankSupplyDenoms/mainnet.json'
+    })
     existingStaticTokensMap = mainnetStaticTokensMap
     existingIbcTokensMap = mainnetIbcSupplyTokensMap
   }
 
   try {
     const filteredDenoms = supplyDenoms.filter(
-      (denom) => !existingStaticTokensMap[denom.toLowerCase()]
+      (denom: string) => !existingStaticTokensMap[denom.toLowerCase()]
     )
 
     const supplyTokens = []
@@ -83,6 +85,20 @@ export const generateSupplyToken = async (network: Network) => {
         supplyTokens.push(existingIbcToken)
 
         continue
+      }
+
+      if (denom.startsWith('factory')) {
+        const cwContractAddress = denom.split('/').pop()
+
+        if (cwContractAddress && isCw20ContractAddress(cwContractAddress)) {
+          const cw20Token = await fetchCw20ContractMetaData(denom, network)
+
+          if (cw20Token) {
+            supplyTokens.push(cw20Token)
+
+            continue
+          }
+        }
       }
 
       if (denom.startsWith('share')) {
@@ -114,15 +130,12 @@ export const generateSupplyToken = async (network: Network) => {
           network
         )
 
-        console.log(
-          ` ✅ Uploaded ${network} ibc token denom trace for ${denom}`
-        )
-
         supplyTokens.push({
           denom,
           path,
           channelId,
           baseDenom,
+          address: denom,
           isNative: false,
           ...getSymbolMeta({
             name: denom,
@@ -135,19 +148,11 @@ export const generateSupplyToken = async (network: Network) => {
         continue
       }
 
-      const cw20Metadata = getCw20TokenMetadata(denom, network)
-
-      if (cw20Metadata) {
-        console.log(`✅ cw20Metadata for ${denom} found!`)
-        supplyTokens.push(cw20Metadata)
-
-        continue
-      }
-
       const bankMetadata = getChainTokenMetadata(denom, network)
 
       supplyTokens.push({
         denom: denom,
+        address: denom,
         isNative: false,
         ...getSymbolMeta({
           name: bankMetadata?.name,
@@ -162,24 +167,15 @@ export const generateSupplyToken = async (network: Network) => {
 
     const filteredTokens = [...supplyTokens].filter(({ denom }) => denom)
 
-    const data = JSON.stringify(
-      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
-      null,
-      2
+    await updateJSONFile(
+      `tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
+      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 
-    writeFile(
-      `./../tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,
-      data,
-      (err) => {
-        if (err) {
-          console.error(`Error writing bank supply tokens ${network}:`, err)
-        } else {
-          console.log(`✅✅✅ GenerateSupplyTokens ${network}`)
-        }
-      }
-    )
-  } catch (e) {}
+    console.log(`✅✅✅ GenerateSupplyTokens ${network}`)
+  } catch (e) {
+    console.log('Error generating supply tokens')
+  }
 }
 
 generateSupplyToken(Network.Devnet)

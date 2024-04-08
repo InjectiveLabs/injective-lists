@@ -1,25 +1,27 @@
-import { writeFile } from 'node:fs'
 import { Network } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
+import { isCw20ContractAddress } from '@injectivelabs/token-metadata'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
-import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import * as staticTokens from '../tokens/staticTokens/mainnet.json'
-import * as existingExternalTokens from '../tokens/externalTokens.json'
 import {
+  readJSONFile,
   getTokenType,
   getDenomTrace,
   getSymbolMeta,
+  updateJSONFile,
   tokensToDenomMap,
-  cw20TokensToDenomMap
+  tokensToAddressMap
 } from './helper/utils'
-import {
-  getCw20TokenMetadata,
-  getChainTokenMetadata,
-  getInsuranceFundToken
-} from './helper/getter'
-import { ApiTokenMetadata } from './types'
+import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
+import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
+import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
+import { Token, ApiTokenMetadata } from './types'
 
 /* Mainnet only */
+
+const staticTokens = readJSONFile({ path: 'tokens/staticTokens/mainnet.json' })
+const existingExternalTokens = readJSONFile({
+  path: 'tokens/externalTokens.json'
+})
 
 // refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
@@ -32,12 +34,12 @@ const externalTokenMetadataApi = new HttpRestClient(
 )
 
 const externalIbcTokens = existingExternalTokens.filter(
-  ({ tokenType }) => tokenType === TokenType.Ibc
+  (token: Token) => token.tokenType === TokenType.Ibc
 )
 
 const staticTokensMap = tokensToDenomMap(staticTokens)
 const existingIbcTokensMap = tokensToDenomMap(externalIbcTokens)
-const staticTokensAddressMap = cw20TokensToDenomMap(staticTokens)
+const staticTokensAddressMap = tokensToAddressMap(staticTokens)
 
 const formatApiTokenMetadata = async (
   tokenMetadata: ApiTokenMetadata[]
@@ -89,20 +91,24 @@ const formatApiTokenMetadata = async (
       }
     }
 
-    const cw20Metadata = getCw20TokenMetadata(denom, Network.MainnetSentry)
+    if (isCw20ContractAddress(denom)) {
+      const cw20Token = await fetchCw20ContractMetaData(
+        denom,
+        Network.MainnetSentry
+      )
 
-    if (cw20Metadata) {
-      externalTokens.push({
-        ...cw20Metadata,
-        name: tokenMetadata.name || cw20Metadata.name,
-        logo: tokenMetadata.imageUrl || cw20Metadata.logo
-      })
+      if (cw20Token) {
+        externalTokens.push(cw20Token)
 
-      continue
+        continue
+      } else {
+        console.log(`cw20 contract ${denom} not found`)
+      }
     }
 
     const meta = {
       denom,
+      address: denom,
       ...getSymbolMeta({
         symbol: tokenMetadata.symbol,
         name: tokenMetadata.name || bankMetadata?.name,
@@ -118,10 +124,6 @@ const formatApiTokenMetadata = async (
         denom,
         Network.MainnetSentry,
         tokenMetadata.symbol
-      )
-
-      console.log(
-        `✅ Uploaded ${Network.MainnetSentry} ibc token denom trace for ${denom}`
       )
 
       externalTokens.push({
@@ -164,19 +166,12 @@ const generateExternalTokens = async () => {
         !staticTokensAddressMap[denom.toLowerCase()]
     )
 
-    const data = JSON.stringify(
-      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom)),
-      null,
-      2
+    await updateJSONFile(
+      'tokens/externalTokens.json',
+      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 
-    writeFile('./../tokens/externalTokens.json', data, (err) => {
-      if (err) {
-        console.error('Error writing external tokens:', err)
-      } else {
-        console.log('✅✅✅ GenerateExternalTokens')
-      }
-    })
+    console.log('✅✅✅ GenerateExternalTokens')
   } catch (e) {
     console.log('Error generateExternalTokens', e)
 

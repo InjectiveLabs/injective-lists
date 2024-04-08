@@ -395,5 +395,9 @@ export const testnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.PHUC,
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.XIII,
+    creator: 'inj18flmwwaxxqj8m8l5zl8xhjrnah98fcjp3gcy3e'
   }
 ]

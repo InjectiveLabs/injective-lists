@@ -1,4 +1,3 @@
-import { writeFile } from 'node:fs'
 import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
 import {
   devnetSlugs as devnetSpotSlugs,
@@ -27,7 +26,7 @@ import {
   olpLowVolume as olpLowVolumeCategorySlugs,
   experimental as experimentalCategorySlugs
 } from './data/market/category'
-import { getNetworkFileName } from './helper/utils'
+import { updateJSONFile, getNetworkFileName } from './helper/utils'
 
 export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
   let slugs = mainnetExpiryFutureSlugs
@@ -44,17 +43,9 @@ export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetExpiryFutureSlugs]
   }
 
-  writeFile(
-    `./../helix/trading/expiry/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2),
-    (err) => {
-      if (err) {
-        console.error(
-          `Error writing expiry futures market slugs ${network}:`,
-          err
-        )
-      }
-    }
+  await updateJSONFile(
+    `helix/trading/expiry/${getNetworkFileName(network)}.json`,
+    slugs
   )
 }
 
@@ -73,14 +64,9 @@ export const generateSpotMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetSpotSlugs]
   }
 
-  writeFile(
-    `./../helix/trading/spot/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2),
-    (err) => {
-      if (err) {
-        console.error(`Error writing spot market slugs ${network}:`, err)
-      }
-    }
+  await updateJSONFile(
+    `helix/trading/spot/${getNetworkFileName(network)}.json`,
+    slugs
   )
 }
 
@@ -99,39 +85,22 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
     slugs = [...slugs, ...testnetDerivativeSlugs]
   }
 
-  writeFile(
-    `./../helix/trading/derivative/${getNetworkFileName(network)}.json`,
-    JSON.stringify(slugs, null, 2),
-    (err) => {
-      if (err) {
-        console.error(`Error writing derivative market slugs ${network}:`, err)
-      }
-    }
+  await updateJSONFile(
+    `helix/trading/derivative/${getNetworkFileName(network)}.json`,
+    slugs
   )
 }
 
-export const generateMarketCategorySlugs = () => {
-  writeFile(
-    `./../helix/trading/market/category.json`,
-    JSON.stringify(
-      {
-        cosmosCategorySlugs,
-        solanaCategorySlugs,
-        ethereumCategorySlugs,
-        injectiveCategorySlugs,
-        newMarketsCategorySlugs,
-        olpLowVolumeCategorySlugs,
-        experimentalCategorySlugs
-      },
-      null,
-      2
-    ),
-    (err) => {
-      if (err) {
-        console.error('Error writing market category slugs:', err)
-      }
-    }
-  )
+export const generateMarketCategorySlugs = async () => {
+  await updateJSONFile('helix/trading/market/category.json', {
+    cosmosCategorySlugs,
+    solanaCategorySlugs,
+    ethereumCategorySlugs,
+    injectiveCategorySlugs,
+    newMarketsCategorySlugs,
+    olpLowVolumeCategorySlugs,
+    experimentalCategorySlugs
+  })
 }
 
 generateSpotMarketSlugs(Network.Devnet)

@@ -1,4 +1,3 @@
-import { writeFile } from 'node:fs'
 import {
   Network,
   getCw20AdapterContractForNetwork
@@ -25,9 +24,9 @@ import {
   mainnetTokens as ibcMainnetTokens,
   testnetTokens as ibcTestnetTokens
 } from './data/ibc'
-import { getNetworkFileName } from './helper/utils'
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -64,6 +63,7 @@ const formatCw20Tokens = (
 ) =>
   tokens.map((token) => ({
     ...token,
+    address: token.address,
     denom: `factory/${adapterContractAddress}/${token.address}`,
     tokenType: TokenType.Cw20
   }))
@@ -158,7 +158,7 @@ const getMainnetStaticTokenList = () => {
   ]
 }
 
-const generateStaticTokens = (network: Network) => {
+const generateStaticTokens = async (network: Network) => {
   let list = getDevnetStaticTokenList()
 
   if (network === Network.Testnet) {
@@ -169,29 +169,19 @@ const generateStaticTokens = (network: Network) => {
     list = getMainnetStaticTokenList()
   }
 
-  const data = JSON.stringify(
+  await updateJSONFile(
+    `tokens/staticTokens/${getNetworkFileName(network)}.json`,
     [INJ_TOKEN, ...list, ...untaggedSymbolBaseTokens()]
       .map((token) => ({
+        address: token.denom,
         isNative: false,
         ...token,
         tokenVerification: TokenVerification.Verified
       }))
-      .sort((a, b) => a.denom.localeCompare(b.denom)),
-    null,
-    '\t'
+      .sort((a, b) => a.denom.localeCompare(b.denom))
   )
 
-  writeFile(
-    `./../tokens/staticTokens/${getNetworkFileName(network)}.json`,
-    data,
-    (err) => {
-      if (err) {
-        console.error(`Failed to generate static tokens ${network}:`, err)
-      } else {
-        console.log(`✅✅✅ GenerateStaticTokens ${network}`)
-      }
-    }
-  )
+  console.log(`✅✅✅ GenerateStaticTokens ${network}`)
 }
 
 generateStaticTokens(Network.Devnet)

@@ -1757,5 +1757,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'sae.png',
     coinGeckoId: '',
     name: 'SA World'
+  },
+
+  XIII: {
+    decimals: 6,
+    symbol: 'XIII',
+    coinGeckoId: '',
+    logo: 'xiii.png',
+    name: 'XIII Coin'
   }
 }
