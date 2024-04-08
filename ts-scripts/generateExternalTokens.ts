@@ -9,6 +9,7 @@ import {
   getSymbolMeta,
   updateJSONFile,
   tokensToDenomMap,
+  getNetworkFileName,
   tokensToAddressMap
 } from './helper/utils'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
@@ -52,6 +53,11 @@ const formatApiTokenMetadata = async (
 
   const externalTokens = [] as any
 
+  const existingCW20TokensMap = readJSONFile({
+    path: `tokens/cw20Tokens/${getNetworkFileName(Network.MainnetSentry)}.json`,
+    fallback: {}
+  })
+
   for (const tokenMetadata of filteredTokenMetadata) {
     const denom = tokenMetadata.contractAddr.toLowerCase()
 
@@ -92,6 +98,14 @@ const formatApiTokenMetadata = async (
     }
 
     if (isCw20ContractAddress(denom)) {
+      const existingCW20Token = existingCW20TokensMap[denom.toLowerCase()]
+
+      if (existingCW20Token) {
+        externalTokens.push(existingCW20Token)
+
+        continue
+      }
+
       const cw20Token = await fetchCw20ContractMetaData(
         denom,
         Network.MainnetSentry
