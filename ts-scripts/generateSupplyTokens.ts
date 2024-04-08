@@ -70,6 +70,11 @@ export const generateSupplyToken = async (network: Network) => {
     existingIbcTokensMap = mainnetIbcSupplyTokensMap
   }
 
+  const existingCW20TokensMap = readJSONFile({
+    path: `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
+    fallback: {}
+  })
+
   try {
     const filteredDenoms = supplyDenoms.filter(
       (denom: string) => !existingStaticTokensMap[denom.toLowerCase()]
@@ -91,6 +96,15 @@ export const generateSupplyToken = async (network: Network) => {
         const cwContractAddress = denom.split('/').pop()
 
         if (cwContractAddress && isCw20ContractAddress(cwContractAddress)) {
+          const existingCW20Token =
+            existingCW20TokensMap[cwContractAddress.toLowerCase()]
+
+          if (existingCW20Token) {
+            supplyTokens.push(existingCW20Token)
+
+            continue
+          }
+
           const cw20Token = await fetchCw20ContractMetaData(denom, network)
 
           if (cw20Token) {

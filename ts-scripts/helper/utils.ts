@@ -201,7 +201,9 @@ export const readJSONFile = ({
   }
 
   try {
-    return JSON.parse(readFileSync(resolve(__dirname, filePath), 'utf8'))
+    const data = readFileSync(resolve(__dirname, filePath), 'utf8')
+
+    return JSON.parse(data)
   } catch (e: any) {
     console.error(`Error reading JSON file: ${path}`, e)
 

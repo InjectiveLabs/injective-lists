@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
-import { Network, isMainnet } from '@injectivelabs/networks'
+import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   updateJSONFile,
@@ -43,6 +43,7 @@ export const fetchPeggyTokenMetaData = async (
     path: `tokens/peggyTokens/${getNetworkFileName(network)}.json`,
     fallback: {}
   })
+
   const existingPeggyToken = existingPeggyTokensMap[denom.toLowerCase()]
 
   if (existingPeggyToken) {

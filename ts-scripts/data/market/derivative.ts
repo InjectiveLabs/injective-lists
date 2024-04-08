@@ -13,7 +13,16 @@ export const mainnetSlugs: string[] = [
   'btc-usdtkv-perp',
   'eth-usdtkv-perp',
   'pyth-usdt-perp',
-  'tia-usdt-perp'
+  'tia-usdt-perp',
+  'avax-usdt-perp',
+  'doge-usdt-perp',
+  'jup-usdt-perp',
+  'link-usdt-perp',
+  'op-usdt-perp',
+  'sol-usdt-perp',
+  'sui-usdt-perp',
+  'wif-usdt-perp',
+  'zro-usdt-perp'
 ]
 
 export const devnetSlugs: string[] = []
