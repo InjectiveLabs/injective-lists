@@ -14,6 +14,7 @@ export const mainnetSlugs: string[] = [
   'eth-usdtkv-perp',
   'pyth-usdt-perp',
   'tia-usdt-perp',
+  'arb-usdt-perp',
   'avax-usdt-perp',
   'doge-usdt-perp',
   'jup-usdt-perp',
