@@ -36,7 +36,8 @@ export const experimental = [
   'wif-usdt-perp',
   'bonk-usdt-perp',
   'qunt-inj',
-  'talis-inj'
+  'talis-inj',
+  'omni-usdt-perp'
 ]
 
 export const cosmos = [

@@ -23,7 +23,8 @@ export const mainnetSlugs: string[] = [
   'sol-usdt-perp',
   'sui-usdt-perp',
   'wif-usdt-perp',
-  'zro-usdt-perp'
+  'zro-usdt-perp',
+  'omni-usdt-perp'
 ]
 
 export const devnetSlugs: string[] = []
