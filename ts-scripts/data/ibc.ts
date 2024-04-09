@@ -2,6 +2,18 @@ import { TokenSource } from '@injectivelabs/token-metadata'
 import { symbolMeta } from './symbolMeta'
 import { IbcTokenSource } from '../types'
 
+export const testnetTokens: IbcTokenSource[] = [
+  {
+    ...symbolMeta.ASTRO,
+    isNative: true,
+    baseDenom: 'ASTRO',
+    channelId: 'channel-13',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-13',
+    hash: 'E8AC6B792CDE60AB208CA060CA010A3881F682A7307F624347AB71B6A0B0BF89'
+  }
+]
+
 export const mainnetTokens: IbcTokenSource[] = [
   {
     ...symbolMeta.USDT,
@@ -379,17 +391,5 @@ export const mainnetTokens: IbcTokenSource[] = [
     hash: 'F16F0F685BEF7BC6A145F16CBE78C6EC8C7C3A5F3066A98A9E57DCEA0903E537',
     baseDenom:
       'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
-  }
-]
-
-export const testnetTokens: IbcTokenSource[] = [
-  {
-    ...symbolMeta.ASTRO,
-    isNative: true,
-    baseDenom: 'ASTRO',
-    channelId: 'channel-13',
-    source: TokenSource.Cosmos,
-    path: 'transfer/channel-13',
-    hash: 'E8AC6B792CDE60AB208CA060CA010A3881F682A7307F624347AB71B6A0B0BF89'
   }
 ]

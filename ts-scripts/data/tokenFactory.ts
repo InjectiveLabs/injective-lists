@@ -1,6 +1,90 @@
 import { symbolMeta } from './symbolMeta'
 import { TokenFactorySource } from '../types'
 
+export const devnetTokens: TokenFactorySource[] = [
+  {
+    ...symbolMeta.KIRA,
+    creator: 'inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk'
+  }
+]
+
+export const testnetTokens: TokenFactorySource[] = [
+  {
+    ...symbolMeta.TIX,
+    creator: 'inj1rw3qvamxgmvyexuz2uhyfa4hukvtvteznxjvke'
+  },
+  {
+    ...symbolMeta.wBTC,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.ATOM,
+    decimals: 8,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.wEth,
+    decimals: 8,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.USDC,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.MATIC,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.STINJ,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.HDRO,
+    creator: 'inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk'
+  },
+  {
+    ...symbolMeta.KIRA,
+    creator: 'inj1jfuyujpvvkxq4566r3z3tv3jdy29pqra5ln0yk'
+  },
+  {
+    ...symbolMeta.ZEN,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.PROJ,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.PROJX,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.DEMO,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.MITOTEST2,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.TEST1,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.TEST2,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.TEST3,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.PHUC,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  }
+]
+
 export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.POINT,
@@ -311,90 +395,6 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.SAE,
     creator: 'inj152mdu38fkkk4fl7ycrpdqxpm63w3ztadgtktyr'
-  }
-]
-
-export const devnetTokens: TokenFactorySource[] = [
-  {
-    ...symbolMeta.KIRA,
-    creator: 'inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk'
-  }
-]
-
-export const testnetTokens: TokenFactorySource[] = [
-  {
-    ...symbolMeta.TIX,
-    creator: 'inj1rw3qvamxgmvyexuz2uhyfa4hukvtvteznxjvke'
-  },
-  {
-    ...symbolMeta.wBTC,
-    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
-  },
-  {
-    ...symbolMeta.ATOM,
-    decimals: 8,
-    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
-  },
-  {
-    ...symbolMeta.wEth,
-    decimals: 8,
-    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
-  },
-  {
-    ...symbolMeta.USDC,
-    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
-  },
-  {
-    ...symbolMeta.MATIC,
-    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
-  },
-  {
-    ...symbolMeta.STINJ,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.HDRO,
-    creator: 'inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk'
-  },
-  {
-    ...symbolMeta.KIRA,
-    creator: 'inj1jfuyujpvvkxq4566r3z3tv3jdy29pqra5ln0yk'
-  },
-  {
-    ...symbolMeta.ZEN,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.PROJ,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.PROJX,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.DEMO,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.MITOTEST2,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.TEST1,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.TEST2,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.TEST3,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
-  },
-  {
-    ...symbolMeta.PHUC,
-    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
   },
   {
     ...symbolMeta.XIII,

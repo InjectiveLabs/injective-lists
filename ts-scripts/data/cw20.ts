@@ -2,6 +2,30 @@ import { TokenSource } from '@injectivelabs/token-metadata'
 import { symbolMeta } from './symbolMeta'
 import { Cw20TokenSource } from '../types'
 
+export const devnetTokens: Cw20TokenSource[] = [
+  {
+    ...symbolMeta.USDC,
+    symbol: 'USDCet',
+    address: 'inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
+  }
+]
+
+export const testnetTokens: Cw20TokenSource[] = [
+  {
+    ...symbolMeta.USDC,
+    symbol: 'USDCet',
+    address: 'inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
+  },
+  {
+    ...symbolMeta.SOL,
+    address: 'inj12ngevx045zpvacus9s6anr258gkwpmthnz80e9'
+  },
+  {
+    ...symbolMeta.hINJ,
+    address: 'inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc'
+  }
+]
+
 export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.wBTC,
@@ -229,29 +253,5 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.BONJO,
     address: 'inj19w5lfwk6k9q2d8kxnwsu4962ljnay85f9sgwn6'
-  }
-]
-
-export const devnetTokens: Cw20TokenSource[] = [
-  {
-    ...symbolMeta.USDC,
-    symbol: 'USDCet',
-    address: 'inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
-  }
-]
-
-export const testnetTokens: Cw20TokenSource[] = [
-  {
-    ...symbolMeta.USDC,
-    symbol: 'USDCet',
-    address: 'inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
-  },
-  {
-    ...symbolMeta.SOL,
-    address: 'inj12ngevx045zpvacus9s6anr258gkwpmthnz80e9'
-  },
-  {
-    ...symbolMeta.hINJ,
-    address: 'inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc'
   }
 ]

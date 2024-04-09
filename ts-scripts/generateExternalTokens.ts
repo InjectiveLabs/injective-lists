@@ -16,6 +16,7 @@ import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
 import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
 import { Token, ApiTokenMetadata } from './types'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
 /* Mainnet only */
 
@@ -124,7 +125,7 @@ const formatApiTokenMetadata = async (
       denom,
       address: denom,
       ...getSymbolMeta({
-        symbol: tokenMetadata.symbol,
+        symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
         name: tokenMetadata.name || bankMetadata?.name,
         logo: tokenMetadata.imageUrl || bankMetadata?.logo,
         decimals: tokenMetadata.decimals || bankMetadata?.decimals

@@ -43,7 +43,7 @@ const formatCW20Token = ({
   return {
     name: tokenInfo.name,
     logo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
-    symbol: tokenInfo.symbol,
+    symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
     decimals: tokenInfo.decimals,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
     denom: `factory/${contractInfo.creator}/${address}`,

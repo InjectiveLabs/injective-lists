@@ -1,5 +1,47 @@
 import { symbolMeta } from './symbolMeta'
 
+export const devnetTokens = [
+  {
+    ...symbolMeta.INJ,
+    address: '0xBe8d71D26525440A03311cc7fa372262c5354A3c'
+  },
+  {
+    ...symbolMeta.USDC,
+    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
+  }
+]
+
+export const testnetTokens = [
+  {
+    ...symbolMeta.INJ,
+    address: '0xAD1794307245443B3Cb55d88e79EEE4d8a548C03'
+  },
+  {
+    ...symbolMeta.USDT,
+    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
+  },
+  {
+    ...symbolMeta.APE,
+    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
+  },
+  {
+    ...symbolMeta.wEth,
+    address: '0xdB309Bb079EB419C18fe7D568c61cD2FdB65D9aF'
+  },
+  {
+    ...symbolMeta.USDT,
+    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
+  },
+  {
+    ...symbolMeta.USDC,
+    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
+  },
+  {
+    ...symbolMeta.MATIC,
+    address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+  }
+]
+
 export const mainnetTokens = [
   {
     ...symbolMeta.wBTC,
@@ -329,47 +371,5 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ENA,
     address: '0x57e114b691db790c35207b2e685d4a43181e6061'
-  }
-]
-
-export const devnetTokens = [
-  {
-    ...symbolMeta.INJ,
-    address: '0xBe8d71D26525440A03311cc7fa372262c5354A3c'
-  },
-  {
-    ...symbolMeta.USDC,
-    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
-  }
-]
-
-export const testnetTokens = [
-  {
-    ...symbolMeta.INJ,
-    address: '0xAD1794307245443B3Cb55d88e79EEE4d8a548C03'
-  },
-  {
-    ...symbolMeta.USDT,
-    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
-  },
-  {
-    ...symbolMeta.APE,
-    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
-  },
-  {
-    ...symbolMeta.wEth,
-    address: '0xdB309Bb079EB419C18fe7D568c61cD2FdB65D9aF'
-  },
-  {
-    ...symbolMeta.USDT,
-    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
-  },
-  {
-    ...symbolMeta.USDC,
-    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
-  },
-  {
-    ...symbolMeta.MATIC,
-    address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
   }
 ]
