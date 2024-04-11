@@ -399,5 +399,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.XIII,
     creator: 'inj18flmwwaxxqj8m8l5zl8xhjrnah98fcjp3gcy3e'
+  },
+  {
+    ...symbolMeta.DDL,
+    creator: 'inj1put8lfpkwm47tqcl9fgh8grz987mezvrx4arls'
   }
 ]

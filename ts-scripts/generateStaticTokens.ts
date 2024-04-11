@@ -94,7 +94,7 @@ const untaggedSymbolBaseTokens = () =>
   Object.values(untaggedSymbolMeta).map((meta) => {
     return {
       ...meta,
-      tokenType: 'symbol', // todo: use TokenType.Symbol enum after bumping injective-ts
+      tokenType: TokenType.Symbol,
       denom: meta.symbol.toLowerCase(),
       address: meta.symbol.toLowerCase()
     }

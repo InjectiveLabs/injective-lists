@@ -810,9 +810,9 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   NEOK: {
     decimals: 18,
     symbol: 'NEOK',
-    coinGeckoId: '',
     logo: 'neok.png',
-    name: 'NEOKingdom DAO'
+    name: 'NEOKingdom DAO',
+    coinGeckoId: 'neokingdom-dao'
   },
 
   ORAI: {
@@ -1756,7 +1756,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     logo: 'sae.png',
     coinGeckoId: '',
-    name: 'SA World'
+    name: 'Summoners Arena Essence'
   },
 
   XIII: {
@@ -1765,5 +1765,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'xiii.png',
     name: 'XIII Coin'
+  },
+
+  DDL: {
+    decimals: 6,
+    symbol: 'DDL',
+    logo: 'ddl.png',
+    coinGeckoId: '',
+    name: 'Discordels Token'
   }
 }
