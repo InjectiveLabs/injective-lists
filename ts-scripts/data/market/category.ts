@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'omni-usdt-perp',
   'xiii-inj',
   'w-usdt',
   'bonus-usdt',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'hdro-inj',
   'usdc-usdt',
   'andr-inj',
-  'usde-usdt',
 ]
 
 export const experimental = [
@@ -36,7 +36,8 @@ export const experimental = [
   'wif-usdt-perp',
   'bonk-usdt-perp',
   'qunt-inj',
-  'talis-inj'
+  'talis-inj',
+  'omni-usdt-perp'
 ]
 
 export const cosmos = [
