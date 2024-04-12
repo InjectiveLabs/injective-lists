@@ -25,7 +25,7 @@ const formatMetadata = (metadata: Metadata) => {
     symbol: metadata.symbol,
     display: metadata.display,
     description: metadata.description,
-    decimals: metadata.denomUnits.pop()?.exponent || 0
+    decimals: metadata.denomUnits.pop()?.exponent || 18
   }
 }
 

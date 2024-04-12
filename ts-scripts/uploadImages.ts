@@ -31,18 +31,14 @@ const uploadImage = async (imageName: string) => {
     )
 
     const updatedTokenImagePaths = {
-      ...JSON.parse(
-        readJSONFile({
-          path: 'tokens/tokenImagePaths.json',
-          fallback: {}
-        })
-      ),
+      ...readJSONFile({
+        path: 'tokens/tokenImagePaths.json',
+        fallback: {}
+      }),
       [imageName]: data.data.result.variants[0]
     }
 
     await updateJSONFile('tokens/tokenImagePaths.json', updatedTokenImagePaths)
-
-    console.log('✅✅✅ UploadImages')
   } catch (e) {
     console.log('Error uploadImage', e)
   }
@@ -66,6 +62,8 @@ const uploadImages = async () => {
     for (const filename of filteredFileNames) {
       await uploadImage(filename)
     }
+
+    console.log('✅✅✅ UploadImages')
   } catch (e) {
     console.log('Error uploadImages', e)
 

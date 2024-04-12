@@ -66,7 +66,7 @@ export const fetchPeggyTokenMetaData = async (
       )
     })) as AlchemyTokenSource | undefined
 
-  if (!token || !token.symbol || !token.name || !token.symbol) {
+  if (!token || !token.symbol || !token.name) {
     return
   }
 
