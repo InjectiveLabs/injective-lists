@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'w-usdt-perp',
   'omni-usdt-perp',
   'xiii-inj',
   'w-usdt',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'zig-inj',
   'hdro-inj',
   'usdc-usdt',
-  'andr-inj',
 ]
 
 export const experimental = [
@@ -37,7 +37,8 @@ export const experimental = [
   'bonk-usdt-perp',
   'qunt-inj',
   'talis-inj',
-  'omni-usdt-perp'
+  'omni-usdt-perp',
+  'w-usdt-perp'
 ]
 
 export const cosmos = [
@@ -89,7 +90,8 @@ export const ethereum = [
   'link-usdt-perp',
   'ena-usdt',
   'w-usdt',
-  'bonus-usdt'
+  'bonus-usdt',
+  'w-usdt-perp'
 ]
 
 export const injective = [
@@ -122,7 +124,8 @@ export const solana = [
   'sol-usdt-perp',
   'wif-usdt-perp',
   'bonk-usdt-perp',
-  'w-usdt'
+  'w-usdt',
+  'w-usdt-perp'
 ]
 
 export const olpLowVolume = [
