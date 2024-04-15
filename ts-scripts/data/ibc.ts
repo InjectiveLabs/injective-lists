@@ -170,7 +170,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     hash: 'B786E7CBBF026F6F15A8DA248E0F18C62A0F7A70CB2DABD9239398C8B5150ABB'
   },
   {
-    ...symbolMeta.XPRT,
+    ...symbolMeta.EVMOS,
     isNative: true,
     baseDenom: 'aevmos',
     channelId: 'channel-83',
