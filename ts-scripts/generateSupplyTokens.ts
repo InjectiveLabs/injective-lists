@@ -10,7 +10,6 @@ import {
   readJSONFile,
   getTokenType,
   getDenomTrace,
-  getSymbolMeta,
   updateJSONFile,
   tokensToDenomMap,
   getNetworkFileName
@@ -151,10 +150,11 @@ export const generateSupplyToken = async (network: Network) => {
           baseDenom,
           address: denom,
           isNative: false,
-          ...getSymbolMeta({
-            name: denom,
-            symbol: baseDenom
-          }),
+          symbol: baseDenom,
+          name: untaggedSymbolMeta.Unknown.name,
+          logo: untaggedSymbolMeta.Unknown.logo,
+          coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
+          decimals: untaggedSymbolMeta.Unknown.decimals,
           tokenType: TokenType.Ibc,
           tokenVerification: TokenVerification.Unverified
         })
@@ -168,12 +168,11 @@ export const generateSupplyToken = async (network: Network) => {
         denom: denom,
         address: denom,
         isNative: false,
-        ...getSymbolMeta({
-          name: bankMetadata?.name,
-          decimals: bankMetadata?.decimals,
-          logo: bankMetadata?.logo,
-          symbol: bankMetadata?.symbol || untaggedSymbolMeta.Unknown.symbol
-        }),
+        symbol: bankMetadata?.symbol || untaggedSymbolMeta.Unknown.symbol,
+        coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
+        name: bankMetadata?.name || untaggedSymbolMeta.Unknown.name,
+        logo: bankMetadata?.logo || untaggedSymbolMeta.Unknown.logo,
+        decimals: bankMetadata?.decimals || untaggedSymbolMeta.Unknown.decimals,
         tokenType: getTokenType(denom),
         tokenVerification: TokenVerification.Unverified
       })

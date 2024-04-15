@@ -6,7 +6,6 @@ import {
   readJSONFile,
   getTokenType,
   getDenomTrace,
-  getSymbolMeta,
   updateJSONFile,
   tokensToDenomMap,
   getNetworkFileName,
@@ -124,12 +123,10 @@ const formatApiTokenMetadata = async (
     const meta = {
       denom,
       address: denom,
-      ...getSymbolMeta({
-        symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
-        name: tokenMetadata.name || bankMetadata?.name,
-        logo: tokenMetadata.imageUrl || bankMetadata?.logo,
-        decimals: tokenMetadata.decimals || bankMetadata?.decimals
-      }),
+      symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
+      name: tokenMetadata.name || bankMetadata?.name,
+      logo: tokenMetadata.imageUrl || bankMetadata?.logo,
+      decimals: tokenMetadata.decimals || bankMetadata?.decimals,
       tokenType: getTokenType(denom),
       tokenVerification: TokenVerification.External
     }

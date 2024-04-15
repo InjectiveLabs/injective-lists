@@ -8,9 +8,8 @@ import {
   getNetworkEndpoints
 } from '@injectivelabs/networks'
 import { TokenType } from '@injectivelabs/token-metadata'
-import { symbolMeta } from '../data/symbolMeta'
 import { untaggedSymbolMeta } from '../data/untaggedSymbolMeta'
-import { Token, BankMetadata, TokenSymbolMeta } from '../types'
+import { Token, BankMetadata } from '../types'
 
 export const getDenomTrace = async (
   hash: string,
@@ -59,34 +58,6 @@ export const getDenomTrace = async (
       baseDenom: symbol || untaggedSymbolMeta.Unknown.symbol
     }
   }
-}
-
-export const getSymbolMeta = ({
-  name,
-  logo,
-  symbol,
-  decimals
-}: {
-  logo?: string
-  name?: string
-  symbol: string
-  decimals?: number
-}): TokenSymbolMeta => {
-  const value = Object.values(symbolMeta).find(
-    (meta) => meta.symbol.toLowerCase() === symbol.toLowerCase()
-  )
-
-  if (!value) {
-    return {
-      symbol: symbol,
-      name: name || untaggedSymbolMeta.Unknown.name,
-      logo: logo || untaggedSymbolMeta.Unknown.logo,
-      coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-      decimals: decimals || untaggedSymbolMeta.Unknown.decimals
-    }
-  }
-
-  return { ...value }
 }
 
 export const getTokenType = (denom: string): TokenType => {
