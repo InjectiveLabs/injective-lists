@@ -4,15 +4,16 @@
   "description": "A way to store different lists in JSON format.",
   "main": "index.js",
   "scripts": {
-    "slugs:generate": "ts-node ./generateMarketSlugs",
-    "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
-    "tokens:generate": "ts-node ./fetchChainTokenMetadata && ts-node ./generateStaticTokens && ts-node ./generateExternalTokens && ts-node ./generateSupplyTokens && ts-node ./uploadImages && ts-node ./generateTokens",
     "tokens:images": "ts-node ./uploadImages",
+    "slugs:generate": "ts-node ./generateMarketSlugs",
     "tokens:static": "ts-node ./generateStaticTokens",
     "tokens:supply": "ts-node ./generateSupplyTokens",
-    "tokens:supply:clean": "ts-node ./generateSupplyTokens --clean",
     "tokens:external": "ts-node ./generateExternalTokens",
-    "tokens:external:clean": "ts-node ./generateExternalTokens --clean"
+    "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
+    "tokens:supply:clean": "ts-node ./generateSupplyTokens --clean",
+    "tokens:external:clean": "ts-node ./generateExternalTokens --clean",
+    "tokens:generate": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
+    "tokens:generate:flush": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external:clean && yarn tokens:supply:clean && yarn tokens:images && ts-node ./generateTokens"
   },
   "keywords": [],
   "author": "",

@@ -10,7 +10,8 @@ import {
   Network,
   isDevnet,
   isTestnet,
-  getNetworkEndpoints
+  getNetworkEndpoints,
+  getCw20AdapterContractForNetwork
 } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
@@ -33,12 +34,14 @@ const formatCW20Token = ({
   address,
   tokenInfo,
   contractInfo,
-  marketingInfo
+  marketingInfo,
+  adapterContractAddress
 }: {
   address: string
   tokenInfo: TokenInfo
   marketingInfo?: MarketingInfo
   contractInfo: ContractInfo
+  adapterContractAddress: string
 }): Cw20ContractSource => {
   return {
     name: tokenInfo.name,
@@ -46,7 +49,7 @@ const formatCW20Token = ({
     symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
     decimals: tokenInfo.decimals,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-    denom: `factory/${contractInfo.creator}/${address}`,
+    denom: `factory/${adapterContractAddress}/${address}`,
     address,
     tokenType: TokenType.Cw20,
     tokenVerification: TokenVerification.Internal,
@@ -110,11 +113,14 @@ export const fetchCw20ContractMetaData = async (
       return
     }
 
+    const adapterContractAddress = getCw20AdapterContractForNetwork(network)
+
     const formattedToken = formatCW20Token({
       address,
+      adapterContractAddress,
+      contractInfo: contractInfoResponse,
       tokenInfo: contractStateResponse.tokenInfo,
-      marketingInfo: contractStateResponse.marketingInfo,
-      contractInfo: contractInfoResponse
+      marketingInfo: contractStateResponse.marketingInfo
     })
 
     await updateJSONFile(

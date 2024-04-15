@@ -101,7 +101,7 @@ const formatApiTokenMetadata = async (
     if (isCw20ContractAddress(denom)) {
       const existingCW20Token = existingCW20TokensMap[denom.toLowerCase()]
 
-      if (existingCW20Token) {
+      if (existingCW20Token && !shouldFlush) {
         externalTokens.push(existingCW20Token)
 
         continue
