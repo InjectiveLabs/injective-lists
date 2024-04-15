@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  master:
+  if: ${{ !contains(github.event.commits[0].message, 'generate json files') }}
+  generate:
     name: "Regenerate JSON files"
     runs-on: ubuntu-latest
     permissions: write-all
@@ -39,8 +40,23 @@ jobs:
         with:
           message: "chore: generate json files"
 
-      - name: Rebuild mito
-        if: "!contains(github.event.commits[0].message, 'skip deploy')"
+  deploy:
+    if: ${{ !contains(github.event.commits[0].message, 'skip deploy') && !contains(github.event.commits[0].message, 'generate json files') }}
+    needs: generate
+    name: "Trigger deployments"
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      ## Github Actions
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+    steps:
+      - name: Sleep for 60s
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 60s
+
+      - name: Deploy mito (devnet)
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -48,8 +64,7 @@ jobs:
           repo: mitoFinance/mito-ui
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Rebuild bridge (devnet)
-        if: "!contains(github.event.commits[0].message, 'skip deploy')"
+      - name: Deploy bridge (devnet)
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -57,12 +72,10 @@ jobs:
           repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Rebuild bridge (mainnet)
-        if: "!contains(github.event.commits[0].message, 'skip deploy')"
+      - name: Rebuild bridge
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/660d7b9ab0d0ef0b0f685131
 
       - name: Rebuild helix (devnet)
-        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -71,7 +84,6 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild helix
-        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml

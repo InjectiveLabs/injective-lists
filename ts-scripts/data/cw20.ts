@@ -83,6 +83,7 @@ export const mainnetTokens: Cw20TokenSource[] = [
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (legacy)',
     symbol: 'USDCet',
     source: TokenSource.EthereumWh,
     address: 'inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk'
@@ -124,6 +125,7 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.SOL,
     symbol: 'SOLlegacy',
+    name: 'Solana (legacy)',
     address: 'inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3'
   },
   {
@@ -141,6 +143,8 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.CHZ,
     decimals: 8,
+    symbol: 'CHZlegacy',
+    name: 'Chiliz (legacy)',
     address: 'inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh'
   },
   {
@@ -156,6 +160,8 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.ARB,
     decimals: 8,
+    symbol: 'ARBlegacy',
+    name: 'Arbitrum (legacy)',
     source: TokenSource.Arbitrum,
     address: 'inj1d5vz0uzwlpfvgwrwulxg6syy82axa58y4fuszd'
   },
@@ -175,7 +181,9 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.WMATIC,
     decimals: 8,
+    symbol: 'WMATIClegacy',
     source: TokenSource.Polygon,
+    name: 'Wrapped Matic (legacy)',
     address: 'inj1dxv423h8ygzgxmxnvrf33ws3k94aedfdevxd8h'
   },
   {
@@ -191,6 +199,7 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.PYTH,
     symbol: 'PYTHlegacy',
+    name: 'Pyth Network (legacy)',
     address: 'inj1tjcf9497fwmrnk22jfu5hsdq82qshga54ajvzy'
   },
   {
