@@ -335,10 +335,7 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj12dvzf9tx2ndc9498aqpkrxgugr3suysqwlmn49'
   },
   {
-    ...symbolMeta.DOJO,
-    logo: 'dojo-bot.png',
-    decimals: 6,
-    name: 'Dojo bot',
+    ...symbolMeta.DOJOBot,
     creator: 'inj1any4rpwq7r850u6feajg5payvhwpunu9cxqevc'
   },
   {

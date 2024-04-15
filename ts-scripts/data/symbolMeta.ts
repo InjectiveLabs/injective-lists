@@ -1375,6 +1375,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'dojo-token'
   },
 
+  DOJOBot: {
+    decimals: 6,
+    symbol: 'DOJO',
+    coinGeckoId: '',
+    name: 'Dojo bot',
+    logo: 'dojo-bot.png'
+  },
+
   PUNK: {
     decimals: 18,
     symbol: 'PUNK',

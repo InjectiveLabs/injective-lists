@@ -7,7 +7,6 @@ on:
 
 jobs:
   generate:
-    if: ${{ !contains(github.event.commits[0].message, 'generate json files') }}
     name: "Regenerate JSON files"
     runs-on: ubuntu-latest
     permissions: write-all
@@ -41,8 +40,7 @@ jobs:
           message: "chore: generate json files"
 
   deploy:
-    if: ${{ !contains(github.event.commits[0].message, 'skip deploy') && !contains(github.event.commits[0].message, 'generate json files') }}
-    needs: generate
+    if: ${{ contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
     name: "Trigger deployments"
     runs-on: ubuntu-latest
     permissions: write-all
