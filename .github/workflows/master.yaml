@@ -40,6 +40,7 @@ jobs:
           message: "chore: generate json files"
 
       - name: Rebuild mito
+        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -48,6 +49,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild bridge (devnet)
+        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -56,9 +58,11 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild bridge (mainnet)
+        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/660d7b9ab0d0ef0b0f685131
 
       - name: Rebuild helix (devnet)
+        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -67,6 +71,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild helix
+        if: "!contains(github.event.commits[0].message, 'skip deploy')"
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml

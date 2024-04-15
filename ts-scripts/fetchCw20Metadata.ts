@@ -44,7 +44,8 @@ const formatCW20Token = ({
   adapterContractAddress: string
 }): Cw20ContractSource => {
   return {
-    name: tokenInfo.name,
+    name:
+      tokenInfo.name || contractInfo.label || untaggedSymbolMeta.Unknown.name,
     logo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
     symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
     decimals: tokenInfo.decimals,
