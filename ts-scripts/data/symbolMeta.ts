@@ -1781,5 +1781,29 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'ddl.png',
     coinGeckoId: '',
     name: 'Discordels Token'
-  }
+  },
+
+  ASG: {
+    decimals: 18,
+    symbol: 'ASG',
+    logo: 'asg.png',
+    coinGeckoId: '',
+    name: 'Ancient Summoners Gem',
+  },
+
+  CLON: {
+    decimals: 6,
+    name: 'CLON',
+    symbol: 'CLON',
+    coinGeckoId: '',
+    logo: 'clon1.png',
+  },
+
+  SPUUN: {
+    decimals: 6,
+    name: 'SPUUN',
+    symbol: 'SPUUN',
+    coinGeckoId: '',
+    logo: 'spuun.png',
+  },
 }

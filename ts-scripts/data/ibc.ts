@@ -391,5 +391,24 @@ export const mainnetTokens: IbcTokenSource[] = [
     hash: 'F16F0F685BEF7BC6A145F16CBE78C6EC8C7C3A5F3066A98A9E57DCEA0903E537',
     baseDenom:
       'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
+  },
+  {
+    ...symbolMeta.CLON,
+    isNative: true,
+    channelId: 'channel-116',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-116',
+    hash: 'ibc/695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795',
+    baseDenom:
+      'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2'
+  },
+  {
+    ...symbolMeta.ASG,
+    decimals: 8,
+    channelId: 'channel-183',
+    source: TokenSource.BinanceSmartChain,
+    path: 'transfer/channel-183',
+    hash: '2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021',
+    baseDenom: 'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3',
   }
 ]
