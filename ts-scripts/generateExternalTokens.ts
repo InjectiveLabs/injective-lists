@@ -11,11 +11,11 @@ import {
   getNetworkFileName,
   tokensToAddressMap
 } from './helper/utils'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
 import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
 import { Token, ApiTokenMetadata } from './types'
-import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
 /* Mainnet only */
 

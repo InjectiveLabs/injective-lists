@@ -7,6 +7,7 @@ import {
 } from '@injectivelabs/sdk-ts'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import { symbolMeta } from './data/symbolMeta'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import { Token } from './types'
 
@@ -17,15 +18,19 @@ import { Token } from './types'
 const LIMIT = 5000
 
 const formatMetadata = (metadata: Metadata) => {
+  const denom = metadata.base
+  const name = denom.startsWith('factory') ? [...denom.split('/')].pop() : denom
+
   return {
+    name,
+    denom,
+    address: denom,
     logo: metadata.uri,
-    name: metadata.name,
-    denom: metadata.base,
-    address: metadata.base,
     symbol: metadata.symbol,
     display: metadata.display,
     description: metadata.description,
-    decimals: metadata.denomUnits.pop()?.exponent || 18
+    decimals:
+      metadata.denomUnits.pop()?.exponent || untaggedSymbolMeta.Unknown.decimals
   }
 }
 

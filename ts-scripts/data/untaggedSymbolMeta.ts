@@ -1,6 +1,6 @@
 export const untaggedSymbolMeta = {
   Unknown: {
-    decimals: 18,
+    decimals: 0,
     symbol: 'Unknown',
     name: 'Unknown',
     logo: 'unknown.png',

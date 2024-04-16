@@ -13,7 +13,7 @@
     "tokens:supply:clean": "ts-node ./generateSupplyTokens --clean",
     "tokens:external:clean": "ts-node ./generateExternalTokens --clean",
     "tokens:generate": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
-    "tokens:generate:flush": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external:clean && yarn tokens:supply:clean && yarn tokens:images && ts-node ./generateTokens"
+    "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external:clean && yarn tokens:supply:clean && yarn tokens:images && ts-node ./generateTokens"
   },
   "keywords": [],
   "author": "",
