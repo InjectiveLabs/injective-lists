@@ -26,6 +26,19 @@
     "externalLogo": "polygon.png"
   },
   {
+    "address": "0x2ef776488739722Ad174F8f2ffE76eb67a8467Eb",
+    "isNative": false,
+    "decimals": 18,
+    "symbol": "ASG",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/107b1ee0-a6a0-4385-dcfe-24e3c58e2d00/public",
+    "coinGeckoId": "",
+    "name": "Ancient Summoners Gem",
+    "denom": "0x2ef776488739722Ad174F8f2ffE76eb67a8467Eb",
+    "tokenType": "evm",
+    "tokenVerification": "verified",
+    "externalLogo": "asg.png"
+  },
+  {
     "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
     "isNative": false,
     "decimals": 18,
@@ -20055,15 +20068,18 @@
     "externalLogo": "https://s2.coinmarketcap.com/static/img/coins/64x64/29717.png"
   },
   {
-    "denom": "factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/spuun",
     "address": "factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/spuun",
-    "symbol": "SPUUN",
-    "name": "SPUUN",
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
+    "isNative": false,
     "decimals": 6,
+    "name": "SPUUN",
+    "symbol": "SPUUN",
+    "coinGeckoId": "",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/b4c5867a-8ff9-4dac-5ed0-04e8fcaef300/public",
+    "creator": "inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7",
+    "denom": "factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/spuun",
     "tokenType": "tokenFactory",
-    "tokenVerification": "external",
-    "externalLogo": "ipfs://bafkreif7vra3nwydwbafv6nbu7wlainhi6b5ewud74w7s5kic2dwmoz3hu"
+    "tokenVerification": "verified",
+    "externalLogo": "spuun.png"
   },
   {
     "denom": "factory/inj1fnpmp99kclt00kst3ht8g0g44erxr5wx6fem9x/MOL",
@@ -26541,20 +26557,22 @@
     "externalLogo": "usdc.png"
   },
   {
-    "denom": "ibc/2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021",
-    "path": "transfer/channel-183",
-    "channelId": "channel-183",
-    "baseDenom": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3",
     "address": "ibc/2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021",
     "isNative": false,
-    "symbol": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3",
-    "name": "Unknown",
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
+    "decimals": 8,
+    "symbol": "ASG",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/107b1ee0-a6a0-4385-dcfe-24e3c58e2d00/public",
     "coinGeckoId": "",
-    "decimals": 0,
+    "name": "Ancient Summoners Gem",
+    "channelId": "channel-183",
+    "source": "binance-smart-chain",
+    "path": "transfer/channel-183",
+    "hash": "2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021",
+    "baseDenom": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3",
+    "denom": "ibc/2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021",
     "tokenType": "ibc",
-    "tokenVerification": "unverified",
-    "externalLogo": "unknown.png"
+    "tokenVerification": "verified",
+    "externalLogo": "asg.png"
   },
   {
     "denom": "ibc/2e93e8914ca07b73a794657da76170a016057d1c6b0dc42d969918d4f22d95a3",
@@ -32857,6 +32875,24 @@
     "tokenType": "ibc",
     "tokenVerification": "verified",
     "externalLogo": "drogo.png"
+  },
+  {
+    "address": "ibc/ibc/695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795",
+    "isNative": true,
+    "decimals": 6,
+    "name": "CLON",
+    "symbol": "CLON",
+    "coinGeckoId": "",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/163dcb77-afbb-4566-5078-eacca5aa5f00/public",
+    "channelId": "channel-116",
+    "source": "cosmos",
+    "path": "transfer/channel-116",
+    "hash": "ibc/695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795",
+    "baseDenom": "cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2",
+    "denom": "ibc/ibc/695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795",
+    "tokenType": "ibc",
+    "tokenVerification": "verified",
+    "externalLogo": "clon1.png"
   },
   {
     "address": "inj",

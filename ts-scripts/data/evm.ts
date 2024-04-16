@@ -13,5 +13,9 @@ export default [
     ...symbolMeta.VATRENI,
     isNative: true,
     address: '0xD60DebA014459F07BBcC077a5B817f31DaFD5229'
+  },
+  {
+    ...symbolMeta.ASG,
+      address: '0x2ef776488739722Ad174F8f2ffE76eb67a8467Eb'
   }
 ]

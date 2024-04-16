@@ -402,5 +402,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.DDL,
     creator: 'inj1put8lfpkwm47tqcl9fgh8grz987mezvrx4arls'
+  },
+  {
+    ...symbolMeta.SPUUN,
+    creator: 'inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7'
   }
 ]
