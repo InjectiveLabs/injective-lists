@@ -37,11 +37,18 @@ jobs:
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
+        if: ${{ !contains(github.event.commits[0].message, 'skip deploy') }}
         with:
           message: "chore: generate json files"
 
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        if: ${{ contains(github.event.commits[0].message, 'skip deploy') }}
+        with:
+          message: "chore: generate json files - skip deploy"
+
   deploy:
-    if: ${{ contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
+    if: ${{ contains(github.event.commits[0].message, 'generate json files') }}
     name: "Trigger deployments"
     runs-on: ubuntu-latest
     permissions: write-all
