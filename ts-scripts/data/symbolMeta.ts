@@ -9,14 +9,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'wrapped-bitcoin'
   },
 
-  ETH: {
-    decimals: 18,
-    symbol: 'ETH',
-    name: 'Ethereum',
-    logo: 'ethereum.png',
-    coinGeckoId: 'ethereum'
-  },
-
   wEth: {
     decimals: 18,
     symbol: 'wETH',
@@ -1788,7 +1780,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ASG',
     logo: 'asg.png',
     coinGeckoId: '',
-    name: 'Ancient Summoners Gem',
+    name: 'Ancient Summoners Gem'
   },
 
   CLON: {
@@ -1796,7 +1788,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'CLON',
     symbol: 'CLON',
     coinGeckoId: '',
-    logo: 'clon1.png',
+    logo: 'clon1.png'
   },
 
   SPUUN: {
@@ -1804,6 +1796,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'SPUUN',
     symbol: 'SPUUN',
     coinGeckoId: '',
-    logo: 'spuun.png',
-  },
+    logo: 'spuun.png'
+  }
 }

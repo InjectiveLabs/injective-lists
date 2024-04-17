@@ -15,6 +15,14 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'bitcoin'
   },
 
+  ETH: {
+    decimals: 18,
+    symbol: 'ETH',
+    name: 'Ethereum',
+    logo: 'ethereum.png',
+    coinGeckoId: 'ethereum'
+  },
+
   BAYC: {
     decimals: 18,
     symbol: 'BAYC',
