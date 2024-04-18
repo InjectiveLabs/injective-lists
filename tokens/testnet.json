@@ -22727,7 +22727,7 @@
     "address": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
     "isNative": true,
     "decimals": 6,
-    "symbol": "USDT",
+    "symbol": "USDTkv",
     "name": "Tether",
     "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/2d38ee9a-2df1-4dd0-155b-11404014bc00/public",
     "coinGeckoId": "tether",
@@ -22745,7 +22745,7 @@
     "address": "ibc/4DEFEB42BAAB2788723759D95B7550BCE460855563ED977036248F5B94C842FC",
     "isNative": false,
     "decimals": 8,
-    "symbol": "WMATICgw",
+    "symbol": "WMATIC",
     "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/0d061e1e-a746-4b19-1399-8187b8bb1700/public",
     "name": "Wrapped Matic",
     "coinGeckoId": "wmatic",
@@ -22981,7 +22981,7 @@
     "address": "ibc/8CF0E4184CA3105798EDB18CAA3981ADB16A9951FE9B05C6D830C746202747E1",
     "isNative": false,
     "decimals": 8,
-    "symbol": "ARBgw",
+    "symbol": "ARB",
     "name": "Arbitrum",
     "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/41913aa5-0216-43b2-2739-145f53bd9200/public",
     "coinGeckoId": "arbitrum",
@@ -24363,19 +24363,6 @@
     "externalLogo": "jup.jpeg"
   },
   {
-    "address": "omni",
-    "isNative": false,
-    "decimals": 18,
-    "name": "Omni Network",
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/ed4c9589-216d-4183-47e4-09710a62cd00/public",
-    "symbol": "OMNI",
-    "coinGeckoId": "omni-network",
-    "tokenType": "symbol",
-    "denom": "omni",
-    "tokenVerification": "verified",
-    "externalLogo": "omni.png"
-  },
-  {
     "address": "op",
     "isNative": false,
     "decimals": 18,
@@ -24672,6 +24659,19 @@
     "tokenType": "erc20",
     "tokenVerification": "verified",
     "externalLogo": "injective-v3.png"
+  },
+  {
+    "address": "0x36e66fbbce51e4cd5bd3c62b637eb411b18949d4",
+    "isNative": false,
+    "decimals": 18,
+    "name": "Omni Network",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/ed4c9589-216d-4183-47e4-09710a62cd00/public",
+    "symbol": "OMNI",
+    "coinGeckoId": "omni-network",
+    "denom": "peggy0x36e66fbbce51e4cd5bd3c62b637eb411b18949d4",
+    "tokenType": "erc20",
+    "tokenVerification": "verified",
+    "externalLogo": "omni.png"
   },
   {
     "address": "0x3c03b4ec9477809072ff9cc9292c9b25d4a8e6c6",
