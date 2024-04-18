@@ -5,7 +5,11 @@ import {
   ChainGrpcBankApi,
   ChainGrpcInsuranceFundApi
 } from '@injectivelabs/sdk-ts'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import {
+  TokenType,
+  TokenVerification,
+  isCw20ContractAddress
+} from '@injectivelabs/token-metadata'
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
@@ -19,12 +23,14 @@ const LIMIT = 5000
 
 const formatMetadata = (metadata: Metadata) => {
   const denom = metadata.base
-  const name = denom.startsWith('factory') ? [...denom.split('/')].pop() : denom
+  const name = denom.startsWith('factory')
+    ? [...denom.split('/')].pop() || denom
+    : denom
 
   return {
     name,
     denom,
-    address: denom,
+    address: isCw20ContractAddress(name) ? name : denom,
     logo: metadata.uri,
     symbol: metadata.symbol,
     display: metadata.display,

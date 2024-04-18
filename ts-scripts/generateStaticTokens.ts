@@ -1,8 +1,9 @@
+import { Network } from '@injectivelabs/networks'
 import {
-  Network,
-  getCw20AdapterContractForNetwork
-} from '@injectivelabs/networks'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+  TokenType,
+  TokenStatic,
+  TokenVerification
+} from '@injectivelabs/token-metadata'
 import splTokens from './data/spl'
 import evmTokens from './data/evm'
 import {
@@ -27,6 +28,7 @@ import {
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
+import { getCw20TokenMetadata } from './helper/getter'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -50,23 +52,56 @@ const formatIbcTokens = (tokens: IbcTokenSource[]) =>
     tokenType: TokenType.Ibc
   }))
 
-const formatTokenFactoryTokens = (tokens: TokenFactorySource[]) =>
-  tokens.map((token) => ({
-    ...token,
-    denom: `factory/${token.creator}/${token.symbol.toLowerCase()}`,
-    tokenType: TokenType.TokenFactory
-  }))
+const formatTokenFactoryTokens = (
+  tokens: TokenFactorySource[],
+  network: Network
+) => {
+  return tokens.reduce((list, token) => {
+    const denom = `factory/${token.creator}/${token.symbol.toLowerCase()}`
 
-const formatCw20Tokens = (
-  tokens: Cw20TokenSource[],
-  adapterContractAddress: string
-) =>
-  tokens.map((token) => ({
-    ...token,
-    address: token.address,
-    denom: `factory/${adapterContractAddress}/${token.address}`,
-    tokenType: TokenType.Cw20
-  }))
+    const existingFactoryToken = getCw20TokenMetadata(denom, network)
+
+    list.push({
+      ...token,
+      address: existingFactoryToken?.denom || denom,
+      denom: existingFactoryToken?.denom || denom,
+      tokenType: TokenType.TokenFactory,
+      tokenVerification: TokenVerification.Verified
+    })
+
+    return list
+  }, [] as TokenStatic[])
+}
+
+const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
+  return tokens.reduce((list, token) => {
+    list.push({
+      ...token,
+      address: token.address,
+      denom: token.address,
+      tokenType: TokenType.Cw20,
+      tokenVerification: TokenVerification.Verified
+    })
+
+    const existingFactoryToken = getCw20TokenMetadata(
+      token.address.toLowerCase(),
+      network
+    )
+
+    if (existingFactoryToken) {
+      list.push({
+        ...token,
+        denom: existingFactoryToken.denom,
+        address: token.address,
+        tokenType: TokenType.TokenFactory,
+        tokenVerification: TokenVerification.Internal,
+        decimals: existingFactoryToken.decimals || token.decimals
+      })
+    }
+
+    return list
+  }, [] as TokenStatic[])
+}
 
 const formatSplTokens = (tokens: PeggyTokenSource[]) =>
   tokens.map((token) => ({
@@ -107,18 +142,21 @@ const getDevnetStaticTokenList = () => {
     ...formatIbcTokens([...ibcTestnetTokens, ...ibcMainnetTokens]),
     ...formatCw20Tokens(
       [...cw20DevnetTokens, ...cw20TestnetTokens, ...cw20MainnetTokens],
-      getCw20AdapterContractForNetwork(Network.Devnet)
+      Network.Devnet
     ),
     ...formatErc20Tokens([
       ...erc20DevnetTokens,
       ...erc20TestnetTokens,
       ...erc20MainnetTokens
     ]),
-    ...formatTokenFactoryTokens([
-      ...tokenFactoryDevnetTokens,
-      ...tokenFactoryTestnetTokens,
-      ...tokenFactoryMainnetTokens
-    ])
+    ...formatTokenFactoryTokens(
+      [
+        ...tokenFactoryDevnetTokens,
+        ...tokenFactoryTestnetTokens,
+        ...tokenFactoryMainnetTokens
+      ],
+      Network.Devnet
+    )
   ]
 }
 
@@ -129,18 +167,21 @@ const getTestnetStaticTokenList = () => {
     ...formatIbcTokens([...ibcTestnetTokens, ...ibcMainnetTokens]),
     ...formatCw20Tokens(
       [...cw20TestnetTokens, ...cw20DevnetTokens, ...cw20MainnetTokens],
-      getCw20AdapterContractForNetwork(Network.Testnet)
+      Network.Testnet
     ),
     ...formatErc20Tokens([
       ...erc20TestnetTokens,
       ...erc20DevnetTokens,
       ...erc20MainnetTokens
     ]),
-    ...formatTokenFactoryTokens([
-      ...tokenFactoryTestnetTokens,
-      ...tokenFactoryDevnetTokens,
-      ...tokenFactoryMainnetTokens
-    ])
+    ...formatTokenFactoryTokens(
+      [
+        ...tokenFactoryTestnetTokens,
+        ...tokenFactoryDevnetTokens,
+        ...tokenFactoryMainnetTokens
+      ],
+      Network.TestnetSentry
+    )
   ]
 }
 
@@ -151,10 +192,13 @@ const getMainnetStaticTokenList = () => {
     ...formatIbcTokens(ibcMainnetTokens),
     ...formatCw20Tokens(
       [...cw20MainnetTokens, ...cw20TestnetTokens],
-      getCw20AdapterContractForNetwork(Network.Mainnet)
+      Network.MainnetSentry
     ),
     ...formatErc20Tokens(erc20MainnetTokens),
-    ...formatTokenFactoryTokens(tokenFactoryMainnetTokens)
+    ...formatTokenFactoryTokens(
+      tokenFactoryMainnetTokens,
+      Network.MainnetSentry
+    )
   ]
 }
 

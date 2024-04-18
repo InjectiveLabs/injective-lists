@@ -4,17 +4,16 @@ import { isCw20ContractAddress } from '@injectivelabs/token-metadata'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
-  getTokenType,
   getDenomTrace,
   updateJSONFile,
   tokensToDenomMap,
-  getNetworkFileName,
+  tokenToAddressMap,
   tokensToAddressMap
 } from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
-import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
+import { getInsuranceFundToken } from './helper/getter'
 import { Token, ApiTokenMetadata } from './types'
 
 /* Mainnet only */
@@ -37,10 +36,16 @@ const externalTokenMetadataApi = new HttpRestClient(
 const externalIbcTokens = existingExternalTokens.filter(
   (token: Token) => token.tokenType === TokenType.Ibc
 )
+const cw20Tokens = existingExternalTokens.filter((token: Token) =>
+  [TokenType.Cw20, TokenType.TokenFactory].includes(
+    token.tokenType as TokenType
+  )
+)
 
 const staticTokensMap = tokensToDenomMap(staticTokens)
 const existingIbcTokensMap = tokensToDenomMap(externalIbcTokens)
-const staticTokensAddressMap = tokensToAddressMap(staticTokens)
+const staticTokensAddressMap = tokenToAddressMap(staticTokens)
+const existingCw20TokensMap = tokensToAddressMap(cw20Tokens)
 
 const formatApiTokenMetadata = async (
   tokenMetadata: ApiTokenMetadata[]
@@ -53,15 +58,8 @@ const formatApiTokenMetadata = async (
 
   const externalTokens = [] as any
 
-  const existingCW20TokensMap = readJSONFile({
-    path: `tokens/cw20Tokens/${getNetworkFileName(Network.MainnetSentry)}.json`,
-    fallback: {}
-  })
-
   for (const tokenMetadata of filteredTokenMetadata) {
     const denom = tokenMetadata.contractAddr.toLowerCase()
-
-    const bankMetadata = getChainTokenMetadata(denom, Network.MainnetSentry)
 
     if (!shouldFlush) {
       // script optimization: use cached denomTrace data
@@ -98,37 +96,24 @@ const formatApiTokenMetadata = async (
     }
 
     if (isCw20ContractAddress(denom)) {
-      const existingCW20Token = existingCW20TokensMap[denom.toLowerCase()]
+      const existingCw20Tokens = existingCw20TokensMap[denom.toLowerCase()]
 
-      if (existingCW20Token && !shouldFlush) {
-        externalTokens.push(existingCW20Token)
+      if (!shouldFlush && existingCw20Tokens) {
+        externalTokens.push(...existingCw20Tokens)
 
         continue
       }
 
-      const cw20Token = await fetchCw20ContractMetaData(
+      const cw20Tokens = await fetchCw20ContractMetaData(
         denom,
         Network.MainnetSentry
       )
 
-      if (cw20Token) {
-        externalTokens.push(cw20Token)
+      if (cw20Tokens && cw20Tokens.length > 0) {
+        externalTokens.push(...cw20Tokens)
 
         continue
-      } else {
-        console.log(`cw20 contract ${denom} not found`)
       }
-    }
-
-    const meta = {
-      denom,
-      address: denom,
-      symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
-      name: tokenMetadata.name || bankMetadata?.name,
-      logo: tokenMetadata.imageUrl || bankMetadata?.logo,
-      decimals: tokenMetadata.decimals || bankMetadata?.decimals,
-      tokenType: getTokenType(denom),
-      tokenVerification: TokenVerification.External
     }
 
     if (denom.startsWith('ibc/')) {
@@ -139,7 +124,12 @@ const formatApiTokenMetadata = async (
       )
 
       externalTokens.push({
-        ...meta,
+        address: denom,
+        symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
+        name: tokenMetadata.name,
+        logo: tokenMetadata.imageUrl,
+        decimals: tokenMetadata.decimals,
+        tokenVerification: TokenVerification.External,
         path,
         denom,
         baseDenom,
@@ -150,8 +140,6 @@ const formatApiTokenMetadata = async (
 
       continue
     }
-
-    externalTokens.push(meta)
   }
 
   return externalTokens

@@ -7,7 +7,7 @@ import {
   isTestnet,
   getNetworkEndpoints
 } from '@injectivelabs/networks'
-import { TokenType } from '@injectivelabs/token-metadata'
+import { TokenType, isCw20ContractAddress } from '@injectivelabs/token-metadata'
 import { untaggedSymbolMeta } from '../data/untaggedSymbolMeta'
 import { Token, BankMetadata } from '../types'
 
@@ -73,14 +73,12 @@ export const getTokenType = (denom: string): TokenType => {
     return TokenType.Ibc
   }
 
+  if (isCw20ContractAddress(denom)) {
+    return TokenType.Cw20
+  }
+
   if (denom.startsWith('factory')) {
-    const subDenom = denom.split('/').pop()
-
-    if (!subDenom) {
-      return TokenType.Unknown
-    }
-
-    return subDenom.startsWith('inj') ? TokenType.Cw20 : TokenType.TokenFactory
+    return TokenType.TokenFactory
   }
 
   return TokenType.Unknown
@@ -118,7 +116,7 @@ export const tokensToDenomMap = (tokens: Token[]) => {
   }, {} as Record<string, Token>)
 }
 
-export const tokensToAddressMap = (tokens: Token[]) => {
+export const tokenToAddressMap = (tokens: Token[]) => {
   return tokens.reduce((list, token) => {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
 
@@ -134,6 +132,22 @@ export const tokensToAddressMap = (tokens: Token[]) => {
   }, {} as Record<string, Token>)
 }
 
+export const tokensToAddressMap = (tokens: Token[]) => {
+  return tokens.reduce((list, token) => {
+    const formattedDenom = (token?.address || token.denom).toLowerCase()
+
+    if (!list[formattedDenom]) {
+      list[formattedDenom] = [token]
+
+      return list
+    }
+
+    list[formattedDenom] = [...list[formattedDenom], token]
+
+    return list
+  }, {} as Record<string, Token[]>)
+}
+
 export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
   return metadatas.reduce((list, metadata) => {
     const formattedDenom = metadata.denom.toLowerCase()
@@ -145,6 +159,31 @@ export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
     }
 
     list[formattedDenom] = { ...list[formattedDenom], ...metadata }
+
+    return list
+  }, {} as Record<string, BankMetadata>)
+}
+
+export const bankMetadataToCw20DenomMap = (metadatas: BankMetadata[]) => {
+  return metadatas.reduce((list, metadata) => {
+    const formattedDenom = metadata.denom.toLowerCase()
+    const contractAddress = formattedDenom.split('/').pop()
+
+    if (!contractAddress) {
+      return list
+    }
+
+    const identifier = isCw20ContractAddress(contractAddress)
+      ? contractAddress
+      : formattedDenom
+
+    if (!list[identifier]) {
+      list[identifier] = metadata
+
+      return list
+    }
+
+    list[identifier] = { ...list[identifier], ...metadata }
 
     return list
   }, {} as Record<string, BankMetadata>)

@@ -1,11 +1,10 @@
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
+  TokenStatic,
   TokenType,
-  TokenVerification,
-  isCw20ContractAddress
+  TokenVerification
 } from '@injectivelabs/token-metadata'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
 import {
   readJSONFile,
   getTokenType,
@@ -15,8 +14,8 @@ import {
   getNetworkFileName
 } from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { getChainTokenMetadata, getInsuranceFundToken } from './helper/getter'
-import { Token } from './types'
+import { getInsuranceFundToken, getCw20TokenMetadata } from './helper/getter'
+import { BankMetadata, Token } from './types'
 
 // refetch ibc denom trace
 const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
@@ -45,6 +44,21 @@ const testnetStaticTokensMap = tokensToDenomMap(
 const devnetIbcSupplyTokensMap = tokensToDenomMap(devnetIbcSupplyTokens)
 const testnetIbcSupplyTokensMap = tokensToDenomMap(testnetIbcSupplyTokens)
 const mainnetIbcSupplyTokensMap = tokensToDenomMap(mainnetIbcSupplyTokens)
+
+const formatFactoryToken = (bankMetadata: BankMetadata): TokenStatic => {
+  return {
+    coinGeckoId: '',
+    name: bankMetadata.name,
+    denom: bankMetadata.denom,
+    address: bankMetadata.denom,
+    decimals: bankMetadata.decimals || untaggedSymbolMeta.Unknown.decimals,
+    symbol: bankMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
+    logo: untaggedSymbolMeta.Unknown.logo,
+    externalLogo: bankMetadata.logo || untaggedSymbolMeta.Unknown.logo,
+    tokenType: TokenType.TokenFactory,
+    tokenVerification: TokenVerification.Internal
+  }
+}
 
 export const generateSupplyToken = async (network: Network) => {
   let supplyDenoms = readJSONFile({
@@ -92,25 +106,23 @@ export const generateSupplyToken = async (network: Network) => {
       }
 
       if (denom.startsWith('factory')) {
-        const cwContractAddress = denom.split('/').pop()
+        const existingFactoryToken = getCw20TokenMetadata(denom, network)
 
-        if (cwContractAddress && isCw20ContractAddress(cwContractAddress)) {
-          const existingCW20Token =
-            existingCW20TokensMap[cwContractAddress.toLowerCase()]
+        if (existingFactoryToken) {
+          supplyTokens.push(formatFactoryToken(existingFactoryToken))
 
-          if (existingCW20Token) {
-            supplyTokens.push(existingCW20Token)
+          continue
+        } else {
+          supplyTokens.push({
+            ...untaggedSymbolMeta.Unknown,
+            denom,
+            address: denom,
+            isNative: false,
+            tokenType: getTokenType(denom),
+            tokenVerification: TokenVerification.Unverified
+          })
 
-            continue
-          }
-
-          const cw20Token = await fetchCw20ContractMetaData(denom, network)
-
-          if (cw20Token) {
-            supplyTokens.push(cw20Token)
-
-            continue
-          }
+          continue
         }
       }
 
@@ -161,21 +173,6 @@ export const generateSupplyToken = async (network: Network) => {
 
         continue
       }
-
-      const bankMetadata = getChainTokenMetadata(denom, network)
-
-      supplyTokens.push({
-        denom: denom,
-        address: denom,
-        isNative: false,
-        symbol: bankMetadata?.symbol || untaggedSymbolMeta.Unknown.symbol,
-        coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-        name: bankMetadata?.name || untaggedSymbolMeta.Unknown.name,
-        logo: bankMetadata?.logo || untaggedSymbolMeta.Unknown.logo,
-        decimals: bankMetadata?.decimals || untaggedSymbolMeta.Unknown.decimals,
-        tokenType: getTokenType(denom),
-        tokenVerification: TokenVerification.Unverified
-      })
     }
 
     const filteredTokens = [...supplyTokens].filter(({ denom }) => denom)

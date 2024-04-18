@@ -10,17 +10,21 @@ import {
   Network,
   isDevnet,
   isTestnet,
-  getNetworkEndpoints,
-  getCw20AdapterContractForNetwork
+  getNetworkEndpoints
 } from '@injectivelabs/networks'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
-import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import {
+  TokenStatic,
+  TokenType,
+  TokenVerification
+} from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
-import { Cw20ContractSource } from './types'
+import { getCw20TokenMetadata } from './helper/getter'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import { Cw20ContractSource, BankMetadata } from './types'
 
 const mainnetWasmApi = new ChainGrpcWasmApi(
   getNetworkEndpoints(Network.MainnetSentry).grpc
@@ -30,18 +34,44 @@ const testnetWasmApi = new ChainGrpcWasmApi(
   getNetworkEndpoints(Network.TestnetSentry).grpc
 )
 
+const formatCw20FactoryToken = ({
+  address,
+  tokenInfo,
+  marketingInfo,
+  bankMetaData
+}: {
+  address: string
+  tokenInfo: TokenInfo
+  bankMetaData: BankMetadata
+  marketingInfo?: MarketingInfo
+}): TokenStatic => {
+  return {
+    coinGeckoId: '',
+    address,
+    name: tokenInfo.name || bankMetaData.name,
+    denom: bankMetaData.denom,
+    decimals: bankMetaData.decimals || tokenInfo.decimals,
+    logo: untaggedSymbolMeta.Unknown.logo,
+    symbol:
+      tokenInfo.symbol ||
+      bankMetaData.symbol ||
+      untaggedSymbolMeta.Unknown.symbol,
+    externalLogo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
+    tokenType: TokenType.TokenFactory,
+    tokenVerification: TokenVerification.Internal
+  }
+}
+
 const formatCW20Token = ({
   address,
   tokenInfo,
   contractInfo,
-  marketingInfo,
-  adapterContractAddress
+  marketingInfo
 }: {
   address: string
   tokenInfo: TokenInfo
   marketingInfo?: MarketingInfo
   contractInfo: ContractInfo
-  adapterContractAddress: string
 }): Cw20ContractSource => {
   return {
     name:
@@ -50,7 +80,7 @@ const formatCW20Token = ({
     symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
     decimals: tokenInfo.decimals,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-    denom: `factory/${adapterContractAddress}/${address}`,
+    denom: address,
     address,
     tokenType: TokenType.Cw20,
     tokenVerification: TokenVerification.Internal,
@@ -77,11 +107,23 @@ export const fetchCw20ContractMetaData = async (
       path: `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
       fallback: {}
     })
-    const existingCW20Token = existingCW20TokensMap[denom.toLowerCase()]
 
-    if (existingCW20Token) {
-      return existingCW20Token
-    }
+    const bankCw20FactoryToken = getCw20TokenMetadata(
+      address,
+      Network.MainnetSentry
+    )
+
+    const cachedCw20FactoryToken =
+      existingCW20TokensMap[(bankCw20FactoryToken?.denom || '').toLowerCase()]
+    const cachedCw20Token = existingCW20TokensMap[denom.toLowerCase()]
+
+    // if (cachedCw20Token && !bankCw20FactoryToken) {
+    //   return [cachedCw20Token]
+    // }
+
+    // if (cachedCw20Token && cachedCw20FactoryToken) {
+    //   return [cachedCw20Token, cachedCw20FactoryToken]
+    // }
 
     const wasmApi = isTestnet(network) ? testnetWasmApi : mainnetWasmApi
 
@@ -114,25 +156,37 @@ export const fetchCw20ContractMetaData = async (
       return
     }
 
-    const adapterContractAddress = getCw20AdapterContractForNetwork(network)
-
+    let formattedCw20FactoryToken = undefined
     const formattedToken = formatCW20Token({
       address,
-      adapterContractAddress,
       contractInfo: contractInfoResponse,
       tokenInfo: contractStateResponse.tokenInfo,
       marketingInfo: contractStateResponse.marketingInfo
     })
 
+    const updateMap = {
+      ...existingCW20TokensMap,
+      [address.toLowerCase()]: formattedToken
+    }
+
+    if (bankCw20FactoryToken) {
+      formattedCw20FactoryToken = formatCw20FactoryToken({
+        address,
+        bankMetaData: bankCw20FactoryToken,
+        tokenInfo: contractStateResponse.tokenInfo,
+        marketingInfo: contractStateResponse.marketingInfo
+      })
+
+      updateMap[formattedCw20FactoryToken.address.toLowerCase()] =
+        formattedCw20FactoryToken
+    }
+
     await updateJSONFile(
       `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
-      {
-        ...existingCW20TokensMap,
-        [address.toLowerCase()]: formattedToken
-      }
+      updateMap
     )
 
-    return formattedToken
+    return [formattedToken, formattedCw20FactoryToken].filter((token) => token)
   } catch (e) {
     console.log(`Error fetching cw20 contract state ${network} ${denom}:`, e)
   }
