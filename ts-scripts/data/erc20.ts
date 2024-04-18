@@ -371,5 +371,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ENA,
     address: '0x57e114b691db790c35207b2e685d4a43181e6061'
-  }
+  },
+  {
+    ...symbolMeta.OMNI,
+    address: '0x36e66fbbce51e4cd5bd3c62b637eb411b18949d4'
+  },
 ]

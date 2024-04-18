@@ -150,12 +150,4 @@ export const untaggedSymbolMeta = {
     logo: 'dogecoin.webp',
     coinGeckoId: 'dogecoin'
   },
-
-  OMNI: {
-    decimals: 18,
-    name: 'Omni Network',
-    logo: 'omni.png',
-    symbol: 'OMNI',
-    coinGeckoId: 'omni-network'
-  }
 }
