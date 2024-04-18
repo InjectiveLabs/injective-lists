@@ -44,7 +44,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         if: ${{ contains(github.event.commits[0].message, 'skip deploy') }}
-      with:e
+        with:
           message: "chore: generate json files - skip deploy"
 
   deploy:
