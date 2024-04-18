@@ -17,6 +17,7 @@ export const testnetTokens: IbcTokenSource[] = [
 export const mainnetTokens: IbcTokenSource[] = [
   {
     ...symbolMeta.USDT,
+    symbol: 'USDTkv',
     isNative: true,
     channelId: 'channel-143',
     source: TokenSource.Cosmos,
@@ -235,7 +236,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   {
     ...symbolMeta.ARB,
     decimals: 8,
-    symbol: 'ARBgw',
+    symbol: 'ARB',
     channelId: 'channel-183',
     path: 'transfer/channel-183',
     source: TokenSource.Arbitrum,
@@ -245,7 +246,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.WMATIC,
-    symbol: 'WMATICgw',
+    symbol: 'WMATIC',
     decimals: 8,
     channelId: 'channel-183',
     source: TokenSource.Polygon,

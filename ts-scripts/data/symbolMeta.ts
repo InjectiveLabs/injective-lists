@@ -1797,5 +1797,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SPUUN',
     coinGeckoId: '',
     logo: 'spuun.png'
+  },
+
+  OMNI: {
+    decimals: 18,
+    name: 'Omni Network',
+    logo: 'omni.png',
+    symbol: 'OMNI',
+    coinGeckoId: 'omni-network'
   }
 }
