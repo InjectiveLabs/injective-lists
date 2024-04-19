@@ -376,4 +376,8 @@ export const mainnetTokens = [
     ...symbolMeta.OMNI,
     address: '0x36e66fbbce51e4cd5bd3c62b637eb411b18949d4'
   },
+  {
+    ...symbolMeta.SUSDE,
+    address: '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'
+  },
 ]
