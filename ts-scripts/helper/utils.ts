@@ -13,19 +13,17 @@ import { Token, BankMetadata } from '../types'
 
 export const getDenomTrace = async (
   hash: string,
-  network: Network,
-  symbol?: string
-): Promise<{
-  path: string
-  baseDenom: string
-  channelId: string
-}> => {
-  if (!hash.startsWith('ibc/')) {
-    return {
-      path: '',
-      channelId: '',
-      baseDenom: symbol || untaggedSymbolMeta.Unknown.symbol
+  network: Network
+): Promise<
+  | {
+      path: string
+      baseDenom: string
+      channelId: string
     }
+  | undefined
+> => {
+  if (!hash.startsWith('ibc/')) {
+    return
   }
 
   const endpoints = getNetworkEndpoints(network)
@@ -52,11 +50,7 @@ export const getDenomTrace = async (
   } catch (e) {
     console.error(`Failed to fetch denom trace for hash: ${hash}`, e)
 
-    return {
-      path: '',
-      channelId: '',
-      baseDenom: symbol || untaggedSymbolMeta.Unknown.symbol
-    }
+    return
   }
 }
 

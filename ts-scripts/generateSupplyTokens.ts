@@ -83,11 +83,6 @@ export const generateSupplyToken = async (network: Network) => {
     existingIbcTokensMap = mainnetIbcSupplyTokensMap
   }
 
-  const existingCW20TokensMap = readJSONFile({
-    path: `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
-    fallback: {}
-  })
-
   try {
     const filteredDenoms = supplyDenoms.filter(
       (denom: string) => !existingStaticTokensMap[denom.toLowerCase()]
@@ -150,25 +145,24 @@ export const generateSupplyToken = async (network: Network) => {
       }
 
       if (denom.startsWith('ibc/')) {
-        const { path, channelId, baseDenom } = await getDenomTrace(
-          denom,
-          network
-        )
+        const denomTrace = await getDenomTrace(denom, network)
 
         supplyTokens.push({
           denom,
-          path,
-          channelId,
-          baseDenom,
+          path: denomTrace?.path || '',
+          channelId: denomTrace?.channelId || '',
+          baseDenom: denomTrace?.baseDenom || untaggedSymbolMeta.Unknown.symbol,
           address: denom,
           isNative: false,
-          symbol: baseDenom,
+          symbol: denomTrace?.baseDenom || untaggedSymbolMeta.Unknown.symbol,
           name: untaggedSymbolMeta.Unknown.name,
           logo: untaggedSymbolMeta.Unknown.logo,
           coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
           decimals: untaggedSymbolMeta.Unknown.decimals,
           tokenType: TokenType.Ibc,
-          tokenVerification: TokenVerification.Unverified
+          tokenVerification: denomTrace
+            ? TokenVerification.External
+            : TokenVerification.Unverified
         })
 
         continue
@@ -188,6 +182,6 @@ export const generateSupplyToken = async (network: Network) => {
   }
 }
 
-generateSupplyToken(Network.Devnet)
-generateSupplyToken(Network.MainnetSentry)
+// generateSupplyToken(Network.Devnet)
+// generateSupplyToken(Network.MainnetSentry)
 generateSupplyToken(Network.TestnetSentry)

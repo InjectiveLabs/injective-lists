@@ -117,11 +117,7 @@ const formatApiTokenMetadata = async (
     }
 
     if (denom.startsWith('ibc/')) {
-      const { path, channelId, baseDenom } = await getDenomTrace(
-        denom,
-        Network.MainnetSentry,
-        tokenMetadata.symbol
-      )
+      const denomTrace = await getDenomTrace(denom, Network.MainnetSentry)
 
       externalTokens.push({
         address: denom,
@@ -129,11 +125,13 @@ const formatApiTokenMetadata = async (
         name: tokenMetadata.name,
         logo: tokenMetadata.imageUrl,
         decimals: tokenMetadata.decimals,
-        tokenVerification: TokenVerification.External,
-        path,
+        tokenVerification: denomTrace
+          ? TokenVerification.External
+          : TokenVerification.Unverified,
         denom,
-        baseDenom,
-        channelId,
+        path: denomTrace?.path || '',
+        baseDenom: denomTrace?.baseDenom || tokenMetadata.symbol,
+        channelId: denomTrace?.channelId || '',
         tokenType: TokenType.Ibc,
         hash: denom.replace('ibc/', '')
       })

@@ -117,13 +117,13 @@ export const fetchCw20ContractMetaData = async (
       existingCW20TokensMap[(bankCw20FactoryToken?.denom || '').toLowerCase()]
     const cachedCw20Token = existingCW20TokensMap[denom.toLowerCase()]
 
-    // if (cachedCw20Token && !bankCw20FactoryToken) {
-    //   return [cachedCw20Token]
-    // }
+    if (cachedCw20Token && !bankCw20FactoryToken) {
+      return [cachedCw20Token]
+    }
 
-    // if (cachedCw20Token && cachedCw20FactoryToken) {
-    //   return [cachedCw20Token, cachedCw20FactoryToken]
-    // }
+    if (cachedCw20Token && cachedCw20FactoryToken) {
+      return [cachedCw20Token, cachedCw20FactoryToken]
+    }
 
     const wasmApi = isTestnet(network) ? testnetWasmApi : mainnetWasmApi
 
