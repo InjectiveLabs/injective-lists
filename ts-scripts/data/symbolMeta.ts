@@ -1805,5 +1805,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'omni.png',
     symbol: 'OMNI',
     coinGeckoId: 'omni-network'
+  },
+
+  SUSDE: {
+    decimals: 18,
+    name: 'Staked USDe',
+    logo: 'staked-usde.webp',
+    symbol: 'sUSDE',
+    coinGeckoId: 'ethena-staked-usde',
   }
 }

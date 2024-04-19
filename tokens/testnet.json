@@ -20775,6 +20775,18 @@
   },
   {
     "coinGeckoId": "",
+    "name": "mysubdenom",
+    "denom": "factory/inj1wazq0k74kqmll9kzzhy300tc7slxn4t2py2pz9/mysubdenom",
+    "address": "factory/inj1wazq0k74kqmll9kzzhy300tc7slxn4t2py2pz9/mysubdenom",
+    "decimals": 6,
+    "symbol": "MBS",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "name": "position",
     "denom": "factory/inj1wcgxfkevadmdvrnfj6arpm0dulaap778gdfydy/position",
     "address": "factory/inj1wcgxfkevadmdvrnfj6arpm0dulaap778gdfydy/position",
@@ -23236,6 +23248,22 @@
     "externalLogo": "luna.png"
   },
   {
+    "denom": "ibc/B8F94CEDA547914DC365232034474E8AFE503304BDE91D281C3AB5024060A491",
+    "path": "transfer/channel-630/transfer/channel-4280",
+    "channelId": "channel-4280",
+    "baseDenom": "uusdc",
+    "address": "ibc/B8F94CEDA547914DC365232034474E8AFE503304BDE91D281C3AB5024060A491",
+    "isNative": false,
+    "symbol": "uusdc",
+    "name": "Unknown",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
+    "coinGeckoId": "",
+    "decimals": 0,
+    "tokenType": "ibc",
+    "tokenVerification": "external",
+    "externalLogo": "unknown.png"
+  },
+  {
     "denom": "ibc/BE8B9A10C7F6E014F617E4C883D24A8E34A4399C2E18D583DD9506CEADF0D7E5",
     "path": "transfer/channel-30",
     "channelId": "channel-30",
@@ -25317,6 +25345,19 @@
     "tokenType": "erc20",
     "tokenVerification": "verified",
     "externalLogo": "polygon.png"
+  },
+  {
+    "address": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+    "isNative": false,
+    "decimals": 18,
+    "name": "Staked USDe",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/721d8f3e-4414-46f3-d68e-318e7c79bd00/public",
+    "symbol": "sUSDE",
+    "coinGeckoId": "ethena-staked-usde",
+    "denom": "peggy0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+    "tokenType": "erc20",
+    "tokenVerification": "verified",
+    "externalLogo": "staked-usde.webp"
   },
   {
     "address": "0x9D433Fa992C5933D6843f8669019Da6D512fd5e9",
