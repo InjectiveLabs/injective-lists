@@ -100,6 +100,20 @@ export const getNetworkFileName = (network: Network) => {
   return 'devnet'
 }
 
+export const denomsToDenomMap = (denoms: string[]) => {
+  return denoms.reduce((list, denom) => {
+    const formattedDenom = denom.toLowerCase()
+
+    if (!list[formattedDenom]) {
+      list[formattedDenom] = denom
+
+      return list
+    }
+
+    return list
+  }, {} as Record<string, string>)
+}
+
 export const tokensToDenomMap = (tokens: Token[]) => {
   return tokens.reduce((list, token) => {
     const formattedDenom = token.denom.toLowerCase()

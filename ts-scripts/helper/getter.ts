@@ -1,9 +1,10 @@
 import { Network, isTestnet, isMainnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
+  denomsToDenomMap,
   tokensToDenomMap,
   bankMetadataToDenomMap,
-  bankMetadataToCw20DenomMap,
+  bankMetadataToCw20DenomMap
 } from './../helper/utils'
 import { Token, BankMetadata } from './../types'
 
@@ -39,7 +40,36 @@ const mainnetInsuranceFundsMap = tokensToDenomMap(
   readJSONFile({ path: 'tokens/insuranceFunds/mainnet.json' })
 )
 
-export const getCw20TokenMetadata = (
+const devnetSupplyDenomMap = denomsToDenomMap(
+  readJSONFile({ path: 'tokens/bankSupplyDenoms/devnet.json' })
+)
+
+const testnetSupplyDenomMap = denomsToDenomMap(
+  readJSONFile({ path: 'tokens/bankSupplyDenoms/testnet.json' })
+)
+
+const mainnetSupplyDenomMap = denomsToDenomMap(
+  readJSONFile({ path: 'tokens/bankSupplyDenoms/mainnet.json' })
+)
+
+export const getSupplyDenom = (
+  denom: string,
+  network: Network
+): string | undefined => {
+  const formattedDenom = denom.toLowerCase()
+
+  if (isMainnet(network)) {
+    return mainnetSupplyDenomMap[formattedDenom]
+  }
+
+  if (isTestnet(network)) {
+    return testnetSupplyDenomMap[formattedDenom]
+  }
+
+  return devnetSupplyDenomMap[formattedDenom]
+}
+
+export const getCw20BankMetadata = (
   denom: string,
   network: Network
 ): BankMetadata | undefined => {
