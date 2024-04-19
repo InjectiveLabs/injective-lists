@@ -28,7 +28,7 @@ import {
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
-import { getCw20TokenMetadata } from './helper/getter'
+import { getBankTokenMetadata, getCw20TokenMetadata } from './helper/getter'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -117,12 +117,17 @@ const formatEvmTokens = (tokens: PeggyTokenSource[]) =>
     tokenType: TokenType.Evm
   }))
 
-const formatErc20Tokens = (tokens: PeggyTokenSource[]) =>
-  tokens.map((token) => ({
-    ...token,
-    denom: `peggy${token.address}`,
-    tokenType: TokenType.Erc20
-  }))
+const formatErc20Tokens = (tokens: PeggyTokenSource[], network: Network) =>
+  tokens.map((token) => {
+    const denom = `peggy${token.address}`
+    const existingFactoryToken = getBankTokenMetadata(denom, network)
+
+    return {
+      ...token,
+      denom: existingFactoryToken ? existingFactoryToken.denom : denom,
+      tokenType: TokenType.Erc20
+    }
+  })
 
 // perp market base tokens
 const untaggedSymbolBaseTokens = () =>
@@ -148,7 +153,7 @@ const getDevnetStaticTokenList = () => {
       ...erc20DevnetTokens,
       ...erc20TestnetTokens,
       ...erc20MainnetTokens
-    ]),
+    ], Network.Devnet),
     ...formatTokenFactoryTokens(
       [
         ...tokenFactoryDevnetTokens,
@@ -173,7 +178,7 @@ const getTestnetStaticTokenList = () => {
       ...erc20TestnetTokens,
       ...erc20DevnetTokens,
       ...erc20MainnetTokens
-    ]),
+    ], Network.Testnet),
     ...formatTokenFactoryTokens(
       [
         ...tokenFactoryTestnetTokens,
@@ -194,7 +199,10 @@ const getMainnetStaticTokenList = () => {
       [...cw20MainnetTokens, ...cw20TestnetTokens],
       Network.MainnetSentry
     ),
-    ...formatErc20Tokens(erc20MainnetTokens),
+    ...formatErc20Tokens(
+      erc20MainnetTokens,
+      Network.MainnetSentry
+    ),
     ...formatTokenFactoryTokens(
       tokenFactoryMainnetTokens,
       Network.MainnetSentry
