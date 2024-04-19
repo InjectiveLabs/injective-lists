@@ -22,7 +22,7 @@ import {
   updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
-import { getCw20TokenMetadata } from './helper/getter'
+import { getCw20BankMetadata } from './helper/getter'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Cw20ContractSource, BankMetadata } from './types'
 
@@ -108,7 +108,7 @@ export const fetchCw20ContractMetaData = async (
       fallback: {}
     })
 
-    const bankCw20FactoryToken = getCw20TokenMetadata(
+    const bankCw20FactoryToken = getCw20BankMetadata(
       address,
       Network.MainnetSentry
     )

@@ -14,7 +14,7 @@ import {
   getNetworkFileName
 } from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { getInsuranceFundToken, getCw20TokenMetadata } from './helper/getter'
+import { getInsuranceFundToken, getCw20BankMetadata } from './helper/getter'
 import { BankMetadata, Token } from './types'
 
 // refetch ibc denom trace
@@ -106,7 +106,7 @@ export const generateSupplyToken = async (network: Network) => {
       }
 
       if (denom.startsWith('factory')) {
-        const existingFactoryToken = getCw20TokenMetadata(denom, network)
+        const existingFactoryToken = getCw20BankMetadata(denom, network)
 
         if (existingFactoryToken) {
           supplyTokens.push(formatFactoryToken(existingFactoryToken))
