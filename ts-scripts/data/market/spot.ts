@@ -53,7 +53,8 @@ export const mainnetSlugs = [
   'w-usdt',
   'bonus-usdt',
   'xiii-inj',
-  'omni-usdt'
+  'omni-usdt',
+  'black-inj'
 ]
 
 export const devnetSlugs = ['proj-usdt', 'wbtc-inj', 'proj-inj']
