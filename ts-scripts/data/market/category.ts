@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'black-inj',
   'omni-usdt',
   'w-usdt-perp',
   'omni-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'nonja-inj',
   'pyth-inj',
   'zig-inj',
-  'hdro-inj',
 ]
 
 export const experimental = [
@@ -115,7 +115,8 @@ export const injective = [
   'pyth-inj',
   'nonja-inj',
   'lvn-inj',
-  'xiii-inj'
+  'xiii-inj',
+  'black-inj'
 ]
 
 export const solana = [
