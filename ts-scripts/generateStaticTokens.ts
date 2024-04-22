@@ -28,7 +28,7 @@ import {
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
-import { getSupplyDenom, getBankTokenFactoryMetadata } from './helper/getter'
+import { getSupplyDenom, getBankTokenFactoryMetadataByAddress } from './helper/getter'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -87,7 +87,7 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       tokenVerification: TokenVerification.Verified
     })
 
-    const existingFactoryToken = getBankTokenFactoryMetadata(
+    const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
       token.address.toLowerCase(),
       network
     )
