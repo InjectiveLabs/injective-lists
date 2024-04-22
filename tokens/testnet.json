@@ -13133,16 +13133,30 @@
     "externalLogo": "unknown.png"
   },
   {
-    "coinGeckoId": "",
     "address": "inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
-    "name": "TINJ",
+    "isNative": false,
+    "name": "USD Coin",
+    "decimals": 6,
+    "symbol": "USDCet",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/a8bfa5f1-1dab-4be9-a68c-e15f0bd11100/public",
+    "coinGeckoId": "usd-coin",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
-    "decimals": 8,
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
-    "symbol": "TINJ",
-    "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
+    "tokenVerification": "verified",
+    "externalLogo": "usdc.png"
+  },
+  {
+    "address": "inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
+    "isNative": false,
+    "name": "USD Coin",
+    "decimals": 6,
+    "symbol": "USDCet",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/a8bfa5f1-1dab-4be9-a68c-e15f0bd11100/public",
+    "coinGeckoId": "usd-coin",
+    "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "verified",
+    "externalLogo": "usdc.png"
   },
   {
     "coinGeckoId": "",
@@ -13277,16 +13291,17 @@
     "tokenVerification": "internal"
   },
   {
-    "coinGeckoId": "",
     "address": "inj1m4g54lg2mhhm7a4h3ms5xlyecafhe4macgsuen",
-    "name": "QAT",
-    "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1m4g54lg2mhhm7a4h3ms5xlyecafhe4macgsuen",
+    "isNative": false,
     "decimals": 8,
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
     "symbol": "QAT",
-    "externalLogo": "unknown.png",
+    "name": "Test QAT",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/c7b97294-890e-459c-4673-1ca1dea64f00/public",
+    "coinGeckoId": "injective-protocol",
+    "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1m4g54lg2mhhm7a4h3ms5xlyecafhe4macgsuen",
     "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
+    "tokenVerification": "verified",
+    "externalLogo": "injective-v3.png"
   },
   {
     "coinGeckoId": "",
@@ -13325,16 +13340,17 @@
     "tokenVerification": "internal"
   },
   {
-    "coinGeckoId": "",
     "address": "inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc",
+    "isNative": false,
+    "decimals": 18,
+    "symbol": "hINJ",
+    "coinGeckoId": "",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/0fc29fc0-141e-41e6-7042-a701cc9f9100/public",
     "name": "Hydro Wrapped INJ",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc",
-    "decimals": 18,
-    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/1fb4f29a-9aed-4349-4e0b-0db6b28e7500/public",
-    "symbol": "hINJ",
-    "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
+    "tokenVerification": "verified",
+    "externalLogo": "hinj.svg"
   },
   {
     "coinGeckoId": "",
@@ -13503,6 +13519,19 @@
     "tokenType": "tokenFactory",
     "tokenVerification": "internal",
     "externalLogo": "unknown.png"
+  },
+  {
+    "address": "inj12ngevx045zpvacus9s6anr258gkwpmthnz80e9",
+    "isNative": false,
+    "decimals": 8,
+    "symbol": "SOL",
+    "name": "Solana",
+    "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/2aa4deed-fa31-4d1a-ba0a-d698b84f3800/public",
+    "coinGeckoId": "solana",
+    "denom": "factory/inj1heah64yarps3u85jyml4ter53h4lyrag4shfzp/inj12ngevx045zpvacus9s6anr258gkwpmthnz80e9",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "verified",
+    "externalLogo": "solana.png"
   },
   {
     "coinGeckoId": "",
