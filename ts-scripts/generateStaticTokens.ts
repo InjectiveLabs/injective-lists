@@ -1,9 +1,9 @@
-import { Network, isMainnet } from '@injectivelabs/networks'
 import {
   TokenType,
   TokenStatic,
   TokenVerification
 } from '@injectivelabs/token-metadata'
+import { Network } from '@injectivelabs/networks'
 import splTokens from './data/spl'
 import evmTokens from './data/evm'
 import {
@@ -28,7 +28,7 @@ import {
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
-import { getSupplyDenom, getCw20BankMetadata } from './helper/getter'
+import { getSupplyDenom, getBankTokenFactoryMetadata } from './helper/getter'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -87,7 +87,7 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       tokenVerification: TokenVerification.Verified
     })
 
-    const existingFactoryToken = getCw20BankMetadata(
+    const existingFactoryToken = getBankTokenFactoryMetadata(
       token.address.toLowerCase(),
       network
     )

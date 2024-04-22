@@ -1,10 +1,10 @@
 import 'dotenv/config'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
-  updateJSONFile,
   readJSONFile,
+  updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'

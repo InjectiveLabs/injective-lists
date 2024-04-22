@@ -1,4 +1,5 @@
 import { TokenSource } from '@injectivelabs/token-metadata'
+import { TokenInfo, ContractInfo, MarketingInfo } from '@injectivelabs/sdk-ts'
 
 export * from './chain'
 
@@ -59,8 +60,16 @@ export interface Token {
   baseDenom?: string
 }
 
-export interface Cw20ContractSource extends Token {
-  label: string
-  codeId: number
-  creator: string
+export interface IbcDenomTrace {
+  path: string
+  baseDenom: string
+  channelId: string
+}
+
+export interface Cw20ContractSource {
+  address: string
+  info?: ContractInfo
+  tokenInfo?: TokenInfo
+  contractInfo?: ContractInfo
+  marketingInfo?: MarketingInfo
 }

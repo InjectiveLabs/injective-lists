@@ -1,7 +1,5 @@
 import {
-  TokenInfo,
   ContractInfo,
-  MarketingInfo,
   ChainGrpcWasmApi,
   isCw20ContractAddress,
   ContractStateWithPagination
@@ -22,8 +20,8 @@ import {
   updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
-import { getCw20BankMetadata } from './helper/getter'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import { getBankTokenFactoryMetadataByAddress } from './helper/getter'
 import { Cw20ContractSource, BankMetadata } from './types'
 
 const mainnetWasmApi = new ChainGrpcWasmApi(
@@ -34,27 +32,95 @@ const testnetWasmApi = new ChainGrpcWasmApi(
   getNetworkEndpoints(Network.TestnetSentry).grpc
 )
 
+const fetchContractDetails = async (address: string, network: Network) => {
+  const path = `tokens/cw20ContractSources/${getNetworkFileName(network)}.json`
+
+  const existingCW20ContractSourcesMap = readJSONFile({
+    path,
+    fallback: {}
+  })
+
+  const cachedCw20Token = existingCW20ContractSourcesMap[address.toLowerCase()]
+
+  if (cachedCw20Token) {
+    return cachedCw20Token
+  }
+
+  const wasmApi = isTestnet(network) ? testnetWasmApi : mainnetWasmApi
+
+  const contractInfoResponse = (await wasmApi
+    .fetchContractInfo(address)
+    .catch((e: any) => {
+      if (!isDevnet(network)) {
+        console.warn(
+          `Peggy: Failed to fetch cw20 contract info for address: ${address} on ${network}`,
+          e
+        )
+      }
+    })) as ContractInfo | undefined
+
+  const contractStateResponse = (await wasmApi
+    .fetchContractState({
+      contractAddress: address,
+      pagination: { reverse: true }
+    })
+    .catch((e: any) => {
+      if (!isDevnet(network)) {
+        console.warn(
+          `Peggy: Failed to fetch cw20 token state for address: ${address} on ${network}`,
+          e
+        )
+      }
+    })) as ContractStateWithPagination | undefined
+
+  const cw20ContractSource: Cw20ContractSource = {
+    address,
+    info: contractInfoResponse,
+    tokenInfo: contractStateResponse?.tokenInfo,
+    contractInfo: contractStateResponse?.contractInfo,
+    marketingInfo: contractStateResponse?.marketingInfo
+  }
+
+  if (contractStateResponse || contractInfoResponse) {
+    await updateJSONFile(path, {
+      ...existingCW20ContractSourcesMap,
+      [address.toLowerCase()]: cw20ContractSource
+    })
+  }
+
+  return cw20ContractSource
+}
+
 const formatCw20FactoryToken = ({
   address,
-  tokenInfo,
-  marketingInfo,
-  bankMetaData
+  bankMetadata,
+  cw20ContractSource
 }: {
   address: string
-  tokenInfo: TokenInfo
-  bankMetaData: BankMetadata
-  marketingInfo?: MarketingInfo
+  bankMetadata?: BankMetadata
+  cw20ContractSource?: Cw20ContractSource
 }): TokenStatic => {
+  const tokenInfo = cw20ContractSource?.tokenInfo
+  const contractInfo = cw20ContractSource?.contractInfo
+  const marketingInfo = cw20ContractSource?.marketingInfo
+
   return {
     coinGeckoId: '',
     address,
-    name: tokenInfo.name || bankMetaData.name,
-    denom: bankMetaData.denom,
-    decimals: bankMetaData.decimals || tokenInfo.decimals,
+    name:
+      tokenInfo?.name ||
+      contractInfo?.label ||
+      bankMetadata?.name ||
+      untaggedSymbolMeta.Unknown.name,
+    denom: bankMetadata?.denom || address,
+    decimals:
+      bankMetadata?.decimals ||
+      tokenInfo?.decimals ||
+      untaggedSymbolMeta.Unknown.decimals,
     logo: untaggedSymbolMeta.Unknown.logo,
     symbol:
-      tokenInfo.symbol ||
-      bankMetaData.symbol ||
+      tokenInfo?.symbol ||
+      bankMetadata?.symbol ||
       untaggedSymbolMeta.Unknown.symbol,
     externalLogo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
     tokenType: TokenType.TokenFactory,
@@ -62,38 +128,47 @@ const formatCw20FactoryToken = ({
   }
 }
 
-const formatCW20Token = ({
-  address,
-  tokenInfo,
-  contractInfo,
-  marketingInfo
-}: {
-  address: string
-  tokenInfo: TokenInfo
-  marketingInfo?: MarketingInfo
-  contractInfo: ContractInfo
-}): Cw20ContractSource => {
+const formatCw20Token = (
+  cw20ContractSource: Cw20ContractSource
+): TokenStatic => {
+  const tokenInfo = cw20ContractSource?.tokenInfo
+  const contractInfo = cw20ContractSource?.contractInfo
+  const marketingInfo = cw20ContractSource?.marketingInfo
+
   return {
     name:
-      tokenInfo.name || contractInfo.label || untaggedSymbolMeta.Unknown.name,
+      tokenInfo?.name || contractInfo?.label || untaggedSymbolMeta.Unknown.name,
     logo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
     symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
-    decimals: tokenInfo.decimals,
+    decimals: tokenInfo?.decimals || untaggedSymbolMeta.Unknown.decimals,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-    denom: address,
-    address,
+    denom: cw20ContractSource.address,
+    address: cw20ContractSource.address,
     tokenType: TokenType.Cw20,
-    tokenVerification: TokenVerification.Internal,
-    label: contractInfo.label,
-    codeId: contractInfo.codeId,
-    creator: contractInfo.creator
+    tokenVerification: TokenVerification.Internal
   }
 }
 
-export const fetchCw20ContractMetaData = async (
-  denom: string,
+export const fetchCw20FactoryToken = async (
+  address: string,
   network: Network
 ) => {
+  const bankMetadata = getBankTokenFactoryMetadataByAddress(address, network)
+
+  if (!bankMetadata) {
+    return
+  }
+
+  const cw20ContractSource = await fetchContractDetails(address, network)
+
+  return formatCw20FactoryToken({
+    address,
+    bankMetadata,
+    cw20ContractSource
+  })
+}
+
+export const fetchCw20Token = async (denom: string, network: Network) => {
   try {
     const address = isCw20ContractAddress(denom)
       ? denom
@@ -103,90 +178,15 @@ export const fetchCw20ContractMetaData = async (
       return
     }
 
-    const existingCW20TokensMap = readJSONFile({
-      path: `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
-      fallback: {}
-    })
+    const cw20ContractSource = await fetchContractDetails(address, network)
 
-    const bankCw20FactoryToken = getCw20BankMetadata(
-      address,
-      Network.MainnetSentry
-    )
-
-    const cachedCw20FactoryToken =
-      existingCW20TokensMap[(bankCw20FactoryToken?.denom || '').toLowerCase()]
-    const cachedCw20Token = existingCW20TokensMap[denom.toLowerCase()]
-
-    if (cachedCw20Token && !bankCw20FactoryToken) {
-      return [cachedCw20Token]
+    if (cw20ContractSource) {
+      return formatCw20Token(cw20ContractSource)
     }
 
-    if (cachedCw20Token && cachedCw20FactoryToken) {
-      return [cachedCw20Token, cachedCw20FactoryToken]
-    }
+    const formattedToken = formatCw20Token(cw20ContractSource)
 
-    const wasmApi = isTestnet(network) ? testnetWasmApi : mainnetWasmApi
-
-    const contractInfoResponse = (await wasmApi
-      .fetchContractInfo(address)
-      .catch((e: any) => {
-        console.warn(
-          `Peggy: Failed to fetch cw20 contract info for address: ${address} on ${network}`,
-          e
-        )
-      })) as ContractInfo | undefined
-
-    const contractStateResponse = (await wasmApi
-      .fetchContractState({
-        contractAddress: address,
-        pagination: { reverse: true }
-      })
-      .catch((e: any) => {
-        console.warn(
-          `Peggy: Failed to fetch cw20 token state for address: ${address} on ${network}`,
-          e
-        )
-      })) as ContractStateWithPagination | undefined
-
-    if (
-      !contractStateResponse ||
-      !contractStateResponse.tokenInfo ||
-      !contractInfoResponse
-    ) {
-      return
-    }
-
-    let formattedCw20FactoryToken = undefined
-    const formattedToken = formatCW20Token({
-      address,
-      contractInfo: contractInfoResponse,
-      tokenInfo: contractStateResponse.tokenInfo,
-      marketingInfo: contractStateResponse.marketingInfo
-    })
-
-    const updateMap = {
-      ...existingCW20TokensMap,
-      [address.toLowerCase()]: formattedToken
-    }
-
-    if (bankCw20FactoryToken) {
-      formattedCw20FactoryToken = formatCw20FactoryToken({
-        address,
-        bankMetaData: bankCw20FactoryToken,
-        tokenInfo: contractStateResponse.tokenInfo,
-        marketingInfo: contractStateResponse.marketingInfo
-      })
-
-      updateMap[formattedCw20FactoryToken.address.toLowerCase()] =
-        formattedCw20FactoryToken
-    }
-
-    await updateJSONFile(
-      `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
-      updateMap
-    )
-
-    return [formattedToken, formattedCw20FactoryToken].filter((token) => token)
+    return formattedToken
   } catch (e) {
     console.log(`Error fetching cw20 contract state ${network} ${denom}:`, e)
   }

@@ -1,24 +1,25 @@
+import {
+  TokenType,
+  TokenVerification,
+  isCw20ContractAddress
+} from '@injectivelabs/token-metadata'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
-  TokenStatic,
-  TokenType,
-  TokenVerification
-} from '@injectivelabs/token-metadata'
-import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import {
   readJSONFile,
-  getTokenType,
-  getDenomTrace,
   updateJSONFile,
   tokensToDenomMap,
   getNetworkFileName
 } from './helper/utils'
+import {
+  getInsuranceFundToken,
+  getBankTokenFactoryMetadata
+} from './helper/getter'
+import { symbolMeta } from './data/symbolMeta'
+import { fetchCw20FactoryToken } from './fetchCw20Metadata'
+import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
+import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { getInsuranceFundToken, getCw20BankMetadata } from './helper/getter'
-import { BankMetadata, Token } from './types'
-
-// refetch ibc denom trace
-const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
+import { Token } from './types'
 
 const mainnetStaticTokensMap = tokensToDenomMap([
   ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
@@ -44,21 +45,6 @@ const testnetStaticTokensMap = tokensToDenomMap(
 const devnetIbcSupplyTokensMap = tokensToDenomMap(devnetIbcSupplyTokens)
 const testnetIbcSupplyTokensMap = tokensToDenomMap(testnetIbcSupplyTokens)
 const mainnetIbcSupplyTokensMap = tokensToDenomMap(mainnetIbcSupplyTokens)
-
-const formatFactoryToken = (bankMetadata: BankMetadata): TokenStatic => {
-  return {
-    coinGeckoId: '',
-    name: bankMetadata.name,
-    denom: bankMetadata.denom,
-    address: bankMetadata.denom,
-    decimals: bankMetadata.decimals || untaggedSymbolMeta.Unknown.decimals,
-    symbol: bankMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
-    logo: untaggedSymbolMeta.Unknown.logo,
-    externalLogo: bankMetadata.logo || untaggedSymbolMeta.Unknown.logo,
-    tokenType: TokenType.TokenFactory,
-    tokenVerification: TokenVerification.Internal
-  }
-}
 
 export const generateSupplyToken = async (network: Network) => {
   let supplyDenoms = readJSONFile({
@@ -94,27 +80,39 @@ export const generateSupplyToken = async (network: Network) => {
       // script optimization: use cached denomTrace data
       const existingIbcToken = existingIbcTokensMap[denom.toLowerCase()]
 
-      if (!shouldFlush && existingIbcToken) {
+      if (existingIbcToken) {
         supplyTokens.push(existingIbcToken)
 
         continue
       }
 
       if (denom.startsWith('factory')) {
-        const existingFactoryToken = getCw20BankMetadata(denom, network)
+        const subDenom = [...denom.split('/')].pop() as string
 
-        if (existingFactoryToken) {
-          supplyTokens.push(formatFactoryToken(existingFactoryToken))
+        if (isCw20ContractAddress(subDenom)) {
+          const cw20Token = await fetchCw20FactoryToken(subDenom, network)
 
-          continue
+          if (cw20Token) {
+            supplyTokens.push(cw20Token)
+
+            continue
+          }
         } else {
+          // token factory
+          const bankMetadata = getBankTokenFactoryMetadata(denom, network)
+
           supplyTokens.push({
             ...untaggedSymbolMeta.Unknown,
-            denom,
-            address: denom,
-            isNative: false,
-            tokenType: getTokenType(denom),
-            tokenVerification: TokenVerification.Unverified
+            ...(bankMetadata?.denom && {
+              denom: bankMetadata.denom,
+              address: bankMetadata.denom
+            }),
+            ...(bankMetadata?.name && { name: bankMetadata.name }),
+            ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
+            ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
+            ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals }),
+            tokenType: TokenType.TokenFactory,
+            tokenVerification: TokenVerification.Internal
           })
 
           continue
@@ -129,6 +127,18 @@ export const generateSupplyToken = async (network: Network) => {
 
         if (insuranceToken) {
           supplyTokens.push(insuranceToken)
+        } else {
+          supplyTokens.push({
+            denom,
+            name: denom,
+            decimals: 18,
+            symbol: denom,
+            address: denom,
+            logo: symbolMeta.INJ.logo,
+            externalLogo: symbolMeta.INJ.logo,
+            tokenType: TokenType.InsuranceFund,
+            coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId
+          })
         }
 
         continue
@@ -145,27 +155,13 @@ export const generateSupplyToken = async (network: Network) => {
       }
 
       if (denom.startsWith('ibc/')) {
-        const denomTrace = await getDenomTrace(denom, network)
+        const ibcToken = await fetchIbcTokenMetaData(denom, network)
 
-        supplyTokens.push({
-          denom,
-          path: denomTrace?.path || '',
-          channelId: denomTrace?.channelId || '',
-          baseDenom: denomTrace?.baseDenom || untaggedSymbolMeta.Unknown.symbol,
-          address: denom,
-          isNative: false,
-          symbol: denomTrace?.baseDenom || untaggedSymbolMeta.Unknown.symbol,
-          name: untaggedSymbolMeta.Unknown.name,
-          logo: untaggedSymbolMeta.Unknown.logo,
-          coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-          decimals: untaggedSymbolMeta.Unknown.decimals,
-          tokenType: TokenType.Ibc,
-          tokenVerification: denomTrace
-            ? TokenVerification.External
-            : TokenVerification.Unverified
-        })
+        if (ibcToken) {
+          supplyTokens.push(ibcToken)
 
-        continue
+          continue
+        }
       }
     }
 
@@ -182,6 +178,6 @@ export const generateSupplyToken = async (network: Network) => {
   }
 }
 
-// generateSupplyToken(Network.Devnet)
-// generateSupplyToken(Network.MainnetSentry)
+generateSupplyToken(Network.Devnet)
+generateSupplyToken(Network.MainnetSentry)
 generateSupplyToken(Network.TestnetSentry)

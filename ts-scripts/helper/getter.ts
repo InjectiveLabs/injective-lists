@@ -4,21 +4,9 @@ import {
   denomsToDenomMap,
   tokensToDenomMap,
   bankMetadataToDenomMap,
-  bankMetadataToCw20DenomMap
+  bankMetadataToAddressMap
 } from './../helper/utils'
 import { Token, BankMetadata } from './../types'
-
-const devnetCw20BankMetadataMap = bankMetadataToCw20DenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/devnet.json' })
-)
-
-const testnetCw20BankMetadataMap = bankMetadataToCw20DenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/testnet.json' })
-)
-
-const mainnetCw20BankMetadataMap = bankMetadataToCw20DenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/mainnet.json' })
-)
 
 const devnetBankMetadataMap = bankMetadataToDenomMap(
   readJSONFile({ path: 'tokens/bankMetadata/devnet.json' })
@@ -27,6 +15,16 @@ const testnetBankMetadataMap = bankMetadataToDenomMap(
   readJSONFile({ path: 'tokens/bankMetadata/testnet.json' })
 )
 const mainnetBankMetadataMap = bankMetadataToDenomMap(
+  readJSONFile({ path: 'tokens/bankMetadata/mainnet.json' })
+)
+
+const devnetBankMetadataAddressMap = bankMetadataToAddressMap(
+  readJSONFile({ path: 'tokens/bankMetadata/devnet.json' })
+)
+const testnetBankMetadataAddressMap = bankMetadataToAddressMap(
+  readJSONFile({ path: 'tokens/bankMetadata/testnet.json' })
+)
+const mainnetBankMetadataAddressMap = bankMetadataToAddressMap(
   readJSONFile({ path: 'tokens/bankMetadata/mainnet.json' })
 )
 
@@ -69,24 +67,7 @@ export const getSupplyDenom = (
   return devnetSupplyDenomMap[formattedDenom]
 }
 
-export const getCw20BankMetadata = (
-  denom: string,
-  network: Network
-): BankMetadata | undefined => {
-  const formattedDenom = denom.toLowerCase()
-
-  if (isMainnet(network)) {
-    return mainnetCw20BankMetadataMap[formattedDenom]
-  }
-
-  if (isTestnet(network)) {
-    return testnetCw20BankMetadataMap[formattedDenom]
-  }
-
-  return devnetCw20BankMetadataMap[formattedDenom]
-}
-
-export const getBankTokenMetadata = (
+export const getBankTokenFactoryMetadata = (
   denom: string,
   network: Network
 ): BankMetadata | undefined => {
@@ -101,6 +82,23 @@ export const getBankTokenMetadata = (
   }
 
   return devnetBankMetadataMap[formattedDenom]
+}
+
+export const getBankTokenFactoryMetadataByAddress = (
+  denom: string,
+  network: Network
+): BankMetadata | undefined => {
+  const formattedDenom = denom.toLowerCase()
+
+  if (isMainnet(network)) {
+    return mainnetBankMetadataAddressMap[formattedDenom]
+  }
+
+  if (isTestnet(network)) {
+    return testnetBankMetadataAddressMap[formattedDenom]
+  }
+
+  return devnetBankMetadataAddressMap[formattedDenom]
 }
 
 export const getInsuranceFundToken = (

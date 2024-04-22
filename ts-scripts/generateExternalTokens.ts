@@ -4,48 +4,25 @@ import { isCw20ContractAddress } from '@injectivelabs/token-metadata'
 import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
-  getDenomTrace,
   updateJSONFile,
   tokensToDenomMap,
-  tokenToAddressMap,
-  tokensToAddressMap
+  tokenToAddressMap
 } from './helper/utils'
-import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import {
+  getInsuranceFundToken,
+  getBankTokenFactoryMetadata
+} from './helper/getter'
+import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import { fetchCw20ContractMetaData } from './fetchCw20Metadata'
-import { getInsuranceFundToken } from './helper/getter'
-import { Token, ApiTokenMetadata } from './types'
+import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import { ApiTokenMetadata } from './types'
 
 /* Mainnet only */
 
 const staticTokens = readJSONFile({ path: 'tokens/staticTokens/mainnet.json' })
-const existingExternalTokens = readJSONFile({
-  path: 'tokens/externalTokens.json'
-})
-
-// refetch ibc denom trace
-const shouldFlush = process.argv.slice(2).some((arg) => arg === '--clean')
-
-const externalTokenMetadataApi = new HttpRestClient(
-  'https://api.tfm.com/api/v1/ibc/chain/injective-1/',
-  {
-    timeout: 2000
-  }
-)
-
-const externalIbcTokens = existingExternalTokens.filter(
-  (token: Token) => token.tokenType === TokenType.Ibc
-)
-const cw20Tokens = existingExternalTokens.filter((token: Token) =>
-  [TokenType.Cw20, TokenType.TokenFactory].includes(
-    token.tokenType as TokenType
-  )
-)
-
 const staticTokensMap = tokensToDenomMap(staticTokens)
-const existingIbcTokensMap = tokensToDenomMap(externalIbcTokens)
 const staticTokensAddressMap = tokenToAddressMap(staticTokens)
-const existingCw20TokensMap = tokensToAddressMap(cw20Tokens)
 
 const formatApiTokenMetadata = async (
   tokenMetadata: ApiTokenMetadata[]
@@ -60,17 +37,6 @@ const formatApiTokenMetadata = async (
 
   for (const tokenMetadata of filteredTokenMetadata) {
     const denom = tokenMetadata.contractAddr.toLowerCase()
-
-    if (!shouldFlush) {
-      // script optimization: use cached denomTrace data
-      const existingIbcToken = existingIbcTokensMap[denom.toLowerCase()]
-
-      if (existingIbcToken) {
-        externalTokens.push(existingIbcToken)
-
-        continue
-      }
-    }
 
     if (denom.startsWith('share')) {
       const insuranceToken = getInsuranceFundToken(denom, Network.MainnetSentry)
@@ -96,45 +62,69 @@ const formatApiTokenMetadata = async (
     }
 
     if (isCw20ContractAddress(denom)) {
-      const existingCw20Tokens = existingCw20TokensMap[denom.toLowerCase()]
+      const cw20Token = await fetchCw20Token(denom, Network.MainnetSentry)
 
-      if (!shouldFlush && existingCw20Tokens) {
-        externalTokens.push(...existingCw20Tokens)
+      if (cw20Token) {
+        externalTokens.push(cw20Token)
 
-        continue
-      }
+        const cw20FactoryToken = await fetchCw20FactoryToken(
+          denom,
+          Network.MainnetSentry
+        )
 
-      const cw20Tokens = await fetchCw20ContractMetaData(
-        denom,
-        Network.MainnetSentry
-      )
-
-      if (cw20Tokens && cw20Tokens.length > 0) {
-        externalTokens.push(...cw20Tokens)
+        externalTokens.push(cw20FactoryToken)
 
         continue
       }
     }
 
-    if (denom.startsWith('ibc/')) {
-      const denomTrace = await getDenomTrace(denom, Network.MainnetSentry)
+    if (denom.startsWith('factory')) {
+      const subDenom = [...denom.split('/')].pop() as string
+
+      if (isCw20ContractAddress(subDenom)) {
+        console.log('subDenom caught', denom)
+
+        continue
+      }
+
+      const bankMetadata = getBankTokenFactoryMetadata(
+        denom,
+        Network.MainnetSentry
+      )
 
       externalTokens.push({
-        address: denom,
-        symbol: tokenMetadata.symbol || untaggedSymbolMeta.Unknown.symbol,
-        name: tokenMetadata.name,
-        logo: tokenMetadata.imageUrl,
-        decimals: tokenMetadata.decimals,
-        tokenVerification: denomTrace
-          ? TokenVerification.External
-          : TokenVerification.Unverified,
-        denom,
-        path: denomTrace?.path || '',
-        baseDenom: denomTrace?.baseDenom || tokenMetadata.symbol,
-        channelId: denomTrace?.channelId || '',
-        tokenType: TokenType.Ibc,
-        hash: denom.replace('ibc/', '')
+        ...untaggedSymbolMeta.Unknown,
+        ...(bankMetadata?.denom && {
+          denom: bankMetadata.denom,
+          address: bankMetadata.denom
+        }),
+        ...(bankMetadata?.name && { name: bankMetadata.name }),
+        ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
+        ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
+        ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals }),
+        tokenType: TokenType.TokenFactory,
+        tokenVerification: TokenVerification.Internal
       })
+
+      continue
+    }
+
+    if (denom.startsWith('ibc/')) {
+      const ibcToken = await fetchIbcTokenMetaData(denom, Network.MainnetSentry)
+
+      if (ibcToken) {
+        externalTokens.push({
+          ...ibcToken,
+          ...(tokenMetadata.imageUrl && {
+            externalLogo: tokenMetadata.imageUrl
+          }),
+          ...(tokenMetadata.name && { name: tokenMetadata.name }),
+          ...(tokenMetadata.symbol && { symbol: tokenMetadata.symbol }),
+          ...(tokenMetadata.decimals && { decimals: tokenMetadata.imageUrl })
+        })
+
+        continue
+      }
 
       continue
     }
@@ -143,8 +133,17 @@ const formatApiTokenMetadata = async (
   return externalTokens
 }
 
-const generateExternalTokens = async () => {
+const getExternalTokens = async () => {
+  const path = 'tokens/externalTokensSource.json'
+
   try {
+    const externalTokenMetadataApi = new HttpRestClient(
+      'https://api.tfm.com/api/v1/ibc/chain/injective-1/',
+      {
+        timeout: 2000
+      }
+    )
+
     const response = (await externalTokenMetadataApi.get('tokens')) as {
       data: ApiTokenMetadata[]
     }
@@ -153,15 +152,35 @@ const generateExternalTokens = async () => {
       return
     }
 
-    const filteredData = response.data.filter(
+    await updateJSONFile(path, response.data)
+
+    return response.data
+  } catch (e) {
+    console.log(
+      'Error fetching external tokens from api.tfm.com, using cache data'
+    )
+    console.log(e)
+
+    return readJSONFile({ path })
+  }
+}
+
+const generateExternalTokens = async () => {
+  try {
+    const externalTokensSource =
+      (await getExternalTokens()) as ApiTokenMetadata[]
+
+    const filteredData = externalTokensSource.filter(
       ({ contractAddr }) => !staticTokensMap[contractAddr.toLowerCase()]
     )
     const tokens = await formatApiTokenMetadata(filteredData)
+
     const filteredTokens = tokens.filter(
-      ({ denom }) =>
-        denom &&
-        !staticTokensMap[denom.toLowerCase()] &&
-        !staticTokensAddressMap[denom.toLowerCase()]
+      (token) =>
+        token &&
+        token.denom &&
+        !staticTokensMap[token.denom.toLowerCase()] &&
+        !staticTokensAddressMap[token.denom.toLowerCase()]
     )
 
     await updateJSONFile(

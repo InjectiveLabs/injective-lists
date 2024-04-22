@@ -1,58 +1,8 @@
-import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
-import { HttpRestClient } from '@injectivelabs/utils'
-import {
-  Network,
-  isMainnet,
-  isTestnet,
-  getNetworkEndpoints
-} from '@injectivelabs/networks'
+import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
+import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/token-metadata'
-import { untaggedSymbolMeta } from '../data/untaggedSymbolMeta'
 import { Token, BankMetadata } from '../types'
-
-export const getDenomTrace = async (
-  hash: string,
-  network: Network
-): Promise<
-  | {
-      path: string
-      baseDenom: string
-      channelId: string
-    }
-  | undefined
-> => {
-  if (!hash.startsWith('ibc/')) {
-    return
-  }
-
-  const endpoints = getNetworkEndpoints(network)
-
-  const ibcDenomTraceApi = new HttpRestClient(
-    `${endpoints.rest}/ibc/apps/transfer/v1/denom_traces/`,
-    {
-      timeout: 2000
-    }
-  )
-
-  try {
-    const { data } = (await ibcDenomTraceApi.get(hash.replace('ibc/', ''))) as {
-      data: { denom_trace: { path: string; base_denom: string } }
-    }
-
-    console.log(`✅ Uploaded ${network} ibc token denom trace for ${hash}`)
-
-    return {
-      path: data.denom_trace.path,
-      baseDenom: data.denom_trace.base_denom,
-      channelId: data.denom_trace.path.split('/').pop() as string
-    }
-  } catch (e) {
-    console.error(`Failed to fetch denom trace for hash: ${hash}`, e)
-
-    return
-  }
-}
 
 export const getTokenType = (denom: string): TokenType => {
   if (!denom) {
@@ -172,7 +122,7 @@ export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
   }, {} as Record<string, BankMetadata>)
 }
 
-export const bankMetadataToCw20DenomMap = (metadatas: BankMetadata[]) => {
+export const bankMetadataToAddressMap = (metadatas: BankMetadata[]) => {
   return metadatas.reduce((list, metadata) => {
     const formattedDenom = metadata.denom.toLowerCase()
     const contractAddress = formattedDenom.split('/').pop()
