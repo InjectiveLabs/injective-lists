@@ -47,6 +47,17 @@
     "tokenVerification": "internal"
   },
   {
+    "decimals": 0,
+    "symbol": "Unknown",
+    "name": "position",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "denom": "factory/inj1255swku4m04m533wmkmtmvhnh77zrk83dqgwfr/position",
+    "address": "factory/inj1255swku4m04m533wmkmtmvhnh77zrk83dqgwfr/position",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
     "decimals": 6,
     "symbol": "X747",
     "name": "X747",
@@ -297,18 +308,6 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj104y5dpcdtga79tczv6rg3rsekx4hasw2k83h5s",
-    "name": "FROG",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj104y5dpcdtga79tczv6rg3rsekx4hasw2k83h5s",
-    "decimals": 18,
-    "logo": "unknown.png",
-    "symbol": "FROG",
-    "externalLogo": "https://www.injectivefrogs.com/_next/image?url=%2Ftoken.png&w=640&q=75",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
     "address": "inj109hqm6wdaq2f6nlvrf46f4gj7rwl55nmhmcslp",
     "name": "BP ETH/USDT PERP LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj109hqm6wdaq2f6nlvrf46f4gj7rwl55nmhmcslp",
@@ -327,18 +326,6 @@
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
-    "externalLogo": "unknown.png",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
-    "address": "inj10ktwcqd5n4k6278jegrc0u08fudf8r00vdsjwd",
-    "name": "Explore Exchange",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj10ktwcqd5n4k6278jegrc0u08fudf8r00vdsjwd",
-    "decimals": 8,
-    "logo": "unknown.png",
-    "symbol": "EXP",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -369,12 +356,24 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj12kq4zh7kckuu0rfpxcr9l6l2x26ajf23uc0w55",
-    "name": "CW20-wrapped inj",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj12kq4zh7kckuu0rfpxcr9l6l2x26ajf23uc0w55",
+    "address": "inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu",
+    "name": "USD Coin",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDC",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj134wfjutywny9qnyux2xgdmm0hfj7mwpl39r3r9",
+    "name": "Dojo Staked INJ",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj134wfjutywny9qnyux2xgdmm0hfj7mwpl39r3r9",
     "decimals": 18,
     "logo": "unknown.png",
-    "symbol": "INJ",
+    "symbol": "dINJ",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -429,6 +428,30 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj13xlpypcwl5fuc84uhqzzqumnrcfpptyl6w3vrf",
+    "name": "inj13xlpypcwl5fuc84uhqzzqumnrcfpptyl6w3vrf",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj13xlpypcwl5fuc84uhqzzqumnrcfpptyl6w3vrf",
+    "decimals": 0,
+    "logo": "unknown.png",
+    "symbol": "Unknown",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj13yrhllhe40sd3nj0lde9azlwfkyrf2t9r78dx5",
+    "name": "Tether USD",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj13yrhllhe40sd3nj0lde9azlwfkyrf2t9r78dx5",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDT",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj147ymh390v733ty3l0t7yv0w3vllnky5vr78xeh",
     "name": "FACT-INJ-LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj147ymh390v733ty3l0t7yv0w3vllnky5vr78xeh",
@@ -453,12 +476,36 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj14cl67lprqkt3pncjav070gavaxslc0tzpc56f4",
+    "name": "Wrapped Klay",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14cl67lprqkt3pncjav070gavaxslc0tzpc56f4",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "WKLAY",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj14fjgyt69ayhlz9gtgrutqdqyaf50wfxs7xx89e",
     "name": "PongLenis",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14fjgyt69ayhlz9gtgrutqdqyaf50wfxs7xx89e",
     "decimals": 18,
     "logo": "unknown.png",
     "symbol": "PONG",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj14jesa4q248mfxztfc9zgpswkpa4wx249mya9kk",
+    "name": "BRZ",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14jesa4q248mfxztfc9zgpswkpa4wx249mya9kk",
+    "decimals": 4,
+    "logo": "unknown.png",
+    "symbol": "BRZ",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -483,6 +530,18 @@
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj14rry9q6dym3dgcwzq79yay0e9azdz55jr465ch",
+    "name": "Bonk",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14rry9q6dym3dgcwzq79yay0e9azdz55jr465ch",
+    "decimals": 5,
+    "logo": "unknown.png",
+    "symbol": "Bonk",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -645,13 +704,13 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1802ascnwzdhvv84url475eyx26ptuc6jc590nl",
-    "name": "dogwifhat",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1802ascnwzdhvv84url475eyx26ptuc6jc590nl",
-    "decimals": 8,
+    "address": "inj17pgmlk6fpfmqyffs205l98pmnmp688mt0948ar",
+    "name": "xNinja.Tech Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj17pgmlk6fpfmqyffs205l98pmnmp688mt0948ar",
+    "decimals": 18,
     "logo": "unknown.png",
-    "symbol": "$WIF",
-    "externalLogo": "unknown.png",
+    "symbol": "XNJ",
+    "externalLogo": "https://xninja.s3.ap-southeast-1.amazonaws.com/images/logo_token_xnj.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -693,6 +752,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj18a2u6az6dzw528rptepfg6n49ak6hdzkny4um6",
+    "name": "Wrapped AVAX",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18a2u6az6dzw528rptepfg6n49ak6hdzkny4um6",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "WAVAX",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj18cd8sht8pksj07z8k36rwytn6gyg3kku8x6xgq",
     "name": "BP SOL/USDT SPOT Market Making LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18cd8sht8pksj07z8k36rwytn6gyg3kku8x6xgq",
@@ -711,6 +782,18 @@
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc",
+    "name": "Hydro Wrapped INJ",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc",
+    "decimals": 18,
+    "logo": "unknown.png",
+    "symbol": "hINJ",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -741,12 +824,48 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj18zykysxw9pcvtyr9ylhe0p5s7yzf6pzdagune8",
+    "name": "Tether USD",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18zykysxw9pcvtyr9ylhe0p5s7yzf6pzdagune8",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDT",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj193340xxv49hkug7r65xzc0l40tze44pee4fj94",
+    "name": "BSKT",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj193340xxv49hkug7r65xzc0l40tze44pee4fj94",
+    "decimals": 5,
+    "logo": "unknown.png",
+    "symbol": "BSKT",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj19f6ww9peaa3tjhjynjcsxms9v4mcpqrpdxz76l",
     "name": "FACT-IBC/-LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj19f6ww9peaa3tjhjynjcsxms9v4mcpqrpdxz76l",
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj19s2r64ghfqq3py7f5dr0ynk8yj0nmngca3yvy3",
+    "name": "USD Coin",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj19s2r64ghfqq3py7f5dr0ynk8yj0nmngca3yvy3",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDC",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -861,6 +980,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
+    "name": "Neptune Receipt USDT",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "nUSDT",
+    "externalLogo": "https://neptune-finance.nyc3.cdn.digitaloceanspaces.com/nusdt.svg",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1d3rkrv8f4xm4zv5rcdkydy36xzdksq94ewy5md",
     "name": "dojoswap liquidity token",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1d3rkrv8f4xm4zv5rcdkydy36xzdksq94ewy5md",
@@ -885,6 +1016,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1d5vz0uzwlpfvgwrwulxg6syy82axa58y4fuszd",
+    "name": "Arbitrum",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1d5vz0uzwlpfvgwrwulxg6syy82axa58y4fuszd",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "ARB",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1d62ry5fwsafggxu67fwhavpu3954vf5n8e5pmt",
     "name": "PEGG-PEGG-LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1d62ry5fwsafggxu67fwhavpu3954vf5n8e5pmt",
@@ -897,12 +1040,24 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1dvflqrkkaxped5cmks92q6vmtzx75cge9gvvap",
-    "name": "BabyInjective",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dvflqrkkaxped5cmks92q6vmtzx75cge9gvvap",
+    "address": "inj1dngqzz6wphf07fkdam7dn55t8t3r6qenewy9zu",
+    "name": "USD Coin",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dngqzz6wphf07fkdam7dn55t8t3r6qenewy9zu",
     "decimals": 8,
     "logo": "unknown.png",
-    "symbol": "BABYINJ",
+    "symbol": "USDC",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1dxv423h8ygzgxmxnvrf33ws3k94aedfdevxd8h",
+    "name": "Wrapped Matic",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dxv423h8ygzgxmxnvrf33ws3k94aedfdevxd8h",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "WMATIC",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -969,18 +1124,6 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1f2vr6hd9w4xujncyprw670l3g7x2esj50umn8k",
-    "name": "pepe",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1f2vr6hd9w4xujncyprw670l3g7x2esj50umn8k",
-    "decimals": 18,
-    "logo": "unknown.png",
-    "symbol": "pepe",
-    "externalLogo": "http://pepe.rip",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
     "address": "inj1f8nq8vvlhms85ywsnp9vnkua3jszqjfd6ts4qq",
     "name": "BP INJ/USDT SPOT Market Making LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1f8nq8vvlhms85ywsnp9vnkua3jszqjfd6ts4qq",
@@ -988,6 +1131,18 @@
     "logo": "unknown.png",
     "symbol": "uLP",
     "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck",
+    "name": "nonja",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck",
+    "decimals": 18,
+    "logo": "unknown.png",
+    "symbol": "NONJA",
+    "externalLogo": "https://www.nonja.xyz/pfp.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -1029,18 +1184,6 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1hfk4z29f5cv73gxpdydedhkq0yspqc5ymeze9z",
-    "name": "Fluffy",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1hfk4z29f5cv73gxpdydedhkq0yspqc5ymeze9z",
-    "decimals": 18,
-    "logo": "unknown.png",
-    "symbol": "FLUFFY",
-    "externalLogo": "https://i.imgur.com/dZf2tQi.png",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
     "address": "inj1hqp8mnaa0m9zj77y9qqrv33v3k8w2jx3xjahm2",
     "name": "Wrapped BNB",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1hqp8mnaa0m9zj77y9qqrv33v3k8w2jx3xjahm2",
@@ -1065,6 +1208,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1k9r62py07wydch6sj5sfvun93e4qe0lg7jyatc",
+    "name": "Wrapped Ether",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1k9r62py07wydch6sj5sfvun93e4qe0lg7jyatc",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "WETH",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1kvlz7j3meau8uy5upr95p2kn0j275jck9vjh4j",
     "name": "BP ORAI/USDT SPOT Market Making LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1kvlz7j3meau8uy5upr95p2kn0j275jck9vjh4j",
@@ -1077,24 +1232,36 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1kxwmyuns9z36dd0luggj7wyzetqyfz8cuhdvm2",
-    "name": "Elemental Token",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1kxwmyuns9z36dd0luggj7wyzetqyfz8cuhdvm2",
+    "address": "inj1l49685vnk88zfw2egf6v65se7trw2497wsqk65",
+    "name": "KAGE",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1l49685vnk88zfw2egf6v65se7trw2497wsqk65",
     "decimals": 18,
     "logo": "unknown.png",
-    "symbol": "ELEM",
-    "externalLogo": "https://xninja.s3.ap-southeast-1.amazonaws.com/images/logo_token_elem.png",
+    "symbol": "KAGE",
+    "externalLogo": "https://i.imgur.com/wvNCSB3.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
   {
     "coinGeckoId": "",
-    "address": "inj1l73x8hh6du0h8upp65r7ltzpj5twadtp5490n0",
-    "name": "Point Token",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1l73x8hh6du0h8upp65r7ltzpj5twadtp5490n0",
-    "decimals": 18,
+    "address": "inj1l9eyrnv3ret8da3qh8j5aytp6q4f73crd505lj",
+    "name": "Tether USD",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1l9eyrnv3ret8da3qh8j5aytp6q4f73crd505lj",
+    "decimals": 8,
     "logo": "unknown.png",
-    "symbol": "POINT",
+    "symbol": "USDT",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1lmcfftadjkt4gt3lcvmz6qn4dhx59dv2m7yv8r",
+    "name": "USD Coin",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1lmcfftadjkt4gt3lcvmz6qn4dhx59dv2m7yv8r",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDC",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -1185,6 +1352,30 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1me6t602jlndzxgv2d7ekcnkjuqdp7vfh4txpyy",
+    "name": "Lido DAO Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1me6t602jlndzxgv2d7ekcnkjuqdp7vfh4txpyy",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "LDO",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
+    "name": "Astar",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
+    "decimals": 18,
+    "logo": "unknown.png",
+    "symbol": "ASTR",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1ms0ycmqsqnnd8zztvzrq0jts0cudfujjmzesw2",
     "name": "BP TALIS/USDT SPOT Market Making LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1ms0ycmqsqnnd8zztvzrq0jts0cudfujjmzesw2",
@@ -1227,6 +1418,18 @@
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "BOY",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1n73yuus64z0yrda9hvn77twkspc4uste9j9ydd",
+    "name": "inj1n73yuus64z0yrda9hvn77twkspc4uste9j9ydd",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1n73yuus64z0yrda9hvn77twkspc4uste9j9ydd",
+    "decimals": 0,
+    "logo": "unknown.png",
+    "symbol": "Unknown",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -1281,6 +1484,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1plsk58sxqjw9828aqzeskmc8xy9eu5kppw3jg4",
+    "name": "Wrapped Ether",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1plsk58sxqjw9828aqzeskmc8xy9eu5kppw3jg4",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "WETH",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1ps7s09q5mldj3wghtcvpsflt0uvc9c0wllqvm0",
     "name": "BP nINJ/INJ SPOT Market Making LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1ps7s09q5mldj3wghtcvpsflt0uvc9c0wllqvm0",
@@ -1329,6 +1544,30 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
+    "name": "chiliZ",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "CHZ",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
+    "name": "USD Coin",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "USDC",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1qg8x9eec40aqjzezku7r2dpz0sz3962ljsk8ga",
     "name": "18 Decimal",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1qg8x9eec40aqjzezku7r2dpz0sz3962ljsk8ga",
@@ -1341,12 +1580,12 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1qv98cmfdaj5f382a0klq7ps4mnjp6calzh20h3",
-    "name": "Roll Token",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1qv98cmfdaj5f382a0klq7ps4mnjp6calzh20h3",
-    "decimals": 18,
+    "address": "inj1qjn06jt7zjhdqxgud07nylkpgnaurq6xc5c4fd",
+    "name": "USDT",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1qjn06jt7zjhdqxgud07nylkpgnaurq6xc5c4fd",
+    "decimals": 6,
     "logo": "unknown.png",
-    "symbol": "ROLL",
+    "symbol": "USDT",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -1360,6 +1599,18 @@
     "logo": "unknown.png",
     "symbol": "uLP",
     "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1rmzufd7h09sqfrre5dtvu5d09ta7c0t4jzkr2f",
+    "name": "Neptune Receipt INJ",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1rmzufd7h09sqfrre5dtvu5d09ta7c0t4jzkr2f",
+    "decimals": 18,
+    "logo": "unknown.png",
+    "symbol": "nINJ",
+    "externalLogo": "https://neptune-finance.nyc3.cdn.digitaloceanspaces.com/ninj.svg",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -1425,24 +1676,12 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1sdk8sm96c7hkkax0wzxzhde9z5rpu6cr4ld8dn",
-    "name": "Astro-Injective",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1sdk8sm96c7hkkax0wzxzhde9z5rpu6cr4ld8dn",
-    "decimals": 8,
+    "address": "inj1spzwwtr2luljr300ng2gu52zg7wn7j44m92mdf",
+    "name": "Polkadot",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1spzwwtr2luljr300ng2gu52zg7wn7j44m92mdf",
+    "decimals": 10,
     "logo": "unknown.png",
-    "symbol": "ASTROINJ",
-    "externalLogo": "unknown.png",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
-    "address": "inj1shzx0tx7x74ew6ewjdhvw2l3a828tfaggk5lj3",
-    "name": "MINIDOG",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1shzx0tx7x74ew6ewjdhvw2l3a828tfaggk5lj3",
-    "decimals": 18,
-    "logo": "unknown.png",
-    "symbol": "MINIDOG",
+    "symbol": "DOT",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -1461,12 +1700,48 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3",
+    "name": "Wrapped SOL",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "SOL",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1ta03vxka8mpgem44xvhewekg89wxel8leyvugw",
     "name": "SHB-INJ-LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1ta03vxka8mpgem44xvhewekg89wxel8leyvugw",
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1tjcf9497fwmrnk22jfu5hsdq82qshga54ajvzy",
+    "name": "Pyth Network",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1tjcf9497fwmrnk22jfu5hsdq82qshga54ajvzy",
+    "decimals": 6,
+    "logo": "unknown.png",
+    "symbol": "PYTH",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1tn457ed2gg5vj2cur5khjjw63w73y3xhyhtaay",
+    "name": "Vatreni Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1tn457ed2gg5vj2cur5khjjw63w73y3xhyhtaay",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "VATRENI",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -1521,6 +1796,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1v8gg4wzfauwf9l7895t0eyrrkwe65vh5n7dqmw",
+    "name": "Injective Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1v8gg4wzfauwf9l7895t0eyrrkwe65vh5n7dqmw",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "INJ",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1vd8qv39y8ay7x0ldlhhnfcjc0k6ya69fvp2vzw",
     "name": "Wrapped Ether",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1vd8qv39y8ay7x0ldlhhnfcjc0k6ya69fvp2vzw",
@@ -1557,13 +1844,13 @@
   },
   {
     "coinGeckoId": "",
-    "address": "inj1wndunmgj56h5cssn96hhdh49ssclc24rfl9vr4",
-    "name": "Alaskan Malamute",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1wndunmgj56h5cssn96hhdh49ssclc24rfl9vr4",
+    "address": "inj1wmrzttj7ms7glplek348vedx4v2ls467n539xt",
+    "name": "Punk Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1wmrzttj7ms7glplek348vedx4v2ls467n539xt",
     "decimals": 18,
     "logo": "unknown.png",
-    "symbol": "ALASKA",
-    "externalLogo": "unknown.png",
+    "symbol": "PUNK",
+    "externalLogo": "https://dojo.trading/images/tokens/punk.webp",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -1593,6 +1880,18 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1xcgprh58szttp0vqtztvcfy34tkpupr563ua40",
+    "name": "Injective Protocol",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1xcgprh58szttp0vqtztvcfy34tkpupr563ua40",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "INJ",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1xjvf8nzcx5uvjnmey6x7vx4xe08k95k7gx0fyl",
     "name": "(PoS) Tether USD",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1xjvf8nzcx5uvjnmey6x7vx4xe08k95k7gx0fyl",
@@ -1600,18 +1899,6 @@
     "logo": "unknown.png",
     "symbol": "USDT",
     "externalLogo": "unknown.png",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "coinGeckoId": "",
-    "address": "inj1xpvxfn66l8aslcc8qgr7jc5rp638ampdnsfqda",
-    "name": "FixedFloat",
-    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1xpvxfn66l8aslcc8qgr7jc5rp638ampdnsfqda",
-    "decimals": 18,
-    "logo": "unknown.png",
-    "symbol": "FIX",
-    "externalLogo": "https://ibb.co/qywF07z",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -1653,12 +1940,36 @@
   },
   {
     "coinGeckoId": "",
+    "address": "inj1zdj9kqnknztl2xclm5ssv25yre09f8908d4923",
+    "name": "Dojo Token",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1zdj9kqnknztl2xclm5ssv25yre09f8908d4923",
+    "decimals": 18,
+    "logo": "unknown.png",
+    "symbol": "DOJO",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
     "address": "inj1zejzp0ne0hh7c0wupuspkcqwajlw6kww3r86jl",
     "name": "IBC/-PEGG-LP",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1zejzp0ne0hh7c0wupuspkcqwajlw6kww3r86jl",
     "decimals": 6,
     "logo": "unknown.png",
     "symbol": "uLP",
+    "externalLogo": "unknown.png",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "coinGeckoId": "",
+    "address": "inj1zwnsemwrpve3wrrg0njj89w6mt5rmj9ydkc46u",
+    "name": "Alpha",
+    "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1zwnsemwrpve3wrrg0njj89w6mt5rmj9ydkc46u",
+    "decimals": 8,
+    "logo": "unknown.png",
+    "symbol": "ALPHA",
     "externalLogo": "unknown.png",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
@@ -2049,17 +2360,6 @@
     "denom": "factory/inj1an64kx7fr7fgyrpsuhlzjmuw4a5mmwnwyk3udq/socks",
     "address": "factory/inj1an64kx7fr7fgyrpsuhlzjmuw4a5mmwnwyk3udq/socks",
     "externalLogo": "ipfs://bafkreidvivgjc2r76mihf2jtzpqbwxv2ge7vdpcrrrtlswwquhxto3p2da",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1c6eq9yp3c3ray4prfyumyv9m5ttkdzxawpg6c0/position",
-    "address": "factory/inj1c6eq9yp3c3ray4prfyumyv9m5ttkdzxawpg6c0/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -2531,6 +2831,39 @@
   {
     "decimals": 0,
     "symbol": "Unknown",
+    "name": "1713618016InjUsdt24d1.17C",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "denom": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618016InjUsdt24d1.17C",
+    "address": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618016InjUsdt24d1.17C",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "decimals": 0,
+    "symbol": "Unknown",
+    "name": "1713618016InjUsdt28d1.13C",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "denom": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618016InjUsdt28d1.13C",
+    "address": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618016InjUsdt28d1.13C",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "decimals": 0,
+    "symbol": "Unknown",
+    "name": "1713618060InjUsdt16d0.89P",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "denom": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618060InjUsdt16d0.89P",
+    "address": "factory/inj1cs57nurqssdy09a0tuzqetxn6nyzphj5w220jh/1713618060InjUsdt16d0.89P",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "decimals": 0,
+    "symbol": "Unknown",
     "name": "uLP",
     "logo": "unknown.png",
     "coinGeckoId": "",
@@ -2684,17 +3017,6 @@
     "name": "position",
     "logo": "unknown.png",
     "coinGeckoId": "",
-    "denom": "factory/inj1f4u2643nw7ennyadqmv428fmhg56jduc90xpgy/position",
-    "address": "factory/inj1f4u2643nw7ennyadqmv428fmhg56jduc90xpgy/position",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
     "denom": "factory/inj1faqh7wcap9h2z007yx63eqvpqlzghdmser5l7u/position",
     "address": "factory/inj1faqh7wcap9h2z007yx63eqvpqlzghdmser5l7u/position",
     "tokenType": "tokenFactory",
@@ -2790,6 +3112,17 @@
     "denom": "factory/inj1gaf6yxle4h6993qwsxdg0pkll57223qjetyn3n/PEPEA",
     "address": "factory/inj1gaf6yxle4h6993qwsxdg0pkll57223qjetyn3n/PEPEA",
     "externalLogo": "ipfs://bafybeiavgao72v2pylwsjvcnohzv7vppjvitatmlkbt6bilf3ihtsbrl3y",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal"
+  },
+  {
+    "decimals": 0,
+    "symbol": "Unknown",
+    "name": "position",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "denom": "factory/inj1gpf6gxs9hyz4jty423pxuns8cduhcuyvcxwxkv/position",
+    "address": "factory/inj1gpf6gxs9hyz4jty423pxuns8cduhcuyvcxwxkv/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -3047,17 +3380,6 @@
     "denom": "factory/inj1j7ap5xxp42urr4shkt0zvm0jtfahlrn5muy99a/Inzor",
     "address": "factory/inj1j7ap5xxp42urr4shkt0zvm0jtfahlrn5muy99a/Inzor",
     "externalLogo": "ipfs://bafkreicvoyi5vmv5egukwfu7a3z5yvnf2tgefuec72iyyr5skbo7zld4um",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1jcvx3q6rfj7rdw60grjj3rah5uqsk64msnlafc/position",
-    "address": "factory/inj1jcvx3q6rfj7rdw60grjj3rah5uqsk64msnlafc/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -3407,17 +3729,6 @@
     "tokenVerification": "internal"
   },
   {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1qz4fua8emzx9h2sdafkpxazl5rwyl75t0d6vc8/position",
-    "address": "factory/inj1qz4fua8emzx9h2sdafkpxazl5rwyl75t0d6vc8/position",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
     "decimals": 6,
     "symbol": "ASSYN",
     "name": "ASSYN",
@@ -3489,17 +3800,6 @@
     "tokenVerification": "internal"
   },
   {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1rw5ndf4g2ppl586guwgx6ry06tr2sk9vmpd9jk/position",
-    "address": "factory/inj1rw5ndf4g2ppl586guwgx6ry06tr2sk9vmpd9jk/position",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
     "decimals": 6,
     "symbol": "GMKY",
     "name": "GMKY",
@@ -3520,17 +3820,6 @@
     "denom": "factory/inj1safqtpalmkes3hlyr0zfdr0dw4aaxulh306n67/CRITPO",
     "address": "factory/inj1safqtpalmkes3hlyr0zfdr0dw4aaxulh306n67/CRITPO",
     "externalLogo": "ipfs://bafkreig6i465xipg6tf6gyt2gec2lrnac2nxo7xsr7eerszicsctgi5npy",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1se3jy798wzjtlf588e8qh7342pqs4n0yhjxd0p/position",
-    "address": "factory/inj1se3jy798wzjtlf588e8qh7342pqs4n0yhjxd0p/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -3783,8 +4072,8 @@
     "name": "position",
     "logo": "unknown.png",
     "coinGeckoId": "",
-    "denom": "factory/inj1ur2gpeg5yw67dagpcm5946lnd6v8l2s2k9tx3q/position",
-    "address": "factory/inj1ur2gpeg5yw67dagpcm5946lnd6v8l2s2k9tx3q/position",
+    "denom": "factory/inj1utyrpze9qzx037av0vrxz2w63y2et4wcd84j3q/position",
+    "address": "factory/inj1utyrpze9qzx037av0vrxz2w63y2et4wcd84j3q/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
@@ -4157,17 +4446,6 @@
     "tokenVerification": "internal"
   },
   {
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "position",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "factory/inj1whxcxhncnftrc76w0zns3l6934rqfenj5fl0kg/position",
-    "address": "factory/inj1whxcxhncnftrc76w0zns3l6934rqfenj5fl0kg/position",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
-  },
-  {
     "decimals": 6,
     "symbol": "BINJ",
     "name": "BINJ",
@@ -4185,8 +4463,8 @@
     "name": "position",
     "logo": "unknown.png",
     "coinGeckoId": "",
-    "denom": "factory/inj1xdmkzn2zpfh0rp38mjly8xza4xhx54vrlslqad/position",
-    "address": "factory/inj1xdmkzn2zpfh0rp38mjly8xza4xhx54vrlslqad/position",
+    "denom": "factory/inj1xfl2jxuwpvpxxc5upxm8fxxzv6nxd65z5kpqny/position",
+    "address": "factory/inj1xfl2jxuwpvpxxc5upxm8fxxzv6nxd65z5kpqny/position",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal"
   },
