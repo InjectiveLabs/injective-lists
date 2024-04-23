@@ -3,7 +3,6 @@ import { TokenInfo, ContractInfo, MarketingInfo } from '@injectivelabs/sdk-ts'
 
 export * from './chain'
 
-// todo: import from injective-ts after package bumping
 export interface TokenSymbolMeta {
   name: string
   logo: string
