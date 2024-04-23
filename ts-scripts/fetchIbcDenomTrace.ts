@@ -32,7 +32,7 @@ export const formatIbcToken = ({
   denom: string
   denomTrace?: IbcDenomTrace
 }): TokenStatic => ({
-  hash: denom.replace('ibc', ''),
+  hash: denom.replace('ibc/', ''),
   denom,
   address: denom,
   path: denomTrace?.path || '',

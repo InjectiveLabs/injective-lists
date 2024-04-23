@@ -9,6 +9,7 @@ import {
   tokenToAddressMap
 } from './helper/utils'
 import {
+  getSupplyDenom,
   getInsuranceFundToken,
   getBankTokenFactoryMetadata
 } from './helper/getter'
@@ -111,16 +112,23 @@ const formatApiTokenMetadata = async (
 
     if (denom.startsWith('ibc/')) {
       const ibcToken = await fetchIbcTokenMetaData(denom, Network.MainnetSentry)
+      const denomFromBank = getSupplyDenom(
+        denom,
+        Network.MainnetSentry
+      )
 
       if (ibcToken) {
         externalTokens.push({
           ...ibcToken,
+          ...(denomFromBank && { address: denomFromBank }),
+          ...(denomFromBank && { denom: denomFromBank }),
+          ...(denomFromBank && { hash: denomFromBank.replace('ibc/', '')}),
           ...(tokenMetadata.imageUrl && {
             externalLogo: tokenMetadata.imageUrl
           }),
           ...(tokenMetadata.name && { name: tokenMetadata.name }),
           ...(tokenMetadata.symbol && { symbol: tokenMetadata.symbol }),
-          ...(tokenMetadata.decimals && { decimals: tokenMetadata.imageUrl })
+          ...(tokenMetadata.decimals && { decimals: tokenMetadata.decimals })
         })
 
         continue
