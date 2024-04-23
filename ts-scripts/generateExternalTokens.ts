@@ -9,8 +9,6 @@ import {
   tokenToAddressMap
 } from './helper/utils'
 import {
-  getSupplyDenom,
-  getInsuranceFundToken,
   getBankTokenFactoryMetadata
 } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
@@ -26,9 +24,9 @@ const staticTokensMap = tokensToDenomMap(staticTokens)
 const staticTokensAddressMap = tokenToAddressMap(staticTokens)
 
 const formatApiTokenMetadata = async (
-  tokenMetadata: ApiTokenMetadata[]
+  externalTokenMetadata: ApiTokenMetadata[]
 ): Promise<any[]> => {
-  const filteredTokenMetadata = tokenMetadata.filter((metadata) => {
+  const filteredExternalTokenMetadata = externalTokenMetadata.filter((metadata) => {
     const denom = metadata.contractAddr.toLowerCase()
 
     return !staticTokensMap[denom] && !staticTokensAddressMap[denom]
@@ -36,18 +34,8 @@ const formatApiTokenMetadata = async (
 
   const externalTokens = [] as any
 
-  for (const tokenMetadata of filteredTokenMetadata) {
-    const denom = tokenMetadata.contractAddr.toLowerCase()
-
-    if (denom.startsWith('share')) {
-      const insuranceToken = getInsuranceFundToken(denom, Network.MainnetSentry)
-
-      if (insuranceToken) {
-        externalTokens.push(insuranceToken)
-      }
-
-      continue
-    }
+  for (const externalTokenMetadata of filteredExternalTokenMetadata) {
+    const denom = externalTokenMetadata.contractAddr
 
     if (denom.startsWith('peggy') || denom.startsWith('0x')) {
       const peggyToken = await fetchPeggyTokenMetaData(
@@ -95,6 +83,15 @@ const formatApiTokenMetadata = async (
 
       externalTokens.push({
         ...untaggedSymbolMeta.Unknown,
+        denom,
+        address: denom,
+        name: externalTokenMetadata.name,
+        symbol: externalTokenMetadata.symbol,
+        decimals: externalTokenMetadata.decimals,
+        ...(externalTokenMetadata?.imageUrl && {
+          externalLogo: externalTokenMetadata.imageUrl
+        }),
+        // override with data from bankMetadata
         ...(bankMetadata?.denom && {
           denom: bankMetadata.denom,
           address: bankMetadata.denom
@@ -112,26 +109,20 @@ const formatApiTokenMetadata = async (
 
     if (denom.startsWith('ibc/')) {
       const ibcToken = await fetchIbcTokenMetaData(denom, Network.MainnetSentry)
-      const denomFromBank = getSupplyDenom(
-        denom,
-        Network.MainnetSentry
-      )
 
       if (ibcToken) {
         externalTokens.push({
           ...ibcToken,
-          ...(denomFromBank && { address: denomFromBank }),
-          ...(denomFromBank && { denom: denomFromBank }),
-          ...(denomFromBank && { hash: denomFromBank.replace('ibc/', '')}),
-          ...(tokenMetadata.imageUrl && {
-            externalLogo: tokenMetadata.imageUrl
+          denom,
+          address: denom,
+          hash: denom.replace('ibc/', ''),
+          ...(externalTokenMetadata.imageUrl && {
+            externalLogo: externalTokenMetadata.imageUrl
           }),
-          ...(tokenMetadata.name && { name: tokenMetadata.name }),
-          ...(tokenMetadata.symbol && { symbol: tokenMetadata.symbol }),
-          ...(tokenMetadata.decimals && { decimals: tokenMetadata.decimals })
+          ...(externalTokenMetadata.name && { name: externalTokenMetadata.name }),
+          ...(externalTokenMetadata.symbol && { symbol: externalTokenMetadata.symbol }),
+          ...(externalTokenMetadata.decimals && { decimals: externalTokenMetadata.decimals })
         })
-
-        continue
       }
 
       continue
