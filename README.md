@@ -1,30 +1,24 @@
-# 🌟 Injective Lists
+# 🌟 Injective-list
 
-A way to store different lists in JSON format.
+_Access Limitless DeFi Markets with Zero Barriers._
 
-## ✨ Features
+`injective-list` host a number of JSON files generated from hardcoded-data and data retrieved from different api sources designed to:
 
----
-
-## 📚 Getting Started
-
-1. Clone the repository
-
-```bash
-$ git clone git@github.com:InjectiveLabs/injective-lists.git
-$ cd injective-lists
-```
-
-## 📖 Documentation
+1. automate & improve workflow when launching a new market or adding/updating a token's metadata
+2. optimize performance by decoupling heavier processes that were made on the product
 
 ---
 
-## ⛑ Support
+## 📚 TokenMetadata
 
-Reach out to us at one of the following places!
+📜 A step by step guide can be found here on [Adding a new static token](./ts-scripts//ADD_TOKEN.md) page. Please make sure you read them before you open a PR.
+
+You can find a more information on token metadata on this [page](./ts-scripts/README.md).
+
+---
 
 - Website at <a href="https://injective.com" target="_blank">`injective.com`</a>
-- Twitter at <a href="https://twitter.com/mitofinance" target="_blank">`@MitoFinance`</a>
+- Twitter at <a href="https://twitter.com/Injective_" target="_blank">`@Injective`</a>
 - Discord at <a href="https://discord.com/invite/NK4qdbv" target="_blank">`Discord`</a>
 - Telegram at <a href="https://t.me/joininjective" target="_blank">`Telegram`</a>
 
@@ -32,7 +26,7 @@ Reach out to us at one of the following places!
 
 ## 🔓 License
 
-Copyright © 2021 - 2022 Injective Labs Inc. (https://injectivelabs.org/)
+Copyright © 2021 - 2024 Injective Labs Inc. (https://injectivelabs.org/)
 
 <a href="https://iili.io/mNneZN.md.png"><img src="https://iili.io/mNneZN.md.png" style="width: 300px; max-width: 100%; height: auto" />
 
