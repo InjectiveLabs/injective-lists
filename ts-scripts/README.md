@@ -6,7 +6,7 @@ Assets on Injective are represented as denoms. Denoms (and the amounts) are not 
 
 ### 🪙 Token/Denom types:
 
-This [page](./TOKEN.md) covers a quick overview on the different type of denoms/tokens supported across the injective ecosystem.
+This [page](./tokens/README.md) covers a quick overview on the different type of denoms/tokens supported across the injective ecosystem.
 
 ---
 
@@ -18,13 +18,13 @@ This [page](./SCRIPTS.md) covers a quick overview on the different ts-script scr
 
 ### 📜 Contribution
 
-A step by step guide can be found here on [Adding a new static token](./ts-scripts//ADD_TOKEN.md) page. Please make sure you read them before you open a PR.
+A step by step guide can be found here on [Adding a new static token](./../CONTRIBUTING.md) page. Please make sure you read them before you open a PR.
 
 ---
 
 ### 🔮 Usage
 
-Fetch the tokens json file from github to integrate it on your product:
+Here are the different tokens json file you can fetch/download to integrate on your product:
 
 - Devnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/devnet.json
 - Testnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/testnet.json

@@ -19,13 +19,13 @@ https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/generate
 The script will import the hardcoded data from [these files](./data/) and convert them to TokenStatic tokens based on their type.
 Note: These hardcoded data/denoms here will take priority over data retrieved via other sources.
 
-ℹ️ Refer to this [doc](./ADD_TOKEN.md) on adding new static token-metadata to the injective-list repo.
+ℹ️ Refer to this [doc](./../CONTRIBUTING.md) on adding new static token-metadata to the injective-list repo.
 
 ### Upload images to CloudFlare
 
 https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/uploadImages.ts
 
-Since images are no longer stored on the repo, we now uses cloudflare to host the token logos/images.
+Since images are no longer stored on the repo, we now use cloudflare to host the token logos/images.
 
 The script will scan the [images](./images/) folder and compare it against the [tokenImagePath.json](./../tokens/tokenImagePaths.json) map, if the image name doesn’t exist on the json file, the script will upload the image to cloudflare and create a new entry on the tokenImagePath.json file.
 
@@ -58,7 +58,7 @@ The script will fetch data from https://api.tfm.com/api/v1/ibc/chain/injective-1
   - retrieve ibc token data via the chain https://lcd.injective.network/swagger/#/Query/DenomTrace endpoint
   - retrieve peggy token from alchemy via the [fetchPeggyTokenMetaData](./fetchPeggyMetadata.ts) helper function
 - note that, there will be no insurance tokens from the tfm api response
-  
+
 ### Collate the tokens from different sources into one list
 
 https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/generateTokens.ts
@@ -66,6 +66,7 @@ https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/generate
 The script will:
 
 1. combine the tokens from the:
+
    - static tokens
    - supply tokens
    - external tokens [mainnet only]

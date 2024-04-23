@@ -5,7 +5,7 @@ Below are definition and breakdown on different token types supported on the inj
 ### IBC token
 
 These are tokens with denoms bridged over other Cosmos chains via IBC.
-It’s denom have the following format `ibc/hash`, and it has fields applicable only to them such as `path`, `channelId`, `baseDenom`, `hash` and `source`.
+It’s denom has the following format `ibc/hash`, and it has fields applicable only to them such as `path`, `channelId`, `baseDenom`, `hash` and `source`.
 
 Created with the following characteristics:
 
@@ -51,7 +51,7 @@ https://lcd.injective.network/swagger/#/Query/DenomTrace
 
 ### Insurance token
 
-These are tokens representing tokens shares of the insurance funds created on Injective. It’s denom have the following format `share{id}`
+These are tokens representing tokens shares of the insurance funds created on Injective. It’s denom has the following format `share{id}`
 
 Created with the following characteristics:
 
@@ -86,7 +86,7 @@ https://lcd.injective.network/swagger/#/Query/InsuranceFunds
 
 ### Factory token
 
-These are tokens converted from a cw20 token or natively created via the [tokenFactoryModule](https://docs.injective.network/develop/guides/token-launch/#3-create-a-tokenfactory-denom), it’s denom have the following format:
+These are tokens converted from a cw20 token or natively created via the [tokenFactoryModule](https://docs.injective.network/develop/guides/token-launch/#3-create-a-tokenfactory-denom), it’s denom has the following format:
 
 - cw20 converted tokens: `factor/{ADAPTER_CONTRACT_ADDRESS}/{CW20_CONTRACT_ADDRESS}`
   - e.g. `factory/inj1vcqkkvqs7prqu70dpddfj7kqeqfdz5gg662qs3/lpinj12hrath9g2c02e87vjadnlqnmurxtr8md7djyxm`
@@ -110,7 +110,7 @@ Created with the following characteristics:
 
 ### Cw20 token
 
-These are cw20 wasm smart contract tokens, it’s denom have the following format `inj…`
+These are cw20 wasm smart contract tokens, it’s denom has the following format `inj…`
 
 Created with the following characteristics:
 
@@ -136,7 +136,7 @@ https://sentry.explorer.grpc-web.injective.network/api/explorer/v1/wasm/inj17gku
 
 ### Peggy token
 
-These are tokens bridged over from the Ethereum network via the Peggy bridge, it’s denom have the following format `peggy{ERC20_CONTRACT_ADDRESS}`
+These are tokens bridged over from the Ethereum network via the Peggy bridge, it’s denom has the following format `peggy{ERC20_CONTRACT_ADDRESS}`
 
 Created with the following characteristics:
 

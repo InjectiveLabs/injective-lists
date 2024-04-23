@@ -2,7 +2,7 @@
 
 _Access Limitless DeFi Markets with Zero Barriers._
 
-`injective-list` host a number of JSON files generated from hardcoded-data and data retrieved from different api sources designed to:
+`injective-list` hosts a number of JSON files generated from hardcoded-data and data retrieved from different api sources designed to:
 
 1. automate & improve workflow when launching a new market or adding/updating a token's metadata
 2. optimize performance by decoupling heavier processes that were made on the product
@@ -11,9 +11,19 @@ _Access Limitless DeFi Markets with Zero Barriers._
 
 ## 📚 TokenMetadata
 
-📜 A step by step guide can be found here on [Adding a new static token](./ts-scripts//ADD_TOKEN.md) page. Please make sure you read them before you open a PR.
+📜 A step by step guide can be found here on [Adding a new static token](./CONTRIBUTING.md) page. Please make sure you read them before you open a PR.
 
 You can find a more information on token metadata on this [page](./ts-scripts/README.md).
+
+---
+
+### 🔮 Usage
+
+Here are the different tokens json file you can fetch/download to integrate on your product:
+
+- Devnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/devnet.json](./tokens/devnet.json)
+- Testnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/testnet.json](./tokens/testnet.json)
+- Mainnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/mainnet.json](./tokens/mainnet.json)
 
 ---
 
