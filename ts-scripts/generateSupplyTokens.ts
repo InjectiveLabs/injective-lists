@@ -77,15 +77,6 @@ export const generateSupplyToken = async (network: Network) => {
     const supplyTokens = []
 
     for (const denom of filteredDenoms) {
-      // script optimization: use cached denomTrace data
-      const existingIbcToken = existingIbcTokensMap[denom.toLowerCase()]
-
-      if (existingIbcToken) {
-        supplyTokens.push(existingIbcToken)
-
-        continue
-      }
-
       if (denom.startsWith('factory')) {
         const subDenom = [...denom.split('/')].pop() as string
 
@@ -137,6 +128,7 @@ export const generateSupplyToken = async (network: Network) => {
             logo: symbolMeta.INJ.logo,
             externalLogo: symbolMeta.INJ.logo,
             tokenType: TokenType.InsuranceFund,
+            tokenVerification: TokenVerification.Unverified,
             coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId
           })
         }
