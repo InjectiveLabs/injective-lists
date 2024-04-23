@@ -335,7 +335,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     channelId: 'channel-118',
     source: TokenSource.Cosmos,
     path: 'transfer/channel-118',
-    hash: 'ibc/565FE65B82C091F8BAD1379FA1B4560C036C07913355ED4BD8D156DA63F43712',
+    hash: '565FE65B82C091F8BAD1379FA1B4560C036C07913355ED4BD8D156DA63F43712',
     baseDenom:
       'cw20:terra1cl273523kmr2uwjhhznq54je69mted2u3ljffm8kp2ap4z3drdksftwqun'
   },
@@ -399,7 +399,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     channelId: 'channel-116',
     source: TokenSource.Cosmos,
     path: 'transfer/channel-116',
-    hash: 'ibc/695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795',
+    hash: '695B1D16DE4D0FD293E6B79451640974080B59AA60942974C1CC906568DED795',
     baseDenom:
       'cw20:terra164ssz60yvsxey0ku9mtcaegdeyxwzuwwqyrp238nvflwqve0pvxsra7fa2'
   },
