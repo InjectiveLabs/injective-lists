@@ -804,7 +804,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NEOK',
     logo: 'neok.png',
     name: 'NEOKingdom DAO',
-    coinGeckoId: 'neokingdom-dao'
+    coinGeckoId: ''
   },
 
   ORAI: {
