@@ -1813,5 +1813,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'staked-usde.webp',
     symbol: 'sUSDE',
     coinGeckoId: 'ethena-staked-usde',
+  },
+
+  SAGA: {
+    decimals: 6,
+    name: 'Saga',
+    logo: 'saga.svg',
+    symbol: 'SAGA',
+    coinGeckoId: 'saga-2',
   }
 }
