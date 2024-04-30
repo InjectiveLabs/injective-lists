@@ -411,5 +411,15 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     hash: '2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021',
     baseDenom: 'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3',
-  }
+  },
+  {
+    ...symbolMeta.SAGA,
+    decimals: 6,
+    isNative: true,
+    baseDenom: 'usaga',
+    channelId: 'channel-261',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-261',
+    hash: 'AF921F0874131B56897A11AA3F33D5B29CD9C147A1D7C37FE8D918CB420956B2',
+  },
 ]
