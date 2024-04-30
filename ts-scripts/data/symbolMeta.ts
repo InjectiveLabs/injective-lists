@@ -1818,7 +1818,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   SAGA: {
     decimals: 6,
     name: 'Saga',
-    logo: 'saga.svg',
+    logo: 'saga.webp',
     symbol: 'SAGA',
     coinGeckoId: 'saga-2',
   }
