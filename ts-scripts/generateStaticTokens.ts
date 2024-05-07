@@ -126,6 +126,7 @@ const untaggedSymbolBaseTokens = () =>
     return {
       ...meta,
       tokenType: TokenType.Symbol,
+      tokenVerification: TokenVerification.Internal,
       denom: meta.symbol.toLowerCase(),
       address: meta.symbol.toLowerCase()
     }
@@ -217,8 +218,8 @@ const generateStaticTokens = async (network: Network) => {
       .map((token) => ({
         address: token.denom,
         isNative: false,
-        ...token,
-        tokenVerification: TokenVerification.Verified
+        tokenVerification: TokenVerification.Verified,
+        ...token
       }))
       .sort((a, b) => a.denom.localeCompare(b.denom))
   )
