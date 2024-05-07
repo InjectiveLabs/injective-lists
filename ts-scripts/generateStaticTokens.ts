@@ -4,8 +4,6 @@ import {
   TokenVerification
 } from '@injectivelabs/token-metadata'
 import { Network } from '@injectivelabs/networks'
-import splTokens from './data/spl'
-import evmTokens from './data/evm'
 import {
   mainnetTokens as cw20MainnetTokens,
   devnetTokens as cw20DevnetTokens,
@@ -28,7 +26,10 @@ import {
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
-import { getSupplyDenom, getBankTokenFactoryMetadataByAddress } from './helper/getter'
+import {
+  getSupplyDenom,
+  getBankTokenFactoryMetadataByAddress
+} from './helper/getter'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -107,20 +108,6 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
   }, [] as TokenStatic[])
 }
 
-const formatSplTokens = (tokens: PeggyTokenSource[]) =>
-  tokens.map((token) => ({
-    ...token,
-    denom: token.address,
-    tokenType: TokenType.Spl
-  }))
-
-const formatEvmTokens = (tokens: PeggyTokenSource[]) =>
-  tokens.map((token) => ({
-    ...token,
-    denom: token.address,
-    tokenType: TokenType.Evm
-  }))
-
 const formatErc20Tokens = (tokens: PeggyTokenSource[], network: Network) =>
   tokens.map((token) => {
     const denom = `peggy${token.address}`
@@ -146,8 +133,6 @@ const untaggedSymbolBaseTokens = () =>
 
 const getDevnetStaticTokenList = () => {
   return [
-    ...formatEvmTokens(evmTokens),
-    ...formatSplTokens(splTokens),
     ...formatIbcTokens(
       [...ibcTestnetTokens, ...ibcMainnetTokens],
       Network.Devnet
@@ -173,8 +158,6 @@ const getDevnetStaticTokenList = () => {
 
 const getTestnetStaticTokenList = () => {
   return [
-    ...formatEvmTokens(evmTokens),
-    ...formatSplTokens(splTokens),
     ...formatIbcTokens(
       [...ibcTestnetTokens, ...ibcMainnetTokens],
       Network.TestnetSentry
@@ -200,8 +183,6 @@ const getTestnetStaticTokenList = () => {
 
 const getMainnetStaticTokenList = () => {
   return [
-    ...formatEvmTokens(evmTokens),
-    ...formatSplTokens(splTokens),
     ...formatIbcTokens(ibcMainnetTokens, Network.MainnetSentry),
     ...formatCw20Tokens(
       [...cw20MainnetTokens, ...cw20TestnetTokens],

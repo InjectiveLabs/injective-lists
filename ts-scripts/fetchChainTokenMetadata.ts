@@ -51,7 +51,7 @@ const formatInsuranceFund = (insuranceFund: InsuranceFund): Token => {
     address: denom,
     logo: symbolMeta.INJ.logo,
     tokenType: TokenType.InsuranceFund,
-    tokenVerification: TokenVerification.Verified,
+    tokenVerification: TokenVerification.Internal,
     name: `${insuranceFund.marketTicker} Insurance Fund`
   }
 }

@@ -71,7 +71,7 @@ InsuranceTokens on the frontend are overwritten with the following information:
   "logo": "injective-logo",
   "decimals": 18,
   "tokenType": TokenType.InsuranceFund,
-  "tokenVerification": TokenVerification.Verified
+  "tokenVerification": TokenVerification.Internal
 }
 ```
 
