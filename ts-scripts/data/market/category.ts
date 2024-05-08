@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'saga-usdt',
   'black-inj',
   'omni-usdt',
   'w-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'lvn-inj',
   'nonja-inj',
   'pyth-inj',
-  'zig-inj',
 ]
 
 export const experimental = [
@@ -58,7 +58,8 @@ export const cosmos = [
   'talis-usdt',
   'osmo-usdt-perp',
   'andr-usdt',
-  'whale-inj'
+  'whale-inj',
+  'saga-usdt'
 ]
 
 export const ethereum = [
