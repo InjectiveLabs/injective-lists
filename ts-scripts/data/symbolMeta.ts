@@ -1821,5 +1821,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'saga.webp',
     symbol: 'SAGA',
     coinGeckoId: 'saga-2',
+  },
+
+  GOLDIE: {
+    decimals: 6,
+    name: 'Goldicocks',
+    logo: 'goldie.webp',
+    symbol: 'GOLDIE',
+    coinGeckoId: '',
   }
 }

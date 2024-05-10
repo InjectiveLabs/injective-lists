@@ -406,5 +406,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.SPUUN,
     creator: 'inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7'
+  },
+  {
+    ...symbolMeta.GOLDIE,
+    creator: 'inj130ayayz6ls8qpmu699axhlg7ygy8u6thjjk9nc'
   }
 ]
