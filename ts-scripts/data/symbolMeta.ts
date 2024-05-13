@@ -1829,5 +1829,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'goldie.webp',
     symbol: 'GOLDIE',
     coinGeckoId: '',
+  },
+
+  ezETH: {
+    decimals: 18,
+    name: 'Renzo Restaked ETH',
+    logo: 'ezeth.webp',
+    symbol: 'ezETH',
+    coinGeckoId: 'renzo-restaked-eth',
   }
 }

@@ -380,4 +380,8 @@ export const mainnetTokens = [
     ...symbolMeta.SUSDE,
     address: '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'
   },
+  {
+    ...symbolMeta.ezETH,
+    address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
+  },
 ]
