@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: "${{ secrets.GH_TOKEN }}"
+      - run: |
+          git reset --hard origin/master
 
       - name: Install dependencies
         run: cd ts-scripts && yarn
