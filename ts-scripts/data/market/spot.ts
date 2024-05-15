@@ -49,7 +49,6 @@ export const mainnetSlugs = [
   'hdro-inj',
   'nonja-inj',
   'lvn-inj',
-  'sollegacy-usdt',
   'w-usdt',
   'bonus-usdt',
   'xiii-inj',
