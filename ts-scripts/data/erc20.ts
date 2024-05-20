@@ -215,16 +215,6 @@ export const mainnetTokens = [
     address: '0x6982508145454ce325ddbe47a25d4ec3d2311933'
   },
   {
-    ...symbolMeta.PEPE,
-    symbol: 'KPEPE',
-    address: '0x6982508145454ce325ddbe47a25d4ec3d2311933'
-  },
-  {
-    ...symbolMeta.PEPE,
-    symbol: 'MPEPE',
-    address: '0x6982508145454ce325ddbe47a25d4ec3d2311933'
-  },
-  {
     ...symbolMeta.WASSIE,
     address: '0x2c95d751da37a5c1d9c5a7fd465c1d50f3d96160'
   },
@@ -383,5 +373,5 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ezETH,
     address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
-  },
+  }
 ]

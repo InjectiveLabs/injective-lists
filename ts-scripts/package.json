@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tokens:images": "ts-node ./uploadImages",
+    "check:duplicates": "ts-node ./duplicateCheck",
     "slugs:generate": "ts-node ./generateMarketSlugs",
     "tokens:static": "ts-node ./generateStaticTokens",
     "tokens:supply": "ts-node ./generateSupplyTokens",

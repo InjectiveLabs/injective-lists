@@ -8,9 +8,7 @@ import {
   tokensToDenomMap,
   tokenToAddressMap
 } from './helper/utils'
-import {
-  getBankTokenFactoryMetadata
-} from './helper/getter'
+import { getBankTokenFactoryMetadata } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
@@ -26,11 +24,13 @@ const staticTokensAddressMap = tokenToAddressMap(staticTokens)
 const formatApiTokenMetadata = async (
   externalTokenMetadata: ApiTokenMetadata[]
 ): Promise<any[]> => {
-  const filteredExternalTokenMetadata = externalTokenMetadata.filter((metadata) => {
-    const denom = metadata.contractAddr.toLowerCase()
+  const filteredExternalTokenMetadata = externalTokenMetadata.filter(
+    (metadata) => {
+      const denom = metadata.contractAddr.toLowerCase()
 
-    return !staticTokensMap[denom] && !staticTokensAddressMap[denom]
-  })
+      return !staticTokensMap[denom] && !staticTokensAddressMap[denom]
+    }
+  )
 
   const externalTokens = [] as any
 
@@ -71,7 +71,7 @@ const formatApiTokenMetadata = async (
       const subDenom = [...denom.split('/')].pop() as string
 
       if (isCw20ContractAddress(subDenom)) {
-        console.log('subDenom caught', denom)
+        console.log('subDenom isCw20ContractAddress', denom)
 
         continue
       }
@@ -119,9 +119,15 @@ const formatApiTokenMetadata = async (
           ...(externalTokenMetadata.imageUrl && {
             externalLogo: externalTokenMetadata.imageUrl
           }),
-          ...(externalTokenMetadata.name && { name: externalTokenMetadata.name }),
-          ...(externalTokenMetadata.symbol && { symbol: externalTokenMetadata.symbol }),
-          ...(externalTokenMetadata.decimals && { decimals: externalTokenMetadata.decimals })
+          ...(externalTokenMetadata.name && {
+            name: externalTokenMetadata.name
+          }),
+          ...(externalTokenMetadata.symbol && {
+            symbol: externalTokenMetadata.symbol
+          }),
+          ...(externalTokenMetadata.decimals && {
+            decimals: externalTokenMetadata.decimals
+          })
         })
       }
 
@@ -182,9 +188,13 @@ const generateExternalTokens = async () => {
         !staticTokensAddressMap[token.denom.toLowerCase()]
     )
 
+    const uniqueTokens = [
+      ...new Map(filteredTokens.map((token) => [token.denom, token])).values()
+    ]
+
     await updateJSONFile(
       'tokens/externalTokens.json',
-      filteredTokens.sort((a, b) => a.denom.localeCompare(b.denom))
+      uniqueTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 
     console.log('✅✅✅ GenerateExternalTokens')

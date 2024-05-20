@@ -150,4 +150,20 @@ export const untaggedSymbolMeta = {
     logo: 'dogecoin.webp',
     coinGeckoId: 'dogecoin'
   },
+
+  KPEPE: {
+    name: 'KPEPE',
+    decimals: 18,
+    symbol: 'PEPE',
+    logo: 'pepe.jpeg',
+    coinGeckoId: 'pepe'
+  },
+
+  MPEPE: {
+    name: 'Pepe',
+    decimals: 18,
+    symbol: 'MPEPE',
+    logo: 'pepe.jpeg',
+    coinGeckoId: 'pepe'
+  }
 }

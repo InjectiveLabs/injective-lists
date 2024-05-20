@@ -655,7 +655,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'ribbit-meme'
   },
 
-  LAMBO: {
+  filteredBalances: {
     decimals: 18,
     name: 'Lambo',
     symbol: 'LAMBO',
@@ -1812,7 +1812,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Staked USDe',
     logo: 'staked-usde.webp',
     symbol: 'sUSDE',
-    coinGeckoId: 'ethena-staked-usde',
+    coinGeckoId: 'ethena-staked-usde'
   },
 
   SAGA: {
@@ -1820,7 +1820,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Saga',
     logo: 'saga.webp',
     symbol: 'SAGA',
-    coinGeckoId: 'saga-2',
+    coinGeckoId: 'saga-2'
   },
 
   GOLDIE: {
@@ -1828,7 +1828,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Goldicocks',
     logo: 'goldie.webp',
     symbol: 'GOLDIE',
-    coinGeckoId: '',
+    coinGeckoId: ''
   },
 
   ezETH: {
@@ -1836,6 +1836,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Renzo Restaked ETH',
     logo: 'ezeth.webp',
     symbol: 'ezETH',
-    coinGeckoId: 'renzo-restaked-eth',
+    coinGeckoId: 'renzo-restaked-eth'
   }
 }
