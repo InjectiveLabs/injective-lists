@@ -16,7 +16,6 @@ export const mainnetSlugs = [
   'kira-inj',
   'katana-inj',
   'arb-usdt',
-  'chz-usdcet',
   'wmatic-usdt',
   'sol-usdcet',
   'canto-usdt',
