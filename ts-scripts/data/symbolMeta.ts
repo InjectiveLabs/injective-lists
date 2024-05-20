@@ -655,7 +655,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'ribbit-meme'
   },
 
-  filteredBalances: {
+  LAMBO: {
     decimals: 18,
     name: 'Lambo',
     symbol: 'LAMBO',
