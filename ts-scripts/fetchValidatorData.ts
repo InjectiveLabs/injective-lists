@@ -24,7 +24,11 @@ export const fetchValidatorImageFromImagePaths = (operatorAddress: string) => {
   return validatorImagePathsMap[operatorAddress.toLowerCase()]
 }
 
-export const fetchValidatorMetadataFromKeybase = async (identity: string) => {
+export const fetchValidatorMetadataFromKeybase = async (identity?: string) => {
+  if (!identity) {
+    return
+  }
+
   try {
     const response = (await keybaseApi.get(
       `lookup.json?fields=pictures&key_suffix=${identity}`

@@ -38,17 +38,6 @@ export const generateValidatorsData = async (network: Network) => {
         description: { identity, moniker }
       } = validator
 
-      if (!identity) {
-        validatorSources.push({
-          moniker,
-          identity,
-          operatorAddress,
-          image: ''
-        })
-
-        continue
-      }
-
       const validatorImageUrl = await fetchValidatorImage({
         network,
         identity,

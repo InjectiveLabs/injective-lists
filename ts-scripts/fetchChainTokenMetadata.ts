@@ -122,7 +122,9 @@ export const fetchValidators = async (network: Network) => {
   const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
 
   try {
-    const { validators } = await chainGrpcStakingApi.fetchValidators()
+    const { validators } = await chainGrpcStakingApi.fetchValidators({
+      limit: LIMIT
+    })
 
     // cache data in case of api error
     await updateJSONFile(
