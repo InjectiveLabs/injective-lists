@@ -1,17 +1,14 @@
 import axios from 'axios'
 import 'dotenv/config'
-import { config } from 'dotenv'
 import * as FormData from 'form-data'
 import { readdirSync, createReadStream } from 'node:fs'
 import { readJSONFile, updateJSONFile } from './helper/utils'
-
-const { parsed: envConfig } = config({ path: './.env' })
 
 const extensions = ['png', 'jpg', 'jpeg', 'svg', 'webp']
 const imgDirectoryPath = './images'
 
 const uploadImage = async (imageName: string) => {
-  if (!envConfig) {
+  if (!process.env.CLOUD_FLARE_API_KEY || !process.env.CLOUD_FLARE_ACCOUNT_ID) {
     throw new Error('Cloud flare api keys not found!')
   }
 
@@ -23,12 +20,12 @@ const uploadImage = async (imageName: string) => {
     )
 
     const data = (await axios.post(
-      `https://api.cloudflare.com/client/v4/accounts/${envConfig.CLOUD_FLARE_ACCOUNT_ID}/images/v1`,
+      `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUD_FLARE_ACCOUNT_ID}/images/v1`,
       formData,
       {
         headers: {
           ...formData.getHeaders(),
-          Authorization: `Bearer ${envConfig.CLOUD_FLARE_API_KEY}`
+          Authorization: `Bearer ${process.env.CLOUD_FLARE_API_KEY}`
         }
       }
     )) as { data: { result: { filename: string; variants: string[] } } }
@@ -39,24 +36,27 @@ const uploadImage = async (imageName: string) => {
 
     const updatedTokenImagePaths = {
       ...readJSONFile({
-        path: 'tokens/tokenImagePaths.json',
+        path: 'data/tokenImagePaths.json',
         fallback: {}
       }),
       [imageName]: data.data.result.variants[0]
     }
 
-    await updateJSONFile('tokens/tokenImagePaths.json', updatedTokenImagePaths)
+    await updateJSONFile('data/tokenImagePaths.json', updatedTokenImagePaths)
   } catch (e) {
     console.log('Error uploadImage', e)
   }
 }
 
 const uploadImages = async () => {
-  console.log({ envConfig })
+  console.log({
+    CLOUD_FLARE_API_KEY: process.env.CLOUD_FLARE_API_KEY,
+    CLOUD_FLARE_ACCOUNT_ID: process.env.CLOUD_FLARE_ACCOUNT_ID
+  })
 
   try {
     const uploadedImages = readJSONFile({
-      path: 'tokens/tokenImagePaths.json',
+      path: 'data/tokenImagePaths.json',
       fallback: {}
     })
 

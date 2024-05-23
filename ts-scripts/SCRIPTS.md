@@ -8,9 +8,9 @@ https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/fetchCha
 
 The script will fetch:
 
-1. bankMetadata from https://lcd.injective.network/swagger/#/Query/DenomsMetadata and cache them as [json files](./../tokens/bankMetadata/) which we will use as a source of reference for tokenFactory denoms.
-2. insuranceTokens from https://lcd.injective.network/swagger/#/Query/InsuranceFunds and cache them as [json files](./../tokens/insuranceFunds/) which we will use as a source of reference for insurance denoms.
-3. supplyDenoms from https://lcd.injective.network/swagger/#/Query/TotalSupply and cache the denoms as [json files](./../tokens/bankSupplyDenoms/), they will be used in the `Format supply tokens` script below.
+1. bankMetadata from https://lcd.injective.network/swagger/#/Query/DenomsMetadata and cache them as [json files](./../data/bankMetadata/) which we will use as a source of reference for tokenFactory denoms.
+2. insuranceTokens from https://lcd.injective.network/swagger/#/Query/InsuranceFunds and cache them as [json files](./../data/insuranceFunds/) which we will use as a source of reference for insurance denoms.
+3. supplyDenoms from https://lcd.injective.network/swagger/#/Query/TotalSupply and cache the denoms as [json files](./../data/bankSupplyDenoms/), they will be used in the `Format supply tokens` script below.
 
 ### Generate static tokens
 
@@ -27,19 +27,19 @@ https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/uploadIm
 
 Since images are no longer stored on the repo, we now use cloudflare to host the token logos/images.
 
-The script will scan the [images](./images/) folder and compare it against the [tokenImagePath.json](./../tokens/tokenImagePaths.json) map, if the image name doesn’t exist on the json file, the script will upload the image to cloudflare and create a new entry on the tokenImagePath.json file.
+The script will scan the [images](./images/) folder and compare it against the [tokenImagePath.json](./../data/tokenImagePaths.json) map, if the image name doesn’t exist on the json file, the script will upload the image to cloudflare and create a new entry on the tokenImagePath.json file.
 
 ### Format supply tokens
 
 https://github.com/InjectiveLabs/injective-lists/blob/master/ts-scripts/generateSupplyTokens.ts
 
-The script will import the cached [supply denoms](https://github.com/InjectiveLabs/injective-lists/tree/master/tokens/bankSupplyDenoms) fetched in the `Fetch chain metadata` script and:
+The script will import the cached [supply denoms](https://github.com/InjectiveLabs/injective-lists/tree/master/data/bankSupplyDenoms) fetched in the `Fetch chain metadata` script and:
 
 - filter out denoms that are hardcoded in the [staticTokens json file](https://github.com/InjectiveLabs/injective-lists/tree/master/tokens/staticTokens)
 - format the denoms to tokenStatic based on the denom
   - retrieve insurance tokens data from the [insuranceFunds](./../tokens/insuranceFunds/) json files
-  - retrieve tokenFactory token data from the [bankMetadata](./../tokens/bankMetadata/) json files
-  - retrieve cw20 tokenFactory token data from the cw20 [cw20ContractSources](./../tokens/cw20ContractSources/) json files or query against the chain via the [fetchCw20FactoryToken]('./fetchCw20Metadata.ts') helper function
+  - retrieve tokenFactory token data from the [bankMetadata](./../tokens/bankSupplyTokens/) json files
+  - retrieve cw20 tokenFactory token data from the cw20 [cw20ContractSources](./../data/cw20ContractSources/) json files or query against the chain via the [fetchCw20FactoryToken]('./fetchCw20Metadata.ts') helper function
   - retrieve ibc token data via the chain https://lcd.injective.network/swagger/#/Query/DenomTrace endpoint
   - retrieve peggy token from alchemy via the [fetchPeggyTokenMetaData](./fetchPeggyMetadata.ts) helper function
 - note that, there will be no cw20 tokens from the bankSupplyDenoms
@@ -52,9 +52,9 @@ The script will fetch data from https://api.tfm.com/api/v1/ibc/chain/injective-1
 
 - filter out denoms that are hardcoded in the [staticTokens json file](https://github.com/InjectiveLabs/injective-lists/tree/master/tokens/staticTokens)
 - format the response data to tokenStatic:
-  - retrieve tokenFactory token data from the [bankMetadata](./../tokens/bankMetadata/) json files
-  - retrieve cw20 token data from the cw20 [cw20ContractSources](./../tokens/cw20ContractSources/) json files or query against the chain via the [fetchCw20Token]('./fetchCw20Metadata.ts') helper function
-  - retrieve cw20 tokenFactory data from the [bankMetadata](./../tokens/bankMetadata/) json files
+  - retrieve tokenFactory token data from the [bankMetadata](./../tokens/bankSupplyTokens/) json files
+  - retrieve cw20 token data from the cw20 [cw20ContractSources](./../data.cw20ContractSources/) json files or query against the chain via the [fetchCw20Token]('./fetchCw20Metadata.ts') helper function
+  - retrieve cw20 tokenFactory data from the [bankMetadata](./../data/cw20ContractSources/) json files
   - retrieve ibc token data via the chain https://lcd.injective.network/swagger/#/Query/DenomTrace endpoint
   - retrieve peggy token from alchemy via the [fetchPeggyTokenMetaData](./fetchPeggyMetadata.ts) helper function
 - note that, there will be no insurance tokens from the tfm api response
@@ -77,7 +77,7 @@ The script will:
    - External
    - UnVerified
 3. Sort the list by denom alphabetically based on denom
-4. append the correct cloudFlare logo based on the token's string logo via the [tokenImagePaths](./../tokens/tokenImagePaths.json) json file.
+4. append the correct cloudFlare logo based on the token's string logo via the [tokenImagePaths](./../data/tokenImagePaths.json) json file.
 5. generate one json file for each environment (mainnet, testnet and devnet), this will be the only reference file required for production usage
    - [devnet.json](./../tokens/devnet.json)
    - [testnet.json](./../tokens/testnet.json)

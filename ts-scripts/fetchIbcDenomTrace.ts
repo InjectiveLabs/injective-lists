@@ -57,7 +57,7 @@ export const fetchIbcTokenMetaData = async (
     return
   }
 
-  const path = `tokens/ibcDenomTrace/${getNetworkFileName(network)}.json`
+  const path = `data/ibcDenomTrace/${getNetworkFileName(network)}.json`
   const existingIbcDenomTraceMap = readJSONFile({
     path,
     fallback: {}

@@ -19,22 +19,11 @@ import { fetchCw20FactoryToken } from './fetchCw20Metadata'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { Token } from './types'
 
 const mainnetStaticTokensMap = tokensToDenomMap([
   ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/externalTokens.json' })
 ])
-
-const devnetIbcSupplyTokens = readJSONFile({
-  path: 'tokens/bankSupplyTokens/devnet.json'
-}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
-const testnetIbcSupplyTokens = readJSONFile({
-  path: 'tokens/bankSupplyTokens/testnet.json'
-}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
-const mainnetIbcSupplyTokens = readJSONFile({
-  path: 'tokens/bankSupplyTokens/mainnet.json'
-}).filter((token: Token) => token.tokenType === TokenType.Ibc) as Token[]
 
 const devnetStaticTokensMap = tokensToDenomMap(
   readJSONFile({ path: 'tokens/staticTokens/devnet.json' })
@@ -42,31 +31,25 @@ const devnetStaticTokensMap = tokensToDenomMap(
 const testnetStaticTokensMap = tokensToDenomMap(
   readJSONFile({ path: 'tokens/staticTokens/testnet.json' })
 )
-const devnetIbcSupplyTokensMap = tokensToDenomMap(devnetIbcSupplyTokens)
-const testnetIbcSupplyTokensMap = tokensToDenomMap(testnetIbcSupplyTokens)
-const mainnetIbcSupplyTokensMap = tokensToDenomMap(mainnetIbcSupplyTokens)
 
 export const generateSupplyToken = async (network: Network) => {
   let supplyDenoms = readJSONFile({
-    path: 'tokens/bankSupplyDenoms/devnet.json'
+    path: 'data/bankSupplyDenoms/devnet.json'
   })
   let existingStaticTokensMap = devnetStaticTokensMap
-  let existingIbcTokensMap = devnetIbcSupplyTokensMap
 
   if (isTestnet(network)) {
     supplyDenoms = readJSONFile({
-      path: 'tokens/bankSupplyDenoms/testnet.json'
+      path: 'data/bankSupplyDenoms/testnet.json'
     })
     existingStaticTokensMap = testnetStaticTokensMap
-    existingIbcTokensMap = testnetIbcSupplyTokensMap
   }
 
   if (isMainnet(network)) {
     supplyDenoms = readJSONFile({
-      path: 'tokens/bankSupplyDenoms/mainnet.json'
+      path: 'data/bankSupplyDenoms/mainnet.json'
     })
     existingStaticTokensMap = mainnetStaticTokensMap
-    existingIbcTokensMap = mainnetIbcSupplyTokensMap
   }
 
   try {

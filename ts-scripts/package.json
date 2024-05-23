@@ -10,6 +10,7 @@
     "tokens:static": "ts-node ./generateStaticTokens",
     "tokens:supply": "ts-node ./generateSupplyTokens",
     "tokens:external": "ts-node ./generateExternalTokens",
+    "validators:generate": "ts-node ./generateValidatorsData",
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
     "tokens:generate": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
     "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens"

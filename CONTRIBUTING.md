@@ -11,11 +11,11 @@ The [symbolMeta.ts](./data/symbolMeta.ts) file contains the symbolMeta details u
 
 ```ts
 export interface TokenSymbolMeta {
-  name: string
-  logo: string
-  symbol: string
-  decimals: number
-  coinGeckoId: string
+  name: string;
+  logo: string;
+  symbol: string;
+  decimals: number;
+  coinGeckoId: string;
 }
 ```
 
@@ -38,7 +38,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
 ## Step 2: Upload the token image/logo
 
-In the CI/CD workflow, the [uploadImages](./uploadImages.ts) script will automatically upload images in the [images folder](./images/) that doesn't already exist on the [tokenImagePaths.json file]('./../../tokens/tokenImagePaths.json') to cloudflare.
+In the CI/CD workflow, the [uploadImages](./uploadImages.ts) script will automatically upload images in the [images folder](./images/) that doesn't already exist on the [tokenImagePaths.json file]('./../../data/tokenImagePaths.json') to cloudflare.
 
 Follow the steps below to add a new image:
 
@@ -68,9 +68,9 @@ In the [erc20.ts file](./data/erc20.ts) file, add an entry to the end of `mainne
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    address: '0x...'
-  }
-]
+    address: "0x...",
+  },
+];
 ```
 
 We can also override SymbolMeta data here
@@ -81,13 +81,13 @@ export const mainnetTokens = [
     // we can also override SymbolMeta data here
     ...symbolMeta.EXAMPLE,
     decimals: 6,
-    coinGeckoId: 'example-coinGeckoId-override',
-    name: 'example-override',
-    logo: 'imageFileName-override.png',
-    symbol: 'symbol-override',
-    address: '0x...'
-  }
-]
+    coinGeckoId: "example-coinGeckoId-override",
+    name: "example-override",
+    logo: "imageFileName-override.png",
+    symbol: "symbol-override",
+    address: "0x...",
+  },
+];
 ```
 
 #### IBC Tokens
@@ -98,13 +98,13 @@ In the [ibc.ts file](./data/ibc.ts) file, add an entry to the end of `mainnetTok
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    channelId: 'channel-example',
+    channelId: "channel-example",
     source: TokenSource.Cosmos,
-    path: 'transfer/channel-example',
-    hash: '...',
-    baseDenom: 'uexample'
-  }
-]
+    path: "transfer/channel-example",
+    hash: "...",
+    baseDenom: "uexample",
+  },
+];
 ```
 
 We can also override SymbolMeta data here
@@ -113,18 +113,18 @@ We can also override SymbolMeta data here
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    channelId: 'channel-example',
+    channelId: "channel-example",
     source: TokenSource.Cosmos,
-    path: 'transfer/channel-example',
-    hash: '...',
-    baseDenom: 'uexample',
+    path: "transfer/channel-example",
+    hash: "...",
+    baseDenom: "uexample",
     decimals: 6,
-    coinGeckoId: 'example-coinGeckoId-override',
-    name: 'example-override',
-    logo: 'imageFileName-override.png',
-    symbol: 'symbol-override'
-  }
-]
+    coinGeckoId: "example-coinGeckoId-override",
+    name: "example-override",
+    logo: "imageFileName-override.png",
+    symbol: "symbol-override",
+  },
+];
 ```
 
 #### Cw20 Tokens
@@ -135,9 +135,9 @@ In the [cw20.ts file](./data/cw20.ts) file, add an entry to the end of `mainnetT
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    address: 'inj...'
-  }
-]
+    address: "inj...",
+  },
+];
 ```
 
 We can also override SymbolMeta data here
@@ -147,13 +147,13 @@ export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
     decimals: 6,
-    coinGeckoId: 'example-coinGeckoId-override',
-    name: 'example-override',
-    logo: 'imageFileName-override.png',
-    symbol: 'symbol-override',
-    address: 'inj...'
-  }
-]
+    coinGeckoId: "example-coinGeckoId-override",
+    name: "example-override",
+    logo: "imageFileName-override.png",
+    symbol: "symbol-override",
+    address: "inj...",
+  },
+];
 ```
 
 ### Token factory tokens
@@ -164,9 +164,9 @@ In the [tokenFactory.ts file](./data/tokenFactory.ts) file, add an entry to the 
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    creator: 'inj...'
-  }
-]
+    creator: "inj...",
+  },
+];
 ```
 
 We can also override SymbolMeta data here
@@ -175,12 +175,12 @@ We can also override SymbolMeta data here
 export const mainnetTokens = [
   {
     ...symbolMeta.EXAMPLE,
-    creator: 'inj...',
+    creator: "inj...",
     decimals: 6,
-    coinGeckoId: 'example-coinGeckoId-override',
-    name: 'example-override',
-    logo: 'imageFileName-override.png',
-    symbol: 'symbol-override'
-  }
-]
+    coinGeckoId: "example-coinGeckoId-override",
+    name: "example-override",
+    logo: "imageFileName-override.png",
+    symbol: "symbol-override",
+  },
+];
 ```

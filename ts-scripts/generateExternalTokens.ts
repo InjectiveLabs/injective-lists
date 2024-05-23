@@ -139,7 +139,7 @@ const formatApiTokenMetadata = async (
 }
 
 const getExternalTokens = async () => {
-  const path = 'tokens/externalTokensSource.json'
+  const path = 'data/externalTokensSource.json'
 
   try {
     const externalTokenMetadataApi = new HttpRestClient(
@@ -193,7 +193,7 @@ const generateExternalTokens = async () => {
     ]
 
     await updateJSONFile(
-      'tokens/externalTokens.json',
+      'data/externalTokens.json',
       uniqueTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 

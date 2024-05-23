@@ -1,8 +1,10 @@
 import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
 import {
   Metadata,
+  Validator,
   InsuranceFund,
   ChainGrpcBankApi,
+  ChainGrpcStakingApi,
   ChainGrpcInsuranceFundApi
 } from '@injectivelabs/sdk-ts'
 import {
@@ -14,10 +16,6 @@ import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import { Token } from './types'
-
-/*
-  fetch and cache bank metadata & supply token denoms
-*/
 
 const LIMIT = 5000
 
@@ -65,7 +63,7 @@ export const fetchBankMetadata = async (network: Network) => {
 
     // cache data in case of api error
     await updateJSONFile(
-      `tokens/bankMetadata/${getNetworkFileName(network)}.json`,
+      `data/bankMetadata/${getNetworkFileName(network)}.json`,
       response.metadatas
         .map(formatMetadata)
         .sort((a, b) => a.denom.localeCompare(b.denom))
@@ -86,7 +84,7 @@ export const fetchSupplyDenoms = async (network: Network) => {
 
     // cache data in case of api error
     await updateJSONFile(
-      `tokens/bankSupplyDenoms/${getNetworkFileName(network)}.json`,
+      `data/bankSupplyDenoms/${getNetworkFileName(network)}.json`,
       response.supply
         .map(({ denom }) => denom)
         .sort((a, b) => a.localeCompare(b))
@@ -107,7 +105,7 @@ export const fetchInsuranceFunds = async (network: Network) => {
 
     // cache data in case of api error
     await updateJSONFile(
-      `tokens/insuranceFunds/${getNetworkFileName(network)}.json`,
+      `data/insuranceFunds/${getNetworkFileName(network)}.json`,
       response
         .map(formatInsuranceFund)
         .sort((a, b) => a.denom.localeCompare(b.denom))
@@ -116,6 +114,27 @@ export const fetchInsuranceFunds = async (network: Network) => {
     console.log(`✅✅✅ fetchInsuranceFunds ${network}`)
   } catch (e) {
     console.log(`Error fetching insurance funds ${network}:`, e)
+  }
+}
+
+export const fetchValidators = async (network: Network) => {
+  const endpoints = getNetworkEndpoints(network)
+  const chainGrpcStakingApi = new ChainGrpcStakingApi(endpoints.grpc)
+
+  try {
+    const { validators } = await chainGrpcStakingApi.fetchValidators()
+
+    // cache data in case of api error
+    await updateJSONFile(
+      `data/validators/${getNetworkFileName(network)}.json`,
+      validators.sort((a: Validator, b: Validator) =>
+        a.operatorAddress.localeCompare(b.operatorAddress)
+      )
+    )
+
+    console.log(`✅✅✅ fetchValidators ${network}`)
+  } catch (e) {
+    console.log(`Error fetching validators ${network} using cached data:`, e)
   }
 }
 
@@ -128,3 +147,6 @@ fetchSupplyDenoms(Network.MainnetSentry)
 fetchInsuranceFunds(Network.Devnet)
 fetchInsuranceFunds(Network.TestnetSentry)
 fetchInsuranceFunds(Network.MainnetSentry)
+fetchValidators(Network.Devnet)
+fetchValidators(Network.TestnetSentry)
+fetchValidators(Network.MainnetSentry)

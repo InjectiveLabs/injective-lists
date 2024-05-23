@@ -3,7 +3,7 @@ import { updateJSONFile, getNetworkFileName } from './helper/utils'
 
 const flushCw20CacheData = async (network: Network) => {
   await updateJSONFile(
-    `tokens/cw20ContractSources/${getNetworkFileName(network)}.json`,
+    `data/cw20ContractSources/${getNetworkFileName(network)}.json`,
     {}
   )
 }

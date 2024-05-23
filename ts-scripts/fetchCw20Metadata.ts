@@ -33,7 +33,7 @@ const testnetWasmApi = new ChainGrpcWasmApi(
 )
 
 const fetchContractDetails = async (address: string, network: Network) => {
-  const path = `tokens/cw20ContractSources/${getNetworkFileName(network)}.json`
+  const path = `data/cw20ContractSources/${getNetworkFileName(network)}.json`
 
   const existingCW20ContractSourcesMap = readJSONFile({
     path,

@@ -9,45 +9,45 @@ import {
 import { Token, BankMetadata } from './../types'
 
 const devnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/devnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/devnet.json' })
 )
 const testnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/testnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/testnet.json' })
 )
 const mainnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'tokens/bankMetadata/mainnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/mainnet.json' })
 )
 
 const devnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'tokens/bankMetadata/devnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/devnet.json' })
 )
 const testnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'tokens/bankMetadata/testnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/testnet.json' })
 )
 const mainnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'tokens/bankMetadata/mainnet.json' })
+  readJSONFile({ path: 'data/bankMetadata/mainnet.json' })
 )
 
 const devnetInsuranceFundsMap = tokensToDenomMap(
-  readJSONFile({ path: 'tokens/insuranceFunds/devnet.json' })
+  readJSONFile({ path: 'data/insuranceFunds/devnet.json' })
 )
 const testnetInsuranceFundsMap = tokensToDenomMap(
-  readJSONFile({ path: 'tokens/insuranceFunds/testnet.json' })
+  readJSONFile({ path: 'data/insuranceFunds/testnet.json' })
 )
 const mainnetInsuranceFundsMap = tokensToDenomMap(
-  readJSONFile({ path: 'tokens/insuranceFunds/mainnet.json' })
+  readJSONFile({ path: 'data/insuranceFunds/mainnet.json' })
 )
 
 const devnetSupplyDenomMap = denomsToDenomMap(
-  readJSONFile({ path: 'tokens/bankSupplyDenoms/devnet.json' })
+  readJSONFile({ path: 'data/bankSupplyDenoms/devnet.json' })
 )
 
 const testnetSupplyDenomMap = denomsToDenomMap(
-  readJSONFile({ path: 'tokens/bankSupplyDenoms/testnet.json' })
+  readJSONFile({ path: 'data/bankSupplyDenoms/testnet.json' })
 )
 
 const mainnetSupplyDenomMap = denomsToDenomMap(
-  readJSONFile({ path: 'tokens/bankSupplyDenoms/mainnet.json' })
+  readJSONFile({ path: 'data/bankSupplyDenoms/mainnet.json' })
 )
 
 export const getSupplyDenom = (

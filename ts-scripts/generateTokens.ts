@@ -29,7 +29,7 @@ export const generateTokensList = async (network: Network) => {
     ? testnetTokens
     : devnetTokens
 
-  const logos = readJSONFile({ path: 'tokens/tokenImagePaths.json' }) as Record<
+  const logos = readJSONFile({ path: 'data/tokenImagePaths.json' }) as Record<
     string,
     string
   >
