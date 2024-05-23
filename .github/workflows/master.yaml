@@ -1,6 +1,7 @@
 name: Injective list - generate data
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
