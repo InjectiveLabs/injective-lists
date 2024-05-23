@@ -4,7 +4,7 @@ import {
   updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
-import { fetchValidatorMetadata } from './fetchValidatorData'
+import { fetchValidatorImage } from './fetchValidatorData'
 
 const mainnetValidators = readJSONFile({
   path: 'data/validators/mainnet.json'
@@ -49,7 +49,7 @@ export const generateValidatorsData = async (network: Network) => {
         continue
       }
 
-      const validatorMetadata = await fetchValidatorMetadata({
+      const validatorImageUrl = await fetchValidatorImage({
         network,
         identity,
         operatorAddress
@@ -59,7 +59,7 @@ export const generateValidatorsData = async (network: Network) => {
         moniker,
         identity,
         operatorAddress,
-        image: validatorMetadata?.pictures?.primary?.url || ''
+        image: validatorImageUrl
       })
     }
 

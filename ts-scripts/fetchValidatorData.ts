@@ -9,6 +9,21 @@ import {
 
 const keybaseApi = new HttpRestClient('https://keybase.io/_/api/1.0/user')
 
+const validatorImagePathsMap = Object.entries(
+  readJSONFile({
+    path: 'data/validatorImagePaths.json',
+    fallback: {}
+  })
+).reduce((acc, [operatorAddress, imageUrl]) => {
+  const formattedOperatorAddress = operatorAddress.split('.')[0].toLowerCase()
+
+  return { ...acc, [formattedOperatorAddress]: imageUrl as string }
+}, {} as Record<string, string>)
+
+export const fetchValidatorImageFromImagePaths = (operatorAddress: string) => {
+  return validatorImagePathsMap[operatorAddress.toLowerCase()]
+}
+
 export const fetchValidatorMetadataFromKeybase = async (identity: string) => {
   try {
     const response = (await keybaseApi.get(
@@ -17,13 +32,13 @@ export const fetchValidatorMetadataFromKeybase = async (identity: string) => {
       data: any
     }
 
-    return response.data.them?.[0]
+    return response.data.them?.[0]?.pictures?.primary?.url
   } catch (e) {
     console.log(`cannot fetch validator logo ${identity}:`, e)
   }
 }
 
-export const fetchValidatorMetadata = async ({
+export const fetchValidatorImage = async ({
   network,
   identity,
   operatorAddress
@@ -59,7 +74,9 @@ export const fetchValidatorMetadata = async ({
   }
 
   const validatorMetadata =
-    (await fetchValidatorMetadataFromKeybase(identity)) || {}
+    fetchValidatorImageFromImagePaths(operatorAddress) ||
+    (await fetchValidatorMetadataFromKeybase(identity)) ||
+    ''
 
   await updateJSONFile(
     `data/validatorMetadata/${getNetworkFileName(network)}.json`,

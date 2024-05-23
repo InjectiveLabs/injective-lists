@@ -5,7 +5,7 @@ import { readdirSync, createReadStream } from 'node:fs'
 import { readJSONFile, updateJSONFile } from './helper/utils'
 
 const extensions = ['png', 'jpg', 'jpeg', 'svg', 'webp']
-const imgDirectoryPath = './images'
+const imgDirectoryPath = './images/tokens'
 
 const uploadImage = async (imageName: string) => {
   if (!process.env.CLOUD_FLARE_API_KEY || !process.env.CLOUD_FLARE_ACCOUNT_ID) {
