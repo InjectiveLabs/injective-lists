@@ -165,5 +165,21 @@ export const untaggedSymbolMeta = {
     symbol: 'MPEPE',
     logo: 'pepe.jpeg',
     coinGeckoId: 'pepe'
-  }
+  },
+
+  XAG: {
+    decimals: 6,
+    name: 'Silver',
+    symbol: 'XAG',
+    coinGeckoId: '',
+    logo: 'xag.svg'
+  },
+
+  CAD: {
+    decimals: 6,
+    name: 'Canadian Dollar',
+    symbol: 'CAD',
+    coinGeckoId: '',
+    logo: 'cad.svg'
+  },
 }
