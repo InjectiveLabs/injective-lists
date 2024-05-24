@@ -18,6 +18,7 @@ import {
   stagingSlugs as stagingExpiryFutureSlugs
 } from './data/market/expiryFutures'
 import {
+  rwa as rwaCategorySlugs,
   cosmos as cosmosCategorySlugs,
   solana as solanaCategorySlugs,
   ethereum as ethereumCategorySlugs,
@@ -93,6 +94,7 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
 
 export const generateMarketCategorySlugs = async () => {
   await updateJSONFile('helix/trading/market/category.json', {
+    rwaCategorySlugs,
     cosmosCategorySlugs,
     solanaCategorySlugs,
     ethereumCategorySlugs,

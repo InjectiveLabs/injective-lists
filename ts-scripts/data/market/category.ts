@@ -155,3 +155,10 @@ export const olpLowVolume = [
   'tia-usdt-30nov2023',
   'tia-usdt-perp'
 ]
+
+export const rwa = [
+  'xau-usdt-perp',
+  'xag-usdt-perp',
+  'eur-usdt-perp',
+  'gbp-usdt-perp'
+]
