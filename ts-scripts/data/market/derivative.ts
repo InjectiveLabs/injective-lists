@@ -30,7 +30,14 @@ export const mainnetSlugs: string[] = [
 
 export const devnetSlugs: string[] = []
 
-export const stagingSlugs: string[] = ['btc-usdtkv-perp', 'eth-usdtkv-perp']
+export const stagingSlugs: string[] = [
+  'btc-usdtkv-perp',
+  'eth-usdtkv-perp',
+  'xau-usdt-perp',
+  'xag-usdt-perp',
+  'eur-usdt-perp',
+  'gbp-usdt-perp'
+]
 
 export const testnetSlugs: string[] = [
   '1mpepe-usdt-perp',
