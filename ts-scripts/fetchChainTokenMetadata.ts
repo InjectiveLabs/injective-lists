@@ -1,10 +1,15 @@
-import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
+import {
+  Network,
+  getNetworkEndpoints,
+  CW20_ADAPTER_CONTRACT_BY_NETWORK
+} from '@injectivelabs/networks'
 import {
   Metadata,
   Validator,
   InsuranceFund,
   ChainGrpcBankApi,
   ChainGrpcStakingApi,
+  ChainGrpcTokenFactoryApi,
   ChainGrpcInsuranceFundApi
 } from '@injectivelabs/sdk-ts'
 import {
@@ -140,6 +145,26 @@ export const fetchValidators = async (network: Network) => {
   }
 }
 
+export const fetchTokenCw20Denoms = async (network: Network) => {
+  const contractAddress = CW20_ADAPTER_CONTRACT_BY_NETWORK[network]
+
+  const endpoints = getNetworkEndpoints(network)
+  const tokenFactoryApi = new ChainGrpcTokenFactoryApi(endpoints.grpc)
+
+  try {
+    const denoms = await tokenFactoryApi.fetchDenomsFromCreator(contractAddress)
+
+    await updateJSONFile(
+      `data/cw20Denoms/${getNetworkFileName(network)}.json`,
+      denoms.sort((a, b) => a.localeCompare(b))
+    )
+
+    console.log(`✅✅✅ fetchTokenCw20Denoms ${network}`)
+  } catch (e) {
+    console.log(`Error fetching token cw20 denoms ${network}:`, e)
+  }
+}
+
 fetchBankMetadata(Network.Devnet)
 fetchBankMetadata(Network.TestnetSentry)
 fetchBankMetadata(Network.MainnetSentry)
@@ -152,3 +177,6 @@ fetchInsuranceFunds(Network.MainnetSentry)
 fetchValidators(Network.Devnet)
 fetchValidators(Network.TestnetSentry)
 fetchValidators(Network.MainnetSentry)
+fetchTokenCw20Denoms(Network.Devnet)
+fetchTokenCw20Denoms(Network.TestnetSentry)
+fetchTokenCw20Denoms(Network.MainnetSentry)

@@ -88,8 +88,9 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       tokenVerification: TokenVerification.Verified
     })
 
+    // we retrieve * override the denom & decimals from the chain
     const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
-      token.address.toLowerCase(),
+      token.address,
       network
     )
 

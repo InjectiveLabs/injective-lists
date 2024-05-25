@@ -74,6 +74,22 @@ export const tokensToDenomMap = (tokens: Token[]) => {
   }, {} as Record<string, Token>)
 }
 
+export const tokensToDenomMapKeepCasing = (tokens: Token[]) => {
+  return tokens.reduce((list, token) => {
+    const formattedDenom = token.denom
+
+    if (!list[formattedDenom]) {
+      list[formattedDenom] = token
+
+      return list
+    }
+
+    list[formattedDenom] = { ...list[formattedDenom], ...token }
+
+    return list
+  }, {} as Record<string, Token>)
+}
+
 export const tokenToAddressMap = (tokens: Token[]) => {
   return tokens.reduce((list, token) => {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
@@ -104,22 +120,6 @@ export const tokensToAddressMap = (tokens: Token[]) => {
 
     return list
   }, {} as Record<string, Token[]>)
-}
-
-export const bankMetadataToDenomMap = (metadatas: BankMetadata[]) => {
-  return metadatas.reduce((list, metadata) => {
-    const formattedDenom = metadata.denom.toLowerCase()
-
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = metadata
-
-      return list
-    }
-
-    list[formattedDenom] = { ...list[formattedDenom], ...metadata }
-
-    return list
-  }, {} as Record<string, BankMetadata>)
 }
 
 export const bankMetadataToAddressMap = (metadatas: BankMetadata[]) => {

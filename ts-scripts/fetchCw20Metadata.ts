@@ -181,10 +181,10 @@ export const fetchCw20Token = async (denom: string, network: Network) => {
     const cw20ContractSource = await fetchContractDetails(address, network)
 
     if (cw20ContractSource) {
-      return formatCw20Token(cw20ContractSource)
+      return { ...formatCw20Token(cw20ContractSource), denom }
     }
 
-    const formattedToken = formatCw20Token(cw20ContractSource)
+    const formattedToken = { ...formatCw20Token(cw20ContractSource), denom }
 
     return formattedToken
   } catch (e) {

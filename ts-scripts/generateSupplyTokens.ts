@@ -1,21 +1,13 @@
-import {
-  TokenType,
-  TokenVerification,
-  isCw20ContractAddress
-} from '@injectivelabs/token-metadata'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,
   tokensToDenomMap,
   getNetworkFileName
 } from './helper/utils'
-import {
-  getInsuranceFundToken,
-  getBankTokenFactoryMetadata
-} from './helper/getter'
 import { symbolMeta } from './data/symbolMeta'
-import { fetchCw20FactoryToken } from './fetchCw20Metadata'
+import { getInsuranceFundToken } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
@@ -60,37 +52,12 @@ export const generateSupplyToken = async (network: Network) => {
     const supplyTokens = []
 
     for (const denom of filteredDenoms) {
+      /*
+        all factory denoms on chain are handled in
+        the generateFactoryTokens script
+      */
       if (denom.startsWith('factory')) {
-        const subDenom = [...denom.split('/')].pop() as string
-
-        if (isCw20ContractAddress(subDenom)) {
-          const cw20Token = await fetchCw20FactoryToken(subDenom, network)
-
-          if (cw20Token) {
-            supplyTokens.push(cw20Token)
-
-            continue
-          }
-        } else {
-          // token factory
-          const bankMetadata = getBankTokenFactoryMetadata(denom, network)
-
-          supplyTokens.push({
-            ...untaggedSymbolMeta.Unknown,
-            ...(bankMetadata?.denom && {
-              denom: bankMetadata.denom,
-              address: bankMetadata.denom
-            }),
-            ...(bankMetadata?.name && { name: bankMetadata.name }),
-            ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
-            ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
-            ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals }),
-            tokenType: TokenType.TokenFactory,
-            tokenVerification: TokenVerification.Internal
-          })
-
-          continue
-        }
+        continue
       }
 
       if (denom.startsWith('share')) {

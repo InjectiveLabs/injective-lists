@@ -6,9 +6,9 @@ import {
   readJSONFile,
   updateJSONFile,
   tokensToDenomMap,
-  tokenToAddressMap
+  tokenToAddressMap,
+  tokensToDenomMapKeepCasing
 } from './helper/utils'
-import { getBankTokenFactoryMetadata } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
@@ -21,6 +21,15 @@ const staticTokens = readJSONFile({ path: 'tokens/staticTokens/mainnet.json' })
 const staticTokensMap = tokensToDenomMap(staticTokens)
 const staticTokensAddressMap = tokenToAddressMap(staticTokens)
 
+const cw20Tokens = readJSONFile({ path: 'tokens/cw20Tokens/mainnet.json' })
+const cw20TokensMap = tokensToDenomMap(cw20Tokens)
+const cw20TokensAddressMap = tokenToAddressMap(cw20Tokens)
+
+const factoryTokens = readJSONFile({
+  path: 'tokens/factoryTokens/mainnet.json'
+})
+const factoryTokensMap = tokensToDenomMapKeepCasing(factoryTokens)
+
 const formatApiTokenMetadata = async (
   externalTokenMetadata: ApiTokenMetadata[]
 ): Promise<any[]> => {
@@ -28,7 +37,17 @@ const formatApiTokenMetadata = async (
     (metadata) => {
       const denom = metadata.contractAddr.toLowerCase()
 
-      return !staticTokensMap[denom] && !staticTokensAddressMap[denom]
+      const isPartOfStaticTokenList =
+        staticTokensMap[denom] || staticTokensAddressMap[denom]
+
+      const isPartOfCw20TokenList =
+        cw20TokensMap[denom] || cw20TokensAddressMap[denom]
+
+      return (
+        !isPartOfStaticTokenList &&
+        !isPartOfCw20TokenList &&
+        !factoryTokensMap[metadata.contractAddr]
+      )
     }
   )
 
@@ -76,11 +95,6 @@ const formatApiTokenMetadata = async (
         continue
       }
 
-      const bankMetadata = getBankTokenFactoryMetadata(
-        denom,
-        Network.MainnetSentry
-      )
-
       externalTokens.push({
         ...untaggedSymbolMeta.Unknown,
         denom,
@@ -91,15 +105,6 @@ const formatApiTokenMetadata = async (
         ...(externalTokenMetadata?.imageUrl && {
           externalLogo: externalTokenMetadata.imageUrl
         }),
-        // override with data from bankMetadata
-        ...(bankMetadata?.denom && {
-          denom: bankMetadata.denom,
-          address: bankMetadata.denom
-        }),
-        ...(bankMetadata?.name && { name: bankMetadata.name }),
-        ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
-        ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
-        ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals }),
         tokenType: TokenType.TokenFactory,
         tokenVerification: TokenVerification.Internal
       })
@@ -193,7 +198,7 @@ const generateExternalTokens = async () => {
     ]
 
     await updateJSONFile(
-      'data/externalTokens.json',
+      'tokens/externalTokens.json',
       uniqueTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 

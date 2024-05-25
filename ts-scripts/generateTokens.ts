@@ -10,16 +10,22 @@ import { Token } from './types'
 
 const devnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/devnet.json' }),
-  ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' })
+  ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' }),
+  ...readJSONFile({ path: 'tokens/cw20Tokens/devnet.json' }),
+  ...readJSONFile({ path: 'tokens/factoryTokens/devnet.json' })
 ]
 const testnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/testnet.json' }),
-  ...readJSONFile({ path: 'tokens/bankSupplyTokens/testnet.json' })
+  ...readJSONFile({ path: 'tokens/bankSupplyTokens/testnet.json' }),
+  ...readJSONFile({ path: 'tokens/cw20Tokens/testnet.json' }),
+  ...readJSONFile({ path: 'tokens/factoryTokens/testnet.json' })
 ]
 const mainnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/mainnet.json' }),
-  ...readJSONFile({ path: 'tokens/externalTokens.json' })
+  ...readJSONFile({ path: 'tokens/externalTokens.json' }),
+  ...readJSONFile({ path: 'tokens/cw20Tokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/factoryTokens/mainnet.json' })
 ]
 
 export const generateTokensList = async (network: Network) => {

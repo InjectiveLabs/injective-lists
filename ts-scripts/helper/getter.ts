@@ -3,20 +3,9 @@ import {
   readJSONFile,
   denomsToDenomMap,
   tokensToDenomMap,
-  bankMetadataToDenomMap,
   bankMetadataToAddressMap
 } from './../helper/utils'
 import { Token, BankMetadata } from './../types'
-
-const devnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'data/bankMetadata/devnet.json' })
-)
-const testnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'data/bankMetadata/testnet.json' })
-)
-const mainnetBankMetadataMap = bankMetadataToDenomMap(
-  readJSONFile({ path: 'data/bankMetadata/mainnet.json' })
-)
 
 const devnetBankMetadataAddressMap = bankMetadataToAddressMap(
   readJSONFile({ path: 'data/bankMetadata/devnet.json' })
@@ -67,28 +56,11 @@ export const getSupplyDenom = (
   return devnetSupplyDenomMap[formattedDenom]
 }
 
-export const getBankTokenFactoryMetadata = (
-  denom: string,
-  network: Network
-): BankMetadata | undefined => {
-  const formattedDenom = denom.toLowerCase()
-
-  if (isMainnet(network)) {
-    return mainnetBankMetadataMap[formattedDenom]
-  }
-
-  if (isTestnet(network)) {
-    return testnetBankMetadataMap[formattedDenom]
-  }
-
-  return devnetBankMetadataMap[formattedDenom]
-}
-
 export const getBankTokenFactoryMetadataByAddress = (
   denom: string,
   network: Network
 ): BankMetadata | undefined => {
-  const formattedDenom = denom.toLowerCase()
+  const formattedDenom = denom
 
   if (isMainnet(network)) {
     return mainnetBankMetadataAddressMap[formattedDenom]
