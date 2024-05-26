@@ -26,13 +26,17 @@ function checkForDuplicate(network: Network) {
     {}
   )
 
-  const duplicates = Object.entries(tokensByDenom).filter(([_, item]) => {
-    return (item as { count: number; list: Token[] }).count > 1
-  })
+  const duplicates = Object.values(tokensByDenom).filter((item) => {
+    const itemWithType = item as { count: number; list: Token[] }
 
-  if (duplicates.length < 0) {
+    return itemWithType.count !== 1
+  }) as { count: number; list: Token[] }[]
+
+  if (duplicates.length > 0) {
     console.log(`Duplicates found on: ${path}`)
-    console.log(duplicates)
+    duplicates.forEach(({ list }) => {
+      console.log(list[0].denom)
+    })
 
     return
   }

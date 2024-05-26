@@ -4,10 +4,6 @@ export const devnetTokens = [
   {
     ...symbolMeta.INJ,
     address: '0xBe8d71D26525440A03311cc7fa372262c5354A3c'
-  },
-  {
-    ...symbolMeta.USDC,
-    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
   }
 ]
 
@@ -15,10 +11,6 @@ export const testnetTokens = [
   {
     ...symbolMeta.INJ,
     address: '0x5512c04B6FF813f3571bDF64A1d74c98B5257332'
-  },
-  {
-    ...symbolMeta.USDT,
-    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
   },
   {
     ...symbolMeta.APE,

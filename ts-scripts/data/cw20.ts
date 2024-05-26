@@ -2,13 +2,7 @@ import { TokenSource } from '@injectivelabs/token-metadata'
 import { symbolMeta } from './symbolMeta'
 import { Cw20TokenSource } from '../types'
 
-export const devnetTokens: Cw20TokenSource[] = [
-  {
-    ...symbolMeta.USDC,
-    symbol: 'USDCet',
-    address: 'inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
-  }
-]
+export const devnetTokens: Cw20TokenSource[] = []
 
 export const testnetTokens: Cw20TokenSource[] = [
   {

@@ -40,10 +40,6 @@ export const testnetTokens: TokenFactorySource[] = [
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
   },
   {
-    ...symbolMeta.HDRO,
-    creator: 'inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk'
-  },
-  {
     ...symbolMeta.KIRA,
     creator: 'inj1jfuyujpvvkxq4566r3z3tv3jdy29pqra5ln0yk'
   },

@@ -8,10 +8,29 @@ import {
 import {
   readJSONFile,
   updateJSONFile,
-  getNetworkFileName
+  getNetworkFileName,
+  tokensToDenomMapKeepCasing
 } from './helper/utils'
 import { fetchCw20Token } from './fetchCw20Metadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+
+const mainnetStaticTokensMap = tokensToDenomMapKeepCasing(
+  readJSONFile({
+    path: 'tokens/staticTokens/mainnet.json'
+  })
+)
+
+const testnetStaticTokensMap = tokensToDenomMapKeepCasing(
+  readJSONFile({
+    path: 'tokens/staticTokens/testnet.json'
+  })
+)
+
+const devnetStaticTokensMap = tokensToDenomMapKeepCasing(
+  readJSONFile({
+    path: 'tokens/staticTokens/devnet.json'
+  })
+)
 
 const mainnetBankFactoryTokens = readJSONFile({
   path: 'data/bankMetadata/mainnet.json'
@@ -33,8 +52,21 @@ const devnetCw20Denoms = readJSONFile({
   path: 'data/cw20Denoms/devnet.json'
 })
 
+const getStaticTokensMap = (network: Network) => {
+  if (isMainnet(network)) {
+    return mainnetStaticTokensMap
+  }
+
+  if (isTestnet(network)) {
+    return testnetStaticTokensMap
+  }
+
+  return devnetStaticTokensMap
+}
+
 export const generateCw20FactoryTokens = async (network: Network) => {
   let denoms = devnetCw20Denoms
+  const staticTokensMap = getStaticTokensMap(network)
   const adapterContractAddress = CW20_ADAPTER_CONTRACT_BY_NETWORK[network]
 
   if (isTestnet(network)) {
@@ -49,17 +81,25 @@ export const generateCw20FactoryTokens = async (network: Network) => {
     const cw20FactoryTokens = []
 
     for (const denom of denoms) {
+      if (staticTokensMap[denom]) {
+        continue
+      }
+
       const token = await fetchCw20Token(
         `factory/${adapterContractAddress}/${denom}`,
         network
       )
+
+      if (!token) {
+        continue
+      }
 
       cw20FactoryTokens.push(token)
     }
 
     await updateJSONFile(
       `tokens/cw20Tokens/${getNetworkFileName(network)}.json`,
-      cw20FactoryTokens
+      cw20FactoryTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 
     console.log(`✅✅✅ GenerateCw20FactoryTokens ${network}`)
@@ -70,6 +110,7 @@ export const generateCw20FactoryTokens = async (network: Network) => {
 
 export const generateBankFactoryTokens = async (network: Network) => {
   let bankMetadatas = devnetBankFactoryTokens
+  const staticTokensMap = getStaticTokensMap(network)
 
   if (isTestnet(network)) {
     bankMetadatas = testnetBankFactoryTokens
@@ -83,6 +124,13 @@ export const generateBankFactoryTokens = async (network: Network) => {
     const bankFactoryTokens = []
 
     for (const bankMetadata of bankMetadatas) {
+      if (
+        staticTokensMap[bankMetadata.denom] ||
+        bankMetadata.denom.startsWith('share')
+      ) {
+        continue
+      }
+
       bankFactoryTokens.push({
         ...untaggedSymbolMeta.Unknown,
         denom: bankMetadata.denom,
@@ -97,7 +145,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
 
     await updateJSONFile(
       `tokens/factoryTokens/${getNetworkFileName(network)}.json`,
-      bankFactoryTokens
+      bankFactoryTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 
     console.log(`✅✅✅ GenerateBankFactoryTokens ${network}`)
