@@ -9,6 +9,7 @@ import {
   tokenToAddressMap,
   tokensToDenomMapKeepCasing
 } from './helper/utils'
+import { getSupplyDenom } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
 import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
@@ -54,7 +55,12 @@ const formatApiTokenMetadata = async (
   const externalTokens = [] as any
 
   for (const externalTokenMetadata of filteredExternalTokenMetadata) {
-    const denom = externalTokenMetadata.contractAddr
+    let denom = externalTokenMetadata.contractAddr
+    const supplyDenom = getSupplyDenom(denom, Network.MainnetSentry)
+
+    if (supplyDenom) {
+      denom = supplyDenom
+    }
 
     if (denom.startsWith('peggy') || denom.startsWith('0x')) {
       const peggyToken = await fetchPeggyTokenMetaData(
@@ -180,10 +186,7 @@ const generateExternalTokens = async () => {
     const externalTokensSource =
       (await getExternalTokens()) as ApiTokenMetadata[]
 
-    const filteredData = externalTokensSource.filter(
-      ({ contractAddr }) => !staticTokensMap[contractAddr.toLowerCase()]
-    )
-    const tokens = await formatApiTokenMetadata(filteredData)
+    const tokens = await formatApiTokenMetadata(externalTokensSource)
 
     const filteredTokens = tokens.filter(
       (token) =>
