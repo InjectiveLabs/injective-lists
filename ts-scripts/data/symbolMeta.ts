@@ -1740,12 +1740,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BONUS',
     coinGeckoId: '',
     name: 'Bonus Block',
-    logo: 'bonus-block.webp'
+    logo: 'bonus-block.png'
   },
 
   W: {
     decimals: 6,
-    name: 'W',
+    name: 'Wormhole',
     symbol: 'W',
     coinGeckoId: '',
     logo: 'wormhole.png'
