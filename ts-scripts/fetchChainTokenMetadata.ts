@@ -19,7 +19,11 @@ import {
 } from '@injectivelabs/token-metadata'
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { updateJSONFile, getNetworkFileName } from './helper/utils'
+import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName
+} from './helper/utils'
 import { Token } from './types'
 
 const LIMIT = 5000
@@ -87,12 +91,21 @@ export const fetchSupplyDenoms = async (network: Network) => {
 
     const response = await bankApi.fetchAllTotalSupply()
 
+    const existingSupplyDenoms = await readJSONFile({
+      path: `data/bankSupplyDenoms/${getNetworkFileName(network)}.json`
+    })
+
+    const denoms = [
+      ...new Set([
+        ...existingSupplyDenoms,
+        ...response.supply.map(({ denom }) => denom)
+      ])
+    ]
+
     // cache data in case of api error
     await updateJSONFile(
       `data/bankSupplyDenoms/${getNetworkFileName(network)}.json`,
-      response.supply
-        .map(({ denom }) => denom)
-        .sort((a, b) => a.localeCompare(b))
+      denoms.sort((a, b) => a.localeCompare(b))
     )
 
     console.log(`✅✅✅ fetchSupplyDenoms ${network}`)

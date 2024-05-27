@@ -37,7 +37,7 @@ The script will import the cached [supply denoms](https://github.com/InjectiveLa
 
 - filter out denoms that are hardcoded in the [staticTokens json file](https://github.com/InjectiveLabs/injective-lists/tree/master/tokens/staticTokens)
 - format the denoms to tokenStatic based on the denom
-  - retrieve insurance tokens data from the [insuranceFunds](./../tokens/insuranceFunds/) json files
+  - retrieve insurance tokens data from the [insuranceFunds](./../data/insuranceFunds/) json files
   - retrieve tokenFactory token data from the [bankMetadata](./../tokens/bankSupplyTokens/) json files
   - retrieve cw20 tokenFactory token data from the cw20 [cw20ContractSources](./../data/cw20ContractSources/) json files or query against the chain via the [fetchCw20FactoryToken]('./fetchCw20Metadata.ts') helper function
   - retrieve ibc token data via the chain https://lcd.injective.network/swagger/#/Query/DenomTrace endpoint
