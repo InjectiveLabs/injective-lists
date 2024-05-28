@@ -43,7 +43,7 @@ export const untaggedSymbolMeta = {
     decimals: 6,
     name: 'Euro',
     symbol: 'EUR',
-    logo: 'eur.png',
+    logo: 'eur.svg',
     coinGeckoId: ''
   },
 
@@ -51,7 +51,7 @@ export const untaggedSymbolMeta = {
     decimals: 6,
     symbol: 'GBP',
     coinGeckoId: '',
-    logo: 'gpb.png',
+    logo: 'gbp.svg',
     name: 'British Pound'
   },
 
@@ -59,7 +59,7 @@ export const untaggedSymbolMeta = {
     decimals: 6,
     symbol: 'JPY',
     coinGeckoId: '',
-    logo: 'jpy.png',
+    logo: 'jpy.svg',
     name: 'Japanese Yen'
   },
 
@@ -68,7 +68,7 @@ export const untaggedSymbolMeta = {
     name: 'Gold',
     symbol: 'XAU',
     coinGeckoId: '',
-    logo: 'gold.png'
+    logo: 'gold.svg'
   },
 
   GOLD: {
@@ -76,7 +76,7 @@ export const untaggedSymbolMeta = {
     decimals: 18,
     symbol: 'GOLD',
     coinGeckoId: '',
-    logo: 'gold.png'
+    logo: 'gold.svg'
   },
 
   SEI: {
