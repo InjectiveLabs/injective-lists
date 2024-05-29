@@ -1,13 +1,13 @@
 # 📜 Adding a new Static token
 
 StaticTokens is an off-chain list of manually maintained token metadata (symbol, name, decimals, logo for the particular denom, etc).
-These static tokens are generated via data from a few different files in the [data folder]('./data/').
+These static tokens are generated via data from a few different files in the [data folder](./ts-scripts/data/).
 
 Follow the steps below to add/update token-metadata on the injective-list repo.
 
 ## Step 1: Create SymbolMeta entry
 
-The [symbolMeta.ts](./data/symbolMeta.ts) file contains the symbolMeta details unique to each symbol with the following interface:
+The [symbolMeta.ts](./ts-scripts/data/symbolMeta.ts) file contains the symbolMeta details unique to each symbol with the following interface:
 
 ```ts
 export interface TokenSymbolMeta {
@@ -21,7 +21,7 @@ export interface TokenSymbolMeta {
 
 ### Adding a symbol meta entry
 
-Add the symbolMeta entry to the bottom of the [list](./data/symbolMeta.ts) - only if it **doesn't exist** on the list:
+Add the symbolMeta entry to the bottom of the [list](./ts-scripts/data/symbolMeta.ts) - only if it **doesn't exist** on the list:
 
 ```ts
 export const symbolMeta: Record<string, TokenSymbolMeta> = {
@@ -38,19 +38,19 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
 ## Step 2: Upload the token image/logo
 
-In the CI/CD workflow, the [uploadImages](./uploadImages.ts) script will automatically upload images in the [images folder](./images/) that doesn't already exist on the [tokenImagePaths.json file]('./../../data/tokenImagePaths.json') to cloudflare.
+In the CI/CD workflow, the [uploadImages](./ts-scripts/uploadImages.ts) script will automatically upload images in the [images folder](./ts-scripts/images/) that doesn't already exist on the [tokenImagePaths.json file](./data/tokenImagePaths.json) to cloudflare.
 
 Follow the steps below to add a new image:
 
 ### Upload new token logo
 
-1. Copy the token image to the [images folder](./images/)
+1. Copy the token image to the [images folder](./ts-scripts/images/)
 2. Make sure the image fileName is unique in the folder - image fileName is used as the unique identifier mapping cloudflare URL to the token image.
 
 #### Update existing token logo
 
-1. Copy and override the token image with file you want to replace in the [images folder](./images/)
-2. Delete the object key-pair that has the same imageFileName, this ensure that the [uploadImages](./uploadImages.ts) script uploads the new logo to cloudflare.
+1. Copy and override the token image with file you want to replace in the [images folder](./ts-scripts/images/)
+2. Delete the object key-pair that has the same imageFileName, this ensure that the [uploadImages](./ts-scripts/uploadImages.ts) script uploads the new logo to cloudflare.
 
 **The image name should match the symbolMeta entry logo field for example `imageFileName.png`.**
 **Note that: we only support the following formats `['png', 'jpg', 'jpeg', 'svg', 'webp']`.**
@@ -62,7 +62,7 @@ Using `EXAMPLE` symbol meta above, here are how to add token metadata for the di
 
 #### ERC20 (peggy)
 
-In the [erc20.ts file](./data/erc20.ts) file, add an entry to the end of `mainnetTokens` array:
+In the [erc20.ts file](./ts-scripts/data/erc20.ts) file, add an entry to the end of `mainnetTokens` array:
 
 ```ts
 export const mainnetTokens = [
@@ -92,7 +92,7 @@ export const mainnetTokens = [
 
 #### IBC Tokens
 
-In the [ibc.ts file](./data/ibc.ts) file, add an entry to the end of `mainnetTokens` array:
+In the [ibc.ts file](./ts-scripts/data/ibc.ts) file, add an entry to the end of `mainnetTokens` array:
 
 ```ts
 export const mainnetTokens = [
@@ -129,7 +129,7 @@ export const mainnetTokens = [
 
 #### Cw20 Tokens
 
-In the [cw20.ts file](./data/cw20.ts) file, add an entry to the end of `mainnetTokens` array:
+In the [cw20.ts file](./ts-scripts/data/cw20.ts) file, add an entry to the end of `mainnetTokens` array:
 
 ```ts
 export const mainnetTokens = [
@@ -158,7 +158,7 @@ export const mainnetTokens = [
 
 ### Token factory tokens
 
-In the [tokenFactory.ts file](./data/tokenFactory.ts) file, add an entry to the end of `mainnetTokens` array:
+In the [tokenFactory.ts file](./ts-scripts/data/tokenFactory.ts) file, add an entry to the end of `mainnetTokens` array:
 
 ```ts
 export const mainnetTokens = [
