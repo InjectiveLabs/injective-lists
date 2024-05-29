@@ -26,6 +26,8 @@ export const mainnetSlugs: string[] = [
   'zro-usdt-perp',
   'omni-usdt-perp',
   'w-usdt-perp',
+  'xau-usdt-perp',
+  'xag-usdt-perp',
 ]
 
 export const devnetSlugs: string[] = []
@@ -33,8 +35,6 @@ export const devnetSlugs: string[] = []
 export const stagingSlugs: string[] = [
   'btc-usdtkv-perp',
   'eth-usdtkv-perp',
-  'xau-usdt-perp',
-  'xag-usdt-perp',
   'eur-usdt-perp',
   'gbp-usdt-perp'
 ]
