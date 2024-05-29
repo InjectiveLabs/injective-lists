@@ -1,4 +1,6 @@
 export const newMarkets = [
+  'xau-usdt-perp',
+  'xag-usdt-perp',
   'ezeth-weth',
   'saga-usdt',
   'black-inj',
@@ -9,8 +11,6 @@ export const newMarkets = [
   'w-usdt',
   'bonus-usdt',
   'ena-usdt',
-  'lvn-inj',
-  'nonja-inj',
 ]
 
 export const experimental = [
