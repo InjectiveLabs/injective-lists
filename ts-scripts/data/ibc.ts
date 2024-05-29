@@ -411,7 +411,8 @@ export const mainnetTokens: IbcTokenSource[] = [
     source: TokenSource.BinanceSmartChain,
     path: 'transfer/channel-183',
     hash: '2D40732D27E22D27A2AB79F077F487F27B6F13DB6293040097A71A52FB8AD021',
-    baseDenom: 'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3',
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/54RgtKyJuM9boEu4G7Dzp2mMrg6w5MuctfU95HoHHeL3'
   },
   {
     ...symbolMeta.SAGA,
@@ -421,6 +422,16 @@ export const mainnetTokens: IbcTokenSource[] = [
     channelId: 'channel-261',
     source: TokenSource.Cosmos,
     path: 'transfer/channel-261',
-    hash: 'AF921F0874131B56897A11AA3F33D5B29CD9C147A1D7C37FE8D918CB420956B2',
+    hash: 'AF921F0874131B56897A11AA3F33D5B29CD9C147A1D7C37FE8D918CB420956B2'
   },
+  {
+    ...symbolMeta.NBZ,
+    isNative: true,
+    baseDenom:
+      'factory/neutron1a6ydq8urdj0gkvjw9e9e5y9r5ce2qegm9m4xufpt96kcm60kmuass0mqq4/nbz',
+    channelId: 'channel-177',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-177',
+    hash: '1011E4D6D4800DA9B8F21D7C207C0B0C18E54E614A8576037F066B775210709D'
+  }
 ]

@@ -88,3 +88,9 @@ jobs:
           ref: master
           repo: injectiveLabs/injective-explorer
           token: "${{ secrets.GH_TOKEN }}"
+
+      # - name: Deploy OLP (mainnet)
+      #   run: curl -X POST -d {} https://api.netlify.com/build_hooks/6656effe7e59027d29160fd5
+
+      # - name: Deploy Admin UI (mainnet)
+      #   run: curl -X POST -d {} https://api.netlify.com/build_hooks/665708f5e5ef6799ac221b79

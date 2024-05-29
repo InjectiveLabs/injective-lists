@@ -1837,5 +1837,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'ezeth.webp',
     symbol: 'ezETH',
     coinGeckoId: 'renzo-restaked-eth'
+  },
+
+  NBZ: {
+    decimals: 6,
+    name: 'Ninja Blaze Token',
+    logo: 'nbz.webp',
+    symbol: 'NBZ',
+    coinGeckoId: ''
   }
 }
