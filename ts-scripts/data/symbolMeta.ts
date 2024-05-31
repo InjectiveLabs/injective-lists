@@ -1747,7 +1747,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'Wormhole',
     symbol: 'W',
-    coinGeckoId: '',
+    coinGeckoId: 'wormhole',
     logo: 'wormhole.png'
   },
 
@@ -1762,7 +1762,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   XIII: {
     decimals: 6,
     symbol: 'XIII',
-    coinGeckoId: '',
+    coinGeckoId: 'xiiicoin',
     logo: 'xiii.png',
     name: 'XIII Coin'
   },
@@ -1845,5 +1845,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'nbz.webp',
     symbol: 'NBZ',
     coinGeckoId: ''
-  }
+  },
+
+  MOTHER: {
+    decimals: 6,
+    name: 'MOTHER IZZY',
+    symbol: 'MOTHER',
+    coinGeckoId: 'mother-izzy',
+    logo: 'mother.webp'
+  },
 }
