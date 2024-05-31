@@ -440,8 +440,8 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     source: TokenSource.Solana,
     // source: TokenSource.Wormhole,
-    hash: 'F16F0F685BEF7BC6A145F16CBE78C6EC8C7C3A5F3066A98A9E57DCEA0903E537',
+    hash: '984E90A8E0265B9804B7345C7542BF9B3046978AE5557B4AABADDFE605CACABE',
     baseDenom:
-      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2Wb6ueMFc9WLc2eyYVha6qnwHKbwzUXdooXsg6XXVvos'
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/3yX6ZZbagFp8pLni1gsy9zifaCMYyARGqADqCBwgABgA'
   },
 ]
