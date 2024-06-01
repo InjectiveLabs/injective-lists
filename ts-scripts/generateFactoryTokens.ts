@@ -86,7 +86,9 @@ export const generateCw20FactoryTokens = async (network: Network) => {
       }
 
       const token = await fetchCw20Token(
-        `factory/${adapterContractAddress}/${denom}`,
+        denom.startsWith('factory')
+          ? denom
+          : `factory/${adapterContractAddress}/${denom}`,
         network
       )
 
