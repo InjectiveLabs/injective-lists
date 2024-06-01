@@ -53,8 +53,8 @@
     "operatorAddress": "injvaloper156t3yxd4udv0h9gwagfcmwnmm3quy0nph7tyh5",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199839468357312.690918202905675537",
-    "delegatorShares": "200079521768736397783404623788027.246832772821130104",
+    "tokens": "199839468357312.691041202905675537",
+    "delegatorShares": "200079521768736397906552375229961.241968885427875051",
     "description": {
       "moniker": "InjectiveNode0",
       "identity": "",
@@ -621,6 +621,31 @@
         "maxChangeRate": "0.1"
       },
       "updateTime": "2022-10-05T15:24:07.812Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
+    "operatorAddress": "injvaloper1j0ll9vpjx0nn6ncugjky9vzuk95lvp6pqm2klh",
+    "jailed": false,
+    "status": "Bonded",
+    "tokens": "100",
+    "delegatorShares": "100000000000000000000",
+    "description": {
+      "moniker": "ashpool-test",
+      "identity": "",
+      "website": "https://ash.pw",
+      "securityContact": "ashpool@xecut.net",
+      "details": ""
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.1",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2024-06-01T15:19:41.908Z"
     },
     "minSelfDelegation": "50000000000000000000"
   },
