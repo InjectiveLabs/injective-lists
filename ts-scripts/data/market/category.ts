@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'mother-inj',
   'gbp-usdt-perp',
   'eur-usdt-perp',
   'xau-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'w-usdt-perp',
   'omni-usdt-perp',
   'xiii-inj',
-  'w-usdt',
 ]
 
 export const experimental = [
@@ -38,7 +38,8 @@ export const experimental = [
   'qunt-inj',
   'talis-inj',
   'omni-usdt-perp',
-  'w-usdt-perp'
+  'w-usdt-perp',
+  'mother-inj'
 ]
 
 export const cosmos = [
@@ -118,7 +119,8 @@ export const injective = [
   'nonja-inj',
   'lvn-inj',
   'xiii-inj',
-  'black-inj'
+  'black-inj',
+  'mother-inj'
 ]
 
 export const solana = [
