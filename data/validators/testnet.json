@@ -53,8 +53,8 @@
     "operatorAddress": "injvaloper156t3yxd4udv0h9gwagfcmwnmm3quy0nph7tyh5",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199839468357350.553612105104018637",
-    "delegatorShares": "200079521768774305959157387621291.520093862072470365",
+    "tokens": "199839468357350.553809105104018637",
+    "delegatorShares": "200079521768774306156394030174632.959458205027988694",
     "description": {
       "moniker": "InjectiveNode0",
       "identity": "",
@@ -626,9 +626,9 @@
   },
   {
     "operatorAddress": "injvaloper1j0ll9vpjx0nn6ncugjky9vzuk95lvp6pqm2klh",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "100",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.99",
     "delegatorShares": "100000000000000000000",
     "description": {
       "moniker": "ashpool-test",
@@ -637,8 +637,8 @@
       "securityContact": "ashpool@xecut.net",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 32119842,
+    "unbondingTime": "2024-06-23T12:18:41.836Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
