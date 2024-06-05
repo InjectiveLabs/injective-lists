@@ -73,6 +73,11 @@ export const generateTokensList = async (network: Network) => {
         tokenSortingOrder > cachedTokenSortingOrder ||
         cachedToken.decimals === 0
       ) {
+        console.log(`===== replace duplicate ${denom} ======`)
+        console.log(cachedToken)
+        console.log(`===== with ======`)
+        console.log(token)
+
         list[denom] = token
       }
 

@@ -1,19 +1,21 @@
+import {
+  TokenType,
+  TokenVerification,
+  isCw20ContractAddress
+} from '@injectivelabs/token-metadata'
 import { Network } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
-import { isCw20ContractAddress } from '@injectivelabs/token-metadata'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,
   tokensToDenomMap,
-  tokenToAddressMap,
-  tokensToDenomMapKeepCasing
+  tokenToAddressMap
 } from './helper/utils'
-import { getSupplyDenom } from './helper/getter'
 import { fetchIbcTokenMetaData } from './fetchIbcDenomTrace'
+import { getCw20Denom, getSupplyDenom } from './helper/getter'
 import { fetchPeggyTokenMetaData } from './fetchPeggyMetadata'
-import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
+import { fetchCw20Token, fetchCw20FactoryToken } from './fetchCw20Metadata'
 import { ApiTokenMetadata } from './types'
 
 /* Mainnet only */
@@ -21,15 +23,6 @@ import { ApiTokenMetadata } from './types'
 const staticTokens = readJSONFile({ path: 'tokens/staticTokens/mainnet.json' })
 const staticTokensMap = tokensToDenomMap(staticTokens)
 const staticTokensAddressMap = tokenToAddressMap(staticTokens)
-
-const cw20Tokens = readJSONFile({ path: 'tokens/cw20Tokens/mainnet.json' })
-const cw20TokensMap = tokensToDenomMap(cw20Tokens)
-const cw20TokensAddressMap = tokenToAddressMap(cw20Tokens)
-
-const factoryTokens = readJSONFile({
-  path: 'tokens/factoryTokens/mainnet.json'
-})
-const factoryTokensMap = tokensToDenomMapKeepCasing(factoryTokens)
 
 const formatApiTokenMetadata = async (
   externalTokenMetadata: ApiTokenMetadata[]
@@ -41,14 +34,7 @@ const formatApiTokenMetadata = async (
       const isPartOfStaticTokenList =
         staticTokensMap[denom] || staticTokensAddressMap[denom]
 
-      const isPartOfCw20TokenList =
-        cw20TokensMap[denom] || cw20TokensAddressMap[denom]
-
-      return (
-        !isPartOfStaticTokenList &&
-        !isPartOfCw20TokenList &&
-        !factoryTokensMap[metadata.contractAddr]
-      )
+      return !isPartOfStaticTokenList
     }
   )
 
@@ -76,13 +62,14 @@ const formatApiTokenMetadata = async (
     }
 
     if (isCw20ContractAddress(denom)) {
+      const factoryCw20Denom = getCw20Denom(denom, Network.MainnetSentry)
       const cw20Token = await fetchCw20Token(denom, Network.MainnetSentry)
 
       if (cw20Token) {
         externalTokens.push(cw20Token)
 
         const cw20FactoryToken = await fetchCw20FactoryToken(
-          denom,
+          factoryCw20Denom || denom,
           Network.MainnetSentry
         )
 
@@ -93,14 +80,6 @@ const formatApiTokenMetadata = async (
     }
 
     if (denom.startsWith('factory')) {
-      const subDenom = [...denom.split('/')].pop() as string
-
-      if (isCw20ContractAddress(subDenom)) {
-        console.log('subDenom isCw20ContractAddress', denom)
-
-        continue
-      }
-
       externalTokens.push({
         ...untaggedSymbolMeta.Unknown,
         denom,

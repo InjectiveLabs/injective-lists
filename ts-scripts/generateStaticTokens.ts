@@ -3,7 +3,7 @@ import {
   TokenStatic,
   TokenVerification
 } from '@injectivelabs/token-metadata'
-import { Network } from '@injectivelabs/networks'
+import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   mainnetTokens as cw20MainnetTokens,
   devnetTokens as cw20DevnetTokens,
@@ -25,8 +25,13 @@ import {
 } from './data/ibc'
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
-import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName
+} from './helper/utils'
+import {
+  getCw20Denom,
   getSupplyDenom,
   getBankTokenFactoryMetadataByAddress
 } from './helper/getter'
@@ -45,6 +50,16 @@ const INJ_TOKEN = {
   tokenType: TokenType.Native,
   tokenVerification: TokenVerification.Verified
 }
+
+const mainnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/mainnet.json'
+})
+const testnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/testnet.json'
+})
+const devnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/devnet.json'
+})
 
 const formatIbcTokens = (tokens: IbcTokenSource[], network: Network) =>
   tokens.map((token) => {
@@ -80,30 +95,22 @@ const formatTokenFactoryTokens = (
 
 const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
   return tokens.reduce((list, token) => {
-    list.push({
-      ...token,
-      address: token.address,
-      denom: token.address,
-      tokenType: TokenType.Cw20,
-      tokenVerification: TokenVerification.Verified
-    })
-
     // we retrieve * override the denom & decimals from the chain
+    const factoryCw20Denom = getCw20Denom(token.address, network)
+
     const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
-      token.address,
+      factoryCw20Denom || token.address,
       network
     )
 
-    if (existingFactoryToken) {
-      list.push({
-        ...token,
-        denom: existingFactoryToken.denom,
-        address: token.address,
-        tokenType: TokenType.TokenFactory,
-        tokenVerification: TokenVerification.Internal,
-        decimals: existingFactoryToken.decimals || token.decimals
-      })
-    }
+    list.push({
+      ...token,
+      denom: factoryCw20Denom || token.address,
+      address: token.address,
+      tokenType: factoryCw20Denom ? TokenType.TokenFactory : TokenType.Cw20,
+      tokenVerification: TokenVerification.Internal,
+      decimals: existingFactoryToken?.decimals || token.decimals
+    })
 
     return list
   }, [] as TokenStatic[])
@@ -186,10 +193,7 @@ const getTestnetStaticTokenList = () => {
 const getMainnetStaticTokenList = () => {
   return [
     ...formatIbcTokens(ibcMainnetTokens, Network.MainnetSentry),
-    ...formatCw20Tokens(
-      [...cw20MainnetTokens, ...cw20TestnetTokens],
-      Network.MainnetSentry
-    ),
+    ...formatCw20Tokens(cw20MainnetTokens, Network.MainnetSentry),
     ...formatErc20Tokens(erc20MainnetTokens, Network.MainnetSentry),
     ...formatTokenFactoryTokens(
       tokenFactoryMainnetTokens,
@@ -228,6 +232,6 @@ const generateStaticTokens = async (network: Network) => {
   console.log(`✅✅✅ GenerateStaticTokens ${network}`)
 }
 
-generateStaticTokens(Network.Devnet)
-generateStaticTokens(Network.TestnetSentry)
+// generateStaticTokens(Network.Devnet)
+// generateStaticTokens(Network.TestnetSentry)
 generateStaticTokens(Network.MainnetSentry)

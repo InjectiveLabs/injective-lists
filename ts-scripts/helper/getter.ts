@@ -39,6 +39,16 @@ const mainnetSupplyDenomMap = denomsToDenomMap(
   readJSONFile({ path: 'data/bankSupplyDenoms/mainnet.json' })
 )
 
+const mainnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/mainnet.json'
+})
+const testnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/testnet.json'
+})
+const devnetCw20Denoms = readJSONFile({
+  path: 'data/cw20Denoms/devnet.json'
+})
+
 export const getSupplyDenom = (
   denom: string,
   network: Network
@@ -61,16 +71,23 @@ export const getBankTokenFactoryMetadataByAddress = (
   network: Network
 ): BankMetadata | undefined => {
   const formattedDenom = denom
-
-  if (isMainnet(network)) {
-    return mainnetBankMetadataAddressMap[formattedDenom]
-  }
+  let list = devnetBankMetadataAddressMap
 
   if (isTestnet(network)) {
-    return testnetBankMetadataAddressMap[formattedDenom]
+    list = testnetBankMetadataAddressMap
   }
 
-  return devnetBankMetadataAddressMap[formattedDenom]
+  if (isMainnet(network)) {
+    list = mainnetBankMetadataAddressMap
+  }
+
+  const metadatas = list[formattedDenom]
+
+  if (!metadatas) {
+    return
+  }
+
+  return metadatas[0]
 }
 
 export const getInsuranceFundToken = (
@@ -88,4 +105,23 @@ export const getInsuranceFundToken = (
   }
 
   return devnetInsuranceFundsMap[formattedDenom]
+}
+
+export const getCw20Denom = (
+  denomOrAddress: string,
+  network: Network
+): string => {
+  let list = devnetCw20Denoms
+
+  if (isMainnet(network)) {
+    list = mainnetCw20Denoms
+  }
+
+  if (isTestnet(network)) {
+    list = testnetCw20Denoms
+  }
+
+  return list.find((cw20Denom: string) => {
+    return cw20Denom.endsWith(denomOrAddress)
+  })
 }

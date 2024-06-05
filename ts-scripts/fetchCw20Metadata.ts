@@ -150,12 +150,18 @@ const formatCw20Token = (
 }
 
 export const fetchCw20FactoryToken = async (
-  address: string,
+  denom: string,
   network: Network
 ) => {
-  const bankMetadata = getBankTokenFactoryMetadataByAddress(address, network)
+  const bankMetadata = getBankTokenFactoryMetadataByAddress(denom, network)
 
   if (!bankMetadata) {
+    return
+  }
+
+  const address = denom.split('/').pop()
+
+  if (!address) {
     return
   }
 

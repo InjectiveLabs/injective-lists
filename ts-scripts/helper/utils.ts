@@ -1,4 +1,4 @@
-import { dirname, resolve } from 'node:path'
+import { dirname, format, resolve } from 'node:path'
 import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/token-metadata'
@@ -124,27 +124,18 @@ export const tokensToAddressMap = (tokens: Token[]) => {
 
 export const bankMetadataToAddressMap = (metadatas: BankMetadata[]) => {
   return metadatas.reduce((list, metadata) => {
-    const formattedDenom = metadata.denom.toLowerCase()
-    const contractAddress = formattedDenom.split('/').pop()
+    const formattedDenom = metadata.denom
 
-    if (!contractAddress) {
-      return list
-    }
-
-    const identifier = isCw20ContractAddress(contractAddress)
-      ? contractAddress
-      : formattedDenom
-
-    if (!list[identifier]) {
-      list[identifier] = metadata
+    if (!list[formattedDenom]) {
+      list[formattedDenom] = [metadata]
 
       return list
     }
 
-    list[identifier] = { ...list[identifier], ...metadata }
+    list[formattedDenom] = [...list[formattedDenom], metadata]
 
     return list
-  }, {} as Record<string, BankMetadata>)
+  }, {} as Record<string, BankMetadata[]>)
 }
 
 export const isFileExist = (path: string) => {

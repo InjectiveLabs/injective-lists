@@ -1,21 +1,17 @@
 import {
-  Network,
-  isMainnet,
-  isTestnet,
-  CW20_ADAPTER_CONTRACT_BY_NETWORK
-} from '@injectivelabs/networks'
-import {
-  TokenStatic,
   TokenType,
+  TokenStatic,
   TokenVerification,
   isCw20ContractAddress
 } from '@injectivelabs/token-metadata'
+import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
   updateJSONFile,
   getNetworkFileName,
   tokensToDenomMapKeepCasing
 } from './helper/utils'
+import { getCw20Denom } from './helper/getter'
 import { fetchCw20Token } from './fetchCw20Metadata'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
@@ -85,7 +81,6 @@ export const generateCw20FactoryTokens = async (network: Network) => {
   let denoms = devnetCw20Denoms
   const staticTokensMap = getStaticTokensMap(network)
   const bankMetadataDenoms = getBankFactoryDenoms(network)
-  const adapterContractAddress = CW20_ADAPTER_CONTRACT_BY_NETWORK[network]
 
   if (isTestnet(network)) {
     denoms = testnetCw20Denoms
@@ -109,12 +104,8 @@ export const generateCw20FactoryTokens = async (network: Network) => {
         console.log('generateCw20FactoryToken', denom)
       }
 
-      const token = await fetchCw20Token(
-        denom.startsWith('factory')
-          ? denom
-          : `factory/${adapterContractAddress}/${denom}`,
-        network
-      )
+      const factoryCw20Denom = getCw20Denom(denom, network)
+      const token = await fetchCw20Token(factoryCw20Denom, network)
 
       if (!token) {
         continue
