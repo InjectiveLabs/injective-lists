@@ -1,10 +1,15 @@
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   Network,
   isMainnet,
   isTestnet,
   CW20_ADAPTER_CONTRACT_BY_NETWORK
 } from '@injectivelabs/networks'
+import {
+  TokenStatic,
+  TokenType,
+  TokenVerification,
+  isCw20ContractAddress
+} from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,
@@ -64,9 +69,22 @@ const getStaticTokensMap = (network: Network) => {
   return devnetStaticTokensMap
 }
 
+const getBankFactoryDenoms = (network: Network) => {
+  if (isMainnet(network)) {
+    return mainnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
+  }
+
+  if (isTestnet(network)) {
+    return testnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
+  }
+
+  return devnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
+}
+
 export const generateCw20FactoryTokens = async (network: Network) => {
   let denoms = devnetCw20Denoms
   const staticTokensMap = getStaticTokensMap(network)
+  const bankMetadataDenoms = getBankFactoryDenoms(network)
   const adapterContractAddress = CW20_ADAPTER_CONTRACT_BY_NETWORK[network]
 
   if (isTestnet(network)) {
@@ -83,6 +101,12 @@ export const generateCw20FactoryTokens = async (network: Network) => {
     for (const denom of denoms) {
       if (staticTokensMap[denom]) {
         continue
+      }
+
+      if (bankMetadataDenoms.includes(denom)) {
+        continue
+      } else {
+        console.log('generateCw20FactoryToken', denom)
       }
 
       const token = await fetchCw20Token(
@@ -133,10 +157,16 @@ export const generateBankFactoryTokens = async (network: Network) => {
         continue
       }
 
+      const subDenom = bankMetadata.denom.split('/').pop()
+
+      const address = isCw20ContractAddress(subDenom)
+        ? subDenom
+        : bankMetadata.denom
+
       bankFactoryTokens.push({
         ...untaggedSymbolMeta.Unknown,
+        address: address,
         denom: bankMetadata.denom,
-        address: bankMetadata.denom,
         decimals: bankMetadata.decimals,
         ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
         ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),

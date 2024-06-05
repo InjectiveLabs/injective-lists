@@ -26,7 +26,7 @@ import {
 } from './helper/utils'
 import { Token } from './types'
 
-const LIMIT = 5000
+const LIMIT = 10000
 
 const formatMetadata = (metadata: Metadata) => {
   const denom = metadata.base

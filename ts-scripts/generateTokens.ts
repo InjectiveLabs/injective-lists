@@ -56,20 +56,50 @@ export const generateTokensList = async (network: Network) => {
     TokenVerification.Unverified
   ]
 
-  const sortedList = formattedList.sort((t1: Token, t2: Token) => {
-    const t1VerificationOrder = tokenVerificationSortingOrder.indexOf(
-      t1.tokenVerification as TokenVerification
-    )
-    const t2VerificationOrder = tokenVerificationSortingOrder.indexOf(
-      t2.tokenVerification as TokenVerification
-    )
+  const uniqueTokens = formattedList.reduce((list, token: Token) => {
+    const denom = token.denom
 
-    if (t1VerificationOrder === t2VerificationOrder) {
-      return t1.denom.localeCompare(t2.denom)
+    if (list[denom]) {
+      const cachedToken = list[denom]
+
+      const tokenSortingOrder = tokenVerificationSortingOrder.indexOf(
+        token.tokenVerification as TokenVerification
+      )
+      const cachedTokenSortingOrder = tokenVerificationSortingOrder.indexOf(
+        cachedToken.tokenVerification as TokenVerification
+      )
+
+      if (
+        tokenSortingOrder > cachedTokenSortingOrder ||
+        cachedToken.decimals === 0
+      ) {
+        list[denom] = token
+      }
+
+      return list
     }
 
-    return t1VerificationOrder - t2VerificationOrder
-  })
+    return { ...list, [denom]: token }
+  }, {})
+
+  const sortedList = (Object.values(uniqueTokens) as Token[]).sort(
+    (t1: Token, t2: Token) => {
+      const t1VerificationOrder = tokenVerificationSortingOrder.indexOf(
+        t1.tokenVerification as TokenVerification
+      )
+      const t2VerificationOrder = tokenVerificationSortingOrder.indexOf(
+        t2.tokenVerification as TokenVerification
+      )
+
+      if (t1VerificationOrder === t2VerificationOrder) {
+        return t1.denom.localeCompare(t2.denom)
+      }
+
+      return t1VerificationOrder - t2VerificationOrder
+    }
+  )
+
+  console.log(`Uploaded ${network} with ${sortedList.length} tokens`)
 
   await updateJSONFile(`tokens/${getNetworkFileName(network)}.json`, sortedList)
 
