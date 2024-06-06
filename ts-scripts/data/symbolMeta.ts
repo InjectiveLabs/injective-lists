@@ -1851,7 +1851,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'MOTHER IZZY',
     symbol: 'MOTHER',
-    coinGeckoId: 'mother-izzy',
+    coinGeckoId: 'mother-iggy',
     logo: 'mother.webp'
   },
 
