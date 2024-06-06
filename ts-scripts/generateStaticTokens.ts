@@ -3,7 +3,7 @@ import {
   TokenStatic,
   TokenVerification
 } from '@injectivelabs/token-metadata'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { Network } from '@injectivelabs/networks'
 import {
   mainnetTokens as cw20MainnetTokens,
   devnetTokens as cw20DevnetTokens,
@@ -24,7 +24,6 @@ import {
   testnetTokens as ibcTestnetTokens
 } from './data/ibc'
 import { symbolMeta } from './data/symbolMeta'
-import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import {
   readJSONFile,
   updateJSONFile,
@@ -35,6 +34,7 @@ import {
   getSupplyDenom,
   getBankTokenFactoryMetadataByAddress
 } from './helper/getter'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import {
   IbcTokenSource,
   Cw20TokenSource,
@@ -108,7 +108,7 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       denom: factoryCw20Denom || token.address,
       address: token.address,
       tokenType: factoryCw20Denom ? TokenType.TokenFactory : TokenType.Cw20,
-      tokenVerification: TokenVerification.Internal,
+      tokenVerification: TokenVerification.Verified,
       decimals: existingFactoryToken?.decimals || token.decimals
     })
 
