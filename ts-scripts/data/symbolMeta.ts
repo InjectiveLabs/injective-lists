@@ -1854,4 +1854,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'mother-izzy',
     logo: 'mother.webp'
   },
+
+  GME: {
+    decimals: 8,
+    name: 'GME',
+    symbol: 'GME',
+    coinGeckoId: 'gme',
+    logo: 'gme.jpeg'
+  },
 }
