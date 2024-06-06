@@ -50,7 +50,7 @@ Follow the steps below to add a new image:
 #### Update existing token logo
 
 1. Copy and override the token image with file you want to replace in the [images folder](./images/)
-2. Delete the object key-pair that has the same imageFileName, this ensure that the [uploadImages](./uploadImages.ts) script uploads the new logo to cloudflare.
+2. Delete the object key-pair that has the same imageFileName, this ensures that the [uploadImages](./uploadImages.ts) script uploads the new logo to cloudflare.
 
 **The image name should match the symbolMeta entry logo field for example `imageFileName.png`.**
 **Note that: we only support the following formats `['png', 'jpg', 'jpeg', 'svg', 'webp']`.**
@@ -60,7 +60,7 @@ Follow the steps below to add a new image:
 There are a few different token types, namely Cw20, TokenFactory, Erc20 (Peggy) and IBC.
 Using `EXAMPLE` symbol meta above, here are how to add token metadata for the different token types:
 
-#### ERC20 (peggy)
+### ERC20 (peggy)
 
 In the [erc20.ts file](./data/erc20.ts) file, add an entry to the end of `mainnetTokens` array:
 
