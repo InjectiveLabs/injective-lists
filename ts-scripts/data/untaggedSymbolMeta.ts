@@ -190,4 +190,12 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'jeo-boden',
     logo: 'boden.png'
   },
+
+  BONK: {
+    decimals: 5,
+    name: 'BONK',
+    symbol: 'BONK',
+    logo: 'bonk.jpeg',
+    coinGeckoId: 'bonk'
+  },
 }
