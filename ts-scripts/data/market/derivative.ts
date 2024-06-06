@@ -30,6 +30,7 @@ export const mainnetSlugs: string[] = [
   'xag-usdt-perp',
   'gbp-usdt-perp',
   'eur-usdt-perp',
+  'boden-usdt-perp'
 ]
 
 export const devnetSlugs: string[] = []
