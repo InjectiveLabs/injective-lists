@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'boden-usdt-perp',
   'mother-inj',
   'gbp-usdt-perp',
   'eur-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'omni-usdt',
   'w-usdt-perp',
   'omni-usdt-perp',
-  'xiii-inj',
 ]
 
 export const experimental = [
@@ -39,7 +39,8 @@ export const experimental = [
   'talis-inj',
   'omni-usdt-perp',
   'w-usdt-perp',
-  'mother-inj'
+  'mother-inj',
+  'boden-usdt-perp'
 ]
 
 export const cosmos = [
@@ -131,7 +132,8 @@ export const solana = [
   'wif-usdt-perp',
   'bonk-usdt-perp',
   'w-usdt',
-  'w-usdt-perp'
+  'w-usdt-perp',
+  'boden-usdt-perp'
 ]
 
 export const olpLowVolume = [
