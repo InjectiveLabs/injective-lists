@@ -1863,7 +1863,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'gme.jpeg'
   },
 
-   COKE: {
+  COKE: {
     name: 'COKE',
     logo: 'coke.webp',
     coinGeckoId: '',
