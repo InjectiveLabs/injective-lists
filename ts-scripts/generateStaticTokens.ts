@@ -51,16 +51,6 @@ const INJ_TOKEN = {
   tokenVerification: TokenVerification.Verified
 }
 
-const mainnetCw20Denoms = readJSONFile({
-  path: 'data/cw20Denoms/mainnet.json'
-})
-const testnetCw20Denoms = readJSONFile({
-  path: 'data/cw20Denoms/testnet.json'
-})
-const devnetCw20Denoms = readJSONFile({
-  path: 'data/cw20Denoms/devnet.json'
-})
-
 const formatIbcTokens = (tokens: IbcTokenSource[], network: Network) =>
   tokens.map((token) => {
     const denom = `ibc/${token.hash}`
@@ -95,19 +85,36 @@ const formatTokenFactoryTokens = (
 
 const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
   return tokens.reduce((list, token) => {
+    list.push({
+      ...token,
+      denom: token.address,
+      address: token.address,
+      tokenType: TokenType.Cw20,
+      tokenVerification: TokenVerification.Verified,
+      decimals: token.decimals
+    })
+
     // we retrieve * override the denom & decimals from the chain
     const factoryCw20Denom = getCw20Denom(token.address, network)
 
+    if (!factoryCw20Denom) {
+      return list
+    }
+
     const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
-      factoryCw20Denom || token.address,
+      factoryCw20Denom,
       network
     )
 
+    if (!existingFactoryToken) {
+      return list
+    }
+
     list.push({
       ...token,
-      denom: factoryCw20Denom || token.address,
-      address: token.address,
-      tokenType: factoryCw20Denom ? TokenType.TokenFactory : TokenType.Cw20,
+      denom: factoryCw20Denom,
+      address: existingFactoryToken.address,
+      tokenType: TokenType.TokenFactory,
       tokenVerification: TokenVerification.Verified,
       decimals: existingFactoryToken?.decimals || token.decimals
     })

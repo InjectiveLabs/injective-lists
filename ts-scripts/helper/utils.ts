@@ -1,4 +1,4 @@
-import { dirname, format, resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
 import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/token-metadata'

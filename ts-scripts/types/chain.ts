@@ -13,6 +13,7 @@ export type BankMetadata = {
   name: string
   denom: string
   symbol: string
+  address: string
   decimals: number
   description: string
 }
