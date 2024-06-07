@@ -1862,4 +1862,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'gme',
     logo: 'gme.jpeg'
   },
+
+   COKE: {
+    name: 'COKE',
+    logo: 'coke.webp',
+    coinGeckoId: '',
+    symbol: 'COKE',
+    decimals: 6,
+  },
 }
