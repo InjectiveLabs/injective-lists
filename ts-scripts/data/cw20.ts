@@ -258,7 +258,7 @@ export const mainnetTokens: Cw20TokenSource[] = [
     address: 'inj19w5lfwk6k9q2d8kxnwsu4962ljnay85f9sgwn6'
   },
   {
-    ...symbolMeta.COCK,
+    ...symbolMeta.COKE,
     address: 'inj14eaxewvy7a3fk948c3g3qham98mcqpm8v5y0dp'
   }
 ]
