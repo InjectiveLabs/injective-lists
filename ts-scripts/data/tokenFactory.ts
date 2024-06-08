@@ -411,4 +411,8 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.COKE,
     creator: 'inj158g7dfclyg9rr6u4ddxg9d2afwevq5d79g2tm6'
   },
+  {
+    ...symbolMeta.SMELLY,
+    creator: 'inj10pz3xq7zf8xudqxaqealgyrnfk66u3c99ud5m2'
+  },
 ]

@@ -1870,4 +1870,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COKE',
     decimals: 6,
   },
+
+  SMELLY: {
+    name: 'Durian Token',
+    logo: 'smelly.png',
+    coinGeckoId: '',
+    symbol: 'SMELLY',
+    decimals: 6,
+  },
 }
