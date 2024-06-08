@@ -1870,4 +1870,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COKE',
     decimals: 6,
   },
+
+  SHROOM: {
+    name: 'shroomin',
+    logo: 'shroom.jpg',
+    coinGeckoId: '',
+    symbol: 'SHROOM',
+    decimals: 18,
+  },
 }
