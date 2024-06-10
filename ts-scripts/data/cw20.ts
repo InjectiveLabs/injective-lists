@@ -264,5 +264,13 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.SHROOM,
     address: 'inj1300xcg9naqy00fujsr9r8alwk7dh65uqu87xm8'
+  },
+  {
+    ...symbolMeta.ELON,
+    address: 'inj10pqutl0av9ltrw9jq8d3wjwjayvz76jhfcfza0'
+  },
+  {
+    ...symbolMeta.nTIA,
+    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
   }
 ]

@@ -365,5 +365,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ezETH,
     address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
+  },
+  {
+    ...symbolMeta.ELON,
+    address: '0x43123e1d077351267113ada8bE85A058f5D492De'
   }
 ]
