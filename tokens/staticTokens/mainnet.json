@@ -1861,6 +1861,23 @@
     "tokenType": "ibc"
   },
   {
+    "address": "ibc/4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "PYUSD",
+    "logo": "pyusd.png",
+    "coinGeckoId": "paypal-usd",
+    "symbol": "PYUSD",
+    "decimals": 6,
+    "channelId": "channel-183",
+    "path": "transfer/channel-183",
+    "source": "ethereum-wormhole",
+    "hash": "4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11",
+    "baseDenom": "factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/D2q6uE3gSM7KxBconMFQQxfDenwQYz8JrdXWetkEq9WS",
+    "denom": "ibc/4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11",
+    "tokenType": "ibc"
+  },
+  {
     "address": "ibc/48BC9C6ACBDFC1EBA034F1859245D53EA4BF74147189D66F27C23BF966335DFB",
     "isNative": true,
     "tokenVerification": "verified",
@@ -3722,6 +3739,18 @@
     "symbol": "ETHBTCTrend",
     "decimals": 18,
     "denom": "peggy0x6b7f87279982d919Bbf85182DDeAB179B366D8f2",
+    "tokenType": "erc20"
+  },
+  {
+    "address": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "PYUSD",
+    "logo": "pyusd.png",
+    "coinGeckoId": "paypal-usd",
+    "symbol": "PYUSD",
+    "decimals": 6,
+    "denom": "peggy0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
     "tokenType": "erc20"
   },
   {
