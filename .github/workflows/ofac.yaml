@@ -1,0 +1,53 @@
+name: Injective list - Fetch OFAC wallets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    if: ${{ !contains(github.event.commits[0].message, 'fetch ofac addresses') }}
+    name: "Refetch OFAC wallets"
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      ## Github Actions
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      CLOUD_FLARE_API_KEY: ${{ secrets.CLOUD_FLARE_API_KEY }}
+      CLOUD_FLARE_ACCOUNT_ID: ${{ secrets.CLOUD_FLARE_ACCOUNT_ID }}
+      CLOUD_FLARE_ACCOUNT_HASH: ${{ secrets.CLOUD_FLARE_ACCOUNT_HASH }}
+      ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
+      ALCHEMY_GOERLI_KEY: ${{ secrets.ALCHEMY_GOERLI_KEY }}
+      ALCHEMY_SEPOLIA_KEY: ${{ secrets.ALCHEMY_SEPOLIA_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: "${{ secrets.GH_TOKEN }}"
+      - run: |
+          git reset --hard origin/master
+
+      - name: Install dependencies
+        run: cd ts-scripts && yarn
+
+      - name: Refetch OFAC lists
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: wallets:ofac
+          dir: "ts-scripts"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
+        with:
+          message: "chore: fetch ofac addresses"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
+        with:
+          message: "chore: fetch ofac addresses - skip deploy"
