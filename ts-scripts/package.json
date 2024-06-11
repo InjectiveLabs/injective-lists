@@ -23,17 +23,19 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.30",
+    "alchemy-sdk": "^2.6.3",
     "dotenv": "^16.4.5",
     "form-data": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
-    "alchemy-sdk": "^2.6.3"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@injectivelabs/prettier-config": "1.0.3",
-    "@injectivelabs/utils": "1.14.11-beta.4",
     "@injectivelabs/networks": "1.14.11-beta.6",
+    "@injectivelabs/prettier-config": "1.0.3",
     "@injectivelabs/sdk-ts": "1.14.11-beta.52",
-    "@injectivelabs/token-metadata": "1.14.11-beta.40"
+    "@injectivelabs/token-metadata": "1.14.11-beta.40",
+    "@injectivelabs/utils": "1.14.11-beta.4",
+    "node-fetch": "^3.3.2",
+    "xml-js": "^1.6.11"
   }
 }

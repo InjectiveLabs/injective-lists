@@ -1,16 +1,21 @@
-import { execShellCommand } from './helper/execShellCommand'
+import { updateJSONFile } from './helper/utils'
+import { HttpClient } from '@injectivelabs/utils'
 
 async function generateOFACList() {
-  const commands = [
-    'wget https://www.treasury.gov/ofac/downloads/sanctions/1.0/sdn_advanced.xml',
-    'python3 ./ofac/generate-address-list.py ETH -f JSON -sdn sdn_advanced.xml',
-    'mv sanctioned_addresses_ETH.json ../wallets/ofac.json',
-    'rm sdn_advanced.xml'
-  ]
+  const response = await new HttpClient(
+    'https://www.treasury.gov/ofac/downloads/sanctions/1.0/'
+  ).get<{}, { data: string }>('sdn_advanced.xml')
+  const result = response.data.match(/(\b0x[a-f0-9]{40}\b)/g)
 
-  for (const command of commands) {
-    await execShellCommand(command)
+  if (!result) {
+    return
   }
+
+  if (!result.length) {
+    return
+  }
+
+  await updateJSONFile('wallets/ofac.json', result)
 }
 
 generateOFACList()
