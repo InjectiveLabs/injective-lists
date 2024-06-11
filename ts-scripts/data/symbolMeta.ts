@@ -1901,5 +1901,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nTIA',
     decimals: 6,
     coinGeckoId: ''
+  },
+  
+  PYUSD: {
+    name: 'PYUSD',
+    logo: 'pyusd.png',
+    coinGeckoId: 'paypal-usd',
+    symbol: 'PYUSD',
+    decimals: 6,
   }
 }

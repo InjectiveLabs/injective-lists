@@ -189,5 +189,5 @@ export const untaggedSymbolMeta = {
     symbol: 'BODEN',
     coinGeckoId: 'jeo-boden',
     logo: 'boden.png'
-  },
+  }
 }
