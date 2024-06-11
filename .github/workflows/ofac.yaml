@@ -3,7 +3,7 @@ name: Injective list - Fetch OFAC wallets
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "30 2 * * *" # Every day at 02:30 PM
   push:
     branches:
       - master
