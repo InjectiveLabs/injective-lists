@@ -13,6 +13,7 @@
     "tokens:external": "ts-node ./generateExternalTokens",
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
     "tokens:factory:generate": "ts-node ./generateFactoryTokens",
+    "tokens:ofac": "ts-node ./generateOfacList",
     "validators:generate": "yarn validators:images && ts-node ./generateValidatorsData",
     "tokens:generate": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:factory:generate && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
     "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens"
