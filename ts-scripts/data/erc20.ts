@@ -365,5 +365,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ezETH,
     address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
+  },
+    {
+    ...symbolMeta.PYUSD,
+    address: '0x6c3ea9036406852006290770BEdFcAbA0e23A0e8'
   }
 ]

@@ -1870,4 +1870,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COKE',
     decimals: 6,
   },
+
+  PYUSD: {
+    name: 'PYUSD',
+    logo: 'pyusd.png',
+    coinGeckoId: 'paypal-usd',
+    symbol: 'PYUSD',
+    decimals: 6,
+  },
 }
