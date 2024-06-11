@@ -450,15 +450,15 @@ export const mainnetTokens: IbcTokenSource[] = [
     source: TokenSource.Solana,
     hash: 'CAA5AB050F6C3DFE878212A37A4A6D3BEA6670F5B9786FFF7EF2D34213025272',
     baseDenom:
-      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/3nNG5xw6fTXkcQCr36ySsd2jpQR5HgVvrQJtsSaAtiQq',
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/3nNG5xw6fTXkcQCr36ySsd2jpQR5HgVvrQJtsSaAtiQq'
   },
-    {
+  {
     ...symbolMeta.PYUSD,
     channelId: 'channel-183',
     path: 'transfer/channel-183',
     source: TokenSource.EthereumWh,
     hash: '4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11',
     baseDenom:
-      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/D2q6uE3gSM7KxBconMFQQxfDenwQYz8JrdXWetkEq9WS',
-  },
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/D2q6uE3gSM7KxBconMFQQxfDenwQYz8JrdXWetkEq9WS'
+  }
 ]
