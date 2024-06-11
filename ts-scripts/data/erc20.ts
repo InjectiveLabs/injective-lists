@@ -10,27 +10,19 @@ export const devnetTokens = [
 export const testnetTokens = [
   {
     ...symbolMeta.INJ,
-    address: '0x5512c04B6FF813f3571bDF64A1d74c98B5257332'
+    address: '0xA472990C4C1261FEb55cDce66c53AbF990E83166'
   },
   {
     ...symbolMeta.APE,
-    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
-  },
-  {
-    ...symbolMeta.wEth,
-    address: '0xdB309Bb079EB419C18fe7D568c61cD2FdB65D9aF'
+    address: '0x44d63c7FC48385b212aB397aB91A2637ec964634'
   },
   {
     ...symbolMeta.USDT,
-    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
+    address: '0x03fA678f56e230effB1b5148e4d1fa25184b639a'
   },
   {
-    ...symbolMeta.USDC,
-    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
-  },
-  {
-    ...symbolMeta.MATIC,
-    address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+    ...symbolMeta.QAT,
+    address: '0x5Ac3A2F6205a481C7a8984E4291E450e52cd0369'
   }
 ]
 
@@ -366,8 +358,12 @@ export const mainnetTokens = [
     ...symbolMeta.ezETH,
     address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
   },
-    {
+  {
     ...symbolMeta.PYUSD,
     address: '0x6c3ea9036406852006290770BEdFcAbA0e23A0e8'
+  },
+  {
+    ...symbolMeta.ELON,
+    address: '0x43123e1d077351267113ada8bE85A058f5D492De'
   }
 ]

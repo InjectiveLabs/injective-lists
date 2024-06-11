@@ -1868,14 +1868,46 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'coke.webp',
     coinGeckoId: '',
     symbol: 'COKE',
-    decimals: 6,
+    decimals: 6
   },
 
+  SHROOM: {
+    name: 'shroomin',
+    logo: 'shroom.webp',
+    coinGeckoId: '',
+    symbol: 'SHROOM',
+    decimals: 18
+  },
+
+  SMELLY: {
+    name: 'Durian Token',
+    logo: 'smelly.webp',
+    coinGeckoId: '',
+    symbol: 'SMELLY',
+    decimals: 6
+  },
+
+  ELON: {
+    name: 'ELON',
+    symbol: 'ELON',
+    decimals: 6,
+    logo: 'elon.webp',
+    coinGeckoId: ''
+  },
+
+  nTIA: {
+    name: 'Neptune Receipt TIA',
+    logo: 'ntia.png',
+    symbol: 'nTIA',
+    decimals: 6,
+    coinGeckoId: ''
+  },
+  
   PYUSD: {
     name: 'PYUSD',
     logo: 'pyusd.png',
     coinGeckoId: 'paypal-usd',
     symbol: 'PYUSD',
     decimals: 6,
-  },
+  }
 }
