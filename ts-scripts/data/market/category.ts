@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'pyusd-usdt',
   'boden-usdt-perp',
   'mother-inj',
   'gbp-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'black-inj',
   'omni-usdt',
   'w-usdt-perp',
-  'omni-usdt-perp',
 ]
 
 export const experimental = [
@@ -96,7 +96,8 @@ export const ethereum = [
   'bonus-usdt',
   'w-usdt-perp',
   'omni-usdt',
-  'ezeth-weth'
+  'ezeth-weth',
+  'pyusd-usdt'
 ]
 
 export const injective = [
