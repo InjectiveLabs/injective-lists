@@ -13,6 +13,7 @@
     "tokens:external": "ts-node ./generateExternalTokens",
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
     "tokens:factory:generate": "ts-node ./generateFactoryTokens",
+    "wallets:ofac": "ts-node ./generateOfacList",
     "validators:generate": "yarn validators:images && ts-node ./generateValidatorsData",
     "tokens:generate": "yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:factory:generate && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
     "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn fetch:chain:metadata && yarn tokens:static && yarn tokens:external && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens"
@@ -22,17 +23,17 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.11.30",
+    "alchemy-sdk": "^2.6.3",
     "dotenv": "^16.4.5",
     "form-data": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
-    "alchemy-sdk": "^2.6.3"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@injectivelabs/prettier-config": "1.0.3",
-    "@injectivelabs/utils": "1.14.11-beta.4",
     "@injectivelabs/networks": "1.14.11-beta.6",
+    "@injectivelabs/prettier-config": "1.0.3",
     "@injectivelabs/sdk-ts": "1.14.11-beta.52",
-    "@injectivelabs/token-metadata": "1.14.11-beta.40"
+    "@injectivelabs/token-metadata": "1.14.11-beta.40",
+    "@injectivelabs/utils": "1.14.11-beta.4"
   }
 }
