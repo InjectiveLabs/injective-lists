@@ -1,16 +1,11 @@
 name: Injective list - Fetch OFAC wallets
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "30 2 * * *" # Every day at 02:30 PM
-  push:
-    branches:
-      - master
+    - cron: "40 2 * * *" # Every day at 02:30 PM
 
 jobs:
   generate:
-    if: ${{ !contains(github.event.commits[0].message, 'fetch ofac addresses') }}
     name: "Refetch OFAC wallets"
     runs-on: ubuntu-latest
     permissions: write-all
@@ -42,12 +37,5 @@ jobs:
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
-        if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
         with:
           message: "chore: fetch ofac addresses"
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
-        with:
-          message: "chore: fetch ofac addresses - skip deploy"

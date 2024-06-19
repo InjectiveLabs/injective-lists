@@ -15,7 +15,10 @@ async function generateOFACList() {
     return
   }
 
-  await updateJSONFile('wallets/ofac.json', result)
+  await updateJSONFile(
+    'wallets/ofac.json',
+    result.sort((a, b) => a.localeCompare(b))
+  )
 }
 
 generateOFACList()
