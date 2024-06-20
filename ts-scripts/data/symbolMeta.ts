@@ -1902,20 +1902,20 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     coinGeckoId: ''
   },
-  
+
   PYUSD: {
     name: 'PYUSD',
     logo: 'pyusd.png',
     coinGeckoId: 'paypal-usd',
     symbol: 'PYUSD',
-    decimals: 6,
+    decimals: 6
   },
 
-  IOTX:{
+  IOTX: {
     coinGeckoId: 'iotex',
-    logo: 'iotx.webp',
+    logo: 'iotex.webp',
     name: 'IoTeX',
     symbol: 'IOTX',
-    decimals:18
+    decimals: 18
   }
 }
