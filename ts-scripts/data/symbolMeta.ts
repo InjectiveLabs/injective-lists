@@ -1917,5 +1917,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'IoTeX',
     symbol: 'IOTX',
     decimals: 18
+  },
+
+  FET: {
+    coinGeckoId: 'fetch-ai',
+    logo: 'fet.webp',
+    name: 'Fetch.ai',
+    symbol: 'FET',
+    decimals: 18
   }
 }

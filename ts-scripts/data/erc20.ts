@@ -369,5 +369,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.IOTX,
     address: '0x6fB3e0A217407EFFf7Ca062D46c26E5d60a14d69'
+  },
+  {
+    ...symbolMeta.FET,
+    address: '0xaea46a60368a7bd060eec7df8cba43b7ef41ad85'
   }
 ]

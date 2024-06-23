@@ -460,5 +460,14 @@ export const mainnetTokens: IbcTokenSource[] = [
     hash: '4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11',
     baseDenom:
       'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/D2q6uE3gSM7KxBconMFQQxfDenwQYz8JrdXWetkEq9WS'
+  },
+  {
+    ...symbolMeta.FET,
+    channelId: 'channel-283',
+    path: 'transfer/channel-283',
+    source: TokenSource.Cosmos,
+    hash: '5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447',
+    baseDenom:
+      'ibc/5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447'
   }
 ]
