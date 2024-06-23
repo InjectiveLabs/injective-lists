@@ -463,11 +463,10 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.FET,
+    baseDenom: 'afet',
     channelId: 'channel-283',
     path: 'transfer/channel-283',
     source: TokenSource.Cosmos,
-    hash: '5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447',
-    baseDenom:
-      'ibc/5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447'
+    hash: '5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447'
   }
 ]
