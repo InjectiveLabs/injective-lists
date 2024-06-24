@@ -1925,5 +1925,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Fetch.ai',
     symbol: 'FET',
     decimals: 18
+  },
+
+  SNS: {
+    coinGeckoId: '',
+    logo: 'sns.webp',
+    name: 'SynesisOne',
+    symbol: 'SNS',
+    decimals: 18
   }
 }
