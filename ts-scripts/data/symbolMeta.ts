@@ -1932,6 +1932,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'sns.webp',
     name: 'SynesisOne',
     symbol: 'SNS',
-    decimals: 18
+    decimals: 8
   }
 }
