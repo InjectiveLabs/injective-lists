@@ -1842,7 +1842,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   NBZ: {
     decimals: 6,
     name: 'Ninja Blaze Token',
-    logo: 'nbz.webp',
+    logo: 'nbz.png',
     symbol: 'NBZ',
     coinGeckoId: ''
   },
