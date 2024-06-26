@@ -18,6 +18,18 @@ import {
   stagingSlugs as stagingExpiryFutureSlugs
 } from './data/market/expiryFutures'
 import {
+  devnetGridMarkets as devnetSpotGridMarkets,
+  testnetGridMarkets as testnetSpotGridMarkets,
+  stagingGridMarkets as stagingSpotGridMarkets,
+  mainnetGridMarkets as mainnetSpotGridMarkets
+} from './data/grid/spot'
+import {
+  devnetGridMarkets as devnetDerivativeGridMarkets,
+  testnetGridMarkets as testnetDerivativeGridMarkets,
+  stagingGridMarkets as stagingDerivativeGridMarkets,
+  mainnetGridMarkets as mainnetDerivativeGridMarkets
+} from './data/grid/derivative'
+import {
   rwa as rwaCategorySlugs,
   cosmos as cosmosCategorySlugs,
   solana as solanaCategorySlugs,
@@ -92,6 +104,48 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
   )
 }
 
+export const generateSpotGridMarkets = async (network: Network) => {
+  let gridMarkets = mainnetSpotGridMarkets
+
+  if (network === Network.Staging) {
+    gridMarkets = stagingSpotGridMarkets
+  }
+
+  if (isDevnet(network)) {
+    gridMarkets = devnetSpotGridMarkets
+  }
+
+  if (isTestnet(network)) {
+    gridMarkets = testnetSpotGridMarkets
+  }
+
+  await updateJSONFile(
+    `helix/trading/gridMarkets/spot/${getNetworkFileName(network)}.json`,
+    gridMarkets
+  )
+}
+
+export const generateDerivativeGridMarkets = async (network: Network) => {
+  let gridMarkets = mainnetDerivativeGridMarkets
+
+  if (network === Network.Staging) {
+    gridMarkets = stagingDerivativeGridMarkets
+  }
+
+  if (isDevnet(network)) {
+    gridMarkets = devnetDerivativeGridMarkets
+  }
+
+  if (isTestnet(network)) {
+    gridMarkets = testnetDerivativeGridMarkets
+  }
+
+  await updateJSONFile(
+    `helix/trading/gridMarkets/derivative/${getNetworkFileName(network)}.json`,
+    gridMarkets
+  )
+}
+
 export const generateMarketCategorySlugs = async () => {
   await updateJSONFile('helix/trading/market/category.json', {
     rwaCategorySlugs,
@@ -119,5 +173,15 @@ generateDerivativeMarketSlugs(Network.Devnet)
 generateDerivativeMarketSlugs(Network.Staging)
 generateDerivativeMarketSlugs(Network.TestnetSentry)
 generateDerivativeMarketSlugs(Network.MainnetSentry)
+
+generateSpotGridMarkets(Network.Devnet)
+generateSpotGridMarkets(Network.Staging)
+generateSpotGridMarkets(Network.TestnetSentry)
+generateSpotGridMarkets(Network.MainnetSentry)
+
+generateDerivativeGridMarkets(Network.Devnet)
+generateDerivativeGridMarkets(Network.Staging)
+generateDerivativeGridMarkets(Network.TestnetSentry)
+generateDerivativeGridMarkets(Network.MainnetSentry)
 
 generateMarketCategorySlugs()
