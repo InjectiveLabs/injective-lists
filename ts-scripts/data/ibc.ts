@@ -477,5 +477,15 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     source: TokenSource.Solana,
     hash: '4BFB3FB1903142C5A7570EE7697636436E52FDB99AB8ABE0257E178A926E2568'
+  },
+  {
+    ...symbolMeta.SAE,
+    decimals: 8,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2mWv5umZHxJ1X8zMeSw3hFPdGuUZmq5UjbCsmJcDdEW1',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.BinanceSmartChain,
+    hash: '0AFCFFE18230E0E703A527F7522223D808EBB0E02FDBC84AAF8A045CD8FE0BBB'
   }
 ]
