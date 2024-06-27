@@ -1738,7 +1738,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   BONUS: {
     decimals: 8,
     symbol: 'BONUS',
-    coinGeckoId: '',
+    coinGeckoId: 'bonusblock',
     name: 'Bonus Block',
     logo: 'bonus-block.png'
   },
@@ -1928,7 +1928,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   SNS: {
-    coinGeckoId: '',
+    coinGeckoId: 'synesis-one',
     logo: 'sns.webp',
     name: 'SynesisOne',
     symbol: 'SNS',
