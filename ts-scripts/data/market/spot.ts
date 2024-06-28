@@ -59,7 +59,8 @@ export const mainnetSlugs = [
   'asg-inj',
   'gme-inj',
   'pyusd-usdt',
-  'sns-inj'
+  'sns-inj',
+  'iotx-inj'
 ]
 
 export const devnetSlugs = ['proj-usdt', 'wbtc-inj', 'proj-inj']

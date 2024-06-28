@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'iotx-inj',
   'sns-inj',
   'pyusd-usdt',
   'boden-usdt-perp',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'ezeth-weth',
   'saga-usdt',
   'black-inj',
-  'omni-usdt',
 ]
 
 export const experimental = [
@@ -97,7 +97,8 @@ export const ethereum = [
   'w-usdt-perp',
   'omni-usdt',
   'ezeth-weth',
-  'pyusd-usdt'
+  'pyusd-usdt',
+  'iotx-inj'
 ]
 
 export const injective = [
@@ -123,7 +124,8 @@ export const injective = [
   'xiii-inj',
   'black-inj',
   'mother-inj',
-  'sns-inj'
+  'sns-inj',
+  'iotx-inj'
 ]
 
 export const solana = [
