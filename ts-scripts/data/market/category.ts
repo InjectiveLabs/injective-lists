@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'sns-inj',
   'pyusd-usdt',
   'boden-usdt-perp',
   'mother-inj',
@@ -10,7 +11,6 @@ export const newMarkets = [
   'saga-usdt',
   'black-inj',
   'omni-usdt',
-  'w-usdt-perp',
 ]
 
 export const experimental = [
@@ -122,7 +122,8 @@ export const injective = [
   'lvn-inj',
   'xiii-inj',
   'black-inj',
-  'mother-inj'
+  'mother-inj',
+  'sns-inj'
 ]
 
 export const solana = [
@@ -134,7 +135,8 @@ export const solana = [
   'bonk-usdt-perp',
   'w-usdt',
   'w-usdt-perp',
-  'boden-usdt-perp'
+  'boden-usdt-perp',
+  'sns-inj'
 ]
 
 export const olpLowVolume = [
