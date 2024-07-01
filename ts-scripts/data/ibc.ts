@@ -467,7 +467,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     channelId: 'channel-283',
     path: 'transfer/channel-283',
     source: TokenSource.Cosmos,
-    hash: '5D1F516200EE8C6B2354102143B78A2DEDA25EDE771AC0F8DC3C1837C8FD4447'
+    hash: 'C1D3666F27EA64209584F18BC79648E0C1783BB6EEC04A8060E4A8E9881C841B'
   },
   {
     ...symbolMeta.SNS,
