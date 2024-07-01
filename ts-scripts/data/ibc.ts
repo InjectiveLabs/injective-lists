@@ -487,5 +487,15 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     source: TokenSource.BinanceSmartChain,
     hash: '0AFCFFE18230E0E703A527F7522223D808EBB0E02FDBC84AAF8A045CD8FE0BBB'
+  },
+  {
+    ...symbolMeta.Unknown, // adding this deleted denom for injective asset service
+    decimals: 6,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/34otzwKo7pCY8YF5wxMrAhjoM9ei7pcEUcMfUBPP2iL7',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Solana,
+    hash: '078184C66B073F0464BA0BBD736DD601A0C637F9C42B592DDA5D6A95289D99A4'
   }
 ]
