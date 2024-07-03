@@ -5,11 +5,17 @@ import {
   tokensToDenomMap,
   bankMetadataToAddressMap
 } from './../helper/utils'
+import {
+  devnetHardcodedCw20Denoms,
+  devnetHardcodedBankMetadata
+} from './../data/cw20'
 import { Token, BankMetadata } from './../types'
 
-const devnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'data/bankMetadata/devnet.json' })
-)
+const devnetBankMetadataAddressMap = bankMetadataToAddressMap([
+  ...readJSONFile({ path: 'data/bankMetadata/devnet.json' }),
+  ...devnetHardcodedBankMetadata
+])
+
 const testnetBankMetadataAddressMap = bankMetadataToAddressMap(
   readJSONFile({ path: 'data/bankMetadata/testnet.json' })
 )
@@ -45,9 +51,12 @@ const mainnetCw20Denoms = readJSONFile({
 const testnetCw20Denoms = readJSONFile({
   path: 'data/cw20Denoms/testnet.json'
 })
-const devnetCw20Denoms = readJSONFile({
-  path: 'data/cw20Denoms/devnet.json'
-})
+const devnetCw20Denoms = [
+  ...readJSONFile({
+    path: 'data/cw20Denoms/devnet.json'
+  }),
+  ...devnetHardcodedCw20Denoms
+]
 
 export const getSupplyDenom = (
   denom: string,
@@ -121,7 +130,9 @@ export const getCw20Denom = (
     list = testnetCw20Denoms
   }
 
-  return list.find((cw20Denom: string) => {
+  const denom = list.find((cw20Denom: string) => {
     return cw20Denom.endsWith(denomOrAddress)
   })
+
+  return denom
 }
