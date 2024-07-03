@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'giga-inj',
   'iotx-inj',
   'sns-inj',
   'pyusd-usdt',
@@ -9,8 +10,7 @@ export const newMarkets = [
   'xau-usdt-perp',
   'xag-usdt-perp',
   'ezeth-weth',
-  'saga-usdt',
-  'black-inj',
+  'saga-usdt'
 ]
 
 export const experimental = [
@@ -138,7 +138,9 @@ export const solana = [
   'w-usdt',
   'w-usdt-perp',
   'boden-usdt-perp',
-  'sns-inj'
+  'sns-inj',
+  'giga-inj'
+
 ]
 
 export const olpLowVolume = [
