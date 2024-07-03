@@ -1933,5 +1933,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'SynesisOne',
     symbol: 'SNS',
     decimals: 8
+  },
+
+  GIGA: {
+    coinGeckoId: 'gigachad-2',
+    logo: 'giga.png',
+    name: 'Gigachad',
+    symbol: 'GIGA',
+    decimals: 8
   }
+
 }
