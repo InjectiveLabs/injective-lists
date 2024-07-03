@@ -1940,7 +1940,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'giga.png',
     name: 'Gigachad',
     symbol: 'GIGA',
-    decimals: 8
+    decimals: 5
   }
 
 }
