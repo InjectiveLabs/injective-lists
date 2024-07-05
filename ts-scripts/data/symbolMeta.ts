@@ -1941,6 +1941,22 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Gigachad',
     symbol: 'GIGA',
     decimals: 5
+  },
+
+  NBZAIRDROP: {
+    coinGeckoId: '',
+    logo: 'nbz-airdrop.png',
+    name: 'Ninja Blaze Airdrop Box',
+    symbol: 'NBZAIRDROP',
+    decimals: 0
+  },
+
+  NBZLOOTBOX1: {
+    coinGeckoId: '',
+    logo: 'nbz-lootbox-1.png',
+    name: 'Ninja Blaze Novice Box',
+    symbol: 'lootbox1',
+    decimals: 0
   }
 
 }

@@ -61,7 +61,8 @@ export const cosmos = [
   'osmo-usdt-perp',
   'andr-usdt',
   'whale-inj',
-  'saga-usdt'
+  'saga-usdt',
+  'atom-usdt'
 ]
 
 export const ethereum = [
