@@ -414,5 +414,13 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.SMELLY,
     creator: 'inj10pz3xq7zf8xudqxaqealgyrnfk66u3c99ud5m2'
+  },
+  {
+    ...symbolMeta.NBZAIRDROP,
+    creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
+  },
+  {
+    ...symbolMeta.NBZLOOTBOX1,
+    creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
   }
 ]
