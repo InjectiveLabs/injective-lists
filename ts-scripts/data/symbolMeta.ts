@@ -1943,6 +1943,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 5
   },
 
+  wUSDM: {
+    coinGeckoId: 'wrapped-usdm',
+    logo: 'wusdm.webp',
+    name: 'Wrapped USDM',
+    symbol: 'wUSDM',
+    decimals: 18
+  },
+
   NBZAIRDROP: {
     coinGeckoId: '',
     logo: 'nbz-airdrop.png',
