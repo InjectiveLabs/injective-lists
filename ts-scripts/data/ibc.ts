@@ -507,5 +507,14 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     source: TokenSource.Solana,
     hash: '36C811A2253AA64B58A9B66C537B89348FE5792A8808AAA343082CBFCAA72278'
+  },
+  {
+    ...symbolMeta.USDY,
+    baseDenom: 'ausdy',
+    isNative: true,
+    channelId: 'channel-148',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-148',
+    hash: '93EAE5F9D6C14BFAC8DD1AFDBE95501055A7B22C5D8FA8C986C31D6EFADCA8A9'
   }
 ]
