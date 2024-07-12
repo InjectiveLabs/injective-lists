@@ -10,7 +10,7 @@ export const devnetTokens = [
 export const testnetTokens = [
   {
     ...symbolMeta.INJ,
-    address: '0xA472990C4C1261FEb55cDce66c53AbF990E83166'
+    address: '0x5512c04B6FF813f3571bDF64A1d74c98B5257332'
   },
   {
     ...symbolMeta.APE,
