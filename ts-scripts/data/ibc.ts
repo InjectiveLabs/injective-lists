@@ -12,6 +12,15 @@ export const testnetTokens: IbcTokenSource[] = [
     source: TokenSource.Cosmos,
     path: 'transfer/channel-13',
     hash: 'E8AC6B792CDE60AB208CA060CA010A3881F682A7307F624347AB71B6A0B0BF89'
+  },
+  {
+    ...symbolMeta.TEVMOS,
+    isNative: true,
+    baseDenom: 'atevmos',
+    channelId: 'channel-1',
+    path: 'transfer/channel-76996',
+    source: TokenSource.Cosmos,
+    hash: '300B5A980CA53175DBAC918907B47A2885CADD17042AD58209E777217D64AF20'
   }
 ]
 
