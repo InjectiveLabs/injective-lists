@@ -1125,11 +1125,36 @@
     "minSelfDelegation": "50000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1vxhtevxeh3a3ke5znysv9erh6llcvsfgwdur7k",
+    "jailed": false,
+    "status": "Bonded",
+    "tokens": "4.5187",
+    "delegatorShares": "4518700000000000000",
+    "description": {
+      "moniker": "testnetp",
+      "identity": "0A6AF02D1557E5B4",
+      "website": "polkadot.com",
+      "securityContact": "",
+      "details": "polkadot!"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.05",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2024-07-14T20:11:29.205Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1vxwx03nd9nam93d4vg7uz44trw30d3zm88pyxq",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "1",
-    "delegatorShares": "1000000000000000000",
+    "tokens": "11",
+    "delegatorShares": "11000000000000000000",
     "description": {
       "moniker": "injstakingtestnet",
       "identity": "E62917240A413FDE",
