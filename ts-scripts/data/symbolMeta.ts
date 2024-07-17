@@ -1965,6 +1965,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Ninja Blaze Novice Box',
     symbol: 'lootbox1',
     decimals: 0
+  },
+
+  TEVMOS: {
+    coinGeckoId: 'evmos',
+    logo: 'evmos.png',
+    name: 'TEvmos',
+    symbol: 'TEvmos',
+    decimals: 18
   }
 
 }
