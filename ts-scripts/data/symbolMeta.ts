@@ -847,9 +847,9 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'kira-the-injective-cat'
   },
 
-  USDY: {
+  USDYet: {
     decimals: 18,
-    symbol: 'USDY',
+    symbol: 'USDYet',
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
     coinGeckoId: 'ondo-us-dollar-yield'
@@ -1973,6 +1973,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'TEvmos',
     symbol: 'TEvmos',
     decimals: 18
+  },
+
+  USDY: {
+    decimals: 18,
+    symbol: 'USDY',
+    logo: 'usdy.webp',
+    name: 'Ondo US Dollar Yield',
+    coinGeckoId: 'ondo-us-dollar-yield'
   }
 
 }
