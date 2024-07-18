@@ -849,7 +849,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   USDYet: {
     decimals: 18,
-    symbol: 'USDY',
+    symbol: 'USDYet',
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
     coinGeckoId: 'ondo-us-dollar-yield'
