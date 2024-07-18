@@ -259,7 +259,7 @@ export const mainnetTokens = [
     address: '0x4c11249814f11b9346808179Cf06e71ac328c1b5'
   },
   {
-    ...symbolMeta.USDY,
+    ...symbolMeta.USDYet,
     address: '0x96F6eF951840721AdBF46Ac996b59E0235CB985C'
   },
   {
