@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'usdy-usdt',
   'giga-inj',
   'iotx-inj',
   'sns-inj',
@@ -62,11 +63,11 @@ export const cosmos = [
   'andr-usdt',
   'whale-inj',
   'saga-usdt',
-  'atom-usdt'
+  'atom-usdt',
+  'usdy-usdt'
 ]
 
 export const ethereum = [
-  'usdy-usdt',
   'inj-usdt',
   'arb-usdt',
   'app-inj',
@@ -126,7 +127,8 @@ export const injective = [
   'black-inj',
   'mother-inj',
   'sns-inj',
-  'iotx-inj'
+  'iotx-inj',
+  'usdy-usdt'
 ]
 
 export const solana = [
