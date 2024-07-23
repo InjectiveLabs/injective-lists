@@ -1981,6 +1981,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
     coinGeckoId: 'ondo-us-dollar-yield'
-  }
+  },
 
+  XION: {
+    decimals: 6,
+    symbol: 'XION',
+    logo: 'xion.png',
+    name: 'XION',
+    coinGeckoId: ''
+  }
 }
