@@ -18,7 +18,7 @@ export const testnetTokens = [
   },
   {
     ...symbolMeta.USDT,
-    address: '0x03fA678f56e230effB1b5148e4d1fa25184b639a'
+    address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
   },
   {
     ...symbolMeta.QAT,
