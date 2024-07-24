@@ -1,10 +1,11 @@
 export const newMarkets = [
+  'btc-wusdm-perp',
+  'wusdm-usdt',
   'usdy-usdt',
   'giga-inj',
   'iotx-inj',
   'sns-inj',
   'pyusd-usdt',
-  'boden-usdt-perp',
   'mother-inj',
   'gbp-usdt-perp',
   'eur-usdt-perp',
@@ -15,6 +16,8 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'btc-wusdm-perp',
+  'wusdm-usdt',
   'usdy-usdt',
   'ape-usdt',
   'usde-usdt',
@@ -68,6 +71,7 @@ export const cosmos = [
 ]
 
 export const ethereum = [
+  'wusdm-usdt',
   'inj-usdt',
   'arb-usdt',
   'app-inj',
