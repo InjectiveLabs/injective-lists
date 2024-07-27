@@ -51,9 +51,9 @@
   },
   {
     "operatorAddress": "injvaloper1q8nh58utz78ree7e4cnxnvmyt0mrq5wwxfth3j",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "1000",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "990",
     "delegatorShares": "1000000000000000000000",
     "description": {
       "moniker": "n1",
@@ -62,8 +62,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 37682,
+    "unbondingTime": "2024-08-17T14:08:26.825Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
