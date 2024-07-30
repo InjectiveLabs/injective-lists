@@ -5,26 +5,27 @@ on:
   push:
     branches:
       - master
-  env:
-    SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
 
 jobs:
   deploy:
-    if: ${{ SKIP_DEPLOYMENTS != 'true' && (github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy')) }}
+    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
     name: "Trigger deployments"
     runs-on: ubuntu-latest
     permissions: write-all
     env:
       ## Github Actions
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
 
     steps:
       - name: Sleep for 60s
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: juliangruber/sleep-action@v2.0.0
         with:
           time: 60s
 
       - name: Deploy mito (devnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -33,6 +34,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy mito
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml
@@ -41,6 +43,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy bridge (devnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -49,9 +52,11 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy bridge (mainnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/660d7b9ab0d0ef0b0f685131
 
       - name: Rebuild helix (devnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -60,6 +65,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild helix
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml
@@ -68,6 +74,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy explorer (devnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -76,6 +83,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy explorer (testnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: testnet.yaml
@@ -84,6 +92,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy explorer
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yaml
@@ -92,6 +101,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild hub (devnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: devnet.yml
@@ -100,6 +110,7 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild Hub
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml
@@ -108,7 +119,9 @@ jobs:
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy OLP (mainnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/6656effe7e59027d29160fd5
 
       - name: Deploy Admin UI (mainnet)
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         run: curl -X POST -d {} https://api.netlify.com/build_hooks/665708f5e5ef6799ac221b79
