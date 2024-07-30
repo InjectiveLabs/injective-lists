@@ -843,7 +843,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'KIRA',
     symbol: 'KIRA',
-    logo: 'kira.jpeg',
+    logo: 'kira.webp',
     coinGeckoId: 'kira-the-injective-cat'
   },
 
