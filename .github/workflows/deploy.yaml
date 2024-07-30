@@ -8,12 +8,13 @@ on:
 
 jobs:
   deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
+    if: ${{ SKIP_DEPLOYMENTS != 'true' && (github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy')) }}
     name: "Trigger deployments"
     runs-on: ubuntu-latest
     permissions: write-all
     env:
       ## Github Actions
+      SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
       ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
     steps:
