@@ -42,8 +42,9 @@ export const generateMitoTokens = async (network: Network) => {
 
       const mitoToken = {
         ...untaggedSymbolMeta.Unknown,
-        decimals: 18,
         denom,
+        decimals: 18,
+        address: vault.contractAddress,
         logo: 'mito.svg',
         marketId: [vault.marketId],
         tokenType: TokenType.Lp,
