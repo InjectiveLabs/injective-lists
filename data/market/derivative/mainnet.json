@@ -1,0 +1,1282 @@
+[
+  {
+    "oracleBase": "0x765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5",
+    "marketStatus": "active",
+    "ticker": "XAU/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1716489561757",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "29198053.059466364392894767",
+      "cumulativePrice": "5.462474805503711783",
+      "lastTimestamp": 1722613207
+    }
+  },
+  {
+    "oracleBase": "0x0a0408d619e9380abad35060f9192039ed5042fa6f82301d0e48bb52be830996",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c",
+    "marketStatus": "active",
+    "ticker": "JUP/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707146285144",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "53416.040716486855471802",
+      "cumulativePrice": "-1.095716124340243455",
+      "lastTimestamp": 1722877918
+    }
+  },
+  {
+    "oracleBase": "0x8ac0c70fff57e9aefdf5edf44b51d62c2d433653cbb2cf5cc06bb115af04d221",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x03c8da1f6aaf8aca2be26b0f4d6b89d475835c7812a1dcdb19af7dec1c6b7f60",
+    "marketStatus": "active",
+    "ticker": "LINK/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707495832116",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "1022424.525238928891691325",
+      "cumulativePrice": "-0.149713612614753633",
+      "lastTimestamp": 1722877910
+    }
+  },
+  {
+    "oracleBase": "0xef0d8b6fda2ceba41da15d4095d1da392a0d2f8ed0c6c7bc0f4cfac8c280b56d",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x06c5a306492ddc2b8dc56969766959163287ed68a6b59baa2f42330dda0aebe0",
+    "marketStatus": "active",
+    "ticker": "SOL/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707002412763",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "21503159.924416762491753017",
+      "cumulativePrice": "0.974212685271398688",
+      "lastTimestamp": 1722877891
+    }
+  },
+  {
+    "oracleBase": "BTC/wUSDM",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 18,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709",
+    "marketStatus": "active",
+    "ticker": "BTC/wUSDM Perp",
+    "quoteDenom": "peggy0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+    "quoteToken": {
+      "name": "Wrapped USDM",
+      "address": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+      "symbol": "wUSDM",
+      "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/c7333dd4-1983-4d2c-ce65-d88c3b427800/public",
+      "decimals": 18,
+      "updatedAt": "1721241508918",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000000000000000000,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "302535346139669975920.719327",
+      "cumulativePrice": "1.477050868254748113",
+      "lastTimestamp": 1722833181
+    }
+  },
+  {
+    "oracleBase": "0x23d7315113f5b1d3ba7a83604c44b94d79f4fd69af77f804fc7f920a6dc65744",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x18b2ca44b3d20a3b87c87d3765669b09b73b5e900693896c08394c70e79ab1e7",
+    "marketStatus": "active",
+    "ticker": "SUI/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1706621463630",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "86147.277819871459870559",
+      "cumulativePrice": "0.64109901707362275",
+      "lastTimestamp": 1722877920
+    }
+  },
+  {
+    "oracleBase": "0x4ca4beeca86f0d164160323817a4e42b10010a724c2217c6ee41b54cd4cc61fc",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88",
+    "marketStatus": "active",
+    "ticker": "WIF/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1706621482928",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "227132.576933636532971458",
+      "cumulativePrice": "1.410719954184223789",
+      "lastTimestamp": 1722877816
+    }
+  },
+  {
+    "oracleBase": "0x53614f1cb0c031d4af66c04cb9c756234adad0e1cee85303795091499a4084eb",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.165",
+    "isPerpetual": true,
+    "marketId": "0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b",
+    "marketStatus": "active",
+    "ticker": "SEI/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1704993964560",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "2221660.263884082564959361",
+      "cumulativePrice": "-0.172934362538674298",
+      "lastTimestamp": 1722877983
+    }
+  },
+  {
+    "oracleBase": "0x2f95862b045670cd22bee3114c39763a4a08beeb663b145d283c31d7d1101c4f",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced",
+    "marketStatus": "active",
+    "ticker": "BNB/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1704993964560",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "1334712.941840863828084252",
+      "cumulativePrice": "0.083822924325121156",
+      "lastTimestamp": 1722877960
+    }
+  },
+  {
+    "oracleBase": "0x93da3352f9f1d105fdfe4971cfa80e9dd777bfc5d0f683ebb6e1294b92137bb7",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x30a1463cfb4c393c80e257ab93118cecd73c1e632dc4d2d31c12a51bc0a70bd7",
+    "marketStatus": "active",
+    "ticker": "AVAX/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1706620385875",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "4969944.88771169342880801",
+      "cumulativePrice": "0.540781379608186479",
+      "lastTimestamp": 1722877911
+    }
+  },
+  {
+    "oracleBase": "0x72b021217ca3fe68922a19aaf990109cb9d84e9ad004b4d2025ad6f529314419",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x3b7fb1d9351f7fa2e6e0e5a11b3639ee5e0486c33a6a74f629c3fc3c3043efd5",
+    "marketStatus": "active",
+    "ticker": "BONK/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707495832116",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 10000,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "1.56555746561258958",
+      "cumulativePrice": "0.317573562069837236",
+      "lastTimestamp": 1722877969
+    }
+  },
+  {
+    "oracleBase": "0xa995d00bb36a63cef7fd2c287dc105fc8f3d93779f062f09551b0af3e81ec30b",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.0195",
+    "maintenanceMarginRatio": "0.0095",
+    "isPerpetual": true,
+    "marketId": "0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5",
+    "marketStatus": "active",
+    "ticker": "EUR/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1718369893065",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "8724.309983057314867899",
+      "cumulativePrice": "-22.991157997800262788",
+      "lastTimestamp": 1722797844
+    }
+  },
+  {
+    "oracleBase": "0x385f64d993f7b77d8182ed5003d97c60aa3361f3cecfe711544d2d59165e9bdf",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c",
+    "marketStatus": "active",
+    "ticker": "OP/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707063093639",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "236258.462841271404087447",
+      "cumulativePrice": "0.344646352190067911",
+      "lastTimestamp": 1722877975
+    }
+  },
+  {
+    "oracleBase": "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.0495",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0x4ca0f92fc28be0c9761326016b5a1a2177dd6375558365116b5bdda9abc229ce",
+    "marketStatus": "active",
+    "ticker": "BTC/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1711124788379",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000000,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "18791749244.94112378282215579",
+      "cumulativePrice": "0.231278815068601699",
+      "lastTimestamp": 1722877995
+    }
+  },
+  {
+    "oracleBase": "OMNI",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.165",
+    "isPerpetual": true,
+    "marketId": "0x4d42425fc3ccd6b61b8c4ad61134ab3cf21bdae1b665317eff671cfab79f4387",
+    "marketStatus": "active",
+    "ticker": "OMNI/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1712662011823",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "-45928.540815108717276822",
+      "cumulativePrice": "6.192982456140351224",
+      "lastTimestamp": 1722877906
+    }
+  },
+  {
+    "oracleBase": "0x60144b1d5c9e9851732ad1d9760e3485ef80be39b984f6bf60f82b28a2b7f126",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb",
+    "marketStatus": "active",
+    "ticker": "AXL/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1696715467981",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "733059.823501850089120272",
+      "cumulativePrice": "-0.007735702507238583",
+      "lastTimestamp": 1722877836
+    }
+  },
+  {
+    "oracleBase": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.0495",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a",
+    "marketStatus": "active",
+    "ticker": "ETH/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1711124788379",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "1131906953.864878321568017782",
+      "cumulativePrice": "-0.452227888609237101",
+      "lastTimestamp": 1722877974
+    }
+  },
+  {
+    "oracleBase": "0x84c2dde9633d93d1bcad84e7dc41c9d56578b7ec52fabedc1f335d673df0a7c1",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.0195",
+    "maintenanceMarginRatio": "0.0095",
+    "isPerpetual": true,
+    "marketId": "0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f",
+    "marketStatus": "active",
+    "ticker": "GBP/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1718369893065",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "15730.96825360802422102",
+      "cumulativePrice": "0.192247839070651027",
+      "lastTimestamp": 1722860686
+    }
+  },
+  {
+    "oracleBase": "0xec5d399846a9209f3fe5881d70aae9268c94339ff9817e8d18ff19fa05eea1c8",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x63bafbeee644b6606afb8476dd378fba35d516c7081d6045145790af963545aa",
+    "marketStatus": "active",
+    "ticker": "XRP/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1704993964560",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "70267.118954744475928347",
+      "cumulativePrice": "0.026809714000568362",
+      "lastTimestamp": 1722877960
+    }
+  },
+  {
+    "oracleBase": "0x3fa4252848f9f0a1480be62745a4629d9eb1322aebab8a791e344b3b9c1adcf5",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5",
+    "marketStatus": "active",
+    "ticker": "ARB/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707063093639",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "100728.683710589634534772",
+      "cumulativePrice": "0.877375353729072361",
+      "lastTimestamp": 1722877950
+    }
+  },
+  {
+    "oracleBase": "0xdcef50dd0a4cd2dcc17e45df1676dcb336a11a61c69df7a0299b0150c672d25c",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x7980993e508e0efc1c2634c153a1ef90f517b74351d6406221c77c04ec4799fe",
+    "marketStatus": "active",
+    "ticker": "DOGE/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707495832116",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 10,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "8036.039502834418323486",
+      "cumulativePrice": "-0.929394248166704292",
+      "lastTimestamp": 1722877981
+    }
+  },
+  {
+    "oracleBase": "ZRO",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x7a70d95e24ba42b99a30121e6a4ff0d6161847d5b86cbfc3d4b3a81d8e190a70",
+    "marketStatus": "active",
+    "ticker": "ZRO/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1705847582290",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "980215.211883326545199951",
+      "cumulativePrice": "0.716577540106952202",
+      "lastTimestamp": 1722872278
+    }
+  },
+  {
+    "oracleBase": "0x0bbf28e9a841a1cc788f6a361b17ca072d0ea3098a1e5df1c3922d06719579ff",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d",
+    "marketStatus": "active",
+    "ticker": "PYTH/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1704993964560",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "39961.300041172310928321",
+      "cumulativePrice": "0.032903209979572988",
+      "lastTimestamp": 1722877993
+    }
+  },
+  {
+    "oracleBase": "OSMO",
+    "oracleQuote": "UST",
+    "oracleType": "bandibc",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x8c7fd5e6a7f49d840512a43d95389a78e60ebaf0cde1af86b26a785eb23b3be5",
+    "marketStatus": "active",
+    "ticker": "OSMO/UST PERP",
+    "quoteDenom": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
+    "quoteToken": {
+      "name": "TerraUSD",
+      "address": "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+      "symbol": "UST",
+      "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png",
+      "decimals": 6,
+      "updatedAt": "1691168563770",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0005",
+    "takerFeeRate": "0.0012",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.0000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "848.424445691719007929",
+      "cumulativePrice": "4.595159563959176094",
+      "lastTimestamp": 1652077029
+    }
+  },
+  {
+    "oracleBase": "0x09f7c1d7dfbb7df2b8fe3d3d87ee94a2259d212da4f30c1f0540d066dfa44723",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.165",
+    "isPerpetual": true,
+    "marketId": "0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c",
+    "marketStatus": "active",
+    "ticker": "TIA/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1701771961866",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "247522.925916212578804885",
+      "cumulativePrice": "0.312210641977147491",
+      "lastTimestamp": 1722877977
+    }
+  },
+  {
+    "oracleBase": "0x7a5bc1d2b56ad029048cd63964b3ad2776eadf812edc1a43a31406cb54bff592",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963",
+    "marketStatus": "active",
+    "ticker": "INJ/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707002412763",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "13729979.340844342659616092",
+      "cumulativePrice": "4.420318885683283991",
+      "lastTimestamp": 1722877960
+    }
+  },
+  {
+    "oracleBase": "0xb00b60f88b03a6a625a8d1c048c3f66653edf217439983d037e7222c4e612819",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01",
+    "marketStatus": "active",
+    "ticker": "ATOM/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707002412763",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "6013448.87083948654362177",
+      "cumulativePrice": "-0.55960119823238676",
+      "lastTimestamp": 1722877702
+    }
+  },
+  {
+    "oracleBase": "0xd69731a2e74ac1ce884fc3890f7ee324b6deb66147055249568869ed700882e4",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 12,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0xcd0c859a99f26bb3530e21890937ed77d20754aa7825a599c71710514fc125ef",
+    "marketStatus": "active",
+    "ticker": "1MPEPE/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1691168563770",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1685190821
+    }
+  },
+  {
+    "oracleBase": "0x5867f5683c757393a0670ef0f701490950fe93fdb006d181c8265a831ac0c5c6",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0xcf18525b53e54ad7d27477426ade06d69d8d56d2f3bf35fe5ce2ad9eb97c2fbc",
+    "marketStatus": "active",
+    "ticker": "OSMO/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1707063093639",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.0000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "-75928.612563165896513543",
+      "cumulativePrice": "0.268472086714120929",
+      "lastTimestamp": 1722866441
+    }
+  },
+  {
+    "oracleBase": "0xf2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052",
+    "marketStatus": "active",
+    "ticker": "XAG/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1716489591128",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "277053.602488782579174016",
+      "cumulativePrice": "0.177339635028081548",
+      "lastTimestamp": 1722697651
+    }
+  },
+  {
+    "oracleBase": "W",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.33",
+    "maintenanceMarginRatio": "0.165",
+    "isPerpetual": true,
+    "marketId": "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243",
+    "marketStatus": "active",
+    "ticker": "W/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1712925241083",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "-94683.950149671548093822",
+      "cumulativePrice": "-543.87366863124540859",
+      "lastTimestamp": 1722864725
+    }
+  },
+  {
+    "oracleBase": "0x7bd87c3390d2c88d4699c7621fd857e0982027723751ce6e98bcc7604a407976",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.195",
+    "maintenanceMarginRatio": "0.095",
+    "isPerpetual": true,
+    "marketId": "0xf1ceea00e01327497c321679896e5e64ad2a4e4b88e7324adeec7661351b6d93",
+    "marketStatus": "active",
+    "ticker": "BODEN/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1717598945782",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 0,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1722880800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "407.825436779253278476",
+      "cumulativePrice": "4.42706361060401984",
+      "lastTimestamp": 1722290582
+    }
+  }
+]

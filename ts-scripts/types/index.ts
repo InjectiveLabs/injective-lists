@@ -1,5 +1,9 @@
-import { TokenSource } from '@injectivelabs/token-metadata'
-import { TokenInfo, ContractInfo, MarketingInfo } from '@injectivelabs/sdk-ts'
+import {
+  TokenInfo,
+  TokenSource,
+  ContractInfo,
+  MarketingInfo
+} from '@injectivelabs/sdk-ts'
 
 export * from './chain'
 

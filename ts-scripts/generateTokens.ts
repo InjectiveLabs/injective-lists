@@ -1,4 +1,4 @@
-import { TokenVerification } from '@injectivelabs/token-metadata'
+import { TokenVerification } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -12,17 +12,20 @@ const devnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/devnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/devnet.json' }),
-  ...readJSONFile({ path: 'tokens/factoryTokens/devnet.json' })
+  ...readJSONFile({ path: 'tokens/factoryTokens/devnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/devnet.json' })
 ]
 const testnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/testnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/testnet.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/testnet.json' }),
-  ...readJSONFile({ path: 'tokens/factoryTokens/testnet.json' })
+  ...readJSONFile({ path: 'tokens/factoryTokens/testnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/testnet.json' })
 ]
 const mainnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/externalTokens.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/factoryTokens/mainnet.json' })
@@ -56,6 +59,8 @@ export const generateTokensList = async (network: Network) => {
     TokenVerification.Unverified
   ]
 
+  const overwrittenTokens: any[] = []
+
   const uniqueTokens = formattedList.reduce((list, token: Token) => {
     const denom = token.denom
 
@@ -73,6 +78,15 @@ export const generateTokensList = async (network: Network) => {
         tokenSortingOrder > cachedTokenSortingOrder ||
         cachedToken.decimals === 0
       ) {
+        overwrittenTokens.push({
+          cachedToken: cachedToken,
+          token,
+          tokenSortingOrder,
+          cachedTokenSortingOrder,
+          conditionA: tokenSortingOrder > cachedTokenSortingOrder,
+          conditionB: cachedToken.decimals === 0
+        })
+
         console.log(`===== replace duplicate ${denom} ======`)
         console.log(cachedToken)
         console.log(`===== with ======`)
@@ -86,6 +100,10 @@ export const generateTokensList = async (network: Network) => {
 
     return { ...list, [denom]: token }
   }, {})
+
+  console.log(
+    JSON.stringify({ overwrittenTokens: overwrittenTokens.splice(0, 10) })
+  )
 
   const sortedList = (Object.values(uniqueTokens) as Token[]).sort(
     (t1: Token, t2: Token) => {
@@ -111,6 +129,6 @@ export const generateTokensList = async (network: Network) => {
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }
 
-generateTokensList(Network.Devnet)
-generateTokensList(Network.TestnetSentry)
+// generateTokensList(Network.Devnet)
+// generateTokensList(Network.TestnetSentry)
 generateTokensList(Network.MainnetSentry)

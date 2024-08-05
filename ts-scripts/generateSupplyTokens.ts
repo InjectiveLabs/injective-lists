@@ -1,5 +1,5 @@
+import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,
@@ -108,6 +108,10 @@ export const generateSupplyToken = async (network: Network) => {
     }
 
     const filteredTokens = [...supplyTokens].filter(({ denom }) => denom)
+
+    if (filteredTokens.length === 0) {
+      return
+    }
 
     await updateJSONFile(
       `tokens/bankSupplyTokens/${getNetworkFileName(network)}.json`,

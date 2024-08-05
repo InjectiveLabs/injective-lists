@@ -1,5 +1,8 @@
 import {
+  TokenType,
+  TokenStatic,
   ContractInfo,
+  TokenVerification,
   ChainGrpcWasmApi,
   isCw20ContractAddress,
   ContractStateWithPagination
@@ -10,11 +13,6 @@ import {
   isTestnet,
   getNetworkEndpoints
 } from '@injectivelabs/networks'
-import {
-  TokenStatic,
-  TokenType,
-  TokenVerification
-} from '@injectivelabs/token-metadata'
 import {
   readJSONFile,
   updateJSONFile,

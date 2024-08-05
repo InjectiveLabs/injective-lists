@@ -3,7 +3,7 @@ import {
   TokenStatic,
   TokenVerification,
   isCw20ContractAddress
-} from '@injectivelabs/token-metadata'
+} from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -165,6 +165,10 @@ export const generateBankFactoryTokens = async (network: Network) => {
         tokenType: TokenType.TokenFactory,
         tokenVerification: TokenVerification.Internal
       })
+    }
+
+    if (bankFactoryTokens.length === 0) {
+      return
     }
 
     await updateJSONFile(

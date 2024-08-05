@@ -1,4 +1,4 @@
-import { TokenSource } from '@injectivelabs/token-metadata'
+import { TokenSource } from '@injectivelabs/sdk-ts'
 import { symbolMeta } from './symbolMeta'
 import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 import { IbcTokenSource } from '../types'

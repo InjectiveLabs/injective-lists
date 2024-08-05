@@ -2,7 +2,7 @@ import {
   TokenType,
   TokenStatic,
   TokenVerification
-} from '@injectivelabs/token-metadata'
+} from '@injectivelabs/sdk-ts'
 import { Network } from '@injectivelabs/networks'
 import {
   mainnetTokens as cw20MainnetTokens,
@@ -24,6 +24,7 @@ import {
   testnetTokens as ibcTestnetTokens
 } from './data/ibc'
 import { symbolMeta } from './data/symbolMeta'
+import { getMarketIdsByDenom } from './helper/market'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import {
   getCw20Denom,
@@ -229,6 +230,7 @@ const generateStaticTokens = async (network: Network) => {
         address: token.denom,
         isNative: false,
         tokenVerification: TokenVerification.Verified,
+        marketIds: getMarketIdsByDenom(token.denom, network),
         ...token
       }))
       .sort((a, b) => a.denom.localeCompare(b.denom))
