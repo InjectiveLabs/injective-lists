@@ -59,8 +59,6 @@ export const generateTokensList = async (network: Network) => {
     TokenVerification.Unverified
   ]
 
-  const overwrittenTokens: any[] = []
-
   const uniqueTokens = formattedList.reduce((list, token: Token) => {
     const denom = token.denom
 
@@ -78,15 +76,6 @@ export const generateTokensList = async (network: Network) => {
         tokenSortingOrder > cachedTokenSortingOrder ||
         cachedToken.decimals === 0
       ) {
-        overwrittenTokens.push({
-          cachedToken: cachedToken,
-          token,
-          tokenSortingOrder,
-          cachedTokenSortingOrder,
-          conditionA: tokenSortingOrder > cachedTokenSortingOrder,
-          conditionB: cachedToken.decimals === 0
-        })
-
         console.log(`===== replace duplicate ${denom} ======`)
         console.log(cachedToken)
         console.log(`===== with ======`)
@@ -100,10 +89,6 @@ export const generateTokensList = async (network: Network) => {
 
     return { ...list, [denom]: token }
   }, {})
-
-  console.log(
-    JSON.stringify({ overwrittenTokens: overwrittenTokens.splice(0, 10) })
-  )
 
   const sortedList = (Object.values(uniqueTokens) as Token[]).sort(
     (t1: Token, t2: Token) => {

@@ -9,24 +9,6 @@ import {
 import { getMarketById } from './helper/market'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 
-const mainnetStaticTokensMap = tokensToDenomMapKeepCasing(
-  readJSONFile({
-    path: 'tokens/mito/mainnet.json'
-  })
-)
-
-const testnetStaticTokensMap = tokensToDenomMapKeepCasing(
-  readJSONFile({
-    path: 'tokens/mito/testnet.json'
-  })
-)
-
-const devnetStaticTokensMap = tokensToDenomMapKeepCasing(
-  readJSONFile({
-    path: 'tokens/mito/devnet.json'
-  })
-)
-
 const mainnetVaults = readJSONFile({
   path: 'data/mito/mainnet.json'
 })
@@ -39,21 +21,8 @@ const devnetVaults = readJSONFile({
   path: 'data/mito/devnet.json'
 })
 
-const getStaticTokensMap = (network: Network) => {
-  if (isMainnet(network)) {
-    return mainnetStaticTokensMap
-  }
-
-  if (isTestnet(network)) {
-    return testnetStaticTokensMap
-  }
-
-  return devnetStaticTokensMap
-}
-
 export const generateMitoTokens = async (network: Network) => {
   let mitoVaults = devnetVaults
-  const staticTokensMap = getStaticTokensMap(network)
 
   if (isTestnet(network)) {
     mitoVaults = testnetVaults
@@ -69,16 +38,13 @@ export const generateMitoTokens = async (network: Network) => {
     for (const vault of mitoVaults) {
       const denom = `factory/${vault.masterContractAddress}/lp${vault.contractAddress}`
 
-      if (staticTokensMap[denom]) {
-        continue
-      }
-
       const market = getMarketById(vault.marketId, network)
 
       const mitoToken = {
         ...untaggedSymbolMeta.Unknown,
         decimals: 18,
         denom,
+        logo: 'mito.svg',
         marketId: [vault.marketId],
         tokenType: TokenType.Lp,
         tokenVerification: TokenVerification.Internal
