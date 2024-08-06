@@ -1989,5 +1989,22 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'xion.png',
     name: 'XION',
     coinGeckoId: ''
+  },
+
+  bINJ: {
+    decimals: 18,
+    symbol: 'bINJ',
+    logo: 'bINJ.png',
+    name: 'BackBone Labs LST',
+    coinGeckoId: ''
+  },
+
+  SYN: {
+    decimals: 6,
+    symbol: 'SYN',
+    logo: 'SYN.png',
+    name: 'Galactic Syndicate',
+    coinGeckoId: ''
   }
+
 }

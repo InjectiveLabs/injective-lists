@@ -422,5 +422,13 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.NBZLOOTBOX1,
     creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
+  },
+  {
+    ...symbolMeta.bINJ,
+    creator: 'inj1dxp690rd86xltejgfq2fa7f2nxtgmm5cer3hvu'
+  },
+  {
+    ...symbolMeta.SYN,
+    creator: 'inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e'
   }
 ]
