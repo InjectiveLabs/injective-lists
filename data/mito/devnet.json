@@ -11,8 +11,8 @@
     "contractAddress": "inj149ltwdnpxrhx9al42s359glcjnsuc6x3gfemjd",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1722967621981,
-    "createdAt": 1722967621981,
+    "updatedAt": 1722969959022,
+    "createdAt": 1722969959022,
     "apy": 0,
     "apyue": 0,
     "apy7D": 0,
@@ -39,8 +39,8 @@
     "contractAddress": "inj153e2w8u77h4ytrhgry846k5t8n9uea8xtal6d7",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "",
-    "updatedAt": 1722967623765,
-    "createdAt": 1722967623765,
+    "updatedAt": 1722969960819,
+    "createdAt": 1722969960819,
     "apy": 0,
     "apyue": 0,
     "apy7D": 0,
@@ -67,8 +67,8 @@
     "contractAddress": "inj1ery8l6jquynn9a4cz2pff6khg8c68f7u20ufuj",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1722967620410,
-    "createdAt": 1722967620410,
+    "updatedAt": 1722969957089,
+    "createdAt": 1722969957089,
     "apy": 0,
     "apyue": 0,
     "apy7D": 0,
@@ -84,19 +84,47 @@
     }
   },
   {
+    "slug": "oc-bucharest",
+    "codeId": "10",
+    "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
+    "vaultName": "OC Bucharest",
+    "vaultType": "crates.io:managed-vault",
+    "currentTvl": 0,
+    "lpTokenPrice": 0,
+    "totalLpAmount": "0",
+    "contractAddress": "inj1lv0mhwcu3y4p9av5nafct8j7y4ag6lmlfuxuy3",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "",
+    "updatedAt": 1722969969664,
+    "createdAt": 1722969969664,
+    "apy": 0,
+    "apyue": 0,
+    "apy7D": 0,
+    "apy7DFq": 0,
+    "apyV3": 0,
+    "registrationMode": "",
+    "profits": {
+      "allTimeChange": 0
+    },
+    "subaccountInfo": {
+      "subaccountId": "0xfb1fbbbb1c892a12f5949f53859e5e257a8d7f7f000000000000000000000001",
+      "balancesList": []
+    }
+  },
+  {
     "slug": "mito-inj-perp-market-making",
     "codeId": "3",
     "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
     "vaultName": "Mito INJ Perp Market Making",
     "vaultType": "crates.io:vault-asmm-perp",
-    "currentTvl": 0,
-    "lpTokenPrice": 0,
-    "totalLpAmount": "0",
+    "currentTvl": 1,
+    "lpTokenPrice": 1e-18,
+    "totalLpAmount": "1000000000000000000",
     "contractAddress": "inj1up07dctjqud4fns75cnpejr4frmjtddztvuruc",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1722967619609,
-    "createdAt": 1722967619609,
+    "updatedAt": 1722969982039,
+    "createdAt": 1722969956274,
     "apy": 0,
     "apyue": 0,
     "apy7D": 0,
@@ -108,7 +136,12 @@
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000001",
-      "balancesList": []
+      "balancesList": [
+        {
+          "denom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "totalBalance": "1000000"
+        }
+      ]
     }
   },
   {
@@ -117,15 +150,15 @@
     "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
     "vaultName": "permissionless_vault_1",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 816.0886911953587,
-    "lpTokenPrice": 1.2165531927877708e-16,
+    "currentTvl": 815.1619971008282,
+    "lpTokenPrice": 1.2151717587946256e-16,
     "totalLpAmount": "6708203932499369089",
     "contractAddress": "inj1vauk4puffxad4r3qs3ex0vfl5mkuw5xe8aya8c",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1722967622837,
-    "createdAt": 1722967622837,
-    "apy": 4.662817377223871,
+    "updatedAt": 1722969959946,
+    "createdAt": 1722969959946,
+    "apy": 0,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -133,7 +166,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.2967313466470278
+      "oneDayChange": 0.15665372224829
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000005",
@@ -161,8 +194,8 @@
     "contractAddress": "inj1w798gp0zqv3s9hjl3jlnwxtwhykga6rnx4llty",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1722967621185,
-    "createdAt": 1722967621185,
+    "updatedAt": 1722969958074,
+    "createdAt": 1722969958074,
     "apy": 0,
     "apyue": 0,
     "apy7D": 0,
