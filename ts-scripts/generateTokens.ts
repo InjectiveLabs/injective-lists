@@ -8,6 +8,10 @@ import {
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Token } from './types'
 
+const devnetSupplyDenoms = readJSONFile({
+  path: 'data/bankSupplyDenoms/devnet.json'
+})
+
 const devnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/devnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' }),
@@ -31,12 +35,17 @@ const mainnetTokens = [
   ...readJSONFile({ path: 'tokens/factoryTokens/mainnet.json' })
 ]
 
+// filter out tokens that are not in the supply to optimize coinGecko API calls on devnet indexer
+const devnetFilteredTokens = devnetTokens.filter((token) => {
+  return devnetSupplyDenoms.includes(token.denom)
+})
+
 export const generateTokensList = async (network: Network) => {
   const list = isMainnet(network)
     ? mainnetTokens
     : isTestnet(network)
     ? testnetTokens
-    : devnetTokens
+    : devnetFilteredTokens
 
   const logos = readJSONFile({ path: 'data/tokenImagePaths.json' }) as Record<
     string,
@@ -114,6 +123,6 @@ export const generateTokensList = async (network: Network) => {
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }
 
-// generateTokensList(Network.Devnet)
-// generateTokensList(Network.TestnetSentry)
+generateTokensList(Network.Devnet)
+generateTokensList(Network.TestnetSentry)
 generateTokensList(Network.MainnetSentry)
