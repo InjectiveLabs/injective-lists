@@ -63,12 +63,12 @@
       "subaccountId": "0x893f2abf8034627e50cbc63923120b1122503ce0000000000000000000000001",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "280"
-        },
-        {
           "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "364734212.17326"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "280"
         }
       ]
     }
@@ -404,15 +404,15 @@
     "marketId": "0x37c5ffe6d1c2318a7b9efde1e82c1186d688c1c4a1ad41da9a0878d353f1c88b",
     "vaultName": "USDC Master",
     "vaultType": "crates.io:mito-vault-spot",
-    "currentTvl": 10162.159225004503,
-    "lpTokenPrice": 1.0051591716127107e-17,
+    "currentTvl": 10162.154925534982,
+    "lpTokenPrice": 1.0051587463437173e-17,
     "totalLpAmount": "1011000000000000000000",
     "contractAddress": "inj17kjkepym5j8xss5nmud6gq4c47xt0xf02wgsms",
     "notionalValueCap": "100000000000",
     "masterContractAddress": "inj1tcjf7r5vksr0g80pdcdada44teauwkkahelyfy",
     "updatedAt": 1722876124285,
     "createdAt": 1688646901360,
-    "apy": -3.397470610063036,
+    "apy": -3.3992245415121136,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -420,7 +420,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.0020262538207527214
+      "oneDayChange": 0.0021336410078509616
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add00000000000000000000000e",
@@ -1203,8 +1203,8 @@
     "marketId": "0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac",
     "vaultName": "GBP Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 18003605.370971415,
-    "lpTokenPrice": 1.0037507371641878e-18,
+    "currentTvl": 18003605.535184342,
+    "lpTokenPrice": 1.0037507463195122e-18,
     "totalLpAmount": "17936330908045438321918430",
     "contractAddress": "inj1fgdlfyru0e0fk4tsxtdz6an7vfwz3g82w40qy6",
     "notionalValueCap": "25000000000000",
@@ -1219,7 +1219,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": -0.00011384558010751888
+      "oneDayChange": -0.0001123545028680617
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000015",
@@ -1258,11 +1258,11 @@
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add00000000000000000000000d",
       "balancesList": [
         {
-          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
           "totalBalance": "5000000"
         },
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "5000000"
         }
       ]
@@ -1360,12 +1360,12 @@
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000008",
       "balancesList": [
         {
-          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test3",
-          "totalBalance": "19377000000"
-        },
-        {
           "denom": "inj",
           "totalBalance": "59401847668572133601"
+        },
+        {
+          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test3",
+          "totalBalance": "19377000000"
         }
       ]
     }
@@ -1462,11 +1462,11 @@
       "subaccountId": "0xf03cd83c97f5eebe4129f2047ed2c6571c61f16b000000000000000000000004",
       "balancesList": [
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "105000000"
         },
         {
-          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
           "totalBalance": "105000000"
         }
       ]
@@ -1499,12 +1499,12 @@
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000016",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "20000000000000000000"
-        },
-        {
           "denom": "factory/inj1u0lamqk0qggn5cxqn53t79jsthcpen9w754ayc/KIWI",
           "totalBalance": "500000000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "20000000000000000000"
         }
       ]
     }
@@ -1907,12 +1907,12 @@
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000010",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "11148105444935100908816.1188295"
-        },
-        {
           "denom": "factory/inj1cs9k0q8pv0446nxg66tu0u2w26qd52rc5pxvpy/TALKS1N",
           "totalBalance": "29261253209120"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "11148105444935100908816.1188295"
         }
       ]
     }
@@ -2192,8 +2192,8 @@
     "marketId": "0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7",
     "vaultName": "EUR Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 19804930.975409307,
-    "lpTokenPrice": 1.0035890774271221e-18,
+    "currentTvl": 19804930.922980588,
+    "lpTokenPrice": 1.0035890747703651e-18,
     "totalLpAmount": "19734103749098929240015290",
     "contractAddress": "inj1qamlsmj22p3zkchgva2ydhegfwz3ls7m5sm7rs",
     "notionalValueCap": "25000000000000",
@@ -2208,7 +2208,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 7.099649756980853e-7
+      "oneDayChange": 2.135053689400479e-7
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000016",
@@ -2284,12 +2284,12 @@
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000e",
       "balancesList": [
         {
-          "denom": "factory/inj1cs9k0q8pv0446nxg66tu0u2w26qd52rc5pxvpy/TALKS1N",
-          "totalBalance": "534294746432"
-        },
-        {
           "denom": "inj",
           "totalBalance": "205245166035690915561.44573588"
+        },
+        {
+          "denom": "factory/inj1cs9k0q8pv0446nxg66tu0u2w26qd52rc5pxvpy/TALKS1N",
+          "totalBalance": "534294746432"
         }
       ]
     }
@@ -2748,12 +2748,12 @@
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000006",
       "balancesList": [
         {
-          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test1",
-          "totalBalance": "9357000000"
-        },
-        {
           "denom": "inj",
           "totalBalance": "51325966478864820739"
+        },
+        {
+          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test1",
+          "totalBalance": "9357000000"
         }
       ]
     }
@@ -2801,15 +2801,15 @@
     "marketId": "0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6",
     "vaultName": "Offchain INJ/USDT PERP Aug 31",
     "vaultType": "crates.io:offchain-vault",
-    "currentTvl": 9523.445952392925,
-    "lpTokenPrice": 9.513932020372553e-15,
+    "currentTvl": 9527.826054667192,
+    "lpTokenPrice": 9.518307746920272e-15,
     "totalLpAmount": "1001000000000000000",
     "contractAddress": "inj1v4s3v3nmsx6szyxqgcnqdfseucu4ccm65sh0xr",
     "notionalValueCap": "5000000000000",
     "masterContractAddress": "",
     "updatedAt": 1722876255244,
     "createdAt": 1693488951382,
-    "apy": -22.776857861590983,
+    "apy": -22.14377708382449,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2817,7 +2817,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": -0.7385250024761536
+      "oneDayChange": -0.7061069506722362
     },
     "subaccountInfo": {
       "subaccountId": "0x656116467b81b50110c0462606a619e6395c637a000000000000000000000001",
@@ -3095,8 +3095,8 @@
     "marketId": "0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934",
     "vaultName": "XAU Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 21901459.31330706,
-    "lpTokenPrice": 1.0943281118869044e-18,
+    "currentTvl": 21901459.286921233,
+    "lpTokenPrice": 1.0943281105685102e-18,
     "totalLpAmount": "20013612988103986475199461",
     "contractAddress": "inj1xqsp96842fsht7m6p4slvrfhl53wfqft866sc7",
     "notionalValueCap": "25000000000000",
@@ -3111,7 +3111,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.000005769708799618911
+      "oneDayChange": 0.000006075482139600297
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000014",
@@ -3224,12 +3224,12 @@
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000003",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "23417295380086869496"
-        },
-        {
           "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/mitotest2",
           "totalBalance": "20000000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "23417295380086869496"
         }
       ]
     }
