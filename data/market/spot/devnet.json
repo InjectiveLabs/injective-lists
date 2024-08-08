@@ -330,6 +330,29 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x5fc34183af58b7a5c5daae1fc2b23e3a6cb3acf16a7e2944ddaa2d7f0ffc2a77",
+    "marketStatus": "active",
+    "ticker": "OlI/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/OlI",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "decimals": 6,
+      "updatedAt": "1723130402965",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0x6fa856bca5a9298ced8da3ef7616e66081ff64e4fdd2bffa38e95cf23c1f2321",
     "marketStatus": "active",
     "ticker": "PROJ/USDT",
