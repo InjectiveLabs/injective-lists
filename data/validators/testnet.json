@@ -901,9 +901,9 @@
   },
   {
     "operatorAddress": "injvaloper1md64w34xmd7krvayw09gkpz38cqlw8yq78fwnd",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "100",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.99",
     "delegatorShares": "100000000000000000000",
     "description": {
       "moniker": "gumi-testnet-2",
@@ -912,8 +912,8 @@
       "securityContact": "",
       "details": "gumi testnet 2"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 39669327,
+    "unbondingTime": "2024-08-30T06:56:06.348Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
