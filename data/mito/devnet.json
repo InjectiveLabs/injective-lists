@@ -117,13 +117,13 @@
     "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
     "vaultName": "Mito INJ Perp Market Making",
     "vaultType": "crates.io:vault-asmm-perp",
-    "currentTvl": 0,
-    "lpTokenPrice": 0,
-    "totalLpAmount": "0",
+    "currentTvl": 1,
+    "lpTokenPrice": 1e-18,
+    "totalLpAmount": "1000000000000000000",
     "contractAddress": "inj1up07dctjqud4fns75cnpejr4frmjtddztvuruc",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1723365166205,
+    "updatedAt": 1723365193779,
     "createdAt": 1723365166205,
     "apy": 0,
     "apyue": 0,
@@ -136,7 +136,12 @@
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000001",
-      "balancesList": []
+      "balancesList": [
+        {
+          "denom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+          "totalBalance": "1000000"
+        }
+      ]
     }
   },
   {
@@ -145,22 +150,23 @@
     "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
     "vaultName": "permissionless_vault_1",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 960.6772219577527,
-    "lpTokenPrice": 1.4320930484887924e-16,
+    "currentTvl": 958.967351013457,
+    "lpTokenPrice": 1.4295441233793277e-16,
     "totalLpAmount": "6708203932499369089",
     "contractAddress": "inj1vauk4puffxad4r3qs3ex0vfl5mkuw5xe8aya8c",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
     "updatedAt": 1723365169875,
     "createdAt": 1723365169875,
-    "apy": 0,
+    "apy": -2.2954897030396437,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
     "apyV3": 0,
     "registrationMode": "Permissionless",
     "profits": {
-      "allTimeChange": 0
+      "allTimeChange": 0,
+      "oneDayChange": -0.17798599833679374
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000005",
