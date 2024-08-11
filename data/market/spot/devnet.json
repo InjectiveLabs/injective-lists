@@ -99,6 +99,39 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x1d86bbb618129e0ce807783138a706cbef338cdc7c1d9d340bbdf6e04c39e3d6",
+    "marketStatus": "active",
+    "ticker": "ATOM/INJ",
+    "baseDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective Protocol",
+      "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+      "symbol": "INJ",
+      "logo": "https://static.alchemyapi.io/images/assets/7226.png",
+      "decimals": 18,
+      "updatedAt": "1723363568603",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Cosmos",
+      "address": "0x8D983cb9388EaC77af0474fA441C4815500Cb7BB",
+      "symbol": "ATOM",
+      "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/3794.png",
+      "decimals": 6,
+      "updatedAt": "1723363568603",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000000000,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 0
+  },
+  {
     "marketId": "0x2021159081a88c9a627c66f770fb60c7be78d492509c89b203e1829d0413995a",
     "marketStatus": "active",
     "ticker": "ETHBTCTrend/USDT",
@@ -549,6 +582,39 @@
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
+  },
+  {
+    "marketId": "0xa6c6343fe0a29a43a685bc89e780ed3ee3fec50fb6af9ede310f3904101a6ca6",
+    "marketStatus": "active",
+    "ticker": "WETH/INJ",
+    "baseDenom": "peggy0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective Protocol",
+      "address": "0xe28b3B32B6c345A34Ff64674606124Dd5Aceca30",
+      "symbol": "INJ",
+      "logo": "https://static.alchemyapi.io/images/assets/7226.png",
+      "decimals": 18,
+      "updatedAt": "1723364328736",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "WETH",
+      "logo": "https://static.alchemyapi.io/images/assets/2396.png",
+      "decimals": 18,
+      "updatedAt": "1723364328736",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000000000,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 1
   },
   {
     "marketId": "0xba3101edf6cb94d0b29fd95fb1679f84fe981a98da91a3df1e06809845fab209",
