@@ -1997,5 +1997,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'bnUSD.svg',
     name: 'Balanced Dollar',
     coinGeckoId: 'balanced-dollars'
+  },
+  
+  TON: {
+    decimals: 9,
+    symbol: 'TON',
+    logo: 'ton.png',
+    name: 'Toncoin',
+    coinGeckoId: 'the-open-network'
   }
 }
