@@ -1989,5 +1989,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'xion.png',
     name: 'XION',
     coinGeckoId: ''
+  },
+
+  TON: {
+    decimals: 9,
+    symbol: 'TON',
+    logo: 'ton.png',
+    name: 'Toncoin',
+    coinGeckoId: ''
   }
 }
