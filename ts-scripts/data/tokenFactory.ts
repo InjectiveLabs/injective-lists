@@ -424,11 +424,11 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
   },
   {
-    ...symbolMeta.bINJ,
+    ...symbolMeta.backboneInj,
     creator: 'inj1dxp690rd86xltejgfq2fa7f2nxtgmm5cer3hvu'
   },
   {
-    ...symbolMeta.SYN,
+    ...symbolMeta.syndicate,
     creator: 'inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e'
   }
 ]
