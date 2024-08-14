@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
   'usdy-usdt',
@@ -16,35 +17,19 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
   'usdy-usdt',
-  'ape-usdt',
   'usde-usdt',
   'app-inj',
-  'gf-usdt',
-  'autism-inj',
-  'tia-usdt-30nov2023',
-  '1000pepe-usdt-perp',
-  'eth-usdt-19sep22',
-  'ethbtctrend-usdt',
-  'steadyeth-usdt',
-  'steadybtc-usdt',
-  'app-inj',
-  'ninja-inj',
-  'kira-inj',
-  'katana-inj',
-  'ginger-inj',
   'jup-usdt-perp',
   'gyen-usdt',
   'wif-usdt-perp',
-  'bonk-usdt-perp',
   'qunt-inj',
-  'talis-inj',
   'omni-usdt-perp',
   'w-usdt-perp',
-  'mother-inj',
-  'boden-usdt-perp'
+  'mother-inj'
 ]
 
 export const cosmos = [
@@ -59,7 +44,6 @@ export const cosmos = [
   'atom-usdt-perp',
   'sei-usdt-perp',
   'axl-usdt-perp',
-  'tia-usdt-30nov2023',
   'tia-usdt-perp',
   'talis-usdt',
   'osmo-usdt-perp',
@@ -71,6 +55,7 @@ export const cosmos = [
 ]
 
 export const ethereum = [
+  'ton-usdt',
   'wusdm-usdt',
   'inj-usdt',
   'arb-usdt',
@@ -81,30 +66,22 @@ export const ethereum = [
   'link-usdt',
   'stinj-inj',
   'weth-usdt',
-  'evmos-usdt',
-  'gf-usdt',
   'wmatic-usdt',
-  'ethbtctrend-usdt',
   'steadyeth-usdt',
   'steadybtc-usdt',
   'inj-usdt-perp',
   'bonk-usdt-perp',
   'eth-usdt-perp',
   'bnb-usdt-perp',
-  'stx-usdt-perp',
   'eth-usdtkv-perp',
   'arb-usdt-perp',
-  'gyen-usdt',
   'op-usdt-perp',
   'link-usdt-perp',
   'ena-usdt',
   'w-usdt',
-  'bonus-usdt',
   'w-usdt-perp',
   'omni-usdt',
-  'ezeth-weth',
-  'pyusd-usdt',
-  'iotx-inj'
+  'pyusd-usdt'
 ]
 
 export const injective = [
@@ -125,9 +102,7 @@ export const injective = [
   'talis-inj',
   'hdro-inj',
   'pyth-inj',
-  'nonja-inj',
   'lvn-inj',
-  'xiii-inj',
   'black-inj',
   'mother-inj',
   'sns-inj',
@@ -147,7 +122,6 @@ export const solana = [
   'boden-usdt-perp',
   'sns-inj',
   'giga-inj'
-
 ]
 
 export const olpLowVolume = [
@@ -159,7 +133,6 @@ export const olpLowVolume = [
   'weth-usdt',
   'usdt-usdcet',
   'wmatic-usdt',
-  '1000pepe-usdt-perp',
   'atom-usdt-perp',
   'btc-usdt-perp',
   'eth-usdt-perp',
@@ -170,7 +143,6 @@ export const olpLowVolume = [
   'axl-usdt-perp',
   'kava-usdt',
   'sei-usdt-perp',
-  'tia-usdt-30nov2023',
   'tia-usdt-perp'
 ]
 
