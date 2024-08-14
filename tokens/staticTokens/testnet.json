@@ -2755,6 +2755,7 @@
       "0x8c961e9e32b463babc36608959f89c5f1705604480ef5b002a9259192bfb8816",
       "0x928fad5f2eb5be53eebd17a99191590c21048f48188969423ab8800f19632b41",
       "0x9354b951718f87e1ffcc11800ee5890eef45a7f05884e9a604722eb8a907d07d",
+      "0x961a049fec6b058f1c8d169b94faf98a4c65c1c60777716ba5ece21c6cd598db",
       "0x9aa3f8a16c16f4c238daef3203fdda03bc817eb5233811ae0fefe7edd4bf27e7",
       "0x9f284ade13590c1a777869e25830482a8990a35040c424c6b8194e4494e11504",
       "0xabed4a28baf4617bd4e04e4d71157c45ff6f95f181dee557aae59b4d1009aa97",
@@ -3353,6 +3354,19 @@
     "coinGeckoId": "tether",
     "source": "solana",
     "denom": "inj1qjn06jt7zjhdqxgud07nylkpgnaurq6xc5c4fd",
+    "tokenType": "cw20"
+  },
+  {
+    "address": "inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [],
+    "decimals": 18,
+    "symbol": "bnUSD",
+    "logo": "bnUSD.svg",
+    "name": "Balanced Dollar",
+    "coinGeckoId": "balanced-dollars",
+    "denom": "inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j",
     "tokenType": "cw20"
   },
   {
@@ -4114,6 +4128,19 @@
     "symbol": "wUSDM",
     "decimals": 18,
     "denom": "peggy0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
+    "tokenType": "erc20"
+  },
+  {
+    "address": "0x582d872a1b094fc48f5de31d3b73f2d9be47def1",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [],
+    "decimals": 9,
+    "symbol": "TON",
+    "logo": "ton.png",
+    "name": "Toncoin",
+    "coinGeckoId": "the-open-network",
+    "denom": "peggy0x582d872a1b094fc48f5de31d3b73f2d9be47def1",
     "tokenType": "erc20"
   },
   {

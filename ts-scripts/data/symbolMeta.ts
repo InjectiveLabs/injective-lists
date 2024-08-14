@@ -1991,6 +1991,22 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
+  bnUSD: {
+    decimals: 18,
+    symbol: 'bnUSD',
+    logo: 'bnUSD.svg',
+    name: 'Balanced Dollar',
+    coinGeckoId: 'balanced-dollars'
+  },
+  
+  TON: {
+    decimals: 9,
+    symbol: 'TON',
+    logo: 'ton.png',
+    name: 'Toncoin',
+    coinGeckoId: 'the-open-network'
+  },
+
   bINJ: {
     decimals: 18,
     symbol: 'bINJ',
