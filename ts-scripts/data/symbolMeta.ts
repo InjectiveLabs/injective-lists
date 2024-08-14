@@ -2007,18 +2007,18 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'the-open-network'
   },
 
-  bINJ: {
+  backboneInj: {
     decimals: 18,
     symbol: 'bINJ',
-    logo: 'bINJ.png',
+    logo: 'backboneInj.png',
     name: 'BackBone Labs LST',
     coinGeckoId: ''
   },
 
-  SYN: {
+  syndicate: {
     decimals: 6,
     symbol: 'SYN',
-    logo: 'SYN.png',
+    logo: 'syndicate.png',
     name: 'Galactic Syndicate',
     coinGeckoId: ''
   }
