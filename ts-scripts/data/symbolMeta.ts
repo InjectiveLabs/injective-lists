@@ -2005,5 +2005,22 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'ton.png',
     name: 'Toncoin',
     coinGeckoId: 'the-open-network'
+  },
+
+  backboneInj: {
+    decimals: 18,
+    symbol: 'bINJ',
+    logo: 'backboneInj.png',
+    name: 'BackBone Labs LST',
+    coinGeckoId: ''
+  },
+
+  syndicate: {
+    decimals: 6,
+    symbol: 'SYN',
+    logo: 'syndicate.png',
+    name: 'Galactic Syndicate',
+    coinGeckoId: ''
   }
+
 }
