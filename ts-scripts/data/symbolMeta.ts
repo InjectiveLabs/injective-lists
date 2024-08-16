@@ -1507,7 +1507,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'Hydro',
     symbol: 'HDRO',
-    coinGeckoId: '',
+    coinGeckoId: 'hydro-protocol-2',
     logo: 'hydro.png'
   },
 
