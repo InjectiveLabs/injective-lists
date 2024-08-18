@@ -26,11 +26,11 @@
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000013",
       "balancesList": [
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "105000000"
         },
         {
-          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
           "totalBalance": "105000000"
         }
       ]
@@ -42,15 +42,15 @@
     "marketId": "0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe",
     "vaultName": "Offchain Nico INJ/USDT 2",
     "vaultType": "crates.io:offchain-vault",
-    "currentTvl": 334.58414204914203,
-    "lpTokenPrice": 3.345787887885214e-21,
+    "currentTvl": 333.52160478573586,
+    "lpTokenPrice": 3.335162685254395e-21,
     "totalLpAmount": "100001600000000000000000",
     "contractAddress": "inj13ylj40uqx338u5xtccujxystzy39q08q2gz3dx",
     "notionalValueCap": "100000000000",
     "masterContractAddress": "",
     "updatedAt": 1723748924187,
     "createdAt": 1701235696437,
-    "apy": -67.84429805167049,
+    "apy": -68.95468815579258,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -58,7 +58,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1589732099600365
+      "oneDayChange": 3.1220561189812424
     },
     "subaccountInfo": {
       "subaccountId": "0x893f2abf8034627e50cbc63923120b1122503ce0000000000000000000000001",
@@ -108,15 +108,15 @@
     "marketId": "0x4c626cd05a87f5fc8e0d9e188f68e237d7248529ae466ea1c0f1563e1b17d866",
     "vaultName": "permissionless_vault_9",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 5547.485553232504,
-    "lpTokenPrice": 8.190010815929763e-16,
+    "currentTvl": 5529.863913274625,
+    "lpTokenPrice": 8.16399516965821e-16,
     "totalLpAmount": "6773477688750439812",
     "contractAddress": "inj143qfst3qa3u5mqk9rk6f4zjv5syj5eja3mng0g",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718361633783,
     "createdAt": 1718361613053,
-    "apy": 10.47595821549736,
+    "apy": 6.897330749224828,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -124,18 +124,18 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000a",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "148000000000000000000"
-        },
-        {
           "denom": "factory/inj1cs9k0q8pv0446nxg66tu0u2w26qd52rc5pxvpy/REKT",
           "totalBalance": "31000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "148000000000000000000"
         }
       ]
     }
@@ -295,15 +295,15 @@
     "marketId": "0x0033118e7cf665369d4208ea03c88549f151c1303f43442413679c8c407cc0d3",
     "vaultName": "permissionless_vault_4",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 2719883.030563542,
-    "lpTokenPrice": 3.0278683389994706e-13,
+    "currentTvl": 2715730.832124173,
+    "lpTokenPrice": 3.023245967356818e-13,
     "totalLpAmount": "8982831239823000100",
     "contractAddress": "inj160wzl4mnzqfxm9ux3mvs46uhqex0d5ewt9p8el",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718960361442,
     "createdAt": 1716558973311,
-    "apy": -47.85782405522012,
+    "apy": -48.675578923208505,
     "apyue": -0.04,
     "apy7D": 1.02,
     "apy7DFq": 0,
@@ -311,7 +311,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.4940620110930336
+      "oneDayChange": 1.4744051377856504
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000004",
@@ -370,15 +370,15 @@
     "marketId": "0x637f6ec165c381ca4665935491b4d8a31fbc5cbc55616f1b5aafe8a64a2ebdda",
     "vaultName": "cosmos ni v",
     "vaultType": "crates.io:mito-vault-amm",
-    "currentTvl": 0.234387812250054,
-    "lpTokenPrice": 2.8127943902363286e-20,
+    "currentTvl": 0.23364327716323824,
+    "lpTokenPrice": 2.8038595224399803e-20,
     "totalLpAmount": "8332916656249479134",
     "contractAddress": "inj17dw5ek2829evlwcepftlvv9r53rqmc72akrsdz",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj1k3pnnh5fyjuc6tmmupyp2042cryk59l7nx2pu3",
     "updatedAt": 1703234563880,
     "createdAt": 1703231362359,
-    "apy": 10.478238790031291,
+    "apy": 6.8944631760595065,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -386,7 +386,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.159808676291087
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xb44339de8924b98d2f7be048153eaac0c96a17fe000000000000000000000001",
@@ -408,15 +408,15 @@
     "marketId": "0x37c5ffe6d1c2318a7b9efde1e82c1186d688c1c4a1ad41da9a0878d353f1c88b",
     "vaultName": "USDC Master",
     "vaultType": "crates.io:mito-vault-spot",
-    "currentTvl": 10157.88872258803,
-    "lpTokenPrice": 1.0047367678128614e-17,
+    "currentTvl": 10157.889719124178,
+    "lpTokenPrice": 1.0047368663822134e-17,
     "totalLpAmount": "1011000000000000000000",
     "contractAddress": "inj17kjkepym5j8xss5nmud6gq4c47xt0xf02wgsms",
     "notionalValueCap": "100000000000",
     "masterContractAddress": "inj1tcjf7r5vksr0g80pdcdada44teauwkkahelyfy",
     "updatedAt": 1722876124285,
     "createdAt": 1688646901360,
-    "apy": -4.022327809455795,
+    "apy": -4.022078761319814,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -424,18 +424,18 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": -0.000025774198297856543
+      "oneDayChange": -0.000049235084242926774
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add00000000000000000000000e",
       "balancesList": [
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
-          "totalBalance": "5055000000"
-        },
-        {
           "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "5112763727.818327993978926388"
+        },
+        {
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "totalBalance": "5055000000"
         }
       ]
     }
@@ -502,15 +502,15 @@
     "marketId": "0x65d31cba6cf75d45f8157baf34cbe703545b757bbbc2c6363055a2f46c2dd1a6",
     "vaultName": "permissionless_vault_12",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 7.234302083438987e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 7.211322254931528e-16,
     "totalLpAmount": "1036257818998783719",
     "contractAddress": "inj18ax4p09y7k8quhslelkw6ktsj0c4n7dt4r67kf",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718408478380,
     "createdAt": 1718408424746,
-    "apy": 10.475959340918205,
+    "apy": 6.8973315291612325,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -518,18 +518,18 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000d",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "20000000000000000000"
-        },
-        {
           "denom": "factory/inj1lq9wn94d49tt7gc834cxkm0j5kwlwu4gm65lhe/TRIPP",
           "totalBalance": "536915133718058"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "20000000000000000000"
         }
       ]
     }
@@ -568,15 +568,15 @@
     "marketId": "0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf",
     "vaultName": "stINJ amm",
     "vaultType": "crates.io:mito-vault-amm",
-    "currentTvl": 9846765.31589578,
-    "lpTokenPrice": 4.978898766580495e-18,
+    "currentTvl": 9839521.7140706,
+    "lpTokenPrice": 4.975236126207135e-18,
     "totalLpAmount": "1977699442693938154129953",
     "contractAddress": "inj196f5hz8x7laqyfykr6sf6f6qjkna2gd2eqvdcy",
     "notionalValueCap": "10000000000000000000000000",
     "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
     "updatedAt": 1722346567232,
     "createdAt": 1695189402278,
-    "apy": 30.590954307647955,
+    "apy": 29.969375093750994,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -584,18 +584,18 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 2.364002019713829
+      "oneDayChange": 2.429640874731831
     },
     "subaccountInfo": {
       "subaccountId": "0xecde8308ee5413d67288fae2abfc94dabeb16bd9000000000000000000000008",
       "balancesList": [
         {
-          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/stinj",
-          "totalBalance": "176182439119670773718538"
-        },
-        {
           "denom": "inj",
           "totalBalance": "296164556073570522390897"
+        },
+        {
+          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/stinj",
+          "totalBalance": "176182439119670773718538"
         }
       ]
     }
@@ -690,15 +690,15 @@
     "marketId": "0x687f3b190a4d9c9a025645b7776e9a0f402c640bb28611b2abc920af4b4e8064",
     "vaultName": "permissionless_vault_3",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 880843.2018045806,
-    "lpTokenPrice": 1.9956782559583788e-13,
+    "currentTvl": 879584.5717486705,
+    "lpTokenPrice": 1.992826646693836e-13,
     "totalLpAmount": "4413753565609582247",
     "contractAddress": "inj1a2whf4gfe8c533m7zahs36c7zxpap2khtwvnjj",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1719597436835,
     "createdAt": 1716500183417,
-    "apy": 8793.126918905526,
+    "apy": 8662.524821640696,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -706,7 +706,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.3970923302045968
+      "oneDayChange": 1.378591807508478
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000003",
@@ -749,11 +749,11 @@
       "subaccountId": "0xf03cd83c97f5eebe4129f2047ed2c6571c61f16b00000000000000000000000a",
       "balancesList": [
         {
-          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
           "totalBalance": "105000000"
         },
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "105000000"
         }
       ]
@@ -765,15 +765,15 @@
     "marketId": "0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca",
     "vaultName": "HDRO-INJ-v1",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 83900.40067216902,
-    "lpTokenPrice": 6.113552856072922e-15,
+    "currentTvl": 83789.88544700074,
+    "lpTokenPrice": 6.105499966395945e-15,
     "totalLpAmount": "13723673066607451246",
     "contractAddress": "inj1afn8932y6f5v44eguf4tazn5f80uaxz4q603c9",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1721890018186,
     "createdAt": 1710756036368,
-    "apy": -99.96110712656024,
+    "apy": -99.96139199199493,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -781,18 +781,18 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 2.17552342141043
+      "oneDayChange": 2.7952413698921985
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c800000000000000000000000a",
       "balancesList": [
         {
-          "denom": "factory/inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk/hdro",
-          "totalBalance": "861413350779"
-        },
-        {
           "denom": "inj",
           "totalBalance": "1592042393536753122172"
+        },
+        {
+          "denom": "factory/inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk/hdro",
+          "totalBalance": "861413350779"
         }
       ]
     }
@@ -831,15 +831,15 @@
     "marketId": "0x62b3468090c1b372f790d556cf65703af4c8084878cb00dffaf596d4d084778c",
     "vaultName": "permissionless_vault_22",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 1.7669660600113105e-20,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 1.761353275727597e-20,
     "totalLpAmount": "42426406871192851464050",
     "contractAddress": "inj1alv0wvzkul2zndjylt9gssqc0qnzztvf5mv52r",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718522179344,
     "createdAt": 1718522144421,
-    "apy": 10.442924367427597,
+    "apy": 6.907808900338863,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -847,7 +847,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000017",
@@ -869,15 +869,15 @@
     "marketId": "0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe",
     "vaultName": "Offchain INJ/USDT Aug 31",
     "vaultType": "crates.io:offchain-vault",
-    "currentTvl": 101732.66514826549,
-    "lpTokenPrice": 9.915126433893238e-17,
+    "currentTvl": 101431.50101316079,
+    "lpTokenPrice": 9.885774204964945e-17,
     "totalLpAmount": "1026034976220868078385",
     "contractAddress": "inj1ckmdhdz7r8glfurckgtg0rt7x9uvner4ygqhlv",
     "notionalValueCap": "5000000000000",
     "masterContractAddress": "",
     "updatedAt": 1701810572478,
     "createdAt": 1693468636288,
-    "apy": 9.726197153319593,
+    "apy": 6.410524166914966,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -885,7 +885,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 2.9384657707673956
+      "oneDayChange": 2.903552690587219
     },
     "subaccountInfo": {
       "subaccountId": "0xc5b6dbb45e19d1f4f078b216878d7e3178c9e475000000000000000000000001",
@@ -1030,11 +1030,11 @@
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000010",
       "balancesList": [
         {
-          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
           "totalBalance": "105000000"
         },
         {
-          "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
+          "denom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
           "totalBalance": "105000000"
         }
       ]
@@ -1074,15 +1074,15 @@
     "marketId": "0xacce4e7f1907773d272fc217d40232986080b76774f32eb520dfec56e1d40533",
     "vaultName": "permissionless_vault_23",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 1795.4315245557616,
-    "lpTokenPrice": 2.461064015226907e-16,
+    "currentTvl": 1789.7283194565953,
+    "lpTokenPrice": 2.4532464222699774e-16,
     "totalLpAmount": "7295346701455975568",
     "contractAddress": "inj1f2zrn6qw5wm27jkdje99538lahmsjy35pzx0zq",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718647105377,
     "createdAt": 1718647063388,
-    "apy": 10.475956427386679,
+    "apy": 6.897330880923902,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1090,7 +1090,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000018",
@@ -1112,15 +1112,15 @@
     "marketId": "0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca",
     "vaultName": "permissionless_vault_24",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 236406.62836659228,
-    "lpTokenPrice": 2.3639308376243175e-12,
+    "currentTvl": 236110.93476996897,
+    "lpTokenPrice": 2.360974071071808e-12,
     "totalLpAmount": "100005729695617555",
     "contractAddress": "inj1f77zn4hytk8w6qjtr7ks98m4yq6hwduzk8yvp4",
     "notionalValueCap": "500000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1723214167908,
     "createdAt": 1719163557217,
-    "apy": -99.99780686151703,
+    "apy": -99.99782093642615,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1128,18 +1128,18 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 2.1407007765746666
+      "oneDayChange": 2.7835951859344954
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000019",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "4195474536471511572178"
-        },
-        {
           "denom": "factory/inj1pk7jhvjj2lufcghmvr7gl49dzwkk3xj0uqkwfk/hdro",
           "totalBalance": "2513937287760"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "4195474536471511572178"
         }
       ]
     }
@@ -1215,8 +1215,8 @@
     "marketId": "0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac",
     "vaultName": "GBP Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 18003621.85870452,
-    "lpTokenPrice": 1.003751656400858e-18,
+    "currentTvl": 18003621.849683702,
+    "lpTokenPrice": 1.0037516558979228e-18,
     "totalLpAmount": "17936330908045438321918430",
     "contractAddress": "inj1fgdlfyru0e0fk4tsxtdz6an7vfwz3g82w40qy6",
     "notionalValueCap": "25000000000000",
@@ -1231,7 +1231,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.380909164794275e-7
+      "oneDayChange": 2.7136306535169297e-7
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000015",
@@ -1314,15 +1314,15 @@
     "marketId": "0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe",
     "vaultName": "Markus ASMM Spot",
     "vaultType": "crates.io:vault-asmm-spot",
-    "currentTvl": 9128.246794013276,
-    "lpTokenPrice": 6.823171118311826e-15,
+    "currentTvl": 9127.539428080372,
+    "lpTokenPrice": 6.8226423772608465e-15,
     "totalLpAmount": "1337830553525934064",
     "contractAddress": "inj1fzm58vwmtsn4vxuajvhsdqrjqrdhhdlqfd9lfd",
     "notionalValueCap": "100000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1722615568118,
     "createdAt": 1712089167710,
-    "apy": 0.24221407564077868,
+    "apy": 0.1618923284880447,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1330,7 +1330,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.0747793220555737
+      "oneDayChange": 0.07370200997058873
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c800000000000000000000000b",
@@ -1352,15 +1352,15 @@
     "marketId": "0x8a98593447399ca2066101fda811b2ef5933c7c08a746e401048e7bf9421d2fc",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 2256.1261409585586,
-    "lpTokenPrice": 2.1055091381660647e-19,
+    "currentTvl": 2248.959535083873,
+    "lpTokenPrice": 2.098820968615237e-19,
     "totalLpAmount": "10715347181649775069830",
     "contractAddress": "inj1gf9dpyjtc5gfnc69nj6e67a2wrsjpruk3caywc",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1711728441661,
     "createdAt": 1709569465687,
-    "apy": 10.479081820830217,
+    "apy": 6.898361233070127,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1368,7 +1368,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000008",
@@ -1390,15 +1390,15 @@
     "marketId": "0xe4b31c0112c89e0963b2db6884b416c17101a899e0ce6dc9f5dde79e6a01b52b",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 2233.6439153747415,
-    "lpTokenPrice": 2.9609805980612946e-19,
+    "currentTvl": 2230.4111710880497,
+    "lpTokenPrice": 2.95669518217853e-19,
     "totalLpAmount": "7543595242863875665968",
     "contractAddress": "inj1ghzfg2v3jzqe3vrhw4wngs43mscpxx98fpjwga",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1720541326844,
     "createdAt": 1709421646895,
-    "apy": 101.95543215077754,
+    "apy": 98.9519941431589,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1406,18 +1406,18 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.4153413187809383
+      "oneDayChange": 1.3966219111026579
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000004",
       "balancesList": [
         {
-          "denom": "inj",
-          "totalBalance": "54302114397305143003"
-        },
-        {
           "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test1",
           "totalBalance": "11056000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "54302114397305143003"
         }
       ]
     }
@@ -1493,15 +1493,15 @@
     "marketId": "0xe4da30c43af52049c91fe913cbcfdfb91a6f8c7780ff74519a3271085537a61b",
     "vaultName": "permissionless_vault_21",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 2.370633734472158e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 2.363103394151302e-16,
     "totalLpAmount": "3162277660168379331",
     "contractAddress": "inj1hwgrpwgs70cj7s5uc605jk832d6hlyq2pupw82",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718517679330,
     "createdAt": 1718517626631,
-    "apy": 10.475958721802536,
+    "apy": 6.897331909047244,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1509,18 +1509,18 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000016",
       "balancesList": [
         {
-          "denom": "factory/inj1u0lamqk0qggn5cxqn53t79jsthcpen9w754ayc/KIWI",
-          "totalBalance": "500000000000"
-        },
-        {
           "denom": "inj",
           "totalBalance": "20000000000000000000"
+        },
+        {
+          "denom": "factory/inj1u0lamqk0qggn5cxqn53t79jsthcpen9w754ayc/KIWI",
+          "totalBalance": "500000000000"
         }
       ]
     }
@@ -1661,15 +1661,15 @@
     "marketId": "0x4db3f2aedf548449bf2ed7dbbdbcbf3c03a22975cd55b2a80ab1ab1464f38bbd",
     "vaultName": "permissionless_vault_19",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 2.370633734472158e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 2.363103394151302e-16,
     "totalLpAmount": "3162277660168379331",
     "contractAddress": "inj1jtgygvq0ulstx55hwenk4a6uh5tn8vqhkah8gc",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718516179452,
     "createdAt": 1718516146716,
-    "apy": 10.475958721802536,
+    "apy": 6.897331909047244,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1677,7 +1677,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000014",
@@ -1903,15 +1903,15 @@
     "marketId": "0x84dabe0140b94209bc106d9384226d4500b7770413a6bca569bc44560cf8c6ae",
     "vaultName": "permissionless_vault_15",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 450894.01863583934,
-    "lpTokenPrice": 3.540923089570968e-16,
+    "currentTvl": 450230.3432967748,
+    "lpTokenPrice": 3.535711170062294e-16,
     "totalLpAmount": "1273379870813492892145",
     "contractAddress": "inj1lw0u2rtl36y9tht0uts90fv5vy3vgpmuel27hc",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718896053942,
     "createdAt": 1718436969253,
-    "apy": 181.80478453129624,
+    "apy": 177.5425112569657,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -1919,7 +1919,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.439758087029963
+      "oneDayChange": 1.42074673540733
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000010",
@@ -2006,15 +2006,15 @@
     "marketId": "0xed865fd44f1bc9d46d978db415ed00444fac4f6aef7e09e2d0235f8d140b219f",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 870.680437275375,
-    "lpTokenPrice": 1.2774139271529458e-19,
+    "currentTvl": 867.9147126895588,
+    "lpTokenPrice": 1.273356209816782e-19,
     "totalLpAmount": "6815961676697202163362",
     "contractAddress": "inj1nlhwnpeph9gwlng972j9zjwm8n523hx0n2kaj9",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1709407351732,
     "createdAt": 1709406957243,
-    "apy": 10.468501189302003,
+    "apy": 6.889839192169789,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2022,7 +2022,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000002",
@@ -2044,15 +2044,15 @@
     "marketId": "0xe4b31c0112c89e0963b2db6884b416c17101a899e0ce6dc9f5dde79e6a01b52b",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 2863.386242815259,
-    "lpTokenPrice": 2.891801269632433e-19,
+    "currentTvl": 2859.1466759968753,
+    "lpTokenPrice": 2.8875196311567096e-19,
     "totalLpAmount": "9901739351470768611463",
     "contractAddress": "inj1nrlveguv98ag7hf3xepd3aycrm8mp7rnhek9av",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1720541069668,
     "createdAt": 1709495234669,
-    "apy": 99.57796545392459,
+    "apy": 96.53936125855616,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2060,7 +2060,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.448394423322119
+      "oneDayChange": 1.4292800616292345
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000007",
@@ -2082,15 +2082,15 @@
     "marketId": "0x480085fa1e359c5e97618c34bcdc0d1d5dd156ea2b83bb941f6d98c2d499af47",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 1736.59037710784,
-    "lpTokenPrice": 1.7008839897385737e-19,
+    "currentTvl": 1731.074081466136,
+    "lpTokenPrice": 1.6954811157716774e-19,
     "totalLpAmount": "10209928411253693501606",
     "contractAddress": "inj1nv62axs4mmxfcuwg6v9aayyevxr4z7p9u0vn4y",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1710348888244,
     "createdAt": 1710348599458,
-    "apy": 10.477925170442282,
+    "apy": 6.896872160728762,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2098,7 +2098,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000009",
@@ -2148,15 +2148,15 @@
     "marketId": "0x48c21620854fd89bcfdf161d9209a3a2d76101e4362302337c7f759b8d68fc48",
     "vaultName": "permissionless_vault_7",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 69764.62177593645,
-    "lpTokenPrice": 1.0358544142992966e-14,
+    "currentTvl": 69672.94818999364,
+    "lpTokenPrice": 1.0344932589420945e-14,
     "totalLpAmount": "6734983296193094494",
     "contractAddress": "inj1prqzp6q2nlw2984pyvut6fr5jg47kwkzduw8j2",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718398914159,
     "createdAt": 1718288045926,
-    "apy": 1161.2206825924736,
+    "apy": 1144.1787200862861,
     "apyue": -0.77,
     "apy7D": 27.85,
     "apy7DFq": -1.27,
@@ -2164,18 +2164,18 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.2833560868635407
+      "oneDayChange": 1.2662330075682737
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000008",
       "balancesList": [
         {
-          "denom": "factory/inj133xeq92ak7p87hntvamgq3047kj8jfqhry92a8/LAHN",
-          "totalBalance": "310000000"
-        },
-        {
           "denom": "inj",
           "totalBalance": "1539889675645100000000"
+        },
+        {
+          "denom": "factory/inj133xeq92ak7p87hntvamgq3047kj8jfqhry92a8/LAHN",
+          "totalBalance": "310000000"
         }
       ]
     }
@@ -2214,8 +2214,8 @@
     "marketId": "0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7",
     "vaultName": "EUR Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 19804928.558913376,
-    "lpTokenPrice": 1.0035889549743388e-18,
+    "currentTvl": 19804928.56159299,
+    "lpTokenPrice": 1.0035889551101248e-18,
     "totalLpAmount": "19734103749098929240015290",
     "contractAddress": "inj1qamlsmj22p3zkchgva2ydhegfwz3ls7m5sm7rs",
     "notionalValueCap": "25000000000000",
@@ -2230,7 +2230,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": -3.7288760967868484e-8
+      "oneDayChange": -7.327631834641579e-8
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000016",
@@ -2248,15 +2248,15 @@
     "marketId": "0xd888822cccb08e89cc452b6e41616046a013a51484f1c8bf0ca1cd06524e89b2",
     "vaultName": "permissionless_vault_11",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 16930.010040642836,
-    "lpTokenPrice": 8.771927609470149e-15,
+    "currentTvl": 16907.834234881928,
+    "lpTokenPrice": 8.760437683454195e-15,
     "totalLpAmount": "1930021632003123430",
     "contractAddress": "inj1qdk7vpgmu3e5lj0cru7yyay38vff34tll789lr",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718408386019,
     "createdAt": 1718408258406,
-    "apy": 1104.2457572256621,
+    "apy": 1088.0252269016812,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2264,7 +2264,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.2792122916016613
+      "oneDayChange": 1.262139828308051
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000c",
@@ -2286,15 +2286,15 @@
     "marketId": "0x84dabe0140b94209bc106d9384226d4500b7770413a6bca569bc44560cf8c6ae",
     "vaultName": "permissionless_vault_13",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 8264.694633238185,
-    "lpTokenPrice": 7.896469606488737e-14,
+    "currentTvl": 8252.475861552455,
+    "lpTokenPrice": 7.884795229693622e-14,
     "totalLpAmount": "104663160185494382",
     "contractAddress": "inj1qvk5p306aqfvus6e0lktqwfsp0u478ckfddmv9",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718896053942,
     "createdAt": 1718432419528,
-    "apy": 180.76089625570623,
+    "apy": 176.49571808994057,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2302,7 +2302,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.4462279722821103
+      "oneDayChange": 1.4271394386021763
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000e",
@@ -2473,15 +2473,15 @@
     "marketId": "0xe3625133bcac38dd48beff27589dab963f1b65b11c4280a1f2eeaec3592077bd",
     "vaultName": "permissionless_vault_2",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 5.055127301688271e-18,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 5.039069642340301e-18,
     "totalLpAmount": "148296999295333012479",
     "contractAddress": "inj1t2zqcm98epsmpy99mjzdczzx79cfy74kh2w35l",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1716451775693,
     "createdAt": 1716451608100,
-    "apy": 10.476073386364515,
+    "apy": 6.897330194779383,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2489,7 +2489,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000002",
@@ -2511,15 +2511,15 @@
     "marketId": "0x36f2cd6f6bf0206f9d4fab964915b4f71f8ff6c3db22f62c8051dfed259f954d",
     "vaultName": "permissionless_vault_10",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 3748.301049481421,
-    "lpTokenPrice": 2.287687186536927e-20,
+    "currentTvl": 3736.394535996368,
+    "lpTokenPrice": 2.280420326704563e-20,
     "totalLpAmount": "163846747559728813800324",
     "contractAddress": "inj1t3y9mu0zk5zuu4y34lfxkq8zx08latdxa5cff5",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718401399478,
     "createdAt": 1718401357192,
-    "apy": 10.47499433654917,
+    "apy": 6.875796253401645,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2527,7 +2527,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000b",
@@ -2549,15 +2549,15 @@
     "marketId": "0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e",
     "vaultName": "amm test wbtc",
     "vaultType": "crates.io:mito-vault-amm",
-    "currentTvl": 873448.35689382,
-    "lpTokenPrice": 5.284317900304667e-13,
+    "currentTvl": 873228.9544283021,
+    "lpTokenPrice": 5.282990526606203e-13,
     "totalLpAmount": "1652906530932708245",
     "contractAddress": "inj1t9c9yggeyxfd0x8jfu869xvyksg5ytjlhmv4fz",
     "notionalValueCap": "1000000000000",
     "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
     "updatedAt": 1693399369898,
     "createdAt": 1693399094356,
-    "apy": 91.54442614122841,
+    "apy": 90.76451195855083,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2565,7 +2565,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.0119000447143645
+      "oneDayChange": 1.074598921420411
     },
     "subaccountInfo": {
       "subaccountId": "0xecde8308ee5413d67288fae2abfc94dabeb16bd9000000000000000000000003",
@@ -2624,15 +2624,15 @@
     "marketId": "0x65aec98d4cfc51c18d84de1c13a80d21b6b40073ef0d99bfdb4ba2fa6cbdcd79",
     "vaultName": "permissionless_vault_14",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 71584.97209072205,
-    "lpTokenPrice": 4.369020022556712e-14,
+    "currentTvl": 71579.01877444338,
+    "lpTokenPrice": 4.368656675931541e-14,
     "totalLpAmount": "1638467476027522494",
     "contractAddress": "inj1u8j7h7n8tdt66mgp6c0a7f3wq088d3jttwz7sj",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718435656830,
     "createdAt": 1718432977902,
-    "apy": 6781.210976524535,
+    "apy": 6775.293772890971,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2640,7 +2640,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.08025749962283779
+      "oneDayChange": 0.07910165259625845
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000000f",
@@ -2662,15 +2662,15 @@
     "marketId": "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
     "vaultName": "permissionless_vault_25",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 17061.03363380496,
-    "lpTokenPrice": 1.9775474128781624e-17,
+    "currentTvl": 17033.517922209445,
+    "lpTokenPrice": 1.9743580619017132e-17,
     "totalLpAmount": "862737020751072023448",
     "contractAddress": "inj1uqehwkl6m9gxjqlsf3yvwu528wtcjs00hyx08z",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1722002800374,
     "createdAt": 1722000247354,
-    "apy": -8.9937823528086,
+    "apy": -10.501079157110382,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2678,7 +2678,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.5797289418695515
+      "oneDayChange": 1.5590643160162898
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de581000000000000000000000001a",
@@ -2756,15 +2756,15 @@
     "marketId": "0xe4b31c0112c89e0963b2db6884b416c17101a899e0ce6dc9f5dde79e6a01b52b",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 1991.0101463811052,
-    "lpTokenPrice": 2.9159779895417296e-19,
+    "currentTvl": 1987.9545798210354,
+    "lpTokenPrice": 2.911502891887939e-19,
     "totalLpAmount": "6827932698813028658974",
     "contractAddress": "inj1v26u44zh87fvvdpayzvw8t9vrydz25mp6kdkru",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1720541069668,
     "createdAt": 1709423239023,
-    "apy": 95.76324214287779,
+    "apy": 92.67775077667721,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2772,7 +2772,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.502080945211004
+      "oneDayChange": 1.4823291904607627
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000006",
@@ -2831,15 +2831,15 @@
     "marketId": "0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6",
     "vaultName": "Offchain INJ/USDT PERP Aug 31",
     "vaultType": "crates.io:offchain-vault",
-    "currentTvl": 9720.42066775465,
-    "lpTokenPrice": 9.710709957796852e-15,
+    "currentTvl": 9718.300418628742,
+    "lpTokenPrice": 9.70859182680194e-15,
     "totalLpAmount": "1001000000000000000",
     "contractAddress": "inj1v4s3v3nmsx6szyxqgcnqdfseucu4ccm65sh0xr",
     "notionalValueCap": "5000000000000",
     "masterContractAddress": "",
     "updatedAt": 1722876255244,
     "createdAt": 1693488951382,
-    "apy": 2.038250940640274,
+    "apy": 1.4062920518670863,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2847,7 +2847,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.23584545438641857
+      "oneDayChange": 0.25702429903242674
     },
     "subaccountInfo": {
       "subaccountId": "0x656116467b81b50110c0462606a619e6395c637a000000000000000000000001",
@@ -2930,15 +2930,15 @@
     "marketId": "0x382a1cf37bcdbccd5698753154335fa56651d64b88b054691648710c8dcf43e0",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:mito-vault-amm",
-    "currentTvl": 1.4897342791416976e+24,
-    "lpTokenPrice": 0.3576582438505239,
+    "currentTvl": 1.4850021242134802e+24,
+    "lpTokenPrice": 0.35652213908006114,
     "totalLpAmount": "4165245187985383274013435",
     "contractAddress": "inj1w9hnzhlq26wdgw3d2gh9fvf3nwnvxe6ff5crdj",
     "notionalValueCap": "10000000000000000000000000",
     "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
     "updatedAt": 1710351434034,
     "createdAt": 1701797856880,
-    "apy": 10.47595782767372,
+    "apy": 6.89732996030723,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -2946,7 +2946,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xecde8308ee5413d67288fae2abfc94dabeb16bd9000000000000000000000023",
@@ -3024,15 +3024,15 @@
     "marketId": "0xe10c659216d6a9b5c1eaf2ff32768027fab636f9fccf8598c7af915116dbc14a",
     "vaultName": "permissionless_vault_8",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 11282.386158939076,
-    "lpTokenPrice": 2.893720833375666e-20,
+    "currentTvl": 11246.547553349068,
+    "lpTokenPrice": 2.884528901972682e-20,
     "totalLpAmount": "389892004398282796638459",
     "contractAddress": "inj1x9k567g0tmpamjkemvm703ff6kczjvz2nany2u",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718351679345,
     "createdAt": 1718351235032,
-    "apy": 10.470558134031215,
+    "apy": 6.889033052506188,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3040,7 +3040,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000009",
@@ -3062,15 +3062,15 @@
     "marketId": "0x505803853212437840283a90a3d22634e7518d729d65f1b6d16caecad9a6b24e",
     "vaultName": "permissionless_vault_20",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 2.370633734472158e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 2.363103394151302e-16,
     "totalLpAmount": "3162277660168379331",
     "contractAddress": "inj1xallacw6vz8p88qyrezmcyvkmrakacupkvvfvk",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718516659172,
     "createdAt": 1718516650313,
-    "apy": 10.475958721802536,
+    "apy": 6.897331909047244,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3078,7 +3078,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911315
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000015",
@@ -3128,8 +3128,8 @@
     "marketId": "0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934",
     "vaultName": "XAU Boost",
     "vaultType": "crates.io:mito-vault-derivatives",
-    "currentTvl": 21901433.67210055,
-    "lpTokenPrice": 1.0943268306986189e-18,
+    "currentTvl": 21901433.67821629,
+    "lpTokenPrice": 1.094326831004198e-18,
     "totalLpAmount": "20013612988103986475199461",
     "contractAddress": "inj1xqsp96842fsht7m6p4slvrfhl53wfqft866sc7",
     "notionalValueCap": "25000000000000",
@@ -3144,7 +3144,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": -7.336216079067981e-8
+      "oneDayChange": -1.4013986637806397e-7
     },
     "subaccountInfo": {
       "subaccountId": "0x5e249f0e8cb406f41de16e1bd6f6b55e7bc75add000000000000000000000014",
@@ -3162,15 +3162,15 @@
     "marketId": "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:mito-vault-amm",
-    "currentTvl": 29225629.22635763,
-    "lpTokenPrice": 1.9809039400860466e-18,
+    "currentTvl": 29178456.46334872,
+    "lpTokenPrice": 1.9777065850732477e-18,
     "totalLpAmount": "14753683222563597303509363",
     "contractAddress": "inj1xvlnfmq5672rmvn6576rvj389ezu9nxc9dpk8l",
     "notionalValueCap": "20000000000000000000000000",
     "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
     "updatedAt": 1723412857142,
     "createdAt": 1700149827486,
-    "apy": -4.724090543399462,
+    "apy": -6.303281081898748,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3178,7 +3178,7 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 1.581030226492497
+      "oneDayChange": 1.5603503927697382
     },
     "subaccountInfo": {
       "subaccountId": "0xecde8308ee5413d67288fae2abfc94dabeb16bd9000000000000000000000022",
@@ -3237,15 +3237,15 @@
     "marketId": "0xed865fd44f1bc9d46d978db415ed00444fac4f6aef7e09e2d0235f8d140b219f",
     "vaultName": "launchpad-amm-vault",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 877.7507284919604,
-    "lpTokenPrice": 1.2825899730508967e-19,
+    "currentTvl": 874.9625450596957,
+    "lpTokenPrice": 1.2785158139563285e-19,
     "totalLpAmount": "6843580153710813686663",
     "contractAddress": "inj1yj6rs33p42t6qx6j43z8d4zqx5egr76wdpz44t",
     "notionalValueCap": "1000000000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "updatedAt": 1709411791993,
     "createdAt": 1709411482139,
-    "apy": 10.480492413818233,
+    "apy": 6.893886180398634,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3253,18 +3253,18 @@
     "registrationMode": "",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217014
     },
     "subaccountInfo": {
       "subaccountId": "0xc38c58d4ef87a399a80607fb85e6aa68790336c8000000000000000000000003",
       "balancesList": [
         {
-          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/mitotest2",
-          "totalBalance": "20000000000"
-        },
-        {
           "denom": "inj",
           "totalBalance": "23417295380086869496"
+        },
+        {
+          "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/mitotest2",
+          "totalBalance": "20000000000"
         }
       ]
     }
@@ -3303,15 +3303,15 @@
     "marketId": "0xf501b1a0ca214a4d9e56ff262cf5a13a2210412ee8d4fcd406f19c60f7516684",
     "vaultName": "permissionless_vault_17",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 2.28768718653273e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 2.280420326700379e-16,
     "totalLpAmount": "3276934951200587991",
     "contractAddress": "inj1z0rfjmyvhxmek2z6z702dypxtarphruww40fxr",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718485879436,
     "createdAt": 1718485831296,
-    "apy": 10.475958237526717,
+    "apy": 6.897331962583331,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3319,7 +3319,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000012",
@@ -3378,15 +3378,15 @@
     "marketId": "0xb2fc45b220e857913accfa93673f8e94941be23b80db1fff273e96dbcef748de",
     "vaultName": "permissionless_vault_18",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 749.6602098962842,
-    "lpTokenPrice": 2.2876874714097697e-16,
+    "currentTvl": 747.2789071992736,
+    "lpTokenPrice": 2.2804206106725044e-16,
     "totalLpAmount": "3276934543136313548",
     "contractAddress": "inj1zngkg023f0fqlvpc026rr0pvd4rufw8d4ywke4",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "updatedAt": 1718494099030,
     "createdAt": 1718494055644,
-    "apy": 10.475956835634381,
+    "apy": 6.897324940973393,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -3394,7 +3394,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 3.1598086762911093
+      "oneDayChange": 3.1228841564217236
     },
     "subaccountInfo": {
       "subaccountId": "0xf5729677e33b4bbe239c6dcbc237ddbf84de5810000000000000000000000013",
