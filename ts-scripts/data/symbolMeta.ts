@@ -1870,4 +1870,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COKE',
     decimals: 6,
   },
+
+  PAIN: {
+    name: 'Painite',
+    logo: 'pain.png',
+    coinGeckoId: '',
+    symbol: 'PAIN',
+    decimals: 6,
+  },
 }
