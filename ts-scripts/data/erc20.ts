@@ -1,4 +1,5 @@
 import { symbolMeta } from './symbolMeta'
+import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 
 export const devnetTokens = [
   {
@@ -14,23 +15,19 @@ export const testnetTokens = [
   },
   {
     ...symbolMeta.APE,
-    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
-  },
-  {
-    ...symbolMeta.wEth,
-    address: '0xdB309Bb079EB419C18fe7D568c61cD2FdB65D9aF'
+    address: '0x44d63c7FC48385b212aB397aB91A2637ec964634'
   },
   {
     ...symbolMeta.USDT,
     address: '0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5'
   },
   {
-    ...symbolMeta.USDC,
-    address: '0x07865c6E87B9F70255377e024ace6630C1Eaa37F'
+    ...symbolMeta.QAT,
+    address: '0x5Ac3A2F6205a481C7a8984E4291E450e52cd0369'
   },
   {
-    ...symbolMeta.MATIC,
-    address: '0x9c3c9283d3e44854697cd22d3faa240cfb032889'
+    ...untaggedSymbolMeta.Unknown,
+    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
   }
 ]
 
@@ -267,7 +264,7 @@ export const mainnetTokens = [
     address: '0x4c11249814f11b9346808179Cf06e71ac328c1b5'
   },
   {
-    ...symbolMeta.USDY,
+    ...symbolMeta.USDYet,
     address: '0x96F6eF951840721AdBF46Ac996b59E0235CB985C'
   },
   {
@@ -365,5 +362,29 @@ export const mainnetTokens = [
   {
     ...symbolMeta.ezETH,
     address: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'
+  },
+  {
+    ...symbolMeta.PYUSD,
+    address: '0x6c3ea9036406852006290770BEdFcAbA0e23A0e8'
+  },
+  {
+    ...symbolMeta.ELON,
+    address: '0x43123e1d077351267113ada8bE85A058f5D492De'
+  },
+  {
+    ...symbolMeta.IOTX,
+    address: '0x6fB3e0A217407EFFf7Ca062D46c26E5d60a14d69'
+  },
+  {
+    ...symbolMeta.FET,
+    address: '0xaea46a60368a7bd060eec7df8cba43b7ef41ad85'
+  },
+  {
+    ...symbolMeta.wUSDM,
+    address: '0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812'
+  },
+  {
+    ...symbolMeta.TON,
+    address: '0x582d872a1b094fc48f5de31d3b73f2d9be47def1'
   }
 ]

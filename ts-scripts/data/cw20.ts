@@ -1,6 +1,30 @@
-import { TokenSource } from '@injectivelabs/token-metadata'
+import { TokenSource } from '@injectivelabs/sdk-ts'
 import { symbolMeta } from './symbolMeta'
 import { Cw20TokenSource } from '../types'
+
+export const devnetHardcodedCw20Denoms = [
+  'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14au322k9munkmx5wrchz9q30juf5wjgz2cfqku',
+  'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh',
+  'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk',
+  'factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw'
+]
+
+export const devnetHardcodedBankMetadata = devnetHardcodedCw20Denoms.map(
+  (denom) => {
+    const name = denom.split('/').pop()
+
+    return {
+      name,
+      denom,
+      address: denom,
+      logo: '',
+      symbol: '',
+      display: '',
+      description: '',
+      decimals: 0
+    }
+  }
+)
 
 export const devnetTokens: Cw20TokenSource[] = []
 
@@ -260,5 +284,21 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.COKE,
     address: 'inj14eaxewvy7a3fk948c3g3qham98mcqpm8v5y0dp'
+  },
+  {
+    ...symbolMeta.SHROOM,
+    address: 'inj1300xcg9naqy00fujsr9r8alwk7dh65uqu87xm8'
+  },
+  {
+    ...symbolMeta.ELON,
+    address: 'inj10pqutl0av9ltrw9jq8d3wjwjayvz76jhfcfza0'
+  },
+  {
+    ...symbolMeta.nTIA,
+    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
+  },
+  {
+    ...symbolMeta.bnUSD,
+    address: 'inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j'
   }
 ]

@@ -1,4 +1,4 @@
-import { TokenVerification } from '@injectivelabs/token-metadata'
+import { TokenVerification } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -8,32 +8,44 @@ import {
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Token } from './types'
 
+const devnetSupplyDenoms = readJSONFile({
+  path: 'data/bankSupplyDenoms/devnet.json'
+})
+
 const devnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/devnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/devnet.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/devnet.json' }),
-  ...readJSONFile({ path: 'tokens/factoryTokens/devnet.json' })
+  ...readJSONFile({ path: 'tokens/factoryTokens/devnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/devnet.json' })
 ]
 const testnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/testnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/testnet.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/testnet.json' }),
-  ...readJSONFile({ path: 'tokens/factoryTokens/testnet.json' })
+  ...readJSONFile({ path: 'tokens/factoryTokens/testnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/testnet.json' })
 ]
 const mainnetTokens = [
   ...readJSONFile({ path: 'tokens/staticTokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/bankSupplyTokens/mainnet.json' }),
+  ...readJSONFile({ path: 'tokens/mito/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/externalTokens.json' }),
   ...readJSONFile({ path: 'tokens/cw20Tokens/mainnet.json' }),
   ...readJSONFile({ path: 'tokens/factoryTokens/mainnet.json' })
 ]
+
+// filter out tokens that are not in the supply to optimize coinGecko API calls on devnet indexer
+const devnetFilteredTokens = devnetTokens.filter((token) => {
+  return devnetSupplyDenoms.includes(token.denom)
+})
 
 export const generateTokensList = async (network: Network) => {
   const list = isMainnet(network)
     ? mainnetTokens
     : isTestnet(network)
     ? testnetTokens
-    : devnetTokens
+    : devnetFilteredTokens
 
   const logos = readJSONFile({ path: 'data/tokenImagePaths.json' }) as Record<
     string,

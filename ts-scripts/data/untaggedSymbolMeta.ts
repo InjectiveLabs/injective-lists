@@ -190,4 +190,12 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'jeo-boden',
     logo: 'boden.png'
   },
+
+  ZKSYNC: {
+    decimals: 18,
+    name: 'zkSync',
+    symbol: 'ZK',
+    coinGeckoId: 'zksync-id',
+    logo: 'zkSync.webp'
+  }
 }

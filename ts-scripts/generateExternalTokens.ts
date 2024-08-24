@@ -2,7 +2,7 @@ import {
   TokenType,
   TokenVerification,
   isCw20ContractAddress
-} from '@injectivelabs/token-metadata'
+} from '@injectivelabs/sdk-ts'
 import { Network } from '@injectivelabs/networks'
 import { HttpRestClient } from '@injectivelabs/utils'
 import {
@@ -178,6 +178,10 @@ const generateExternalTokens = async () => {
     const uniqueTokens = [
       ...new Map(filteredTokens.map((token) => [token.denom, token])).values()
     ]
+
+    if (uniqueTokens.length === 0) {
+      return
+    }
 
     await updateJSONFile(
       'tokens/externalTokens.json',

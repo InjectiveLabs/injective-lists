@@ -1,5 +1,6 @@
-import { TokenSource } from '@injectivelabs/token-metadata'
+import { TokenSource } from '@injectivelabs/sdk-ts'
 import { symbolMeta } from './symbolMeta'
+import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 import { IbcTokenSource } from '../types'
 
 export const testnetTokens: IbcTokenSource[] = [
@@ -11,6 +12,24 @@ export const testnetTokens: IbcTokenSource[] = [
     source: TokenSource.Cosmos,
     path: 'transfer/channel-13',
     hash: 'E8AC6B792CDE60AB208CA060CA010A3881F682A7307F624347AB71B6A0B0BF89'
+  },
+  {
+    ...symbolMeta.TEVMOS,
+    isNative: true,
+    baseDenom: 'atevmos',
+    channelId: 'channel-1',
+    path: 'transfer/channel-76996',
+    source: TokenSource.Cosmos,
+    hash: '300B5A980CA53175DBAC918907B47A2885CADD17042AD58209E777217D64AF20'
+  },
+  {
+    ...symbolMeta.XION,
+    isNative: true,
+    baseDenom: 'uxion',
+    channelId: 'channel-489',
+    path: 'transfer/channel-489',
+    source: TokenSource.Cosmos,
+    hash: 'DAB0823884DB5785F08EE136EE9EB362E166F4C7455716641B03E93CE7F14193'
   }
 ]
 
@@ -450,6 +469,70 @@ export const mainnetTokens: IbcTokenSource[] = [
     source: TokenSource.Solana,
     hash: 'CAA5AB050F6C3DFE878212A37A4A6D3BEA6670F5B9786FFF7EF2D34213025272',
     baseDenom:
-      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/3nNG5xw6fTXkcQCr36ySsd2jpQR5HgVvrQJtsSaAtiQq',
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/3nNG5xw6fTXkcQCr36ySsd2jpQR5HgVvrQJtsSaAtiQq'
   },
+  {
+    ...symbolMeta.PYUSD,
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.EthereumWh,
+    hash: '4367FD29E33CDF0487219CD3E88D8C432BD4C2776C0C1034FF05A3E6451B8B11',
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/D2q6uE3gSM7KxBconMFQQxfDenwQYz8JrdXWetkEq9WS'
+  },
+  {
+    ...symbolMeta.FET,
+    baseDenom: 'afet',
+    channelId: 'channel-283',
+    path: 'transfer/channel-283',
+    source: TokenSource.Cosmos,
+    hash: 'C1D3666F27EA64209584F18BC79648E0C1783BB6EEC04A8060E4A8E9881C841B'
+  },
+  {
+    ...symbolMeta.SNS,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/Dvk1oP4zSe6uWWMbBynzjLaZGtoVD1gNkvnyeGDKZjVq',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Solana,
+    hash: '4BFB3FB1903142C5A7570EE7697636436E52FDB99AB8ABE0257E178A926E2568'
+  },
+  {
+    ...symbolMeta.SAE,
+    decimals: 8,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/2mWv5umZHxJ1X8zMeSw3hFPdGuUZmq5UjbCsmJcDdEW1',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.BinanceSmartChain,
+    hash: '0AFCFFE18230E0E703A527F7522223D808EBB0E02FDBC84AAF8A045CD8FE0BBB'
+  },
+  {
+    ...untaggedSymbolMeta.Unknown, // adding this deleted denom for injective asset service
+    decimals: 6,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/34otzwKo7pCY8YF5wxMrAhjoM9ei7pcEUcMfUBPP2iL7',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Solana,
+    hash: '078184C66B073F0464BA0BBD736DD601A0C637F9C42B592DDA5D6A95289D99A4'
+  },
+  {
+    ...symbolMeta.GIGA,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/Bephz8veqd8byhirRXANbXrxmLAJfn1445n7HKsoPDNJ',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Solana,
+    hash: '36C811A2253AA64B58A9B66C537B89348FE5792A8808AAA343082CBFCAA72278'
+  },
+  {
+    ...symbolMeta.USDY,
+    baseDenom: 'ausdy',
+    isNative: true,
+    channelId: 'channel-148',
+    source: TokenSource.Cosmos,
+    path: 'transfer/channel-148',
+    hash: '93EAE5F9D6C14BFAC8DD1AFDBE95501055A7B22C5D8FA8C986C31D6EFADCA8A9'
+  }
 ]

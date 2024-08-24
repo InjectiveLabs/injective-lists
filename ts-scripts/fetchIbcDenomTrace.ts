@@ -1,9 +1,9 @@
-import { ChainGrpcIbcApi } from '@injectivelabs/sdk-ts'
 import {
   TokenStatic,
   TokenType,
+  ChainGrpcIbcApi,
   TokenVerification
-} from '@injectivelabs/token-metadata'
+} from '@injectivelabs/sdk-ts'
 import {
   Network,
   isMainnet,

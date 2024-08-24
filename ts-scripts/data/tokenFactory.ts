@@ -412,6 +412,26 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj158g7dfclyg9rr6u4ddxg9d2afwevq5d79g2tm6'
   },
   {
+    ...symbolMeta.SMELLY,
+    creator: 'inj10pz3xq7zf8xudqxaqealgyrnfk66u3c99ud5m2'
+  },
+  {
+    ...symbolMeta.NBZAIRDROP,
+    creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
+  },
+  {
+    ...symbolMeta.NBZLOOTBOX1,
+    creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
+  },
+  {
+    ...symbolMeta.backboneInj,
+    creator: 'inj1dxp690rd86xltejgfq2fa7f2nxtgmm5cer3hvu'
+  },
+  {
+    ...symbolMeta.syndicate,
+    creator: 'inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e'
+  },
+  {
     ...symbolMeta.PAIN,
     creator: 'inj1u6j86hy6a2z0ksuhuh54x6kh532e7esdfjd2k7'
   },

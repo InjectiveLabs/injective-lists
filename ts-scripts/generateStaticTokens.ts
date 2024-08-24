@@ -2,7 +2,7 @@ import {
   TokenType,
   TokenStatic,
   TokenVerification
-} from '@injectivelabs/token-metadata'
+} from '@injectivelabs/sdk-ts'
 import { Network } from '@injectivelabs/networks'
 import {
   mainnetTokens as cw20MainnetTokens,
@@ -24,11 +24,8 @@ import {
   testnetTokens as ibcTestnetTokens
 } from './data/ibc'
 import { symbolMeta } from './data/symbolMeta'
-import {
-  readJSONFile,
-  updateJSONFile,
-  getNetworkFileName
-} from './helper/utils'
+import { getMarketIdsByDenom } from './helper/market'
+import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import {
   getCw20Denom,
   getSupplyDenom,
@@ -94,7 +91,7 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       decimals: token.decimals
     })
 
-    // we retrieve * override the denom & decimals from the chain
+    // override the denom & decimals using data from the chain
     const factoryCw20Denom = getCw20Denom(token.address, network)
 
     if (!factoryCw20Denom) {
@@ -148,6 +145,8 @@ const untaggedSymbolBaseTokens = () =>
   })
 
 const getDevnetStaticTokenList = () => {
+  console.log(...formatCw20Tokens(cw20DevnetTokens, Network.Devnet))
+
   return [
     ...formatIbcTokens(
       [...ibcTestnetTokens, ...ibcMainnetTokens],
@@ -231,6 +230,7 @@ const generateStaticTokens = async (network: Network) => {
         address: token.denom,
         isNative: false,
         tokenVerification: TokenVerification.Verified,
+        marketIds: getMarketIdsByDenom(token.denom, network),
         ...token
       }))
       .sort((a, b) => a.denom.localeCompare(b.denom))
@@ -239,6 +239,6 @@ const generateStaticTokens = async (network: Network) => {
   console.log(`✅✅✅ GenerateStaticTokens ${network}`)
 }
 
-// generateStaticTokens(Network.Devnet)
-// generateStaticTokens(Network.TestnetSentry)
+generateStaticTokens(Network.Devnet)
+generateStaticTokens(Network.TestnetSentry)
 generateStaticTokens(Network.MainnetSentry)

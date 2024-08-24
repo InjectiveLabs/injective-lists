@@ -1,10 +1,10 @@
 [
   {
     "operatorAddress": "injvaloper10uqw42xet8gm7m80fnnehuektszud8rxzh7ld9",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "300.06",
-    "delegatorShares": "300150000000000000000",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "1199.200888498734998966",
+    "delegatorShares": "1201240204583123089156.540136859639179584",
     "description": {
       "moniker": "AshpoolNode0",
       "identity": "",
@@ -12,8 +12,8 @@
       "securityContact": "ashpool@xecut.net",
       "details": ""
     },
-    "unbondingHeight": 32667337,
-    "unbondingTime": "2024-06-28T06:41:32.404Z",
+    "unbondingHeight": 38950668,
+    "unbondingTime": "2024-08-23T06:45:46.694Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -25,11 +25,61 @@
     "minSelfDelegation": "50000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper13c8scvjnf8ry9jk2kscrnv4j3ld4rwymyg5tgy",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.99",
+    "delegatorShares": "100000000000000000000",
+    "description": {
+      "moniker": "gumi-testnet-1",
+      "identity": "",
+      "website": "https://gu3.co.jp",
+      "securityContact": "",
+      "details": "gumi testnet 1"
+    },
+    "unbondingHeight": 39558199,
+    "unbondingTime": "2024-08-29T06:40:47.855Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2024-08-07T09:01:51.914Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
+    "operatorAddress": "injvaloper13ks27uxu5e9x92x0mzyz6tlv5v69hzkqzevlcz",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "99.99",
+    "delegatorShares": "100000000000000000000",
+    "description": {
+      "moniker": "jinu",
+      "identity": "",
+      "website": "",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 35164796,
+    "unbondingTime": "2024-07-20T01:31:27.064Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.1",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2024-06-28T03:55:08.166Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper13xhgnaqsjmkx8g4hm076sytjtj7tg904zmvz7x",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "60262593.870183780845779996",
-    "delegatorShares": "60685588006023918832793448.815411372662203139",
+    "tokens": "60262586.873164378452405394",
+    "delegatorShares": "60685580959891161280034664.115037399440725053",
     "description": {
       "moniker": "twinstake",
       "identity": "",
@@ -78,8 +128,8 @@
     "operatorAddress": "injvaloper156t3yxd4udv0h9gwagfcmwnmm3quy0nph7tyh5",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199839468363135.785289817567293217",
-    "delegatorShares": "200079521774566487037864194329048.323265267019739646",
+    "tokens": "199839467358888.476901222987725383",
+    "delegatorShares": "200079520769112845414531823390592.056928078198544595",
     "description": {
       "moniker": "InjectiveNode0",
       "identity": "",
@@ -178,8 +228,8 @@
     "operatorAddress": "injvaloper16envyn03vzl6dut534atup7xtywnxn4a6zpxtj",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "6139.999",
-    "delegatorShares": "6140613061306130613061.30613061306130613",
+    "tokens": "6140.999",
+    "delegatorShares": "6141613161316131613161.316131613161316131",
     "description": {
       "moniker": "samplenode",
       "identity": "",
@@ -203,8 +253,8 @@
     "operatorAddress": "injvaloper16nd8yqxe9p6ggnrz58qr7dxn5y2834yeytmczf",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "200000153348594.310319341657553797",
-    "delegatorShares": "200400754373169496892789644993467.732952656704069526",
+    "tokens": "200000153356304.922397730700622826",
+    "delegatorShares": "200400754380895553354830337744968.895067652252150444",
     "description": {
       "moniker": "InjectiveNode1",
       "identity": "",
@@ -273,6 +323,31 @@
       "updateTime": "2022-12-06T03:06:14.807Z"
     },
     "minSelfDelegation": "5"
+  },
+  {
+    "operatorAddress": "injvaloper17dppkjfa5snsv9n7pqee8c9n02e4529a49k4ek",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "199.99",
+    "delegatorShares": "200010001000100010001.0001000100010001",
+    "description": {
+      "moniker": "gumi-testnet-aws",
+      "identity": "",
+      "website": "gu3.co.jp",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 39335266,
+    "unbondingTime": "2024-08-27T06:12:27.976Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.1",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-08-05T05:36:06.889Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
   },
   {
     "operatorAddress": "injvaloper17lzhgs2d50qcwlwdn06y3sghphlwl3xxxgml46",
@@ -378,8 +453,8 @@
     "operatorAddress": "injvaloper18pvl4qedxhckk4vs98eejv43x6xnuukdv48za0",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "1009.899",
-    "delegatorShares": "1010000000000000000000",
+    "tokens": "1053.045878500000000001",
+    "delegatorShares": "1053151193619361936193.619361936193619362",
     "description": {
       "moniker": "inj pool creation on QA",
       "identity": "",
@@ -453,8 +528,8 @@
     "operatorAddress": "injvaloper1cq6mvxqp978f6lxrh5s6c35ddr2slcj9h7tqng",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199981152179934.724509346834202563",
-    "delegatorShares": "200201353579094814639389302405760.80921761234272036",
+    "tokens": "199981152179941.017753069375816246",
+    "delegatorShares": "200201353579101114812670244164316.423708889757088699",
     "description": {
       "moniker": "InjectiveNode2",
       "identity": "",
@@ -478,7 +553,7 @@
     "operatorAddress": "injvaloper1elztamlwr095vcdj0yakpwendeqehyncc099a8",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "103500.771759262238665147",
+    "tokens": "103490.421759262238665147",
     "delegatorShares": "103625097094533573132105.53252651290732545",
     "description": {
       "moniker": "Data Nexus",
@@ -487,8 +562,8 @@
       "securityContact": "security@datanexus.tech",
       "details": ""
     },
-    "unbondingHeight": 23153522,
-    "unbondingTime": "2024-04-04T07:06:38.061Z",
+    "unbondingHeight": 34288020,
+    "unbondingTime": "2024-07-12T11:45:11.550Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -502,9 +577,9 @@
   {
     "operatorAddress": "injvaloper1f47h8x8dyyyz0mphj725zwucjz736asy9r454d",
     "jailed": true,
-    "status": "UnBonding",
-    "tokens": "303.747100000000000003",
-    "delegatorShares": "303868354030572478307.976180707788711485",
+    "status": "UnBonded",
+    "tokens": "299.780329480558453881",
+    "delegatorShares": "299900000000000000001.985662426753126744",
     "description": {
       "moniker": "Everstake",
       "identity": "“EF5AC70C00BECEDC”",
@@ -603,8 +678,8 @@
     "operatorAddress": "injvaloper1h5u937etuat5hnr2s34yaaalfpkkscl587w3v6",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199806834335857.268653580087499296",
-    "delegatorShares": "200026843861420444855620932212853.033993591894591672",
+    "tokens": "199806875393516.073665323955294721",
+    "delegatorShares": "200026884964288294214875013724374.15507488145155758",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "2008DAB643ECF438",
@@ -652,7 +727,7 @@
   {
     "operatorAddress": "injvaloper1j0ll9vpjx0nn6ncugjky9vzuk95lvp6pqm2klh",
     "jailed": true,
-    "status": "UnBonding",
+    "status": "UnBonded",
     "tokens": "11099.82",
     "delegatorShares": "11103148324773787715338.787442045198650897",
     "description": {
@@ -675,11 +750,36 @@
     "minSelfDelegation": "50000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1jfuyujpvvkxq4566r3z3tv3jdy29pqrarex29j",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "59.994",
+    "delegatorShares": "60000000000000000000",
+    "description": {
+      "moniker": "validator0",
+      "identity": "",
+      "website": "",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 36181762,
+    "unbondingTime": "2024-07-29T00:22:08.817Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.05",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2024-07-07T03:14:05.603Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1jue5dpr9lerjn6wlwtrywxrsenrf28ru89z99z",
     "jailed": true,
-    "status": "UnBonding",
-    "tokens": "3923727.15210666594322981",
-    "delegatorShares": "3928831569268175144288231.307792124371380686",
+    "status": "UnBonded",
+    "tokens": "2939329.113479763150234694",
+    "delegatorShares": "2943741635925957073030149.464997697106252146",
     "description": {
       "moniker": "Injective Labs",
       "identity": "2008DAB643ECF438",
@@ -687,8 +787,8 @@
       "securityContact": "validator@injectivelabs.org",
       "details": "Injective is a lightning fast interoperable layer one optimized for building unmatched Web3 finance applications. Injective is incubated by Binance and is backed by prominent investors such as Jump Crypto, Pantera and Mark Cuban."
     },
-    "unbondingHeight": 31221045,
-    "unbondingTime": "2024-06-15T06:49:11.144Z",
+    "unbondingHeight": 37198658,
+    "unbondingTime": "2024-08-07T05:23:11.866Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -703,8 +803,8 @@
     "operatorAddress": "injvaloper1kk523rsm9pey740cx4plalp40009ncs0wrchfe",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "2549459.118258742332480186",
-    "delegatorShares": "2554565694514025284438718.713369108369157955",
+    "tokens": "2550358.203346615864400745",
+    "delegatorShares": "2555466580472729939842666.93093175718076784",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "",
@@ -800,6 +900,31 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1md64w34xmd7krvayw09gkpz38cqlw8yq78fwnd",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.99",
+    "delegatorShares": "100000000000000000000",
+    "description": {
+      "moniker": "gumi-testnet-2",
+      "identity": "",
+      "website": "https://gu3.co.jp",
+      "securityContact": "",
+      "details": "gumi testnet 2"
+    },
+    "unbondingHeight": 39669327,
+    "unbondingTime": "2024-08-30T06:56:06.348Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2024-08-08T08:58:06.036Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1p4q8z0lrrn4u6zltl6g7g09p8sl9dldwj2lmgt",
     "jailed": true,
     "status": "UnBonded",
@@ -853,8 +978,8 @@
     "operatorAddress": "injvaloper1qvc6jej73armfs5fadn9lprx768f46d9up3p9h",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "6626.796000048987700835",
-    "delegatorShares": "6633429429478466166999.994988760168618742",
+    "tokens": "6627.796000048987700834",
+    "delegatorShares": "6634430430479467167999.994685896878150988",
     "description": {
       "moniker": "polkachu.com",
       "identity": "0A6AF02D1557E5B4",
@@ -903,8 +1028,8 @@
     "operatorAddress": "injvaloper1rdvguqzs45r39hcq0fwmpzc44gh3s8whken023",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "1067.3778",
-    "delegatorShares": "1068872621026867392361.723985582075544302",
+    "tokens": "1146.3778",
+    "delegatorShares": "1147983257449249911462.810962340430428579",
     "description": {
       "moniker": "T-Stake",
       "identity": "",
@@ -953,8 +1078,8 @@
     "operatorAddress": "injvaloper1t0q28eyvuvdp6aw8rdgxewgw29qlaskm5dhaf2",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "157789.48820247476360319",
-    "delegatorShares": "157939016910672990605885.137495092446848638",
+    "tokens": "158716.488009901772975841",
+    "delegatorShares": "158866895186528306800989.147359425322162035",
     "description": {
       "moniker": "s35-testnet",
       "identity": "",
@@ -1075,6 +1200,56 @@
     "minSelfDelegation": "50000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1vxhtevxeh3a3ke5znysv9erh6llcvsfgwdur7k",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "4.5183",
+    "delegatorShares": "4518700000000000000",
+    "description": {
+      "moniker": "testnetp",
+      "identity": "0A6AF02D1557E5B4",
+      "website": "polkadot.com",
+      "securityContact": "",
+      "details": "polkadot!"
+    },
+    "unbondingHeight": 37033571,
+    "unbondingTime": "2024-08-05T18:32:47.978Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.05",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2024-07-14T20:11:29.205Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
+    "operatorAddress": "injvaloper1vxwx03nd9nam93d4vg7uz44trw30d3zm88pyxq",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "10.9989",
+    "delegatorShares": "11000000000000000000",
+    "description": {
+      "moniker": "wall2",
+      "identity": "0A6AF02D1557E5B4",
+      "website": "injstaking.io",
+      "securityContact": "",
+      "details": "Enter our website if you are interested in staking your NFTs and earning from it!"
+    },
+    "unbondingHeight": 37031804,
+    "unbondingTime": "2024-08-05T18:09:16.511Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.05",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2024-07-14T19:49:33.645Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1xxkjpsudrtznh7crfgnz6e53rtelw4h6502pfp",
     "jailed": true,
     "status": "UnBonded",
@@ -1098,5 +1273,30 @@
       "updateTime": "2023-06-27T15:24:18.947Z"
     },
     "minSelfDelegation": "1"
+  },
+  {
+    "operatorAddress": "injvaloper1yllvlrapk6zzpy7yu8n7mvtd02uecsyxyuua9z",
+    "jailed": true,
+    "status": "UnBonded",
+    "tokens": "10.9989",
+    "delegatorShares": "11000000000000000000",
+    "description": {
+      "moniker": "injstaking",
+      "identity": "E62917240A413FDE",
+      "website": "injstaking.io",
+      "securityContact": "",
+      "details": "Enter our website if you are interested in staking your NFTs and earning from it!"
+    },
+    "unbondingHeight": 36902194,
+    "unbondingTime": "2024-08-04T13:43:35.674Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.05",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2024-07-13T16:56:15.944Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
   }
 ]

@@ -843,13 +843,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'KIRA',
     symbol: 'KIRA',
-    logo: 'kira.jpeg',
+    logo: 'kira.webp',
     coinGeckoId: 'kira-the-injective-cat'
   },
 
-  USDY: {
+  USDYet: {
     decimals: 18,
-    symbol: 'USDY',
+    symbol: 'USDYet',
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
     coinGeckoId: 'ondo-us-dollar-yield'
@@ -1507,7 +1507,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'Hydro',
     symbol: 'HDRO',
-    coinGeckoId: '',
+    coinGeckoId: 'hydro-protocol-2',
     logo: 'hydro.png'
   },
 
@@ -1738,7 +1738,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   BONUS: {
     decimals: 8,
     symbol: 'BONUS',
-    coinGeckoId: '',
+    coinGeckoId: 'bonusblock',
     name: 'Bonus Block',
     logo: 'bonus-block.png'
   },
@@ -1842,14 +1842,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   NBZ: {
     decimals: 6,
     name: 'Ninja Blaze Token',
-    logo: 'nbz.webp',
+    logo: 'nbz.png',
     symbol: 'NBZ',
     coinGeckoId: ''
   },
 
   MOTHER: {
     decimals: 6,
-    name: 'MOTHER IZZY',
+    name: 'MOTHER IGGY',
     symbol: 'MOTHER',
     coinGeckoId: 'mother-iggy',
     logo: 'mother.webp'
@@ -1868,7 +1868,159 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'coke.webp',
     coinGeckoId: '',
     symbol: 'COKE',
+    decimals: 6
+  },
+
+  SHROOM: {
+    name: 'shroomin',
+    logo: 'shroom.webp',
+    coinGeckoId: '',
+    symbol: 'SHROOM',
+    decimals: 18
+  },
+
+  SMELLY: {
+    name: 'Durian Token',
+    logo: 'smelly.webp',
+    coinGeckoId: '',
+    symbol: 'SMELLY',
+    decimals: 6
+  },
+
+  ELON: {
+    name: 'ELON',
+    symbol: 'ELON',
     decimals: 6,
+    logo: 'elon.webp',
+    coinGeckoId: ''
+  },
+
+  nTIA: {
+    name: 'Neptune Receipt TIA',
+    logo: 'ntia.png',
+    symbol: 'nTIA',
+    decimals: 6,
+    coinGeckoId: ''
+  },
+
+  PYUSD: {
+    name: 'PYUSD',
+    logo: 'pyusd.png',
+    coinGeckoId: 'paypal-usd',
+    symbol: 'PYUSD',
+    decimals: 6
+  },
+
+  IOTX: {
+    coinGeckoId: 'iotex',
+    logo: 'iotex.webp',
+    name: 'IoTeX',
+    symbol: 'IOTX',
+    decimals: 18
+  },
+
+  FET: {
+    coinGeckoId: 'fetch-ai',
+    logo: 'fetch.png',
+    name: 'Fetch.ai',
+    symbol: 'FET',
+    decimals: 18
+  },
+
+  SNS: {
+    coinGeckoId: 'synesis-one',
+    logo: 'sns.webp',
+    name: 'SynesisOne',
+    symbol: 'SNS',
+    decimals: 8
+  },
+
+  GIGA: {
+    coinGeckoId: 'gigachad-2',
+    logo: 'giga.png',
+    name: 'Gigachad',
+    symbol: 'GIGA',
+    decimals: 5
+  },
+
+  wUSDM: {
+    coinGeckoId: 'wrapped-usdm',
+    logo: 'wusdm.webp',
+    name: 'Wrapped USDM',
+    symbol: 'wUSDM',
+    decimals: 18
+  },
+
+  NBZAIRDROP: {
+    coinGeckoId: '',
+    logo: 'nbz-airdrop.png',
+    name: 'Ninja Blaze Airdrop Box',
+    symbol: 'NBZAIRDROP',
+    decimals: 0
+  },
+
+  NBZLOOTBOX1: {
+    coinGeckoId: '',
+    logo: 'nbz-lootbox-1.png',
+    name: 'Ninja Blaze Novice Box',
+    symbol: 'lootbox1',
+    decimals: 0
+  },
+
+  TEVMOS: {
+    coinGeckoId: 'evmos',
+    logo: 'evmos.png',
+    name: 'TEvmos',
+    symbol: 'TEvmos',
+    decimals: 18
+  },
+
+  USDY: {
+    decimals: 18,
+    symbol: 'USDY',
+    logo: 'usdy.webp',
+    name: 'Ondo US Dollar Yield',
+    coinGeckoId: 'ondo-us-dollar-yield'
+  },
+
+  XION: {
+    decimals: 6,
+    symbol: 'XION',
+    logo: 'xion.png',
+    name: 'XION',
+    coinGeckoId: ''
+  },
+
+  bnUSD: {
+    decimals: 18,
+    symbol: 'bnUSD',
+    logo: 'bnUSD.svg',
+    name: 'Balanced Dollar',
+    coinGeckoId: 'balanced-dollars'
+  },
+  
+  TON: {
+    decimals: 9,
+    symbol: 'TON',
+    logo: 'ton.png',
+    name: 'Toncoin',
+    coinGeckoId: 'the-open-network'
+  },
+
+  backboneInj: {
+    decimals: 18,
+    symbol: 'bINJ',
+    logo: 'backboneInj.png',
+    name: 'BackBone Labs LST',
+    coinGeckoId: ''
+  },
+
+  syndicate: {
+    decimals: 6,
+    symbol: 'SYN',
+    logo: 'syndicate.png',
+    name: 'Galactic Syndicate',
+    coinGeckoId: ''
   },
 
   PAIN: {

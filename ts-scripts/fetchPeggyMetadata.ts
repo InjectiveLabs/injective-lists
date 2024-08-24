@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { Network, isMainnet } from '@injectivelabs/networks'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
-import { TokenType, TokenVerification } from '@injectivelabs/token-metadata'
+import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
 import {
   readJSONFile,
   updateJSONFile,

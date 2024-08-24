@@ -6,17 +6,17 @@ import {
 import {
   Metadata,
   Validator,
+  TokenType,
   InsuranceFund,
   ChainGrpcBankApi,
-  ChainGrpcStakingApi,
-  ChainGrpcTokenFactoryApi,
-  ChainGrpcInsuranceFundApi
-} from '@injectivelabs/sdk-ts'
-import {
-  TokenType,
   TokenVerification,
-  isCw20ContractAddress
-} from '@injectivelabs/token-metadata'
+  IndexerGrpcSpotApi,
+  ChainGrpcStakingApi,
+  isCw20ContractAddress,
+  ChainGrpcTokenFactoryApi,
+  ChainGrpcInsuranceFundApi,
+  IndexerGrpcDerivativesApi
+} from '@injectivelabs/sdk-ts'
 import { symbolMeta } from './data/symbolMeta'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import {
@@ -178,6 +178,42 @@ export const fetchTokenCw20Denoms = async (network: Network) => {
   }
 }
 
+export const fetchSpotMarkets = async (network: Network) => {
+  const endpoints = getNetworkEndpoints(network)
+  const indexerSpotApi = new IndexerGrpcSpotApi(endpoints.indexer)
+
+  try {
+    const markets = await indexerSpotApi.fetchMarkets()
+
+    await updateJSONFile(
+      `data/market/spot/${getNetworkFileName(network)}.json`,
+      markets.sort((a, b) => a.marketId.localeCompare(b.marketId))
+    )
+
+    console.log(`✅✅✅ fetchSpotMarkets ${network}`)
+  } catch (e) {
+    console.log(`Error fetching spot market ${network}:`, e)
+  }
+}
+
+export const fetchDerivativeMarkets = async (network: Network) => {
+  const endpoints = getNetworkEndpoints(network)
+  const indexerDerivativeApi = new IndexerGrpcDerivativesApi(endpoints.indexer)
+
+  try {
+    const markets = await indexerDerivativeApi.fetchMarkets()
+
+    await updateJSONFile(
+      `data/market/derivative/${getNetworkFileName(network)}.json`,
+      markets.sort((a, b) => a.marketId.localeCompare(b.marketId))
+    )
+
+    console.log(`✅✅✅ fetchDerivativeMarkets ${network}`)
+  } catch (e) {
+    console.log(`Error fetching derivative market ${network}:`, e)
+  }
+}
+
 fetchBankMetadata(Network.Devnet)
 fetchBankMetadata(Network.TestnetSentry)
 fetchBankMetadata(Network.MainnetSentry)
@@ -193,3 +229,9 @@ fetchValidators(Network.MainnetSentry)
 fetchTokenCw20Denoms(Network.Devnet)
 fetchTokenCw20Denoms(Network.TestnetSentry)
 fetchTokenCw20Denoms(Network.MainnetSentry)
+fetchSpotMarkets(Network.Devnet)
+fetchSpotMarkets(Network.TestnetSentry)
+fetchSpotMarkets(Network.MainnetSentry)
+fetchDerivativeMarkets(Network.Devnet)
+fetchDerivativeMarkets(Network.TestnetSentry)
+fetchDerivativeMarkets(Network.MainnetSentry)
