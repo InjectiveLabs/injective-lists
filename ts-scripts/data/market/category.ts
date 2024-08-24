@@ -29,7 +29,8 @@ export const experimental = [
   'qunt-inj',
   'omni-usdt-perp',
   'w-usdt-perp',
-  'mother-inj'
+  'mother-inj',
+  'xiii-inj'
 ]
 
 export const cosmos = [
@@ -107,7 +108,8 @@ export const injective = [
   'mother-inj',
   'sns-inj',
   'iotx-inj',
-  'usdy-usdt'
+  'usdy-usdt',
+  'xiii-inj'
 ]
 
 export const solana = [
