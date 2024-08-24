@@ -2029,5 +2029,5 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'PAIN',
     decimals: 6,
-  },
+  }
 }
