@@ -2029,6 +2029,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'BlackRock BUIDL',
     logo: 'buidl.webp',
     coinGeckoId: 'blackrock-usd-institutional-digital-liquidity-fund'
-  }
+  },
 
+  PAIN: {
+    name: 'Painite',
+    logo: 'pain.png',
+    coinGeckoId: '',
+    symbol: 'PAIN',
+    decimals: 6,
+  }
 }
