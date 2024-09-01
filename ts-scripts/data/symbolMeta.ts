@@ -1998,7 +1998,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Balanced Dollar',
     coinGeckoId: 'balanced-dollars'
   },
-  
+
   TON: {
     decimals: 9,
     symbol: 'TON',
@@ -2023,19 +2023,11 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  buidl: {
-    decimals: 6,
-    symbol: 'BUIDL',
-    name: 'BlackRock BUIDL',
-    logo: 'buidl.webp',
-    coinGeckoId: 'blackrock-usd-institutional-digital-liquidity-fund'
-  },
-
   PAIN: {
     name: 'Painite',
     logo: 'pain.png',
     coinGeckoId: '',
     symbol: 'PAIN',
-    decimals: 6,
+    decimals: 6
   }
 }
