@@ -430,5 +430,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.syndicate,
     creator: 'inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e'
+  },
+  {
+    ...symbolMeta.PAIN,
+    creator: 'inj1u6j86hy6a2z0ksuhuh54x6kh532e7esdfjd2k7'
   }
 ]
