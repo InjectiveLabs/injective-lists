@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
@@ -17,6 +18,7 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
@@ -56,6 +58,7 @@ export const cosmos = [
 ]
 
 export const ethereum = [
+  'buidl-usdt-perp',
   'ton-usdt',
   'wusdm-usdt',
   'inj-usdt',
@@ -152,5 +155,6 @@ export const rwa = [
   'xau-usdt-perp',
   'xag-usdt-perp',
   'eur-usdt-perp',
-  'gbp-usdt-perp'
+  'gbp-usdt-perp',
+  'buidl-usdt-perp'
 ]
