@@ -155,6 +155,5 @@ export const rwa = [
   'xau-usdt-perp',
   'xag-usdt-perp',
   'eur-usdt-perp',
-  'gbp-usdt-perp',
-  'buidl-usdt-perp'
+  'gbp-usdt-perp'
 ]
