@@ -16,7 +16,6 @@ export interface TokenSymbolMeta {
   symbol: string;
   decimals: number;
   coinGeckoId: string;
-  cryptoRankId?: string;
 }
 ```
 
