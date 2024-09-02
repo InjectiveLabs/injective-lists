@@ -23,6 +23,7 @@ import {
   mainnetTokens as ibcMainnetTokens,
   testnetTokens as ibcTestnetTokens
 } from './data/ibc'
+import { cryptoRankIdMap } from './data/rank'
 import { symbolMeta } from './data/symbolMeta'
 import { getMarketIdsByDenom } from './helper/market'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
@@ -113,7 +114,10 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       address: existingFactoryToken.address,
       tokenType: TokenType.TokenFactory,
       tokenVerification: TokenVerification.Verified,
-      decimals: existingFactoryToken?.decimals || token.decimals
+      decimals: existingFactoryToken?.decimals || token.decimals,
+      ...(cryptoRankIdMap[existingFactoryToken.symbol] && {
+        cryptoRankId: cryptoRankIdMap[existingFactoryToken.symbol]
+      })
     })
 
     return list
@@ -231,7 +235,10 @@ const generateStaticTokens = async (network: Network) => {
         isNative: false,
         tokenVerification: TokenVerification.Verified,
         marketIds: getMarketIdsByDenom(token.denom, network),
-        ...token
+        ...token,
+        ...(cryptoRankIdMap[token.symbol] && {
+          cryptoRankId: cryptoRankIdMap[token.symbol]
+        })
       }))
       .sort((a, b) => a.denom.localeCompare(b.denom))
   )
