@@ -4,7 +4,8 @@ export const untaggedSymbolMeta = {
     symbol: 'Unknown',
     name: 'Unknown',
     logo: 'unknown.png',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   BTC: {

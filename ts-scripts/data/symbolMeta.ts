@@ -6,7 +6,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'wBTC',
     logo: 'wbtc.png',
     name: 'Wrapped Bitcoin',
-    coinGeckoId: 'wrapped-bitcoin'
+    coinGeckoId: 'wrapped-bitcoin',
+    cryptoRankId: ''
   },
 
   wEth: {
@@ -14,6 +15,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'wETH',
     logo: 'ethereum.png',
     coinGeckoId: 'ethereum',
+    cryptoRankId: '',
     name: 'Wrapped Ethereum'
   },
 
@@ -22,7 +24,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'INJ',
     name: 'Injective',
     logo: 'injective-v3.png',
-    coinGeckoId: 'injective-protocol'
+    coinGeckoId: 'injective-protocol',
+    cryptoRankId: ''
   },
 
   USDT: {
@@ -30,7 +33,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDT',
     name: 'Tether',
     logo: 'usdt.png',
-    coinGeckoId: 'tether'
+    coinGeckoId: 'tether',
+    cryptoRankId: ''
   },
 
   USDC: {
@@ -38,7 +42,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'USDC',
     logo: 'usdc.png',
-    coinGeckoId: 'usd-coin'
+    coinGeckoId: 'usd-coin',
+    cryptoRankId: ''
   },
 
   GRT: {
@@ -46,7 +51,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'GRT',
     name: 'Graph Token',
     logo: 'graphToken.png',
-    coinGeckoId: 'the-graph'
+    coinGeckoId: 'the-graph',
+    cryptoRankId: ''
   },
 
   SNX: {
@@ -54,6 +60,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SNX',
     logo: 'synthetix.png',
     coinGeckoId: 'havven',
+    cryptoRankId: '',
     name: 'Synthetix Network Token'
   },
 
@@ -62,7 +69,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BNB',
     logo: 'bnb.png',
     name: 'Binance Coin',
-    coinGeckoId: 'binancecoin'
+    coinGeckoId: 'binancecoin',
+    cryptoRankId: ''
   },
 
   AAVE: {
@@ -70,7 +78,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'AAVE',
     logo: 'AAVE.png',
-    coinGeckoId: 'aave'
+    coinGeckoId: 'aave',
+    cryptoRankId: ''
   },
 
   YFI: {
@@ -78,7 +87,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'YFI',
     logo: 'yfi.png',
     name: 'yearn.finance',
-    coinGeckoId: 'yearn-finance'
+    coinGeckoId: 'yearn-finance',
+    cryptoRankId: ''
   },
 
   COMP: {
@@ -86,7 +96,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COMP',
     name: 'Compound',
     logo: 'comp.png',
-    coinGeckoId: 'compound-coin'
+    coinGeckoId: 'compound-coin',
+    cryptoRankId: ''
   },
 
   ZRX: {
@@ -94,7 +105,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ZRX',
     name: '0x',
     logo: 'zrx.png',
-    coinGeckoId: '0x'
+    coinGeckoId: '0x',
+    cryptoRankId: ''
   },
 
   MATIC: {
@@ -102,7 +114,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'MATIC',
     name: 'Polygon',
     logo: 'polygon.png',
-    coinGeckoId: 'matic-network'
+    coinGeckoId: 'matic-network',
+    cryptoRankId: ''
   },
 
   UNI: {
@@ -110,7 +123,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'UNI',
     name: 'Uniswap',
     logo: 'uni.png',
-    coinGeckoId: 'uniswap'
+    coinGeckoId: 'uniswap',
+    cryptoRankId: ''
   },
 
   DAI: {
@@ -118,7 +132,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DAI',
     name: 'Dai',
     logo: 'dai.png',
-    coinGeckoId: 'dai'
+    coinGeckoId: 'dai',
+    cryptoRankId: ''
   },
 
   LINK: {
@@ -126,7 +141,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'LINK',
     name: 'Chainlink',
     logo: 'chainlink.png',
-    coinGeckoId: 'chainlink'
+    coinGeckoId: 'chainlink',
+    cryptoRankId: ''
   },
 
   SUSHI: {
@@ -134,7 +150,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SUSHI',
     name: 'SushiSwap',
     logo: 'sushi.png',
-    coinGeckoId: 'sushi'
+    coinGeckoId: 'sushi',
+    cryptoRankId: ''
   },
 
   AXS: {
@@ -142,7 +159,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'AXS',
     name: 'Axie Infinity',
     logo: 'axs.png',
-    coinGeckoId: 'axie-infinity'
+    coinGeckoId: 'axie-infinity',
+    cryptoRankId: ''
   },
 
   '1INCH': {
@@ -150,7 +168,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: '1INCH',
     name: '1inch',
     logo: '1inch.png',
-    coinGeckoId: '1inch'
+    coinGeckoId: '1inch',
+    cryptoRankId: ''
   },
 
   BAT: {
@@ -158,7 +177,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BAT',
     name: 'Basic Attention Token',
     logo: 'bat.png',
-    coinGeckoId: 'basic-attention-token'
+    coinGeckoId: 'basic-attention-token',
+    cryptoRankId: ''
   },
 
   BUSD: {
@@ -166,7 +186,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BUSD',
     name: 'Binance USD',
     logo: 'busd.png',
-    coinGeckoId: 'binance-usd'
+    coinGeckoId: 'binance-usd',
+    cryptoRankId: ''
   },
 
   CEL: {
@@ -174,7 +195,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CEL',
     name: 'Celsius',
     logo: 'cel.png',
-    coinGeckoId: 'celsius-degree-token'
+    coinGeckoId: 'celsius-degree-token',
+    cryptoRankId: ''
   },
 
   CELL: {
@@ -182,7 +204,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CELL',
     name: 'Cellframe',
     logo: 'cell.png',
-    coinGeckoId: 'cellframe'
+    coinGeckoId: 'cellframe',
+    cryptoRankId: ''
   },
 
   DEFI5: {
@@ -190,7 +213,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DEFI5',
     name: 'DEFI Top 5 Tokens Index',
     logo: 'defi5.png',
-    coinGeckoId: 'defi-top-5-tokens-index'
+    coinGeckoId: 'defi-top-5-tokens-index',
+    cryptoRankId: ''
   },
 
   ENJ: {
@@ -198,7 +222,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ENJ',
     name: 'Enjin Coin',
     logo: 'enj.png',
-    coinGeckoId: 'enjincoin'
+    coinGeckoId: 'enjincoin',
+    cryptoRankId: ''
   },
 
   EVAI: {
@@ -206,7 +231,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'EVAI',
     name: 'Evai.io',
     logo: 'evai.png',
-    coinGeckoId: 'evai'
+    coinGeckoId: 'evai',
+    cryptoRankId: ''
   },
 
   FTM: {
@@ -214,7 +240,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'FTM',
     name: 'Fantom',
     logo: 'ftm.png',
-    coinGeckoId: 'fantom'
+    coinGeckoId: 'fantom',
+    cryptoRankId: ''
   },
 
   HT: {
@@ -222,7 +249,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'HT',
     name: 'Huobi Token',
     logo: 'ht.png',
-    coinGeckoId: 'huobi-token'
+    coinGeckoId: 'huobi-token',
+    cryptoRankId: ''
   },
 
   NEXO: {
@@ -230,7 +258,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NEXO',
     name: 'Nexo',
     logo: 'nexo.png',
-    coinGeckoId: 'nexo'
+    coinGeckoId: 'nexo',
+    cryptoRankId: ''
   },
 
   NOIA: {
@@ -238,7 +267,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NOIA',
     name: 'Syntropy',
     logo: 'noia.png',
-    coinGeckoId: 'noia-network'
+    coinGeckoId: 'noia-network',
+    cryptoRankId: ''
   },
 
   OCEAN: {
@@ -246,7 +276,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'OCEAN',
     name: 'Ocean Protocol',
     logo: 'ocean.png',
-    coinGeckoId: 'ocean-protocol'
+    coinGeckoId: 'ocean-protocol',
+    cryptoRankId: ''
   },
 
   PAXG: {
@@ -254,7 +285,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PAXG',
     name: 'PAX Gold',
     logo: 'paxg.png',
-    coinGeckoId: 'pax-gold'
+    coinGeckoId: 'pax-gold',
+    cryptoRankId: ''
   },
 
   POOL: {
@@ -262,7 +294,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'POOL',
     name: 'PoolTogether',
     logo: 'pool.png',
-    coinGeckoId: 'pooltogether'
+    coinGeckoId: 'pooltogether',
+    cryptoRankId: ''
   },
 
   RUNE: {
@@ -270,7 +303,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'RUNE',
     name: 'THORChain (ERC20)',
     logo: 'rune.png',
-    coinGeckoId: 'thorchain-erc20'
+    coinGeckoId: 'thorchain-erc20',
+    cryptoRankId: ''
   },
 
   SHIB: {
@@ -278,7 +312,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SHIB',
     name: 'SHIBA INU',
     logo: 'shib.png',
-    coinGeckoId: 'shiba-inu'
+    coinGeckoId: 'shiba-inu',
+    cryptoRankId: ''
   },
 
   STARS: {
@@ -286,7 +321,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'STARS',
     name: 'Mogul Productions',
     logo: 'stars.png',
-    coinGeckoId: 'mogul-productions'
+    coinGeckoId: 'mogul-productions',
+    cryptoRankId: ''
   },
 
   STT: {
@@ -294,7 +330,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'STT',
     name: 'Scatter.cx',
     logo: 'scatter.webp',
-    coinGeckoId: 'scatter-cx'
+    coinGeckoId: 'scatter-cx',
+    cryptoRankId: ''
   },
 
   SWAP: {
@@ -302,7 +339,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SWAP',
     name: 'TrustSwap',
     logo: 'trustswap.png',
-    coinGeckoId: 'trustswap'
+    coinGeckoId: 'trustswap',
+    cryptoRankId: ''
   },
 
   UMA: {
@@ -310,6 +348,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'UMA',
     name: 'UMA',
     coinGeckoId: 'uma',
+    cryptoRankId: '',
     logo: 'uma.png'
   },
 
@@ -318,14 +357,16 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'UTK',
     name: 'Utrust',
     logo: 'utk.png',
-    coinGeckoId: 'utrust'
+    coinGeckoId: 'utrust',
+    cryptoRankId: ''
   },
   ATOM: {
     decimals: 6,
     name: 'Cosmos',
     symbol: 'ATOM',
     logo: 'atom.png',
-    coinGeckoId: 'cosmos'
+    coinGeckoId: 'cosmos',
+    cryptoRankId: ''
   },
 
   UPHOTON: {
@@ -333,7 +374,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'atom.png',
     symbol: 'UPHOTON',
     coinGeckoId: 'cosmos',
-    name: 'Cosmos Testnet'
+    name: 'Cosmos Testnet',
+    cryptoRankId: ''
   },
 
   LUNA: {
@@ -341,7 +383,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Terra',
     symbol: 'LUNA',
     logo: 'luna.png',
-    coinGeckoId: 'terra-luna'
+    coinGeckoId: 'terra-luna',
+    cryptoRankId: ''
   },
 
   UST: {
@@ -349,7 +392,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'UST',
     logo: 'ust.png',
     name: 'TerraUSD',
-    coinGeckoId: 'terrausd'
+    coinGeckoId: 'terrausd',
+    cryptoRankId: ''
   },
 
   OSMO: {
@@ -357,7 +401,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'OSMO',
     name: 'Osmosis',
     logo: 'osmo.png',
-    coinGeckoId: 'osmosis'
+    coinGeckoId: 'osmosis',
+    cryptoRankId: ''
   },
 
   HUAHUA: {
@@ -365,7 +410,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'HUAHUA',
     name: 'Chihuahua',
     logo: 'chihuahua.jpeg',
-    coinGeckoId: 'chihuahua-token'
+    coinGeckoId: 'chihuahua-token',
+    cryptoRankId: ''
   },
 
   JUNO: {
@@ -373,7 +419,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Juno',
     symbol: 'JUNO',
     logo: 'juno.jpeg',
-    coinGeckoId: 'juno-network'
+    coinGeckoId: 'juno-network',
+    cryptoRankId: ''
   },
 
   WHALE: {
@@ -381,7 +428,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'WHALE',
     logo: 'whale.png',
     name: 'White Whale',
-    coinGeckoId: 'white-whale'
+    coinGeckoId: 'white-whale',
+    cryptoRankId: ''
   },
 
   NOIS: {
@@ -389,7 +437,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Nois',
     symbol: 'NOIS',
     logo: 'nois.png',
-    coinGeckoId: 'nois'
+    coinGeckoId: 'nois',
+    cryptoRankId: ''
   },
 
   GF: {
@@ -397,14 +446,16 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     logo: 'gf.png',
     name: 'GuildFi',
-    coinGeckoId: 'guildfi'
+    coinGeckoId: 'guildfi',
+    cryptoRankId: ''
   },
   XBX: {
     decimals: 18,
     symbol: 'XBX',
     name: 'BurnX',
     logo: 'xbx.png',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   TAB: {
@@ -412,7 +463,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'TAB',
     name: 'Injective',
     logo: 'injective-v3.png',
-    coinGeckoId: 'injective-protocol'
+    coinGeckoId: 'injective-protocol',
+    cryptoRankId: ''
   },
 
   AXL: {
@@ -420,7 +472,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'AXL',
     name: 'Axelar',
     logo: 'axelar.png',
-    coinGeckoId: 'axelar'
+    coinGeckoId: 'axelar',
+    cryptoRankId: ''
   },
 
   APE: {
@@ -428,7 +481,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'APE',
     logo: 'ape.png',
     name: 'Ape Coin',
-    coinGeckoId: 'apecoin'
+    coinGeckoId: 'apecoin',
+    cryptoRankId: ''
   },
 
   SCRT: {
@@ -436,7 +490,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SCRT',
     logo: 'scrt.png',
     coinGeckoId: 'secret',
-    name: 'Secret Network'
+    name: 'Secret Network',
+    cryptoRankId: ''
   },
 
   XPRT: {
@@ -444,7 +499,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XPRT',
     logo: 'xprt.png',
     name: 'Persistence',
-    coinGeckoId: 'persistence'
+    coinGeckoId: 'persistence',
+    cryptoRankId: ''
   },
 
   EVMOS: {
@@ -452,7 +508,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Evmos',
     symbol: 'EVMOS',
     logo: 'evmos.png',
-    coinGeckoId: 'evmos'
+    coinGeckoId: 'evmos',
+    cryptoRankId: ''
   },
 
   DOT: {
@@ -460,7 +517,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DOT',
     name: 'Polkadot',
     logo: 'dot.jpeg',
-    coinGeckoId: 'polkadot'
+    coinGeckoId: 'polkadot',
+    cryptoRankId: ''
   },
 
   STRD: {
@@ -468,7 +526,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Stride',
     symbol: 'STRD',
     logo: 'stride.png',
-    coinGeckoId: 'stride'
+    coinGeckoId: 'stride',
+    cryptoRankId: ''
   },
 
   CRE: {
@@ -476,7 +535,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CRE',
     name: 'Crescent',
     logo: 'crescent.jpeg',
-    coinGeckoId: 'crescent-network'
+    coinGeckoId: 'crescent-network',
+    cryptoRankId: ''
   },
 
   ASTRO: {
@@ -484,7 +544,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ASTRO',
     symbol: 'ASTRO',
     logo: 'astroport.png',
-    coinGeckoId: 'astroport-fi'
+    coinGeckoId: 'astroport-fi',
+    cryptoRankId: ''
   },
 
   SOL: {
@@ -492,7 +553,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SOL',
     name: 'Solana',
     logo: 'solana.png',
-    coinGeckoId: 'solana'
+    coinGeckoId: 'solana',
+    cryptoRankId: ''
   },
 
   SOMM: {
@@ -500,7 +562,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SOMM',
     name: 'Sommelier',
     logo: 'sommelier.png',
-    coinGeckoId: 'sommelier'
+    coinGeckoId: 'sommelier',
+    cryptoRankId: ''
   },
 
   ETHBTCTREND: {
@@ -508,7 +571,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'ethbtctrend.png',
     coinGeckoId: '',
     symbol: 'ETHBTCTrend',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   STEADYETH: {
@@ -516,7 +580,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'steadyeth.png',
     coinGeckoId: '',
     symbol: 'SteadyETH',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   STEADYBTC: {
@@ -524,7 +589,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'steadybtc.png',
     coinGeckoId: '',
     symbol: 'SteadyBTC',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   XPLA: {
@@ -532,7 +598,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'XPLA',
     symbol: 'XPLA',
     logo: 'xpla.png',
-    coinGeckoId: 'xpla'
+    coinGeckoId: 'xpla',
+    cryptoRankId: ''
   },
 
   AVAX: {
@@ -540,7 +607,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'AVAX',
     symbol: 'AVAX',
     logo: 'avax.webp',
-    coinGeckoId: 'avalanche-2'
+    coinGeckoId: 'avalanche-2',
+    cryptoRankId: ''
   },
 
   BONK: {
@@ -548,7 +616,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'BONK',
     symbol: 'BONK',
     logo: 'bonk.jpeg',
-    coinGeckoId: 'bonk'
+    coinGeckoId: 'bonk',
+    cryptoRankId: ''
   },
 
   CHZ: {
@@ -556,7 +625,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CHZ',
     name: 'Chiliz',
     logo: 'chz.png',
-    coinGeckoId: 'chiliz'
+    coinGeckoId: 'chiliz',
+    cryptoRankId: ''
   },
 
   QAT: {
@@ -564,7 +634,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'QAT',
     name: 'Test QAT',
     logo: 'injective-v3.png',
-    coinGeckoId: 'injective-protocol'
+    coinGeckoId: 'injective-protocol',
+    cryptoRankId: ''
   },
 
   PUGGO: {
@@ -572,7 +643,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PUG',
     name: 'Puggo',
     coinGeckoId: '',
-    logo: 'puggo.jpg'
+    logo: 'puggo.jpg',
+    cryptoRankId: ''
   },
 
   CANTO: {
@@ -580,7 +652,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Canto',
     symbol: 'CANTO',
     logo: 'canto.webp',
-    coinGeckoId: 'canto'
+    coinGeckoId: 'canto',
+    cryptoRankId: ''
   },
 
   LDO: {
@@ -588,7 +661,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'LDO',
     logo: 'lido-dao.webp',
     name: 'Lido DAO Token',
-    coinGeckoId: 'lido-dao'
+    coinGeckoId: 'lido-dao',
+    cryptoRankId: ''
   },
 
   ARB: {
@@ -596,7 +670,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ARB',
     name: 'Arbitrum',
     logo: 'arb-circle.png',
-    coinGeckoId: 'arbitrum'
+    coinGeckoId: 'arbitrum',
+    cryptoRankId: ''
   },
 
   BRZ: {
@@ -604,7 +679,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BRZ',
     logo: 'brz.png',
     coinGeckoId: 'brz',
-    name: 'Brazilian Digital Token'
+    name: 'Brazilian Digital Token',
+    cryptoRankId: ''
   },
 
   ASTR: {
@@ -612,7 +688,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Astar',
     symbol: 'ASTR',
     logo: 'astar.png',
-    coinGeckoId: 'astar'
+    coinGeckoId: 'astar',
+    cryptoRankId: ''
   },
 
   ALPHA: {
@@ -620,7 +697,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ALPHA',
     logo: 'alpha.png',
     name: 'Alpha Coin',
-    coinGeckoId: 'alphacoin'
+    coinGeckoId: 'alphacoin',
+    cryptoRankId: ''
   },
 
   WMATIC: {
@@ -628,7 +706,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'WMATIC',
     logo: 'polygon.png',
     name: 'Wrapped Matic',
-    coinGeckoId: 'wmatic'
+    coinGeckoId: 'wmatic',
+    cryptoRankId: ''
   },
 
   PEPE: {
@@ -636,7 +715,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'PEPE',
     logo: 'pepe.jpeg',
-    coinGeckoId: 'pepe'
+    coinGeckoId: 'pepe',
+    cryptoRankId: ''
   },
 
   WASSIE: {
@@ -644,7 +724,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'WASSIE',
     symbol: 'WASSIE',
     logo: 'wassie.jpeg',
-    coinGeckoId: 'wassie'
+    coinGeckoId: 'wassie',
+    cryptoRankId: ''
   },
 
   RIBBIT: {
@@ -652,7 +733,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'RIBBIT',
     name: 'Ribbit Meme',
     logo: 'ribbit.jpeg',
-    coinGeckoId: 'ribbit-meme'
+    coinGeckoId: 'ribbit-meme',
+    cryptoRankId: ''
   },
 
   LAMBO: {
@@ -660,7 +742,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Lambo',
     symbol: 'LAMBO',
     logo: 'lambo.jpeg',
-    coinGeckoId: 'lambo-0fcbf0f7-1a8f-470d-ba09-797d5e95d836'
+    coinGeckoId: 'lambo-0fcbf0f7-1a8f-470d-ba09-797d5e95d836',
+    cryptoRankId: ''
   },
 
   STINJ: {
@@ -668,7 +751,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'STINJ',
     logo: 'stinj.png',
     name: 'Stride Staked Injective',
-    coinGeckoId: 'stride-staked-injective'
+    coinGeckoId: 'stride-staked-injective',
+    cryptoRankId: ''
   },
 
   XRP: {
@@ -676,7 +760,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XRP',
     name: 'Ripple',
     logo: 'xrp.png',
-    coinGeckoId: 'ripple'
+    coinGeckoId: 'ripple',
+    cryptoRankId: ''
   },
 
   RAI: {
@@ -684,7 +769,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'RAI',
     logo: 'rai.png',
     coinGeckoId: 'rai',
-    name: 'Rai Reflex Index'
+    name: 'Rai Reflex Index',
+    cryptoRankId: ''
   },
 
   BTSG: {
@@ -692,7 +778,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'btsg.png',
     symbol: 'BitSong',
     coinGeckoId: 'bitsong',
-    name: 'Rai Reflex Index'
+    name: 'Rai Reflex Index',
+    cryptoRankId: ''
   },
 
   CVR: {
@@ -700,7 +787,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CVR',
     logo: 'cvr.png',
     name: 'CoverCompared',
-    coinGeckoId: 'covercompared'
+    coinGeckoId: 'covercompared',
+    cryptoRankId: ''
   },
 
   QNT: {
@@ -708,7 +796,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Quant',
     symbol: 'QNT',
     logo: 'qnt.png',
-    coinGeckoId: 'quant-network'
+    coinGeckoId: 'quant-network',
+    cryptoRankId: ''
   },
 
   WSTETH: {
@@ -716,7 +805,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'WSTETH',
     logo: 'wsteth.png',
     name: 'Lido wstETH',
-    coinGeckoId: 'wrapped-steth'
+    coinGeckoId: 'wrapped-steth',
+    cryptoRankId: ''
   },
 
   DYDX: {
@@ -724,7 +814,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'dYdX',
     logo: 'dydx.png',
-    coinGeckoId: 'dydx'
+    coinGeckoId: 'dydx',
+    cryptoRankId: ''
   },
 
   XAC: {
@@ -732,7 +823,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XAC',
     logo: 'xac.png',
     coinGeckoId: '',
-    name: 'General Attention Currency'
+    name: 'General Attention Currency',
+    cryptoRankId: ''
   },
 
   STETH: {
@@ -740,7 +832,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'stETH',
     logo: 'steth.png',
     name: 'Lido Staked ETH',
-    coinGeckoId: 'staked-ether'
+    coinGeckoId: 'staked-ether',
+    cryptoRankId: ''
   },
 
   LYM: {
@@ -748,7 +841,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Lympo',
     symbol: 'LYM',
     logo: 'lympo.png',
-    coinGeckoId: 'lympo'
+    coinGeckoId: 'lympo',
+    cryptoRankId: ''
   },
 
   OMI: {
@@ -756,7 +850,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ECOMI',
     symbol: 'OMI',
     logo: 'omi.png',
-    coinGeckoId: 'ecomi'
+    coinGeckoId: 'ecomi',
+    cryptoRankId: ''
   },
 
   POINT: {
@@ -764,7 +859,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'POINT',
     coinGeckoId: '',
     logo: 'point.png',
-    name: 'Reward Point Token'
+    name: 'Reward Point Token',
+    cryptoRankId: ''
   },
 
   KAVA: {
@@ -772,7 +868,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'KAVA',
     symbol: 'KAVA',
     logo: 'kava.webp',
-    coinGeckoId: 'kava'
+    coinGeckoId: 'kava',
+    cryptoRankId: ''
   },
 
   VATRENI: {
@@ -780,7 +877,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'VATRENI',
     logo: 'vatreni.jpeg',
     name: 'Vatreni Token',
-    coinGeckoId: 'croatian-ff-fan-token'
+    coinGeckoId: 'croatian-ff-fan-token',
+    cryptoRankId: ''
   },
 
   NBLA: {
@@ -788,7 +886,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Nebula',
     symbol: 'NBLA',
     coinGeckoId: '',
-    logo: 'nebula.png'
+    logo: 'nebula.png',
+    cryptoRankId: ''
   },
 
   WKLAY: {
@@ -796,7 +895,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'WKLAY',
     logo: 'klaytn.webp',
     name: 'Wrapped Klaytn',
-    coinGeckoId: 'klay-token'
+    coinGeckoId: 'klay-token',
+    cryptoRankId: ''
   },
 
   NEOK: {
@@ -804,7 +904,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NEOK',
     logo: 'neok.png',
     name: 'NEOKingdom DAO',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   ORAI: {
@@ -812,7 +913,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ORAI',
     logo: 'orai.png',
     name: 'Oraichain',
-    coinGeckoId: 'oraichain-token'
+    coinGeckoId: 'oraichain-token',
+    cryptoRankId: ''
   },
 
   TIA: {
@@ -820,7 +922,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'TIA',
     name: 'Celestia',
     logo: 'tia.webp',
-    coinGeckoId: 'celestia'
+    coinGeckoId: 'celestia',
+    cryptoRankId: ''
   },
 
   TALIS: {
@@ -828,7 +931,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Talis',
     symbol: 'TALIS',
     logo: 'talis.webp',
-    coinGeckoId: 'talis-protocol'
+    coinGeckoId: 'talis-protocol',
+    cryptoRankId: ''
   },
 
   XTALIS: {
@@ -836,7 +940,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'xTalis',
     coinGeckoId: '',
     symbol: 'XTALIS',
-    logo: 'xtalis.png'
+    logo: 'xtalis.png',
+    cryptoRankId: ''
   },
 
   KIRA: {
@@ -844,7 +949,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'KIRA',
     symbol: 'KIRA',
     logo: 'kira.webp',
-    coinGeckoId: 'kira-the-injective-cat'
+    coinGeckoId: 'kira-the-injective-cat',
+    cryptoRankId: ''
   },
 
   USDYet: {
@@ -852,7 +958,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDYet',
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
-    coinGeckoId: 'ondo-us-dollar-yield'
+    coinGeckoId: 'ondo-us-dollar-yield',
+    cryptoRankId: ''
   },
 
   KUJI: {
@@ -860,7 +967,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'KUJI',
     name: 'Kujira',
     logo: 'kuji.webp',
-    coinGeckoId: 'kujira'
+    coinGeckoId: 'kujira',
+    cryptoRankId: ''
   },
 
   'USDC-MPL': {
@@ -868,7 +976,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     name: 'USDC Maple',
     symbol: 'USDC-MPL',
-    logo: 'usdc-mpl.jpeg'
+    logo: 'usdc-mpl.jpeg',
+    cryptoRankId: ''
   },
 
   PYTH: {
@@ -876,7 +985,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PYTH',
     logo: 'pyth.png',
     name: 'Pyth Network',
-    coinGeckoId: 'pyth-network'
+    coinGeckoId: 'pyth-network',
+    cryptoRankId: ''
   },
 
   TIX: {
@@ -884,7 +994,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'TIX',
     logo: 'tix.png',
     coinGeckoId: '',
-    name: 'Timeworx.io'
+    name: 'Timeworx.io',
+    cryptoRankId: ''
   },
 
   NINJ: {
@@ -892,7 +1003,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nINJ',
     coinGeckoId: '',
     logo: 'ninj.png',
-    name: 'Gryphon Staked Injective'
+    name: 'Gryphon Staked Injective',
+    cryptoRankId: ''
   },
 
   BlackINJ: {
@@ -900,7 +1012,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'blackINJ.png',
     symbol: 'BINJ',
     decimals: 18,
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   BirdINJ: {
@@ -908,7 +1021,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'bird.png',
     symbol: 'BINJ',
     decimals: 6,
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   NINJA: {
@@ -916,7 +1030,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NINJA',
     logo: 'ninja.png',
     name: 'Dog Wif Nunchucks',
-    coinGeckoId: 'dog-wif-nuchucks'
+    coinGeckoId: 'dog-wif-nuchucks',
+    cryptoRankId: ''
   },
 
   KATANA: {
@@ -924,7 +1039,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'KATANA',
     logo: 'katana.webp',
     name: 'Dog Wif Katana',
-    coinGeckoId: 'dogwifkatana'
+    coinGeckoId: 'dogwifkatana',
+    cryptoRankId: ''
   },
 
   GALAXY: {
@@ -932,7 +1048,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'GALAXY',
     coinGeckoId: '',
     symbol: 'GALAXY',
-    logo: 'galaxy.webp'
+    logo: 'galaxy.webp',
+    cryptoRankId: ''
   },
 
   AOI: {
@@ -940,7 +1057,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: '$AOI',
     coinGeckoId: '',
     logo: 'aoi.webp',
-    name: 'Alien Token'
+    name: 'Alien Token',
+    cryptoRankId: ''
   },
 
   NOBI: {
@@ -948,7 +1066,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NOBI',
     name: 'Shinobi',
     coinGeckoId: '',
-    logo: 'nobi.webp'
+    logo: 'nobi.webp',
+    cryptoRankId: ''
   },
 
   YUKI: {
@@ -956,7 +1075,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'YUKI',
     name: 'Yuki Dog',
     logo: 'yuki.png',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   WAGMI: {
@@ -964,7 +1084,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'WAGMI',
     logo: 'wagmi.png',
-    name: 'Wagmi Coin'
+    name: 'Wagmi Coin',
+    cryptoRankId: ''
   },
 
   BAMBOO: {
@@ -972,7 +1093,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'BAMBOO',
     logo: 'panda.png',
-    name: 'Injective Panda'
+    name: 'Injective Panda',
+    cryptoRankId: ''
   },
 
   SHURIKEN: {
@@ -980,7 +1102,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'SHURIKEN',
     logo: 'shuriken.jpeg',
-    name: 'Shuriken Token'
+    name: 'Shuriken Token',
+    cryptoRankId: ''
   },
 
   BRETT: {
@@ -988,7 +1111,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'BRETT',
     name: 'BluePepe',
-    logo: 'brett.jpeg'
+    logo: 'brett.jpeg',
+    cryptoRankId: ''
   },
 
   DOJ: {
@@ -996,7 +1120,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DOJ',
     name: 'DOJcoin',
     logo: 'doj.png',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   ZIG: {
@@ -1004,7 +1129,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ZIG',
     name: 'ZigCoin',
     logo: 'zigg.png',
-    coinGeckoId: 'zignaly'
+    coinGeckoId: 'zignaly',
+    cryptoRankId: ''
   },
 
   SKIPBIDIDOBDOBDOBYESYESYESYES: {
@@ -1012,7 +1138,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'skibidi.jpeg',
     name: 'SKIPBIDIDOBDOBDOBYESYESYESYES',
-    symbol: 'SKIPBIDIDOBDOBDOBYESYESYESYES'
+    symbol: 'SKIPBIDIDOBDOBDOBYESYESYESYES',
+    cryptoRankId: ''
   },
 
   GINGER: {
@@ -1020,7 +1147,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'GINGER',
     symbol: 'GINGER',
     logo: 'ginger.png',
-    coinGeckoId: 'ginger'
+    coinGeckoId: 'ginger',
+    cryptoRankId: ''
   },
 
   ERIC: {
@@ -1028,7 +1156,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ERIC',
     coinGeckoId: '',
     logo: 'eric.png',
-    name: 'TheJanitor'
+    name: 'TheJanitor',
+    cryptoRankId: ''
   },
 
   INJINU: {
@@ -1036,7 +1165,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'INJINU',
     coinGeckoId: '',
     symbol: 'INJINU',
-    logo: 'injinu.png'
+    logo: 'injinu.png',
+    cryptoRankId: ''
   },
 
   Babykira: {
@@ -1044,7 +1174,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     name: 'Babykira',
     symbol: '$Babykira',
-    logo: 'babykira.png'
+    logo: 'babykira.png',
+    cryptoRankId: ''
   },
 
   LIOR: {
@@ -1052,7 +1183,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'LIOR',
     symbol: 'LIOR',
     coinGeckoId: '',
-    logo: 'lior.png'
+    logo: 'lior.png',
+    cryptoRankId: ''
   },
 
   INJER: {
@@ -1060,7 +1192,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'INJER',
     name: 'INJINEER',
-    logo: 'INJINEER.png'
+    logo: 'INJINEER.png',
+    cryptoRankId: ''
   },
 
   SHIBA: {
@@ -1068,7 +1201,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Shiba',
     coinGeckoId: '',
     logo: 'shiba.webp',
-    symbol: 'Shiba INJ'
+    symbol: 'Shiba INJ',
+    cryptoRankId: ''
   },
 
   GROK: {
@@ -1076,7 +1210,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'GROK',
     symbol: 'GROK',
     coinGeckoId: '',
-    logo: 'grok.png'
+    logo: 'grok.png',
+    cryptoRankId: ''
   },
 
   SNOWY: {
@@ -1084,7 +1219,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'SNOWY',
     logo: 'snowy.png',
-    name: 'Injective Snowy'
+    name: 'Injective Snowy',
+    cryptoRankId: ''
   },
 
   BULLS: {
@@ -1092,7 +1228,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'BULLS',
     coinGeckoId: '',
     symbol: 'BULLS',
-    logo: 'bulls.png'
+    logo: 'bulls.png',
+    cryptoRankId: ''
   },
 
   KINJA: {
@@ -1100,7 +1237,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Kinja',
     coinGeckoId: '',
     symbol: 'KINJA',
-    logo: 'kinja.png'
+    logo: 'kinja.png',
+    cryptoRankId: ''
   },
 
   LAMA: {
@@ -1108,7 +1246,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'LAMA',
     symbol: 'LAMA',
     coinGeckoId: '',
-    logo: 'lama.webp'
+    logo: 'lama.webp',
+    cryptoRankId: ''
   },
 
   INJEX: {
@@ -1116,7 +1255,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'NINJB',
     logo: 'injex.png',
-    name: 'Internet Explorer'
+    name: 'Internet Explorer',
+    cryptoRankId: ''
   },
 
   NINJB: {
@@ -1124,7 +1264,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'NINJB',
     coinGeckoId: '',
     symbol: 'NINJB',
-    logo: 'ninjb.png'
+    logo: 'ninjb.png',
+    cryptoRankId: ''
   },
 
   KARATE: {
@@ -1132,7 +1273,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'KARATE',
     logo: 'karate.jpg',
-    name: 'Doge Wif Karate'
+    name: 'Doge Wif Karate',
+    cryptoRankId: ''
   },
 
   NPEPE: {
@@ -1140,7 +1282,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'NPEPE',
     name: 'NinjaPepe',
-    logo: 'npepe.png'
+    logo: 'npepe.png',
+    cryptoRankId: ''
   },
 
   MILK: {
@@ -1148,7 +1291,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'MILK',
     symbol: 'MILK',
     coinGeckoId: '',
-    logo: 'milk.png'
+    logo: 'milk.png',
+    cryptoRankId: ''
   },
 
   INCEL: {
@@ -1156,7 +1300,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'INCEL',
     logo: 'incel.png',
-    name: 'InjectiveCelestiaNoFapLadyBoy420Inu'
+    name: 'InjectiveCelestiaNoFapLadyBoy420Inu',
+    cryptoRankId: ''
   },
 
   PIKACHU: {
@@ -1164,7 +1309,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PIKA',
     name: 'Pikachu',
     coinGeckoId: '',
-    logo: 'pikachu.png'
+    logo: 'pikachu.png',
+    cryptoRankId: ''
   },
 
   WGMI: {
@@ -1172,7 +1318,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'WGMI',
     symbol: 'WGMI',
     coinGeckoId: '',
-    logo: 'wgmi.png'
+    logo: 'wgmi.png',
+    cryptoRankId: ''
   },
 
   WIZZ: {
@@ -1180,7 +1327,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'WIZZ',
     symbol: 'WIZZ',
     coinGeckoId: '',
-    logo: 'wizz.jpeg'
+    logo: 'wizz.jpeg',
+    cryptoRankId: ''
   },
 
   MEMEME: {
@@ -1188,7 +1336,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Mememe',
     logo: 'meme.png',
     symbol: 'MEMEME',
-    coinGeckoId: 'mememe'
+    coinGeckoId: 'mememe',
+    cryptoRankId: ''
   },
 
   MAGA: {
@@ -1196,7 +1345,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Trump',
     symbol: 'MAGA',
     logo: 'maga.png',
-    coinGeckoId: 'maga'
+    coinGeckoId: 'maga',
+    cryptoRankId: ''
   },
 
   SDEX: {
@@ -1204,7 +1354,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SDEX',
     name: 'SmarDex',
     logo: 'maga.png',
-    coinGeckoId: 'smardex'
+    coinGeckoId: 'smardex',
+    cryptoRankId: ''
   },
 
   OX: {
@@ -1212,7 +1363,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     logo: 'ox.png',
     name: 'Open Exchange Token',
-    coinGeckoId: 'open-exchange-token'
+    coinGeckoId: 'open-exchange-token',
+    cryptoRankId: ''
   },
 
   FUSDT: {
@@ -1220,7 +1372,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'fUSDT',
     logo: 'flux.png',
     name: 'Flux USDT',
-    coinGeckoId: 'flux-usdt'
+    coinGeckoId: 'flux-usdt',
+    cryptoRankId: ''
   },
 
   PVP: {
@@ -1228,7 +1381,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 8,
     symbol: 'PVP',
     coinGeckoId: '',
-    logo: 'unknown.png'
+    logo: 'unknown.png',
+    cryptoRankId: ''
   },
 
   POOR: {
@@ -1236,7 +1390,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'POOR',
     coinGeckoId: '',
     logo: 'unknown.png',
-    name: 'Proof Of Officially Rugged'
+    name: 'Proof Of Officially Rugged',
+    cryptoRankId: ''
   },
 
   VRD: {
@@ -1244,7 +1399,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'VRD',
     logo: 'vrd.png',
     name: 'Viridis Network',
-    coinGeckoId: 'viridis-network'
+    coinGeckoId: 'viridis-network',
+    cryptoRankId: ''
   },
 
   NONE: {
@@ -1252,7 +1408,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NONE',
     logo: 'none.webp',
     name: 'None Trading',
-    coinGeckoId: 'none-trading'
+    coinGeckoId: 'none-trading',
+    cryptoRankId: ''
   },
 
   DUDE: {
@@ -1260,7 +1417,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'DUDE',
     symbol: 'DUDE',
     coinGeckoId: '',
-    logo: 'dude.png'
+    logo: 'dude.png',
+    cryptoRankId: ''
   },
 
   AUTISM: {
@@ -1268,7 +1426,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'AUTISM',
     symbol: 'AUTISM',
     logo: 'autism.png',
-    coinGeckoId: 'autism'
+    coinGeckoId: 'autism',
+    cryptoRankId: ''
   },
 
   EXTRAVIRGINOLIVEINU: {
@@ -1276,7 +1435,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'NOBITCHES',
     name: 'Extra Virgin Olive Inu',
-    logo: 'extravirginoliveinu.png'
+    logo: 'extravirginoliveinu.png',
+    cryptoRankId: ''
   },
 
   MILA: {
@@ -1284,7 +1444,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'MILA',
     symbol: 'MILA',
     coinGeckoId: '',
-    logo: 'mila.png'
+    logo: 'mila.png',
+    cryptoRankId: ''
   },
 
   IPDAI: {
@@ -1292,7 +1453,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'ipdai.png',
     symbol: 'IPandaAI',
-    name: 'Injective Panda AI'
+    name: 'Injective Panda AI',
+    cryptoRankId: ''
   },
 
   COCK: {
@@ -1300,7 +1462,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'COCK',
     coinGeckoId: '',
     logo: 'cock.png',
-    name: 'ROOSTER NINJA'
+    name: 'ROOSTER NINJA',
+    cryptoRankId: ''
   },
 
   MOONIFY: {
@@ -1308,7 +1471,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Moonify',
     coinGeckoId: '',
     symbol: 'MOONIFY',
-    logo: 'moonify.png'
+    logo: 'moonify.png',
+    cryptoRankId: ''
   },
 
   KARMAINJ: {
@@ -1316,7 +1480,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Karma',
     coinGeckoId: '',
     symbol: 'KARMA',
-    logo: 'karma.png'
+    logo: 'karma.png',
+    cryptoRankId: ''
   },
 
   DREAM: {
@@ -1324,7 +1489,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'DREAM',
     coinGeckoId: '',
     symbol: 'DREAM',
-    logo: 'DREAM.png'
+    logo: 'DREAM.png',
+    cryptoRankId: ''
   },
 
   DGNZ: {
@@ -1332,7 +1498,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DGNZ',
     coinGeckoId: '',
     logo: 'DGNZ.png',
-    name: 'Injective Degens'
+    name: 'Injective Degens',
+    cryptoRankId: ''
   },
 
   INJECT: {
@@ -1340,7 +1507,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'INJECT',
     name: 'Injectools',
-    logo: 'INJECT.png'
+    logo: 'INJECT.png',
+    cryptoRankId: ''
   },
 
   WAIFU: {
@@ -1348,7 +1516,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Waifu',
     coinGeckoId: '',
     symbol: 'WAIFU',
-    logo: 'waifu-logo.png'
+    logo: 'waifu-logo.png',
+    cryptoRankId: ''
   },
 
   APP: {
@@ -1356,7 +1525,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'APP',
     name: 'Moon App',
     logo: 'app.jpeg',
-    coinGeckoId: 'moon-app'
+    coinGeckoId: 'moon-app',
+    cryptoRankId: ''
   },
 
   DOJO: {
@@ -1364,7 +1534,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DOJO',
     name: 'Dojo Token',
     logo: 'dojo-token.png',
-    coinGeckoId: 'dojo-token'
+    coinGeckoId: 'dojo-token',
+    cryptoRankId: ''
   },
 
   DOJOBot: {
@@ -1372,7 +1543,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DOJO',
     coinGeckoId: '',
     name: 'Dojo bot',
-    logo: 'dojo-bot.png'
+    logo: 'dojo-bot.png',
+    cryptoRankId: ''
   },
 
   PUNK: {
@@ -1380,7 +1552,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PUNK',
     coinGeckoId: '',
     name: 'Punk Token',
-    logo: 'punk-token.webp'
+    logo: 'punk-token.webp',
+    cryptoRankId: ''
   },
 
   PUNKDAO: {
@@ -1388,7 +1561,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PUNK',
     coinGeckoId: '',
     logo: 'PUNK.png',
-    name: 'Punk DAO Token'
+    name: 'Punk DAO Token',
+    cryptoRankId: ''
   },
 
   ORNE: {
@@ -1396,7 +1570,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ORNE',
     symbol: 'ORNE',
     logo: 'orne.png',
-    coinGeckoId: 'orne'
+    coinGeckoId: 'orne',
+    cryptoRankId: ''
   },
 
   DROGO: {
@@ -1404,7 +1579,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'DROGO',
     coinGeckoId: '',
     symbol: 'DROGO',
-    logo: 'drogo.png'
+    logo: 'drogo.png',
+    cryptoRankId: ''
   },
 
   RAMEN: {
@@ -1412,7 +1588,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Ramen',
     coinGeckoId: '',
     symbol: 'RAMEN',
-    logo: 'ramen.jpeg'
+    logo: 'ramen.jpeg',
+    cryptoRankId: ''
   },
 
   GYEN: {
@@ -1420,7 +1597,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'GYEN',
     name: 'GMO JPY',
     logo: 'gyen.webp',
-    coinGeckoId: 'gyen'
+    coinGeckoId: 'gyen',
+    cryptoRankId: ''
   },
 
   ALIEN: {
@@ -1428,7 +1606,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ALIEN',
     coinGeckoId: '',
     symbol: '$ALIEN',
-    logo: 'alien.png'
+    logo: 'alien.png',
+    cryptoRankId: ''
   },
 
   RICE: {
@@ -1436,7 +1615,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 12,
     symbol: 'RICE',
     coinGeckoId: '',
-    logo: 'RICE.jpeg'
+    logo: 'RICE.jpeg',
+    cryptoRankId: ''
   },
 
   BITS: {
@@ -1444,7 +1624,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'bits',
     symbol: 'BITS',
     coinGeckoId: '',
-    logo: 'bits.png'
+    logo: 'bits.png',
+    cryptoRankId: ''
   },
 
   WOSMO: {
@@ -1452,7 +1633,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Wosmo',
     coinGeckoId: '',
     symbol: 'WOSMO',
-    logo: 'WOSMO.png'
+    logo: 'WOSMO.png',
+    cryptoRankId: ''
   },
 
   IKINGS: {
@@ -1460,7 +1642,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'IKINGS',
     logo: 'IKINGS.png',
-    name: 'Injective Kings'
+    name: 'Injective Kings',
+    cryptoRankId: ''
   },
 
   BEAST: {
@@ -1468,7 +1651,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'BEAST',
     logo: 'beast.png',
-    name: 'Gelotto BEAST'
+    name: 'Gelotto BEAST',
+    cryptoRankId: ''
   },
 
   GLTO: {
@@ -1476,7 +1660,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'GLTO',
     name: 'Gelotto',
     coinGeckoId: '',
-    logo: 'GLTO.png'
+    logo: 'GLTO.png',
+    cryptoRankId: ''
   },
 
   ANDR: {
@@ -1484,7 +1669,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ANDR',
     name: 'Andromeda',
     logo: 'andromeda.webp',
-    coinGeckoId: 'andromeda-2'
+    coinGeckoId: 'andromeda-2',
+    cryptoRankId: ''
   },
 
   hINJ: {
@@ -1492,7 +1678,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'hINJ',
     coinGeckoId: '',
     logo: 'hinj.svg',
-    name: 'Hydro Wrapped INJ'
+    name: 'Hydro Wrapped INJ',
+    cryptoRankId: ''
   },
 
   QUNT: {
@@ -1500,7 +1687,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'QUNT',
     symbol: 'QUNT',
     coinGeckoId: '',
-    logo: 'qunt.png'
+    logo: 'qunt.png',
+    cryptoRankId: ''
   },
 
   HDRO: {
@@ -1508,7 +1696,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Hydro',
     symbol: 'HDRO',
     coinGeckoId: 'hydro-protocol-2',
-    logo: 'hydro.png'
+    logo: 'hydro.png',
+    cryptoRankId: ''
   },
 
   DINJ: {
@@ -1516,7 +1705,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'dINJ',
     coinGeckoId: '',
     logo: 'dinj.svg',
-    name: 'Dojo Staked INJ'
+    name: 'Dojo Staked INJ',
+    cryptoRankId: ''
   },
 
   BMOS: {
@@ -1524,7 +1714,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'BMOS',
     symbol: 'BMOS',
     coinGeckoId: '',
-    logo: 'bitmos.png'
+    logo: 'bitmos.png',
+    cryptoRankId: ''
   },
 
   XNJ: {
@@ -1532,7 +1723,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XNJ',
     logo: 'xnj.png',
     coinGeckoId: '',
-    name: 'xNinja.Tech Token'
+    name: 'xNinja.Tech Token',
+    cryptoRankId: ''
   },
 
   KAGE: {
@@ -1540,7 +1732,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'KAGE',
     logo: 'kage.png',
-    coinGeckoId: 'kage'
+    coinGeckoId: 'kage',
+    cryptoRankId: ''
   },
 
   USDE: {
@@ -1548,7 +1741,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDe',
     logo: 'usde.png',
     name: 'Ethena USDe',
-    coinGeckoId: 'ethena-usde'
+    coinGeckoId: 'ethena-usde',
+    cryptoRankId: ''
   },
 
   INJX: {
@@ -1556,7 +1750,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'INJX',
     coinGeckoId: '',
     logo: 'injx.png',
-    name: 'Injex Finance'
+    name: 'Injex Finance',
+    cryptoRankId: ''
   },
 
   nINJ: {
@@ -1564,7 +1759,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nINJ',
     coinGeckoId: '',
     logo: 'neptinj.png',
-    name: 'Neptune Receipt INJ'
+    name: 'Neptune Receipt INJ',
+    cryptoRankId: ''
   },
 
   nATOM: {
@@ -1572,7 +1768,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nATOM',
     coinGeckoId: '',
     logo: 'natom.png',
-    name: 'Neptune Receipt ATOM'
+    name: 'Neptune Receipt ATOM',
+    cryptoRankId: ''
   },
 
   nUSDT: {
@@ -1580,7 +1777,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nUSDT',
     coinGeckoId: '',
     logo: 'nusdt.png',
-    name: 'Neptune Receipt USDT'
+    name: 'Neptune Receipt USDT',
+    cryptoRankId: ''
   },
 
   nWETH: {
@@ -1588,7 +1786,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nWETH',
     coinGeckoId: '',
     logo: 'nweth.png',
-    name: 'Neptune Receipt WETH'
+    name: 'Neptune Receipt WETH',
+    cryptoRankId: ''
   },
 
   BAND: {
@@ -1596,7 +1795,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BAND',
     logo: 'band.webp',
     name: 'Band Protocol',
-    coinGeckoId: 'band-protocol'
+    coinGeckoId: 'band-protocol',
+    cryptoRankId: ''
   },
 
   BSKT: {
@@ -1604,7 +1804,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Basket',
     symbol: 'BSKT',
     logo: 'bskt.png',
-    coinGeckoId: 'basket'
+    coinGeckoId: 'basket',
+    cryptoRankId: ''
   },
 
   BLACK: {
@@ -1612,7 +1813,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'BLACK',
     coinGeckoId: '',
     symbol: 'BLACK',
-    logo: 'BLACK.png'
+    logo: 'BLACK.png',
+    cryptoRankId: ''
   },
 
   ROOT: {
@@ -1620,7 +1822,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ROOT',
     logo: 'root.png',
     name: 'The Root Network',
-    coinGeckoId: 'the-root-network'
+    coinGeckoId: 'the-root-network',
+    cryptoRankId: ''
   },
 
   NONJA: {
@@ -1628,7 +1831,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'NONJA',
     coinGeckoId: '',
     symbol: 'NONJA',
-    logo: 'nonja.png'
+    logo: 'nonja.png',
+    cryptoRankId: ''
   },
 
   ZEN: {
@@ -1636,7 +1840,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'ZEN',
     logo: 'zen.svg',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   PROJ: {
@@ -1644,7 +1849,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'PROJ',
     coinGeckoId: '',
-    logo: 'proj.png'
+    logo: 'proj.png',
+    cryptoRankId: ''
   },
 
   PROJX: {
@@ -1652,7 +1858,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'PROJX',
     coinGeckoId: '',
     symbol: 'PROJX',
-    logo: 'projx.png'
+    logo: 'projx.png',
+    cryptoRankId: ''
   },
 
   DEMO: {
@@ -1660,7 +1867,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DEMO',
     coinGeckoId: '',
     name: 'Demo Coin',
-    logo: 'injective-v3.png'
+    logo: 'injective-v3.png',
+    cryptoRankId: ''
   },
 
   MITOTEST2: {
@@ -1668,7 +1876,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'MT',
     coinGeckoId: '',
     logo: 'mito-test.png',
-    name: 'Mito test token'
+    name: 'Mito test token',
+    cryptoRankId: ''
   },
 
   TEST1: {
@@ -1676,7 +1885,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Test 1',
     symbol: 'TEST1',
     coinGeckoId: '',
-    logo: 'mito-test.png'
+    logo: 'mito-test.png',
+    cryptoRankId: ''
   },
 
   TEST2: {
@@ -1684,7 +1894,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Test 2',
     symbol: 'TEST2',
     coinGeckoId: '',
-    logo: 'mito-test.png'
+    logo: 'mito-test.png',
+    cryptoRankId: ''
   },
 
   TEST3: {
@@ -1692,7 +1903,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Test 3',
     symbol: 'TEST3',
     coinGeckoId: '',
-    logo: 'mito-test.png'
+    logo: 'mito-test.png',
+    cryptoRankId: ''
   },
 
   PHUC: {
@@ -1700,7 +1912,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Phuc',
     symbol: 'PHUC',
     coinGeckoId: '',
-    logo: 'mito-test.png'
+    logo: 'mito-test.png',
+    cryptoRankId: ''
   },
 
   LVN: {
@@ -1708,7 +1921,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Levana',
     symbol: 'LVN',
     coinGeckoId: 'levana-protocol',
-    logo: 'lvn.png'
+    logo: 'lvn.png',
+    cryptoRankId: ''
   },
 
   NLC: {
@@ -1716,7 +1930,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NLC',
     logo: 'nlc.png',
     coinGeckoId: '',
-    name: 'Ninja Labs Coin'
+    name: 'Ninja Labs Coin',
+    cryptoRankId: ''
   },
 
   BONJO: {
@@ -1724,7 +1939,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Bonjo',
     symbol: 'BONJO',
     coinGeckoId: '',
-    logo: 'bonjo.png'
+    logo: 'bonjo.png',
+    cryptoRankId: ''
   },
 
   ENA: {
@@ -1732,7 +1948,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Ethena',
     logo: 'ethena.webp',
-    coinGeckoId: 'ethena'
+    coinGeckoId: 'ethena',
+    cryptoRankId: ''
   },
 
   BONUS: {
@@ -1740,7 +1957,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BONUS',
     coinGeckoId: 'bonusblock',
     name: 'Bonus Block',
-    logo: 'bonus-block.png'
+    logo: 'bonus-block.png',
+    cryptoRankId: ''
   },
 
   W: {
@@ -1748,7 +1966,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Wormhole',
     symbol: 'W',
     coinGeckoId: 'wormhole',
-    logo: 'wormhole.png'
+    logo: 'wormhole.png',
+    cryptoRankId: ''
   },
 
   SAE: {
@@ -1756,7 +1975,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     logo: 'sae.png',
     coinGeckoId: '',
-    name: 'Summoners Arena Essence'
+    name: 'Summoners Arena Essence',
+    cryptoRankId: ''
   },
 
   XIII: {
@@ -1764,7 +1984,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XIII',
     coinGeckoId: 'xiiicoin',
     logo: 'xiii.png',
-    name: 'XIII Coin'
+    name: 'XIII Coin',
+    cryptoRankId: ''
   },
 
   DDL: {
@@ -1772,7 +1993,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DDL',
     logo: 'ddl.png',
     coinGeckoId: '',
-    name: 'Discordels Token'
+    name: 'Discordels Token',
+    cryptoRankId: ''
   },
 
   ASG: {
@@ -1780,7 +2002,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ASG',
     logo: 'asg.png',
     coinGeckoId: '',
-    name: 'Ancient Summoners Gem'
+    name: 'Ancient Summoners Gem',
+    cryptoRankId: ''
   },
 
   CLON: {
@@ -1788,7 +2011,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'CLON',
     symbol: 'CLON',
     coinGeckoId: '',
-    logo: 'clon1.png'
+    logo: 'clon1.png',
+    cryptoRankId: ''
   },
 
   SPUUN: {
@@ -1796,7 +2020,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'SPUUN',
     symbol: 'SPUUN',
     coinGeckoId: '',
-    logo: 'spuun.png'
+    logo: 'spuun.png',
+    cryptoRankId: ''
   },
 
   OMNI: {
@@ -1804,7 +2029,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Omni Network',
     logo: 'omni.png',
     symbol: 'OMNI',
-    coinGeckoId: 'omni-network'
+    coinGeckoId: 'omni-network',
+    cryptoRankId: ''
   },
 
   SUSDE: {
@@ -1812,7 +2038,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Staked USDe',
     logo: 'staked-usde.webp',
     symbol: 'sUSDE',
-    coinGeckoId: 'ethena-staked-usde'
+    coinGeckoId: 'ethena-staked-usde',
+    cryptoRankId: ''
   },
 
   SAGA: {
@@ -1820,7 +2047,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Saga',
     logo: 'saga.webp',
     symbol: 'SAGA',
-    coinGeckoId: 'saga-2'
+    coinGeckoId: 'saga-2',
+    cryptoRankId: ''
   },
 
   GOLDIE: {
@@ -1828,7 +2056,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Goldicocks',
     logo: 'goldie.webp',
     symbol: 'GOLDIE',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   ezETH: {
@@ -1836,7 +2065,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Renzo Restaked ETH',
     logo: 'ezeth.webp',
     symbol: 'ezETH',
-    coinGeckoId: 'renzo-restaked-eth'
+    coinGeckoId: 'renzo-restaked-eth',
+    cryptoRankId: ''
   },
 
   NBZ: {
@@ -1844,7 +2074,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Ninja Blaze Token',
     logo: 'nbz.png',
     symbol: 'NBZ',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   MOTHER: {
@@ -1852,7 +2083,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'MOTHER IGGY',
     symbol: 'MOTHER',
     coinGeckoId: 'mother-iggy',
-    logo: 'mother.webp'
+    logo: 'mother.webp',
+    cryptoRankId: ''
   },
 
   GME: {
@@ -1860,7 +2092,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'GME',
     symbol: 'GME',
     coinGeckoId: 'gme',
-    logo: 'gme.jpeg'
+    logo: 'gme.jpeg',
+    cryptoRankId: ''
   },
 
   COKE: {
@@ -1868,7 +2101,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'coke.webp',
     coinGeckoId: '',
     symbol: 'COKE',
-    decimals: 6
+    decimals: 6,
+    cryptoRankId: ''
   },
 
   SHROOM: {
@@ -1876,7 +2110,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'shroom.webp',
     coinGeckoId: '',
     symbol: 'SHROOM',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   SMELLY: {
@@ -1884,7 +2119,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'smelly.webp',
     coinGeckoId: '',
     symbol: 'SMELLY',
-    decimals: 6
+    decimals: 6,
+    cryptoRankId: ''
   },
 
   ELON: {
@@ -1892,7 +2128,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'ELON',
     decimals: 6,
     logo: 'elon.webp',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   nTIA: {
@@ -1900,7 +2137,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'ntia.png',
     symbol: 'nTIA',
     decimals: 6,
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   PYUSD: {
@@ -1908,7 +2146,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'pyusd.png',
     coinGeckoId: 'paypal-usd',
     symbol: 'PYUSD',
-    decimals: 6
+    decimals: 6,
+    cryptoRankId: ''
   },
 
   IOTX: {
@@ -1916,7 +2155,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'iotex.webp',
     name: 'IoTeX',
     symbol: 'IOTX',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   FET: {
@@ -1924,7 +2164,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'fetch.png',
     name: 'Fetch.ai',
     symbol: 'FET',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   SNS: {
@@ -1932,7 +2173,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'sns.webp',
     name: 'SynesisOne',
     symbol: 'SNS',
-    decimals: 8
+    decimals: 8,
+    cryptoRankId: ''
   },
 
   GIGA: {
@@ -1940,11 +2182,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'giga.png',
     name: 'Gigachad',
     symbol: 'GIGA',
-    decimals: 5
+    decimals: 5,
+    cryptoRankId: ''
   },
 
   wUSDM: {
-    coinGeckoId: 'wrapped-usdm',
+    coinGeckoId: '',
+    cryptoRankId: '187608',
     logo: 'wusdm.webp',
     name: 'Wrapped USDM',
     symbol: 'wUSDM',
@@ -1956,7 +2200,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'nbz-airdrop.png',
     name: 'Ninja Blaze Airdrop Box',
     symbol: 'NBZAIRDROP',
-    decimals: 0
+    decimals: 0,
+    cryptoRankId: ''
   },
 
   NBZLOOTBOX1: {
@@ -1964,7 +2209,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'nbz-lootbox-1.png',
     name: 'Ninja Blaze Novice Box',
     symbol: 'lootbox1',
-    decimals: 0
+    decimals: 0,
+    cryptoRankId: ''
   },
 
   TEVMOS: {
@@ -1972,7 +2218,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'evmos.png',
     name: 'TEvmos',
     symbol: 'TEvmos',
-    decimals: 18
+    decimals: 18,
+    cryptoRankId: ''
   },
 
   USDY: {
@@ -1980,7 +2227,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDY',
     logo: 'usdy.webp',
     name: 'Ondo US Dollar Yield',
-    coinGeckoId: 'ondo-us-dollar-yield'
+    coinGeckoId: 'ondo-us-dollar-yield',
+    cryptoRankId: ''
   },
 
   XION: {
@@ -1988,7 +2236,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XION',
     logo: 'xion.png',
     name: 'XION',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   bnUSD: {
@@ -1996,7 +2245,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'bnUSD',
     logo: 'bnUSD.svg',
     name: 'Balanced Dollar',
-    coinGeckoId: 'balanced-dollars'
+    coinGeckoId: 'balanced-dollars',
+    cryptoRankId: ''
   },
 
   TON: {
@@ -2004,7 +2254,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'TON',
     logo: 'ton.png',
     name: 'Toncoin',
-    coinGeckoId: 'the-open-network'
+    coinGeckoId: 'the-open-network',
+    cryptoRankId: ''
   },
 
   backboneInj: {
@@ -2012,7 +2263,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'bINJ',
     logo: 'backboneInj.png',
     name: 'BackBone Labs LST',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   syndicate: {
@@ -2020,7 +2272,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SYN',
     logo: 'syndicate.png',
     name: 'Galactic Syndicate',
-    coinGeckoId: ''
+    coinGeckoId: '',
+    cryptoRankId: ''
   },
 
   PAIN: {
@@ -2028,6 +2281,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'pain.png',
     coinGeckoId: '',
     symbol: 'PAIN',
-    decimals: 6
+    decimals: 6,
+    cryptoRankId: ''
   }
 }

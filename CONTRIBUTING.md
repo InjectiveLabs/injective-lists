@@ -16,6 +16,7 @@ export interface TokenSymbolMeta {
   symbol: string;
   decimals: number;
   coinGeckoId: string;
+  cryptoRankId: string;
 }
 ```
 
@@ -32,6 +33,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'imageFileName.png',
     symbol: 'EXAMPLE',
     coinGeckoId: 'example-coinGeckoId',
+    cryptoRankId: '123456',
   }
 }
 ```
@@ -82,6 +84,7 @@ export const mainnetTokens = [
     ...symbolMeta.EXAMPLE,
     decimals: 6,
     coinGeckoId: "example-coinGeckoId-override",
+    cryptoRankId: "654321",
     name: "example-override",
     logo: "imageFileName-override.png",
     symbol: "symbol-override",
@@ -120,6 +123,7 @@ export const mainnetTokens = [
     baseDenom: "uexample",
     decimals: 6,
     coinGeckoId: "example-coinGeckoId-override",
+    cryptoRankId: "654321",
     name: "example-override",
     logo: "imageFileName-override.png",
     symbol: "symbol-override",
@@ -148,6 +152,7 @@ export const mainnetTokens = [
     ...symbolMeta.EXAMPLE,
     decimals: 6,
     coinGeckoId: "example-coinGeckoId-override",
+    cryptoRankId: "654321",
     name: "example-override",
     logo: "imageFileName-override.png",
     symbol: "symbol-override",
@@ -178,6 +183,7 @@ export const mainnetTokens = [
     creator: "inj...",
     decimals: 6,
     coinGeckoId: "example-coinGeckoId-override",
+    cryptoRankId: "654321",
     name: "example-override",
     logo: "imageFileName-override.png",
     symbol: "symbol-override",
