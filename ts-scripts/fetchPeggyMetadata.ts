@@ -28,7 +28,6 @@ const formatAlchemyToken = (
     ...token,
     denom,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-    cryptoRankId: untaggedSymbolMeta.Unknown.cryptoRankId,
     logo: token.logo || untaggedSymbolMeta.Unknown.logo,
     address: denom.replace('peggy', ''),
     tokenType: TokenType.Erc20,

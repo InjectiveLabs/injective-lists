@@ -54,7 +54,6 @@ const formatInsuranceFund = (insuranceFund: InsuranceFund): Token => {
     denom,
     decimals: 18,
     coinGeckoId: '',
-    cryptoRankId: '',
     symbol: denom,
     address: denom,
     logo: symbolMeta.INJ.logo,

@@ -13,7 +13,6 @@ export interface TokenSymbolMeta {
   symbol: string
   decimals: number
   coinGeckoId: string
-  cryptoRankId: string | ''
 }
 
 export interface AlchemyTokenSource {
@@ -51,7 +50,6 @@ export interface Token {
   symbol: string
   decimals: number
   coinGeckoId: string
-  cryptoRankId: string
   denom: string
   address: string
   tokenType: string
