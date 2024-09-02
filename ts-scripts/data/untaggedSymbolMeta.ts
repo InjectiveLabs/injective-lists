@@ -202,7 +202,7 @@ export const untaggedSymbolMeta = {
   buidl: {
     decimals: 6,
     symbol: 'BUIDL',
-    name: 'BlackRock BUIDL',
+    name: 'BUIDL/USDT Index PERP',
     logo: 'buidl.webp',
     coinGeckoId: 'blackrock-usd-institutional-digital-liquidity-fund'
   }
