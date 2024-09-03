@@ -1,5 +1,5 @@
 export const newMarkets = [
-  'buidl-usdt-perp',
+  // 'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
@@ -18,7 +18,7 @@ export const newMarkets = [
 ]
 
 export const experimental = [
-  'buidl-usdt-perp',
+  // 'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
   'wusdm-usdt',
@@ -58,7 +58,7 @@ export const cosmos = [
 ]
 
 export const ethereum = [
-  'buidl-usdt-perp',
+  // 'buidl-usdt-perp',
   'ton-usdt',
   'wusdm-usdt',
   'inj-usdt',
