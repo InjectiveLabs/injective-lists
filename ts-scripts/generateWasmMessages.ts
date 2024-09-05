@@ -11,37 +11,18 @@ import {
   getNetworkFileName
 } from './helper/utils'
 import { fetchQueryMessages } from './fetchWasmQueryMessages'
-// import { fetchExecuteMessages } from './fetchWasmExecuteMessages'
-
-const mainnetWasmApi = new ChainGrpcWasmApi(
-  getNetworkEndpoints(Network.MainnetSentry).grpc
-)
-
-const testnetWasmApi = new ChainGrpcWasmApi(
-  getNetworkEndpoints(Network.TestnetSentry).grpc
-)
-
-const devnetWasmApi = new ChainGrpcWasmApi(getNetworkEndpoints(Network.Devnet).grpc)
-
-const getWasmApi = (network: Network): ChainGrpcWasmApi => {
-  if (isDevnet(network)) {
-    return devnetWasmApi
-  }
-
-  if (isTestnet(network)) {
-    return testnetWasmApi
-  }
-
-  return mainnetWasmApi
-}
+import { fetchExecuteMessages } from './fetchWasmExecuteMessages'
 
 const getCodeIds = async (network: Network) => {
-  const path = `data/codeIds/${getNetworkFileName(network)}.json`
-  const codeIds = [] as string[]
-  let nextKey
+  const path = `data/wasm/codeIds/${getNetworkFileName(network)}.json`
+
+  const existingCodeIdsList = readJSONFile({ path, fallback: [] })
 
   try {
-    const wasmApi = getWasmApi(network)
+    let nextKey
+    const codeIds = [] as string[]
+    const endpoints = getNetworkEndpoints(network)
+    const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
 
 
     while (nextKey) {
@@ -53,8 +34,9 @@ const getCodeIds = async (network: Network) => {
       nextKey = pagination.next
     }
 
-    // todo: make codeIds json
-    // await updateJSONFile(path, response.data)
+    const updatedCodeIdsList = [...new Set([...existingCodeIdsList, ...codeIds])]
+
+    await updateJSONFile(path, updatedCodeIdsList)
 
     return codeIds
   } catch (e) {
@@ -68,25 +50,21 @@ const getCodeIds = async (network: Network) => {
 
 
 const getContractAddresses = async (network: Network) => {
-  const path = `data/contractAddresses/${getNetworkFileName(network)}.json`
-
   try {
+    const endpoints = getNetworkEndpoints(network)
+    const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
+
     const codeIds = await getCodeIds(network)
 
-    const wasmApi = getWasmApi(network)
+    return (await Promise.all(
+      codeIds.map(async (codeId: string) => {
+        const { contractsList } = await wasmApi.fetchContractCodeContracts(Number(codeId));
 
-    const addresses = [] as string[]
+        const [contractAddresses] = contractsList
 
-    codeIds.forEach(async (codeId: string) => {
-      const { contractsList } = await wasmApi.fetchContractCodeContracts(Number(codeId))
-
-      const [contractAddresses] = contractsList
-
-      addresses.push(contractAddresses)
-    })
-
-    // todo: make contractAddresses json
-    // await updateJSONFile(path, response.data)
+        return contractAddresses
+      })
+    )).filter(address => address)
   }
   catch (e) {
     console.log(
@@ -94,33 +72,51 @@ const getContractAddresses = async (network: Network) => {
     )
 
     console.log(e)
-
-    return readJSONFile({ path })
   }
 }
 
 
 const generateWasmMessages = async (network: Network) => {
- const path = `data/wasmMessages/${getNetworkFileName(network)}.json`
+  const queryPath = `wasm/query/${getNetworkFileName(network)}.json`
+  const executePath = `wasm/execute/${getNetworkFileName(network)}.json`
 
   try {
     const contractAddressesFromApi = await getContractAddresses(network)
-    const contractAddressToQueryMessageMap = await readJSONFile({
-      path: `data/wasm/query/${getNetworkFileName(network)}.json`
-    })
 
-    const contractToMessagesMap = await Promise.all(
+    const existingCodeIdToQueryMessagesMap = readJSONFile({ path: queryPath })
+    const existingCodeIdToExecuteMessagesMap = readJSONFile({ path: executePath })
+
+    if (!contractAddressesFromApi) {
+      return
+    }
+
+    const codeIdToQueryMessagesMap = await Promise.all(
       contractAddressesFromApi.map(async (contractAddress: string) => {
-        const queryMessages = await fetchQueryMessages(contractAddress, network) || contractAddressToQueryMessageMap[contractAddress]
-        // todo: implement execute
-        // const executeMessages = await fetchExecuteMessages(contractAddress, network);
+        if (existingCodeIdToQueryMessagesMap[contractAddress]) {
+          return existingCodeIdToQueryMessagesMap[contractAddress]
+        }
 
-        // return { [contractAddress]: { query: queryMessages, execute: executeMessages } };
+        const queryMessages = await fetchQueryMessages(contractAddress, network)
+
+        return { [contractAddress]: queryMessages };
       })
     ).then((results) => results.reduce((acc, curr) => ({ ...acc, ...curr }), {}));
 
-    // todo: make contractToMessagesMap json
-    // await updateJSONFile(path, response.data)
+    await updateJSONFile(queryPath, codeIdToQueryMessagesMap)
+
+    const codeIdToExecuteMessagesMap = await Promise.all(
+      contractAddressesFromApi.map(async (contractAddress: string) => {
+        if (existingCodeIdToExecuteMessagesMap[contractAddress]) {
+          return existingCodeIdToExecuteMessagesMap[contractAddress]
+        }
+
+        const queryMessages = await fetchExecuteMessages(contractAddress, network)
+
+        return { [contractAddress]: queryMessages };
+      })
+    ).then((results) => results.reduce((acc, curr) => ({ ...acc, ...curr }), {}));
+
+    await updateJSONFile(executePath, codeIdToExecuteMessagesMap)
   } catch (e) {
     console.log('Error generateWasmMessages', e)
 

@@ -2,6 +2,7 @@ import { dirname, resolve } from 'node:path'
 import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/sdk-ts'
+import { ChainId } from '@injectivelabs/ts-types'
 import { Token, BankMetadata } from '../types'
 
 export const getTokenType = (denom: string): TokenType => {
@@ -187,4 +188,50 @@ export const updateJSONFile = (path: string, data: any) => {
   } catch (e: any) {
     console.error(`Error updating JSON file: ${path}`, e)
   }
+}
+
+export const getFeePayerInjectiveAddress = (network: Network) => {
+  if (!process.env.FEE_PAYER_KEY_MAINNET || !process.env.FEE_PAYER_KEY_TESTNET || !process.env.FEE_PAYER_KEY_DEVNET) {
+    throw new Error('fee payer injective addresses not found!')
+  }
+
+  if (isMainnet(network)) {
+    return process.env.FEE_PAYER_KEY_MAINNET
+  }
+
+  if (isTestnet(network)) {
+    return process.env.FEE_PAYER_KEY_TESTNET
+  }
+
+  return process.env.FEE_PAYER_KEY_DEVNET
+}
+
+export const wasmErrorToMessageArray = (error: any): string[] => {
+  const messageSupportedRegex =
+    /Messages supported by this contract: (.*?)(?=: query wasm contract failed: unknown request)/
+  const contentMatch = messageSupportedRegex.exec(error.message)
+
+  if (contentMatch && contentMatch[1]) {
+    const content = contentMatch[1].split(',')
+
+    return content.map((each) => each.trim())
+  }
+
+  const matches = error.message.match(/`(.*?)`/g)
+
+  return matches
+    ? matches.slice(1).map((match: string) => match.replace(/`/g, ''))
+    : []
+}
+
+export const getChainIdFromNetwork = (network: Network) => {
+  if (isMainnet(network)) {
+    return ChainId.Mainnet
+  }
+
+  if (isTestnet(network)) {
+    return ChainId.Testnet
+  }
+
+  return ChainId.Devnet
 }

@@ -1,54 +1,18 @@
-import { toBase64, ChainGrpcWasmApi } from '@injectivelabs/sdk-ts'
-import {
-  Network,
-  isDevnet,
-  isTestnet,
-  getNetworkEndpoints
-} from '@injectivelabs/networks'
-import { updateJSONFile, getNetworkFileName } from './helper/utils'
 
-const mainnetWasmApi = new ChainGrpcWasmApi(
-  getNetworkEndpoints(Network.MainnetSentry).grpc
-)
+import { toBase64, ChainGrpcWasmApi } from '@injectivelabs/sdk-ts';
+import { Network, getNetworkEndpoints } from '@injectivelabs/networks';
+import { wasmErrorToMessageArray } from './helper/utils';
 
-const testnetWasmApi = new ChainGrpcWasmApi(
-  getNetworkEndpoints(Network.TestnetSentry).grpc
-)
-
-const devnetWasmApi = new ChainGrpcWasmApi(getNetworkEndpoints(Network.Devnet).grpc)
-
-const getWasmApi = (network: Network): ChainGrpcWasmApi => {
-  if (isDevnet(network)) {
-    return devnetWasmApi
-  }
-
-  if (isTestnet(network)) {
-    return testnetWasmApi
-  }
-
-  return mainnetWasmApi
-}
-
-export const fetchQueryMessages = async (contractAddress, network: Network) => {
+export const fetchQueryMessages = async (contractAddress: string, network: Network) => {
   try {
-    const wasmApi = getWasmApi(network)
+    const endpoints = getNetworkEndpoints(network);
+    const wasmApi = new ChainGrpcWasmApi(endpoints.grpc);
 
-    const queryToGetBackMessageList = { '': {} }
-    const messageToBase64 = toBase64(queryToGetBackMessageList)
+    const queryToGetBackMessageList = { '': {} };
+    const messageToBase64 = toBase64(queryToGetBackMessageList);
 
-    // will need some try catch here to parse out the messages
-    await wasmApi.fetchSmartContractState(contractAddress, messageToBase64)
-
-
+    await wasmApi.fetchSmartContractState(contractAddress, messageToBase64);
   } catch (e) {
-   const path = `data/wasm/query/${getNetworkFileName(network)}.json`
-
-   // todo: get messages from error via helper fn
-//const messages = getMessagesFromError(e)
-
-// todo: update json file with messages
-
-// return messages
-    console.log(`✅✅✅ fetchWasmQueries ${network}`)
+    return wasmErrorToMessageArray(e);
   }
-}
+};
