@@ -51,6 +51,6 @@ export const fetchCodeIds = async (network: Network) => {
   }
 }
 
-// fetchCodeIds(Network.Devnet)
+fetchCodeIds(Network.Devnet)
 fetchCodeIds(Network.TestnetSentry)
-// fetchCodeIds(Network.MainnetSentry)
+fetchCodeIds(Network.MainnetSentry)
