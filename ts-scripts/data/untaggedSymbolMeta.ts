@@ -205,5 +205,13 @@ export const untaggedSymbolMeta = {
     name: 'BUIDL/USDT Index PERP',
     logo: 'buidl.webp',
     coinGeckoId: 'blackrock-usd-institutional-digital-liquidity-fund'
+  },
+
+  mkr: {
+    decimals: 18,
+    symbol: 'MKR',
+    name: 'Maker',
+    logo: 'mkr.webp',
+    coinGeckoId: 'maker'
   }
 }
