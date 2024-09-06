@@ -4,13 +4,13 @@ import { getNetworkFileName, updateJSONFile } from './helper/utils'
 import { fetchCodeIdsByNetwork } from './helper/wasm'
 
 export const fetchCodeIds = async (network: Network) => {
+  const codeIds = [] as number[]
+  const endpoints = getNetworkEndpoints(network)
+  const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
   const existingCodeIdsList = fetchCodeIdsByNetwork(network)
-  console.log({ existingCodeIdsList })
+
   try {
     let nextKey
-    const codeIds = [] as number[]
-    const endpoints = getNetworkEndpoints(network)
-    const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
 
     do {
       const { pagination, codeInfosList } = await wasmApi.fetchContractCodes({
@@ -21,12 +21,12 @@ export const fetchCodeIds = async (network: Network) => {
       codeIds.push(...newCodeIds)
 
       nextKey = pagination?.next
-
     } while (nextKey)
 
-    const updatedCodeIdsList = [...new Set([...existingCodeIdsList, ...codeIds])]
-
-    await updateJSONFile(`data/wasm/codeIds/${getNetworkFileName(network)}.json`, updatedCodeIdsList)
+    await updateJSONFile(
+      `data/wasm/codeIds/${getNetworkFileName(network)}.json`,
+      [...new Set([...existingCodeIdsList, ...codeIds])]
+    )
 
     console.log(`✅✅✅ fetchCodeIds ${network}`)
   } catch (e) {

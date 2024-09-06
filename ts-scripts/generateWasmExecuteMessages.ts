@@ -1,10 +1,31 @@
 import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
-import { BaseAccount, ChainRestAuthApi, createTransaction, MsgExecuteContractCompat, TxGrpcClient } from '@injectivelabs/sdk-ts'
-import { readJSONFile, updateJSONFile, getChainIdFromNetwork, getFeePayerInjectiveAddress, wasmErrorToMessageArray, getNetworkFileName } from './helper/utils'
-import { fetchCodeIdsByNetwork, getContractAddressByCodeId } from './helper/wasm'
+import {
+  BaseAccount,
+  TxGrpcClient,
+  ChainRestAuthApi,
+  createTransaction,
+  MsgExecuteContractCompat
+} from '@injectivelabs/sdk-ts'
+import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName,
+  getChainIdFromNetwork
+} from './helper/utils'
+import {
+  fetchCodeIdsByNetwork,
+  wasmErrorToMessageArray,
+  getContractAddressByCodeId,
+  getFeePayerInjectiveAddress
+} from './helper/wasm'
 
-const getAccountDetails = async (address: string, network: Network): Promise<BaseAccount> => {
-  console.log('Fetching account details for', address)
+const args = process.argv.slice(2)
+const shouldForceFetch = args.includes('-f') || args.includes('--force')
+
+const getAccountDetails = async (
+  address: string,
+  network: Network
+): Promise<BaseAccount> => {
   const endpoints = getNetworkEndpoints(network)
   const chainRestAuthApi = new ChainRestAuthApi(endpoints.rest)
   const accountDetailsResponse = await chainRestAuthApi.fetchAccount(address)
@@ -12,39 +33,94 @@ const getAccountDetails = async (address: string, network: Network): Promise<Bas
   return BaseAccount.fromRestApi(accountDetailsResponse)
 }
 
+export const updateExecuteMessageJson = async (
+  network: Network,
+  item: Record<string, string[]>
+) => {
+  const filePath = `wasm/execute/${getNetworkFileName(network)}.json`
+
+  const updatedList = {
+    ...readJSONFile({
+      path: filePath,
+      fallback: {}
+    }),
+    ...item
+  }
+
+  try {
+    await updateJSONFile(filePath, updatedList)
+  } catch (e) {
+    console.log('Error updating wasm execute messages', e)
+  }
+}
+
 export const generateWasmExecuteMessages = async (network: Network) => {
-  console.log('Generating Wasm Execute Messages for', network)
-  const executePath = `wasm/execute/${getNetworkFileName(network)}.json`
-  const existingCodeIdToExecuteMessagesMap = readJSONFile({ path: executePath, fallback: {} })
   const codeIdsList = fetchCodeIdsByNetwork(network)
 
+  const queryPath = `wasm/execute/${getNetworkFileName(network)}.json`
+  const existingCodeIdMessagesMap = readJSONFile({
+    path: queryPath,
+    fallback: {}
+  }) as Record<string, string[]>
+
+  const codeIdsToFetch = codeIdsList
+    .filter(
+      (codeId) => !Object.keys(existingCodeIdMessagesMap).includes(`${codeId}`)
+    )
+    .map((codeId) => `${codeId}`)
+
+  const existingCodeIdsToRefetch = !shouldForceFetch
+    ? []
+    : Object.entries(existingCodeIdMessagesMap).reduce(
+        (list, [codeId, messages]) => {
+          if (messages.length === 0) {
+            list.push(codeId)
+          }
+
+          return list
+        },
+        [] as string[]
+      )
+
+  console.log(`fetching wasm execute messages for ${network} codeIds:`, [
+    ...codeIdsToFetch,
+    ...existingCodeIdsToRefetch
+  ])
+
+  await fetchWasmExecuteMessages(network, [
+    ...codeIdsToFetch,
+    ...existingCodeIdsToRefetch
+  ])
+}
+
+export const fetchWasmExecuteMessages = async (
+  network: Network,
+  codeIds: string[]
+) => {
   try {
     const endpoints = getNetworkEndpoints(network)
     const txService = new TxGrpcClient(endpoints.grpc)
     const injectiveAddress = getFeePayerInjectiveAddress(network)
 
-    for (const codeId of codeIdsList) {
-      if (Object.keys(existingCodeIdToExecuteMessagesMap).includes(codeId)) {
-        console.log(`Skipping fetch for existing code ID: ${codeId}`)
-        continue
-      }
+    const accountDetails = (
+      await getAccountDetails(injectiveAddress, network)
+    ).toAccountDetails()
 
-      console.log(`Fetching contract address for code ID: ${codeId}`)
+    for (const codeId of codeIds) {
       const contractAddress = await getContractAddressByCodeId(network, codeId)
 
       if (!contractAddress) {
-        console.log(`No contract address found for code ID: ${codeId}`)
+        await updateExecuteMessageJson(network, { [codeId]: [] })
+
         continue
       }
 
-      console.log(`Fetching execute messages for contract address: ${contractAddress}`)
-      const accountDetails = (await getAccountDetails(injectiveAddress, network)).toAccountDetails()
       const initialMessageToGetBackMessageList = '{"": {}}'
       const msgs = MsgExecuteContractCompat.fromJSON({
         contractAddress: contractAddress,
         sender: injectiveAddress,
         msg: Buffer.from(initialMessageToGetBackMessageList),
-        funds: [],
+        funds: []
       })
 
       try {
@@ -53,23 +129,23 @@ export const generateWasmExecuteMessages = async (network: Network) => {
           message: msgs,
           pubKey: accountDetails.pubKey.key,
           sequence: accountDetails.sequence,
-          accountNumber: accountDetails.accountNumber,
+          accountNumber: accountDetails.accountNumber
         })
 
         await txService.simulate(txRaw)
       } catch (e) {
-        const messages = wasmErrorToMessageArray(e)
-        existingCodeIdToExecuteMessagesMap[codeId] = messages
-        console.log(`Storing messages for code ID: ${codeId}`)
+        await updateExecuteMessageJson(network, {
+          [codeId]: wasmErrorToMessageArray(e)
+        })
       }
     }
 
-    await updateJSONFile(executePath, existingCodeIdToExecuteMessagesMap)
+    console.log(`✅✅✅ generateWasmExecuteMessages ${network}`)
   } catch (e) {
-    console.log('Error in generating Wasm Execute Messages', e)
+    console.log('Error generating Wasm Execute Messages', e)
   }
 }
 
-generateWasmExecuteMessages(Network.Devnet)
+// generateWasmExecuteMessages(Network.Devnet)
 generateWasmExecuteMessages(Network.TestnetSentry)
-generateWasmExecuteMessages(Network.MainnetSentry)
+// generateWasmExecuteMessages(Network.MainnetSentry)

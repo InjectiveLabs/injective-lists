@@ -1,25 +1,93 @@
 import { toBase64, ChainGrpcWasmApi } from '@injectivelabs/sdk-ts'
 import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
-import { readJSONFile, updateJSONFile, wasmErrorToMessageArray, getNetworkFileName } from './helper/utils'
-import { fetchCodeIdsByNetwork, getContractAddressByCodeId } from './helper/wasm'
+import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName
+} from './helper/utils'
+import {
+  fetchCodeIdsByNetwork,
+  wasmErrorToMessageArray,
+  getContractAddressByCodeId
+} from './helper/wasm'
 
-export const generateWasmQueryMessages = async (network: Network) => {
-  const queryPath = `wasm/query/${getNetworkFileName(network)}.json`
-  const existingCodeIdToQueryMessagesMap = readJSONFile({ path: queryPath, fallback: {} })
-  const codeIdsList = fetchCodeIdsByNetwork(network)
+const args = process.argv.slice(2)
+const shouldForceFetch = args.includes('-f') || args.includes('--force')
+
+export const updateQueryMessageJson = async (
+  network: Network,
+  item: Record<string, string[]>
+) => {
+  const filePath = `wasm/query/${getNetworkFileName(network)}.json`
+
+  const updatedList = {
+    ...readJSONFile({
+      path: filePath,
+      fallback: {}
+    }),
+    ...item
+  }
 
   try {
-    const endpoints = getNetworkEndpoints(network)
-    const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
+    await updateJSONFile(filePath, updatedList)
+  } catch (e) {
+    console.log('Error updating wasm query messages', e)
+  }
+}
 
-    for (const codeId of codeIdsList) {
-      if (Object.keys(existingCodeIdToQueryMessagesMap).includes(codeId)) {
-        continue
-      }
+export const generateWasmQueryMessages = async (network: Network) => {
+  const codeIdsList = fetchCodeIdsByNetwork(network)
 
+  const queryPath = `wasm/query/${getNetworkFileName(network)}.json`
+  const existingCodeIdMessagesMap = readJSONFile({
+    path: queryPath,
+    fallback: {}
+  }) as Record<string, string[]>
+
+  const codeIdsToFetch = codeIdsList
+    .filter(
+      (codeId) => !Object.keys(existingCodeIdMessagesMap).includes(`${codeId}`)
+    )
+    .map((codeId) => `${codeId}`)
+
+  const existingCodeIdsToRefetch = !shouldForceFetch
+    ? []
+    : Object.entries(existingCodeIdMessagesMap).reduce(
+        (list, [codeId, messages]) => {
+          if (messages.length === 0) {
+            list.push(codeId)
+          }
+
+          return list
+        },
+        [] as string[]
+      )
+
+  console.log(`fetching wasm query messages for ${network} codeIds:`, [
+    ...codeIdsToFetch,
+    ...existingCodeIdsToRefetch
+  ])
+
+  await fetchWasmQueryMessages(network, [
+    ...codeIdsToFetch,
+    ...existingCodeIdsToRefetch
+  ])
+}
+
+export const fetchWasmQueryMessages = async (
+  network: Network,
+  codeIds: string[]
+) => {
+  const endpoints = getNetworkEndpoints(network)
+  const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
+
+  try {
+    for (const codeId of codeIds) {
       const contractAddress = await getContractAddressByCodeId(network, codeId)
 
       if (!contractAddress) {
+        await updateQueryMessageJson(network, { [codeId]: [] })
+
         continue
       }
 
@@ -29,15 +97,15 @@ export const generateWasmQueryMessages = async (network: Network) => {
       try {
         await wasmApi.fetchSmartContractState(contractAddress, messageToBase64)
       } catch (e) {
-        const messages = wasmErrorToMessageArray(e)
-        existingCodeIdToQueryMessagesMap[codeId] = messages
+        await updateQueryMessageJson(network, {
+          [codeId]: wasmErrorToMessageArray(e)
+        })
       }
     }
 
-    await updateJSONFile(queryPath, existingCodeIdToQueryMessagesMap)
     console.log(`✅✅✅ generateWasmQueryMessages ${network}`)
   } catch (e) {
-    console.log('Error in generating Wasm Query Messages', e)
+    console.log('Error generating Wasm Query Messages', e)
   }
 }
 
