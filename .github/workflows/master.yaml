@@ -52,6 +52,12 @@ jobs:
           cmd: slugs:generate
           dir: "ts-scripts"
 
+      - name: Generate wasm messages
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: wasm:generate
+          dir: "ts-scripts"
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}

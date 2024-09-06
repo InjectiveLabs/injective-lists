@@ -1,7 +1,8 @@
 import { dirname, resolve } from 'node:path'
-import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
+import { ChainId } from '@injectivelabs/ts-types'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/sdk-ts'
+import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { Token, BankMetadata } from '../types'
 
 export const getTokenType = (denom: string): TokenType => {
@@ -187,4 +188,16 @@ export const updateJSONFile = (path: string, data: any) => {
   } catch (e: any) {
     console.error(`Error updating JSON file: ${path}`, e)
   }
+}
+
+export const getChainIdFromNetwork = (network: Network) => {
+  if (isMainnet(network)) {
+    return ChainId.Mainnet
+  }
+
+  if (isTestnet(network)) {
+    return ChainId.Testnet
+  }
+
+  return ChainId.Devnet
 }

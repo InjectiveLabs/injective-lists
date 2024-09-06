@@ -15,10 +15,15 @@
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
     "tokens:factory:generate": "ts-node ./generateFactoryTokens",
     "tokens:mito:generate": "ts-node ./generateMitoTokens",
+    "wasm:query:generate": "ts-node ./generateWasmQueryMessages",
+    "wasm:execute:generate": "ts-node ./generateWasmExecuteMessages",
+    "wasm:fetch:codeIds": "ts-node ./fetchCodeIds",
+    "wasm:generate": "yarn wasm:fetch:codeIds && yarn wasm:query:generate && yarn wasm:execute:generate",
     "wallets:ofac": "ts-node ./generateOfacList",
     "validators:generate": "yarn validators:images && ts-node ./generateValidatorsData",
     "tokens:generate": "yarn fetch:chain:metadata && yarn fetch:mito:vaults && yarn tokens:static && yarn tokens:factory:generate && yarn tokens:external && yarn tokens:mito:generate && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
-    "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn tokens:generate"
+    "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn tokens:generate",
+    "wasm:generate:force": "yarn wasm:fetch:codeIds && yarn wasm:query:generate -f && yarn wasm:execute:generate -f"
   },
   "keywords": [],
   "author": "",
