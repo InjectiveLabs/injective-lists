@@ -191,19 +191,19 @@ export const updateJSONFile = (path: string, data: any) => {
 }
 
 export const getFeePayerInjectiveAddress = (network: Network) => {
-  if (!process.env.FEE_PAYER_KEY_MAINNET || !process.env.FEE_PAYER_KEY_TESTNET || !process.env.FEE_PAYER_KEY_DEVNET) {
+  if (!process.env.MAINNET_FEE_PAYER || !process.env.TESTNET_FEE_PAYER || !process.env.DEVNET_FEE_PAYER) {
     throw new Error('fee payer injective addresses not found!')
   }
 
   if (isMainnet(network)) {
-    return process.env.FEE_PAYER_KEY_MAINNET
+    return process.env.MAINNET_FEE_PAYER
   }
 
   if (isTestnet(network)) {
-    return process.env.FEE_PAYER_KEY_TESTNET
+    return process.env.TESTNET_FEE_PAYER
   }
 
-  return process.env.FEE_PAYER_KEY_DEVNET
+  return process.env.DEVNET_FEE_PAYER
 }
 
 export const wasmErrorToMessageArray = (error: any): string[] => {
