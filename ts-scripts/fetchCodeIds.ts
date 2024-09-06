@@ -1,6 +1,10 @@
 import { ChainGrpcWasmApi } from '@injectivelabs/sdk-ts'
 import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
-import { getNetworkFileName, updateJSONFile } from './helper/utils'
+import {
+  readJSONFile,
+  updateJSONFile,
+  getNetworkFileName
+} from './helper/utils'
 import { fetchCodeIdsByNetwork } from './helper/wasm'
 
 export const fetchCodeIds = async (network: Network) => {
@@ -9,8 +13,14 @@ export const fetchCodeIds = async (network: Network) => {
   const wasmApi = new ChainGrpcWasmApi(endpoints.grpc)
   const existingCodeIdsList = fetchCodeIdsByNetwork(network)
 
+  const paginationPath = `data/wasm/paginationKey.json`
+  const paginationKeyMap = readJSONFile({
+    path: paginationPath,
+    fallback: {}
+  })
+
   try {
-    let nextKey
+    let nextKey = paginationKeyMap[network] || undefined
 
     do {
       const { pagination, codeInfosList } = await wasmApi.fetchContractCodes({
@@ -19,6 +29,13 @@ export const fetchCodeIds = async (network: Network) => {
 
       const newCodeIds = codeInfosList.map(({ codeId }) => codeId)
       codeIds.push(...newCodeIds)
+
+      if (!pagination.next) {
+        await updateJSONFile(paginationPath, {
+          ...paginationKeyMap,
+          [network]: nextKey
+        })
+      }
 
       nextKey = pagination?.next
     } while (nextKey)
@@ -34,6 +51,6 @@ export const fetchCodeIds = async (network: Network) => {
   }
 }
 
-fetchCodeIds(Network.Devnet)
+// fetchCodeIds(Network.Devnet)
 fetchCodeIds(Network.TestnetSentry)
-fetchCodeIds(Network.MainnetSentry)
+// fetchCodeIds(Network.MainnetSentry)
