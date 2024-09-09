@@ -213,5 +213,37 @@ export const untaggedSymbolMeta = {
     name: 'Maker',
     logo: 'mkr.webp',
     coinGeckoId: 'maker'
+  },
+
+  crv: {
+    decimals: 18,
+    symbol: 'CRV',
+    name: 'Curve DAO',
+    logo: 'crv.webp',
+    coinGeckoId: 'curve-dao-token'
+  },
+
+  apt: {
+    decimals: 8,
+    symbol: 'APT',
+    name: 'Aptos',
+    logo: 'apt.webp',
+    coinGeckoId: 'aptos'
+  },
+
+  tao: {
+    decimals: 18,
+    symbol: 'TAO',
+    name: 'Bittensor',
+    logo: 'tao.webp',
+    coinGeckoId: 'bittensor'
+  },
+
+  popcat: {
+    decimals: 9,
+    symbol: 'POPCAT',
+    name: 'Popcat',
+    logo: 'popcat.webp',
+    coinGeckoId: 'popcat'
   }
 }
