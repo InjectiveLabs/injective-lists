@@ -1,4 +1,5 @@
 export const mainnetSlugs: string[] = [
+  'aave-usdt-perp',
   'btc-usdt-perp',
   'inj-usdt-perp',
   'xrp-usdt-perp',
