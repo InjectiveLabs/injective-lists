@@ -154,7 +154,7 @@ export const untaggedSymbolMeta = {
   KPEPE: {
     name: 'KPEPE',
     decimals: 18,
-    symbol: 'PEPE',
+    symbol: 'KPEPE',
     logo: 'pepe.jpeg',
     coinGeckoId: 'pepe'
   },
@@ -245,5 +245,13 @@ export const untaggedSymbolMeta = {
     name: 'Popcat',
     logo: 'popcat.webp',
     coinGeckoId: 'popcat'
+  },
+
+  PEPE: {
+    name: 'Pepe',
+    decimals: 18,
+    symbol: 'PEPE',
+    logo: 'pepe.jpeg',
+    coinGeckoId: 'pepe'
   }
 }
