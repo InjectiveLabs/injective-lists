@@ -23,6 +23,10 @@ jobs:
       ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
       ALCHEMY_GOERLI_KEY: ${{ secrets.ALCHEMY_GOERLI_KEY }}
       ALCHEMY_SEPOLIA_KEY: ${{ secrets.ALCHEMY_SEPOLIA_KEY }}
+      MAINNET_FEE_PAYER: ${{ secrets.MAINNET_FEE_PAYER }}
+      TESTNET_FEE_PAYER: ${{ secrets.TESTNET_FEE_PAYER }}
+      DEVNET_FEE_PAYER: ${{ secrets.DEVNET_FEE_PAYER }}
+
 
     steps:
       - uses: actions/checkout@v4
