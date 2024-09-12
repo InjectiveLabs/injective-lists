@@ -1,4 +1,6 @@
 export const newMarkets = [
+  'mkr-usdt-perp',
+  'aave-usdt-perp',
   'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
