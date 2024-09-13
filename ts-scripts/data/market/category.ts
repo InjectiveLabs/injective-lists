@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'crv-usdt-perp',
   'mkr-usdt-perp',
   'aave-usdt-perp',
   'buidl-usdt-perp',
@@ -60,6 +61,9 @@ export const cosmos = [
 ]
 
 export const ethereum = [
+  'crv-usdt-perp',
+  'mkr-usdt-perp',
+  'aave-usdt-perp',
   'buidl-usdt-perp',
   'ton-usdt',
   'wusdm-usdt',
