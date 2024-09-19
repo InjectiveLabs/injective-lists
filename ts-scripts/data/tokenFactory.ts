@@ -434,5 +434,13 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.PAIN,
     creator: 'inj1u6j86hy6a2z0ksuhuh54x6kh532e7esdfjd2k7'
+  },
+  {
+    ...symbolMeta.DRUGS_cw20,
+    creator: 'inj1dh8cm0j4nftd78slh9gzvmwg68366luxe46mqa'
+  },
+  {
+    ...symbolMeta.DRUGS,
+    creator: 'inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr'
   }
 ]

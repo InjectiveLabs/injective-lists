@@ -2029,5 +2029,21 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     symbol: 'PAIN',
     decimals: 6
+  },
+
+  DRUGS_cw20: {
+    decimals: 18,
+    symbol: 'DRUGS.cw20',
+    name: 'DRUGS CW20',
+    logo: 'drugs_cw20.png',
+    coinGeckoId: ''
+  },
+
+  DRUGS: {
+    decimals: 9,
+    symbol: 'DRUGS',
+    name: 'DRUGS',
+    logo: 'drugs.png',
+    coinGeckoId: ''
   }
 }
