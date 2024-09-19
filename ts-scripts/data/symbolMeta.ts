@@ -2045,5 +2045,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'DRUGS',
     logo: 'drugs.png',
     coinGeckoId: ''
+  },
+
+  BTORO: {
+    decimals: 18,
+    symbol: 'BTORO',
+    name: 'Bitoro',
+    logo: 'btoro.jpg',
+    coinGeckoId: ''
   }
 }

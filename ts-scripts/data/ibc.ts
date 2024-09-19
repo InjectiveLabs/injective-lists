@@ -534,5 +534,14 @@ export const mainnetTokens: IbcTokenSource[] = [
     source: TokenSource.Cosmos,
     path: 'transfer/channel-148',
     hash: '93EAE5F9D6C14BFAC8DD1AFDBE95501055A7B22C5D8FA8C986C31D6EFADCA8A9'
+  },
+  {
+    ...symbolMeta.BTORO,
+    baseDenom:
+      'factory/wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx/6USkGhBUc4ZYAkeBp65VJsATQL335NyvLZdwaHMicrdj',
+    channelId: 'channel-183',
+    path: 'transfer/channel-183',
+    source: TokenSource.Arbitrum,
+    hash: '47245D9854589FADE02554744F387D24E6D7B3D3E7B7DA5596F6C27B8458B7AA'
   }
 ]
