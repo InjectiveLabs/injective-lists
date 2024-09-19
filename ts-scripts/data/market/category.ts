@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'tao-usdt-perp',
   'popcat-usdt-perp',
   'pepe-usdt-perp',
   'crv-usdt-perp',
