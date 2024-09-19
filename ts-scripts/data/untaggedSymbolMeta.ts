@@ -255,10 +255,10 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'pepe'
   },
 
-  ELECTION2024: {
+  '2024ELECTION': {
     name: 'TRUMPWIN',
     decimals: 6,
-    symbol: 'ELECTION2024',
+    symbol: '2024ELECTION',
     logo: '2024.webp',
     coinGeckoId: ''
   }
