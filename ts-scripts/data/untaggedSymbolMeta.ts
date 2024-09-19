@@ -253,5 +253,13 @@ export const untaggedSymbolMeta = {
     symbol: 'PEPE',
     logo: 'pepe.jpeg',
     coinGeckoId: 'pepe'
+  },
+
+  2024election: {
+    name: 'TRUMPWIN',
+    decimals: 6,
+    symbol: '2024ELECTION',
+    logo: '2024.webp',
+    coinGeckoId: ''
   }
 }
