@@ -2048,7 +2048,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   BTORO: {
-    decimals: 18,
+    decimals: 8,
     symbol: 'BTORO',
     name: 'Bitoro',
     logo: 'btoro.jpg',
