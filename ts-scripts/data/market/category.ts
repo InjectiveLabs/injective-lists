@@ -1,4 +1,5 @@
 export const newMarkets = [
+  '2024election-perp',
   'tao-usdt-perp',
   'popcat-usdt-perp',
   'pepe-usdt-perp',
@@ -24,6 +25,7 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  '2024election-perp',
   'buidl-usdt-perp',
   'ton-usdt',
   'btc-wusdm-perp',
