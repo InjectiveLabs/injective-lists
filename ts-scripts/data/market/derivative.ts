@@ -37,7 +37,8 @@ export const mainnetSlugs: string[] = [
   'gbp-usdt-perp',
   'eur-usdt-perp',
   'btc-wusdm-perp',
-  'buidl-usdt-perp'
+  'buidl-usdt-perp',
+  '2024election-perp'
 ]
 
 export const devnetSlugs: string[] = []
