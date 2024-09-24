@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'ftm-usdt-perp',
   '2024election-perp',
   'tao-usdt-perp',
   'popcat-usdt-perp',
