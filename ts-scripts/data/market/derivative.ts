@@ -1,4 +1,5 @@
 export const mainnetSlugs: string[] = [
+  'ftm-usdt-perp',
   'tao-usdt-perp',
   'popcat-usdt-perp',
   'pepe-usdt-perp',
