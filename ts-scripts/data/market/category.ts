@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'apt-usdt-perp',
   'ton-usdt-perp',
   'ftm-usdt-perp',
   '2024election-perp',
