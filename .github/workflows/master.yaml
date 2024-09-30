@@ -3,7 +3,7 @@ name: Injective list - Generate data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
   push:
     branches:
       - master
@@ -26,7 +26,6 @@ jobs:
       MAINNET_FEE_PAYER: ${{ secrets.MAINNET_FEE_PAYER }}
       TESTNET_FEE_PAYER: ${{ secrets.TESTNET_FEE_PAYER }}
       DEVNET_FEE_PAYER: ${{ secrets.DEVNET_FEE_PAYER }}
-
 
     steps:
       - uses: actions/checkout@v4
