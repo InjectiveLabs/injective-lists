@@ -1500,7 +1500,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'QUNT',
     symbol: 'QUNT',
     coinGeckoId: '',
-    logo: 'qunt.png'
+    logo: 'qunt.webp'
   },
 
   HDRO: {
