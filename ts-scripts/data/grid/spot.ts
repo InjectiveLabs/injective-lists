@@ -142,6 +142,10 @@ export const mainnetGridMarkets = [
   {
     slug: 'pyusd-usdt',
     contractAddress: 'inj1qjp5una7prxzuzxy8ltwg965rr3plpl4sew009'
+  },
+  {
+    slug: 'kava-usdt',
+    contractAddress: 'inj1xqaauqjzg6zgdxxd0jcvtvj3xmg3q65njzpk77'
   }
 ]
 
