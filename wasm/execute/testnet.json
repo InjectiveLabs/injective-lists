@@ -91528,5 +91528,91 @@
     "close_long_position_order",
     "close_short_position_order",
     "exercise"
+  ],
+  "13445": [
+    "send_call_message",
+    "handle_call_message",
+    "add_connection"
+  ],
+  "13446": [
+    "register_client",
+    "create_client",
+    "update_client",
+    "upgrade_client",
+    "client_misbehaviour",
+    "connection_open_init",
+    "connection_open_try",
+    "connection_open_ack",
+    "connection_open_confirm",
+    "channel_open_init",
+    "channel_open_try",
+    "channel_open_ack",
+    "channel_open_confirm",
+    "channel_close_init",
+    "channel_close_confirm",
+    "send_packet",
+    "receive_packet",
+    "acknowledgement_packet",
+    "write_acknowledgement",
+    "timeout_packet",
+    "timeout_on_close",
+    "bind_port",
+    "set_expected_time_per_block"
+  ],
+  "13447": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "13448": [
+    "create_client",
+    "update_client",
+    "upgrade_client",
+    "misbehaviour"
+  ],
+  "13449": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "13450": [
+    "set_admin",
+    "set_protocol_fee",
+    "set_protocol_fee_handler",
+    "send_call_message",
+    "handle_message",
+    "handle_error",
+    "execute_call",
+    "execute_rollback",
+    "set_default_connection"
+  ],
+  "13451": [
+    "set_admin",
+    "set_x_call_host",
+    "send_message",
+    "configure_connection",
+    "claim_fees",
+    "set_fees",
+    "ibc_channel_open",
+    "ibc_channel_connect",
+    "ibc_channel_close",
+    "ibc_packet_receive",
+    "ibc_packet_ack",
+    "ibc_packet_timeout"
+  ],
+  "13452": [
+    "send_call_message",
+    "handle_call_message",
+    "add_connection"
   ]
 }
