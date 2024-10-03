@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'mother-usdt-perp',
   'apt-usdt-perp',
   'ton-usdt-perp',
   'ftm-usdt-perp',
@@ -132,6 +133,7 @@ export const injective = [
 ]
 
 export const solana = [
+  'mother-usdt-perp',
   'popcat-usdt-perp',
   'jup-usdt-perp',
   'pyth-usdt-perp',
