@@ -2053,5 +2053,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Bitoro',
     logo: 'btoro.jpg',
     coinGeckoId: ''
+  },
+
+  WUSDL: {
+    decimals: 18,
+    symbol: 'WUSDL',
+    name: 'Wrapped USDL',
+    logo: 'wusdl.webp',
+    coinGeckoId: 'lift-dollar'
   }
 }
