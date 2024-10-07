@@ -2181,6 +2181,39 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x88430553f1f41635687c0da52e6282f8c93f70ab1a92b68fda7b56b026919bd4",
+    "marketStatus": "active",
+    "ticker": "HDRO/USDT",
+    "baseDenom": "factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/2d38ee9a-2df1-4dd0-155b-11404014bc00/public",
+      "decimals": 6,
+      "updatedAt": "1728314117546",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Hydro",
+      "address": "factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro",
+      "symbol": "HDRO",
+      "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/34133ff5-18c3-4242-65d4-09f772100800/public",
+      "decimals": 6,
+      "updatedAt": "1728314117546",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.00001,
+    "minQuantityTickSize": 10000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x8b1a4d3e8f6b559e30e40922ee3662dd78edf7042330d4d620d188699d1a9715",
     "marketStatus": "active",
     "ticker": "USDT/USDC",
