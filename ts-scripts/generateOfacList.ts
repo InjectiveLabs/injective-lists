@@ -5,7 +5,8 @@ async function generateOFACList() {
   const response = await new HttpClient(
     'https://www.treasury.gov/ofac/downloads/sanctions/1.0/'
   ).get<{}, { data: string }>('sdn_advanced.xml')
-  const result = response.data.match(/(\b0x[a-f0-9]{40}\b)/g)
+  const rawResults = response.data.match(/(\b0x[a-fA-F0-9]{40}\b)/g)
+  const result = rawResults ? [... new Set(rawResults.map(address => address.toLowerCase()))] : [];
 
   if (!result) {
     return
