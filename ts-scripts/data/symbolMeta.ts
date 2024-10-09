@@ -2040,7 +2040,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   DRUGS: {
-    decimals: 9,
+    decimals: 6,
     symbol: 'DRUGS',
     name: 'DRUGS',
     logo: 'drugs.png',
@@ -2055,9 +2055,9 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  WUSDL: {
+  wUSDL: {
     decimals: 18,
-    symbol: 'WUSDL',
+    symbol: 'wUSDL',
     name: 'Wrapped USDL',
     logo: 'wusdl.webp',
     coinGeckoId: 'lift-dollar'

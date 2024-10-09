@@ -184,7 +184,7 @@ export const testnetGridMarkets = [
   },
   {
     slug: 'atom-usdt',
-    contractAddress: 'inj107fsasqmcqs4ztmvxdhrxsekzyjxcz7xwafjw5'
+    contractAddress: 'inj1hx8y450kaawcmmuvp2m6jh2tdw0nvn4cf6mtcp'
   },
   {
     slug: 'tia-usdt',
