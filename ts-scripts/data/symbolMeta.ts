@@ -2055,9 +2055,9 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  WUSDL: {
+  wUSDL: {
     decimals: 18,
-    symbol: 'WUSDL',
+    symbol: 'wUSDL',
     name: 'Wrapped USDL',
     logo: 'wusdl.webp',
     coinGeckoId: 'lift-dollar'

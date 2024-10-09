@@ -388,7 +388,7 @@ export const mainnetTokens = [
     address: '0x582d872a1b094fc48f5de31d3b73f2d9be47def1'
   },
   {
-    ...symbolMeta.WUSDL,
+    ...symbolMeta.wUSDL,
     address: '0x7751E2F4b8ae93EF6B79d86419d42FE3295A4559'
   }
 ]
