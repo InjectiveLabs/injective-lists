@@ -2040,7 +2040,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   DRUGS: {
-    decimals: 9,
+    decimals: 6,
     symbol: 'DRUGS',
     name: 'DRUGS',
     logo: 'drugs.png',
