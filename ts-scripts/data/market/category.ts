@@ -1,5 +1,5 @@
 export const newMarkets = [
-  'wusdl-usdt'
+  'wusdl-usdt',
   'mother-usdt-perp',
   'apt-usdt-perp',
   'ton-usdt-perp',
@@ -30,7 +30,8 @@ export const newMarkets = [
 ]
 
 export const experimental = [
-  'wusdl-usdt'
+  'wusdl-usdt',
+  ,
   '2024election-perp',
   'buidl-usdt-perp',
   'ton-usdt',
@@ -72,7 +73,7 @@ export const cosmos = [
 ]
 
 export const ethereum = [
-  'wusdl-usdt'
+  'wusdl-usdt',
   'ton-usdt-perp',
   'pepe-usdt-perp',
   'crv-usdt-perp',
