@@ -125,6 +125,7 @@ jobs:
 
       - name: Deploy Admin UI (mainnet)
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
+        uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml
           ref: master
