@@ -54,7 +54,8 @@ jobs:
       - name: Deploy bridge (mainnet)
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
-        workflow: mainnet.yml
+        with:
+          workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
