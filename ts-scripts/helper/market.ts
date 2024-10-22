@@ -45,6 +45,15 @@ const derivativeMarketsByNetwork = (network: Network) => {
   return devnetDerivativeMarkets
 }
 
+export const getMarketByTicker = (ticker: string, network: Network) => {
+  const spotMarkets = spotMarketsByNetwork(network)
+  const derivativeMarkets = derivativeMarketsByNetwork(network)
+
+  return [...spotMarkets, ...derivativeMarkets].find(
+    (market) => market.ticker === ticker
+  )
+}
+
 export const getMarketsByDenom = (denom: string, network: Network) => {
   const spotMarkets = spotMarketsByNetwork(network)
   const derivativeMarkets = derivativeMarketsByNetwork(network)

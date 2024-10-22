@@ -26,6 +26,6 @@ A step by step guide can be found here on [Adding a new static token](./../CONTR
 
 Here are the different tokens json file you can fetch/download to integrate on your product:
 
-- Devnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/devnet.json
-- Testnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/testnet.json
-- Mainnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/mainnet.json
+- Devnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/devnet.json
+- Testnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/testnet.json
+- Mainnet: https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/mainnet.json
