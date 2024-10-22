@@ -118,7 +118,10 @@ export const generateTokensList = async (network: Network) => {
 
   console.log(`Uploaded ${network} with ${sortedList.length} tokens`)
 
-  await updateJSONFile(`tokens/${getNetworkFileName(network)}.json`, sortedList)
+  await updateJSONFile(
+    `json/tokens/${getNetworkFileName(network)}.json`,
+    sortedList
+  )
 
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }

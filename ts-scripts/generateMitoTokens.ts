@@ -3,8 +3,7 @@ import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
   updateJSONFile,
-  getNetworkFileName,
-  tokensToDenomMapKeepCasing
+  getNetworkFileName
 } from './helper/utils'
 import { getMarketById } from './helper/market'
 import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
@@ -73,7 +72,7 @@ export const generateMitoTokens = async (network: Network) => {
     }
 
     await updateJSONFile(
-      `tokens/mito/${getNetworkFileName(network)}.json`,
+      `json/tokens/mito/${getNetworkFileName(network)}.json`,
       mitoTokens.sort((a, b) => a.denom.localeCompare(b.denom))
     )
 

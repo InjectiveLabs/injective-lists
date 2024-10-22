@@ -18,7 +18,7 @@ export const updateQueryMessageJson = async (
   network: Network,
   item: Record<string, string[]>
 ) => {
-  const filePath = `wasm/query/${getNetworkFileName(network)}.json`
+  const filePath = `json/wasm/query/${getNetworkFileName(network)}.json`
 
   const updatedList = {
     ...readJSONFile({
@@ -38,7 +38,7 @@ export const updateQueryMessageJson = async (
 export const generateWasmQueryMessages = async (network: Network) => {
   const codeIdsList = fetchCodeIdsByNetwork(network)
 
-  const queryPath = `wasm/query/${getNetworkFileName(network)}.json`
+  const queryPath = `json/wasm/query/${getNetworkFileName(network)}.json`
   const existingCodeIdMessagesMap = readJSONFile({
     path: queryPath,
     fallback: {}

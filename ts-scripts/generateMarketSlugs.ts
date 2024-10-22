@@ -57,7 +57,7 @@ export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
   }
 
   await updateJSONFile(
-    `helix/trading/expiry/${getNetworkFileName(network)}.json`,
+    `json/helix/trading/expiry/${getNetworkFileName(network)}.json`,
     slugs
   )
 }
@@ -78,7 +78,7 @@ export const generateSpotMarketSlugs = async (network: Network) => {
   }
 
   await updateJSONFile(
-    `helix/trading/spot/${getNetworkFileName(network)}.json`,
+    `json/helix/trading/spot/${getNetworkFileName(network)}.json`,
     slugs
   )
 }
@@ -99,7 +99,7 @@ export const generateDerivativeMarketSlugs = async (network: Network) => {
   }
 
   await updateJSONFile(
-    `helix/trading/derivative/${getNetworkFileName(network)}.json`,
+    `json/helix/trading/derivative/${getNetworkFileName(network)}.json`,
     slugs
   )
 }
@@ -120,7 +120,7 @@ export const generateSpotGridMarkets = async (network: Network) => {
   }
 
   await updateJSONFile(
-    `helix/trading/gridMarkets/spot/${getNetworkFileName(network)}.json`,
+    `json/helix/trading/gridMarkets/spot/${getNetworkFileName(network)}.json`,
     gridMarkets
   )
 }
@@ -141,7 +141,9 @@ export const generateDerivativeGridMarkets = async (network: Network) => {
   }
 
   await updateJSONFile(
-    `helix/trading/gridMarkets/derivative/${getNetworkFileName(network)}.json`,
+    `json/helix/trading/gridMarkets/derivative/${getNetworkFileName(
+      network
+    )}.json`,
     gridMarkets
   )
 }

@@ -6,7 +6,9 @@ async function generateOFACList() {
     'https://www.treasury.gov/ofac/downloads/sanctions/1.0/'
   ).get<{}, { data: string }>('sdn_advanced.xml')
   const rawResults = response.data.match(/(\b0x[a-fA-F0-9]{40}\b)/g)
-  const result = rawResults ? [... new Set(rawResults.map(address => address.toLowerCase()))] : [];
+  const result = rawResults
+    ? [...new Set(rawResults.map((address) => address.toLowerCase()))]
+    : []
 
   if (!result) {
     return
@@ -17,7 +19,7 @@ async function generateOFACList() {
   }
 
   await updateJSONFile(
-    'wallets/ofac.json',
+    'json/wallets/ofac.json',
     result.sort((a, b) => a.localeCompare(b))
   )
 }

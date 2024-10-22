@@ -53,7 +53,7 @@ export const generateValidatorsData = async (network: Network) => {
     }
 
     await updateJSONFile(
-      `validators/${getNetworkFileName(network)}.json`,
+      `json/validators/${getNetworkFileName(network)}.json`,
       validatorSources
     )
 
