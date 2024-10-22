@@ -20,6 +20,7 @@
     "wasm:fetch:codeIds": "ts-node ./fetchCodeIds",
     "wasm:generate": "yarn wasm:fetch:codeIds && yarn wasm:query:generate && yarn wasm:execute:generate",
     "wallets:ofac": "ts-node ./generateOfacList",
+    "verifiedDenoms:generate": "ts-node ./generateVerifiedDenoms",
     "validators:generate": "yarn validators:images && ts-node ./generateValidatorsData",
     "tokens:generate": "yarn fetch:chain:metadata && yarn fetch:mito:vaults && yarn tokens:static && yarn tokens:factory:generate && yarn tokens:external && yarn tokens:mito:generate && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
     "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn tokens:generate",

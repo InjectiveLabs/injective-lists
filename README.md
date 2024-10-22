@@ -21,9 +21,9 @@ You can find a more information on token metadata on this [page](./ts-scripts/RE
 
 Here are the different tokens json file you can fetch/download to integrate on your product:
 
-- Devnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/devnet.json](./tokens/devnet.json)
-- Testnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/testnet.json](./tokens/testnet.json)
-- Mainnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/tokens/mainnet.json](./tokens/mainnet.json)
+- Devnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/devnet.json](./json/tokens/devnet.json)
+- Testnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/testnet.json](./json/tokens/testnet.json)
+- Mainnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/mainnet.json](./json/tokens/mainnet.json)
 
 ---
 
