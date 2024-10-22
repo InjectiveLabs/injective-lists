@@ -123,6 +123,8 @@ export const generateTokensList = async (network: Network) => {
     sortedList
   )
 
+  await updateJSONFile(`tokens/${getNetworkFileName(network)}.json`, sortedList)
+
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }
 
