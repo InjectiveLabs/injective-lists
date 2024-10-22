@@ -149,7 +149,7 @@ export const generateDerivativeGridMarkets = async (network: Network) => {
 }
 
 export const generateMarketCategorySlugs = async () => {
-  await updateJSONFile('helix/trading/market/category.json', {
+  await updateJSONFile('json/helix/trading/market/category.json', {
     rwaCategorySlugs,
     cosmosCategorySlugs,
     solanaCategorySlugs,
