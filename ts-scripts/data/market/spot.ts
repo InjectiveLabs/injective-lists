@@ -12,7 +12,6 @@ export const mainnetSlugs = [
   'autism-inj',
   'kira-inj',
   'arb-usdt',
-  'wmatic-usdt',
   'kava-usdt',
   'usdtkv-usdt',
   'tia-usdt',
