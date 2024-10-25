@@ -261,5 +261,13 @@ export const untaggedSymbolMeta = {
     symbol: '2024ELECTION',
     logo: '2024.webp',
     coinGeckoId: ''
+  },
+
+  GOAT: {
+    name: 'Goatseus Maximus',
+    decimals: 6,
+    symbol: 'GOAT',
+    logo: 'goat.webp',
+    coinGeckoId: 'goatseus-maximus'
   }
 }
