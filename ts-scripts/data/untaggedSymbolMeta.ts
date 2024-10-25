@@ -269,5 +269,13 @@ export const untaggedSymbolMeta = {
     symbol: 'GOAT',
     logo: 'goat.webp',
     coinGeckoId: 'goatseus-maximus'
+  },
+
+  MOODENG: {
+    name: 'Moo Deng',
+    decimals: 6,
+    symbol: 'MOODENG',
+    logo: 'moodeng.webp',
+    coinGeckoId: 'moo-deng'
   }
 }
