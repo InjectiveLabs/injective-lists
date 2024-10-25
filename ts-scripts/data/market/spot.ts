@@ -52,7 +52,5 @@ export const testnetSlugs = [
   'projx-inj',
   'wbtc-usdt',
   'usdc-usdt',
-  'demo-usdt',
-  'test5-inj',
-  'test6-inj'
+  'demo-usdt'
 ]
