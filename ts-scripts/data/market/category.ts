@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'moodeng-usdt-perp',
   'wusdl-usdt',
   'mother-usdt-perp',
   'apt-usdt-perp',
@@ -30,8 +31,8 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'moodeng-usdt-perp',
   'wusdl-usdt',
-  ,
   '2024election-perp',
   'buidl-usdt-perp',
   'ton-usdt',
@@ -137,6 +138,7 @@ export const injective = [
 ]
 
 export const solana = [
+  'moodeng-usdt-perp',
   'mother-usdt-perp',
   'popcat-usdt-perp',
   'jup-usdt-perp',
