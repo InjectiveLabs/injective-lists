@@ -550,6 +550,6 @@ export const mainnetTokens: IbcTokenSource[] = [
     channelId: 'channel-363',
     path: 'transfer/channel-363',
     source: TokenSource.Cosmos,
-    hash: '164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795'
+    hash: '775AB5A9D31074F245BB7864B7031AC7BDC9C6C0FD64A72528A8D07203CD71F3'
   }
 ]
