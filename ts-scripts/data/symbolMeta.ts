@@ -2061,5 +2061,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Wrapped USDL',
     logo: 'wusdl.webp',
     coinGeckoId: 'lift-dollar'
+  },
+
+  OM: {
+    decimals: 18,
+    symbol: 'OM',
+    name: 'MANTRA',
+    logo: 'om.webp',
+    coinGeckoId: 'mantra-dao'
   }
 }

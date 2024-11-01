@@ -543,5 +543,13 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-183',
     source: TokenSource.Arbitrum,
     hash: '47245D9854589FADE02554744F387D24E6D7B3D3E7B7DA5596F6C27B8458B7AA'
+  },
+  {
+    ...symbolMeta.OM,
+    baseDenom: 'om',
+    channelId: 'channel-363',
+    path: 'transfer/channel-363',
+    source: TokenSource.Cosmos,
+    hash: '164807F6226F91990F358C6467EEE8B162E437BDCD3DADEC3F0CE20693720795'
   }
 ]
