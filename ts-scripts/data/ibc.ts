@@ -546,7 +546,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.OM,
-    baseDenom: 'om',
+    baseDenom: 'uom',
     channelId: 'channel-363',
     path: 'transfer/channel-363',
     source: TokenSource.Cosmos,

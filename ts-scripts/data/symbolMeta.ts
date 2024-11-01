@@ -2064,7 +2064,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   OM: {
-    decimals: 18,
+    decimals: 6,
     symbol: 'OM',
     name: 'MANTRA',
     logo: 'om.webp',
