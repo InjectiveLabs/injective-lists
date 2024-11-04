@@ -1497,9 +1497,9 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   QUNT: {
     decimals: 6,
-    name: 'QUNT',
+    name: 'Injective Quants',
     symbol: 'QUNT',
-    coinGeckoId: '',
+    coinGeckoId: 'injective-quants',
     logo: 'qunt.webp'
   },
 
