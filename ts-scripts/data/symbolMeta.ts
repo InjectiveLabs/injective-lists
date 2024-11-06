@@ -1554,7 +1554,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   INJX: {
     decimals: 6,
     symbol: 'INJX',
-    coinGeckoId: '',
+    coinGeckoId: 'injex-finance',
     logo: 'injx.png',
     name: 'Injex Finance'
   },
