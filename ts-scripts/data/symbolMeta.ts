@@ -1921,8 +1921,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   FET: {
     coinGeckoId: 'fetch-ai',
-    logo: 'fetch.png',
-    name: 'Fetch.ai',
+    logo: 'fetch.webp',
+    name: 'Artificial Superintelligence Alliance',
     symbol: 'FET',
     decimals: 18
   },
