@@ -25,8 +25,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "1297964.244614806704550622",
-      "lastTimestamp": 1730979146
+      "cumulativePrice": "1297943.13862785750248591",
+      "lastTimestamp": 1730979849
     }
   },
   {
@@ -55,8 +55,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "2733760.609097295038802496",
-      "lastTimestamp": 1730979145
+      "cumulativePrice": "2733808.143820786922059891",
+      "lastTimestamp": 1730979849
     }
   },
   {
@@ -85,8 +85,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "2593997.633894903950294809",
-      "lastTimestamp": 1730979153
+      "cumulativePrice": "2594017.111990146451909148",
+      "lastTimestamp": 1730979848
     }
   },
   {
@@ -205,8 +205,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "1658526.957048792417721553",
-      "lastTimestamp": 1730979143
+      "cumulativePrice": "1658500.97108027770177357",
+      "lastTimestamp": 1730979852
     }
   },
   {
@@ -325,8 +325,38 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "2019234.504781631280123608",
-      "lastTimestamp": 1730979134
+      "cumulativePrice": "2019212.426865904706418255",
+      "lastTimestamp": 1730979853
+    }
+  },
+  {
+    "oracleBase": "KgP",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 1,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xca7c506f858a495f4238567cb012e5c2e3c6bc8d41fd7fcc8b10f5933144d533",
+    "marketStatus": "active",
+    "ticker": "KgP/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 2,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1730980800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1730979760
     }
   },
   {
@@ -357,6 +387,36 @@
       "cumulativeFunding": "0",
       "cumulativePrice": "4.766388576450161981",
       "lastTimestamp": 1658856881
+    }
+  },
+  {
+    "oracleBase": "kUm",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 1,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xe0835c0033f8e8cab8bcec8f423ca84a2316a30be9450dd4c38d515ef2a8a06a",
+    "marketStatus": "active",
+    "ticker": "kUm/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 2,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1730980800,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1730979403
     }
   }
 ]
