@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'fet-usdt',
   'moodeng-usdt-perp',
   'wusdl-usdt',
   'mother-usdt-perp',
@@ -51,6 +52,7 @@ export const experimental = [
 
 export const cosmos = [
   'inj-usdt',
+  'fet-usdt',
   'cre-usdt',
   'tia-usdt',
   'stinj-inj',
