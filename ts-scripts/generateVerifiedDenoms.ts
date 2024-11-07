@@ -55,7 +55,9 @@ const getHardcodedDenoms = async (network: Network) => {
       return list
     }
 
-    return { ...list, [denom]: token }
+    list[denom] = token
+
+    return list
   }, {} as Record<string, any>)
 }
 
