@@ -1,14 +1,63 @@
 import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
 import {
   devnetSlugs as devnetSpotSlugs,
+  stagingSlugs as stagingSpotSlug,
   mainnetSlugs as mainnetSpotSlugs,
-  testnetSlugs as testnetSpotSlugs,
-  stagingSlugs as stagingSpotSlug
+  testnetSlugs as testnetSpotSlugs
 } from './data/market/spot'
+import {
+  devnetDenoms as devnetDenoms,
+  mainnetDenoms as mainnetDenoms,
+  testnetDenoms as testnetDenoms
+} from './data/denoms'
 import { getMarketByTicker } from './helper/market'
-import { updateJSONFile, getNetworkFileName } from './helper/utils'
+import {
+  readJSONFile,
+  updateJSONFile,
+  tokenToAddressMap,
+  getNetworkFileName
+} from './helper/utils'
 
-// helix/trading/denoms/mainnet.json
+const devnetTokensMap = tokenToAddressMap(
+  readJSONFile({
+    path: 'json/tokens/devnet.json'
+  })
+)
+const testnetTokensMap = tokenToAddressMap(
+  readJSONFile({
+    path: 'json/tokens/testnet.json'
+  })
+)
+const mainnetTokensMap = tokenToAddressMap(
+  readJSONFile({
+    path: 'json/tokens/mainnet.json'
+  })
+)
+
+const getHardcodedDenoms = async (network: Network) => {
+  let tokenMap = mainnetTokensMap
+  let hardcodedDenoms = mainnetDenoms
+
+  if (isDevnet(network)) {
+    tokenMap = devnetTokensMap
+    hardcodedDenoms = devnetDenoms
+  }
+
+  if (isTestnet(network)) {
+    tokenMap = testnetTokensMap
+    hardcodedDenoms = testnetDenoms
+  }
+
+  return hardcodedDenoms.reduce((list, denom) => {
+    const token = tokenMap[denom]
+
+    if (!token) {
+      return list
+    }
+
+    return { ...list, [denom]: token }
+  }, {} as Record<string, any>)
+}
 
 const getNetworkSlugs = (network: Network) => {
   let slugs = mainnetSpotSlugs
@@ -47,9 +96,11 @@ export const generateTradableDenoms = async (network: Network) => {
     }
   }, {} as Record<string, any>)
 
+  const hardcodedDenoms = await getHardcodedDenoms(network)
+
   await updateJSONFile(
     `json/helix/trading/denoms/${getNetworkFileName(network)}.json`,
-    verifiedDenoms
+    { ...verifiedDenoms, ...hardcodedDenoms }
   )
 }
 
