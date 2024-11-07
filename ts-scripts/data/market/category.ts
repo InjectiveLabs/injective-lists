@@ -1,5 +1,4 @@
 export const newMarkets = [
-  '2024election-perp',
   'moodeng-usdt-perp',
   'wusdl-usdt',
   'mother-usdt-perp',
@@ -31,7 +30,6 @@ export const newMarkets = [
 ]
 
 export const experimental = [
-  '2024election-perp',
   'moodeng-usdt-perp',
   'wusdl-usdt',
   'buidl-usdt-perp',
