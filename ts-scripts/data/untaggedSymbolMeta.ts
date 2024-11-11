@@ -277,5 +277,13 @@ export const untaggedSymbolMeta = {
     symbol: 'MOODENG',
     logo: 'moodeng.webp',
     coinGeckoId: 'moo-deng'
+  },
+
+  XION: {
+    name: 'XION',
+    decimals: 6,
+    symbol: 'XION',
+    logo: 'xion.webp',
+    coinGeckoId: 'xion-2'
   }
 }
