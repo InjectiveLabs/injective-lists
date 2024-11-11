@@ -67,6 +67,12 @@ jobs:
           cmd: verifiedDenoms:generate
           dir: "ts-scripts"
 
+      - name: Generate restriction list
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: restriction:generate
+          dir: "ts-scripts"
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
