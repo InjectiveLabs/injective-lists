@@ -2069,5 +2069,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'MANTRA',
     logo: 'om.webp',
     coinGeckoId: 'mantra-dao'
+  },
+
+  TruINJ: {
+    decimals: 18,
+    symbol: 'TruINJ',
+    name: 'TruFin liquid staking token',
+    logo: 'truinj.svg',
+    coinGeckoId: ''
   }
 }
