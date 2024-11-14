@@ -41,6 +41,10 @@ export const testnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.hINJ,
     address: 'inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc'
+  },
+  {
+    ...symbolMeta.TruINJ,
+    address: 'inj1zp0ac48kpp5cpu29p7a9wureydz7374h0wqy0a'
   }
 ]
 
