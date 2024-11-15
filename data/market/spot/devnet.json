@@ -8,8 +8,8 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-15,
-    "minQuantityTickSize": 1000000000000000,
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 0.01,
     "minNotional": 0
   },
   {
@@ -22,8 +22,8 @@
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
-    "minQuantityTickSize": 1000,
-    "minNotional": 1000000
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1
   },
   {
     "marketId": "0x0686357b934c761784d58a2b8b12618dfe557de108a220e06f8f6580abb83aab",
@@ -203,9 +203,9 @@
     "makerFeeRate": "-0.0002",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-15,
-    "minQuantityTickSize": 1000000000000000,
-    "minNotional": 1000000
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1
   },
   {
     "marketId": "0xba3101edf6cb94d0b29fd95fb1679f84fe981a98da91a3df1e06809845fab209",
