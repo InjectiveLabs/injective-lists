@@ -76,3 +76,8 @@ export interface Cw20ContractSource {
   contractInfo?: ContractInfo
   marketingInfo?: MarketingInfo
 }
+
+export interface MarketSlugId {
+  slug: string
+  marketId: string
+}
