@@ -22,6 +22,7 @@
     "wallets:ofac": "ts-node ./generateOfacList",
     "verifiedDenoms:generate": "ts-node ./generateVerifiedDenoms",
     "validators:generate": "yarn validators:images && ts-node ./generateValidatorsData",
+    "restriction:generate": "ts-node ./generateRestrictionList",
     "tokens:generate": "yarn fetch:chain:metadata && yarn fetch:mito:vaults && yarn tokens:static && yarn tokens:factory:generate && yarn tokens:external && yarn tokens:mito:generate && yarn tokens:supply && yarn tokens:images && ts-node ./generateTokens",
     "tokens:generate:flush": "ts-node ./flushCw20Cache && yarn tokens:generate",
     "wasm:generate:force": "yarn wasm:fetch:codeIds && yarn wasm:query:generate -f && yarn wasm:execute:generate -f"
