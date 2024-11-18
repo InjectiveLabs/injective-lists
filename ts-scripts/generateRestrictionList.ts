@@ -11,10 +11,9 @@ export const updateOfacList = async () => {
     path: 'json/wallets/ofac.json'
   })
 
-  await updateJSONFile('json/wallets/ofac.json', [
-    ...wallets,
-    ...blacklistedAddresses
-  ])
+  const addresses = new Set([...wallets, ...blacklistedAddresses])
+
+  await updateJSONFile('json/wallets/ofac.json', [...addresses])
 }
 
 updateOfacList()

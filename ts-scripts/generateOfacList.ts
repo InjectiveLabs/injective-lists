@@ -19,10 +19,12 @@ async function generateOFACList() {
     return
   }
 
-  await updateJSONFile('json/wallets/ofac.json', [
+  const addresses = new Set([
     ...result.sort((a, b) => a.localeCompare(b)),
     ...blacklistedAddresses
   ])
+
+  await updateJSONFile('json/wallets/ofac.json', [...addresses])
 }
 
 generateOFACList()
