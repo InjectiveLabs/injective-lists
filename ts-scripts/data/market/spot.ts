@@ -17,7 +17,6 @@ export const mainnetSlugs = [
   'sol-usdt',
   'talis-usdt',
   'dojo-inj',
-  'andr-usdt',
   'hinj-inj',
   'qunt-inj',
   'talis-inj',
@@ -37,7 +36,7 @@ export const mainnetSlugs = [
 
 export const devnetSlugs = ['proj-usdt', 'wbtc-inj', 'proj-inj']
 
-export const stagingSlugs = ['ldo-usdcet', 'usdtkv-usdt', 'pyth-usdt']
+export const stagingSlugs = ['ldo-usdcet', 'pyth-usdt']
 
 export const testnetSlugs = [
   'zen-inj',

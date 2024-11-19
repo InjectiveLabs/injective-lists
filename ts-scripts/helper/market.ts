@@ -21,7 +21,37 @@ const devnetDerivativeMarkets = readJSONFile({
   path: 'data/market/derivative/devnet.json'
 })
 
-const spotMarketsByNetwork = (network: Network) => {
+const mainnetSpotMarketMap = readJSONFile({
+  path: 'data/market/spot/slugMap/mainnet.json',
+  fallback: {}
+})
+
+const testnetSpotMarketMap = readJSONFile({
+  path: 'data/market/spot/slugMap/testnet.json',
+  fallback: {}
+})
+
+const devnetSpotMarketMap = readJSONFile({
+  path: 'data/market/spot/slugMap/devnet.json',
+  fallback: {}
+})
+
+const mainnetDerivativeMarketMap = readJSONFile({
+  path: 'data/market/derivative/slugMap/mainnet.json',
+  fallback: {}
+})
+
+const testnetDerivativeMarketMap = readJSONFile({
+  path: 'data/market/derivative/slugMap/testnet.json',
+  fallback: {}
+})
+
+const devnetDerivativeMarketMap = readJSONFile({
+  path: 'data/market/derivative/slugMap/devnet.json',
+  fallback: {}
+})
+
+export const getSpotMarketsByNetwork = (network: Network) => {
   if (isMainnet(network)) {
     return mainnetSpotMarkets
   }
@@ -33,7 +63,7 @@ const spotMarketsByNetwork = (network: Network) => {
   return devnetSpotMarkets
 }
 
-const derivativeMarketsByNetwork = (network: Network) => {
+export const getDerivativeMarketsByNetwork = (network: Network) => {
   if (isMainnet(network)) {
     return mainnetDerivativeMarkets
   }
@@ -45,18 +75,51 @@ const derivativeMarketsByNetwork = (network: Network) => {
   return devnetDerivativeMarkets
 }
 
+export const getSpotMarketMapByNetwork = (network: Network) => {
+  if (isMainnet(network)) {
+    return mainnetSpotMarketMap
+  }
+
+  if (isTestnet(network)) {
+    return testnetSpotMarketMap
+  }
+
+  return devnetSpotMarketMap
+}
+
+export const getDerivativeMarketMapByNetwork = (network: Network) => {
+  if (isMainnet(network)) {
+    return mainnetDerivativeMarketMap
+  }
+
+  if (isTestnet(network)) {
+    return testnetDerivativeMarketMap
+  }
+
+  return devnetDerivativeMarketMap
+}
+
+export const filterMarketMapBySlugs = (slugs: string[], network: Network) => {
+  const spotMarketMap = getSpotMarketMapByNetwork(network)
+  const derivativeMarketMap = getDerivativeMarketMapByNetwork(network)
+
+  return slugs
+    .map((slug) => spotMarketMap[slug] || derivativeMarketMap[slug])
+    .filter((market) => market)
+}
+
 export const getMarketByTicker = (ticker: string, network: Network) => {
-  const spotMarkets = spotMarketsByNetwork(network)
-  const derivativeMarkets = derivativeMarketsByNetwork(network)
+  const spotMarkets = getSpotMarketsByNetwork(network)
+  const derivativeMarkets = getDerivativeMarketsByNetwork(network)
 
   return [...spotMarkets, ...derivativeMarkets].find(
-    (market) => market.ticker === ticker
+    (market) => market.ticker.toUpperCase() === ticker
   )
 }
 
 export const getMarketsByDenom = (denom: string, network: Network) => {
-  const spotMarkets = spotMarketsByNetwork(network)
-  const derivativeMarkets = derivativeMarketsByNetwork(network)
+  const spotMarkets = getSpotMarketsByNetwork(network)
+  const derivativeMarkets = getDerivativeMarketsByNetwork(network)
 
   const formattedDenom = denom.toLowerCase()
 
@@ -75,8 +138,8 @@ export const getMarketIdsByDenom = (denom: string, network: Network) => {
 }
 
 export const getMarketById = (marketId: string, network: Network) => {
-  const spotMarkets = spotMarketsByNetwork(network)
-  const derivativeMarkets = derivativeMarketsByNetwork(network)
+  const spotMarkets = getSpotMarketsByNetwork(network)
+  const derivativeMarkets = getDerivativeMarketsByNetwork(network)
 
   return [...spotMarkets, ...derivativeMarkets].find(
     (market) => market.marketId === marketId

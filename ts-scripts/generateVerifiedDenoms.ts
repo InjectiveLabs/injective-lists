@@ -10,13 +10,13 @@ import {
   mainnetDenoms as mainnetDenoms,
   testnetDenoms as testnetDenoms
 } from './data/denoms'
-import { getMarketByTicker } from './helper/market'
 import {
   readJSONFile,
   updateJSONFile,
   tokenToAddressMap,
   getNetworkFileName
 } from './helper/utils'
+import { getMarketById, filterMarketMapBySlugs } from './helper/market'
 
 const devnetTokensMap = tokenToAddressMap(
   readJSONFile({
@@ -34,22 +34,32 @@ const mainnetTokensMap = tokenToAddressMap(
   })
 )
 
-const getHardcodedDenoms = async (network: Network) => {
-  let tokenMap = mainnetTokensMap
+const getTokenMap = (network: Network) => {
+  if (isDevnet(network)) {
+    return devnetTokensMap
+  }
+
+  if (isTestnet(network)) {
+    return testnetTokensMap
+  }
+
+  return mainnetTokensMap
+}
+
+const getHardcodedDenoms = (network: Network) => {
+  const tokenMap = getTokenMap(network)
   let hardcodedDenoms = mainnetDenoms
 
   if (isDevnet(network)) {
-    tokenMap = devnetTokensMap
     hardcodedDenoms = devnetDenoms
   }
 
   if (isTestnet(network)) {
-    tokenMap = testnetTokensMap
     hardcodedDenoms = testnetDenoms
   }
 
   return hardcodedDenoms.reduce((list, denom) => {
-    const token = tokenMap[denom]
+    const token = tokenMap[denom.replace('peggy', '').toLowerCase()]
 
     if (!token) {
       return list
@@ -61,7 +71,7 @@ const getHardcodedDenoms = async (network: Network) => {
   }, {} as Record<string, any>)
 }
 
-const getNetworkSlugs = (network: Network) => {
+const getTradableMarketIds = (network: Network) => {
   let slugs = mainnetSpotSlugs
 
   if (network === Network.Staging) {
@@ -76,16 +86,17 @@ const getNetworkSlugs = (network: Network) => {
     return [...slugs, ...testnetSpotSlugs]
   }
 
-  return mainnetSpotSlugs
+  return filterMarketMapBySlugs(mainnetSpotSlugs, network).map(
+    ({ marketId }) => marketId
+  )
 }
 
 export const generateTradableDenoms = async (network: Network) => {
-  const slugs = getNetworkSlugs(network)
+  const tokenMap = getTokenMap(network)
+  const marketIds = getTradableMarketIds(network)
 
-  const verifiedDenoms = slugs.reduce((list, slug) => {
-    const ticker = slug.replace('-', '/').toUpperCase()
-
-    const market = getMarketByTicker(ticker, network)
+  const verifiedDenoms = marketIds.reduce((list, marketId) => {
+    const market = getMarketById(marketId, network)
 
     if (!market) {
       return list
@@ -93,12 +104,14 @@ export const generateTradableDenoms = async (network: Network) => {
 
     return {
       ...list,
-      [market.baseDenom]: market.baseToken,
-      [market.quoteDenom]: market.quoteToken
+      [market.baseDenom]:
+        tokenMap[market.baseDenom.replace('peggy', '').toLowerCase()],
+      [market.quoteDenom]:
+        tokenMap[market.quoteDenom.replace('peggy', '').toLowerCase()]
     }
   }, {} as Record<string, any>)
 
-  const hardcodedDenoms = await getHardcodedDenoms(network)
+  const hardcodedDenoms = getHardcodedDenoms(network)
 
   await updateJSONFile(
     `json/helix/trading/denoms/${getNetworkFileName(network)}.json`,
