@@ -7,7 +7,12 @@ import {
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 import { MarketSlugId } from './types'
 
+const MAINNET_SYMBOL_OVERRIDE = {
+  usdcnb: 'usdc'
+}
+
 const MAINNET_SPOT_MARKETS_TO_IGNORE = [
+  '0xabc20971099f5df5d1de138f8ea871e7e9832e3b0b54b61056eae15b09fed678', // USDC/USDT
   '0xda0bb7a7d8361d17a9d2327ed161748f33ecbf02738b45a7dd1d812735d1531c', //USDT/USDC,
   '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c', // SOL/USDT
   '0xb9a07515a5c239fcbfa3e25eaa829a03d46c4b52b9ab8ee6be471e9eb0e9ea31', // WMATIC/USDT
@@ -19,13 +24,31 @@ const MAINNET_SPOT_MARKETS_TO_IGNORE = [
   '0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af' // USDY/USDT
 ]
 
+const getFormattedSpotSlug = (ticker: string, network: Network): string => {
+  const slug = ticker.replace('/', '-').toLowerCase()
+
+  if (!isMainnet(network)) {
+    return slug
+  }
+
+  for (const [key, value] of Object.entries(MAINNET_SYMBOL_OVERRIDE)) {
+    if (slug.includes(key)) {
+      console.log(slug.replace(key, value))
+
+      return slug.replace(key, value)
+    }
+  }
+
+  return slug
+}
+
 const generateSpotMarketMap = async (network: Network) => {
   const spotMarkets = getSpotMarketsByNetwork(network)
 
   try {
     const marketMap = spotMarkets.reduce(
       (list: Record<string, MarketSlugId>, market: SpotMarket) => {
-        const slug = market.ticker.replace('/', '-').toLowerCase()
+        const slug = getFormattedSpotSlug(market.ticker, network)
 
         if (
           isMainnet(network) &&
