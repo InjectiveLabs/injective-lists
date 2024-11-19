@@ -515,31 +515,25 @@
     "tokenType": "ibc",
     "externalLogo": "pyth.png"
   },
-  "peggy0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": {
-    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    "isNative": false,
+  "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E": {
+    "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+    "isNative": true,
     "tokenVerification": "verified",
     "marketIds": [
-      "0x01e920e081b6f3b2e5183399d5b6733bb6f80319e6be3805b95cb7236910ff0e",
-      "0x09cc2c28fbedbdd677e07924653f8f583d0ee5886e74046e7f114210d990784b",
-      "0x170a06eb653548f67e94b0fcb82c5258c83b0a2b62ed24c55749d5ac77bc7621",
-      "0x5abfffe9079d53e0bf8ee9b3064b427acc3d71d6ba58a44235abe38f60115678",
-      "0x8b1a4d3e8f6b559e30e40922ee3662dd78edf7042330d4d620d188699d1a9715",
-      "0x9a629b947b6f946af4f6076cfda67f3535d73ee3cef6176cf6d9c8d6b0a03f37",
-      "0xa43d2be9861efb0d188b136cef0ae2150f80e08ec318392df654520dd359fcd7",
-      "0xabc20971099f5df5d1de138f8ea871e7e9832e3b0b54b61056eae15b09fed678",
-      "0xcdfbfaf1f24055e89b3c7cc763b8cb46ffff08cdc38c999d01f58d64af75dca9",
-      "0xe0dc13205fb8b23111d8555a6402681965223135d368eeeb964681f9ff12eb2a",
-      "0xf66f797a0ff49bd2170a04d288ca3f13b5df1c822a7b0cc4204aca64a5860666",
-      "0xfe93c19c0a072c8dd208b96694e024305a7dff01bbf12cac2bfa81b246c69040"
+      "0x9c8a91a894f773792b1e8d0b6a8224a6b748753738e9945020ee566266f817be"
     ],
     "name": "USD Coin",
     "decimals": 6,
-    "symbol": "USDClegacy",
+    "symbol": "USDC",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/66ab9d16-7c2c-4a97-a85d-e070fbc86a00/public",
     "coinGeckoId": "usd-coin",
-    "denom": "peggy0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-    "tokenType": "erc20",
+    "baseDenom": "uusdc",
+    "channelId": "channel-148",
+    "source": "cosmos",
+    "path": "transfer/channel-148",
+    "hash": "2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+    "denom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+    "tokenType": "ibc",
     "externalLogo": "usdc.png"
   },
   "factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro": {
