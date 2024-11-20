@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'xion-usdt-perp',
   'fet-usdt',
   'moodeng-usdt-perp',
   'wusdl-usdt',
@@ -31,6 +32,7 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'xion-usdt-perp',
   'moodeng-usdt-perp',
   'wusdl-usdt',
   'buidl-usdt-perp',
@@ -51,6 +53,7 @@ export const experimental = [
 ]
 
 export const cosmos = [
+  'xion-usdt-perp',
   'inj-usdt',
   'fet-usdt',
   'cre-usdt',

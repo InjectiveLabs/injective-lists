@@ -1,4 +1,5 @@
 export const mainnetSlugs: string[] = [
+  'xion-usdt-perp',
   'moodeng-usdt-perp',
   'mother-usdt-perp',
   'apt-usdt-perp',
