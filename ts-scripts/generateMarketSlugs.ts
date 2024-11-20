@@ -80,7 +80,7 @@ export const generateExpiryFuturesMarketId = async (network: Network) => {
 
   await updateJSONFile(
     `json/helix/trading/expiryMap/${getNetworkFileName(network)}.json`,
-    filterMarketMapBySlugs(slugs, network).map(({ marketId }) => marketId)
+    filterMarketMapBySlugs(slugs, network)
   )
 }
 
