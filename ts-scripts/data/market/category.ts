@@ -1,4 +1,5 @@
 export const newMarkets = [
+  'agent-inj',
   'xion-usdt-perp',
   'fet-usdt',
   'moodeng-usdt-perp',
@@ -32,6 +33,7 @@ export const newMarkets = [
 ]
 
 export const experimental = [
+  'agent-inj',
   'xion-usdt-perp',
   'moodeng-usdt-perp',
   'wusdl-usdt',
@@ -137,7 +139,8 @@ export const injective = [
   'sns-inj',
   'iotx-inj',
   'usdy-usdt',
-  'xiii-inj'
+  'xiii-inj',
+  'agent-inj'
 ]
 
 export const solana = [
