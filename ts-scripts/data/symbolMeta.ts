@@ -2077,5 +2077,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'TruFin liquid staking token',
     logo: 'truinj.svg',
     coinGeckoId: ''
+  },
+
+  Agent: {
+    decimals: 18,
+    symbol: 'Agent',
+    name: 'First Injective AI token',
+    logo: 'agent.svg',
+    coinGeckoId: ''
   }
 }
