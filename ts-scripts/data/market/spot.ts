@@ -31,6 +31,7 @@ export const mainnetSlugs = [
   'hdro-usdt',
   'wusdl-usdt',
   'fet-usdt',
+  'andr-usdt',
   'nonja-inj'
 ]
 
