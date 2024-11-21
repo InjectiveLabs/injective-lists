@@ -2083,7 +2083,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'Agent',
     name: 'First Injective AI token',
-    logo: 'agent.svg',
+    logo: 'agent.png',
     coinGeckoId: ''
   }
 }
