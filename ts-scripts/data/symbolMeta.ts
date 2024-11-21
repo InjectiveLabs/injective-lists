@@ -2081,7 +2081,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   Agent: {
     decimals: 6,
-    symbol: 'Agent',
+    symbol: 'AGENT',
     name: 'First Injective AI token',
     logo: 'agent.png',
     coinGeckoId: ''
