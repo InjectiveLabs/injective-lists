@@ -2080,7 +2080,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   Agent: {
-    decimals: 18,
+    decimals: 6,
     symbol: 'Agent',
     name: 'First Injective AI token',
     logo: 'agent.png',
