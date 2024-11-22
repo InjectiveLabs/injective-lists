@@ -32,41 +32,12 @@ import {
 import {
   devnetCategoryMap,
   mainnetCategoryMap,
-  testnetCategoryMap,
-  rwa as rwaCategorySlugs,
-  cosmos as cosmosCategorySlugs,
-  solana as solanaCategorySlugs,
-  ethereum as ethereumCategorySlugs,
-  injective as injectiveCategorySlugs,
-  newMarkets as newMarketsCategorySlugs,
-  olpLowVolume as olpLowVolumeCategorySlugs,
-  experimental as experimentalCategorySlugs
+  testnetCategoryMap
 } from './data/market/category'
 import { filterMarketMapByMarketId } from './helper/market'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 
-export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
-  let marketIds = mainnetExpiryFutureMarketIds
-
-  if (network === Network.Staging) {
-    marketIds = [...marketIds, ...stagingExpiryFutureMarketIds]
-  }
-
-  if (isDevnet(network)) {
-    marketIds = [...marketIds, ...devnetExpiryFutureMarketIds]
-  }
-
-  if (isTestnet(network)) {
-    marketIds = [...marketIds, ...testnetExpiryFutureMarketIds]
-  }
-
-  await updateJSONFile(
-    `json/helix/trading/expiry/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
-  )
-}
-
-export const generateExpiryFuturesMarketId = async (network: Network) => {
+export const generateExpiryFuturesMarketMap = async (network: Network) => {
   let marketIds = mainnetExpiryFutureMarketIds
 
   if (network === Network.Staging) {
@@ -87,27 +58,6 @@ export const generateExpiryFuturesMarketId = async (network: Network) => {
       (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
       {}
     )
-  )
-}
-
-export const generateSpotMarketSlugs = async (network: Network) => {
-  let marketIds = mainnetSpotMarketIds
-
-  if (network === Network.Staging) {
-    marketIds = [...marketIds, ...stagingSpotMarketIds]
-  }
-
-  if (isDevnet(network)) {
-    marketIds = [...marketIds, ...devnetSpotMarketIds]
-  }
-
-  if (isTestnet(network)) {
-    marketIds = [...marketIds, ...testnetSpotMarketIds]
-  }
-
-  await updateJSONFile(
-    `json/helix/trading/spot/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
   )
 }
 
@@ -132,27 +82,6 @@ export const generateSpotMarketMap = async (network: Network) => {
       (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
       {}
     )
-  )
-}
-
-export const generateDerivativeMarketSlugs = async (network: Network) => {
-  let marketIds = mainnetDerivativeMarketIds
-
-  if (network === Network.Staging) {
-    marketIds = [...marketIds, ...stagingDerivativeMarketIds]
-  }
-
-  if (isDevnet(network)) {
-    marketIds = [...marketIds, ...devnetDerivativeMarketIds]
-  }
-
-  if (isTestnet(network)) {
-    marketIds = [...marketIds, ...testnetDerivativeMarketIds]
-  }
-
-  await updateJSONFile(
-    `json/helix/trading/derivative/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
   )
 }
 
@@ -224,19 +153,6 @@ export const generateDerivativeGridMarkets = async (network: Network) => {
   )
 }
 
-export const generateMarketCategorySlugs = async () => {
-  await updateJSONFile('json/helix/trading/market/category.json', {
-    rwaCategorySlugs,
-    cosmosCategorySlugs,
-    solanaCategorySlugs,
-    ethereumCategorySlugs,
-    injectiveCategorySlugs,
-    newMarketsCategorySlugs,
-    olpLowVolumeCategorySlugs,
-    experimentalCategorySlugs
-  })
-}
-
 export const generateMarketCategoryMap = async (network: Network) => {
   let categoryMap = mainnetCategoryMap
 
@@ -259,21 +175,6 @@ export const generateMarketCategoryMap = async (network: Network) => {
   )
 }
 
-generateSpotMarketSlugs(Network.Devnet)
-generateSpotMarketSlugs(Network.Staging)
-generateSpotMarketSlugs(Network.TestnetSentry)
-generateSpotMarketSlugs(Network.MainnetSentry)
-
-generateExpiryFuturesMarketSlugs(Network.Devnet)
-generateExpiryFuturesMarketSlugs(Network.Staging)
-generateExpiryFuturesMarketSlugs(Network.TestnetSentry)
-generateExpiryFuturesMarketSlugs(Network.MainnetSentry)
-
-generateDerivativeMarketSlugs(Network.Devnet)
-generateDerivativeMarketSlugs(Network.Staging)
-generateDerivativeMarketSlugs(Network.TestnetSentry)
-generateDerivativeMarketSlugs(Network.MainnetSentry)
-
 generateSpotGridMarkets(Network.Devnet)
 generateSpotGridMarkets(Network.Staging)
 generateSpotGridMarkets(Network.TestnetSentry)
@@ -284,12 +185,10 @@ generateDerivativeGridMarkets(Network.Staging)
 generateDerivativeGridMarkets(Network.TestnetSentry)
 generateDerivativeGridMarkets(Network.MainnetSentry)
 
-generateMarketCategorySlugs()
-
-generateExpiryFuturesMarketId(Network.Devnet)
-generateExpiryFuturesMarketId(Network.Staging)
-generateExpiryFuturesMarketId(Network.TestnetSentry)
-generateExpiryFuturesMarketId(Network.MainnetSentry)
+generateExpiryFuturesMarketMap(Network.Devnet)
+generateExpiryFuturesMarketMap(Network.Staging)
+generateExpiryFuturesMarketMap(Network.TestnetSentry)
+generateExpiryFuturesMarketMap(Network.MainnetSentry)
 
 generateSpotMarketMap(Network.Devnet)
 generateSpotMarketMap(Network.Staging)

@@ -1,197 +1,7 @@
-export const newMarkets = [
-  'agent-inj',
-  'xion-usdt-perp',
-  'fet-usdt',
-  'moodeng-usdt-perp',
-  'wusdl-usdt',
-  'mother-usdt-perp',
-  'apt-usdt-perp',
-  'ton-usdt-perp',
-  'ftm-usdt-perp',
-  'tao-usdt-perp',
-  'popcat-usdt-perp',
-  'pepe-usdt-perp',
-  'crv-usdt-perp',
-  'mkr-usdt-perp',
-  'aave-usdt-perp',
-  'buidl-usdt-perp',
-  'ton-usdt',
-  'btc-wusdm-perp',
-  'wusdm-usdt',
-  'usdy-usdt',
-  'giga-inj',
-  'iotx-inj',
-  'sns-inj',
-  'pyusd-usdt',
-  'mother-inj',
-  'gbp-usdt-perp',
-  'eur-usdt-perp',
-  'xau-usdt-perp',
-  'xag-usdt-perp',
-  'ezeth-weth',
-  'saga-usdt'
-]
-
-export const experimental = [
-  'agent-inj',
-  'xion-usdt-perp',
-  'moodeng-usdt-perp',
-  'wusdl-usdt',
-  'buidl-usdt-perp',
-  'ton-usdt',
-  'btc-wusdm-perp',
-  'wusdm-usdt',
-  'usdy-usdt',
-  'usde-usdt',
-  'app-inj',
-  'jup-usdt-perp',
-  'gyen-usdt',
-  'wif-usdt-perp',
-  'qunt-inj',
-  'omni-usdt-perp',
-  'w-usdt-perp',
-  'mother-inj',
-  'xiii-inj'
-]
-
-export const cosmos = [
-  'xion-usdt-perp',
-  'inj-usdt',
-  'fet-usdt',
-  'cre-usdt',
-  'tia-usdt',
-  'stinj-inj',
-  'somm-usdt',
-  'canto-usdt',
-  'strd-usdt',
-  'inj-usdt-perp',
-  'atom-usdt-perp',
-  'sei-usdt-perp',
-  'axl-usdt-perp',
-  'tia-usdt-perp',
-  'talis-usdt',
-  'osmo-usdt-perp',
-  'andr-inj',
-  'whale-inj',
-  'saga-usdt',
-  'atom-usdt',
-  'usdy-usdt'
-]
-
-export const ethereum = [
-  'wusdl-usdt',
-  'ton-usdt-perp',
-  'pepe-usdt-perp',
-  'crv-usdt-perp',
-  'mkr-usdt-perp',
-  'aave-usdt-perp',
-  'buidl-usdt-perp',
-  'ton-usdt',
-  'wusdm-usdt',
-  'inj-usdt',
-  'arb-usdt',
-  'app-inj',
-  'chz-usdcet',
-  'usdt-usdcet',
-  'ape-usdt',
-  'link-usdt',
-  'stinj-inj',
-  'weth-usdt',
-  'wmatic-usdt',
-  'steadyeth-usdt',
-  'steadybtc-usdt',
-  'inj-usdt-perp',
-  'bonk-usdt-perp',
-  'eth-usdt-perp',
-  'bnb-usdt-perp',
-  'eth-usdtkv-perp',
-  'arb-usdt-perp',
-  'op-usdt-perp',
-  'link-usdt-perp',
-  'ena-usdt',
-  'w-usdt',
-  'w-usdt-perp',
-  'omni-usdt',
-  'pyusd-usdt'
-]
-
-export const injective = [
-  'inj-usdt',
-  'inj-usdt-perp',
-  'talis-usdt',
-  'stinj-inj',
-  'ninja-inj',
-  'kira-inj',
-  'katana-inj',
-  'ninj-inj',
-  'dojo-inj',
-  'ginger-inj',
-  'autism-inj',
-  'andr-inj',
-  'hinj-inj',
-  'qunt-inj',
-  'talis-inj',
-  'hdro-inj',
-  'pyth-inj',
-  'lvn-inj',
-  'black-inj',
-  'mother-inj',
-  'sns-inj',
-  'iotx-inj',
-  'usdy-usdt',
-  'xiii-inj',
-  'agent-inj'
-]
-
-export const solana = [
-  'moodeng-usdt-perp',
-  'mother-usdt-perp',
-  'popcat-usdt-perp',
-  'jup-usdt-perp',
-  'pyth-usdt-perp',
-  'sol-usdt',
-  'sol-usdt-perp',
-  'wif-usdt-perp',
-  'bonk-usdt-perp',
-  'w-usdt',
-  'w-usdt-perp',
-  'boden-usdt-perp',
-  'sns-inj',
-  'giga-inj'
-]
-
-export const olpLowVolume = [
-  'hdro-inj',
-  'inj-usdt',
-  'tia-usdt',
-  'xrp-usdt-perp',
-  'atom-usdt',
-  'weth-usdt',
-  'usdt-usdcet',
-  'wmatic-usdt',
-  'atom-usdt-perp',
-  'btc-usdt-perp',
-  'eth-usdt-perp',
-  'inj-usdt-perp',
-  'bnb-usdt-perp',
-  'pyth-usdt-perp',
-  'sol-usdt',
-  'axl-usdt-perp',
-  'kava-usdt',
-  'sei-usdt-perp',
-  'tia-usdt-perp'
-]
-
-export const rwa = [
-  'xau-usdt-perp',
-  'xag-usdt-perp',
-  'eur-usdt-perp',
-  'gbp-usdt-perp'
-]
-
 export const mainnetCategoryMap = {
   newMarkets: [
-    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2',  //agent-inj
+    '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
+    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', //agent-inj
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
@@ -224,6 +34,7 @@ export const mainnetCategoryMap = {
     '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9' // saga-usd
   ],
   experimental: [
+    '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-per
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
     '0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8', // wusdl-usdt
@@ -323,9 +134,10 @@ export const mainnetCategoryMap = {
     '0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664', // iotx-inj
     '0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af', // usdy-usdt
     '0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117', // xiii-inj
-    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2'  //agent-inj
+    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2' //agent-inj
   ],
   solana: [
+    '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
     '0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b', // mother-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
