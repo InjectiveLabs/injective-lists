@@ -191,6 +191,7 @@ export const rwa = [
 
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2',  //agent-inj
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
@@ -321,7 +322,8 @@ export const mainnetCategoryMap = {
     '0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977', // sns-inj
     '0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664', // iotx-inj
     '0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af', // usdy-usdt
-    '0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117' // xiii-inj
+    '0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117', // xiii-inj
+    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2'  //agent-inj
   ],
   solana: [
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
