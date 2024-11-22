@@ -1,175 +1,646 @@
 {
-  "newMarketsMarketIds": [
-    "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd",
-    "0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295",
-    "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f",
-    "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8",
-    "0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b",
-    "0x5aeb66848398815d1c8485135dc539355028fb3c32d662af9eeecfd47050a1a6",
-    "0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2",
-    "0x4be4791338907626dd77a806c6e4dff76d1428768080fe232f32ef990c8d064f",
-    "0xa51b0df7a1ac2bea408fdc4f84f3d7060b62f976ab659b329b00065e5c8f2c37",
-    "0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9",
-    "0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99",
-    "0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872",
-    "0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520",
-    "0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed",
-    "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2",
-    "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0",
-    "0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709",
-    "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b",
-    "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af",
-    "0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217",
-    "0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664",
-    "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977",
-    "0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d",
-    "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80",
-    "0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f",
-    "0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5",
-    "0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5",
-    "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052",
-    "0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d",
-    "0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9"
+  "newMarkets": [
+    {
+      "slug": "xion-usdt-perp",
+      "marketId": "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd"
+    },
+    {
+      "slug": "fet-usdt",
+      "marketId": "0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295"
+    },
+    {
+      "slug": "moodeng-usdt-perp",
+      "marketId": "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f"
+    },
+    {
+      "slug": "wusdl-usdt",
+      "marketId": "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8"
+    },
+    {
+      "slug": "mother-usdt-perp",
+      "marketId": "0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b"
+    },
+    {
+      "slug": "apt-usdt-perp",
+      "marketId": "0x5aeb66848398815d1c8485135dc539355028fb3c32d662af9eeecfd47050a1a6"
+    },
+    {
+      "slug": "ton-usdt-perp",
+      "marketId": "0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2"
+    },
+    {
+      "slug": "ftm-usdt-perp",
+      "marketId": "0x4be4791338907626dd77a806c6e4dff76d1428768080fe232f32ef990c8d064f"
+    },
+    {
+      "slug": "tao-usdt-perp",
+      "marketId": "0xa51b0df7a1ac2bea408fdc4f84f3d7060b62f976ab659b329b00065e5c8f2c37"
+    },
+    {
+      "slug": "popcat-usdt-perp",
+      "marketId": "0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9"
+    },
+    {
+      "slug": "pepe-usdt-perp",
+      "marketId": "0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99"
+    },
+    {
+      "slug": "crv-usdt-perp",
+      "marketId": "0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872"
+    },
+    {
+      "slug": "mkr-usdt-perp",
+      "marketId": "0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520"
+    },
+    {
+      "slug": "aave-usdt-perp",
+      "marketId": "0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed"
+    },
+    {
+      "slug": "buidl-usdt-perp",
+      "marketId": "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2"
+    },
+    {
+      "slug": "ton-usdt",
+      "marketId": "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0"
+    },
+    {
+      "slug": "btc-wusdm-perp",
+      "marketId": "0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709"
+    },
+    {
+      "slug": "wusdm-usdt",
+      "marketId": "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b"
+    },
+    {
+      "slug": "usdy-usdt",
+      "marketId": "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af"
+    },
+    {
+      "slug": "giga-inj",
+      "marketId": "0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217"
+    },
+    {
+      "slug": "iotx-inj",
+      "marketId": "0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664"
+    },
+    {
+      "slug": "sns-inj",
+      "marketId": "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977"
+    },
+    {
+      "slug": "pyusd-usdt",
+      "marketId": "0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d"
+    },
+    {
+      "slug": "mother-inj",
+      "marketId": "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80"
+    },
+    {
+      "slug": "gbp-usdt-perp",
+      "marketId": "0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f"
+    },
+    {
+      "slug": "eur-usdt-perp",
+      "marketId": "0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5"
+    },
+    {
+      "slug": "xau-usdt-perp",
+      "marketId": "0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5"
+    },
+    {
+      "slug": "xag-usdt-perp",
+      "marketId": "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052"
+    },
+    {
+      "slug": "ezeth-weth",
+      "marketId": "0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d"
+    },
+    {
+      "slug": "saga-usdt",
+      "marketId": "0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9"
+    }
   ],
-  "experimentalMarketIds": [
-    "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd",
-    "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f",
-    "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8",
-    "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2",
-    "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0",
-    "0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709",
-    "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b",
-    "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af",
-    "0x1af8fa374392dc1bd6331f38f0caa424a39b05dd9dfdc7a2a537f6f62bde50fe",
-    "0xd0ba680312852ffb0709446fff518e6c4d798fb70cfd2699aba3717a2517cfd5",
-    "0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c",
-    "0x0a1366c8b05658c0ccca6064e4b20aacd5ad350c02debd6ec0f4dc9178145d14",
-    "0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88",
-    "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
-    "0x4d42425fc3ccd6b61b8c4ad61134ab3cf21bdae1b665317eff671cfab79f4387",
-    "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243",
-    "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80",
-    "0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117"
+  "experimental": [
+    {
+      "slug": "xion-usdt-perp",
+      "marketId": "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd"
+    },
+    {
+      "slug": "moodeng-usdt-perp",
+      "marketId": "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f"
+    },
+    {
+      "slug": "wusdl-usdt",
+      "marketId": "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8"
+    },
+    {
+      "slug": "buidl-usdt-perp",
+      "marketId": "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2"
+    },
+    {
+      "slug": "ton-usdt",
+      "marketId": "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0"
+    },
+    {
+      "slug": "btc-wusdm-perp",
+      "marketId": "0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709"
+    },
+    {
+      "slug": "wusdm-usdt",
+      "marketId": "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b"
+    },
+    {
+      "slug": "usdy-usdt",
+      "marketId": "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af"
+    },
+    {
+      "slug": "usde-usdt",
+      "marketId": "0x1af8fa374392dc1bd6331f38f0caa424a39b05dd9dfdc7a2a537f6f62bde50fe"
+    },
+    {
+      "slug": "app-inj",
+      "marketId": "0xd0ba680312852ffb0709446fff518e6c4d798fb70cfd2699aba3717a2517cfd5"
+    },
+    {
+      "slug": "jup-usdt-perp",
+      "marketId": "0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c"
+    },
+    {
+      "slug": "gyen-usdt",
+      "marketId": "0x0a1366c8b05658c0ccca6064e4b20aacd5ad350c02debd6ec0f4dc9178145d14"
+    },
+    {
+      "slug": "wif-usdt-perp",
+      "marketId": "0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88"
+    },
+    {
+      "slug": "qunt-inj",
+      "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21"
+    },
+    {
+      "slug": "omni-usdt-perp",
+      "marketId": "0x4d42425fc3ccd6b61b8c4ad61134ab3cf21bdae1b665317eff671cfab79f4387"
+    },
+    {
+      "slug": "w-usdt-perp",
+      "marketId": "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243"
+    },
+    {
+      "slug": "mother-inj",
+      "marketId": "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80"
+    },
+    {
+      "slug": "xiii-inj",
+      "marketId": "0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117"
+    }
   ],
-  "cosmosMarketIds": [
-    "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd",
-    "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
-    "0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295",
-    "0xe03df6e1571acb076c3d8f22564a692413b6843ad2df67411d8d8e56449c7ff4",
-    "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101",
-    "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363",
-    "0x0686357b934c761784d58a2b8b12618dfe557de108a220e06f8f6580abb83aab",
-    "0xa7fb70ac87e220f3ea7f7f77faf48b47b3575a9f7ad22291f04a02799e631ca9",
-    "0xcd4b823ad32db2245b61bf498936145d22cdedab808d2f9d65100330da315d29",
-    "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963",
-    "0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01",
-    "0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b",
-    "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb",
-    "0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c",
-    "0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033",
-    "0xcf18525b53e54ad7d27477426ade06d69d8d56d2f3bf35fe5ce2ad9eb97c2fbc",
-    "0x959c9401a557ac090fff3ec11db5a1a9832e51a97a41b722d2496bb3cb0b2f72",
-    "0x586409ac5f6d6e90a81d2585b9a8e76de0b4898d5f2c047d0bc025a036489ba1",
-    "0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9",
-    "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa",
-    "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af"
+  "cosmos": [
+    {
+      "slug": "xion-usdt-perp",
+      "marketId": "0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd"
+    },
+    {
+      "slug": "inj-usdt",
+      "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0"
+    },
+    {
+      "slug": "fet-usdt",
+      "marketId": "0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295"
+    },
+    {
+      "slug": "cre-usdt",
+      "marketId": "0xe03df6e1571acb076c3d8f22564a692413b6843ad2df67411d8d8e56449c7ff4"
+    },
+    {
+      "slug": "tia-usdt",
+      "marketId": "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101"
+    },
+    {
+      "slug": "stinj-inj",
+      "marketId": "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363"
+    },
+    {
+      "slug": "somm-usdt",
+      "marketId": "0x0686357b934c761784d58a2b8b12618dfe557de108a220e06f8f6580abb83aab"
+    },
+    {
+      "slug": "canto-usdt",
+      "marketId": "0xa7fb70ac87e220f3ea7f7f77faf48b47b3575a9f7ad22291f04a02799e631ca9"
+    },
+    {
+      "slug": "strd-usdt",
+      "marketId": "0xcd4b823ad32db2245b61bf498936145d22cdedab808d2f9d65100330da315d29"
+    },
+    {
+      "slug": "inj-usdt-perp",
+      "marketId": "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963"
+    },
+    {
+      "slug": "atom-usdt-perp",
+      "marketId": "0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01"
+    },
+    {
+      "slug": "sei-usdt-perp",
+      "marketId": "0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b"
+    },
+    {
+      "slug": "axl-usdt-perp",
+      "marketId": "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb"
+    },
+    {
+      "slug": "tia-usdt-perp",
+      "marketId": "0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c"
+    },
+    {
+      "slug": "talis-usdt",
+      "marketId": "0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033"
+    },
+    {
+      "slug": "osmo-usdt-perp",
+      "marketId": "0xcf18525b53e54ad7d27477426ade06d69d8d56d2f3bf35fe5ce2ad9eb97c2fbc"
+    },
+    {
+      "slug": "andr-inj",
+      "marketId": "0x959c9401a557ac090fff3ec11db5a1a9832e51a97a41b722d2496bb3cb0b2f72"
+    },
+    {
+      "slug": "whale-inj",
+      "marketId": "0x586409ac5f6d6e90a81d2585b9a8e76de0b4898d5f2c047d0bc025a036489ba1"
+    },
+    {
+      "slug": "saga-usdt",
+      "marketId": "0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9"
+    },
+    {
+      "slug": "atom-usdt",
+      "marketId": "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa"
+    },
+    {
+      "slug": "usdy-usdt",
+      "marketId": "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af"
+    }
   ],
-  "ethereumMarketIds": [
-    "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8",
-    "0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2",
-    "0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99",
-    "0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872",
-    "0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520",
-    "0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed",
-    "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2",
-    "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0",
-    "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b",
-    "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
-    "0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906",
-    "0xd0ba680312852ffb0709446fff518e6c4d798fb70cfd2699aba3717a2517cfd5",
-    "0x572f05fd93a6c2c4611b2eba1a0a36e102b6a592781956f0128a27662d84f112",
-    "0x26413a70c9b78a495023e5ab8003c9cf963ef963f6755f8b57255feb5744bf31",
-    "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363",
-    "0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034",
-    "0x8cd25fdc0d7aad678eb998248f3d1771a2d27c964a7630e6ffa5406de7ea54c1",
-    "0x219b522871725d175f63d5cb0a55e95aa688b1c030272c5ae967331e45620032",
-    "0x510855ccf9148b47c6114e1c9e26731f9fd68a6f6dbc5d148152d02c0f3e5ce0",
-    "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963",
-    "0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a",
-    "0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced",
-    "0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5",
-    "0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c",
-    "0x03c8da1f6aaf8aca2be26b0f4d6b89d475835c7812a1dcdb19af7dec1c6b7f60",
-    "0x6ad662364885b8a4c50edfc88deeef23338b2bd0c1e4dc9b680b054afc9b6b24",
-    "0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb",
-    "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243",
-    "0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f",
-    "0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d"
+  "ethereum": [
+    {
+      "slug": "wusdl-usdt",
+      "marketId": "0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8"
+    },
+    {
+      "slug": "ton-usdt-perp",
+      "marketId": "0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2"
+    },
+    {
+      "slug": "pepe-usdt-perp",
+      "marketId": "0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99"
+    },
+    {
+      "slug": "crv-usdt-perp",
+      "marketId": "0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872"
+    },
+    {
+      "slug": "mkr-usdt-perp",
+      "marketId": "0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520"
+    },
+    {
+      "slug": "aave-usdt-perp",
+      "marketId": "0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed"
+    },
+    {
+      "slug": "buidl-usdt-perp",
+      "marketId": "0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2"
+    },
+    {
+      "slug": "ton-usdt",
+      "marketId": "0x165b41ab4410c03514b4569b29dd3c4a829f6f11516a29cd31d6a53308cb4ed0"
+    },
+    {
+      "slug": "wusdm-usdt",
+      "marketId": "0xca8121ea57a4f7fd3e058fa1957ebb69b37d52792e49b0b43932f1b9c0e01f8b"
+    },
+    {
+      "slug": "inj-usdt",
+      "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0"
+    },
+    {
+      "slug": "arb-usdt",
+      "marketId": "0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906"
+    },
+    {
+      "slug": "app-inj",
+      "marketId": "0xd0ba680312852ffb0709446fff518e6c4d798fb70cfd2699aba3717a2517cfd5"
+    },
+    {
+      "slug": "ape-usdt",
+      "marketId": "0x572f05fd93a6c2c4611b2eba1a0a36e102b6a592781956f0128a27662d84f112"
+    },
+    {
+      "slug": "link-usdt",
+      "marketId": "0x26413a70c9b78a495023e5ab8003c9cf963ef963f6755f8b57255feb5744bf31"
+    },
+    {
+      "slug": "stinj-inj",
+      "marketId": "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363"
+    },
+    {
+      "slug": "weth-usdt",
+      "marketId": "0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034"
+    },
+    {
+      "slug": "wmatic-usdt",
+      "marketId": "0x8cd25fdc0d7aad678eb998248f3d1771a2d27c964a7630e6ffa5406de7ea54c1"
+    },
+    {
+      "slug": "steadyeth-usdt",
+      "marketId": "0x219b522871725d175f63d5cb0a55e95aa688b1c030272c5ae967331e45620032"
+    },
+    {
+      "slug": "steadybtc-usdt",
+      "marketId": "0x510855ccf9148b47c6114e1c9e26731f9fd68a6f6dbc5d148152d02c0f3e5ce0"
+    },
+    {
+      "slug": "inj-usdt-perp",
+      "marketId": "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963"
+    },
+    {
+      "slug": "eth-usdt-perp",
+      "marketId": "0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a"
+    },
+    {
+      "slug": "bnb-usdt-perp",
+      "marketId": "0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced"
+    },
+    {
+      "slug": "arb-usdt-perp",
+      "marketId": "0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5"
+    },
+    {
+      "slug": "op-usdt-perp",
+      "marketId": "0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c"
+    },
+    {
+      "slug": "link-usdt-perp",
+      "marketId": "0x03c8da1f6aaf8aca2be26b0f4d6b89d475835c7812a1dcdb19af7dec1c6b7f60"
+    },
+    {
+      "slug": "ena-usdt",
+      "marketId": "0x6ad662364885b8a4c50edfc88deeef23338b2bd0c1e4dc9b680b054afc9b6b24"
+    },
+    {
+      "slug": "w-usdt",
+      "marketId": "0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb"
+    },
+    {
+      "slug": "w-usdt-perp",
+      "marketId": "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243"
+    },
+    {
+      "slug": "omni-usdt",
+      "marketId": "0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f"
+    },
+    {
+      "slug": "pyusd-usdt",
+      "marketId": "0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d"
+    }
   ],
-  "injectiveMarketIds": [
-    "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
-    "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963",
-    "0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033",
-    "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363",
-    "0xdf9317eac1739a23bc385e264afde5d480c0b3d2322660b5efd206071d4e70b7",
-    "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
-    "0x4bb3426a2d7ba80c244ef7eecfd7c4fd177d78e63ff40ba6235b1ae471e23cdb",
-    "0x02b56c5e6038f0dd795efb521718b33412126971608750538409f4b81ab5da2f",
-    "0xe6dd9895b169e2ca0087fcb8e8013805d06c3ed8ffc01ccaa31c710eef14a984",
-    "0xb6c24e9a586a50062f2fac059ddd79f8b0cf1c101e263f4b2c7484b0e20d2899",
-    "0xb3f38c081a1817bb0fc717bf869e93f5557c10851db4e15922e1d9d2297bd802",
-    "0x959c9401a557ac090fff3ec11db5a1a9832e51a97a41b722d2496bb3cb0b2f72",
-    "0x1b1e062b3306f26ae3af3c354a10c1cf38b00dcb42917f038ba3fc14978b1dd8",
-    "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
-    "0xf09dd242aea343afd7b6644151bb00d1b8770d842881009bea867658602b6bf0",
-    "0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597",
-    "0x25b545439f8e072856270d4b5ca94764521c4111dd9a2bbb5fbc96d2ab280f13",
-    "0xeb95ab0b5416266b1987f1d46bcd5f63addeac68bbf5a089c5ed02484c97b6a3",
-    "0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839",
-    "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80",
-    "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977",
-    "0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664",
-    "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af",
-    "0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117"
+  "injective": [
+    {
+      "slug": "inj-usdt",
+      "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0"
+    },
+    {
+      "slug": "inj-usdt-perp",
+      "marketId": "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963"
+    },
+    {
+      "slug": "talis-usdt",
+      "marketId": "0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033"
+    },
+    {
+      "slug": "stinj-inj",
+      "marketId": "0xce1829d4942ed939580e72e66fd8be3502396fc840b6d12b2d676bdb86542363"
+    },
+    {
+      "slug": "ninja-inj",
+      "marketId": "0xdf9317eac1739a23bc385e264afde5d480c0b3d2322660b5efd206071d4e70b7"
+    },
+    {
+      "slug": "kira-inj",
+      "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57"
+    },
+    {
+      "slug": "katana-inj",
+      "marketId": "0x4bb3426a2d7ba80c244ef7eecfd7c4fd177d78e63ff40ba6235b1ae471e23cdb"
+    },
+    {
+      "slug": "ninj-inj",
+      "marketId": "0x02b56c5e6038f0dd795efb521718b33412126971608750538409f4b81ab5da2f"
+    },
+    {
+      "slug": "dojo-inj",
+      "marketId": "0xe6dd9895b169e2ca0087fcb8e8013805d06c3ed8ffc01ccaa31c710eef14a984"
+    },
+    {
+      "slug": "ginger-inj",
+      "marketId": "0xb6c24e9a586a50062f2fac059ddd79f8b0cf1c101e263f4b2c7484b0e20d2899"
+    },
+    {
+      "slug": "autism-inj",
+      "marketId": "0xb3f38c081a1817bb0fc717bf869e93f5557c10851db4e15922e1d9d2297bd802"
+    },
+    {
+      "slug": "andr-inj",
+      "marketId": "0x959c9401a557ac090fff3ec11db5a1a9832e51a97a41b722d2496bb3cb0b2f72"
+    },
+    {
+      "slug": "hinj-inj",
+      "marketId": "0x1b1e062b3306f26ae3af3c354a10c1cf38b00dcb42917f038ba3fc14978b1dd8"
+    },
+    {
+      "slug": "qunt-inj",
+      "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21"
+    },
+    {
+      "slug": "talis-inj",
+      "marketId": "0xf09dd242aea343afd7b6644151bb00d1b8770d842881009bea867658602b6bf0"
+    },
+    {
+      "slug": "hdro-inj",
+      "marketId": "0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597"
+    },
+    {
+      "slug": "pyth-inj",
+      "marketId": "0x25b545439f8e072856270d4b5ca94764521c4111dd9a2bbb5fbc96d2ab280f13"
+    },
+    {
+      "slug": "lvn-inj",
+      "marketId": "0xeb95ab0b5416266b1987f1d46bcd5f63addeac68bbf5a089c5ed02484c97b6a3"
+    },
+    {
+      "slug": "black-inj",
+      "marketId": "0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839"
+    },
+    {
+      "slug": "mother-inj",
+      "marketId": "0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80"
+    },
+    {
+      "slug": "sns-inj",
+      "marketId": "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977"
+    },
+    {
+      "slug": "iotx-inj",
+      "marketId": "0xd75a48b4ef24c2355b0bb3c0829283c30619a9862360b5b9521ec5933da7a664"
+    },
+    {
+      "slug": "usdy-usdt",
+      "marketId": "0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af"
+    },
+    {
+      "slug": "xiii-inj",
+      "marketId": "0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117"
+    }
   ],
-  "solanaMarketIds": [
-    "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f",
-    "0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b",
-    "0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9",
-    "0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c",
-    "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d",
-    "0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c",
-    "0x06c5a306492ddc2b8dc56969766959163287ed68a6b59baa2f42330dda0aebe0",
-    "0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88",
-    "0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb",
-    "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243",
-    "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977",
-    "0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217"
+  "solana": [
+    {
+      "slug": "moodeng-usdt-perp",
+      "marketId": "0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f"
+    },
+    {
+      "slug": "mother-usdt-perp",
+      "marketId": "0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b"
+    },
+    {
+      "slug": "popcat-usdt-perp",
+      "marketId": "0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9"
+    },
+    {
+      "slug": "jup-usdt-perp",
+      "marketId": "0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c"
+    },
+    {
+      "slug": "pyth-usdt-perp",
+      "marketId": "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d"
+    },
+    {
+      "slug": "sol-usdt",
+      "marketId": "0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c"
+    },
+    {
+      "slug": "sol-usdt-perp",
+      "marketId": "0x06c5a306492ddc2b8dc56969766959163287ed68a6b59baa2f42330dda0aebe0"
+    },
+    {
+      "slug": "wif-usdt-perp",
+      "marketId": "0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88"
+    },
+    {
+      "slug": "w-usdt",
+      "marketId": "0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb"
+    },
+    {
+      "slug": "w-usdt-perp",
+      "marketId": "0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243"
+    },
+    {
+      "slug": "sns-inj",
+      "marketId": "0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977"
+    },
+    {
+      "slug": "giga-inj",
+      "marketId": "0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217"
+    }
   ],
-  "olpLowVolumeMarketIds": [
-    "0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597",
-    "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
-    "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101",
-    "0x63bafbeee644b6606afb8476dd378fba35d516c7081d6045145790af963545aa",
-    "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa",
-    "0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034",
-    "0x8cd25fdc0d7aad678eb998248f3d1771a2d27c964a7630e6ffa5406de7ea54c1",
-    "0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01",
-    "0x4ca0f92fc28be0c9761326016b5a1a2177dd6375558365116b5bdda9abc229ce",
-    "0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a",
-    "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963",
-    "0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced",
-    "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d",
-    "0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c",
-    "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb",
-    "0x2d8b2a2bef3782b988e16a8d718ea433d6dfebbb3b932975ca7913589cb408b5",
-    "0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b",
-    "0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c"
+  "olpLowVolume": [
+    {
+      "slug": "hdro-inj",
+      "marketId": "0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597"
+    },
+    {
+      "slug": "inj-usdt",
+      "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0"
+    },
+    {
+      "slug": "tia-usdt",
+      "marketId": "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101"
+    },
+    {
+      "slug": "xrp-usdt-perp",
+      "marketId": "0x63bafbeee644b6606afb8476dd378fba35d516c7081d6045145790af963545aa"
+    },
+    {
+      "slug": "atom-usdt",
+      "marketId": "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa"
+    },
+    {
+      "slug": "weth-usdt",
+      "marketId": "0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034"
+    },
+    {
+      "slug": "wmatic-usdt",
+      "marketId": "0x8cd25fdc0d7aad678eb998248f3d1771a2d27c964a7630e6ffa5406de7ea54c1"
+    },
+    {
+      "slug": "atom-usdt-perp",
+      "marketId": "0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01"
+    },
+    {
+      "slug": "btc-usdt-perp",
+      "marketId": "0x4ca0f92fc28be0c9761326016b5a1a2177dd6375558365116b5bdda9abc229ce"
+    },
+    {
+      "slug": "eth-usdt-perp",
+      "marketId": "0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a"
+    },
+    {
+      "slug": "inj-usdt-perp",
+      "marketId": "0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963"
+    },
+    {
+      "slug": "bnb-usdt-perp",
+      "marketId": "0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced"
+    },
+    {
+      "slug": "pyth-usdt-perp",
+      "marketId": "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d"
+    },
+    {
+      "slug": "sol-usdt",
+      "marketId": "0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c"
+    },
+    {
+      "slug": "axl-usdt-perp",
+      "marketId": "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb"
+    },
+    {
+      "slug": "kava-usdt",
+      "marketId": "0x2d8b2a2bef3782b988e16a8d718ea433d6dfebbb3b932975ca7913589cb408b5"
+    },
+    {
+      "slug": "sei-usdt-perp",
+      "marketId": "0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b"
+    },
+    {
+      "slug": "tia-usdt-perp",
+      "marketId": "0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c"
+    }
   ],
-  "rwaMarketIds": [
-    "0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5",
-    "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052",
-    "0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5",
-    "0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f"
+  "rwa": [
+    {
+      "slug": "xau-usdt-perp",
+      "marketId": "0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5"
+    },
+    {
+      "slug": "xag-usdt-perp",
+      "marketId": "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052"
+    },
+    {
+      "slug": "eur-usdt-perp",
+      "marketId": "0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5"
+    },
+    {
+      "slug": "gbp-usdt-perp",
+      "marketId": "0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f"
+    }
   ]
 }
