@@ -1,6 +1,6 @@
 import { updateJSONFile } from './helper/utils'
 import { HttpClient } from '@injectivelabs/utils'
-import { blacklistedAddresses } from './data/ofac'
+import { restrictedAddresses } from './data/restriction/addresses'
 
 async function generateOFACList() {
   const response = await new HttpClient(
@@ -19,12 +19,12 @@ async function generateOFACList() {
     return
   }
 
-  const addresses = new Set([
-    ...result.sort((a, b) => a.localeCompare(b)),
-    ...blacklistedAddresses
-  ])
+  const ofacAddresses = new Set([...result.sort((a, b) => a.localeCompare(b))])
 
-  await updateJSONFile('json/wallets/ofac.json', [...addresses])
+  await updateJSONFile('json/wallets/ofac.json', [...ofacAddresses])
+  await updateJSONFile('json/wallets/ofacAndRestricted.json', [
+    ...new Set([...ofacAddresses, ...restrictedAddresses])
+  ])
 }
 
 generateOFACList()
