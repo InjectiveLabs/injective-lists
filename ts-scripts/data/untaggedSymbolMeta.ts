@@ -285,5 +285,13 @@ export const untaggedSymbolMeta = {
     symbol: 'XION',
     logo: 'xion.webp',
     coinGeckoId: 'xion-2'
+  },
+
+  CHILLGUY: {
+    name: 'Chill Guy',
+    decimals: 6,
+    symbol: 'CHILLGUY',
+    logo: 'chillguy.webp',
+    coinGeckoId: 'chill-guy'
   }
 }
