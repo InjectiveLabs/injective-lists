@@ -190,7 +190,7 @@ export const rwa = [
 ]
 
 export const mainnetCategoryMap = {
-  newMarketsMarketIds: [
+  newMarkets: [
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
@@ -222,7 +222,7 @@ export const mainnetCategoryMap = {
     '0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d', // ezeth-weth
     '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9' // saga-usd
   ],
-  experimentalMarketIds: [
+  experimental: [
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-per
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
     '0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8', // wusdl-usdt
@@ -242,7 +242,7 @@ export const mainnetCategoryMap = {
     '0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80', // mother-inj
     '0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117' // xiii-inj
   ],
-  cosmosMarketIds: [
+  cosmos: [
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
@@ -265,7 +265,7 @@ export const mainnetCategoryMap = {
     '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa', // atom-usdt
     '0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af' // usdy-usdt
   ],
-  ethereumMarketIds: [
+  ethereum: [
     '0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8', // wusdl-usdt
     '0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2', // ton-usdt-perp
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
@@ -297,7 +297,7 @@ export const mainnetCategoryMap = {
     '0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f', // omni-usdt
     '0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d' // pyusd-usd
   ],
-  injectiveMarketIds: [
+  injective: [
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963', // inj-usdt-perp
     '0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033', // talis-usdt
@@ -323,7 +323,7 @@ export const mainnetCategoryMap = {
     '0x75f6a79b552dac417df219ab384be19cb13b53dec7cf512d73a965aee8bc83af', // usdy-usdt
     '0x315e5cd5ee24b3a1e1396679885b5e42bbe18045105d1662c6618430a131d117' // xiii-inj
   ],
-  solanaMarketIds: [
+  solana: [
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
     '0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b', // mother-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
@@ -337,7 +337,7 @@ export const mainnetCategoryMap = {
     '0xb232d5bc92bd64cf01741bf01e831566bbd517540dbca8fb420f772f9807f977', // sns-inj
     '0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217' // giga-inj
   ],
-  olpLowVolumeMarketIds: [
+  olpLowVolume: [
     '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // 'hdro-inj',
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // 'inj-usdt',
     '0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101', // 'tia-usdt',
@@ -357,7 +357,7 @@ export const mainnetCategoryMap = {
     '0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b', // 'sei-usdt-perp',
     '0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c' // 'tia-usdt-perp'
   ],
-  rwaMarketIds: [
+  rwa: [
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
     '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
@@ -366,20 +366,20 @@ export const mainnetCategoryMap = {
 }
 
 export const testnetCategoryMap = {
-  newMarketsMarketIds: [
+  newMarkets: [
     '0xc10e8b25979a1620a6e088ce4c141f5fd2841e2089d4c99b6e5cd8f85986dcd3', // pepe-usdt-perp
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac', // gbp-usdt-perp
     '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
     '0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934', // xau-usdt-perp
     '0x0f03542809143c7e5d3c22f56bc6e51eb2c8bab5009161b58f6f468432dfa196' // xag-usdt-perp
   ],
-  experimentalMarketIds: [
+  experimental: [
     '0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf', // stinj-inj
     '0x2d7f47811527bd721ce2e4e0ff27b0f3a281f65abcd41758baf157c8ddfcd910', // hinj-inj
     '0x637f6ec165c381ca4665935491b4d8a31fbc5cbc55616f1b5aafe8a64a2ebdda', // talis-inj
     '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca' // hdro-inj
   ],
-  cosmosMarketIds: [
+  cosmos: [
     '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe', // inj-usdt
     '0xa283fc94a9055a01a58bb6229b1e56a8bb54069a0debfce7fbd1e6c25a95330c', // tia-usdt
     '0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf', // stinj-inj
@@ -389,7 +389,7 @@ export const testnetCategoryMap = {
     '0x670e5881decd6a2c1673133efe4b99ceb4623698509f26c64fcc03fa7a2cb777', // talis-usdt
     '0x491ee4fae7956dd72b6a97805046ffef65892e1d3254c559c18056a519b2ca15' // atom-usdt
   ],
-  ethereumMarketIds: [
+  ethereum: [
     '0xb5d3a9c31f992f995baf25cbdeddd713dd4ae7be7be65ea8dd5ddff86b2090c8', // wusdl-usdt
     '0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2', // ton-usdt-perp
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
@@ -421,7 +421,7 @@ export const testnetCategoryMap = {
     '0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f', // omni-usdt
     '0x71dc35acfd9fffe3f2995fdcd6f6abb3c2713e63824b2e45c39e8b4275ea931d' // pyusd-usd
   ],
-  injectiveMarketIds: [
+  injective: [
     '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe', // inj-usdt
     '0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6', // inj-usdt-perp
     '0x670e5881decd6a2c1673133efe4b99ceb4623698509f26c64fcc03fa7a2cb777', // talis-usdt
@@ -430,11 +430,11 @@ export const testnetCategoryMap = {
     '0x637f6ec165c381ca4665935491b4d8a31fbc5cbc55616f1b5aafe8a64a2ebdda', // talis-inj
     '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca' // hdro-inj
   ],
-  solanaMarketIds: [
+  solana: [
     '0x2da41d4f7370e6d44240480bae530661ba3ae68682089810ea29beee1984985f', // sol-usdt
     '0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0' // sol-usdt-perp
   ],
-  olpLowVolumeMarketIds: [
+  olpLowVolume: [
     '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca', // hdro-inj
     '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe', // inj-usdt
     '0xa283fc94a9055a01a58bb6229b1e56a8bb54069a0debfce7fbd1e6c25a95330c', // tia-usdt
@@ -446,7 +446,7 @@ export const testnetCategoryMap = {
     '0x2da41d4f7370e6d44240480bae530661ba3ae68682089810ea29beee1984985f', // sol-usdt
     '0xc90e8ea048b8fe5c3174d4d0386191765db699d2bf83d0cbaf07e15462115a15' // tia-usdt-perp
   ],
-  rwaMarketIds: [
+  rwa: [
     '0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934', // xau-usdt-perp
     '0x0f03542809143c7e5d3c22f56bc6e51eb2c8bab5009161b58f6f468432dfa196', // xag-usdt-perp
     '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
@@ -455,23 +455,23 @@ export const testnetCategoryMap = {
 }
 
 export const devnetCategoryMap = {
-  newMarketsMarketIds: [
+  newMarkets: [
     '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
     '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
     '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
     '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
   ],
-  experimentalMarketIds: [
+  experimental: [
     '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21' // qunt-inj
   ],
-  cosmosMarketIds: [
+  cosmos: [
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x0686357b934c761784d58a2b8b12618dfe557de108a220e06f8f6580abb83aab', // somm-usdt
     '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4', // inj-usdt-perp
     '0x56d0c0293c4415e2d48fc2c8503a56a0c7389247396a2ef9b0a48c01f0646705', // atom-usdt-perp
     '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa' // atom-usdt
   ],
-  ethereumMarketIds: [
+  ethereum: [
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x572f05fd93a6c2c4611b2eba1a0a36e102b6a592781956f0128a27662d84f112', // ape-usdt
     '0x26413a70c9b78a495023e5ab8003c9cf963ef963f6755f8b57255feb5744bf31', // link-usdt
@@ -481,7 +481,7 @@ export const devnetCategoryMap = {
     '0x979731deaaf17d26b2e256ad18fecd0ac742b3746b9ea5382bac9bd0b5e58f74', // eth-usdt-perp
     '0x1f73e21972972c69c03fb105a5864592ac2b47996ffea3c500d1ea2d20138717' // link-usdt-perp
   ],
-  injectiveMarketIds: [
+  injective: [
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4', // inj-usdt-perp
     '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
@@ -489,10 +489,10 @@ export const devnetCategoryMap = {
     '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
     '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
   ],
-  solanaMarketIds: [
+  solana: [
     '0x3b7fb1d9351f7fa2e6e0e5a11b3639ee5e0486c33a6a74f629c3fc3c3043efd5' // bonk-usdt-perp
   ],
-  olpLowVolumeMarketIds: [
+  olpLowVolume: [
     '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa', // atom-usdt
@@ -502,5 +502,5 @@ export const devnetCategoryMap = {
     '0x979731deaaf17d26b2e256ad18fecd0ac742b3746b9ea5382bac9bd0b5e58f74', // eth-usdt-perp
     '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4' // inj-usdt-perp
   ],
-  rwaMarketIds: []
+  rwa: []
 }

@@ -250,7 +250,12 @@ export const generateMarketCategoryMap = async (network: Network) => {
 
   await updateJSONFile(
     `json/helix/trading/market/categoryMap/${getNetworkFileName(network)}.json`,
-    categoryMap
+    Object.entries(categoryMap).reduce((listMap, [category, marketIds]) => {
+      return {
+        ...listMap,
+        [category]: filterMarketMapByMarketId(marketIds, network)
+      }
+    }, {})
   )
 }
 
@@ -299,6 +304,3 @@ generateDerivativeMarketMap(Network.MainnetSentry)
 generateMarketCategoryMap(Network.Devnet)
 generateMarketCategoryMap(Network.TestnetSentry)
 generateMarketCategoryMap(Network.MainnetSentry)
-/*
-spot / derivative - slug<>marketId map
-*/
