@@ -99,12 +99,15 @@ export const getDerivativeMarketMapByNetwork = (network: Network) => {
   return devnetDerivativeMarketMap
 }
 
-export const filterMarketMapBySlugs = (slugs: string[], network: Network) => {
+export const filterMarketMapByMarketId = (
+  marketIds: string[],
+  network: Network
+) => {
   const spotMarketMap = getSpotMarketMapByNetwork(network)
   const derivativeMarketMap = getDerivativeMarketMapByNetwork(network)
 
-  return slugs
-    .map((slug) => spotMarketMap[slug] || derivativeMarketMap[slug])
+  return marketIds
+    .map((marketId) => spotMarketMap[marketId] || derivativeMarketMap[marketId])
     .filter((market) => market)
 }
 

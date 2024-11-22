@@ -1,22 +1,22 @@
 import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
 import {
-  devnetSlugs as devnetSpotSlugs,
-  stagingSlugs as stagingSpotSlug,
-  mainnetSlugs as mainnetSpotSlugs,
-  testnetSlugs as testnetSpotSlugs
-} from './data/market/spot'
-import {
   devnetDenoms as devnetDenoms,
   mainnetDenoms as mainnetDenoms,
   testnetDenoms as testnetDenoms
 } from './data/denoms'
+import {
+  devnetMarketIds as devnetSpotMarketIds,
+  stagingMarketIds as stagingSpotMarketIds,
+  mainnetMarketIds as mainnetSpotMarketIds,
+  testnetMarketIds as testnetSpotMarketIds
+} from './data/market/spot'
 import {
   readJSONFile,
   updateJSONFile,
   tokenToAddressMap,
   getNetworkFileName
 } from './helper/utils'
-import { getMarketById, filterMarketMapBySlugs } from './helper/market'
+import { getMarketById } from './helper/market'
 
 const devnetTokensMap = tokenToAddressMap(
   readJSONFile({
@@ -72,23 +72,21 @@ const getHardcodedDenoms = (network: Network) => {
 }
 
 const getTradableMarketIds = (network: Network) => {
-  let slugs = mainnetSpotSlugs
+  let marketIds = mainnetSpotMarketIds
 
   if (network === Network.Staging) {
-    return [...slugs, ...stagingSpotSlug]
+    return [...marketIds, ...stagingSpotMarketIds]
   }
 
   if (isDevnet(network)) {
-    return [...slugs, ...devnetSpotSlugs]
+    return [...marketIds, ...devnetSpotMarketIds]
   }
 
   if (isTestnet(network)) {
-    return [...slugs, ...testnetSpotSlugs]
+    return [...marketIds, ...testnetSpotMarketIds]
   }
 
-  return filterMarketMapBySlugs(mainnetSpotSlugs, network).map(
-    ({ marketId }) => marketId
-  )
+  return marketIds
 }
 
 export const generateTradableDenoms = async (network: Network) => {

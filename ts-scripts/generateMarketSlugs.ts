@@ -1,21 +1,21 @@
 import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
 import {
-  devnetSlugs as devnetSpotSlugs,
-  mainnetSlugs as mainnetSpotSlugs,
-  testnetSlugs as testnetSpotSlugs,
-  stagingSlugs as stagingSpotSlug
+  devnetMarketIds as devnetSpotMarketIds,
+  stagingMarketIds as stagingSpotMarketIds,
+  mainnetMarketIds as mainnetSpotMarketIds,
+  testnetMarketIds as testnetSpotMarketIds
 } from './data/market/spot'
 import {
-  devnetSlugs as devnetDerivativeSlugs,
-  mainnetSlugs as mainnetDerivativeSlugs,
-  testnetSlugs as testnetDerivativeSlugs,
-  stagingSlugs as stagingDerivativeSlugs
+  devnetMarketIds as devnetDerivativeMarketIds,
+  mainnetMarketIds as mainnetDerivativeMarketIds,
+  testnetMarketIds as testnetDerivativeMarketIds,
+  stagingMarketIds as stagingDerivativeMarketIds
 } from './data/market/derivative'
 import {
-  devnetSlugs as devnetExpiryFutureSlugs,
-  mainnetSlugs as mainnetExpiryFutureSlugs,
-  testnetSlugs as testnetExpiryFutureSlugs,
-  stagingSlugs as stagingExpiryFutureSlugs
+  devnetMarketIds as devnetExpiryFutureMarketIds,
+  mainnetMarketIds as mainnetExpiryFutureMarketIds,
+  testnetMarketIds as testnetExpiryFutureMarketIds,
+  stagingMarketIds as stagingExpiryFutureMarketIds
 } from './data/market/expiryFutures'
 import {
   devnetGridMarkets as devnetSpotGridMarkets,
@@ -30,6 +30,9 @@ import {
   mainnetGridMarkets as mainnetDerivativeGridMarkets
 } from './data/grid/derivative'
 import {
+  devnetCategoryMap,
+  mainnetCategoryMap,
+  testnetCategoryMap,
   rwa as rwaCategorySlugs,
   cosmos as cosmosCategorySlugs,
   solana as solanaCategorySlugs,
@@ -39,146 +42,141 @@ import {
   olpLowVolume as olpLowVolumeCategorySlugs,
   experimental as experimentalCategorySlugs
 } from './data/market/category'
-import { filterMarketMapBySlugs } from './helper/market'
+import { filterMarketMapByMarketId } from './helper/market'
 import { updateJSONFile, getNetworkFileName } from './helper/utils'
 
 export const generateExpiryFuturesMarketSlugs = async (network: Network) => {
-  let slugs = mainnetExpiryFutureSlugs
+  let marketIds = mainnetExpiryFutureMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingExpiryFutureSlugs]
+    marketIds = [...marketIds, ...stagingExpiryFutureMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetExpiryFutureSlugs]
+    marketIds = [...marketIds, ...devnetExpiryFutureMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetExpiryFutureSlugs]
+    marketIds = [...marketIds, ...testnetExpiryFutureMarketIds]
   }
 
   await updateJSONFile(
     `json/helix/trading/expiry/${getNetworkFileName(network)}.json`,
-    slugs
+    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
   )
 }
 
 export const generateExpiryFuturesMarketId = async (network: Network) => {
-  let slugs = mainnetExpiryFutureSlugs
+  let marketIds = mainnetExpiryFutureMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingExpiryFutureSlugs]
+    marketIds = [...marketIds, ...stagingExpiryFutureMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetExpiryFutureSlugs]
+    marketIds = [...marketIds, ...devnetExpiryFutureMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetExpiryFutureSlugs]
+    marketIds = [...marketIds, ...testnetExpiryFutureMarketIds]
   }
 
   await updateJSONFile(
     `json/helix/trading/expiryMap/${getNetworkFileName(network)}.json`,
-    filterMarketMapBySlugs(slugs, network)
+    filterMarketMapByMarketId(marketIds, network).reduce(
+      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
+      {}
+    )
   )
 }
 
 export const generateSpotMarketSlugs = async (network: Network) => {
-  let slugs = mainnetSpotSlugs
+  let marketIds = mainnetSpotMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingSpotSlug]
+    marketIds = [...marketIds, ...stagingSpotMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetSpotSlugs]
+    marketIds = [...marketIds, ...devnetSpotMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetSpotSlugs]
+    marketIds = [...marketIds, ...testnetSpotMarketIds]
   }
 
   await updateJSONFile(
     `json/helix/trading/spot/${getNetworkFileName(network)}.json`,
-    slugs
+    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
   )
 }
 
 export const generateSpotMarketMap = async (network: Network) => {
-  let slugs = mainnetSpotSlugs
+  let marketIds = mainnetSpotMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingSpotSlug]
+    marketIds = [...marketIds, ...stagingSpotMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetSpotSlugs]
+    marketIds = [...marketIds, ...devnetSpotMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetSpotSlugs]
+    marketIds = [...marketIds, ...testnetSpotMarketIds]
   }
-
-  const spotMarketMap = filterMarketMapBySlugs(slugs, network).reduce(
-    (list, { slug, marketId }) => {
-      return { ...list, [slug]: marketId }
-    },
-    {}
-  )
 
   await updateJSONFile(
     `json/helix/trading/spotMap/${getNetworkFileName(network)}.json`,
-    spotMarketMap
+    filterMarketMapByMarketId(marketIds, network).reduce(
+      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
+      {}
+    )
   )
 }
 
 export const generateDerivativeMarketSlugs = async (network: Network) => {
-  let slugs = mainnetDerivativeSlugs
+  let marketIds = mainnetDerivativeMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingDerivativeSlugs]
+    marketIds = [...marketIds, ...stagingDerivativeMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetDerivativeSlugs]
+    marketIds = [...marketIds, ...devnetDerivativeMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetDerivativeSlugs]
+    marketIds = [...marketIds, ...testnetDerivativeMarketIds]
   }
 
   await updateJSONFile(
     `json/helix/trading/derivative/${getNetworkFileName(network)}.json`,
-    slugs
+    filterMarketMapByMarketId(marketIds, network).map(({ slug }) => slug)
   )
 }
 
 export const generateDerivativeMarketMap = async (network: Network) => {
-  let slugs = mainnetDerivativeSlugs
+  let marketIds = mainnetDerivativeMarketIds
 
   if (network === Network.Staging) {
-    slugs = [...slugs, ...stagingDerivativeSlugs]
+    marketIds = [...marketIds, ...stagingDerivativeMarketIds]
   }
 
   if (isDevnet(network)) {
-    slugs = [...slugs, ...devnetDerivativeSlugs]
+    marketIds = [...marketIds, ...devnetDerivativeMarketIds]
   }
 
   if (isTestnet(network)) {
-    slugs = [...slugs, ...testnetDerivativeSlugs]
+    marketIds = [...marketIds, ...testnetDerivativeMarketIds]
   }
-
-  const derivativeMarketMap = filterMarketMapBySlugs(slugs, network).reduce(
-    (list, { slug, marketId }) => {
-      return { ...list, [slug]: marketId }
-    },
-    {}
-  )
 
   await updateJSONFile(
     `json/helix/trading/derivativeMap/${getNetworkFileName(network)}.json`,
-    derivativeMarketMap
+    filterMarketMapByMarketId(marketIds, network).reduce(
+      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
+      {}
+    )
   )
 }
 
@@ -240,29 +238,19 @@ export const generateMarketCategorySlugs = async () => {
 }
 
 export const generateMarketCategoryMap = async (network: Network) => {
-  const list = Object.entries({
-    rwaCategoryMap: rwaCategorySlugs,
-    cosmosCategoryMap: cosmosCategorySlugs,
-    solanaCategoryMap: solanaCategorySlugs,
-    ethereumCategoryMap: ethereumCategorySlugs,
-    injectiveCategoryMap: injectiveCategorySlugs,
-    newMarketsCategoryMap: newMarketsCategorySlugs,
-    olpLowVolumeCategoryMap: olpLowVolumeCategorySlugs,
-    experimentalCategoryMap: experimentalCategorySlugs
-  }).reduce((list, [key, slugs]) => {
-    const categoryMap = filterMarketMapBySlugs(slugs, network).reduce(
-      (list, { slug, marketId }) => {
-        return { ...list, [marketId]: slug }
-      },
-      {}
-    )
+  let categoryMap = mainnetCategoryMap
 
-    return { ...list, [key]: categoryMap }
-  }, {})
+  if (isDevnet(network)) {
+    categoryMap = devnetCategoryMap
+  }
+
+  if (isTestnet(network)) {
+    categoryMap = testnetCategoryMap
+  }
 
   await updateJSONFile(
     `json/helix/trading/market/categoryMap/${getNetworkFileName(network)}.json`,
-    list
+    categoryMap
   )
 }
 
