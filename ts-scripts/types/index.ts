@@ -81,3 +81,9 @@ export interface MarketSlugId {
   slug: string
   marketId: string
 }
+
+export type SwapRoute = {
+  steps: string[]
+  source_denom: string
+  target_denom: string
+}

@@ -13,6 +13,8 @@
     "tokens:supply": "ts-node ./generateSupplyTokens",
     "tokens:external": "ts-node ./generateExternalTokens",
     "fetch:mito:vaults": "ts-node ./fetchMitoVaults",
+    "swap:routes:query": "ts-node ./querySwapRoutes",
+    "swap:routes:generate": "ts-node ./generateSwapRoutes",
     "fetch:chain:metadata": "ts-node ./fetchChainTokenMetadata",
     "tokens:factory:generate": "ts-node ./generateFactoryTokens",
     "tokens:mito:generate": "ts-node ./generateMitoTokens",
