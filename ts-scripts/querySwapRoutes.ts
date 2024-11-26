@@ -54,7 +54,7 @@ export const querySwapRoutesViaTransactionHash = async (
     ]
   }, [] as SwapRoute[])
 
-  await updateJSONFile('data/formattedSwapRoutes', formattedRoutes)
+  await updateJSONFile('data/formattedSwapRoutes.json', formattedRoutes)
 }
 
 querySwapRoutesViaTransactionHash(TRANSACTION_HASH, Network.MainnetSentry)
