@@ -154,6 +154,14 @@ export const mainnetGridMarkets = [
   {
     slug: 'hdro-usdt',
     contractAddress: 'inj190fr459ufgq5cdj6a4pcpchrem5dqrllkapkwj'
+  },
+  {
+    slug: 'agent-inj',
+    contractAddress: 'inj1aty5p5ps878gc5lpkp9pfzfskejp894qrl36w7'
+  },
+  {
+    slug: 'xiii-inj',
+    contractAddress: 'inj1zah9dsevddtv327f206s49etjgsvezgm0npp6v'
   }
 ]
 
