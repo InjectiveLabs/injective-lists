@@ -293,5 +293,13 @@ export const untaggedSymbolMeta = {
     symbol: 'CHILLGUY',
     logo: 'chillguy.webp',
     coinGeckoId: 'chill-guy'
+  },
+
+  Monero: {
+    name: 'Monero',
+    decimals: 6,
+    symbol: 'XMR',
+    logo: 'xmr.webp',
+    coinGeckoId: 'monero'
   }
 }
