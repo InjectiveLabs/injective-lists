@@ -304,5 +304,9 @@ export const mainnetTokens: Cw20TokenSource[] = [
   {
     ...symbolMeta.bnUSD,
     address: 'inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j'
+  },
+  {
+    ...symbolMeta.TruINJ,
+    address: 'inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq'
   }
 ]
