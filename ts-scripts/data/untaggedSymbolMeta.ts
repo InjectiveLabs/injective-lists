@@ -295,7 +295,7 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'chill-guy'
   },
 
-  Monero: {
+  XMR: {
     name: 'Monero',
     decimals: 6,
     symbol: 'XMR',
