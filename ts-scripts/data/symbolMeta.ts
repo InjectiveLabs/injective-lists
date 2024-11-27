@@ -2079,11 +2079,19 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  Agent: {
+  AGENT: {
     decimals: 6,
     symbol: 'AGENT',
     name: 'First Injective AI token',
     logo: 'agent.png',
+    coinGeckoId: ''
+  },
+
+  SAI: {
+    decimals: 18,
+    symbol: 'SAI',
+    name: 'ShroomAI',
+    logo: 'sai.webp',
     coinGeckoId: ''
   }
 }
