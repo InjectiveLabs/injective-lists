@@ -2093,5 +2093,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ShroomAI',
     logo: 'sai.webp',
     coinGeckoId: ''
+  },
+
+  aiCLI: {
+    decimals: 6,
+    name: 'aiCLI',
+    logo: 'aicli.webp',
+    symbol: 'aiCLI',
+    coinGeckoId: '',
   }
 }

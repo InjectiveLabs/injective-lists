@@ -450,5 +450,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.SAI,
     creator: 'inj10aa0h5s0xwzv95a8pjhwluxcm5feeqygdk3lkm'
+  },
+  {
+    ...symbolMeta.aiCLI,
+    creator: "inj1yekpe3hvt6vp3t8wws65af5e3x6zpwmy0umdvv",
   }
 ]
