@@ -33,7 +33,7 @@ export const mainnetMarketIds = [
   '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
   '0x85ccdb2b6022b0586da19a2de0a11ce9876621630778e28a5d534464cbfff238', // nonja-inj
   '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', // agent-inj
-  '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934'  // shroom-inj
+  '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934' // shroom-inj
 ]
 
 export const devnetMarketIds = [
@@ -52,5 +52,6 @@ export const testnetMarketIds = [
   '0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5', // projx-inj
   '0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e', // wbtc-usdt
   '0x5fbd22eb44d9db413513f99ceb9a5ac4cc5b5e6893d5882877391d6927927e6d', // usdc-usdt
-  '0xe5fcbb5a2935d0b1ce700c841343cd86803ca04f43ca6a03f0c714ec27550cd2' // demo-usdt
+  '0xe5fcbb5a2935d0b1ce700c841343cd86803ca04f43ca6a03f0c714ec27550cd2', // demo-usdt
+  '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe' // inj-usdt
 ]
