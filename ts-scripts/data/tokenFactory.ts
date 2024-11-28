@@ -444,7 +444,7 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89'
   },
   {
-    ...symbolMeta.Agent,
+    ...symbolMeta.AGENT,
     creator: 'inj16dd5xzszud3u5wqphr3tq8eaz00gjdn3d4mvj8'
   }
 ]
