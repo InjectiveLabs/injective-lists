@@ -106709,5 +106709,42 @@
     "retract_bid",
     "activate_bids",
     "claim_liquidations"
+  ],
+  "15290": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "15291": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "15292": [
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "mint_stable_coin",
+    "become_redemption_provider",
+    "repay_stable_coin",
+    "repay_stable_from_pool",
+    "redeem_stable_coin",
+    "withdraw_collateral",
+    "deposit_collateral",
+    "liquidate_collateral",
+    "whitelist_collateral",
+    "remove_collateral_from_whitelist",
+    "update_mint_cap",
+    "claim_rewards"
   ]
 }
