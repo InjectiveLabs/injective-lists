@@ -5,26 +5,36 @@
     "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
     "vaultName": "permissionless_vault_3",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 0,
-    "lpTokenPrice": 0,
-    "totalLpAmount": "0",
+    "currentTvl": 50.84044977903501,
+    "lpTokenPrice": 5.569292235537203e-19,
+    "totalLpAmount": "91287092917527685100",
     "contractAddress": "inj138hf33wsmnllnshd8xgn5f9ya7fu79j4n3v9y9",
     "notionalValueCap": "100000000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1733055600280,
+    "updatedAt": 1733056087406,
     "createdAt": 1733055600280,
-    "apy": 0,
+    "apy": -5.996044006821988,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
     "apyV3": 0,
     "registrationMode": "Permissionless",
     "profits": {
-      "allTimeChange": 0
+      "allTimeChange": 0,
+      "oneDayChange": -0.4732323236251279
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000007",
-      "balancesList": []
+      "balancesList": [
+        {
+          "denom": "factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA",
+          "totalBalance": "5000000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "1666666666666666666"
+        }
+      ]
     }
   },
   {
@@ -201,15 +211,15 @@
     "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
     "vaultName": "permissionless_vault_2",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 1524.4139011318532,
-    "lpTokenPrice": 2.272462072517645e-16,
+    "currentTvl": 1517.3387720545247,
+    "lpTokenPrice": 2.26191509280665e-16,
     "totalLpAmount": "6708203932499369089",
     "contractAddress": "inj1vauk4puffxad4r3qs3ex0vfl5mkuw5xe8aya8c",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
     "updatedAt": 1733054984843,
     "createdAt": 1733054984843,
-    "apy": 0.08574686755333794,
+    "apy": -5.803320889462027,
     "apyue": 0,
     "apy7D": 0,
     "apy7DFq": 0,
@@ -217,7 +227,7 @@
     "registrationMode": "Permissionless",
     "profits": {
       "allTimeChange": 0,
-      "oneDayChange": 0.006575555223964358
+      "oneDayChange": -0.45757622803480613
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000006",
@@ -258,6 +268,34 @@
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000004",
+      "balancesList": []
+    }
+  },
+  {
+    "slug": "permissionless_vault_4",
+    "codeId": "5",
+    "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
+    "vaultName": "permissionless_vault_4",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "currentTvl": 0,
+    "lpTokenPrice": 0,
+    "totalLpAmount": "0",
+    "contractAddress": "inj1xcgprh58szttp0vqtztvcfy34tkpupr563ua40",
+    "notionalValueCap": "100000000000000000000000000",
+    "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
+    "updatedAt": 1733056548026,
+    "createdAt": 1733056548026,
+    "apy": 0,
+    "apyue": 0,
+    "apy7D": 0,
+    "apy7DFq": 0,
+    "apyV3": 0,
+    "registrationMode": "Permissionless",
+    "profits": {
+      "allTimeChange": 0
+    },
+    "subaccountInfo": {
+      "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000008",
       "balancesList": []
     }
   }
