@@ -1,7 +1,8 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d', // xmr-usdt-perp
     '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
-    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', //agent-inj
+    '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', // agent-inj
     '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp

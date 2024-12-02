@@ -948,7 +948,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NOBI',
     name: 'Shinobi',
     coinGeckoId: '',
-    logo: 'nobi.webp'
+    logo: 'nobi.jpg'
   },
 
   YUKI: {
@@ -1067,7 +1067,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'Shiba',
     coinGeckoId: '',
-    logo: 'shiba.webp',
+    logo: 'shiba.jpg',
     symbol: 'Shiba INJ'
   },
 
@@ -1764,7 +1764,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XIII',
     coinGeckoId: 'xiiicoin',
     logo: 'xiii.png',
-    name: 'XIII Coin'
+    name: 'XIIICOIN'
   },
 
   DDL: {
@@ -2092,6 +2092,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SAI',
     name: 'ShroomAI',
     logo: 'sai.webp',
+    coinGeckoId: ''
+  },
+
+  MANGO: {
+    decimals: 6,
+    symbol: 'MANGO',
+    name: 'Mangosteen Token',
+    logo: 'mango.png',
     coinGeckoId: ''
   }
 }

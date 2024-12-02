@@ -110,7 +110,7 @@ const formatCw20FactoryToken = ({
       contractInfo?.label ||
       bankMetadata?.name ||
       untaggedSymbolMeta.Unknown.name,
-    denom: bankMetadata?.denom || address,
+    denom: bankMetadata?.denom || '',
     decimals:
       bankMetadata?.decimals ||
       tokenInfo?.decimals ||
@@ -140,7 +140,7 @@ const formatCw20Token = (
     symbol: tokenInfo?.symbol || untaggedSymbolMeta.Unknown.symbol,
     decimals: tokenInfo?.decimals || untaggedSymbolMeta.Unknown.decimals,
     coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId,
-    denom: cw20ContractSource.address,
+    denom: '',
     address: cw20ContractSource.address,
     tokenType: TokenType.Cw20,
     tokenVerification: TokenVerification.Internal
