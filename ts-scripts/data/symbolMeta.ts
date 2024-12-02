@@ -1764,7 +1764,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XIII',
     coinGeckoId: 'xiiicoin',
     logo: 'xiii.png',
-    name: 'XIII Coin'
+    name: 'XIIICOIN'
   },
 
   DDL: {
