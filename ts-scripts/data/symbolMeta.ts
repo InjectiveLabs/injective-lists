@@ -948,7 +948,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'NOBI',
     name: 'Shinobi',
     coinGeckoId: '',
-    logo: 'nobi.webp'
+    logo: 'nobi.jpg'
   },
 
   YUKI: {
@@ -1067,7 +1067,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     name: 'Shiba',
     coinGeckoId: '',
-    logo: 'shiba.webp',
+    logo: 'shiba.jpg',
     symbol: 'Shiba INJ'
   },
 

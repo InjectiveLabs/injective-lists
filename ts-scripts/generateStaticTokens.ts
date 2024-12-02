@@ -66,6 +66,9 @@ const formatTokenFactoryTokens = (
   network: Network
 ) => {
   return tokens.reduce((list, token) => {
+    if (!token.symbol) {
+      console.log(token)
+    }
     const denom = `factory/${token.creator}/${token.symbol.toLowerCase()}`
     const supplyDenom = getSupplyDenom(denom, network)
 
@@ -85,7 +88,7 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
   return tokens.reduce((list, token) => {
     list.push({
       ...token,
-      denom: token.address,
+      denom: '',
       address: token.address,
       tokenType: TokenType.Cw20,
       tokenVerification: TokenVerification.Verified,
