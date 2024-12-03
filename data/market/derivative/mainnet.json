@@ -75,8 +75,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "38471.480468921981462404",
-      "cumulativePrice": "0.380484464850362835",
-      "lastTimestamp": 1733239297
+      "cumulativePrice": "0.934567593504852816",
+      "lastTimestamp": 1733239831
     }
   },
   {
@@ -115,8 +115,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "1884640.693486269510401189",
-      "cumulativePrice": "1.663370496644587242",
-      "lastTimestamp": 1733239340
+      "cumulativePrice": "1.890103529395759023",
+      "lastTimestamp": 1733239793
     }
   },
   {
@@ -275,8 +275,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "135371.677432563345175983",
-      "cumulativePrice": "0.774975832613862005",
-      "lastTimestamp": 1733239358
+      "cumulativePrice": "1.172279568923057121",
+      "lastTimestamp": 1733239762
     }
   },
   {
@@ -355,8 +355,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "2212753.615216474109257538",
-      "cumulativePrice": "0.971651533809076241",
-      "lastTimestamp": 1733239351
+      "cumulativePrice": "1.761995884637853618",
+      "lastTimestamp": 1733239826
     }
   },
   {
@@ -394,9 +394,9 @@
       "fundingInterval": 3600
     },
     "perpetualMarketFunding": {
-      "cumulativeFunding": "10512827.038104983188846055",
-      "cumulativePrice": "4.086522953554913154",
-      "lastTimestamp": 1733237769
+      "cumulativeFunding": "10547866.7897052013312665",
+      "cumulativePrice": "-1.18040550665350556",
+      "lastTimestamp": 1733239688
     }
   },
   {
@@ -515,8 +515,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "6128658.800759324510809507",
-      "cumulativePrice": "1.755849914124257944",
-      "lastTimestamp": 1733239349
+      "cumulativePrice": "2.291233297360654777",
+      "lastTimestamp": 1733239846
     }
   },
   {
@@ -635,8 +635,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "265834.45461192542466068",
-      "cumulativePrice": "-1.514175259453864071",
-      "lastTimestamp": 1733239320
+      "cumulativePrice": "-1.605942343801185248",
+      "lastTimestamp": 1733239708
     }
   },
   {
@@ -715,8 +715,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "20347851551.67475306046295109",
-      "cumulativePrice": "-0.096398954019818129",
-      "lastTimestamp": 1733239246
+      "cumulativePrice": "0.010531171506836117",
+      "lastTimestamp": 1733239779
     }
   },
   {
@@ -795,8 +795,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "751118.329197456442211757",
-      "cumulativePrice": "-0.643517297840601563",
-      "lastTimestamp": 1733239279
+      "cumulativePrice": "0.012915033004484597",
+      "lastTimestamp": 1733239813
     }
   },
   {
@@ -835,8 +835,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "1218532661.433792949398897241",
-      "cumulativePrice": "0.324177814585904696",
-      "lastTimestamp": 1733239304
+      "cumulativePrice": "0.862608048495337708",
+      "lastTimestamp": 1733239804
     }
   },
   {
@@ -995,8 +995,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "129190.27551141580851566",
-      "cumulativePrice": "0.678098725960284691",
-      "lastTimestamp": 1733239306
+      "cumulativePrice": "1.520459274112038151",
+      "lastTimestamp": 1733239819
     }
   },
   {
@@ -1080,6 +1080,46 @@
     }
   },
   {
+    "oracleBase": "HYPE/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325",
+    "marketStatus": "active",
+    "ticker": "HYPE/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "updatedAt": "-6795364578871",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1733241600,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1733239501
+    }
+  },
+  {
     "oracleBase": "0xdcef50dd0a4cd2dcc17e45df1676dcb336a11a61c69df7a0299b0150c672d25c",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
@@ -1115,8 +1155,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "12727.098063664665399665",
-      "cumulativePrice": "1.399191202673919972",
-      "lastTimestamp": 1733239278
+      "cumulativePrice": "2.475691521078949259",
+      "lastTimestamp": 1733239804
     }
   },
   {
@@ -1235,8 +1275,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "1175059.345358732503340095",
-      "cumulativePrice": "1.057687526895536908",
-      "lastTimestamp": 1733239317
+      "cumulativePrice": "1.099903689674810133",
+      "lastTimestamp": 1733239835
     }
   },
   {
@@ -1275,8 +1315,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "34508.835995031063087132",
-      "cumulativePrice": "1.392807417887718693",
-      "lastTimestamp": 1733239340
+      "cumulativePrice": "2.157183425587244659",
+      "lastTimestamp": 1733239825
     }
   },
   {
@@ -1293,11 +1333,11 @@
     "quoteDenom": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
     "quoteToken": {
       "name": "TerraUSD",
-      "address": "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
+      "address": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
       "symbol": "UST",
-      "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png",
-      "decimals": 6,
-      "updatedAt": "1722965778462",
+      "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/6bb73e5e-9b20-4a13-121a-0bc7978d9400/public",
+      "decimals": 18,
+      "updatedAt": "-6795364578871",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1355,8 +1395,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "207069.647523069214075964",
-      "cumulativePrice": "0.805160627475222497",
-      "lastTimestamp": 1733239304
+      "cumulativePrice": "1.048315846066656299",
+      "lastTimestamp": 1733239823
     }
   },
   {
@@ -1395,8 +1435,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "16914301.298566076608220729",
-      "cumulativePrice": "2.216341671398051564",
-      "lastTimestamp": 1733239338
+      "cumulativePrice": "2.606641807170630521",
+      "lastTimestamp": 1733239786
     }
   },
   {
@@ -1555,8 +1595,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "493718.819142044155831923",
-      "cumulativePrice": "2.020948319051717314",
-      "lastTimestamp": 1733238942
+      "cumulativePrice": "2.687414518218902438",
+      "lastTimestamp": 1733239777
     }
   },
   {
@@ -1635,8 +1675,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "6053476.159399142531470374",
-      "cumulativePrice": "2.451163442922543586",
-      "lastTimestamp": 1733239292
+      "cumulativePrice": "3.0642471026600353",
+      "lastTimestamp": 1733239754
     }
   },
   {
@@ -1795,8 +1835,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "-88917.997879415264472324",
-      "cumulativePrice": "3.669617344850616074",
-      "lastTimestamp": 1733239334
+      "cumulativePrice": "4.498858965359585545",
+      "lastTimestamp": 1733239665
     }
   }
 ]
