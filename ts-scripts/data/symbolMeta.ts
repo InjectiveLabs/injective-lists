@@ -1763,7 +1763,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'XIII',
     coinGeckoId: 'xiiicoin',
-    logo: 'xiii.png',
+    logo: 'xiii_2.png',
     name: 'XIIICOIN'
   },
 
