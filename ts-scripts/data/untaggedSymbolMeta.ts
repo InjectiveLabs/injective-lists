@@ -301,5 +301,13 @@ export const untaggedSymbolMeta = {
     symbol: 'XMR',
     logo: 'xmr.webp',
     coinGeckoId: 'monero'
+  },
+
+  HYPE: {
+    name: 'Hyperliquid',
+    decimals: 6,
+    symbol: 'HYPE',
+    logo: 'hype.webp',
+    coinGeckoId: 'hyperliquid'
   }
 }
