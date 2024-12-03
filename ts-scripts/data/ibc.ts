@@ -551,5 +551,13 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-363',
     source: TokenSource.Cosmos,
     hash: '775AB5A9D31074F245BB7864B7031AC7BDC9C6C0FD64A72528A8D07203CD71F3'
+  },
+  {
+    ...symbolMeta.XION,
+    baseDenom: 'uxion',
+    channelId: 'channel-387',
+    path: 'transfer/channel-387',
+    source: TokenSource.Cosmos,
+    hash: '00BF66BAB34873B07FB9EEEBCFACEA11FB4BB348718862AA7782D6DECC1F44C8'
   }
 ]
