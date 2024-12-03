@@ -1,4 +1,5 @@
 export const mainnetMarketIds: string[] = [
+  '0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325', // hype-usdt-perp
   '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d', // xmr-usdt-perp
   '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
   '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd', // xion-usdt-perp
