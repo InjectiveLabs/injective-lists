@@ -1988,7 +1988,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'XION',
     logo: 'xion.png',
     name: 'XION',
-    coinGeckoId: ''
+    coinGeckoId: 'xion-2'
   },
 
   bnUSD: {
