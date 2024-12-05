@@ -192,7 +192,7 @@ export const testnetGridMarkets = [
   // }
   {
     slug: 'inj-usdt',
-    contractAddress: 'inj1fs4mr4qsqwwsh4tps860tcvx2kfunfkwv5p750'
+    contractAddress: 'inj1xkluytgalj74j8ljjf4a0y0veqpshgmpyusjlj'
   },
   {
     slug: 'atom-usdt',
