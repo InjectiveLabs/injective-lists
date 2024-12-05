@@ -5,13 +5,13 @@
     "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
     "vaultName": "permissionless_vault_3",
     "vaultType": "crates.io:vault-cpmm-spot",
-    "currentTvl": 0,
-    "lpTokenPrice": 0,
-    "totalLpAmount": "0",
+    "currentTvl": 11.539172590076815,
+    "lpTokenPrice": 8.938204654076121e-19,
+    "totalLpAmount": "12909944487358056210",
     "contractAddress": "inj138hf33wsmnllnshd8xgn5f9ya7fu79j4n3v9y9",
     "notionalValueCap": "100000000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
-    "updatedAt": 1733410707281,
+    "updatedAt": 1733412035975,
     "createdAt": 1733410707281,
     "apy": 0,
     "apyue": 0,
@@ -24,7 +24,16 @@
     },
     "subaccountInfo": {
       "subaccountId": "0x77107865c1d632d45b63db2ff8fd315f3fd46cb7000000000000000000000007",
-      "balancesList": []
+      "balancesList": [
+        {
+          "denom": "factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA",
+          "totalBalance": "500000000"
+        },
+        {
+          "denom": "inj",
+          "totalBalance": "333333333333333333"
+        }
+      ]
     }
   },
   {
