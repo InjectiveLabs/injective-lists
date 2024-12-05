@@ -33,7 +33,8 @@ export const mainnetMarketIds = [
   '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
   '0x85ccdb2b6022b0586da19a2de0a11ce9876621630778e28a5d534464cbfff238', // nonja-inj
   '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', // agent-inj
-  '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934' // shroom-inj
+  '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934', // shroom-inj
+  '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1' // xion-usdt
 ]
 
 export const devnetMarketIds = [
