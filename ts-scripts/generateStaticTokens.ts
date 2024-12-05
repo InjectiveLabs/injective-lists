@@ -86,21 +86,21 @@ const formatTokenFactoryTokens = (
 
 const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
   return tokens.reduce((list, token) => {
-    list.push({
-      ...token,
-      denom: '',
-      address: token.address,
-      tokenType: TokenType.Cw20,
-      tokenVerification: TokenVerification.Verified,
-      decimals: token.decimals
-    })
-
     // override the denom & decimals using data from the chain
     const factoryCw20Denom = getCw20Denom(token.address, network)
 
     if (!factoryCw20Denom) {
       return list
     }
+
+    list.push({
+      ...token,
+      denom: factoryCw20Denom,
+      address: token.address,
+      tokenType: TokenType.Cw20,
+      tokenVerification: TokenVerification.Verified,
+      decimals: token.decimals
+    })
 
     const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
       factoryCw20Denom,
@@ -249,6 +249,6 @@ const generateStaticTokens = async (network: Network) => {
   console.log(`✅✅✅ GenerateStaticTokens ${network}`)
 }
 
-generateStaticTokens(Network.Devnet)
-generateStaticTokens(Network.TestnetSentry)
+// generateStaticTokens(Network.Devnet)
+// generateStaticTokens(Network.TestnetSentry)
 generateStaticTokens(Network.MainnetSentry)
