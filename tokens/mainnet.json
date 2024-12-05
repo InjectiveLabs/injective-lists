@@ -1,20 +1,5 @@
 [
   {
-    "address": "inj14au322k9munkmx5wrchz9q30juf5wjgz2cfqku",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "marketIds": [],
-    "decimals": 18,
-    "symbol": "wBTC",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/1cdbe110-203a-4022-fdc3-edf497468d00/public",
-    "name": "Wrapped Bitcoin",
-    "coinGeckoId": "wrapped-bitcoin",
-    "source": "ethereum",
-    "denom": "",
-    "tokenType": "cw20",
-    "externalLogo": "wbtc.png"
-  },
-  {
     "address": "factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx",
     "isNative": false,
     "tokenVerification": "verified",
@@ -231,7 +216,7 @@
     "coinGeckoId": "usd-coin",
     "source": "solana",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -247,7 +232,7 @@
     "symbol": "SHROOM",
     "decimals": 18,
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1300xcg9naqy00fujsr9r8alwk7dh65uqu87xm8",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "shroom.webp"
   },
   {
@@ -261,7 +246,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/80a063dc-24a3-42ba-8f0c-208f1aee0600/public",
     "name": "Dojo Staked INJ",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj134wfjutywny9qnyux2xgdmm0hfj7mwpl39r3r9",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "dinj.svg"
   },
   {
@@ -277,7 +262,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c6d68d2f-35ee-4209-0b1a-52aed5036c00/public",
     "name": "Gryphon Staked Injective",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj13xlpypcwl5fuc84uhqzzqumnrcfpptyl6w3vrf",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "ninj.png"
   },
   {
@@ -292,7 +277,7 @@
     "coinGeckoId": "tether",
     "source": "aptos",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj13yrhllhe40sd3nj0lde9azlwfkyrf2t9r78dx5",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdt.png"
   },
   {
@@ -306,7 +291,7 @@
     "name": "Wrapped Klaytn",
     "coinGeckoId": "klay-token",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14cl67lprqkt3pncjav070gavaxslc0tzpc56f4",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "klaytn.webp"
   },
   {
@@ -322,7 +307,7 @@
     "symbol": "COKE",
     "decimals": 6,
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14eaxewvy7a3fk948c3g3qham98mcqpm8v5y0dp",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "coke.webp"
   },
   {
@@ -336,7 +321,7 @@
     "coinGeckoId": "brz",
     "name": "Brazilian Digital Token",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14jesa4q248mfxztfc9zgpswkpa4wx249mya9kk",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "brz.png"
   },
   {
@@ -350,7 +335,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63fa7f36-b39e-41ee-0637-66edc24e9000/public",
     "coinGeckoId": "bonk",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14rry9q6dym3dgcwzq79yay0e9azdz55jr465ch",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "bonk.jpeg"
   },
   {
@@ -364,7 +349,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/8e8b01d5-7eb6-4bcf-ab58-fecd02052400/public",
     "name": "Neptune Receipt ATOM",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj16jf4qkcarp3lan4wl2qkrelf4kduvvujwg0780",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "natom.png"
   },
   {
@@ -378,7 +363,7 @@
     "coinGeckoId": "",
     "name": "xNinja.Tech Token",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj17pgmlk6fpfmqyffs205l98pmnmp688mt0948ar",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "xnj.png"
   },
   {
@@ -392,7 +377,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/81764993-f8fb-4326-1b7a-ebc39a3f1b00/public",
     "coinGeckoId": "avalanche-2",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18a2u6az6dzw528rptepfg6n49ak6hdzkny4um6",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "avax.webp"
   },
   {
@@ -408,7 +393,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/ff5b9b22-f3f2-4a9c-6aab-7cd0d1caec00/public",
     "name": "Hydro Wrapped INJ",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "hinj.svg"
   },
   {
@@ -423,7 +408,7 @@
     "coinGeckoId": "tether",
     "source": "ethereum-wormhole",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18zykysxw9pcvtyr9ylhe0p5s7yzf6pzdagune8",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdt.png"
   },
   {
@@ -438,7 +423,7 @@
     "coinGeckoId": "basket",
     "source": "solana",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj193340xxv49hkug7r65xzc0l40tze44pee4fj94",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "bskt.png"
   },
   {
@@ -453,7 +438,7 @@
     "coinGeckoId": "usd-coin",
     "source": "polygon",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj19s2r64ghfqq3py7f5dr0ynk8yj0nmngca3yvy3",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -467,7 +452,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/0c2dce32-cc01-4185-c5c9-e6ad632ff600/public",
     "name": "Neptune Receipt USDT",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "nusdt.png"
   },
   {
@@ -484,7 +469,7 @@
     "coinGeckoId": "arbitrum",
     "source": "arbitrum",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1d5vz0uzwlpfvgwrwulxg6syy82axa58y4fuszd",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "arb-circle.png"
   },
   {
@@ -499,7 +484,7 @@
     "coinGeckoId": "usd-coin",
     "source": "binance-smart-chain",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dngqzz6wphf07fkdam7dn55t8t3r6qenewy9zu",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -517,7 +502,7 @@
     "coinGeckoId": "wmatic",
     "source": "polygon",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1dxv423h8ygzgxmxnvrf33ws3k94aedfdevxd8h",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "polygon.png"
   },
   {
@@ -533,7 +518,7 @@
     "symbol": "NONJA",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c8db9c4f-02c8-4d58-d424-9206a20b0c00/public",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "nonja.png"
   },
   {
@@ -548,7 +533,7 @@
     "name": "Wrapped Ethereum",
     "source": "ethereum-wormhole",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1k9r62py07wydch6sj5sfvun93e4qe0lg7jyatc",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "ethereum.png"
   },
   {
@@ -562,7 +547,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/b8418c56-9da2-4812-a3d7-84fd1aa54900/public",
     "name": "Neptune Receipt WETH",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1kehk5nvreklhylx22p3x0yjydfsz9fv3fvg5xt",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "nweth.png"
   },
   {
@@ -576,7 +561,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/05007856-264d-48e6-2b45-3efebfc44000/public",
     "coinGeckoId": "kage",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1l49685vnk88zfw2egf6v65se7trw2497wsqk65",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "kage.png"
   },
   {
@@ -591,7 +576,7 @@
     "coinGeckoId": "tether",
     "source": "binance-smart-chain",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1l9eyrnv3ret8da3qh8j5aytp6q4f73crd505lj",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdt.png"
   },
   {
@@ -606,7 +591,7 @@
     "coinGeckoId": "usd-coin",
     "source": "arbitrum",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1lmcfftadjkt4gt3lcvmz6qn4dhx59dv2m7yv8r",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -623,7 +608,7 @@
     "name": "Lido DAO Token",
     "coinGeckoId": "lido-dao",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1me6t602jlndzxgv2d7ekcnkjuqdp7vfh4txpyy",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "lido-dao.webp"
   },
   {
@@ -637,7 +622,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/8ead3237-e7e2-42e5-ed71-9dd31bf9f600/public",
     "coinGeckoId": "astar",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "astar.png"
   },
   {
@@ -651,7 +636,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/0953ace5-16ff-4841-e3b8-46beb6085e00/public",
     "coinGeckoId": "sushi",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1n73yuus64z0yrda9hvn77twkspc4uste9j9ydd",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "sushi-inj.png"
   },
   {
@@ -666,7 +651,7 @@
     "name": "Wrapped Ethereum",
     "source": "arbitrum",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1plsk58sxqjw9828aqzeskmc8xy9eu5kppw3jg4",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "ethereum.png"
   },
   {
@@ -682,7 +667,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e4dee9d7-3cec-4f15-a3e8-7c7322d65000/public",
     "coinGeckoId": "chiliz",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "chz.png"
   },
   {
@@ -706,7 +691,7 @@
     "coinGeckoId": "usd-coin",
     "source": "ethereum-wormhole",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -721,7 +706,7 @@
     "coinGeckoId": "tether",
     "source": "solana",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1qjn06jt7zjhdqxgud07nylkpgnaurq6xc5c4fd",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdt.png"
   },
   {
@@ -735,7 +720,7 @@
     "name": "Balanced Dollar",
     "coinGeckoId": "balanced-dollars",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "bnUSD.svg"
   },
   {
@@ -749,7 +734,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6ce0e124-6a87-4211-413f-35cdc0c2dd00/public",
     "name": "Neptune Receipt INJ",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1rmzufd7h09sqfrre5dtvu5d09ta7c0t4jzkr2f",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "neptinj.png"
   },
   {
@@ -763,7 +748,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/2165cc0f-0cb8-4542-f2d7-81b8e51c4100/public",
     "coinGeckoId": "polkadot",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1spzwwtr2luljr300ng2gu52zg7wn7j44m92mdf",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "dot.jpeg"
   },
   {
@@ -780,7 +765,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/f9b8b970-d04c-4146-c107-37286b449900/public",
     "coinGeckoId": "solana",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "solana.png"
   },
   {
@@ -797,7 +782,7 @@
     "name": "Pyth Network (legacy)",
     "coinGeckoId": "pyth-network",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1tjcf9497fwmrnk22jfu5hsdq82qshga54ajvzy",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "pyth.png"
   },
   {
@@ -812,7 +797,7 @@
     "coinGeckoId": "croatian-ff-fan-token",
     "source": "polygon",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1tn457ed2gg5vj2cur5khjjw63w73y3xhyhtaay",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "vatreni.jpeg"
   },
   {
@@ -827,7 +812,7 @@
     "coinGeckoId": "injective-protocol",
     "source": "ethereum-wormhole",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1v8gg4wzfauwf9l7895t0eyrrkwe65vh5n7dqmw",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "injective-v3.png"
   },
   {
@@ -841,7 +826,7 @@
     "name": "Punk Token",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/4e4c62cd-4c98-4d1b-dfc6-db1209657f00/public",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1wmrzttj7ms7glplek348vedx4v2ls467n539xt",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "punk-token.webp"
   },
   {
@@ -855,7 +840,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/013c70ad-6dd1-42a3-04d9-806dee787d00/public",
     "coinGeckoId": "",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "truinj.svg"
   },
   {
@@ -870,7 +855,7 @@
     "coinGeckoId": "injective-protocol",
     "source": "binance-smart-chain",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1xcgprh58szttp0vqtztvcfy34tkpupr563ua40",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "injective-v3.png"
   },
   {
@@ -886,7 +871,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/9381d6a1-1c3c-42b9-aa57-c9af6b2d0200/public",
     "coinGeckoId": "dojo-token",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1zdj9kqnknztl2xclm5ssv25yre09f8908d4923",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "dojo-token.png"
   },
   {
@@ -900,7 +885,7 @@
     "name": "Alpha Coin",
     "coinGeckoId": "alphacoin",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1zwnsemwrpve3wrrg0njj89w6mt5rmj9ydkc46u",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "alpha.png"
   },
   {
@@ -28649,6 +28634,18 @@
     "externalLogo": "https://th.bing.com/th/id/OIP.nY7sgKnmF5Y99HpVixVFowHaH3?w=206&h=219&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
+    "name": "ELON",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "symbol": "ELON",
+    "decimals": 6,
+    "coinGeckoId": "",
+    "denom": "inj10pqutl0av9ltrw9jq8d3wjwjayvz76jhfcfza0",
+    "address": "inj10pqutl0av9ltrw9jq8d3wjwjayvz76jhfcfza0",
+    "tokenType": "cw20",
+    "tokenVerification": "internal",
+    "externalLogo": "unknown.png"
+  },
+  {
     "name": "CREATURE",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
     "symbol": "CRT",
@@ -32333,6 +32330,18 @@
     "externalLogo": "https://pbs.twimg.com/profile_images/1777393326733369344/65t2Y8D7.jpg"
   },
   {
+    "name": "Bonjo",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "symbol": "BONJO",
+    "decimals": 18,
+    "coinGeckoId": "",
+    "denom": "inj19w5lfwk6k9q2d8kxnwsu4962ljnay85f9sgwn6",
+    "address": "inj19w5lfwk6k9q2d8kxnwsu4962ljnay85f9sgwn6",
+    "tokenType": "cw20",
+    "tokenVerification": "internal",
+    "externalLogo": "https://bafkreiewnp7xtt2h7mi7xrzmevcisjkwo735ajz6mpbv757iuzjzrkpyiq.ipfs.nftstorage.link/"
+  },
+  {
     "name": "crypto",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
     "symbol": "crypto",
@@ -34611,6 +34620,18 @@
     "tokenType": "cw20",
     "tokenVerification": "internal",
     "externalLogo": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+  },
+  {
+    "name": "Neptune Receipt TIA",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "symbol": "nTIA",
+    "decimals": 6,
+    "coinGeckoId": "",
+    "denom": "inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv",
+    "address": "inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv",
+    "tokenType": "cw20",
+    "tokenVerification": "internal",
+    "externalLogo": "https://neptune-finance.nyc3.cdn.digitaloceanspaces.com/ntia.svg"
   },
   {
     "name": "Ferengi Vaults",
