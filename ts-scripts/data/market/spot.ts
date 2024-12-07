@@ -38,9 +38,16 @@ export const mainnetMarketIds = [
 ]
 
 export const devnetMarketIds = [
+  '0xe97ebaf3e2ae3bd00dabe59046fcc28ec58ea969df33a9ce95f4fc285306c2d4', // wbtc-usdt
+  '0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034', // weth-usdt
+  '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa', // atom-usdt
   '0x6fa856bca5a9298ced8da3ef7616e66081ff64e4fdd2bffa38e95cf23c1f2321', // proj-usdt
   '0xba3101edf6cb94d0b29fd95fb1679f84fe981a98da91a3df1e06809845fab209', // wbtc-inj
-  '0xefc8e0b5bdb799010c9584c59fa14e759009d86c04fa52e0e67b411309096ace' // proj-in
+  '0xefc8e0b5bdb799010c9584c59fa14e759009d86c04fa52e0e67b411309096ace', // proj-in
+  '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
+  '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
+  '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
+  '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
 ]
 
 export const stagingMarketIds = [
@@ -49,10 +56,17 @@ export const stagingMarketIds = [
 ]
 
 export const testnetMarketIds = [
+  '0xa283fc94a9055a01a58bb6229b1e56a8bb54069a0debfce7fbd1e6c25a95330c', // tia-usdt
+  '0x491ee4fae7956dd72b6a97805046ffef65892e1d3254c559c18056a519b2ca15', // atom-usdt
+  '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe', // inj-usdt
+  '0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e', // wbtc-usdt
+  '0xa97182f11f1aa5339c7f4c3fe3cc1c69b39079f11b864c86d912956c5c2db75c', // weth-usdt
+  '0x7a57e705bb4e09c88aecfc295569481dbf2fe1d5efe364651fbe72385938e9b0', // ape-usdt
   '0x382a1cf37bcdbccd5698753154335fa56651d64b88b054691648710c8dcf43e0', // zen-inj
   '0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5', // projx-inj
   '0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e', // wbtc-usdt
   '0x5fbd22eb44d9db413513f99ceb9a5ac4cc5b5e6893d5882877391d6927927e6d', // usdc-usdt
   '0xe5fcbb5a2935d0b1ce700c841343cd86803ca04f43ca6a03f0c714ec27550cd2', // demo-usdt
-  '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe' // inj-usdt
+  '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca', // hdro-inj
+  '0x2d7f47811527bd721ce2e4e0ff27b0f3a281f65abcd41758baf157c8ddfcd910' // hinj-inj
 ]

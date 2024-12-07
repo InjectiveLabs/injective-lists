@@ -78,6 +78,10 @@ export const testnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.PHUC,
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.TIA,
+    creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
   }
 ]
 
@@ -451,7 +455,7 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.SAI,
     creator: 'inj10aa0h5s0xwzv95a8pjhwluxcm5feeqygdk3lkm'
   },
-   {
+  {
     ...symbolMeta.MANGO,
     creator: 'inj17cfaytu2lg9zcdxdz8hx9jxkm9jcnxh58fc3ww'
   }
