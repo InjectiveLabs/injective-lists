@@ -59,7 +59,6 @@ export const testnetMarketIds: string[] = [
   '0x820bad0e0cbee65bb0eea5a99c78720c97b7b2217c47dcc0e0875e1ebb35e546', // btc-usdt-perp
   '0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0', // sol-usdt-perp
   '0x14f82598b92674598af196770a45e1b808a4ef3aa86eb9ca09aff1aeab33ac46', // 1mpepe-usdt-perp
-  '0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934', // xau-usdt-perp
   '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac', // gbp-usdt-perp
   '0xba9c96a1a9cc226cfe6bd9bca3a433e396569d1955393f38f2ee728cfda7ec58', // jpy-usdt-perp
   '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
