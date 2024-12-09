@@ -2101,5 +2101,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Mangosteen Token',
     logo: 'mango.png',
     coinGeckoId: ''
+  },
+
+  NEPT: {
+    decimals: 6,
+    symbol: 'NEPT',
+    name: 'Neptune',
+    logo: 'nept.svg',
+    coinGeckoId: ''
   }
 }
