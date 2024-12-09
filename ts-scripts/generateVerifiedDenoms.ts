@@ -13,22 +13,22 @@ import {
 import {
   readJSONFile,
   updateJSONFile,
-  tokenToAddressMap,
+  tokensToDenomMap,
   getNetworkFileName
 } from './helper/utils'
 import { getMarketById } from './helper/market'
 
-const devnetTokensMap = tokenToAddressMap(
+const devnetTokensMap = tokensToDenomMap(
   readJSONFile({
     path: 'json/tokens/devnet.json'
   })
 )
-const testnetTokensMap = tokenToAddressMap(
+const testnetTokensMap = tokensToDenomMap(
   readJSONFile({
     path: 'json/tokens/testnet.json'
   })
 )
-const mainnetTokensMap = tokenToAddressMap(
+const mainnetTokensMap = tokensToDenomMap(
   readJSONFile({
     path: 'json/tokens/mainnet.json'
   })
@@ -59,7 +59,7 @@ const getHardcodedDenoms = (network: Network) => {
   }
 
   return hardcodedDenoms.reduce((list, denom) => {
-    const token = tokenMap[denom.replace('peggy', '').toLowerCase()]
+    const token = tokenMap[denom.toLowerCase()]
 
     if (!token) {
       return list
@@ -102,10 +102,8 @@ export const generateTradableDenoms = async (network: Network) => {
 
     return {
       ...list,
-      [market.baseDenom]:
-        tokenMap[market.baseDenom.replace('peggy', '').toLowerCase()],
-      [market.quoteDenom]:
-        tokenMap[market.quoteDenom.replace('peggy', '').toLowerCase()]
+      [market.baseDenom]: tokenMap[market.baseDenom.toLowerCase()],
+      [market.quoteDenom]: tokenMap[market.quoteDenom.toLowerCase()]
     }
   }, {} as Record<string, any>)
 
