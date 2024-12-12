@@ -149,13 +149,6 @@ export const testnetCategoryMap = {
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac' // gbp-usdt-perp
   ],
   deprecated: [],
-  experimental: [
-    '0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf', // stinj-inj
-    '0x2d7f47811527bd721ce2e4e0ff27b0f3a281f65abcd41758baf157c8ddfcd910', // hinj-inj
-    '0x637f6ec165c381ca4665935491b4d8a31fbc5cbc55616f1b5aafe8a64a2ebdda', // talis-inj
-    '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca' // hdro-inj
-  ],
-  // remove top above after launch
   trending: [],
   injective: [
     '0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe', // inj-usdt
@@ -182,7 +175,12 @@ export const devnetCategoryMap = {
   ],
   rwa: [],
   deprecated: [],
-  trending: [],
+  trending: [
+    '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
+    '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
+    '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
+    '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
+  ],
   injective: [
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4', // inj-usdt-perp
@@ -195,5 +193,10 @@ export const devnetCategoryMap = {
   layer2: [],
   defi: [],
   ai: [],
-  meme: []
+  meme: [
+    '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
+    '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
+    '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
+    '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
+  ]
 }
