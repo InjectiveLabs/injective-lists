@@ -42,7 +42,34 @@ export const mainnetCategoryMap = {
     '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f' // gbp-usdt-perp
   ],
-  deprecated: [],
+  deprecated: [
+    '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c', // sollegacy-usdt
+    '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
+    '0xcdfbfaf1f24055e89b3c7cc763b8cb46ffff08cdc38c999d01f58d64af75dca9', // aave-usdclegacy
+    '0xa43d2be9861efb0d188b136cef0ae2150f80e08ec318392df654520dd359fcd7', // grt-usdclegacy
+    '0xe0dc13205fb8b23111d8555a6402681965223135d368eeeb964681f9ff12eb2a', // inj-usdclegacy
+    '0xfe93c19c0a072c8dd208b96694e024305a7dff01bbf12cac2bfa81b246c69040', // link-usdclegacy
+    '0x5abfffe9079d53e0bf8ee9b3064b427acc3d71d6ba58a44235abe38f60115678', // matic-usdclegacy
+    '0x9a629b947b6f946af4f6076cfda67f3535d73ee3cef6176cf6d9c8d6b0a03f37', // sushi-usdclegacy
+    '0x09cc2c28fbedbdd677e07924653f8f583d0ee5886e74046e7f114210d990784b', // uni-usdclegacy
+    '0xf66f797a0ff49bd2170a04d288ca3f13b5df1c822a7b0cc4204aca64a5860666', // usdclegacy-usdcet
+    '0xabc20971099f5df5d1de138f8ea871e7e9832e3b0b54b61056eae15b09fed678', // usdclegacy-usdt
+    '0x8b1a4d3e8f6b559e30e40922ee3662dd78edf7042330d4d620d188699d1a9715', // usdt-usdclegacy
+    '0x170a06eb653548f67e94b0fcb82c5258c83b0a2b62ed24c55749d5ac77bc7621', // wbtc-usdclegacy
+    '0x01e920e081b6f3b2e5183399d5b6733bb6f80319e6be3805b95cb7236910ff0e', // weth-usdclegacy
+    '0x4fa0bd2c2adbfe077f58395c18a72f5cbf89532743e3bddf43bc7aba706b0b74', // chz-usdcet
+    '0x7fce43f1140df2e5f16977520629e32a591939081b59e8fbc1e1c4ddfa77a044', // usdcet-ldo
+    '0x66a113e1f0c57196985f8f1f1cfce2f220fa0a96bca39360c70b6788a0bc06e0', // ldo-usdcet
+    '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
+    '0xb825e2e4dbe369446e454e21c16e041cbc4d95d73f025c369f92210e82d2106f', // usdcso-usdcet
+    '0xf66f797a0ff49bd2170a04d288ca3f13b5df1c822a7b0cc4204aca64a5860666', // usdclegacy-usdcet
+    '0xda0bb7a7d8361d17a9d2327ed161748f33ecbf02738b45a7dd1d812735d1531c', // usdt-usdcet
+    '0xba33c2cdb84b9ad941f5b76c74e2710cf35f6479730903e93715f73f2f5d44be', // wmaticlegacy-usdc
+    '0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906', // arblegacy-usdt
+    '0xb9a07515a5c239fcbfa3e25eaa829a03d46c4b52b9ab8ee6be471e9eb0e9ea31', // wmaticlegacy-usdt
+    '0xb965ebede42e67af153929339040e650d5c2af26d6aa43382c110d943c627b0a', // pythlegacy-inj
+    '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
+  ],
   trending: [
     '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1', // xion-usdt
     '0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325', // hype-usdt-perp
@@ -100,7 +127,7 @@ export const mainnetCategoryMap = {
     '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced' // bnb-usdt-perp
   ],
   layer2: [
-    '0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906', // arb-usdt
+    '0x1c2e5b1b4b1269ff893b4817a478fba6095a89a3e5ce0cccfcafa72b3941eeb6', // arb-usdt
     '0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5', // arb-usdt-perp
     '0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c' // op-usdt-perp
   ],
