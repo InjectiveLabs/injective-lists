@@ -525,6 +525,31 @@
     "minSelfDelegation": "1000000"
   },
   {
+    "operatorAddress": "injvaloper1ajl248ueguze39pwqznm36herzqmqgspv8rea3",
+    "jailed": false,
+    "status": "Bonded",
+    "tokens": "100",
+    "delegatorShares": "100000000000000000000",
+    "description": {
+      "moniker": "pdyze_test",
+      "identity": "optional identity signature (ex. UPort or Keybase)",
+      "website": "validator's (optional) website",
+      "securityContact": "validator's (optional) security contact email",
+      "details": "validator's (optional) details"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-12-14T08:59:03.272Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1cq6mvxqp978f6lxrh5s6c35ddr2slcj9h7tqng",
     "jailed": false,
     "status": "Bonded",
