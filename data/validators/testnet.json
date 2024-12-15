@@ -526,9 +526,9 @@
   },
   {
     "operatorAddress": "injvaloper1ajl248ueguze39pwqznm36herzqmqgspv8rea3",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "100",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.99",
     "delegatorShares": "100000000000000000000",
     "description": {
       "moniker": "pdyze_test",
@@ -537,8 +537,8 @@
       "securityContact": "validator's (optional) security contact email",
       "details": "validator's (optional) details"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 55650681,
+    "unbondingTime": "2025-01-05T03:40:02.926Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
