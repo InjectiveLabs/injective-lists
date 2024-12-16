@@ -2109,5 +2109,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune',
     logo: 'nept.svg',
     coinGeckoId: ''
+  },
+
+  NOJO: {
+    decimals: 6,
+    symbol: 'NOJO',
+    name: 'Nojo',
+    logo: 'nojo.jpg',
+    coinGeckoId: ''
   }
 }
