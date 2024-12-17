@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
     '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1', // xion-usdt
     '0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325', // hype-usdt-perp
     '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d', // xmr-usdt-perp
@@ -81,6 +82,7 @@ export const mainnetCategoryMap = {
     '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f' // moodeng-usdt-perp
   ],
   injective: [
+    '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963', // inj-usdt-perp
     '0x21f3eed62ddc64458129c0dcbff32b3f54c92084db787eb5cf7c20e69a1de033', // talis-usdt
@@ -132,6 +134,7 @@ export const mainnetCategoryMap = {
     '0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c' // op-usdt-perp
   ],
   defi: [
+    '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
     '0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872', // crv-usdt-perp
     '0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520', // mkr-usdt-perp
     '0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed', // aave-usdt-perp
