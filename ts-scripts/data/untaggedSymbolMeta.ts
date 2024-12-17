@@ -309,5 +309,13 @@ export const untaggedSymbolMeta = {
     symbol: 'HYPE',
     logo: 'hype.webp',
     coinGeckoId: 'hyperliquid'
+  },
+
+  PENGU: {
+    name: 'Pudgy Penguins',
+    decimals: 6,
+    symbol: 'PENGU',
+    logo: 'pengu.webp',
+    coinGeckoId: 'pudgy-penguins'
   }
 }
