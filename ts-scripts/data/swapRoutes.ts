@@ -17290,5 +17290,109 @@ export const mainnetSwapRoutes = [
       '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934',
       '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2'
     ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'inj',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'peggy0xdAC17F958D2ee523a2206206994597C13D831ec7',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xdf9317eac1739a23bc385e264afde5d480c0b3d2322660b5efd206071d4e70b7'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
+      '0x9c8a91a894f773792b1e8d0b6a8224a6b748753738e9945020ee566266f817be'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'ibc/93EAE5F9D6C14BFAC8DD1AFDBE95501055A7B22C5D8FA8C986C31D6EFADCA8A9',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
+      '0xd3de35e09147492a051f514f42adacd4b988268ec5c6e0cdac4cbde99ff808a2'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
+      '0xd9089235d2c1b07261cbb2071f4f5a7f92fa1eca940e3cad88bb671c288a972f'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'factory/inj127l5a2wmkyvucxdlupqyac3y0v6wqfhq03ka64/qunt',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj13xlpypcwl5fuc84uhqzzqumnrcfpptyl6w3vrf',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0x02b56c5e6038f0dd795efb521718b33412126971608750538409f4b81ab5da2f'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0x1b1e062b3306f26ae3af3c354a10c1cf38b00dcb42917f038ba3fc14978b1dd8'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom:
+      'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0x85ccdb2b6022b0586da19a2de0a11ce9876621630778e28a5d534464cbfff238'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
+    target_denom: 'factory/inj16dd5xzszud3u5wqphr3tq8eaz00gjdn3d4mvj8/agent',
+    steps: [
+      '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
+      '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2'
+    ]
   }
 ]
