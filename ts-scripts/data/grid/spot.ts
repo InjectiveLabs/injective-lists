@@ -162,6 +162,10 @@ export const mainnetGridMarkets = [
   {
     slug: 'xiii-inj',
     contractAddress: 'inj1zah9dsevddtv327f206s49etjgsvezgm0npp6v'
+  },
+  {
+    slug: 'nept-inj',
+    contractAddress: 'inj1tywtf22sw8h4cd5v36gp0u3uya2psm0s8lxxan'
   }
 ]
 
