@@ -1002,7 +1002,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   ZIG: {
     decimals: 18,
     symbol: 'ZIG',
-    name: 'ZigCoin',
+    name: 'ZIGChain',
     logo: 'zigg.png',
     coinGeckoId: 'zignaly'
   },
