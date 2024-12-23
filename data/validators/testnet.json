@@ -475,6 +475,31 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper190nyp2vhq8tt788rt8mlrng63fc2egr2znmdz2",
+    "jailed": false,
+    "status": "Bonded",
+    "tokens": "10",
+    "delegatorShares": "10000000000000000000",
+    "description": {
+      "moniker": "public-harvey.local",
+      "identity": "",
+      "website": "https://validator.example.com",
+      "securityContact": "security@example.com",
+      "details": "This is my validator description"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-12-23T04:38:16.073Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper199v6uxq4dyfrkqdv5qqae45r00dgc2l5h9jj8p",
     "jailed": true,
     "status": "UnBonded",
