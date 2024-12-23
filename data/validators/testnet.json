@@ -476,9 +476,9 @@
   },
   {
     "operatorAddress": "injvaloper190nyp2vhq8tt788rt8mlrng63fc2egr2znmdz2",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "10",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "9.999",
     "delegatorShares": "10000000000000000000",
     "description": {
       "moniker": "public-harvey.local",
@@ -487,8 +487,8 @@
       "securityContact": "security@example.com",
       "details": "This is my validator description"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 56777529,
+    "unbondingTime": "2025-01-13T23:25:52.516Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
