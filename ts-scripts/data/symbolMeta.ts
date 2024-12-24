@@ -2109,5 +2109,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune',
     logo: 'nept.svg',
     coinGeckoId: ''
+  },
+
+  AUSD: {
+    name: 'AUSD',
+    logo: 'ausd.svg',
+    symbol: 'AUSD',
+    decimals: 6,
+    coinGeckoId: 'agora-dollar'
   }
 }
