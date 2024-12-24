@@ -2113,7 +2113,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   AUSD: {
     name: 'AUSD',
-    logo: 'ausd.svg',
+    logo: 'AUSD.png',
     symbol: 'AUSD',
     decimals: 6,
     coinGeckoId: 'agora-dollar'
