@@ -1325,6 +1325,31 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1wh8yd3entpzpvgz0sakhf2fk3z24nfngcxpr6t",
+    "jailed": false,
+    "status": "Bonded",
+    "tokens": "50",
+    "delegatorShares": "50000000000000000000",
+    "description": {
+      "moniker": "help",
+      "identity": "optional identity signature (ex. UPort or Keybase)",
+      "website": "validator's (optional) website",
+      "securityContact": "validator's (optional) security contact email",
+      "details": "validator's (optional) details"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-12-26T02:11:08.045Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper1xxkjpsudrtznh7crfgnz6e53rtelw4h6502pfp",
     "jailed": true,
     "status": "UnBonded",
