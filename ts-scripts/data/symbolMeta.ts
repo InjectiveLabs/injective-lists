@@ -2109,5 +2109,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune',
     logo: 'nept.svg',
     coinGeckoId: ''
-  }
+  },
+
+  SPC: {
+    decimals: 6,
+    symbol: 'SPC',
+    name: 'Spectre',
+    logo: 'spc.svg',
+    coinGeckoId: ''
 }
