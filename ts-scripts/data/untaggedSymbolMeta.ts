@@ -317,5 +317,13 @@ export const untaggedSymbolMeta = {
     symbol: 'PENGU',
     logo: 'pengu.webp',
     coinGeckoId: 'pudgy-penguins'
+  },
+
+  ATH: {
+    name: 'Aethir',
+    decimals: 6,
+    symbol: 'ATH',
+    logo: 'ath.webp',
+    coinGeckoId: 'aethir'
   }
 }
