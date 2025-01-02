@@ -2117,5 +2117,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'AUSD',
     decimals: 6,
     coinGeckoId: 'agora-dollar'
+  },
+
+  NLT2: {
+    decimals: 6,
+    symbol: 'NLT2',
+    name: 'NLT2 Updated',
+    logo: 'unknown.png',
+    coinGeckoId: ''
   }
 }
