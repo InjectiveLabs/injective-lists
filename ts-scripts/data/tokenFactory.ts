@@ -466,5 +466,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.NEPT,
     creator: 'inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva'
+  },
+  {
+    ...symbolMeta.AUSD,
+    creator: 'inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7'
   }
 ]
