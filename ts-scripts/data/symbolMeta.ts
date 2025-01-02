@@ -1002,7 +1002,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   ZIG: {
     decimals: 18,
     symbol: 'ZIG',
-    name: 'ZigCoin',
+    name: 'ZIGChain',
     logo: 'zigg.png',
     coinGeckoId: 'zignaly'
   },
@@ -2109,5 +2109,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune',
     logo: 'nept.svg',
     coinGeckoId: ''
+  },
+
+  AUSD: {
+    name: 'AUSD',
+    logo: 'AUSD.png',
+    symbol: 'AUSD',
+    decimals: 6,
+    coinGeckoId: 'agora-dollar'
   }
 }

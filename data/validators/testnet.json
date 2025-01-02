@@ -128,8 +128,8 @@
     "operatorAddress": "injvaloper156t3yxd4udv0h9gwagfcmwnmm3quy0nph7tyh5",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199839467374494.175837519906060469",
-    "delegatorShares": "200079520784737290403838706634516.877103786332811798",
+    "tokens": "199839467374579.28499873993454968",
+    "delegatorShares": "200079520784822501800841597335677.771093639355825789",
     "description": {
       "moniker": "InjectiveNode0",
       "identity": "",
@@ -475,6 +475,31 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper190nyp2vhq8tt788rt8mlrng63fc2egr2znmdz2",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "9.999",
+    "delegatorShares": "10000000000000000000",
+    "description": {
+      "moniker": "public-harvey.local",
+      "identity": "",
+      "website": "https://validator.example.com",
+      "securityContact": "security@example.com",
+      "details": "This is my validator description"
+    },
+    "unbondingHeight": 56777529,
+    "unbondingTime": "2025-01-13T23:25:52.516Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-12-23T04:38:16.073Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper199v6uxq4dyfrkqdv5qqae45r00dgc2l5h9jj8p",
     "jailed": true,
     "status": "UnBonded",
@@ -728,8 +753,8 @@
     "operatorAddress": "injvaloper1h5u937etuat5hnr2s34yaaalfpkkscl587w3v6",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199786895602882.364265003384090259",
-    "delegatorShares": "200026885862271327417543901504576.248066741796406731",
+    "tokens": "199786895602888.443541649925107467",
+    "delegatorShares": "200026885862277413996807437986005.181720326562339852",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "2008DAB643ECF438",
@@ -853,8 +878,8 @@
     "operatorAddress": "injvaloper1kk523rsm9pey740cx4plalp40009ncs0wrchfe",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "2551725.719867626731859781",
-    "delegatorShares": "2556836836134503994277487.676136279174855096",
+    "tokens": "2551790.166168757954128465",
+    "delegatorShares": "2556901411521820102023681.398414172770622153",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "",
@@ -1128,8 +1153,8 @@
     "operatorAddress": "injvaloper1t0q28eyvuvdp6aw8rdgxewgw29qlaskm5dhaf2",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "160051.851781598749505146",
-    "delegatorShares": "160203524411469547223712.834697160327787228",
+    "tokens": "160116.226411571259115002",
+    "delegatorShares": "160267960045856040205979.095489820188720715",
     "description": {
       "moniker": "s35-testnet",
       "identity": "",
@@ -1348,5 +1373,30 @@
       "updateTime": "2024-07-13T16:56:15.944Z"
     },
     "minSelfDelegation": "1000000000000000000"
+  },
+  {
+    "operatorAddress": "injvaloper1zeecxzl5292224jw8230y6nx63vugffrzgu76q",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "9.999",
+    "delegatorShares": "10000000000000000000",
+    "description": {
+      "moniker": "myMoniker",
+      "identity": "optional identity signature (ex. UPort or Keybase)",
+      "website": "validator's (optional) website",
+      "securityContact": "validator's (optional) security contact email",
+      "details": "validator's (optional) details"
+    },
+    "unbondingHeight": 56793368,
+    "unbondingTime": "2025-01-14T02:24:03.868Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2024-12-23T07:32:47.373Z"
+    },
+    "minSelfDelegation": "1"
   }
 ]
