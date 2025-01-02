@@ -82,6 +82,10 @@ export const testnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.TIA,
     creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
+  },
+  {
+    ...symbolMeta.NLT2,
+    creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
   }
 ]
 

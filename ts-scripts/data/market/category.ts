@@ -187,7 +187,8 @@ export const testnetCategoryMap = {
     '0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf', // stinj-inj
     '0x2d7f47811527bd721ce2e4e0ff27b0f3a281f65abcd41758baf157c8ddfcd910', // hinj-inj
     '0x637f6ec165c381ca4665935491b4d8a31fbc5cbc55616f1b5aafe8a64a2ebdda', // talis-inj
-    '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca' // hdro-inj
+    '0xd8e9ea042ac67990134d8e024a251809b1b76c5f7df49f511858e040a285efca', // hdro-inj
+    '0x0033118e7cf665369d4208ea03c88549f151c1303f43442413679c8c407cc0d3' // nlt2-inj
   ],
   layer1: [],
   layer2: [],
