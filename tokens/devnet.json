@@ -17,7 +17,7 @@
     "externalLogo": "qunt.webp"
   },
   {
-    "address": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14au322k9munkmx5wrchz9q30juf5wjgz2cfqku",
+    "address": "inj14au322k9munkmx5wrchz9q30juf5wjgz2cfqku",
     "isNative": false,
     "tokenVerification": "verified",
     "marketIds": [
@@ -31,11 +31,11 @@
     "coinGeckoId": "wrapped-bitcoin",
     "source": "ethereum",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj14au322k9munkmx5wrchz9q30juf5wjgz2cfqku",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "wbtc.png"
   },
   {
-    "address": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
+    "address": "inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
     "isNative": false,
     "tokenVerification": "verified",
     "marketIds": [
@@ -47,11 +47,11 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e4dee9d7-3cec-4f15-a3e8-7c7322d65000/public",
     "coinGeckoId": "chiliz",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6kpxy6ar5lkxqudjvryarrrttmakwsvzkvcyh",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "chz.png"
   },
   {
-    "address": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
+    "address": "inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
     "isNative": false,
     "tokenVerification": "verified",
     "marketIds": [
@@ -64,7 +64,7 @@
     "coinGeckoId": "usd-coin",
     "source": "ethereum-wormhole",
     "denom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1q6zlut7gtkzknkk773jecujwsdkgq882akqksk",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -102,7 +102,7 @@
     "externalLogo": "hydro.png"
   },
   {
-    "address": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
+    "address": "inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
     "isNative": false,
     "tokenVerification": "verified",
     "marketIds": [
@@ -114,7 +114,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/66ab9d16-7c2c-4a97-a85d-e070fbc86a00/public",
     "coinGeckoId": "usd-coin",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -514,12 +514,48 @@
   },
   {
     "decimals": 6,
+    "symbol": "EYf",
+    "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/EYf",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "coinGeckoId": "",
+    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/EYf",
+    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/EYf",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 6,
     "symbol": "GfI",
     "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GfI",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
     "coinGeckoId": "",
     "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GfI",
     "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GfI",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 6,
+    "symbol": "GzA",
+    "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GzA",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "coinGeckoId": "",
+    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GzA",
+    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/GzA",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 6,
+    "symbol": "iLX",
+    "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/iLX",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "coinGeckoId": "",
+    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/iLX",
+    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/iLX",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal",
     "externalLogo": "unknown.png"
@@ -544,6 +580,18 @@
     "coinGeckoId": "",
     "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/rRs",
     "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/rRs",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "internal",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 6,
+    "symbol": "tPB",
+    "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/tPB",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "coinGeckoId": "",
+    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/tPB",
+    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/tPB",
     "tokenType": "tokenFactory",
     "tokenVerification": "internal",
     "externalLogo": "unknown.png"

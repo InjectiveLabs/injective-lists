@@ -1,19 +1,5 @@
 [
   {
-    "address": "inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "marketIds": [],
-    "name": "USD Coin",
-    "decimals": 6,
-    "symbol": "USDCet",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/66ab9d16-7c2c-4a97-a85d-e070fbc86a00/public",
-    "coinGeckoId": "usd-coin",
-    "denom": "",
-    "tokenType": "cw20",
-    "externalLogo": "usdc.png"
-  },
-  {
     "address": "factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx",
     "isNative": false,
     "tokenVerification": "verified",
@@ -454,6 +440,23 @@
     "externalLogo": "mito-test.png"
   },
   {
+    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT2",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [
+      "0x0033118e7cf665369d4208ea03c88549f151c1303f43442413679c8c407cc0d3"
+    ],
+    "decimals": 6,
+    "symbol": "NLT2",
+    "name": "NLT2Updated",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+    "coinGeckoId": "",
+    "creator": "inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z",
+    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT2",
+    "tokenType": "tokenFactory",
+    "externalLogo": "unknown.png"
+  },
+  {
     "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/phuc",
     "isNative": false,
     "tokenVerification": "verified",
@@ -627,6 +630,23 @@
     "externalLogo": "polygon.png"
   },
   {
+    "address": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/tia",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [
+      "0xa283fc94a9055a01a58bb6229b1e56a8bb54069a0debfce7fbd1e6c25a95330c"
+    ],
+    "decimals": 6,
+    "symbol": "TIA",
+    "name": "Celestia",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/cd69ef2b-ab9c-402c-6083-34bd7e936800/public",
+    "coinGeckoId": "celestia",
+    "creator": "inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c",
+    "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/tia",
+    "tokenType": "tokenFactory",
+    "externalLogo": "tia.webp"
+  },
+  {
     "address": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/usdc",
     "isNative": false,
     "tokenVerification": "verified",
@@ -672,6 +692,7 @@
     "marketIds": [
       "0x03799aa2d9a4ffdf2c2621244287e9fe9a79eaf9d96f07b43bf6a7d03ecda8fe",
       "0x2d92a74f1526c600c0913edd2c38e3ec2ffc5e458842f2cf83545528d5e51d0d",
+      "0x506706805dc8338169a88173581f708e0f4b1ff1beeb82e9ff6323cf1b64e360",
       "0xa97182f11f1aa5339c7f4c3fe3cc1c69b39079f11b864c86d912956c5c2db75c",
       "0xab5811fe4fa18b221216f01891775313310cfe85ea749f31bd0d2c58754710f4"
     ],
@@ -1059,7 +1080,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/f9b8b970-d04c-4146-c107-37286b449900/public",
     "coinGeckoId": "solana",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12ngevx045zpvacus9s6anr258gkwpmthnz80e9",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "solana.png"
   },
   {
@@ -1077,7 +1098,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/66ab9d16-7c2c-4a97-a85d-e070fbc86a00/public",
     "coinGeckoId": "usd-coin",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj12sqy9uzzl3h3vqxam7sz9f0yvmhampcgesh3qw",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "usdc.png"
   },
   {
@@ -1091,7 +1112,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/18984c0b-3e61-431d-241d-dfbb60b57600/public",
     "coinGeckoId": "injective-protocol",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1m4g54lg2mhhm7a4h3ms5xlyecafhe4macgsuen",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "injective-v3.png"
   },
   {
@@ -1107,7 +1128,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/ff5b9b22-f3f2-4a9c-6aab-7cd0d1caec00/public",
     "name": "Hydro Wrapped INJ",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1mz7mfhgx8tuvjqut03qdujrkzwlx9xhcj6yldc",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "hinj.svg"
   },
   {
@@ -1121,7 +1142,7 @@
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/013c70ad-6dd1-42a3-04d9-806dee787d00/public",
     "coinGeckoId": "",
     "denom": "factory/inj1hdvy6tl89llqy3ze8lv6mz5qh66sx9enn0jxg6/inj1zp0ac48kpp5cpu29p7a9wureydz7374h0wqy0a",
-    "tokenType": "tokenFactory",
+    "tokenType": "cw20",
     "externalLogo": "truinj.svg"
   },
   {
@@ -1350,6 +1371,21 @@
     "externalLogo": "RICE.jpeg"
   },
   {
+    "address": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [],
+    "name": "AUSD",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/4b446611-8af6-424f-abc6-e41defe1d800/public",
+    "symbol": "AUSD",
+    "decimals": 6,
+    "coinGeckoId": "agora-dollar",
+    "creator": "inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7",
+    "denom": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+    "tokenType": "tokenFactory",
+    "externalLogo": "AUSD.png"
+  },
+  {
     "address": "factory/inj1pjp9q2ycs7eaav8d5ny5956k5m6t0alpl33xd6/nobi",
     "isNative": false,
     "tokenVerification": "verified",
@@ -1575,6 +1611,21 @@
     "denom": "factory/inj1v0yk4msqsff7e9zf8ktxykfhz2hen6t2u4ue4r/shiba inj",
     "tokenType": "tokenFactory",
     "externalLogo": "shiba.jpg"
+  },
+  {
+    "address": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "marketIds": [],
+    "decimals": 6,
+    "symbol": "NEPT",
+    "name": "Neptune",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3e650890-ea0b-4331-a50a-bdab17c2b500/public",
+    "coinGeckoId": "",
+    "creator": "inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva",
+    "denom": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
+    "tokenType": "tokenFactory",
+    "externalLogo": "nept.svg"
   },
   {
     "address": "factory/inj1vgrf5mcvvg9p5c6jajqefn840nq74wjzgkt30z/grok",
@@ -2974,6 +3025,8 @@
       "0x4db3f2aedf548449bf2ed7dbbdbcbf3c03a22975cd55b2a80ab1ab1464f38bbd",
       "0x4f792564883eed075e2077684c31ab7f100d6d037c8b7fbbe2df05584ac56243",
       "0x505803853212437840283a90a3d22634e7518d729d65f1b6d16caecad9a6b24e",
+      "0x506706805dc8338169a88173581f708e0f4b1ff1beeb82e9ff6323cf1b64e360",
+      "0x543419f72731001bfeda1645c989ba2be48dcde6a3a8ea4caa34ecb68b9f0f67",
       "0x5464452d0f700d93a3378c4cd7e3304c028e666b5fb4776da665e607941c53c4",
       "0x56d4a52a1930273b19c85349befa641ebfbfa132140cde67cd8b605a9a1f845a",
       "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
@@ -4280,7 +4333,7 @@
     "marketIds": [],
     "decimals": 18,
     "symbol": "ZIG",
-    "name": "ZigCoin",
+    "name": "ZIGChain",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7fbc53cd-567f-4604-f42d-518d72a05e00/public",
     "coinGeckoId": "zignaly",
     "denom": "peggy0xb2617246d0c6c0087f18703d576831899ca94f01",
@@ -4749,6 +4802,20 @@
     "tokenType": "symbol",
     "denom": "apt",
     "externalLogo": "apt.webp"
+  },
+  {
+    "address": "ath",
+    "isNative": false,
+    "tokenVerification": "internal",
+    "marketIds": [],
+    "name": "Aethir",
+    "decimals": 6,
+    "symbol": "ATH",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/74f6a39d-4620-43c9-246c-4ea5b8f3d900/public",
+    "coinGeckoId": "aethir",
+    "tokenType": "symbol",
+    "denom": "ath",
+    "externalLogo": "ath.webp"
   },
   {
     "address": "bayc",
@@ -10750,18 +10817,6 @@
   },
   {
     "decimals": 6,
-    "symbol": "NLT2",
-    "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT2",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
-    "coinGeckoId": "",
-    "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT2",
-    "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT2",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal",
-    "externalLogo": "unknown.png"
-  },
-  {
-    "decimals": 6,
     "symbol": "NLT3",
     "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NLT3",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
@@ -11563,18 +11618,6 @@
     "tokenType": "tokenFactory",
     "tokenVerification": "internal",
     "externalLogo": "unknown.png"
-  },
-  {
-    "decimals": 6,
-    "symbol": "TIA",
-    "name": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/tia",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
-    "coinGeckoId": "",
-    "address": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/tia",
-    "denom": "factory/inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c/tia",
-    "externalLogo": "unknown.png",
-    "tokenType": "tokenFactory",
-    "tokenVerification": "internal"
   },
   {
     "decimals": 6,
@@ -44021,6 +44064,20 @@
     "tokenType": "symbol",
     "denom": "op",
     "externalLogo": "optimism.webp"
+  },
+  {
+    "address": "pengu",
+    "isNative": false,
+    "tokenVerification": "internal",
+    "marketIds": [],
+    "name": "Pudgy Penguins",
+    "decimals": 6,
+    "symbol": "PENGU",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c66a6f6e-b168-4486-0ff1-1ad8c285ff00/public",
+    "coinGeckoId": "pudgy-penguins",
+    "tokenType": "symbol",
+    "denom": "pengu",
+    "externalLogo": "pengu.webp"
   },
   {
     "address": "pepe",
