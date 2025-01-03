@@ -327,10 +327,10 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'aethir'
   },
 
-  SPX: {
+  SPX6900: {
     name: 'SPX6900',
     decimals: 6,
-    symbol: 'SPX',
+    symbol: 'SPX6900',
     logo: 'spx6900.webp',
     coinGeckoId: 'spx6900'
   }
