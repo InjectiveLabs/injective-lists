@@ -325,5 +325,13 @@ export const untaggedSymbolMeta = {
     symbol: 'ATH',
     logo: 'ath.webp',
     coinGeckoId: 'aethir'
+  },
+
+  SPX: {
+    name: 'SPX6900',
+    decimals: 6,
+    symbol: 'SPX',
+    logo: 'spx6900.webp',
+    coinGeckoId: 'spx6900'
   }
 }
