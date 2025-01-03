@@ -249,6 +249,6 @@ const generateStaticTokens = async (network: Network) => {
   console.log(`✅✅✅ GenerateStaticTokens ${network}`)
 }
 
-// generateStaticTokens(Network.Devnet)
-// generateStaticTokens(Network.TestnetSentry)
+generateStaticTokens(Network.Devnet)
+generateStaticTokens(Network.TestnetSentry)
 generateStaticTokens(Network.MainnetSentry)

@@ -2122,7 +2122,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   NLT2: {
     decimals: 6,
     symbol: 'NLT2',
-    name: 'NLT2 Updated',
+    name: 'NLT2Updated',
     logo: 'unknown.png',
     coinGeckoId: ''
   }
