@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
     '0x9540412c2611e77ea2e4c9216c9acd1f8a333492b01b3b8306ed274edeb55296', // ath-usdt-perp
     '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
     '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1', // xion-usdt
@@ -155,6 +156,7 @@ export const mainnetCategoryMap = {
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
   ],
   meme: [
+    '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
     '0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217', // giga-inj
