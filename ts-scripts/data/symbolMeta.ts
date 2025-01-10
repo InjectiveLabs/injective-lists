@@ -2125,5 +2125,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'NLT2Updated',
     logo: 'unknown.png',
     coinGeckoId: ''
+  },
+
+  nUSDC: {
+    decimals: 6,
+    symbol: 'nUSDC',
+    coinGeckoId: '',
+    logo: 'nusdc.webp',
+    name: 'Neptune Receipt USDC'
   }
 }
