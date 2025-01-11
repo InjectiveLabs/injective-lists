@@ -470,5 +470,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.AUSD,
     creator: 'inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7'
-  }
+  },
+  {
+    ...symbolMeta.NBZ,
+    creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
+  },
 ]
