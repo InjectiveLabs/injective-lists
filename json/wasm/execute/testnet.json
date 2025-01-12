@@ -148708,5 +148708,69 @@
     "close_long_position_order",
     "close_short_position_order",
     "exercise"
+  ],
+  "19761": [],
+  "19762": [
+    "mint",
+    "transfer",
+    "burn",
+    "update_state"
+  ],
+  "19763": [
+    "reregister_chain",
+    "deregister_chain",
+    "update_factory_channel",
+    "update_lock",
+    "register_factory",
+    "withdraw_voucher",
+    "release_escrow_internal",
+    "ibc_callback_ack_and_timeout",
+    "ibc_callback_receive",
+    "native_receive_callback",
+    "update_router_state"
+  ],
+  "19764": [],
+  "19765": [
+    "add_allowed_denom",
+    "disallow_denom",
+    "deposit_native",
+    "receive",
+    "withdraw"
+  ],
+  "19766": [
+    "update_state",
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "send_from",
+    "burn_from",
+    "mint",
+    "update_marketing",
+    "upload_logo"
+  ],
+  "19767": [
+    "add_liquidity_request",
+    "execute_swap_request",
+    "request_register_denom",
+    "request_deregister_denom",
+    "request_pool_creation",
+    "update_hub_channel",
+    "withdraw_virtual_balance",
+    "transfer_virtual_balance",
+    "deposit_token",
+    "update_factory_state",
+    "receive",
+    "euclid_receive",
+    "ibc_callback_ack_and_timeout",
+    "ibc_callback_receive",
+    "native_receive_callback"
+  ],
+  "19768": [
+    "receive",
+    "euclid_receive",
+    "swap"
   ]
 }
