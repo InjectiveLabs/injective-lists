@@ -109,6 +109,42 @@ const generateDerivativeMarketMap = async (network: Network) => {
   }
 }
 
+const generateSpotMarkets = async (network: Network) => {
+  const spotMarkets = getSpotMarketsByNetwork(network)
+
+  try {
+    await updateJSONFile(
+      `json/market/spot/${getNetworkFileName(network)}.json`,
+      spotMarkets
+    )
+    console.log(`✅✅✅ generateSpotMarkets ${network}`)
+  } catch (e) {
+    console.log(`Error generating spot markets ${network}:`, e)
+  }
+}
+
+const generateDerivativeMarkets = async (network: Network) => {
+  const derivativeMarkets = getDerivativeMarketsByNetwork(network)
+
+  try {
+    await updateJSONFile(
+      `json/market/derivative/${getNetworkFileName(network)}.json`,
+      derivativeMarkets
+    )
+    console.log(`✅✅✅ generateDerivativeMarkets ${network}`)
+  } catch (e) {
+    console.log(`Error generating derivative markets ${network}:`, e)
+  }
+}
+
+generateSpotMarkets(Network.Devnet)
+generateSpotMarkets(Network.TestnetSentry)
+generateSpotMarkets(Network.MainnetSentry)
+
+generateDerivativeMarkets(Network.Devnet)
+generateDerivativeMarkets(Network.TestnetSentry)
+generateDerivativeMarkets(Network.MainnetSentry)
+
 generateSpotMarketMap(Network.Devnet)
 generateSpotMarketMap(Network.TestnetSentry)
 generateSpotMarketMap(Network.MainnetSentry)
