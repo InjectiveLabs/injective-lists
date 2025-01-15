@@ -35,7 +35,10 @@ export const mainnetMarketIds = [
   '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2', // agent-inj
   '0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934', // shroom-inj
   '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1', // xion-usdt
-  '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693'  // nept-inj
+  '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
+  '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7', // ausd-usdt
+  '0x609376b88fd2e6e37ffc2ac9d6858633ab1d6c90ec6d100f9d205d38e531f8ac', // ausd-usdc
+  '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e'  // inj-ausd
 ]
 
 export const devnetMarketIds = [
