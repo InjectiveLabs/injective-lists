@@ -333,5 +333,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SPX',
     logo: 'spx6900.webp',
     coinGeckoId: 'spx6900'
+  },
+
+  TRUMP: {
+    name: 'Official Trump',
+    decimals: 6,
+    symbol: 'TRUMP',
+    logo: 'trump.webp',
+    coinGeckoId: 'official-trump'
   }
 }
