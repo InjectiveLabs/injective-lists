@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0xde9b78988c8c8e254b9dcba60d71851b3676ecfff5a736ba8f8cb10cdee04fcd', // btc-ausd-perp
     '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7', // ausd-usdt
     '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e', // inj-ausd
@@ -77,6 +78,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0xde9b78988c8c8e254b9dcba60d71851b3676ecfff5a736ba8f8cb10cdee04fcd', // btc-ausd-perp
     '0x9540412c2611e77ea2e4c9216c9acd1f8a333492b01b3b8306ed274edeb55296', // ath-usdt-perp
     '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1', // xion-usdt
@@ -164,6 +166,7 @@ export const mainnetCategoryMap = {
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
   ],
   meme: [
+    '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
