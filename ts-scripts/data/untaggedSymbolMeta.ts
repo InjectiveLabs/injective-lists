@@ -341,5 +341,13 @@ export const untaggedSymbolMeta = {
     symbol: 'TRUMP',
     logo: 'trump.webp',
     coinGeckoId: 'official-trump'
+  },
+
+  MELANIA: {
+    name: 'Melania Meme',
+    decimals: 6,
+    symbol: 'MELANIA',
+    logo: 'melania.webp',
+    coinGeckoId: 'melania-meme'
   }
 }
