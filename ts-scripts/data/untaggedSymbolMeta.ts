@@ -349,5 +349,13 @@ export const untaggedSymbolMeta = {
     symbol: 'MELANIA',
     logo: 'melania.webp',
     coinGeckoId: 'melania-meme'
+  },
+
+  PLUME: {
+    name: 'Plume Network',
+    decimals: 6,
+    symbol: 'PLUME',
+    logo: 'plume.png',
+    coinGeckoId: 'plume'
   }
 }
