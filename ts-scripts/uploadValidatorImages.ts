@@ -52,11 +52,6 @@ const uploadImage = async (imageName: string) => {
 }
 
 const uploadImages = async () => {
-  console.log({
-    CLOUD_FLARE_API_KEY: process.env.CLOUD_FLARE_API_KEY,
-    CLOUD_FLARE_ACCOUNT_ID: process.env.CLOUD_FLARE_ACCOUNT_ID
-  })
-
   try {
     const uploadedImages = readJSONFile({
       path: 'data/validatorImagePaths.json',
