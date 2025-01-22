@@ -2133,5 +2133,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'nusdc.webp',
     name: 'Neptune Receipt USDC'
+},
+  
+  TURBOTOAD: {
+    decimals: 6,
+    symbol: 'TURBOTOAD',
+    coinGeckoId: '',
+    logo: 'turboinj.jpg',
+    name: 'TURBO TOAD INJECTIVE'
   }
-}
