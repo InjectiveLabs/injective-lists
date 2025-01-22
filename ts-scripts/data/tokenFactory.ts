@@ -475,4 +475,9 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.NBZ,
     creator: 'inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz'
   },
+   },
+  {
+    ...symbolMeta.TURBOTOAD,
+    creator: 'inj1nmc5namhwszx0yartvjm6evsxrj0ctq2qa30l7'
+  },
 ]
