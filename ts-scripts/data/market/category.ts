@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa', // move-usdt-perp
     '0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4', // plume-usdt-perp
     '0xf99ac012c3e97f434fe0d0ba4948fef763635bb06de5e3c43abc7f1da7c427a8', // melania-usdt-perp
     '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
@@ -81,6 +82,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa', // move-usdt-perp
     '0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4', // plume-usdt-perp
     '0xf99ac012c3e97f434fe0d0ba4948fef763635bb06de5e3c43abc7f1da7c427a8', // melania-usdt-perp
     '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
@@ -147,6 +149,7 @@ export const mainnetCategoryMap = {
     '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced' // bnb-usdt-perp
   ],
   layer2: [
+    '0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa', // move-usdt-perp
     '0x1c2e5b1b4b1269ff893b4817a478fba6095a89a3e5ce0cccfcafa72b3941eeb6', // arb-usdt
     '0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5', // arb-usdt-perp
     '0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c' // op-usdt-perp
