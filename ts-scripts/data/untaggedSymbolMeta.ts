@@ -357,5 +357,13 @@ export const untaggedSymbolMeta = {
     symbol: 'PLUME',
     logo: 'plume.png',
     coinGeckoId: 'plume'
+  },
+
+  MOVE: {
+    name: 'Movement',
+    decimals: 6,
+    symbol: 'MOVE',
+    logo: 'move.webp',
+    coinGeckoId: 'movement'
   }
 }
