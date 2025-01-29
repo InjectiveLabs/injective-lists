@@ -365,5 +365,13 @@ export const untaggedSymbolMeta = {
     symbol: 'MOVE',
     logo: 'move.webp',
     coinGeckoId: 'movement'
+  },
+
+  AIX: {
+    name: 'Helix AI Index',
+    decimals: 6,
+    symbol: 'AIX',
+    logo: 'aix.webp',
+    coinGeckoId: ''
   }
 }
