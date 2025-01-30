@@ -1501,9 +1501,9 @@
   },
   {
     "operatorAddress": "injvaloper1zpu8a9kugj455gvmjskvm5z4nxukjn0l67dak0",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "10000050",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "9999049.995",
     "delegatorShares": "10000050000000000000000000",
     "description": {
       "moniker": "CW3",
@@ -1512,8 +1512,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 61465268,
+    "unbondingTime": "2025-02-20T14:09:17.927Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
