@@ -54,7 +54,6 @@ export const mainnetCategoryMap = {
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f' // gbp-usdt-perp
   ],
   deprecated: [
-    '0x0314518c986964f6ae97695330b4ba4377313a11778b0dfd69525b57d66bf006', // aix-usdt-perp (wrong one)
     '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c', // sollegacy-usdt
     '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
     '0xcdfbfaf1f24055e89b3c7cc763b8cb46ffff08cdc38c999d01f58d64af75dca9', // aave-usdclegacy
