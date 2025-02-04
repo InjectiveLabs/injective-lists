@@ -21,7 +21,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'INJ',
     name: 'Injective',
-    logo: 'injective-v3.png',
+    logo: 'injective-v4.webp',
     coinGeckoId: 'injective-protocol'
   },
 
@@ -411,7 +411,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'TAB',
     name: 'Injective',
-    logo: 'injective-v3.png',
+    logo: 'injective-v4.webp',
     coinGeckoId: 'injective-protocol'
   },
 
@@ -563,7 +563,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'QAT',
     name: 'Test QAT',
-    logo: 'injective-v3.png',
+    logo: 'injective-v4.webp',
     coinGeckoId: 'injective-protocol'
   },
 
@@ -1660,7 +1660,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DEMO',
     coinGeckoId: '',
     name: 'Demo Coin',
-    logo: 'injective-v3.png'
+    logo: 'injective-v4.webp'
   },
 
   MITOTEST2: {
