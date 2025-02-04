@@ -2133,5 +2133,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'nusdc.webp',
     name: 'Neptune Receipt USDC'
+  },
+
+  CHIHUAHUA: {
+    decimals: 6,
+    name: 'chihuahua',
+    logo: 'chihuahua.png',
+    symbol: 'CHIHUAHUA',
+    coinGeckoId: '',
   }
 }
