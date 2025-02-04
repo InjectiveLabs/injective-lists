@@ -183,7 +183,9 @@ export const fetchSpotMarkets = async (network: Network) => {
   const indexerSpotApi = new IndexerGrpcSpotApi(endpoints.indexer)
 
   try {
-    const markets = await indexerSpotApi.fetchMarkets()
+    const markets = await indexerSpotApi.fetchMarkets({
+      marketStatuses: ['active', 'paused', 'suspended', 'demolished', 'expired']
+    })
 
     await updateJSONFile(
       `data/market/spot/${getNetworkFileName(network)}.json`,
@@ -201,7 +203,9 @@ export const fetchDerivativeMarkets = async (network: Network) => {
   const indexerDerivativeApi = new IndexerGrpcDerivativesApi(endpoints.indexer)
 
   try {
-    const markets = await indexerDerivativeApi.fetchMarkets()
+    const markets = await indexerDerivativeApi.fetchMarkets({
+      marketStatuses: ['active', 'paused', 'suspended', 'demolished', 'expired']
+    })
 
     await updateJSONFile(
       `data/market/derivative/${getNetworkFileName(network)}.json`,

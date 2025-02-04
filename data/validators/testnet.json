@@ -153,8 +153,8 @@
     "operatorAddress": "injvaloper156t3yxd4udv0h9gwagfcmwnmm3quy0nph7tyh5",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199839467422009.522167167796860384",
-    "delegatorShares": "200079520832309713651650814013706.446756306783251809",
+    "tokens": "199839467423065.572869689829984863",
+    "delegatorShares": "200079520833367032915262709243454.027121570360205304",
     "description": {
       "moniker": "InjectiveNode0",
       "identity": "",
@@ -575,6 +575,31 @@
     "minSelfDelegation": "1000000"
   },
   {
+    "operatorAddress": "injvaloper1afnghz4g3vqffuvalz4az4u4th73qqcx903275",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "49.995",
+    "delegatorShares": "50000000000000000000",
+    "description": {
+      "moniker": "CW3",
+      "identity": "",
+      "website": "",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 60321260,
+    "unbondingTime": "2025-02-11T16:03:20.004Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "1",
+        "maxRate": "1",
+        "maxChangeRate": "1"
+      },
+      "updateTime": "2025-01-20T14:09:25.536Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1ajl248ueguze39pwqznm36herzqmqgspv8rea3",
     "jailed": true,
     "status": "UnBonded",
@@ -603,7 +628,7 @@
     "operatorAddress": "injvaloper1cq6mvxqp978f6lxrh5s6c35ddr2slcj9h7tqng",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199961154066668.247352875258568698",
+    "tokens": "199961154066668.2473528752585687",
     "delegatorShares": "200201353581048675133395418936968.57577108453376044",
     "description": {
       "moniker": "InjectiveNode2",
@@ -778,8 +803,8 @@
     "operatorAddress": "injvaloper1h5u937etuat5hnr2s34yaaalfpkkscl587w3v6",
     "jailed": false,
     "status": "Bonded",
-    "tokens": "199786895637801.144168309665190501",
-    "delegatorShares": "200026885897232052849966355956966.932304809299465072",
+    "tokens": "199786895644155.678745387306872748",
+    "delegatorShares": "200026885903594220692463368801618.587111304354335024",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "2008DAB643ECF438",
@@ -903,8 +928,8 @@
     "operatorAddress": "injvaloper1kk523rsm9pey740cx4plalp40009ncs0wrchfe",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "2552105.939834666095077816",
-    "delegatorShares": "2557217817683575233256445.338416223466716445",
+    "tokens": "2552300.149657902216163059",
+    "delegatorShares": "2557412416509821748809088.735122279040886664",
     "description": {
       "moniker": "InjectiveNode3",
       "identity": "",
@@ -926,9 +951,9 @@
   },
   {
     "operatorAddress": "injvaloper1l2hvkh2s5eemjdcwvtycqnuj59k0xnk2emqy0l",
-    "jailed": false,
-    "status": "Bonded",
-    "tokens": "99.9752",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "99.9554",
     "delegatorShares": "100005000500050005000.50005000500050005",
     "description": {
       "moniker": "CW3",
@@ -937,8 +962,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 59775997,
-    "unbondingTime": "2025-02-07T01:10:34.087Z",
+    "unbondingHeight": 60318092,
+    "unbondingTime": "2025-02-11T15:26:50.746Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
@@ -1203,8 +1228,8 @@
     "operatorAddress": "injvaloper1t0q28eyvuvdp6aw8rdgxewgw29qlaskm5dhaf2",
     "jailed": true,
     "status": "UnBonded",
-    "tokens": "160452.472411898949202911",
-    "delegatorShares": "160604524688639819023045.465720538524497048",
+    "tokens": "160617.880595226964980116",
+    "delegatorShares": "160770089620508312452881.502092911406174527",
     "description": {
       "moniker": "s35-testnet",
       "identity": "",
@@ -1473,5 +1498,30 @@
       "updateTime": "2024-12-23T07:32:47.373Z"
     },
     "minSelfDelegation": "1"
+  },
+  {
+    "operatorAddress": "injvaloper1zpu8a9kugj455gvmjskvm5z4nxukjn0l67dak0",
+    "jailed": true,
+    "status": "UnBonding",
+    "tokens": "9999049.995",
+    "delegatorShares": "10000050000000000000000000",
+    "description": {
+      "moniker": "CW3",
+      "identity": "",
+      "website": "",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 61465268,
+    "unbondingTime": "2025-02-20T14:09:17.927Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "1",
+        "maxRate": "1",
+        "maxChangeRate": "1"
+      },
+      "updateTime": "2025-01-20T15:10:05.309Z"
+    },
+    "minSelfDelegation": "50000000000000000000"
   }
 ]

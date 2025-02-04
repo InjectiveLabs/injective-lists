@@ -333,5 +333,45 @@ export const untaggedSymbolMeta = {
     symbol: 'SPX',
     logo: 'spx6900.webp',
     coinGeckoId: 'spx6900'
+  },
+
+  TRUMP: {
+    name: 'Official Trump',
+    decimals: 6,
+    symbol: 'TRUMP',
+    logo: 'trump.webp',
+    coinGeckoId: 'official-trump'
+  },
+
+  MELANIA: {
+    name: 'Melania Meme',
+    decimals: 6,
+    symbol: 'MELANIA',
+    logo: 'melania.webp',
+    coinGeckoId: 'melania-meme'
+  },
+
+  PLUME: {
+    name: 'Plume Network',
+    decimals: 6,
+    symbol: 'PLUME',
+    logo: 'plume.png',
+    coinGeckoId: 'plume'
+  },
+
+  MOVE: {
+    name: 'Movement',
+    decimals: 6,
+    symbol: 'MOVE',
+    logo: 'move.webp',
+    coinGeckoId: 'movement'
+  },
+
+  AIX: {
+    name: 'Helix AI Index',
+    decimals: 6,
+    symbol: 'AIX',
+    logo: 'aix.webp',
+    coinGeckoId: ''
   }
 }
