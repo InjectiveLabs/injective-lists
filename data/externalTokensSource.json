@@ -82,20 +82,20 @@
   {
     "name": "1K",
     "symbol": "1K",
-    "contractAddr": "inj1sx8qf8upzccasf7ylv2adsek8nwzgwu944tqkd",
+    "contractAddr": "inj1syak43khmndn5t0f67kmmdzjzuf0cz3tnhm6wd",
     "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 3,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "1K",
     "symbol": "1K",
-    "contractAddr": "inj1syak43khmndn5t0f67kmmdzjzuf0cz3tnhm6wd",
+    "contractAddr": "inj1sx8qf8upzccasf7ylv2adsek8nwzgwu944tqkd",
     "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 3,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -331,8 +331,8 @@
   },
   {
     "name": "aligator",
-    "symbol": "aligator",
-    "contractAddr": "aligator",
+    "symbol": "ALIGATOR",
+    "contractAddr": "inj1t6uqhmlgpju7265aelawdkvn3xqnq3jv8j60l7",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -341,8 +341,8 @@
   },
   {
     "name": "aligator",
-    "symbol": "ALIGATOR",
-    "contractAddr": "inj1t6uqhmlgpju7265aelawdkvn3xqnq3jv8j60l7",
+    "symbol": "aligator",
+    "contractAddr": "aligator",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -682,21 +682,21 @@
   {
     "name": "APE",
     "symbol": "APE",
-    "contractAddr": "peggy0x4d224452801ACEd8B2F0aebE155379bb5D594381",
-    "decimals": 18,
-    "isVerified": true,
-    "numberOfPools": 1,
-    "imageUrl": "https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/56abf334f3c349ce85983be4f4054ee6178c8ff1/img/ape.png",
-    "isTrading": true
-  },
-  {
-    "name": "APE",
-    "symbol": "APE",
     "contractAddr": "factory/inj1qx7qnj9wwdrxc9e239ycshqnqgapdh7s44vez7/APE",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 2,
     "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "APE",
+    "symbol": "APE",
+    "contractAddr": "peggy0x4d224452801ACEd8B2F0aebE155379bb5D594381",
+    "decimals": 18,
+    "isVerified": true,
+    "numberOfPools": 1,
+    "imageUrl": "https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/56abf334f3c349ce85983be4f4054ee6178c8ff1/img/ape.png",
     "isTrading": true
   },
   {
@@ -832,22 +832,22 @@
   {
     "name": "Arbitrum",
     "symbol": "ARB",
-    "contractAddr": "ibc/F28C5C931D2673B7A2F06FC74934F7BDC0D2906D2AF40D582ED27D1E5C48D475",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png",
-    "isTrading": false
-  },
-  {
-    "name": "Arbitrum",
-    "symbol": "ARB",
     "contractAddr": "ibc/8CF0E4184CA3105798EDB18CAA3981ADB16A9951FE9B05C6D830C746202747E1",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
+  },
+  {
+    "name": "Arbitrum",
+    "symbol": "ARB",
+    "contractAddr": "ibc/F28C5C931D2673B7A2F06FC74934F7BDC0D2906D2AF40D582ED27D1E5C48D475",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/arbitrum/images/arb.png",
+    "isTrading": false
   },
   {
     "name": "Arbitrum axlETH",
@@ -1062,20 +1062,20 @@
   {
     "name": "Astar",
     "symbol": "ASTR",
-    "contractAddr": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
+    "contractAddr": "inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
     "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 2,
+    "numberOfPools": 3,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "Astar",
     "symbol": "ASTR",
-    "contractAddr": "inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
+    "contractAddr": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1mhmln627samtkuwe459ylq763r4n7n69gxxc9x",
     "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 3,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -1111,21 +1111,21 @@
   },
   {
     "name": "AstroGems (Wormhole)",
-    "symbol": "ASTRO",
-    "contractAddr": "inj122y9wxxmpyu2rj5ju30uwgdvk9sj020z2zt7rv",
-    "decimals": 8,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "AstroGems (Wormhole)",
     "symbol": "ASTROGEMS",
     "contractAddr": "inj1xvlxqaxw0ef0596d96ecfwpta29y2jc9n5w9s9",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "AstroGems (Wormhole)",
+    "symbol": "ASTRO",
+    "contractAddr": "inj122y9wxxmpyu2rj5ju30uwgdvk9sj020z2zt7rv",
+    "decimals": 8,
+    "isVerified": false,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -1232,16 +1232,6 @@
   {
     "name": "ATOM",
     "symbol": "ATOM",
-    "contractAddr": "inj1ljrzvjuupmglq62frdcywzlc9a90xrf3vrcp02",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "ATOM",
-    "symbol": "ATOM",
     "contractAddr": "ibc/377F82FD1E4F6408B1CB7C8BFF9134A1F2C5D5E5CC2760BAD972AF0F7F6D4675",
     "decimals": 6,
     "isVerified": false,
@@ -1258,6 +1248,16 @@
     "numberOfPools": 0,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
     "isTrading": false
+  },
+  {
+    "name": "ATOM",
+    "symbol": "ATOM",
+    "contractAddr": "inj1ljrzvjuupmglq62frdcywzlc9a90xrf3vrcp02",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
   },
   {
     "name": "ATOM1KLFG",
@@ -1692,7 +1692,7 @@
   {
     "name": "BabyInjective (Wormhole)",
     "symbol": "BABYINJ",
-    "contractAddr": "inj1llatk73a2935vky6nzv78w80ff5v3etqadzv76",
+    "contractAddr": "inj1dvflqrkkaxped5cmks92q6vmtzx75cge9gvvap",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -1702,7 +1702,7 @@
   {
     "name": "BabyInjective (Wormhole)",
     "symbol": "BABYINJ",
-    "contractAddr": "inj1dvflqrkkaxped5cmks92q6vmtzx75cge9gvvap",
+    "contractAddr": "inj1llatk73a2935vky6nzv78w80ff5v3etqadzv76",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -1831,8 +1831,8 @@
   },
   {
     "name": "Baby Ninja",
-    "symbol": "BABYNINJA",
-    "contractAddr": "inj14vcn23l3jdn50px0wxmj2s24h5pn3eawcnktkh",
+    "symbol": "BABY NINJA",
+    "contractAddr": "factory/inj1hs5chngjfhjwc4fsajyr50qfu8tjqsqrj9rf29/baby-ninja",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -1851,8 +1851,8 @@
   },
   {
     "name": "Baby Ninja",
-    "symbol": "BABY NINJA",
-    "contractAddr": "factory/inj1hs5chngjfhjwc4fsajyr50qfu8tjqsqrj9rf29/baby-ninja",
+    "symbol": "BABYNINJA",
+    "contractAddr": "inj14vcn23l3jdn50px0wxmj2s24h5pn3eawcnktkh",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -2142,6 +2142,26 @@
   {
     "name": "Baguette",
     "symbol": "BAG",
+    "contractAddr": "inj15a3yppu5h3zktk2hkq8f3ywhfpqqrwft8awyq0",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Baguette",
+    "symbol": "BAG",
+    "contractAddr": "inj13dcqczqyynw08m0tds50e0z2dsynf48g4uafac",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Baguette",
+    "symbol": "BAG",
     "contractAddr": "inj1l3uhj7dd5sx5fk87z0pxu0jum6rkpgmmv37a66",
     "decimals": 6,
     "isVerified": false,
@@ -2158,26 +2178,6 @@
     "numberOfPools": 0,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/BAG.png",
     "isTrading": false
-  },
-  {
-    "name": "Baguette",
-    "symbol": "BAG",
-    "contractAddr": "inj13dcqczqyynw08m0tds50e0z2dsynf48g4uafac",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Baguette",
-    "symbol": "BAG",
-    "contractAddr": "inj15a3yppu5h3zktk2hkq8f3ywhfpqqrwft8awyq0",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
   },
   {
     "name": "BAJE",
@@ -2422,20 +2422,20 @@
   {
     "name": "Benance",
     "symbol": "BENANCE",
-    "contractAddr": "inj1292223n3vfhrxndvlzsvrrlkkyt7jyeydf77h0",
-    "decimals": 6,
+    "contractAddr": "inj1gn8ss00s3htff0gv6flycgdqhc9xdsmvdpzktd",
+    "decimals": 8,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 11,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "Benance",
     "symbol": "BENANCE",
-    "contractAddr": "inj1gn8ss00s3htff0gv6flycgdqhc9xdsmvdpzktd",
-    "decimals": 8,
+    "contractAddr": "inj1292223n3vfhrxndvlzsvrrlkkyt7jyeydf77h0",
+    "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 11,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -2562,37 +2562,17 @@
   {
     "name": "BINJE",
     "symbol": "BINJE",
-    "contractAddr": "inj1ft73gxa35pzcqv6zjzqgllwtzs5hf4wnjsfq3t",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "BINJE",
-    "symbol": "BINJE",
-    "contractAddr": "inj1j0spyxgnxavasfnj5r4pvc4wwmnd6psjf8j6rm",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "BINJE",
-    "symbol": "BINJE",
-    "contractAddr": "inj1ufew4geh63l45ugk6aett2rdtatjm9xtycjcyd",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "BINJE",
-    "symbol": "BINJE",
     "contractAddr": "inj1cncjaeg0q6d8kdr77wxz90t6jhmm5wn23s2gxr",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "BINJE",
+    "symbol": "BINJE",
+    "contractAddr": "inj1fx6cg4xruk55rld4p9urrjc2v3gvmaqh2yx32q",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -2612,7 +2592,27 @@
   {
     "name": "BINJE",
     "symbol": "BINJE",
-    "contractAddr": "inj1fx6cg4xruk55rld4p9urrjc2v3gvmaqh2yx32q",
+    "contractAddr": "inj1ufew4geh63l45ugk6aett2rdtatjm9xtycjcyd",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "BINJE",
+    "symbol": "BINJE",
+    "contractAddr": "inj1j0spyxgnxavasfnj5r4pvc4wwmnd6psjf8j6rm",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "BINJE",
+    "symbol": "BINJE",
+    "contractAddr": "inj1ft73gxa35pzcqv6zjzqgllwtzs5hf4wnjsfq3t",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -2692,21 +2692,21 @@
   {
     "name": "BLACK",
     "symbol": "BLACK",
-    "contractAddr": "factory/inj16eckaf75gcu9uxdglyvmh63k9t0l7chd0qmu85/black",
-    "decimals": 6,
-    "isVerified": true,
-    "numberOfPools": 4,
-    "imageUrl": "https://i.imgur.com/4OfTmXP.png",
-    "isTrading": true
-  },
-  {
-    "name": "BLACK",
-    "symbol": "BLACK",
     "contractAddr": "factory/inj1238tn4srtzzplhgtd7fdrzdrf77hf9fye6q2xa/BLACK",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": "https://pbs.twimg.com/profile_images/1637108281817849857/XMPEUyjs_400x400.jpg",
+    "isTrading": true
+  },
+  {
+    "name": "BLACK",
+    "symbol": "BLACK",
+    "contractAddr": "factory/inj16eckaf75gcu9uxdglyvmh63k9t0l7chd0qmu85/black",
+    "decimals": 6,
+    "isVerified": true,
+    "numberOfPools": 4,
+    "imageUrl": "https://i.imgur.com/4OfTmXP.png",
     "isTrading": true
   },
   {
@@ -2812,6 +2812,16 @@
   {
     "name": "BlueInjective (Wormhole)",
     "symbol": "BLUEINJ",
+    "contractAddr": "inj1ss3d6gw5xzk5gdt9w4qhp3px62mqygk69uxwyv",
+    "decimals": 8,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "BlueInjective (Wormhole)",
+    "symbol": "BLUEINJ",
     "contractAddr": "inj1aalqnnh24ddn3vd9plnevwnxd03x7sevm77lps",
     "decimals": 8,
     "isVerified": false,
@@ -2826,16 +2836,6 @@
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "BlueInjective (Wormhole)",
-    "symbol": "BLUEINJ",
-    "contractAddr": "inj1ss3d6gw5xzk5gdt9w4qhp3px62mqygk69uxwyv",
-    "decimals": 8,
-    "isVerified": false,
-    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -3052,7 +3052,7 @@
   {
     "name": "BONK",
     "symbol": "BONK",
-    "contractAddr": "factory/inj1cxcjn04l2vxg4zwrlhpghh32fdel856xn3a3rr/BONK",
+    "contractAddr": "factory/inj1t0vyy5c3cnrw9f0mpjz9xk7fp22ezjjmrza7xn/BONK",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -3062,7 +3062,7 @@
   {
     "name": "BONK",
     "symbol": "BONK",
-    "contractAddr": "factory/inj1t0vyy5c3cnrw9f0mpjz9xk7fp22ezjjmrza7xn/BONK",
+    "contractAddr": "factory/inj1cxcjn04l2vxg4zwrlhpghh32fdel856xn3a3rr/BONK",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -3201,8 +3201,8 @@
   },
   {
     "name": "Boomer",
-    "symbol": "BOOM",
-    "contractAddr": "inj1xuu84fqdq45wdqj38xt8fhxsazt88d7xumhzrn",
+    "symbol": "Boomer",
+    "contractAddr": "inj1ethjlrk28wqklz48ejtqja9yfft8t4mm92m2ga",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -3211,8 +3211,8 @@
   },
   {
     "name": "Boomer",
-    "symbol": "Boomer",
-    "contractAddr": "inj1ethjlrk28wqklz48ejtqja9yfft8t4mm92m2ga",
+    "symbol": "BOOM",
+    "contractAddr": "inj1xuu84fqdq45wdqj38xt8fhxsazt88d7xumhzrn",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -3512,6 +3512,16 @@
   {
     "name": "Canto",
     "symbol": "CANTO",
+    "contractAddr": "ibc/6C55598A43348E41BCE1CE3C9313208CB953A036955869C47C3265A3BE2BB8D4",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png",
+    "isTrading": false
+  },
+  {
+    "name": "Canto",
+    "symbol": "CANTO",
     "contractAddr": "ibc/D91A2C4EE7CD86BBAFCE0FA44A60DDD9AFBB7EEB5B2D46C0984DEBCC6FEDFAE8",
     "decimals": 18,
     "isVerified": false,
@@ -3523,16 +3533,6 @@
     "name": "Canto",
     "symbol": "CANTO",
     "contractAddr": "ibc/5C0C70B490A3568D40E81884F200716F96FCE8B0A55CB5EE41C1E369E6086CCA",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/canto/images/canto.png",
-    "isTrading": false
-  },
-  {
-    "name": "Canto",
-    "symbol": "CANTO",
-    "contractAddr": "ibc/6C55598A43348E41BCE1CE3C9313208CB953A036955869C47C3265A3BE2BB8D4",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 0,
@@ -4052,7 +4052,7 @@
   {
     "name": "CHEN",
     "symbol": "CHEN",
-    "contractAddr": "factory/inj1s79ssggksqujyrwhq5zwxart33t98mmm2xd8f7/CHEN",
+    "contractAddr": "factory/inj196t4n8dg3pzkk5wh7ytjwtl6e3a56u9fj705wr/CHEN",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -4062,7 +4062,7 @@
   {
     "name": "CHEN",
     "symbol": "CHEN",
-    "contractAddr": "factory/inj196t4n8dg3pzkk5wh7ytjwtl6e3a56u9fj705wr/CHEN",
+    "contractAddr": "factory/inj1s79ssggksqujyrwhq5zwxart33t98mmm2xd8f7/CHEN",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -4241,8 +4241,8 @@
   },
   {
     "name": "CJ9",
-    "symbol": "CJN",
-    "contractAddr": "inj1eln607626f3j058rfh4xd3m4pd728x2cnxw4al",
+    "symbol": "CNJ",
+    "contractAddr": "inj1w38vdrkemf8s40m5xpqe5fc8hnvwq3d794vc4a",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -4251,8 +4251,8 @@
   },
   {
     "name": "CJ9",
-    "symbol": "CNJ",
-    "contractAddr": "inj1w38vdrkemf8s40m5xpqe5fc8hnvwq3d794vc4a",
+    "symbol": "CJN",
+    "contractAddr": "inj1eln607626f3j058rfh4xd3m4pd728x2cnxw4al",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -4541,22 +4541,22 @@
   },
   {
     "name": "Cosmo",
-    "symbol": "Cosmo",
-    "contractAddr": "factory/osmo1ua9rmqtmlyv49yety86ys8uqx3hawfkyjr0g7t/Cosmo",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Cosmo",
     "symbol": "COSMO",
     "contractAddr": "factory/inj1je6n5sr4qtx2lhpldfxndntmgls9hf38ncmcez/COSMO",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 2,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/cosmo.png",
+    "isTrading": true
+  },
+  {
+    "name": "Cosmo",
+    "symbol": "Cosmo",
+    "contractAddr": "factory/osmo1ua9rmqtmlyv49yety86ys8uqx3hawfkyjr0g7t/Cosmo",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
     "isTrading": true
   },
   {
@@ -5002,7 +5002,7 @@
   {
     "name": "DAOJO",
     "symbol": "DAOJO",
-    "contractAddr": "inj1j4pwxtnf27qelps9erqg3fg47r9tz9qyl9l7gh",
+    "contractAddr": "inj17k84dsdjty50rs5pv5pvm9spz75qqe9stnx0vh",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -5022,7 +5022,7 @@
   {
     "name": "DAOJO",
     "symbol": "DAOJO",
-    "contractAddr": "inj17k84dsdjty50rs5pv5pvm9spz75qqe9stnx0vh",
+    "contractAddr": "inj1j4pwxtnf27qelps9erqg3fg47r9tz9qyl9l7gh",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -5152,8 +5152,8 @@
   {
     "name": "DEXTER",
     "symbol": "DEXTER",
-    "contractAddr": "inj1nlcg7dgufuytaa2sfxam5hm0l38dyv3uk47kdf",
-    "decimals": 18,
+    "contractAddr": "inj1fg8ffu74pm99nwd584ne3gwa9pexnh39csm7qp",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -5172,20 +5172,20 @@
   {
     "name": "DEXTER",
     "symbol": "DEXTER",
-    "contractAddr": "inj17dtlpkmw4rtc02p7s9qwqz6kyx4nx8v380m0al",
-    "decimals": 6,
+    "contractAddr": "inj1nlcg7dgufuytaa2sfxam5hm0l38dyv3uk47kdf",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 2,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "DEXTER",
     "symbol": "DEXTER",
-    "contractAddr": "inj1fg8ffu74pm99nwd584ne3gwa9pexnh39csm7qp",
+    "contractAddr": "inj17dtlpkmw4rtc02p7s9qwqz6kyx4nx8v380m0al",
     "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -5582,7 +5582,7 @@
   {
     "name": "Dog Wif Token (Wormhole)",
     "symbol": "DOGWIF",
-    "contractAddr": "inj1qhu9yxtp0x9gkn0n89hcw8c0wc8nhuke8zgw0d",
+    "contractAddr": "inj16ykyeaggxaqzj3x85rjuk3xunky7mg78yd2q32",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -5592,7 +5592,7 @@
   {
     "name": "Dog Wif Token (Wormhole)",
     "symbol": "DOGWIF",
-    "contractAddr": "inj16ykyeaggxaqzj3x85rjuk3xunky7mg78yd2q32",
+    "contractAddr": "inj1qhu9yxtp0x9gkn0n89hcw8c0wc8nhuke8zgw0d",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -5822,7 +5822,7 @@
   {
     "name": "DonatelloShurikenLipsInjection2dust",
     "symbol": "INJECTIV",
-    "contractAddr": "factory/inj1ya7ltz2mkj0z4w25lxueh7emz6qhwe33m4knx8/INJECTIV",
+    "contractAddr": "factory/inj1x04zxeyrjc7ke5nt7ht3v3gkevxdk7rr0fx8qp/INJECTIV",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -5832,7 +5832,7 @@
   {
     "name": "DonatelloShurikenLipsInjection2dust",
     "symbol": "INJECTIV",
-    "contractAddr": "factory/inj1x04zxeyrjc7ke5nt7ht3v3gkevxdk7rr0fx8qp/INJECTIV",
+    "contractAddr": "factory/inj1ya7ltz2mkj0z4w25lxueh7emz6qhwe33m4knx8/INJECTIV",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -6052,8 +6052,8 @@
   {
     "name": "DRUGS",
     "symbol": "DRUGS",
-    "contractAddr": "factory/inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr/DRUGS",
-    "decimals": 9,
+    "contractAddr": "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -6062,8 +6062,8 @@
   {
     "name": "DRUGS",
     "symbol": "DRUGS",
-    "contractAddr": "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS",
-    "decimals": 6,
+    "contractAddr": "factory/inj1sklcy2px26jj73ffs2f7fmxw77zsts66prrqxr/DRUGS",
+    "decimals": 9,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -6292,7 +6292,17 @@
   {
     "name": "ELON",
     "symbol": "ELON",
-    "contractAddr": "factory/inj1wjtuzkprkc4gdf4r7dlh9gu96yyxml8qpzzy9p/elon",
+    "contractAddr": "factory/inj1k7ygz5ufgavnutv0hkgsz7u9g4c3yj6lq6p0jn/ELON",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "ELON",
+    "symbol": "ELON",
+    "contractAddr": "factory/inj13gc95nsrtv3da5x6ujmktekaljwhj5npl2nszl/ELON",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -6312,17 +6322,7 @@
   {
     "name": "ELON",
     "symbol": "ELON",
-    "contractAddr": "factory/inj1k7ygz5ufgavnutv0hkgsz7u9g4c3yj6lq6p0jn/ELON",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "ELON",
-    "symbol": "ELON",
-    "contractAddr": "factory/inj13gc95nsrtv3da5x6ujmktekaljwhj5npl2nszl/ELON",
+    "contractAddr": "factory/inj1wjtuzkprkc4gdf4r7dlh9gu96yyxml8qpzzy9p/elon",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -6632,7 +6632,7 @@
   {
     "name": "ERIS Amplified SEI",
     "symbol": "ampSEI",
-    "contractAddr": "ibc/9774771543D917853B9A9D108885C223DFF03ABC7BD39AD2783CA4E1F58CDC6E",
+    "contractAddr": "ibc/E175256127F32A27BB1FF863D15D8C4BB14968ED069B6A292723D485A33514A2",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -6652,7 +6652,7 @@
   {
     "name": "ERIS Amplified SEI",
     "symbol": "ampSEI",
-    "contractAddr": "ibc/E175256127F32A27BB1FF863D15D8C4BB14968ED069B6A292723D485A33514A2",
+    "contractAddr": "ibc/9774771543D917853B9A9D108885C223DFF03ABC7BD39AD2783CA4E1F58CDC6E",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -6751,6 +6751,16 @@
   },
   {
     "name": "Ethena",
+    "symbol": "ENA",
+    "contractAddr": "inj1c68rz4w9csvny5xmq6f87auuhfut5zukngmptz",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Ethena",
     "symbol": "USDe",
     "contractAddr": "peggy0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
     "decimals": 18,
@@ -6763,16 +6773,6 @@
     "name": "Ethena",
     "symbol": "ENA",
     "contractAddr": "inj1gmdlc2y7z0xtju7m3elmaar2mqh0fseu7l3cs6",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Ethena",
-    "symbol": "ENA",
-    "contractAddr": "inj1c68rz4w9csvny5xmq6f87auuhfut5zukngmptz",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7132,7 +7132,7 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj1ltu2smt40xmz8lxvrg9xhkdc75rswkyflqf2p8",
+    "contractAddr": "inj15wqfmtvdmzy34hm5jafm6uqnqf53ykr0kz6227",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7141,8 +7141,18 @@
   },
   {
     "name": "FDC",
-    "symbol": "FDC",
-    "contractAddr": "inj1d205gq2wm72x2unrz9pslsgqf53mhe09w9gx5v",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj1w3j52pppjr452f8ukj5apwpf9sc4t4p5cmyfjl",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj14na0udjrdtsqjk22fgr44gfgph4cp220agmwe2",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7172,7 +7182,7 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj1vulh2mq9awyexpsmntff0wyumafcte4p5pqeav",
+    "contractAddr": "inj1c78258q4ahmaujmmj4emg7upx9n4muv0fzjrms",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7181,48 +7191,8 @@
   },
   {
     "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj14na0udjrdtsqjk22fgr44gfgph4cp220agmwe2",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj1aqjd9n8m86prgx0a2umtpjcyd6nu22gc82zjwj",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj16ny2lq4tnxnfwz745kaanqyuq7997nk3tkkm0t",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj1w3j52pppjr452f8ukj5apwpf9sc4t4p5cmyfjl",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj1kz94v8anl9j64cqwntd30l8vqw2p03w3fk7d03",
+    "symbol": "FDC",
+    "contractAddr": "inj1d205gq2wm72x2unrz9pslsgqf53mhe09w9gx5v",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7242,7 +7212,7 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj13n695lr0ps5kpahv7rkd8njh2phw475rta8kw4",
+    "contractAddr": "inj1f6ejww220hnygsehh7pl7pd484dg4k9fl7wkr5",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7252,7 +7222,17 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj15wqfmtvdmzy34hm5jafm6uqnqf53ykr0kz6227",
+    "contractAddr": "inj1ltu2smt40xmz8lxvrg9xhkdc75rswkyflqf2p8",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj1w2wlt28t93szklu38wnw4dsgegug5rk3jar5k5",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7272,7 +7252,7 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj13pff0vsvfhnhcs4fkd609cr2f749rw22hznhar",
+    "contractAddr": "inj13n695lr0ps5kpahv7rkd8njh2phw475rta8kw4",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7282,7 +7262,7 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj1c78258q4ahmaujmmj4emg7upx9n4muv0fzjrms",
+    "contractAddr": "inj1vulh2mq9awyexpsmntff0wyumafcte4p5pqeav",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7312,6 +7292,36 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
+    "contractAddr": "inj16ny2lq4tnxnfwz745kaanqyuq7997nk3tkkm0t",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj1aqjd9n8m86prgx0a2umtpjcyd6nu22gc82zjwj",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj1kz94v8anl9j64cqwntd30l8vqw2p03w3fk7d03",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
     "contractAddr": "inj1yevjg9fdp7px757d6g3j2dkpzmeczturx3vpme",
     "decimals": 6,
     "isVerified": false,
@@ -7322,27 +7332,17 @@
   {
     "name": "FDC",
     "symbol": "FaDaCai",
-    "contractAddr": "inj1w2wlt28t93szklu38wnw4dsgegug5rk3jar5k5",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
-    "contractAddr": "inj1f6ejww220hnygsehh7pl7pd484dg4k9fl7wkr5",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "FDC",
-    "symbol": "FaDaCai",
     "contractAddr": "inj182d65my2lfcc07fx658nt8zuf6yyham4r9dazk",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "FDC",
+    "symbol": "FaDaCai",
+    "contractAddr": "inj13pff0vsvfhnhcs4fkd609cr2f749rw22hznhar",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -7642,7 +7642,7 @@
   {
     "name": "FOO",
     "symbol": "FOO",
-    "contractAddr": "inj1s290d2uew9k2s00zlx9xnxq84dauysc85yhds0",
+    "contractAddr": "inj1svrvyqm8uu6u4xnkz6tva207pztglcjylxe367",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 2,
@@ -7652,7 +7652,7 @@
   {
     "name": "FOO",
     "symbol": "FOO",
-    "contractAddr": "inj1svrvyqm8uu6u4xnkz6tva207pztglcjylxe367",
+    "contractAddr": "inj1s290d2uew9k2s00zlx9xnxq84dauysc85yhds0",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 2,
@@ -7832,20 +7832,20 @@
   {
     "name": "FROG",
     "symbol": "FROG",
-    "contractAddr": "factory/inj1ujd7rlhp8980lwg74tek7gv4yv4qj4xcvxrx45/FROG",
-    "decimals": 6,
+    "contractAddr": "inj104y5dpcdtga79tczv6rg3rsekx4hasw2k83h5s",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 3,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "FROG",
     "symbol": "FROG",
-    "contractAddr": "inj104y5dpcdtga79tczv6rg3rsekx4hasw2k83h5s",
-    "decimals": 18,
+    "contractAddr": "factory/inj1ujd7rlhp8980lwg74tek7gv4yv4qj4xcvxrx45/FROG",
+    "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 3,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -8242,7 +8242,7 @@
   {
     "name": "GEISHA",
     "symbol": "GEISHA",
-    "contractAddr": "factory/inj1h2dqvlca2lay8amfk5fgvateslp3h0sgf8wmmp/geisha",
+    "contractAddr": "factory/inj1c5uqenss9plc5rjw5kt5dksnlvnvw5tvygxpd8/GEISHA",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8252,7 +8252,7 @@
   {
     "name": "GEISHA",
     "symbol": "GEISHA",
-    "contractAddr": "factory/inj1c5uqenss9plc5rjw5kt5dksnlvnvw5tvygxpd8/GEISHA",
+    "contractAddr": "factory/inj1h2dqvlca2lay8amfk5fgvateslp3h0sgf8wmmp/geisha",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8702,7 +8702,7 @@
   {
     "name": "Grinch",
     "symbol": "Grinch",
-    "contractAddr": "inj1vc9fham7llzzhhn3g8tavv043rwh00mdgaaxk7",
+    "contractAddr": "inj1eq3455kfa87kt5s5f9x27zx3tttdvxyxg5h7g8",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8712,7 +8712,7 @@
   {
     "name": "Grinch",
     "symbol": "Grinch",
-    "contractAddr": "inj1eq3455kfa87kt5s5f9x27zx3tttdvxyxg5h7g8",
+    "contractAddr": "inj1vc9fham7llzzhhn3g8tavv043rwh00mdgaaxk7",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8732,7 +8732,7 @@
   {
     "name": "GRINJ",
     "symbol": "GRINJ",
-    "contractAddr": "factory/inj1h3h0yjxlchmydvsjpazcfyhp57lajdurznpeh0/grinj",
+    "contractAddr": "factory/inj174r3j8pm93gfcdu0g36dg6g7u0alygppypa45e/GRINJ",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8742,7 +8742,7 @@
   {
     "name": "GRINJ",
     "symbol": "GRINJ",
-    "contractAddr": "factory/inj174r3j8pm93gfcdu0g36dg6g7u0alygppypa45e/GRINJ",
+    "contractAddr": "factory/inj1h3h0yjxlchmydvsjpazcfyhp57lajdurznpeh0/grinj",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -8982,21 +8982,21 @@
   {
     "name": "Hava Coin",
     "symbol": "HAVA",
-    "contractAddr": "inj1fnlfy6r22slr72ryt4wl6uwpg3dd7emrqaq7ne",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Hava Coin",
-    "symbol": "HAVA",
     "contractAddr": "factory/inj1h0ypsdtjfcjynqu3m75z2zwwz5mmrj8rtk2g52/uhava",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 2,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/hava.png",
+    "isTrading": true
+  },
+  {
+    "name": "Hava Coin",
+    "symbol": "HAVA",
+    "contractAddr": "inj1fnlfy6r22slr72ryt4wl6uwpg3dd7emrqaq7ne",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
     "isTrading": true
   },
   {
@@ -9441,9 +9441,9 @@
   },
   {
     "name": "InjDoge",
-    "symbol": "InjDoge",
-    "contractAddr": "inj17sx6drpq8qllkv53s5ps8ucm0qalzdknsyzvh8",
-    "decimals": 18,
+    "symbol": "DOGEINJ",
+    "contractAddr": "inj1qaakagef76lgu56uhdc9rdsycdrznf7pjfjt2c",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -9451,9 +9451,9 @@
   },
   {
     "name": "InjDoge",
-    "symbol": "DOGEINJ",
-    "contractAddr": "inj1qaakagef76lgu56uhdc9rdsycdrznf7pjfjt2c",
-    "decimals": 6,
+    "symbol": "InjDoge",
+    "contractAddr": "inj17sx6drpq8qllkv53s5ps8ucm0qalzdknsyzvh8",
+    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -9642,7 +9642,7 @@
   {
     "name": "Injective City",
     "symbol": "CITY",
-    "contractAddr": "factory/inj1jpddz58n2ugstuhp238qwwvdf3shxsxy5g6jkn/CITY",
+    "contractAddr": "factory/inj1xzl47mx87r7sx8e6cz9d3q257xtp9fue3dx073/CITY",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -9652,7 +9652,7 @@
   {
     "name": "Injective City",
     "symbol": "CITY",
-    "contractAddr": "factory/inj1xzl47mx87r7sx8e6cz9d3q257xtp9fue3dx073/CITY",
+    "contractAddr": "factory/inj1jpddz58n2ugstuhp238qwwvdf3shxsxy5g6jkn/CITY",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -9811,21 +9811,21 @@
   },
   {
     "name": "Injective Pepe",
-    "symbol": "IPEPE",
-    "contractAddr": "factory/inj1td7t8spd4k6uev6uunu40qvrrcwhr756d5qw59/ipepe",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Injective Pepe",
     "symbol": "INJPEPE",
     "contractAddr": "factory/inj15hxjpac22adg3s6znhpc27zx6ufhf6z7fseue2/injpepe",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Injective Pepe",
+    "symbol": "IPEPE",
+    "contractAddr": "factory/inj1td7t8spd4k6uev6uunu40qvrrcwhr756d5qw59/ipepe",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -10062,20 +10062,20 @@
   {
     "name": "INJINU",
     "symbol": "INJINU",
-    "contractAddr": "inj1ykfurk0jsxcz6hp9tqm8vn2p5k0hn76y6uans6",
+    "contractAddr": "factory/inj1vjppa6h9lf75pt0v6qnxtej4xcl0qevnxzcrvm/INJINU",
     "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "INJINU",
     "symbol": "INJINU",
-    "contractAddr": "factory/inj1vjppa6h9lf75pt0v6qnxtej4xcl0qevnxzcrvm/INJINU",
+    "contractAddr": "inj1ykfurk0jsxcz6hp9tqm8vn2p5k0hn76y6uans6",
     "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 2,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -10411,8 +10411,8 @@
   },
   {
     "name": "INJUSSY",
-    "symbol": "INJUSSY",
-    "contractAddr": "inj15fa69t6huq8nujze28ykdsldmtf23yk3sgxpns",
+    "symbol": "JUSSY",
+    "contractAddr": "inj1qydw0aj2gwv27zkrp7xulrg43kx88rv27ymw6m",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10421,8 +10421,8 @@
   },
   {
     "name": "INJUSSY",
-    "symbol": "JUSSY",
-    "contractAddr": "inj1qydw0aj2gwv27zkrp7xulrg43kx88rv27ymw6m",
+    "symbol": "INJUSSY",
+    "contractAddr": "inj15fa69t6huq8nujze28ykdsldmtf23yk3sgxpns",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10441,8 +10441,8 @@
   },
   {
     "name": "INJUSTICE",
-    "symbol": "INJUST",
-    "contractAddr": "inj1j9ld52dpgzyc6j42fv5ggk2xkzukm4tjun6449",
+    "symbol": "INJUSTICE",
+    "contractAddr": "factory/inj1vrktrmvtxkzd52kk45ptc5m53zncm56d278qza/INJUSTICE",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10451,8 +10451,8 @@
   },
   {
     "name": "INJUSTICE",
-    "symbol": "INJUSTICE",
-    "contractAddr": "factory/inj1vrktrmvtxkzd52kk45ptc5m53zncm56d278qza/INJUSTICE",
+    "symbol": "INJUST",
+    "contractAddr": "inj1j9ld52dpgzyc6j42fv5ggk2xkzukm4tjun6449",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10512,7 +10512,7 @@
   {
     "name": "InjXsolana (Wormhole)",
     "symbol": "INJXSOL",
-    "contractAddr": "inj174p4dt45793vylmt8575cltj6wadtc62nakczq",
+    "contractAddr": "inj1u82h7d8l47q3kzwvkm2mgzrskk5au4lrkntkjn",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10522,7 +10522,7 @@
   {
     "name": "InjXsolana (Wormhole)",
     "symbol": "INJXSOL",
-    "contractAddr": "inj1u82h7d8l47q3kzwvkm2mgzrskk5au4lrkntkjn",
+    "contractAddr": "inj174p4dt45793vylmt8575cltj6wadtc62nakczq",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -10642,7 +10642,7 @@
   {
     "name": "ISILLY",
     "symbol": "ISILLY",
-    "contractAddr": "factory/inj1499ez5npathr0zkphz2yq6npdfc6xvg3d4zynj/iSILLY",
+    "contractAddr": "factory/inj1499ez5npathr0zkphz2yq6npdfc6xvg3d4zynj/ISILLY",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 2,
@@ -10652,7 +10652,7 @@
   {
     "name": "ISILLY",
     "symbol": "ISILLY",
-    "contractAddr": "factory/inj1499ez5npathr0zkphz2yq6npdfc6xvg3d4zynj/ISILLY",
+    "contractAddr": "factory/inj1499ez5npathr0zkphz2yq6npdfc6xvg3d4zynj/iSILLY",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 2,
@@ -11151,6 +11151,16 @@
   },
   {
     "name": "KATANA",
+    "symbol": "KAT",
+    "contractAddr": "factory/inj1ms8lr6y6qf2nsffshfmusr8amth5y5wnrjrzur/KAT",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "KATANA",
     "symbol": "KATANA",
     "contractAddr": "inj106kv9he9xlj4np4qthlzeq6hyj7ns6hqfapyt3",
     "decimals": 6,
@@ -11163,16 +11173,6 @@
     "name": "KATANA",
     "symbol": "KATANA",
     "contractAddr": "inj1j36ddpvef5jgmp4ngy6kl0r45c2tftu4qjuke8",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "KATANA",
-    "symbol": "KAT",
-    "contractAddr": "factory/inj1ms8lr6y6qf2nsffshfmusr8amth5y5wnrjrzur/KAT",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -11382,7 +11382,7 @@
   {
     "name": "KingFusion (Wormhole)",
     "symbol": "KINGFUSION",
-    "contractAddr": "inj1mnzwm6fvkruendv8r63vzlw72yv7fvtngkkzs9",
+    "contractAddr": "inj1ynehe0s2kh9fqp5tka99f8wj2xgsha74h3cmtu",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -11392,7 +11392,7 @@
   {
     "name": "KingFusion (Wormhole)",
     "symbol": "KINGFUSION",
-    "contractAddr": "inj1ynehe0s2kh9fqp5tka99f8wj2xgsha74h3cmtu",
+    "contractAddr": "inj1mnzwm6fvkruendv8r63vzlw72yv7fvtngkkzs9",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -11942,6 +11942,16 @@
   {
     "name": "LIOR",
     "symbol": "LIOR",
+    "contractAddr": "factory/inj1cjus5ragdkvpmt627fw7wkj2ydsra9s0vap4zx/LIOR",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "LIOR",
+    "symbol": "LIOR",
     "contractAddr": "factory/inj1sg3yjgjlwhtrepeuusj4jwv209rh6cmk882cw3/LIOR",
     "decimals": 6,
     "isVerified": false,
@@ -11960,10 +11970,10 @@
     "isTrading": true
   },
   {
-    "name": "LIOR",
-    "symbol": "LIOR",
-    "contractAddr": "factory/inj1cjus5ragdkvpmt627fw7wkj2ydsra9s0vap4zx/LIOR",
-    "decimals": 6,
+    "name": "LMAO",
+    "symbol": "LMAO",
+    "contractAddr": "inj15xz5537eujskaayp600gkke7qu82p5sa76lg50",
+    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -11973,6 +11983,26 @@
     "name": "LMAO",
     "symbol": "LMAO",
     "contractAddr": "inj1vwhkr9qmntsfe9vzegh7xevvfaj4lnx9t783nf",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "LMAO",
+    "symbol": "LMAO",
+    "contractAddr": "inj1qt32en8rjd0x486tganvc6u7q25xlr5wqr68xn",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "LMAO",
+    "symbol": "LMAO",
+    "contractAddr": "inj15m47mfu8qjh9uc7cr04txp9udea635vkuwduck",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -12002,37 +12032,7 @@
   {
     "name": "LMAO",
     "symbol": "LMAO",
-    "contractAddr": "inj15m47mfu8qjh9uc7cr04txp9udea635vkuwduck",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "LMAO",
-    "symbol": "LMAO",
     "contractAddr": "inj1yd07kujagk0t6rlj0zca2xsm6qpekv8mmwqknv",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "LMAO",
-    "symbol": "LMAO",
-    "contractAddr": "inj15xz5537eujskaayp600gkke7qu82p5sa76lg50",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "LMAO",
-    "symbol": "LMAO",
-    "contractAddr": "inj1qt32en8rjd0x486tganvc6u7q25xlr5wqr68xn",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -12082,7 +12082,7 @@
   {
     "name": "LOL",
     "symbol": "LOL",
-    "contractAddr": "inj18zfazlnerhgsv0nur6tnm97uymf7zrazzghrtq",
+    "contractAddr": "inj1kjfeuqtp56newrdye4d5rczfkwe4dg3llc0kc9",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -12092,7 +12092,7 @@
   {
     "name": "LOL",
     "symbol": "LOL",
-    "contractAddr": "inj1kjfeuqtp56newrdye4d5rczfkwe4dg3llc0kc9",
+    "contractAddr": "inj18zfazlnerhgsv0nur6tnm97uymf7zrazzghrtq",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -12122,7 +12122,7 @@
   {
     "name": "LOOL",
     "symbol": "LOOL",
-    "contractAddr": "inj12xn584cdkhnz2nn08xz4yrwxscxa8tr2fuxwam",
+    "contractAddr": "inj10wuysemk8ptnnt2n4my8qsalgkmw6yxe8wthu2",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -12132,7 +12132,7 @@
   {
     "name": "LOOL",
     "symbol": "LOOL",
-    "contractAddr": "inj10wuysemk8ptnnt2n4my8qsalgkmw6yxe8wthu2",
+    "contractAddr": "inj12xn584cdkhnz2nn08xz4yrwxscxa8tr2fuxwam",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13342,7 +13342,7 @@
   {
     "name": "MEME",
     "symbol": "MEME",
-    "contractAddr": "inj1u0y6k9grtux3dlzpvj6hspkg6n0l0l2zmlhygu",
+    "contractAddr": "inj1jt20t0scnm6r048rklny7z7gyc4lfmm6s5c96e",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13362,7 +13362,7 @@
   {
     "name": "MEME",
     "symbol": "MEME",
-    "contractAddr": "inj1jt20t0scnm6r048rklny7z7gyc4lfmm6s5c96e",
+    "contractAddr": "inj1u0y6k9grtux3dlzpvj6hspkg6n0l0l2zmlhygu",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13422,6 +13422,16 @@
   {
     "name": "Men In Black",
     "symbol": "MIB",
+    "contractAddr": "factory/inj1q3xa3r638hmpu2mywg5r0w8a3pz2u5l9n7x4q2/MeninblackINJ",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Men In Black",
+    "symbol": "MIB",
     "contractAddr": "factory/inj1s9pckznjz4hmgtxu5t9gerxtalch7wtle4y3a6/MIB",
     "decimals": 6,
     "isVerified": false,
@@ -13433,16 +13443,6 @@
     "name": "Men In Black",
     "symbol": "MIB",
     "contractAddr": "factory/inj1qqge7uaftfykr9wjqy4khwwzyr2wgcctwwgqv2/MIB",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Men In Black",
-    "symbol": "MIB",
-    "contractAddr": "factory/inj1q3xa3r638hmpu2mywg5r0w8a3pz2u5l9n7x4q2/MeninblackINJ",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13492,7 +13492,7 @@
   {
     "name": "MetaOasis (Wormhole)",
     "symbol": "METAOASIS",
-    "contractAddr": "inj1303k783m2ukvgn8n4a2u5jvm25ffqe97236rx2",
+    "contractAddr": "inj1uk7dm0ws0eum6rqqfvu8d2s5vrwkr9y2p7vtxh",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13502,7 +13502,7 @@
   {
     "name": "MetaOasis (Wormhole)",
     "symbol": "METAOASIS",
-    "contractAddr": "inj1uk7dm0ws0eum6rqqfvu8d2s5vrwkr9y2p7vtxh",
+    "contractAddr": "inj1303k783m2ukvgn8n4a2u5jvm25ffqe97236rx2",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13872,7 +13872,7 @@
   {
     "name": "MOON",
     "symbol": "MOON",
-    "contractAddr": "factory/inj1k7ygz5ufgavnutv0hkgsz7u9g4c3yj6lq6p0jn/MOON",
+    "contractAddr": "factory/inj1d2gl87f9ldwemvhm8rskqzuqprrsvc5fr5nllc/MOON",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13882,7 +13882,7 @@
   {
     "name": "MOON",
     "symbol": "MOON",
-    "contractAddr": "factory/inj1d2gl87f9ldwemvhm8rskqzuqprrsvc5fr5nllc/MOON",
+    "contractAddr": "factory/inj1k7ygz5ufgavnutv0hkgsz7u9g4c3yj6lq6p0jn/MOON",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -13952,8 +13952,8 @@
   {
     "name": "MOTHER",
     "symbol": "MOTHER",
-    "contractAddr": "ibc/984E90A8E0265B9804B7345C7542BF9B3046978AE5557B4AABADDFE605CACABE",
-    "decimals": 6,
+    "contractAddr": "inj1rytr7mwrentqhng3gldplyf59k23qd3x5umc36",
+    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -13962,8 +13962,8 @@
   {
     "name": "MOTHER",
     "symbol": "MOTHER",
-    "contractAddr": "inj1rytr7mwrentqhng3gldplyf59k23qd3x5umc36",
-    "decimals": 18,
+    "contractAddr": "ibc/984E90A8E0265B9804B7345C7542BF9B3046978AE5557B4AABADDFE605CACABE",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -14232,20 +14232,20 @@
   {
     "name": "Neptune",
     "symbol": "NEPT",
-    "contractAddr": "inj1464m9k0njt596t88chlp3nqg73j2fzd7t6kvac",
-    "decimals": 18,
+    "contractAddr": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
+    "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 5,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "Neptune",
     "symbol": "NEPT",
-    "contractAddr": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
-    "decimals": 6,
+    "contractAddr": "inj1464m9k0njt596t88chlp3nqg73j2fzd7t6kvac",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 5,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -14831,21 +14831,21 @@
   },
   {
     "name": "NINJAWIFHAT",
-    "symbol": "NWIF",
-    "contractAddr": "factory/inj1xukaxxx4yuaz6xys5dpuhe60un7ct9umju5ash/NWIF",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "NINJAWIFHAT",
     "symbol": "WIF",
     "contractAddr": "inj1vllv3w7np7t68acdn6xj85yd9dzkxdfcuyluz0",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "NINJAWIFHAT",
+    "symbol": "NWIF",
+    "contractAddr": "factory/inj1xukaxxx4yuaz6xys5dpuhe60un7ct9umju5ash/NWIF",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -15001,21 +15001,21 @@
   },
   {
     "name": "nonja",
-    "symbol": "NONJA",
-    "contractAddr": "inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 7,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "nonja",
     "symbol": "mininonja",
     "contractAddr": "inj1zwhu648g5zm9dqtxfaa6vcja56q7rqz4vff988",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "nonja",
+    "symbol": "NONJA",
+    "contractAddr": "inj1fu5u29slsg2xtsj7v5la22vl4mr4ywl7wlqeck",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 7,
     "imageUrl": null,
     "isTrading": true
   },
@@ -15062,20 +15062,20 @@
   {
     "name": "nonjaktif",
     "symbol": "nonjaktif",
-    "contractAddr": "inj1ra46mrdcc4qd7m8mhdjd9fkut50pa07lwxsvst",
-    "decimals": 18,
+    "contractAddr": "factory/inj1x6u4muldaqn2cm95yn7g07z5wwvpd6d6rpt4da/nonjaktif",
+    "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 2,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "nonjaktif",
     "symbol": "nonjaktif",
-    "contractAddr": "factory/inj1x6u4muldaqn2cm95yn7g07z5wwvpd6d6rpt4da/nonjaktif",
-    "decimals": 6,
+    "contractAddr": "inj1ra46mrdcc4qd7m8mhdjd9fkut50pa07lwxsvst",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
   },
@@ -15272,7 +15272,27 @@
   {
     "name": "OIN STORE OF VALUE",
     "symbol": "OIN",
+    "contractAddr": "ibc/64D95807CA13CD9EC5BEF9D3709138A14295DDBDFBC9EF58A9FFE34B911545E6",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png",
+    "isTrading": false
+  },
+  {
+    "name": "OIN STORE OF VALUE",
+    "symbol": "OIN",
     "contractAddr": "ibc/486A0C3A5D9F8389FE01CF2656DF03DB119BC71C4164212F3541DD538A968B66",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png",
+    "isTrading": false
+  },
+  {
+    "name": "OIN STORE OF VALUE",
+    "symbol": "OIN",
+    "contractAddr": "ibc/CA0B808874A9890C171944FA44B35287E9701402C732FE5B2C6371BA8113462C",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -15292,27 +15312,7 @@
   {
     "name": "OIN STORE OF VALUE",
     "symbol": "OIN",
-    "contractAddr": "ibc/64D95807CA13CD9EC5BEF9D3709138A14295DDBDFBC9EF58A9FFE34B911545E6",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png",
-    "isTrading": false
-  },
-  {
-    "name": "OIN STORE OF VALUE",
-    "symbol": "OIN",
     "contractAddr": "ibc/CDA55861E9E491479CB52D5C89F942F5EAF221F80B7CDDBBA8EE94D3658B03B4",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/sei/images/oin.png",
-    "isTrading": false
-  },
-  {
-    "name": "OIN STORE OF VALUE",
-    "symbol": "OIN",
-    "contractAddr": "ibc/CA0B808874A9890C171944FA44B35287E9701402C732FE5B2C6371BA8113462C",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -15582,22 +15582,22 @@
   {
     "name": "OSMO",
     "symbol": "OSMO",
-    "contractAddr": "inj1ele6z2tg7cglx2ul2ss94crc60wt70uec8rs9m",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "OSMO",
-    "symbol": "OSMO",
     "contractAddr": "ibc/C2025C1D34ED74CD6F9DF86CD650D92219AF645E9D0ADFFACF4E2CBECE649536",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
     "isTrading": false
+  },
+  {
+    "name": "OSMO",
+    "symbol": "OSMO",
+    "contractAddr": "inj1ele6z2tg7cglx2ul2ss94crc60wt70uec8rs9m",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
   },
   {
     "name": "OSMO Boost LP",
@@ -15902,16 +15902,6 @@
   {
     "name": "PEPE",
     "symbol": "PEPE",
-    "contractAddr": "factory/inj1weyajq6ksmzzhfpum9texpsgm9u20fc0kdqpgy/PEPE",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "PEPE",
-    "symbol": "PEPE",
     "contractAddr": "inj1xx04zkrkrplefzgdgl78mrq3qmy9e3fkgspujk",
     "decimals": 18,
     "isVerified": false,
@@ -15924,6 +15914,16 @@
     "symbol": "PEPE",
     "contractAddr": "inj1tjnjj9hvecuj3dpdvvl4yxhshgwzqyg57k7fnh",
     "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "PEPE",
+    "symbol": "PEPE",
+    "contractAddr": "factory/inj1weyajq6ksmzzhfpum9texpsgm9u20fc0kdqpgy/PEPE",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -16072,7 +16072,7 @@
   {
     "name": "PHEW",
     "symbol": "PHEW",
-    "contractAddr": "inj19dux2glqedeamjwltjv5srvhgxkf6gyawtce5s",
+    "contractAddr": "inj128usk4mqn69h9hmthqxhasyewkrhmprl7jp6lv",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -16082,7 +16082,7 @@
   {
     "name": "PHEW",
     "symbol": "PHEW",
-    "contractAddr": "inj128usk4mqn69h9hmthqxhasyewkrhmprl7jp6lv",
+    "contractAddr": "inj19dux2glqedeamjwltjv5srvhgxkf6gyawtce5s",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -16552,7 +16552,7 @@
   {
     "name": "Popeye",
     "symbol": "POPEYE",
-    "contractAddr": "ibc/C35A94A42FEDA8E01903CD7A78FB33AE60B2064C0007BF2E4FD5A6368BDBC546",
+    "contractAddr": "ibc/7E4EA08D14451712CC921456E2FBA57B54D4CA80AE9E471FAAF16610029B9145",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -16562,7 +16562,7 @@
   {
     "name": "Popeye",
     "symbol": "POPEYE",
-    "contractAddr": "ibc/7E4EA08D14451712CC921456E2FBA57B54D4CA80AE9E471FAAF16610029B9145",
+    "contractAddr": "ibc/C35A94A42FEDA8E01903CD7A78FB33AE60B2064C0007BF2E4FD5A6368BDBC546",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 0,
@@ -17102,22 +17102,22 @@
   {
     "name": "RAC",
     "symbol": "RAC",
-    "contractAddr": "ibc/0F3A724673F682CF7812D0ED1A0C41D344C09E94C939E79D12712DC7C0676E80",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png",
-    "isTrading": false
-  },
-  {
-    "name": "RAC",
-    "symbol": "RAC",
     "contractAddr": "inj1y6dgj675ttk2tzeasdwsk6n7etn0cfh9wz20vy",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
+  },
+  {
+    "name": "RAC",
+    "symbol": "RAC",
+    "contractAddr": "ibc/0F3A724673F682CF7812D0ED1A0C41D344C09E94C939E79D12712DC7C0676E80",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/migaloo/images/rac.png",
+    "isTrading": false
   },
   {
     "name": "RAD",
@@ -17201,8 +17201,8 @@
   },
   {
     "name": "Ramen Version 2",
-    "symbol": "RAMEN22",
-    "contractAddr": "factory/inj15d5v02thnac8mc79hx0nzuz4rjxuccy7rc63x3/RAMEN22",
+    "symbol": "RAMENV2",
+    "contractAddr": "factory/inj15d5v02thnac8mc79hx0nzuz4rjxuccy7rc63x3/RAMENV2",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -17221,8 +17221,8 @@
   },
   {
     "name": "Ramen Version 2",
-    "symbol": "RAMENV2",
-    "contractAddr": "factory/inj15d5v02thnac8mc79hx0nzuz4rjxuccy7rc63x3/RAMENV2",
+    "symbol": "RAMEN22",
+    "contractAddr": "factory/inj15d5v02thnac8mc79hx0nzuz4rjxuccy7rc63x3/RAMEN22",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -17912,7 +17912,7 @@
   {
     "name": "SAMURAI",
     "symbol": "SAMURAI",
-    "contractAddr": "factory/inj1pgkwcngxel97d9qjvg75upe8y3lvvzncq5tdr0/samurai",
+    "contractAddr": "factory/inj1gg43076kmy0prkxtn5xxka47lfmwwjsq6ygcfa/SAMURAI",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -17922,7 +17922,7 @@
   {
     "name": "SAMURAI",
     "symbol": "SAMURAI",
-    "contractAddr": "factory/inj1gg43076kmy0prkxtn5xxka47lfmwwjsq6ygcfa/SAMURAI",
+    "contractAddr": "factory/inj1pgkwcngxel97d9qjvg75upe8y3lvvzncq5tdr0/samurai",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18031,8 +18031,8 @@
   },
   {
     "name": "SantaInjective (Wormhole)",
-    "symbol": "SANTAINJ",
-    "contractAddr": "inj19wccuev2399ad0ftdfyvw8h9qq5dvqxqw0pqxe",
+    "symbol": "INJSANTA",
+    "contractAddr": "inj1ur3qac37axxmuqpsegr7cts77t78jyupucpua3",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18041,8 +18041,8 @@
   },
   {
     "name": "SantaInjective (Wormhole)",
-    "symbol": "INJSANTA",
-    "contractAddr": "inj1ur3qac37axxmuqpsegr7cts77t78jyupucpua3",
+    "symbol": "SANTAINJ",
+    "contractAddr": "inj19wccuev2399ad0ftdfyvw8h9qq5dvqxqw0pqxe",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18111,9 +18111,9 @@
   },
   {
     "name": "SatoshiVM",
-    "symbol": "SAVM",
-    "contractAddr": "inj1wuw0730q4rznqnhkw2nqwk3l2gvun7mll9ew3n",
-    "decimals": 6,
+    "symbol": "SVM",
+    "contractAddr": "inj1jyhzeqxnh8qnupt08gadn5emxpmmm998gwhuvv",
+    "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -18121,9 +18121,9 @@
   },
   {
     "name": "SatoshiVM",
-    "symbol": "SVM",
-    "contractAddr": "inj1jyhzeqxnh8qnupt08gadn5emxpmmm998gwhuvv",
-    "decimals": 8,
+    "symbol": "SAVM",
+    "contractAddr": "inj1wuw0730q4rznqnhkw2nqwk3l2gvun7mll9ew3n",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -18172,7 +18172,7 @@
   {
     "name": "SCAM",
     "symbol": "SCAM",
-    "contractAddr": "inj1f9rppeq5yduz2te5fxxwnalg54lsa3ac6da5fg",
+    "contractAddr": "inj1hgh3dqc2kxl464qg9rnt3kctzplmsnqzycdtt7",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18182,7 +18182,7 @@
   {
     "name": "SCAM",
     "symbol": "SCAM",
-    "contractAddr": "inj1hgh3dqc2kxl464qg9rnt3kctzplmsnqzycdtt7",
+    "contractAddr": "inj1f9rppeq5yduz2te5fxxwnalg54lsa3ac6da5fg",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18492,7 +18492,7 @@
   {
     "name": "SEX",
     "symbol": "SEX",
-    "contractAddr": "factory/inj174r3j8pm93gfcdu0g36dg6g7u0alygppypa45e/SEX",
+    "contractAddr": "factory/inj1ary3d4xl6jjlkht33ktqc2py7lvc3l4mqrfq00/SEX",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18502,7 +18502,7 @@
   {
     "name": "SEX",
     "symbol": "SEX",
-    "contractAddr": "factory/inj1ary3d4xl6jjlkht33ktqc2py7lvc3l4mqrfq00/SEX",
+    "contractAddr": "factory/inj174r3j8pm93gfcdu0g36dg6g7u0alygppypa45e/SEX",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18811,8 +18811,8 @@
   },
   {
     "name": "shroomin",
-    "symbol": "SHROOM",
-    "contractAddr": "inj1mdzxqh9kag3a9e7x5488vn8hkeh42cuw0hnhrf",
+    "symbol": "DOJOshroom",
+    "contractAddr": "inj194l9mfrjsthrvv07d648q24pvpfkntetx68e7l",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18822,27 +18822,17 @@
   {
     "name": "shroomin",
     "symbol": "SHROOM",
-    "contractAddr": "inj16tp2zfy0kd5jjd0vku879j43757qqmt5nezfl0",
-    "decimals": 6,
+    "contractAddr": "inj1300xcg9naqy00fujsr9r8alwk7dh65uqu87xm8",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 6,
     "imageUrl": null,
     "isTrading": true
   },
   {
     "name": "shroomin",
-    "symbol": "NEWSHROOM",
-    "contractAddr": "inj1e0957khyf2l5knwtdnzjr6t4d0x496fyz6fwja",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "shroomin",
-    "symbol": "NINISHROOM",
-    "contractAddr": "inj1vlgszdzq75lh56t5nqvxz28u0d9ftyve6pglxr",
+    "symbol": "miniSHROOM",
+    "contractAddr": "inj1mcdhsphq3rkyg9d0sax0arm95tkac4qxdynlkz",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18861,6 +18851,26 @@
   },
   {
     "name": "shroomin",
+    "symbol": "NEWSHROOM",
+    "contractAddr": "inj1e0957khyf2l5knwtdnzjr6t4d0x496fyz6fwja",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "shroomin",
+    "symbol": "SHROOM",
+    "contractAddr": "inj16tp2zfy0kd5jjd0vku879j43757qqmt5nezfl0",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "shroomin",
     "symbol": "babySHROOM",
     "contractAddr": "inj14zxwefzz5p3l4mltlzgmfwh2jkgjqum256qhna",
     "decimals": 6,
@@ -18871,8 +18881,18 @@
   },
   {
     "name": "shroomin",
-    "symbol": "miniSHROOM",
-    "contractAddr": "inj1mcdhsphq3rkyg9d0sax0arm95tkac4qxdynlkz",
+    "symbol": "NINISHROOM",
+    "contractAddr": "inj1vlgszdzq75lh56t5nqvxz28u0d9ftyve6pglxr",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "shroomin",
+    "symbol": "SHROOM",
+    "contractAddr": "inj1mdzxqh9kag3a9e7x5488vn8hkeh42cuw0hnhrf",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -18886,26 +18906,6 @@
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "shroomin",
-    "symbol": "DOJOshroom",
-    "contractAddr": "inj194l9mfrjsthrvv07d648q24pvpfkntetx68e7l",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "shroomin",
-    "symbol": "SHROOM",
-    "contractAddr": "inj1300xcg9naqy00fujsr9r8alwk7dh65uqu87xm8",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 6,
     "imageUrl": null,
     "isTrading": true
   },
@@ -19432,7 +19432,7 @@
   {
     "name": "space candy for degens",
     "symbol": "babyDrugs",
-    "contractAddr": "inj1qt78z7xru0fcks54ca56uehuzwal026ghhtxdv",
+    "contractAddr": "inj1457z9m26aqvga58demjz87uyt6su7hyf65aqvr",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -19442,7 +19442,7 @@
   {
     "name": "space candy for degens",
     "symbol": "babyDrugs",
-    "contractAddr": "inj1457z9m26aqvga58demjz87uyt6su7hyf65aqvr",
+    "contractAddr": "inj1qt78z7xru0fcks54ca56uehuzwal026ghhtxdv",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -19512,6 +19512,16 @@
   {
     "name": "spore",
     "symbol": "spore",
+    "contractAddr": "inj1uqhcsup58gjfxl26z9esenmr03hn8wyz2mlc02",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "spore",
+    "symbol": "spore",
     "contractAddr": "factory/inj1lq9wn94d49tt7gc834cxkm0j5kwlwu4gm65lhe/spore",
     "decimals": 6,
     "isVerified": false,
@@ -19520,9 +19530,29 @@
     "isTrading": true
   },
   {
-    "name": "spore",
-    "symbol": "spore",
-    "contractAddr": "inj1uqhcsup58gjfxl26z9esenmr03hn8wyz2mlc02",
+    "name": "spuun",
+    "symbol": "spuun",
+    "contractAddr": "factory/inj168pjvcxwdr28uv295fchjtkk6pc5cd0lg3h450/spuun",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "spuun",
+    "symbol": "SPUUN",
+    "contractAddr": "inj1mas3j8u02wzcfysjhgrx0uj0qprua2lm0gx27r",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "spuun",
+    "symbol": "SPUUN",
+    "contractAddr": "inj1vgm0pwes4fusmvha62grh5aq55yxdz2x5k58xw",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -19542,38 +19572,8 @@
   {
     "name": "spuun",
     "symbol": "SPUUN",
-    "contractAddr": "inj1mas3j8u02wzcfysjhgrx0uj0qprua2lm0gx27r",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "spuun",
-    "symbol": "SPUUN",
     "contractAddr": "inj1gkc8ajx5pfkvdux3574r90ahgmtkpnprx0fuaa",
     "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "spuun",
-    "symbol": "SPUUN",
-    "contractAddr": "inj1vgm0pwes4fusmvha62grh5aq55yxdz2x5k58xw",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "spuun",
-    "symbol": "spuun",
-    "contractAddr": "factory/inj168pjvcxwdr28uv295fchjtkk6pc5cd0lg3h450/spuun",
-    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -19592,10 +19592,10 @@
   {
     "name": "SPUUN",
     "symbol": "SPUUN",
-    "contractAddr": "inj1ttngjl2y886dcr7r34gp3r029f8l2pv8tdelk8",
-    "decimals": 18,
+    "contractAddr": "factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/SPUUN",
+    "decimals": 6,
     "isVerified": false,
-    "numberOfPools": 1,
+    "numberOfPools": 4,
     "imageUrl": null,
     "isTrading": true
   },
@@ -19612,10 +19612,10 @@
   {
     "name": "SPUUN",
     "symbol": "SPUUN",
-    "contractAddr": "factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/SPUUN",
-    "decimals": 6,
+    "contractAddr": "inj1ttngjl2y886dcr7r34gp3r029f8l2pv8tdelk8",
+    "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 4,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -20312,7 +20312,7 @@
   {
     "name": "TEN",
     "symbol": "TEN",
-    "contractAddr": "inj1ky5zcvc82t6hrfsu6da3d9u9u33jt30rjr0cnj",
+    "contractAddr": "inj1yv2mdu33whk4z6xdjxu6fkzjtl5c0ghdgt337f",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -20322,7 +20322,7 @@
   {
     "name": "TEN",
     "symbol": "TEN",
-    "contractAddr": "inj1yv2mdu33whk4z6xdjxu6fkzjtl5c0ghdgt337f",
+    "contractAddr": "inj1ky5zcvc82t6hrfsu6da3d9u9u33jt30rjr0cnj",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -20382,6 +20382,36 @@
   {
     "name": "test",
     "symbol": "test",
+    "contractAddr": "factory/inj1senn2rj7avpqerf0ha9xn7t6fmqlyr8hafu8ld/test",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "test",
+    "symbol": "test",
+    "contractAddr": "inj1f59h6qh6vckz8asg307zajzrht948vlymesg8c",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "test",
+    "symbol": "test",
+    "contractAddr": "inj1qqn3urdskeq9mlm37c375978kv3rxgjx2kff9p",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "test",
+    "symbol": "test",
     "contractAddr": "inj15993xgce2tml487uhx6u2df8ltskgdlghc8zx7",
     "decimals": 18,
     "isVerified": false,
@@ -20410,30 +20440,10 @@
     "isTrading": true
   },
   {
-    "name": "test",
-    "symbol": "test",
-    "contractAddr": "factory/inj1senn2rj7avpqerf0ha9xn7t6fmqlyr8hafu8ld/test",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "test",
-    "symbol": "test",
-    "contractAddr": "inj1qqn3urdskeq9mlm37c375978kv3rxgjx2kff9p",
+    "name": "Test",
+    "symbol": "TST",
+    "contractAddr": "inj17n0zrpvl3u67z4mphxq9qmhv6fuqs8sywxt04d",
     "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "test",
-    "symbol": "test",
-    "contractAddr": "inj1f59h6qh6vckz8asg307zajzrht948vlymesg8c",
-    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -20442,10 +20452,30 @@
   {
     "name": "Test",
     "symbol": "Test",
-    "contractAddr": "inj12pt3p50kgsn6p33cchf5qvlf9mw2y0del8fnj3",
+    "contractAddr": "inj1xnk5ca6u4hl9rfm2qretz6p5wjt3yptvng2jvd",
     "decimals": 18,
     "isVerified": false,
-    "numberOfPools": 2,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Test",
+    "symbol": "TEST",
+    "contractAddr": "inj1jnswzkkdvkc6chwzffggrlp69efghlqdha6jaq",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "Test",
+    "symbol": "TEST",
+    "contractAddr": "inj18ehdtnlrreg0ptdtvzx05nzpfvvjgnt8y95hns",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -20481,28 +20511,18 @@
   },
   {
     "name": "Test",
-    "symbol": "TST",
-    "contractAddr": "inj17n0zrpvl3u67z4mphxq9qmhv6fuqs8sywxt04d",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Test",
-    "symbol": "TEST",
-    "contractAddr": "inj1jnswzkkdvkc6chwzffggrlp69efghlqdha6jaq",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "Test",
     "symbol": "Test",
-    "contractAddr": "inj1xnk5ca6u4hl9rfm2qretz6p5wjt3yptvng2jvd",
+    "contractAddr": "inj12pt3p50kgsn6p33cchf5qvlf9mw2y0del8fnj3",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 2,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj15hvdwk0zxxl2uegnryswvxre7pufuluahrl6s6",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -20510,9 +20530,9 @@
     "isTrading": true
   },
   {
-    "name": "Test",
+    "name": "TEST",
     "symbol": "TEST",
-    "contractAddr": "inj18ehdtnlrreg0ptdtvzx05nzpfvvjgnt8y95hns",
+    "contractAddr": "inj1sp8f3hg3qtjr75qxm89fgawwnme6lvldqxrz87",
     "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
@@ -20521,9 +20541,9 @@
   },
   {
     "name": "TEST",
-    "symbol": "Test",
-    "contractAddr": "inj1m6ntlp05hxg6gvmkzyjej8a5at0jemamydzx4g",
-    "decimals": 8,
+    "symbol": "TEST",
+    "contractAddr": "inj17jwmn6gfrwvc9rz6atx3f3rc2g8zuxklcpw8za",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -20552,6 +20572,86 @@
   {
     "name": "TEST",
     "symbol": "TEST",
+    "contractAddr": "inj1h2ewqh3mjzm72sfrtvxhzd34kxn0qstc6phl4a",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1emeyr4q657cw6wu4twqx6c59mzfv00fkf9nukv",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1gaszym657k5mmxp3z5gaz2ze0drs6xv0dz6u6g",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj187xc89gy4ffsl2n8dme88dzrpgazfkf8kgjkmz",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj18jn6s6605pa42qgxqekhqtku56gcmf24n2y03k",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1jdn48px2andzq693c2uu4k3pnr9fm5rtywtvmz",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1s3w6k5snskregtfrjqdc2ee6t3llypw2yy4w3l",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "factory/inj1jc4zt6y82gy3n0j8g2mh9n3f7fwf35sj6jq5zu/TEST",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
     "contractAddr": "inj1savfv8nemxsp0870m0dsqgprcwwr447jrj2yh5",
     "decimals": 18,
     "isVerified": false,
@@ -20562,8 +20662,58 @@
   {
     "name": "TEST",
     "symbol": "TEST",
-    "contractAddr": "inj1h2ewqh3mjzm72sfrtvxhzd34kxn0qstc6phl4a",
+    "contractAddr": "inj1cjft36fxcspjdkcc5j45z6ucuqyxp7ky9ktu4f",
     "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "Test",
+    "contractAddr": "inj1m6ntlp05hxg6gvmkzyjej8a5at0jemamydzx4g",
+    "decimals": 8,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "factory/inj1qjjhhdn95u8s6tqqhx27n8g9vqtn6uhn63szp8/TEST",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1mpm6l6g77c0flupzynj4lqvktdh5xuj0g4arn6",
+    "decimals": 18,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1as2gqhf6ct8fms53uashc2jtaejlj79h3rem2a",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TEST",
+    "symbol": "TEST",
+    "contractAddr": "inj1cnqf8xld9a2tezf4sq56lc3f9kfs257s45fd29",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -20621,159 +20771,9 @@
   },
   {
     "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1jdn48px2andzq693c2uu4k3pnr9fm5rtywtvmz",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1cnqf8xld9a2tezf4sq56lc3f9kfs257s45fd29",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj17jwmn6gfrwvc9rz6atx3f3rc2g8zuxklcpw8za",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1as2gqhf6ct8fms53uashc2jtaejlj79h3rem2a",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1cjft36fxcspjdkcc5j45z6ucuqyxp7ky9ktu4f",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "factory/inj1qjjhhdn95u8s6tqqhx27n8g9vqtn6uhn63szp8/TEST",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "factory/inj1jc4zt6y82gy3n0j8g2mh9n3f7fwf35sj6jq5zu/TEST",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1emeyr4q657cw6wu4twqx6c59mzfv00fkf9nukv",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1gaszym657k5mmxp3z5gaz2ze0drs6xv0dz6u6g",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj18jn6s6605pa42qgxqekhqtku56gcmf24n2y03k",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj15hvdwk0zxxl2uegnryswvxre7pufuluahrl6s6",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1mpm6l6g77c0flupzynj4lqvktdh5xuj0g4arn6",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1s3w6k5snskregtfrjqdc2ee6t3llypw2yy4w3l",
-    "decimals": 18,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
     "symbol": "TEST13",
     "contractAddr": "factory/inj1mux0he68umjpcy8ltefeuxm9ha2ww3689rv2g4/TEST13",
     "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj1sp8f3hg3qtjr75qxm89fgawwnme6lvldqxrz87",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TEST",
-    "symbol": "TEST",
-    "contractAddr": "inj187xc89gy4ffsl2n8dme88dzrpgazfkf8kgjkmz",
-    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -20811,8 +20811,8 @@
   },
   {
     "name": "test2club",
-    "symbol": "testclubss",
-    "contractAddr": "inj1r0rkq2v70lur23jczassuqu5qwc5npcjpp3e8c",
+    "symbol": "teclub",
+    "contractAddr": "inj125hp6pmxyajhldefkrcmc87lx08kvwtag382ks",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -20821,8 +20821,8 @@
   },
   {
     "name": "test2club",
-    "symbol": "teclub",
-    "contractAddr": "inj125hp6pmxyajhldefkrcmc87lx08kvwtag382ks",
+    "symbol": "testclubss",
+    "contractAddr": "inj1r0rkq2v70lur23jczassuqu5qwc5npcjpp3e8c",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
@@ -21002,8 +21002,8 @@
   {
     "name": "Test Token",
     "symbol": "TEST",
-    "contractAddr": "inj1a6qdxdanekzgq6dluymlk7n7khg3dqq9lua9q9",
-    "decimals": 18,
+    "contractAddr": "factory/inj12qy3algm6e0zdpv8zxvauzquumuvd39ccdcdjt/TEST",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -21012,8 +21012,8 @@
   {
     "name": "Test Token",
     "symbol": "TEST",
-    "contractAddr": "factory/inj12qy3algm6e0zdpv8zxvauzquumuvd39ccdcdjt/TEST",
-    "decimals": 6,
+    "contractAddr": "inj1a6qdxdanekzgq6dluymlk7n7khg3dqq9lua9q9",
+    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -21591,8 +21591,28 @@
   },
   {
     "name": "TRUMP",
+    "symbol": "NINJATRUMP",
+    "contractAddr": "factory/inj1f95tm7382nhj42e48s427nevh3rkj64xe7da5z/NINJATRUMP",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 4,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TRUMP",
     "symbol": "TRUMP",
-    "contractAddr": "inj19l7z2pezzt0xn52w647zxrffyrqag02ft88grm",
+    "contractAddr": "inj15mfkraj8dhgye7s6gmrxm308w5z0ezd8pu2kef",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": null,
+    "isTrading": true
+  },
+  {
+    "name": "TRUMP",
+    "symbol": "trump",
+    "contractAddr": "inj1a6d54f5f737e8xs54qpxhs9v5l233n6qy9kyud",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 2,
@@ -21611,31 +21631,11 @@
   },
   {
     "name": "TRUMP",
-    "symbol": "trump",
-    "contractAddr": "inj1a6d54f5f737e8xs54qpxhs9v5l233n6qy9kyud",
+    "symbol": "TRUMP",
+    "contractAddr": "inj19l7z2pezzt0xn52w647zxrffyrqag02ft88grm",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 2,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TRUMP",
-    "symbol": "NINJATRUMP",
-    "contractAddr": "factory/inj1f95tm7382nhj42e48s427nevh3rkj64xe7da5z/NINJATRUMP",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 4,
-    "imageUrl": null,
-    "isTrading": true
-  },
-  {
-    "name": "TRUMP",
-    "symbol": "TRUMP",
-    "contractAddr": "inj15mfkraj8dhgye7s6gmrxm308w5z0ezd8pu2kef",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
     "imageUrl": null,
     "isTrading": true
   },
@@ -22041,6 +22041,16 @@
   },
   {
     "name": "USD Coin (Wormhole)",
+    "symbol": "USDC",
+    "contractAddr": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 1,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
+    "isTrading": true
+  },
+  {
+    "name": "USD Coin (Wormhole)",
     "symbol": "devUSDC",
     "contractAddr": "inj13mpkggs6t62kzt6pjd6guqfy6naljpp2jd3eue",
     "decimals": 8,
@@ -22058,16 +22068,6 @@
     "numberOfPools": 0,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
     "isTrading": false
-  },
-  {
-    "name": "USD Coin (Wormhole)",
-    "symbol": "USDC",
-    "contractAddr": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 1,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.svg",
-    "isTrading": true
   },
   {
     "name": "USDC / USDC.axl LP",
@@ -22092,22 +22092,22 @@
   {
     "name": "USDT",
     "symbol": "USDT",
-    "contractAddr": "ibc/7965483148018AFAA12DC569959897E7A5E474F4B41A87FFC5513B552C108DB5",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
-    "isTrading": false
-  },
-  {
-    "name": "USDT",
-    "symbol": "USDT",
     "contractAddr": "inj1tcgye8ekwd0fcnrwncdtt7k9r7eg7k824c0pdg",
     "decimals": 18,
     "isVerified": false,
     "numberOfPools": 2,
     "imageUrl": null,
     "isTrading": true
+  },
+  {
+    "name": "USDT",
+    "symbol": "USDT",
+    "contractAddr": "ibc/7965483148018AFAA12DC569959897E7A5E474F4B41A87FFC5513B552C108DB5",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.png",
+    "isTrading": false
   },
   {
     "name": "USD Tether (Multichain Bridge)",
@@ -22322,22 +22322,22 @@
   {
     "name": "WBTC",
     "symbol": "WBTC",
-    "contractAddr": "ibc/64431EE79F3216B8F7773A630549ADA852EA8E4B545D22BD35B0BF56FD5D5201",
-    "decimals": 6,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": null,
-    "isTrading": false
-  },
-  {
-    "name": "WBTC",
-    "symbol": "WBTC",
     "contractAddr": "peggy0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 4,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
     "isTrading": true
+  },
+  {
+    "name": "WBTC",
+    "symbol": "WBTC",
+    "contractAddr": "ibc/64431EE79F3216B8F7773A630549ADA852EA8E4B545D22BD35B0BF56FD5D5201",
+    "decimals": 6,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": null,
+    "isTrading": false
   },
   {
     "name": "WDDG",
@@ -22672,21 +22672,21 @@
   {
     "name": "Wrapped Bitcoin",
     "symbol": "WBTC",
-    "contractAddr": "ibc/4C8A332AE4FDE42709649B5F9A2A336192158C4465DF74B4513F5AD0C583EA6F",
-    "decimals": 8,
-    "isVerified": false,
-    "numberOfPools": 0,
-    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
-    "isTrading": false
-  },
-  {
-    "name": "Wrapped Bitcoin",
-    "symbol": "WBTC",
     "contractAddr": "ibc/A07BB73539F556DA5238F1B7E9471B34DD19897B1EE7050B959989F13EFE73B3",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 0,
     "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.png",
+    "isTrading": false
+  },
+  {
+    "name": "Wrapped Bitcoin",
+    "symbol": "WBTC",
+    "contractAddr": "ibc/4C8A332AE4FDE42709649B5F9A2A336192158C4465DF74B4513F5AD0C583EA6F",
+    "decimals": 8,
+    "isVerified": false,
+    "numberOfPools": 0,
+    "imageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
     "isTrading": false
   },
   {
@@ -22972,8 +22972,8 @@
   {
     "name": "XIII",
     "symbol": "XIII",
-    "contractAddr": "inj1zw35mh6q23cnxa0j6kdh2n4dtss795avxmn9kn",
-    "decimals": 6,
+    "contractAddr": "inj1cgmxmra82qtxxjypjesnvu43e7nf6ucv3njy9u",
+    "decimals": 18,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -22982,8 +22982,8 @@
   {
     "name": "XIII",
     "symbol": "XIII",
-    "contractAddr": "inj1cgmxmra82qtxxjypjesnvu43e7nf6ucv3njy9u",
-    "decimals": 18,
+    "contractAddr": "inj1zw35mh6q23cnxa0j6kdh2n4dtss795avxmn9kn",
+    "decimals": 6,
     "isVerified": false,
     "numberOfPools": 1,
     "imageUrl": null,
@@ -23022,7 +23022,7 @@
   {
     "name": "XmasPump (Wormhole)",
     "symbol": "XMASPUMP",
-    "contractAddr": "inj1yjtgs6a9nwsljwk958ypf2u7l5kqf5ld8h3tmd",
+    "contractAddr": "inj165lcmjswrkuz2m5p45wn00qz4k2zpq8r9axkp9",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
@@ -23032,7 +23032,7 @@
   {
     "name": "XmasPump (Wormhole)",
     "symbol": "XMASPUMP",
-    "contractAddr": "inj165lcmjswrkuz2m5p45wn00qz4k2zpq8r9axkp9",
+    "contractAddr": "inj1yjtgs6a9nwsljwk958ypf2u7l5kqf5ld8h3tmd",
     "decimals": 8,
     "isVerified": false,
     "numberOfPools": 1,
