@@ -169345,5 +169345,58 @@
   ],
   "22008": [],
   "22009": [],
-  "22010": []
+  "22010": [],
+  "22011": [
+    "receive",
+    "update_staking_config",
+    "update_poll_config",
+    "stake_governance_token_hook",
+    "unstake_governance_token",
+    "unstake_governance_token_hook",
+    "claim_unstaking",
+    "cast_vote",
+    "snapshot_poll",
+    "end_poll",
+    "execute_poll",
+    "run_execution",
+    "provide_reward",
+    "stake_governance_token",
+    "create_poll"
+  ],
+  "22012": [],
+  "22013": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "22014": [
+    "update_config",
+    "ask_order",
+    "bid_order",
+    "cancel_bid_order",
+    "cancel_ask_order",
+    "close_long_position_order",
+    "close_short_position_order",
+    "exercise"
+  ],
+  "22015": [
+    "receive",
+    "update_config",
+    "register_referral",
+    "register_rolling",
+    "expire_seasons",
+    "expire_seasons_hook",
+    "update_season",
+    "distribute_seasons",
+    "distribute_seasons_hook",
+    "force_claim_earning",
+    "claim_earning",
+    "claim_earning_hook",
+    "register_boost"
+  ]
 }
