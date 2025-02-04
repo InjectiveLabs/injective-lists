@@ -559,5 +559,14 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-387',
     source: TokenSource.Cosmos,
     hash: '00BF66BAB34873B07FB9EEEBCFACEA11FB4BB348718862AA7782D6DECC1F44C8'
+  },
+  {
+    ...symbolMeta.CHIHUAHUA,
+    isNative: true,
+    baseDenom: 'transfer/channel-113/factory/chihuahua1mzcfzh4ufk2cta59pm9a6wdyvv8c4v5epqzj46/Chihuahua',
+    channelId: "channel-8",
+    source: TokenSource.Cosmos,
+    path: "transfer/channel-8",
+    hash: "422AB9E8C589B6782DA0C3D3BA58FF938B3C26BEB2AE4068535AE82B361D095E",
   }
 ]
