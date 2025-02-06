@@ -373,5 +373,13 @@ export const untaggedSymbolMeta = {
     symbol: 'AIX',
     logo: 'aix.webp',
     coinGeckoId: ''
-  }
+  },
+
+  SPY: {
+    name: 'SPDR S&P 500 ETF TRUST',
+    decimals: 6,
+    symbol: 'SPY',
+    logo: 'spy.webp',
+    coinGeckoId: ''
+}
 }
