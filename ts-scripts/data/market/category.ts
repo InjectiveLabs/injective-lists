@@ -54,6 +54,13 @@ export const mainnetCategoryMap = {
     '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f' // gbp-usdt-perp
   ],
+  rwaMarkets: [
+    '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
+    '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
+    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
+    '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f', // gbp-usdt-perp
+    '0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4' // plume-usdt-perp
+  ],
   deprecated: [
     '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c', // sollegacy-usdt
     '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
@@ -203,6 +210,12 @@ export const testnetCategoryMap = {
     '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac' // gbp-usdt-perp
   ],
+  rwaMarkets: [
+    '0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934', // xau-usdt-perp
+    '0x0f03542809143c7e5d3c22f56bc6e51eb2c8bab5009161b58f6f468432dfa196', // xag-usdt-perp
+    '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
+    '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac' // gbp-usdt-perp
+  ],
   deprecated: [],
   trending: [],
   injective: [
@@ -230,6 +243,7 @@ export const devnetCategoryMap = {
     '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
   ],
   rwa: [],
+  rwaMarkets: [],
   deprecated: [],
   trending: [
     '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
