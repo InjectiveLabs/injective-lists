@@ -381,5 +381,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SPY',
     logo: 'spy.webp',
     coinGeckoId: ''
-}
+  },
+
+  BERA: {
+    name: 'Berachain',
+    decimals: 6,
+    symbol: 'BERA',
+    logo: 'bera.webp',
+    coinGeckoId: 'berachain-bera'
+  }
 }
