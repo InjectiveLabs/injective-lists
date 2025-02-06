@@ -38,7 +38,8 @@ export const mainnetMarketIds = [
   '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693', // nept-inj
   '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7', // ausd-usdt
   '0x609376b88fd2e6e37ffc2ac9d6858633ab1d6c90ec6d100f9d205d38e531f8ac', // ausd-usdc
-  '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e'  // inj-ausd
+  '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e', // inj-ausd
+  '0x894b2bcd69a8a70950a1b996a252dd3a1b0fb64598e3a23dc38e45e1b60f5e1a'  // bera-usdt
 ]
 
 export const devnetMarketIds = [
