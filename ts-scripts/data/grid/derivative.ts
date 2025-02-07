@@ -43,7 +43,10 @@ export const mainnetGridMarkets = [
     slug: 'sui-usdt-perp',
     contractAddress: 'inj18699yua5gdegs6juwg0fa2my548ukmz6a9a0tg'
   },
-
+  {
+    slug: 'bera-usdt-perp',
+    contractAddress: 'inj1dg0cmdfx6gjsqjyy0sd95nuzj77gkc5v25dmhe'
+  },
 ]
 export const stagingGridMarkets = []
 export const testnetGridMarkets = [
