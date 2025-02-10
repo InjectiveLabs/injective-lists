@@ -375,11 +375,11 @@ export const untaggedSymbolMeta = {
     coinGeckoId: ''
   },
 
-  SPY: {
-    name: 'SPDR S&P 500 ETF TRUST',
+  TRADFI: {
+    name: 'TradFi Stocks Index',
     decimals: 6,
-    symbol: 'SPY',
-    logo: 'spy.webp',
+    symbol: 'TradFi',
+    logo: 'tradfi.webp',
     coinGeckoId: ''
   },
 
