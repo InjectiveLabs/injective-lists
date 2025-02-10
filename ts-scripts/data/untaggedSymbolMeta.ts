@@ -383,6 +383,14 @@ export const untaggedSymbolMeta = {
     coinGeckoId: ''
   },
 
+  SPY: {
+    name: 'TradFi Stocks Index',
+    decimals: 6,
+    symbol: 'TradFi',
+    logo: 'tradfi.webp',
+    coinGeckoId: ''
+  },
+
   BERA: {
     name: 'Berachain',
     decimals: 6,
