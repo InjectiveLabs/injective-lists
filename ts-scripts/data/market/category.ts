@@ -49,14 +49,14 @@ export const mainnetCategoryMap = {
     '0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d', // ezeth-weth
     '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9' // saga-usd
   ],
-  rwa: [
+  rwa: [ // markets that show rwa modal
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
     '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f' // gbp-usdt-perp
   ],
-  rwaMarkets: [
+  rwaMarkets: [ // markets that appear in rwa category
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
@@ -101,9 +101,7 @@ export const mainnetCategoryMap = {
     '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0xde9b78988c8c8e254b9dcba60d71851b3676ecfff5a736ba8f8cb10cdee04fcd', // btc-ausd-perp
     '0x9540412c2611e77ea2e4c9216c9acd1f8a333492b01b3b8306ed274edeb55296', // ath-usdt-perp
-    '0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325', // hype-usdt-perp
-    '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d', // xmr-usdt-perp
-    '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd'  // xion-usdt-perp
+    '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d' // xmr-usdt-perp
   ],
   injective: [
     '0xe5bfc48fc29146d756c9dac69f096d56cc4fc5ae75c98c1ad045c3356d14eb82', // aix-usdt-perp
@@ -193,9 +191,6 @@ export const mainnetCategoryMap = {
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
     '0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217', // giga-inj
     '0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80', // mother-inj
-    '0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b', // mother-usdt-perp
-    '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8', // chillguy-usdt-perp
-    '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f', // moodeng-usdt-perp
     '0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88' // wif-usdt-perp
   ]
 }
