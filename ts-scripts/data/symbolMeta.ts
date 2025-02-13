@@ -2141,5 +2141,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'chihuahua.png',
     symbol: 'CHIHUAHUA',
     coinGeckoId: '',
+  },
+
+  BILLS: {
+    decimals: 9,
+    name: 'Billion Dollar Coin',
+    logo: 'bills.webp',
+    symbol: 'BILLS',
+    coinGeckoId: '',
   }
 }
