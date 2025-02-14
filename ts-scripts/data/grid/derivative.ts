@@ -46,13 +46,17 @@ export const mainnetGridMarkets = [
   {
     slug: 'bera-usdt-perp',
     contractAddress: 'inj1dg0cmdfx6gjsqjyy0sd95nuzj77gkc5v25dmhe'
+  },
+  {
+    slug: 'tradfi-usdt-perp',
+    contractAddress: 'inj1fghrw4qnsevqe7dvu6wlzr42n4z84s9ztfca88'
   }
 ]
 export const stagingGridMarkets = []
 export const testnetGridMarkets = [
   {
     slug: 'inj-usdt-perp',
-    contractAddress: 'inj1x7xmvg0cv7t4zvj79yz95jz4xmv9r6dkmu2sn0'
+    contractAddress: 'inj1hcsytnq2salprkkscr73fzj7y9p8srgpncjhqx'
   },
   {
     slug: 'btc-usdt-perp',
@@ -92,3 +96,5 @@ export const testnetGridMarkets = [
   }
 ]
 export const devnetGridMarkets = []
+
+
