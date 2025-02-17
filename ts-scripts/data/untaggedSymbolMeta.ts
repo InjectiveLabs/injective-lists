@@ -397,5 +397,13 @@ export const untaggedSymbolMeta = {
     symbol: 'BERA',
     logo: 'bera.webp',
     coinGeckoId: 'berachain-bera'
+  },
+
+  OM: {
+    name: 'MANTRA',
+    decimals: 6,
+    symbol: 'OM',
+    logo: 'om.webp',
+    coinGeckoId: 'mantra-dao'
   }
 }
