@@ -2149,5 +2149,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'bills.webp',
     symbol: 'BILLS',
     coinGeckoId: '',
+  },
+
+  JNI: {
+    decimals: 18,
+    symbol: 'JNI',
+    name: 'JNI',
+    logo: 'jni.svg',
+    coinGeckoId: ''
   }
 }
