@@ -2093,5 +2093,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'ShroomAI',
     logo: 'sai.webp',
     coinGeckoId: ''
+  },
+
+  JNI: {
+    decimals: 18,
+    symbol: 'JNI',
+    name: 'JNI',
+    logo: 'jni.svg',
+    coinGeckoId: ''
   }
 }
