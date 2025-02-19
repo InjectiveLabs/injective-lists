@@ -405,5 +405,13 @@ export const untaggedSymbolMeta = {
     symbol: 'OM',
     logo: 'om.webp',
     coinGeckoId: 'mantra-dao'
+  },
+
+  L1X: {
+    name: 'Helix L1 Index',
+    decimals: 6,
+    symbol: 'L1X',
+    logo: 'l1x.webp',
+    coinGeckoId: ''
   }
 }
