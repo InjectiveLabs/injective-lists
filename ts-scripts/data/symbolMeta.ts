@@ -2157,5 +2157,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'JNI',
     logo: 'jni.svg',
     coinGeckoId: ''
-  }
+  },
+
+  Pedro: {
+    decimals: 18,
+    symbol: 'Pedro',
+    name: 'Pedro',
+    logo: 'Pedro.png',
+    coinGeckoId: ''
+  },
 }
