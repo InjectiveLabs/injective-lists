@@ -413,5 +413,13 @@ export const untaggedSymbolMeta = {
     symbol: 'L1X',
     logo: 'l1x.webp',
     coinGeckoId: ''
+  },
+
+  KAITO: {
+    name: 'KAITO',
+    decimals: 6,
+    symbol: 'KAITO',
+    logo: 'kaito.webp',
+    coinGeckoId: 'kaito'
   }
 }
