@@ -477,7 +477,7 @@ export const mainnetTokens: TokenFactorySource[] = [
   },
   {
     ...symbolMeta.BILLS,
-    creator: 'inj1tftz6v2y7ch8cygt2qpaguhpt2k35ka3m6paqk'
+    creator: 'inj1y68qhgmkca9szmxwl2j7y83wyl4prm7vru5vtf'
   },
   {
     ...symbolMeta.JNI,
