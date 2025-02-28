@@ -421,5 +421,21 @@ export const untaggedSymbolMeta = {
     symbol: 'KAITO',
     logo: 'kaito.webp',
     coinGeckoId: 'kaito'
+  },
+
+  iNVDA: {
+    name: 'NVIDIA iAsset',
+    decimals: 6,
+    symbol: 'iNVDA',
+    logo: 'invda.webp',
+    coinGeckoId: ''
+  },
+
+  TTI: {
+    name: 'TradFi Tech Index',
+    decimals: 6,
+    symbol: 'TTI',
+    logo: 'tti.webp',
+    coinGeckoId: ''
   }
 }
