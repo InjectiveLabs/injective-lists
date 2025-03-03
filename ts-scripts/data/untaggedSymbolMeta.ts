@@ -437,5 +437,13 @@ export const untaggedSymbolMeta = {
     symbol: 'TTI',
     logo: 'tti.webp',
     coinGeckoId: ''
+  },
+
+  LTC: {
+    name: 'Litecoin',
+    decimals: 6,
+    symbol: 'LTC',
+    logo: 'ltc.webp',
+    coinGeckoId: 'litecoin' 
   }
 }
