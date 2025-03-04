@@ -4,5 +4,5 @@ export const restrictedAddresses: string[] = [
   '0x8aa07899eb940f40e514b8effdb3b6af5d1cf7bb',
   '0xb9436d76e8fe08859d042e41b4a21c85715e1176',
   '0x7bc5cb059f21553af489d2b2df3d40aaae9b44e8', // inj100zukpvly92n4ayf62ed702q42hfk38ged8hdv
-  '0x430ab3c698b3210548b6ac9f72936b43b15ebe9b' // inj100zukpvly92n4ayf62ed702q42hfk38ged8hdv
+  '0x430ab3c698b3210548b6ac9f72936b43b15ebe9b' // inj1gv9t835ckvss2j9k4j0h9ymtgwc4a05mk2y6pk
 ]
