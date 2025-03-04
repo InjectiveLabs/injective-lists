@@ -147990,5 +147990,73 @@
   ],
   "26072": [
     "config"
+  ],
+  "26073": [
+    "config",
+    "bids",
+    "asks",
+    "locked_amount",
+    "position"
+  ],
+  "26074": [
+    "config",
+    "bids",
+    "asks",
+    "locked_amount",
+    "position"
+  ],
+  "26075": [
+    "config"
+  ],
+  "26076": [
+    "balance",
+    "token_info",
+    "minter",
+    "allowance",
+    "all_allowances",
+    "all_accounts",
+    "marketing_info",
+    "download_logo"
+  ],
+  "26077": [
+    "get_config",
+    "get_all_tokens",
+    "get_cw20_address",
+    "get_denom"
+  ],
+  "26078": [
+    "get_config",
+    "get_all_tokens",
+    "get_cw20_address",
+    "get_denom"
+  ],
+  "26079": [
+    "test_exchange_params_query",
+    "test_spot_market_query",
+    "test_derivative_market_query",
+    "test_sub_account_deposit_query",
+    "test_effective_subaccount_position",
+    "test_vanilla_subaccount_position",
+    "test_trader_derivative_orders",
+    "test_trader_spot_orders",
+    "test_spot_orders_to_cancel_up_to_amount",
+    "test_derivative_orders_to_cancel_up_to_amount",
+    "test_perpetual_market_info",
+    "test_perpetual_market_funding",
+    "test_market_volatility",
+    "test_derivative_market_mid_price_and_tob",
+    "test_aggregate_market_volume",
+    "test_aggregate_account_volume",
+    "test_spot_market_mid_price_and_tob",
+    "test_spot_market_orderbook",
+    "test_derivative_market_orderbook",
+    "test_market_atomic_execution_fee_multiplier",
+    "test_query_oracle_volatility",
+    "test_query_oracle_price",
+    "test_query_pyth_price",
+    "test_query_staked_amount",
+    "test_query_token_factory_denom_total_supply",
+    "test_query_token_factory_creation_fee",
+    "test_query_contract_registration_info"
   ]
 }
