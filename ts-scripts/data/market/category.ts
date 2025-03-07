@@ -54,7 +54,9 @@ export const mainnetCategoryMap = {
     '0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d', // ezeth-weth
     '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9' // saga-usd
   ],
-  iAssets: [],
+  iAssets: [
+    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1' // invda-usdt-perp
+  ],
   rwa: [
     // markets that show rwa modal
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
