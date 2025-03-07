@@ -1,5 +1,45 @@
 [
   {
+    "oracleBase": "Tlj",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.02",
+    "maintenanceMarginRatio": "0.01",
+    "isPerpetual": true,
+    "marketId": "0x05f823fd4ab5b5b50b92cab38b983d2d10580db8af4c948f24375c5af6647a1d",
+    "marketStatus": "active",
+    "ticker": "Tlj/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "updatedAt": "-6795364578871",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1741377600,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1741376827
+    }
+  },
+  {
     "oracleBase": "COMP",
     "oracleQuote": "USD",
     "oracleType": "coinbase",
@@ -17,7 +57,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -35,8 +75,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "5198072.810955435258795467",
-      "lastTimestamp": 1741375953
+      "cumulativePrice": "5198084.166819250599744067",
+      "lastTimestamp": 1741376840
     }
   },
   {
@@ -57,7 +97,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -97,7 +137,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -115,8 +155,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "1317742.809095370537064782",
-      "lastTimestamp": 1741375949
+      "cumulativePrice": "1317796.035238306036145661",
+      "lastTimestamp": 1741376795
     }
   },
   {
@@ -137,7 +177,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -155,8 +195,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "-1157.228179679653912675",
-      "lastTimestamp": 1741375955
+      "cumulativePrice": "-1195.964954767412404475",
+      "lastTimestamp": 1741376840
     }
   },
   {
@@ -177,7 +217,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -250,7 +290,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -290,7 +330,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -330,7 +370,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -370,7 +410,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -410,7 +450,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -490,7 +530,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -508,8 +548,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "2887848.499730884551664595",
-      "lastTimestamp": 1741375932
+      "cumulativePrice": "2887816.380721089151901836",
+      "lastTimestamp": 1741376822
     }
   },
   {
@@ -530,7 +570,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -570,7 +610,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -588,8 +628,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "575692.401470421407369505",
-      "lastTimestamp": 1741375951
+      "cumulativePrice": "575657.788807861516883576",
+      "lastTimestamp": 1741376830
     }
   },
   {
@@ -610,7 +650,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -690,7 +730,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -730,7 +770,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -770,7 +810,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -810,7 +850,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -833,6 +873,46 @@
     }
   },
   {
+    "oracleBase": "mij",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.02",
+    "maintenanceMarginRatio": "0.01",
+    "isPerpetual": true,
+    "marketId": "0x96f0f6102370bfb78972618657d2117ff3bf001aac2de1bebdcf42a94486142c",
+    "marketStatus": "active",
+    "ticker": "mij/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "updatedAt": "1741376690686",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1741377600,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "0",
+      "lastTimestamp": 1741376784
+    }
+  },
+  {
     "oracleBase": "ETH",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -850,7 +930,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -868,8 +948,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "2722605.153322496946834794",
-      "lastTimestamp": 1741375939
+      "cumulativePrice": "2722641.099190725506147765",
+      "lastTimestamp": 1741376844
     }
   },
   {
@@ -890,7 +970,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -930,7 +1010,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -948,8 +1028,8 @@
     },
     "perpetualMarketFunding": {
       "cumulativeFunding": "0",
-      "cumulativePrice": "-826648.270660469206650789",
-      "lastTimestamp": 1741375952
+      "cumulativePrice": "-826687.721946187602061062",
+      "lastTimestamp": 1741376841
     }
   },
   {
@@ -970,7 +1050,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1010,7 +1090,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1050,7 +1130,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1090,7 +1170,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1130,7 +1210,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1163,7 +1243,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1203,7 +1283,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1243,7 +1323,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1266,6 +1346,46 @@
     }
   },
   {
+    "oracleBase": "amw",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.02",
+    "maintenanceMarginRatio": "0.01",
+    "isPerpetual": true,
+    "marketId": "0xf5c4ae5b306c295e2fa25e789175aa9181d6fc6c3ee0cd11d202ec8064dd66f3",
+    "marketStatus": "active",
+    "ticker": "amw/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "updatedAt": "1741376690686",
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000,
+    "perpetualMarketInfo": {
+      "hourlyFundingRateCap": "0.000625",
+      "hourlyInterestRate": "0.00000416666",
+      "nextFundingTimestamp": 1741377600,
+      "fundingInterval": 3600
+    },
+    "perpetualMarketFunding": {
+      "cumulativeFunding": "0",
+      "cumulativePrice": "1.666666666666666665",
+      "lastTimestamp": 1741376744
+    }
+  },
+  {
     "oracleBase": "ATOM",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -1283,7 +1403,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1323,7 +1443,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1363,7 +1483,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -1403,7 +1523,7 @@
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
-      "updatedAt": "1741375789760",
+      "updatedAt": "1741376690686",
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
