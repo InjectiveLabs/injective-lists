@@ -424,10 +424,10 @@ export const untaggedSymbolMeta = {
   },
 
   iNVDA: {
-    name: 'NVIDIA iAsset',
+    name: 'NVIDIA',
     decimals: 6,
     symbol: 'iNVDA',
-    logo: 'invda.webp',
+    logo: 'nvidia.webp',
     coinGeckoId: ''
   },
 
@@ -444,6 +444,6 @@ export const untaggedSymbolMeta = {
     decimals: 6,
     symbol: 'LTC',
     logo: 'ltc.webp',
-    coinGeckoId: 'litecoin' 
+    coinGeckoId: 'litecoin'
   }
 }
