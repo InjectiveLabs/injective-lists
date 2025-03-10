@@ -432,7 +432,7 @@ export const untaggedSymbolMeta = {
   },
 
   TTI: {
-    name: 'TradFi Tech Index',
+    name: 'TradFi Tech Stock Index',
     decimals: 6,
     symbol: 'TTI',
     logo: 'tti.webp',

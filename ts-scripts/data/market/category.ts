@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006', // om-usdt-perp
     '0xf12a831d2901a1c1130fb81c88c3b443c62be3cd14547625f2db8a5f2b187d2c', // l1x-usdt-perp
@@ -59,6 +60,7 @@ export const mainnetCategoryMap = {
   ],
   rwa: [
     // markets that show rwa modal
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
@@ -68,6 +70,8 @@ export const mainnetCategoryMap = {
   ],
   tradfiMarkets: [
     // markets that appear in rwa category
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
+    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
@@ -104,6 +108,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006', // om-usdt-perp
     '0xf12a831d2901a1c1130fb81c88c3b443c62be3cd14547625f2db8a5f2b187d2c', // l1x-usdt-perp
@@ -197,6 +202,7 @@ export const mainnetCategoryMap = {
     '0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d' // pyth-usdt-perp
   ],
   ai: [
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0xf4c788c83bd57e4dd4ff092b8d6e6a9f55b5b7584090043e18d5b02c70fbd5f6', // katio-usdt-perp
     '0xe5bfc48fc29146d756c9dac69f096d56cc4fc5ae75c98c1ad045c3356d14eb82', // aix-usdt-perp
