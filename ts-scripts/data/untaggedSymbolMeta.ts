@@ -445,5 +445,13 @@ export const untaggedSymbolMeta = {
     symbol: 'LTC',
     logo: 'ltc.webp',
     coinGeckoId: 'litecoin'
+  },
+  
+  iMCD: {
+    name: 'McDonalds',
+    decimals: 6,
+    symbol: 'iMCD',
+    logo: 'mcd.webp',
+    coinGeckoId: ''
   }
 }
