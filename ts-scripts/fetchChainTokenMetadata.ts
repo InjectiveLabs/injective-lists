@@ -5,10 +5,11 @@ import {
 } from '@injectivelabs/networks'
 import {
   Metadata,
-  Validator,
   TokenType,
+  SpotMarket,
   InsuranceFund,
   ChainGrpcBankApi,
+  DerivativeMarket,
   TokenVerification,
   IndexerGrpcSpotApi,
   ChainGrpcStakingApi,
@@ -17,13 +18,13 @@ import {
   ChainGrpcInsuranceFundApi,
   IndexerGrpcDerivativesApi
 } from '@injectivelabs/sdk-ts'
-import { symbolMeta } from './data/symbolMeta'
-import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import {
   readJSONFile,
   updateJSONFile,
   getNetworkFileName
 } from './helper/utils'
+import { symbolMeta } from './data/symbolMeta'
+import { untaggedSymbolMeta } from './data/untaggedSymbolMeta'
 import { Token } from './types'
 
 const LIMIT = 10000
@@ -144,10 +145,16 @@ export const fetchValidators = async (network: Network) => {
       limit: LIMIT
     })
 
+    const formattedValidators = validators.map((validator) => {
+      const { tokens, delegatorShares, ...restOfValidator } = validator
+
+      return restOfValidator
+    })
+
     // cache data in case of api error
     await updateJSONFile(
       `data/validators/${getNetworkFileName(network)}.json`,
-      validators.sort((a: Validator, b: Validator) =>
+      formattedValidators.sort((a: any, b: any) =>
         a.operatorAddress.localeCompare(b.operatorAddress)
       )
     )
@@ -183,13 +190,31 @@ export const fetchSpotMarkets = async (network: Network) => {
   const indexerSpotApi = new IndexerGrpcSpotApi(endpoints.indexer)
 
   try {
-    const markets = await indexerSpotApi.fetchMarkets({
+    const markets = (await indexerSpotApi.fetchMarkets({
       marketStatuses: ['active', 'paused', 'suspended', 'demolished', 'expired']
+    })) as SpotMarket[]
+
+    const formattedMarkets = markets.map((market: any) => {
+      if (market.baseToken) {
+        const { updatedAt: baseUpdatedAt, ...restOfBaseToken } =
+          market.baseToken
+
+        market.baseToken = restOfBaseToken
+      }
+
+      if (market.quoteToken) {
+        const { updatedAt: quoteUpdatedAt, ...restOfQuoteToken } =
+          market.quoteToken
+
+        market.quoteToken = restOfQuoteToken
+      }
+
+      return market
     })
 
     await updateJSONFile(
       `data/market/spot/${getNetworkFileName(network)}.json`,
-      markets.sort((a, b) => a.marketId.localeCompare(b.marketId))
+      formattedMarkets.sort((a, b) => a.marketId.localeCompare(b.marketId))
     )
 
     console.log(`✅✅✅ fetchSpotMarkets ${network}`)
@@ -203,13 +228,26 @@ export const fetchDerivativeMarkets = async (network: Network) => {
   const indexerDerivativeApi = new IndexerGrpcDerivativesApi(endpoints.indexer)
 
   try {
-    const markets = await indexerDerivativeApi.fetchMarkets({
+    const markets = (await indexerDerivativeApi.fetchMarkets({
       marketStatuses: ['active', 'paused', 'suspended', 'demolished', 'expired']
+    })) as DerivativeMarket[]
+
+    const formattedMarkets = markets.map((market: any) => {
+      const {
+        perpetualMarketInfo,
+        nextFundingTimestamp,
+        perpetualMarketFunding,
+        ...restOfMarket
+      } = market
+
+      const { updatedAt, ...restOfQuoteToken } = market.quoteToken
+
+      return { ...restOfMarket, quoteToken: restOfQuoteToken }
     })
 
     await updateJSONFile(
       `data/market/derivative/${getNetworkFileName(network)}.json`,
-      markets.sort((a, b) => a.marketId.localeCompare(b.marketId))
+      formattedMarkets.sort((a, b) => a.marketId.localeCompare(b.marketId))
     )
 
     console.log(`✅✅✅ fetchDerivativeMarkets ${network}`)
@@ -218,21 +256,21 @@ export const fetchDerivativeMarkets = async (network: Network) => {
   }
 }
 
-fetchBankMetadata(Network.Devnet)
-fetchBankMetadata(Network.TestnetSentry)
-fetchBankMetadata(Network.MainnetSentry)
-fetchSupplyDenoms(Network.Devnet)
-fetchSupplyDenoms(Network.TestnetSentry)
-fetchSupplyDenoms(Network.MainnetSentry)
-fetchInsuranceFunds(Network.Devnet)
-fetchInsuranceFunds(Network.TestnetSentry)
-fetchInsuranceFunds(Network.MainnetSentry)
+// fetchBankMetadata(Network.Devnet)
+// fetchBankMetadata(Network.TestnetSentry)
+// fetchBankMetadata(Network.MainnetSentry)
+// fetchSupplyDenoms(Network.Devnet)
+// fetchSupplyDenoms(Network.TestnetSentry)
+// fetchSupplyDenoms(Network.MainnetSentry)
+// fetchInsuranceFunds(Network.Devnet)
+// fetchInsuranceFunds(Network.TestnetSentry)
+// fetchInsuranceFunds(Network.MainnetSentry)
 fetchValidators(Network.Devnet)
 fetchValidators(Network.TestnetSentry)
 fetchValidators(Network.MainnetSentry)
-fetchTokenCw20Denoms(Network.Devnet)
-fetchTokenCw20Denoms(Network.TestnetSentry)
-fetchTokenCw20Denoms(Network.MainnetSentry)
+// fetchTokenCw20Denoms(Network.Devnet)
+// fetchTokenCw20Denoms(Network.TestnetSentry)
+// fetchTokenCw20Denoms(Network.MainnetSentry)
 fetchSpotMarkets(Network.Devnet)
 fetchSpotMarkets(Network.TestnetSentry)
 fetchSpotMarkets(Network.MainnetSentry)

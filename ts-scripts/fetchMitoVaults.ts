@@ -27,10 +27,30 @@ export const fetchMitoVaults = async (network: Network) => {
 
     const response = await mitoApi.fetchVaults({ limit: 100 })
 
+    const formattedVaults = response.vaults.map((vault) => {
+      const {
+        apy,
+        apyue,
+        apy7D,
+        apyV3,
+        profits,
+        apy7DFq,
+        createdAt,
+        updatedAt,
+        currentTvl,
+        lpTokenPrice,
+        totalLpAmount,
+        subaccountInfo,
+        ...restOfVault
+      } = vault
+
+      return restOfVault
+    })
+
     // // cache data in case of api error
     await updateJSONFile(
       `data/mito/${getNetworkFileName(network)}.json`,
-      response.vaults.sort((a, b) =>
+      formattedVaults.sort((a, b) =>
         a.contractAddress.localeCompare(b.contractAddress)
       )
     )
