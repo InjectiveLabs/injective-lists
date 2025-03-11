@@ -1,7 +1,7 @@
 import { Network, getNetworkEndpoints } from '@injectivelabs/networks'
 import {
+  TxGrpcApi,
   BaseAccount,
-  TxGrpcClient,
   ChainRestAuthApi,
   createTransaction,
   MsgExecuteContractCompat
@@ -99,7 +99,7 @@ export const fetchWasmExecuteMessages = async (
 ) => {
   try {
     const endpoints = getNetworkEndpoints(network)
-    const txService = new TxGrpcClient(endpoints.grpc)
+    const txService = new TxGrpcApi(endpoints.grpc)
     const injectiveAddress = getFeePayerInjectiveAddress(network)
 
     const accountDetails = (
