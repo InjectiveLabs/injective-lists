@@ -32,7 +32,7 @@ jobs:
       - name: Refetch OFAC lists
         uses: borales/actions-yarn@v4
         with:
-          cmd: wallets:ofac
+          cmd: fetch:wallets:ofac
           dir: "ts-scripts"
 
       - name: Commit changes
