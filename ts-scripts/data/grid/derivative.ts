@@ -95,6 +95,11 @@ export const testnetGridMarkets = [
     contractAddress: 'inj1swgsh0qvg9sq37hwxlhku3e5x6u98qmyy3xdye'
   }
 ]
-export const devnetGridMarkets = []
+export const devnetGridMarkets = [
+  {
+    slug: 'inj-usdt-perp',
+    contractAddress: 'inj1lqgdq9u8zhcvwwwz3xjswactrtq6qzpt0q78tk'
+  }
+]
 
 
