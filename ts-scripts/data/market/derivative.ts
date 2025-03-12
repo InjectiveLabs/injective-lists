@@ -61,7 +61,9 @@ export const mainnetMarketIds: string[] = [
   '0x639fb43887ededd06e28f3c0d0dec62caca5c4e1cac31765f19af07c4ad999c2' // buidl-usdt-perp
 ]
 
-export const devnetMarketIds: string[] = []
+export const devnetMarketIds: string[] = [
+  '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4' // inj-usdt-perp
+]
 
 export const stagingMarketIds: string[] = [
   '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
