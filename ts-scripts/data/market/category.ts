@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340', // imcd-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006', // om-usdt-perp
@@ -56,10 +57,12 @@ export const mainnetCategoryMap = {
     '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9' // saga-usd
   ],
   iAssets: [
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340', // imcd-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1' // invda-usdt-perp
   ],
   rwa: [
     // markets that show rwa modal
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340', // imcd-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
@@ -70,6 +73,7 @@ export const mainnetCategoryMap = {
   ],
   tradfiMarkets: [
     // markets that appear in rwa category
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340', // imcd-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
@@ -108,6 +112,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340', // imcd-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
     '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006', // om-usdt-perp
@@ -211,7 +216,6 @@ export const mainnetCategoryMap = {
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
   ],
   meme: [
-    '0xf99ac012c3e97f434fe0d0ba4948fef763635bb06de5e3c43abc7f1da7c427a8', // melania-usdt-perp
     '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
