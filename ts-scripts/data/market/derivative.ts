@@ -62,7 +62,9 @@ export const mainnetMarketIds: string[] = [
 ]
 
 export const devnetMarketIds: string[] = [
-  '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4' // inj-usdt-perp
+  '0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4', // inj-usdt-perp
+  '0x1f73e21972972c69c03fb105a5864592ac2b47996ffea3c500d1ea2d20138717', // link-usdt-perp
+  '0x56d0c0293c4415e2d48fc2c8503a56a0c7389247396a2ef9b0a48c01f0646705' // atom-usdt-perp
 ]
 
 export const stagingMarketIds: string[] = [
