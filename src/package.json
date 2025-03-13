@@ -18,7 +18,7 @@
     "generate:restriction": "ts-node ./ts-scripts/generate/restrictionList",
     "generate:wasm:query": "ts-node ./ts-scripts/generate/wasmQueryMessages",
     "generate:verifiedDenoms": "ts-node ./ts-scripts/generate/verifiedDenoms",
-    "generate:wasm:execute": "ts-node ./ts-scripts/generate/WasmExecuteMessages",
+    "generate:wasm:execute": "ts-node ./ts-scripts/generate/wasmExecuteMessages",
     "generate:tokens:static": "ts-node ./ts-scripts/generate/tokens/staticTokens",
     "generate:tokens:supply": "ts-node ./ts-scripts/generate/tokens/supplyTokens",
     "generate:tokens:factory": "ts-node ./ts-scripts/generate/tokens/factoryTokens",
