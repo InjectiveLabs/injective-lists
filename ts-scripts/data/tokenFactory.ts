@@ -482,5 +482,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.JNI,
     creator: 'inj1fefpnm6pklz3av6zzjmr5z070779a9m4sx384v'
+  },
+  {
+    ...symbolMeta.PEDRO,
+    creator: 'inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk'
   }
 ]
