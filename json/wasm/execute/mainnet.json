@@ -4276,7 +4276,14 @@
     "withdraw"
   ],
   "741": [],
-  "742": [],
+  "742": [
+    "receive",
+    "deposit",
+    "harvest",
+    "update_config",
+    "final_withdraw",
+    "flip_allow_claim"
+  ],
   "743": [
     "transfer_from",
     "transfer",
@@ -6345,7 +6352,17 @@
     "update_settings",
     "update_ownership"
   ],
-  "1097": [],
+  "1097": [
+    "use",
+    "receive",
+    "withdraw_funds",
+    "update_private_phase",
+    "update_public_phase",
+    "pause",
+    "withdraw_from_reserve",
+    "update_candy_settings",
+    "update_ownership"
+  ],
   "1098": [
     "create_offer",
     "edit_offer",
@@ -6431,7 +6448,25 @@
   "1107": [],
   "1108": [],
   "1109": [],
-  "1110": [],
+  "1110": [
+    "update_ownership",
+    "update_minter_ownership",
+    "update_creator_ownership",
+    "update_collection_info",
+    "transfer_nft",
+    "send_nft",
+    "approve",
+    "revoke",
+    "approve_all",
+    "revoke_all",
+    "mint",
+    "burn",
+    "update_extension",
+    "update_nft_info",
+    "set_withdraw_address",
+    "remove_withdraw_address",
+    "withdraw_funds"
+  ],
   "1111": [
     "receive_nft",
     "pause",
@@ -6528,7 +6563,10 @@
     "add_admin",
     "remove_admin"
   ],
-  "1118": [],
+  "1118": [
+    "add_wallet",
+    "remove_wallet"
+  ],
   "1119": [],
   "1120": [],
   "1121": [],
@@ -6540,12 +6578,49 @@
   "1127": [],
   "1128": [],
   "1129": [],
-  "1130": [],
-  "1131": [],
-  "1132": [],
+  "1130": [
+    "propose",
+    "vote",
+    "execute",
+    "close",
+    "member_changed_hook"
+  ],
+  "1131": [
+    "update_admin",
+    "update_members",
+    "add_hook",
+    "remove_hook"
+  ],
+  "1132": [
+    "set_config",
+    "set_mint_price",
+    "set_rounds",
+    "set_creator_address",
+    "set_nft_address",
+    "mint",
+    "mint_send",
+    "update_whitelist",
+    "update_remaining_tokens",
+    "eject",
+    "set_ibc_random",
+    "set_ibc_transfer_amount",
+    "request_random",
+    "receive_random",
+    "refund_mints",
+    "admin_process_queue",
+    "update_ownership"
+  ],
   "1133": [],
   "1134": [],
-  "1135": [],
+  "1135": [
+    "update_config",
+    "update_bot_address",
+    "update_market_id",
+    "update_market_id_info",
+    "user_provide_liquidity",
+    "receive",
+    "batch_update_orders"
+  ],
   "1136": [],
   "1137": [],
   "1138": [
@@ -6566,7 +6641,17 @@
     "cancel"
   ],
   "1141": [],
-  "1142": [],
+  "1142": [
+    "bond",
+    "unbond",
+    "rebond",
+    "claim_unbonded",
+    "claim_rewards",
+    "claim_token_unlock",
+    "cascade",
+    "set_params",
+    "set_config"
+  ],
   "1143": [
     "receive",
     "set_config",
@@ -6611,14 +6696,34 @@
     "swap_rewards",
     "inject"
   ],
-  "1145": [],
+  "1145": [
+    "append_rewards",
+    "claim_reward",
+    "create_campaign",
+    "create_round",
+    "finalize_campaign",
+    "unfinalize_campaign",
+    "fund_campaign",
+    "update_campaign",
+    "update_round",
+    "add_admin",
+    "remove_admin",
+    "deprecate_campaign"
+  ],
   "1146": [],
   "1147": [],
   "1148": [],
   "1149": [],
   "1150": [],
-  "1151": [],
-  "1152": [],
+  "1151": [
+    "ics721_receive_packet_msg"
+  ],
+  "1152": [
+    "update_config",
+    "send_funds",
+    "invoke_send_nft",
+    "receive_nft"
+  ],
   "1153": [],
   "1154": [],
   "1155": [],
@@ -6631,7 +6736,13 @@
   ],
   "1157": [],
   "1158": [],
-  "1159": [],
+  "1159": [
+    "claim",
+    "vest_tokens",
+    "change_admin",
+    "change_instant_claim_percents",
+    "change_lock_minutes"
+  ],
   "1160": [
     "update_admin",
     "update_members",
@@ -6761,13 +6872,28 @@
     "update_param",
     "update_allowed_denom"
   ],
-  "1177": [],
-  "1178": [],
+  "1177": [
+    "place_bet",
+    "update_desc",
+    "claim_bet",
+    "resolve",
+    "cancel"
+  ],
+  "1178": [
+    "update_fee_address",
+    "receive",
+    "extend",
+    "unstake"
+  ],
   "1179": [],
   "1180": [],
   "1181": [],
   "1182": [],
-  "1183": [],
+  "1183": [
+    "ownable",
+    "set_validators",
+    "unset_domain"
+  ],
   "1184": [
     "user_provide_liquidity",
     "receive",
@@ -6796,8 +6922,29 @@
     "update_batch_info"
   ],
   "1185": [],
-  "1186": [],
-  "1187": [],
+  "1186": [
+    "setup",
+    "handle_call_message",
+    "cross_transfer",
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "burn_from",
+    "send_from",
+    "mint",
+    "update_minter",
+    "set_adapter"
+  ],
+  "1187": [
+    "place_bet",
+    "update_desc",
+    "claim_bet",
+    "resolve",
+    "cancel"
+  ],
   "1188": [],
   "1189": [],
   "1190": [
@@ -6903,8 +7050,15 @@
   "1206": [],
   "1207": [],
   "1208": [],
-  "1209": [],
-  "1210": [],
+  "1209": [
+    "ics721_ack_callback",
+    "mint",
+    "from_arkite",
+    "owner"
+  ],
+  "1210": [
+    "owner"
+  ],
   "1211": [],
   "1212": [],
   "1213": [
@@ -6962,16 +7116,99 @@
   "1221": [
     "owner"
   ],
-  "1222": [],
-  "1223": [],
-  "1224": [],
-  "1225": [],
-  "1226": [],
-  "1227": [],
-  "1228": [],
+  "1222": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
+  "1223": [
+    "update_config",
+    "update_tracker_config",
+    "update_pair_config",
+    "create_pair",
+    "deregister",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
+  "1224": [
+    "setup_pools",
+    "claim_rewards",
+    "receive",
+    "deposit",
+    "withdraw",
+    "set_tokens_per_second",
+    "incentivize",
+    "incentivize_many",
+    "remove_reward_from_pool",
+    "claim_orphaned_rewards",
+    "update_config",
+    "update_blocked_tokenslist",
+    "deactivate_pool",
+    "deactivate_blocked_pools",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
+  "1225": [
+    "add",
+    "register",
+    "remove",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
+  "1226": [
+    "receive",
+    "provide_liquidity",
+    "withdraw_liquidity",
+    "swap",
+    "update_config",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
+  "1227": [
+    "receive",
+    "provide_liquidity",
+    "withdraw_liquidity",
+    "swap",
+    "update_config",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
+  "1228": [
+    "receive",
+    "provide_liquidity",
+    "withdraw_liquidity",
+    "swap",
+    "update_config",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership"
+  ],
   "1229": [],
-  "1230": [],
-  "1231": [],
+  "1230": [
+    "vote",
+    "update_user_votes",
+    "refresh_user_votes",
+    "propose_new_owner",
+    "drop_ownership_proposal",
+    "claim_ownership",
+    "custom"
+  ],
+  "1231": [
+    "lock",
+    "unlock",
+    "instant_unlock",
+    "relock",
+    "confirm_unlock",
+    "force_relock",
+    "withdraw",
+    "set_privileged_list",
+    "update_marketing"
+  ],
   "1232": [],
   "1233": [
     "launchpad",
@@ -6986,18 +7223,29 @@
   "1237": [],
   "1238": [],
   "1239": [],
-  "1240": [],
+  "1240": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
   "1241": [
     "ics721_ack_callback",
     "mint",
     "from_launchpad",
     "owner"
   ],
-  "1242": [],
+  "1242": [
+    "owner"
+  ],
   "1243": [],
   "1244": [],
   "1245": [],
-  "1246": [],
+  "1246": [
+    "update_fee_address",
+    "receive",
+    "extend",
+    "unstake"
+  ],
   "1247": [
     "set_config",
     "set_params",
@@ -7059,9 +7307,20 @@
     "owner",
     "update_ownership"
   ],
-  "1256": [],
-  "1257": [],
-  "1258": [],
+  "1256": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
+  "1257": [
+    "ics721_ack_callback",
+    "mint",
+    "from_launchpad",
+    "owner"
+  ],
+  "1258": [
+    "owner"
+  ],
   "1259": [
     "mint",
     "from_launchpad",
@@ -7084,14 +7343,20 @@
   "1265": [],
   "1266": [],
   "1267": [],
-  "1268": [],
+  "1268": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
   "1269": [
     "ics721_ack_callback",
     "mint",
     "from_launchpad",
     "owner"
   ],
-  "1270": [],
+  "1270": [
+    "owner"
+  ],
   "1271": [],
   "1272": [],
   "1273": [],
@@ -7123,16 +7388,60 @@
     "owner",
     "update_ownership"
   ],
-  "1279": [],
-  "1280": [],
+  "1279": [
+    "ics721_ack_callback",
+    "mint",
+    "from_launchpad",
+    "owner"
+  ],
+  "1280": [
+    "owner"
+  ],
   "1281": [],
   "1282": [],
   "1283": [],
   "1284": [],
   "1285": [],
   "1286": [],
-  "1287": [],
-  "1288": [],
+  "1287": [
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "send_from",
+    "burn_from",
+    "mint",
+    "update_marketing",
+    "upload_logo",
+    "update_config",
+    "instantiate_hook",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
+  ],
+  "1288": [
+    "burn",
+    "burn_hook",
+    "transfer",
+    "transfer_hook",
+    "send",
+    "send_hook",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "transfer_from_hook",
+    "send_from",
+    "send_from_hook",
+    "burn_from",
+    "burn_from_hook",
+    "mint",
+    "mint_hook",
+    "update_marketing",
+    "upload_logo",
+    "update_config",
+    "approve_admin_nominee"
+  ],
   "1289": [
     "receive",
     "update_config",
@@ -7175,7 +7484,19 @@
     "reject_admin_nominee"
   ],
   "1294": [],
-  "1295": [],
+  "1295": [
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "send_from",
+    "burn_from",
+    "mint",
+    "update_marketing",
+    "upload_logo"
+  ],
   "1296": [],
   "1297": [
     "set_config",
@@ -7245,7 +7566,9 @@
   "1306": [],
   "1307": [],
   "1308": [],
-  "1309": [],
+  "1309": [
+    "owner"
+  ],
   "1310": [],
   "1311": [
     "launchpad",
@@ -7270,10 +7593,20 @@
   "1320": [
     "owner"
   ],
-  "1321": [],
-  "1322": [],
+  "1321": [
+    "relay_price",
+    "set_filters",
+    "set_provider"
+  ],
+  "1322": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
   "1323": [],
-  "1324": [],
+  "1324": [
+    "owner"
+  ],
   "1325": [],
   "1326": [],
   "1327": [
@@ -7287,7 +7620,12 @@
   "1331": [
     "owner"
   ],
-  "1332": [],
+  "1332": [
+    "wrap_token",
+    "receive",
+    "add_whitelist_denom",
+    "remove_whitelisted_denom"
+  ],
   "1333": [
     "receive",
     "set_config",
@@ -7317,10 +7655,21 @@
     "owner"
   ],
   "1336": [],
-  "1337": [],
-  "1338": [],
+  "1337": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
+  "1338": [
+    "ics721_ack_callback",
+    "mint",
+    "from_launchpad",
+    "owner"
+  ],
   "1339": [],
-  "1340": [],
+  "1340": [
+    "owner"
+  ],
   "1341": [
     "receive",
     "update_config",
@@ -7340,18 +7689,73 @@
     "approve_admin_nominee",
     "reject_admin_nominee"
   ],
-  "1342": [],
+  "1342": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
   "1343": [],
-  "1344": [],
+  "1344": [
+    "owner"
+  ],
   "1345": [],
   "1346": [
     "owner"
   ],
-  "1347": [],
-  "1348": [],
-  "1349": [],
+  "1347": [
+    "set_owner",
+    "accept_ownership",
+    "update_config",
+    "deposit_usdt",
+    "deposit_inj",
+    "receive"
+  ],
+  "1348": [
+    "update_ownership",
+    "update_config",
+    "claim_extra_reward",
+    "notify_extra_reward",
+    "stake",
+    "unstake",
+    "restake",
+    "withdraw",
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "send_from",
+    "burn_from",
+    "mint",
+    "update_minter",
+    "update_marketing"
+  ],
+  "1349": [
+    "update_config",
+    "claim_rewards",
+    "set_new_owner",
+    "accept_ownership"
+  ],
   "1350": [],
-  "1351": [],
+  "1351": [
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "mint_stable_coin",
+    "become_redemption_provider",
+    "repay_stable_coin",
+    "repay_stable_from_pool",
+    "redeem_stable_coin",
+    "withdraw_collateral",
+    "deposit_collateral",
+    "liquidate_collateral",
+    "whitelist_collateral",
+    "remove_collateral_from_whitelist",
+    "update_mint_cap",
+    "claim_rewards",
+    "update_redeem_provider_list"
+  ],
   "1352": [
     "update_config",
     "set_owner",
@@ -7364,11 +7768,41 @@
     "add_central_control_info",
     "update_central_control_info"
   ],
-  "1353": [],
+  "1353": [
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "receive",
+    "redeem_stable_coin",
+    "withdraw_collateral",
+    "liquidate_collateral",
+    "claim_rewards"
+  ],
   "1354": [],
-  "1355": [],
-  "1356": [],
-  "1357": [],
+  "1355": [
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "dispatch_rewards"
+  ],
+  "1356": [
+    "receive",
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "whitelist_collateral",
+    "update_collateral_info",
+    "submit_bid",
+    "retract_bid",
+    "activate_bids",
+    "claim_liquidations"
+  ],
+  "1357": [
+    "update_config",
+    "set_owner",
+    "accept_ownership",
+    "dispatch_rewards"
+  ],
   "1358": [
     "set_config",
     "set_params",
@@ -7399,10 +7833,39 @@
     "add_central_control_info",
     "update_central_control_info"
   ],
-  "1362": [],
-  "1363": [],
-  "1364": [],
-  "1365": [],
+  "1362": [
+    "UpdateConfig",
+    "DeployLaunchpad"
+  ],
+  "1363": [
+    "SetVaultAddress",
+    "UpdateOwner",
+    "UpdateProjectDescription",
+    "AddAddressesToWhitelist",
+    "RemoveAddressesFromWhitelist",
+    "SetQuotePrice",
+    "Subscribe",
+    "Finalize",
+    "Claim"
+  ],
+  "1364": [
+    "injective_exec",
+    "add_allowed_vault_registration_address",
+    "remove_allowed_vault_registration_address",
+    "add_one_time_allowed_vault_registration_address",
+    "add_code_id_to_whitelist",
+    "remove_code_id_from_whitelist",
+    "update_config",
+    "execute_messages_for_vault",
+    "register_vault"
+  ],
+  "1365": [
+    "base",
+    "update_vault_config",
+    "market_make",
+    "emergency_pause",
+    "emergency_unpause"
+  ],
   "1366": [
     "update_config",
     "set_owner",
@@ -7526,10 +7989,30 @@
     "update_ownership"
   ],
   "1381": [],
-  "1382": [],
+  "1382": [
+    "owner"
+  ],
   "1383": [],
   "1384": [],
-  "1385": [],
+  "1385": [
+    "update_ownership",
+    "update_minter_ownership",
+    "update_creator_ownership",
+    "update_collection_info",
+    "transfer_nft",
+    "send_nft",
+    "approve",
+    "revoke",
+    "approve_all",
+    "revoke_all",
+    "mint",
+    "burn",
+    "update_extension",
+    "update_nft_info",
+    "set_withdraw_address",
+    "remove_withdraw_address",
+    "withdraw_funds"
+  ],
   "1386": [
     "launchpad",
     "owner",
@@ -7586,7 +8069,19 @@
     "update_ownership"
   ],
   "1397": [],
-  "1398": [],
+  "1398": [
+    "deposit",
+    "harvest",
+    "withdraw",
+    "try_bid",
+    "try_settle",
+    "try_clear_current_bid",
+    "update_config",
+    "set_route",
+    "delete_route",
+    "manual_exchange_swap",
+    "callback"
+  ],
   "1399": [],
   "1400": [],
   "1401": [
@@ -7600,8 +8095,19 @@
     "pause",
     "resume"
   ],
-  "1402": [],
-  "1403": [],
+  "1402": [
+    "update_admin",
+    "update_members",
+    "add_hook",
+    "remove_hook"
+  ],
+  "1403": [
+    "propose",
+    "vote",
+    "execute",
+    "close",
+    "member_changed_hook"
+  ],
   "1404": [
     "setup",
     "handle_call_message",
@@ -7634,7 +8140,19 @@
     "update_minter",
     "set_adapter"
   ],
-  "1406": [],
+  "1406": [
+    "bond",
+    "unbond",
+    "rebond",
+    "claim_unbonded",
+    "claim_rewards",
+    "claim_token_unlock",
+    "create_token_unlock",
+    "reclaim_token_unlock",
+    "cascade",
+    "set_params",
+    "set_config"
+  ],
   "1407": [
     "receive",
     "update_config",
@@ -7655,8 +8173,34 @@
     "reject_admin_nominee"
   ],
   "1408": [],
-  "1409": [],
-  "1410": [],
+  "1409": [
+    "delegate",
+    "undelegate",
+    "migrate_delegation",
+    "run_batch",
+    "withdraw",
+    "claim_reward",
+    "update_config",
+    "add_validator",
+    "disable_validator",
+    "remove_disabled_validator",
+    "approve_admin_nominee",
+    "deposit"
+  ],
+  "1410": [
+    "transfer",
+    "burn",
+    "send",
+    "increase_allowance",
+    "decrease_allowance",
+    "transfer_from",
+    "send_from",
+    "burn_from",
+    "mint",
+    "update_minter",
+    "update_marketing",
+    "upload_logo"
+  ],
   "1411": [
     "receive",
     "update_config",
@@ -7747,7 +8291,11 @@
     "approve_admin_nominee",
     "reject_admin_nominee"
   ],
-  "1418": [],
+  "1418": [
+    "create",
+    "update",
+    "delete"
+  ],
   "1419": [
     "create",
     "update",
@@ -7768,10 +8316,30 @@
   "1428": [],
   "1429": [],
   "1430": [],
-  "1431": [],
+  "1431": [
+    "update_ownership",
+    "update_minter_ownership",
+    "update_creator_ownership",
+    "update_collection_info",
+    "transfer_nft",
+    "send_nft",
+    "approve",
+    "revoke",
+    "approve_all",
+    "revoke_all",
+    "mint",
+    "burn",
+    "update_extension",
+    "update_nft_info",
+    "set_withdraw_address",
+    "remove_withdraw_address",
+    "withdraw_funds"
+  ],
   "1432": [],
   "1433": [],
-  "1434": [],
+  "1434": [
+    "owner"
+  ],
   "1435": [
     "ics721_ack_callback",
     "mint",
@@ -7780,19 +8348,112 @@
   ],
   "1436": [],
   "1437": [],
-  "1438": [],
+  "1438": [
+    "owner"
+  ],
   "1439": [],
   "1440": [],
-  "1441": [],
-  "1442": [],
+  "1441": [
+    "receive",
+    "update_config",
+    "register_referral",
+    "register_rolling",
+    "expire_seasons",
+    "expire_seasons_hook",
+    "update_season",
+    "distribute_seasons",
+    "distribute_seasons_hook",
+    "force_claim_earning",
+    "claim_earning",
+    "claim_earning_hook",
+    "register_boost"
+  ],
+  "1442": [
+    "receive",
+    "update_config",
+    "send_cash_game_fee",
+    "send_tournament_rolling",
+    "send_tournament_referral",
+    "burn",
+    "transfer",
+    "send_cash_game_fee_hook",
+    "send_tournament_rolling_hook",
+    "send_tournament_referral_hook"
+  ],
   "1443": [],
-  "1444": [],
-  "1445": [],
-  "1446": [],
-  "1447": [],
-  "1448": [],
-  "1449": [],
-  "1450": [],
+  "1444": [
+    "set_dealer",
+    "create_round",
+    "commit_round",
+    "cancel_round",
+    "settlement_round",
+    "record_round",
+    "action",
+    "apply_service_message"
+  ],
+  "1445": [
+    "receive",
+    "buy_in",
+    "buy_in_hook",
+    "update_key",
+    "add_on",
+    "set_dealer",
+    "create_round",
+    "commit_round",
+    "cancel_round",
+    "clear_player",
+    "settlement_round",
+    "record_round",
+    "action",
+    "apply_service_message",
+    "buy_out",
+    "buy_out_hook",
+    "update_table_status"
+  ],
+  "1446": [
+    "update_config",
+    "save_profile",
+    "update_profile",
+    "add_item",
+    "use_item",
+    "use_item_hook",
+    "save_referral",
+    "add_referral_reward"
+  ],
+  "1447": [
+    "receive",
+    "update_config",
+    "register_item",
+    "update_item",
+    "provide_item",
+    "provide_item_hook",
+    "withdraw_item",
+    "withdraw_item_hook",
+    "buy_item"
+  ],
+  "1448": [
+    "update_config",
+    "record_cash_game_round",
+    "record_tournament_registration",
+    "record_tournament_exit",
+    "force_record_tournament_exit",
+    "record_tournament_exit_hook"
+  ],
+  "1449": [
+    "receive",
+    "update_config",
+    "register_dealer",
+    "register_table_type",
+    "migrate_table_contract",
+    "create_table"
+  ],
+  "1450": [
+    "receive",
+    "update_config",
+    "create_tournament",
+    "withdraw",
+    "update_tournament"
+  ],
   "1451": [],
   "1452": [],
   "1453": [],
@@ -7847,7 +8508,25 @@
     "admin_clean_and_burn_nft",
     "admin_clean_and_unescrow_nft"
   ],
-  "1465": [],
+  "1465": [
+    "update_ownership",
+    "update_minter_ownership",
+    "update_creator_ownership",
+    "update_collection_info",
+    "transfer_nft",
+    "send_nft",
+    "approve",
+    "revoke",
+    "approve_all",
+    "revoke_all",
+    "mint",
+    "burn",
+    "update_extension",
+    "update_nft_info",
+    "set_withdraw_address",
+    "remove_withdraw_address",
+    "withdraw_funds"
+  ],
   "1466": [
     "receive",
     "pair_swap",
@@ -7888,9 +8567,19 @@
     "escape"
   ],
   "1469": [],
-  "1470": [],
+  "1470": [
+    "ownable",
+    "router",
+    "connection",
+    "handle",
+    "transfer_remote"
+  ],
   "1471": [],
-  "1472": [],
+  "1472": [
+    "create",
+    "swap",
+    "graduate"
+  ],
   "1473": [],
   "1474": [],
   "1475": [
@@ -7941,23 +8630,114 @@
     "withdraw_all"
   ],
   "1484": [],
-  "1485": [],
-  "1486": [],
+  "1485": [
+    "ics721_ack_callback",
+    "mint",
+    "from_launchpad",
+    "owner"
+  ],
+  "1486": [
+    "owner"
+  ],
   "1487": [],
-  "1488": [],
-  "1489": [],
-  "1490": [],
-  "1491": [],
-  "1492": [],
-  "1493": [],
-  "1494": [],
+  "1488": [
+    "owner"
+  ],
+  "1489": [
+    "update_config",
+    "create_vault",
+    "update_whitelisted_addresses"
+  ],
+  "1490": [
+    "claim_reward",
+    "change_signer",
+    "update_config",
+    "update_ownership"
+  ],
+  "1491": [
+    "receive",
+    "unstake",
+    "claim_reward",
+    "update_signer",
+    "update_config",
+    "pause",
+    "unpause",
+    "update_ownership"
+  ],
+  "1492": [
+    "deposit",
+    "withdraw",
+    "charge_protocol_fee",
+    "charge_performance_fee",
+    "update_whitelisted_addresses",
+    "toggle_whitelist",
+    "update_vault_fee",
+    "change_vault_manager",
+    "remove_pending_tranfer_ownership",
+    "claim_vault_manager_role",
+    "change_fee_recipient",
+    "change_deposit_limits",
+    "create_derivative_market_order",
+    "create_derivative_limit_order",
+    "increase_position_margin",
+    "cancel_derivative_order"
+  ],
+  "1493": [
+    "collect_fees",
+    "aggregate_fees",
+    "forward_fees",
+    "update_config"
+  ],
+  "1494": [
+    "create_strategy",
+    "execute_orders_multiple",
+    "remove_strategy",
+    "update_strategy",
+    "update_config",
+    "migrate_strategies",
+    "finish_migration",
+    "deprecate_strategy",
+    "kill_strategy",
+    "remove_subaccount_deposits"
+  ],
   "1495": [],
   "1496": [],
   "1497": [],
-  "1498": [],
+  "1498": [
+    "receive",
+    "update_config",
+    "deposit_liquidity",
+    "withdraw_liquidity",
+    "swap",
+    "swap_hook",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
+  ],
   "1499": [],
-  "1500": [],
-  "1501": [],
+  "1500": [
+    "receive",
+    "update_config",
+    "swap",
+    "swap_hook",
+    "swap_exact_output",
+    "swap_exact_output_hook",
+    "swap_result_hook",
+    "custom",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
+  ],
+  "1501": [
+    "receive",
+    "update_config",
+    "swap",
+    "swap_hook",
+    "swap_exact_output",
+    "swap_exact_output_hook",
+    "swap_result_hook",
+    "custom",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
+  ],
   "1502": [],
   "1503": [
     "receive",
@@ -8033,7 +8813,26 @@
     "validate_instant_unstaking_schedules"
   ],
   "1510": [],
-  "1511": [],
+  "1511": [
+    "receive",
+    "update_config",
+    "update_instant_unstaking_config",
+    "remove_instant_unstaking_config",
+    "update_unstaking_config",
+    "stake",
+    "stake_hook",
+    "unstake_hook",
+    "rebalance",
+    "deposit_collateral",
+    "withdraw_collateral",
+    "borrow",
+    "repay",
+    "approve_admin_nominee",
+    "reject_admin_nominee",
+    "market_action",
+    "market_action_hook",
+    "instant_unstake_hook"
+  ],
   "1512": [
     "send_call_message",
     "send_message_any",
@@ -8100,7 +8899,9 @@
   "1545": [],
   "1546": [],
   "1547": [],
-  "1548": [],
+  "1548": [
+    "owner"
+  ],
   "1549": [],
   "1550": [],
   "1551": [],
@@ -8126,26 +8927,169 @@
   "1571": [],
   "1572": [],
   "1573": [],
-  "1574": [],
+  "1574": [
+    "launchpad",
+    "owner",
+    "update_ownership"
+  ],
   "1575": [],
-  "1576": [],
-  "1577": [],
-  "1578": [],
-  "1579": [],
-  "1580": [],
-  "1581": [],
-  "1582": [],
-  "1583": [],
-  "1584": [],
+  "1576": [
+    "mint",
+    "from_launchpad",
+    "owner"
+  ],
+  "1577": [
+    "owner"
+  ],
+  "1578": [
+    "receive",
+    "bond",
+    "unbond",
+    "bond_hook",
+    "unbond_hook",
+    "claim_reward",
+    "claim_point",
+    "claim_reward_hook",
+    "claim_point_hook",
+    "update_config",
+    "update_global_reward_index",
+    "update_user_reward_index",
+    "withdraw_remain_reward",
+    "approve_admin_nominee"
+  ],
+  "1579": [
+    "receive",
+    "update_staking_config",
+    "update_poll_config",
+    "stake_governance_token_hook",
+    "unstake_governance_token",
+    "unstake_governance_token_hook",
+    "claim_unstaking",
+    "cast_vote",
+    "snapshot_poll",
+    "end_poll",
+    "execute_poll",
+    "run_execution",
+    "provide_reward",
+    "stake_governance_token",
+    "create_poll"
+  ],
+  "1580": [
+    "receive",
+    "update_config",
+    "register_referral",
+    "register_rolling",
+    "expire_seasons",
+    "expire_seasons_hook",
+    "update_season",
+    "distribute_seasons",
+    "distribute_seasons_hook",
+    "force_claim_earning",
+    "claim_earning",
+    "claim_earning_hook",
+    "register_boost"
+  ],
+  "1581": [
+    "create_strategy",
+    "execute_orders_multiple",
+    "remove_strategy",
+    "update_strategy",
+    "update_config",
+    "migrate_strategies",
+    "finish_migration",
+    "deprecate_strategy",
+    "kill_strategy",
+    "remove_subaccount_deposits"
+  ],
+  "1582": [
+    "join_whitelist",
+    "withdraw"
+  ],
+  "1583": [
+    "set_fee",
+    "set_distribution_fee",
+    "set_minimum_deposit",
+    "set_treasury",
+    "set_default_validator",
+    "transfer",
+    "send",
+    "stake",
+    "stake_to_specific_validator",
+    "unstake",
+    "unstake_from_specific_validator",
+    "claim",
+    "add_validator",
+    "enable_validator",
+    "disable_validator",
+    "add_agent",
+    "remove_agent",
+    "set_pending_owner",
+    "claim_ownership",
+    "add_user_to_whitelist",
+    "add_user_to_blacklist",
+    "clear_user_status",
+    "pause",
+    "unpause",
+    "compound_rewards",
+    "allocate",
+    "deallocate",
+    "distribute_rewards",
+    "restake",
+    "emit_event",
+    "emit_cw20_event"
+  ],
+  "1584": [
+    "buy_tokens",
+    "sell_tokens",
+    "migrate_to_dex"
+  ],
   "1585": [],
   "1586": [],
   "1587": [],
   "1588": [],
   "1589": [],
-  "1590": [],
-  "1591": [],
-  "1592": [],
-  "1593": [],
+  "1590": [
+    "registerinvitee",
+    "register_referrer",
+    "remove_invitee",
+    "remove_referrer",
+    "clean_referrals",
+    "add_admin",
+    "remove_admin"
+  ],
+  "1591": [
+    "update_config",
+    "create_vault",
+    "update_whitelisted_addresses"
+  ],
+  "1592": [
+    "create",
+    "swap",
+    "graduate",
+    "update",
+    "claim",
+    "create_challenge",
+    "vote_challenge",
+    "claim_challenge_rewards"
+  ],
+  "1593": [
+    "deposit",
+    "withdraw",
+    "charge_protocol_fee",
+    "charge_performance_fee",
+    "update_whitelisted_addresses",
+    "toggle_whitelist",
+    "update_vault_fee",
+    "change_vault_manager",
+    "remove_pending_tranfer_ownership",
+    "claim_vault_manager_role",
+    "change_fee_recipient",
+    "change_deposit_limits",
+    "create_derivative_market_order",
+    "create_derivative_limit_order",
+    "increase_position_margin",
+    "cancel_derivative_order"
+  ],
   "1594": [
     "create_child",
     "update_param",
@@ -8159,7 +9103,19 @@
     "update_allowed_denom",
     "update_bonding_curve_status"
   ],
-  "1597": [],
+  "1597": [
+    "create_strategy",
+    "execute_orders_multiple",
+    "remove_strategy",
+    "close_strategy",
+    "update_strategy",
+    "update_config",
+    "migrate_strategies",
+    "finish_migration",
+    "deprecate_strategy",
+    "kill_strategy",
+    "remove_subaccount_deposits"
+  ],
   "1598": [],
   "1599": [],
   "1600": [],
