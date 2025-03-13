@@ -52,7 +52,7 @@ jobs:
       - name: Generate market slugs
         uses: borales/actions-yarn@v4
         with:
-          cmd: slugs:generate
+          cmd: generate:slugs
           dir: "src"
 
       - name: Generate wasm messages
