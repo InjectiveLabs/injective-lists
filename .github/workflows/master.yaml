@@ -35,43 +35,43 @@ jobs:
           git reset --hard origin/master
 
       - name: Install dependencies
-        run: cd ts-scripts && yarn
+        run: cd src && yarn
 
       - name: Generate tokens
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:tokens
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Generate validators
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:validators
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Generate market slugs
         uses: borales/actions-yarn@v4
         with:
           cmd: slugs:generate
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Generate wasm messages
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:wasm
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Generate verified denoms
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:verifiedDenoms
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Generate restriction list
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:restriction
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9

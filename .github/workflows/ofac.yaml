@@ -27,13 +27,13 @@ jobs:
           git reset --hard origin/master
 
       - name: Install dependencies
-        run: cd ts-scripts && yarn
+        run: cd src && yarn
 
       - name: Refetch OFAC lists
         uses: borales/actions-yarn@v4
         with:
           cmd: fetch:wallets:ofac
-          dir: "ts-scripts"
+          dir: "src"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
