@@ -7,7 +7,7 @@ const keybaseApi = new HttpRestClient('https://keybase.io/_/api/1.0/user')
 
 const validatorImagePathsMap = Object.entries(
   readJSONFile({
-    path: 'data/validatorImagePaths.json',
+    path: 'src/data/validatorImagePaths.json',
     fallback: {}
   })
 ).reduce((acc, [operatorAddress, imageUrl]) => {
