@@ -469,5 +469,21 @@ export const untaggedSymbolMeta = {
     symbol: 'iMSTR',
     logo: 'mstr.webp',
     coinGeckoId: ''
+  },
+
+  iCOIN: {
+    name: 'Coinbase',
+    decimals: 6,
+    symbol: 'iCOIN',
+    logo: 'coin.webp',
+    coinGeckoId: ''
+  },
+
+  iTSLA: {
+    name: 'Tesla',
+    decimals: 6,
+    symbol: 'iTSLA',
+    logo: 'tsla.webp',
+    coinGeckoId: ''
   }
 }
