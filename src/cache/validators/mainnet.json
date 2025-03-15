@@ -852,8 +852,8 @@
   },
   {
     "operatorAddress": "injvaloper17mudupc8qlwpnegqwulz6ajlkhsfta6zg2wg55",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Dynamo DeFi",
       "identity": "9D705DC3CA54BA62",
@@ -861,8 +861,8 @@
       "securityContact": "security@restake.net",
       "details": "Staking that supports educational resources for new DeFi users. Powered by Swyke"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 109534942,
+    "unbondingTime": "2025-04-05T04:42:08.853Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -2463,7 +2463,7 @@
   {
     "operatorAddress": "injvaloper1n6z54tf5rezqurq7vn4xy6gfj9u7m5axen0ycc",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "BwareLabs",
       "identity": "E83A08BEEE7A70BD",
