@@ -852,8 +852,8 @@
   },
   {
     "operatorAddress": "injvaloper17mudupc8qlwpnegqwulz6ajlkhsfta6zg2wg55",
-    "jailed": true,
-    "status": "UnBonding",
+    "jailed": false,
+    "status": "Bonded",
     "description": {
       "moniker": "Dynamo DeFi",
       "identity": "9D705DC3CA54BA62",
@@ -2463,7 +2463,7 @@
   {
     "operatorAddress": "injvaloper1n6z54tf5rezqurq7vn4xy6gfj9u7m5axen0ycc",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "BwareLabs",
       "identity": "E83A08BEEE7A70BD",
@@ -2471,8 +2471,8 @@
       "securityContact": "validators@bwarelabs.com",
       "details": "Guaranteed availability and up-time backed by a professional blockchain infrastructure team."
     },
-    "unbondingHeight": 109363286,
-    "unbondingTime": "2025-04-03T21:48:50.167Z",
+    "unbondingHeight": 109582472,
+    "unbondingTime": "2025-04-05T13:12:35.680Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
