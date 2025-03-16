@@ -2463,7 +2463,7 @@
   {
     "operatorAddress": "injvaloper1n6z54tf5rezqurq7vn4xy6gfj9u7m5axen0ycc",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "BwareLabs",
       "identity": "E83A08BEEE7A70BD",
@@ -2471,8 +2471,8 @@
       "securityContact": "validators@bwarelabs.com",
       "details": "Guaranteed availability and up-time backed by a professional blockchain infrastructure team."
     },
-    "unbondingHeight": 109582472,
-    "unbondingTime": "2025-04-05T13:12:35.680Z",
+    "unbondingHeight": 109756588,
+    "unbondingTime": "2025-04-06T20:32:20.013Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -3382,8 +3382,8 @@
   },
   {
     "operatorAddress": "injvaloper1vumvzchlgfsu9fnj5xn2zpf7w888sdmjuu33qe",
-    "jailed": true,
-    "status": "UnBonding",
+    "jailed": false,
+    "status": "Bonded",
     "description": {
       "moniker": "CW3",
       "identity": "",
