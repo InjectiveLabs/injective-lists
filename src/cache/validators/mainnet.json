@@ -2463,7 +2463,7 @@
   {
     "operatorAddress": "injvaloper1n6z54tf5rezqurq7vn4xy6gfj9u7m5axen0ycc",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "BwareLabs",
       "identity": "E83A08BEEE7A70BD",
@@ -3382,8 +3382,8 @@
   },
   {
     "operatorAddress": "injvaloper1vumvzchlgfsu9fnj5xn2zpf7w888sdmjuu33qe",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "CW3",
       "identity": "",
@@ -3391,8 +3391,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 109743918,
-    "unbondingTime": "2025-04-06T18:15:12.918Z",
+    "unbondingHeight": 109870886,
+    "unbondingTime": "2025-04-07T17:06:41.681Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
