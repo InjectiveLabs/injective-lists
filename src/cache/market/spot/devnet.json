@@ -222,6 +222,24 @@
     "ticker": "MJO/vxd",
     "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/MJO",
     "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/vxd",
+    "quoteToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/vxd",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/vxd",
+      "symbol": "vxd",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/MJO",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/MJO",
+      "symbol": "MJO",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
@@ -321,6 +339,41 @@
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
+  },
+  {
+    "marketId": "0x5ec75b73f69d0fbb2396a7ee66f7264f0bd6a24f80ab39155bfb21cf059f41b9",
+    "marketStatus": "active",
+    "ticker": "NoE/sPm",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/NoE",
+    "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/sPm",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
+    "marketId": "0x64e04e1b8160f1b79175fa4958715642f8e7b90988949805354fa7ec675b3f30",
+    "marketStatus": "active",
+    "ticker": "Rpc/wETH",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Rpc",
+    "quoteDenom": "peggy0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quoteToken": {
+      "name": "Wrapped Ethereum",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "wETH",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a8d72344-01e4-4471-3098-2fd58f179b00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
   },
   {
     "marketId": "0x6fa856bca5a9298ced8da3ef7616e66081ff64e4fdd2bffa38e95cf23c1f2321",
@@ -469,11 +522,42 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x8d53cb11dbfed2cad5ae420ac0d0ec08377aec9dde928e15436a007400b322c8",
+    "marketStatus": "active",
+    "ticker": "wETH/exM",
+    "baseDenom": "peggy0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/exM",
+    "baseToken": {
+      "name": "Wrapped Ethereum",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "wETH",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a8d72344-01e4-4471-3098-2fd58f179b00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0x9c16b0b78f0d4d419f1881177c82628fb57dd43fbadd3910aeef0397c7e41aa4",
     "marketStatus": "active",
     "ticker": "USDC/FfN",
     "baseDenom": "peggy0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FfN",
+    "quoteToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FfN",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FfN",
+      "symbol": "FfN",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
     "baseToken": {
       "name": "USD Coin",
       "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
@@ -646,6 +730,19 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0xd491045e4459d4e89dcef85a4401a25df4cce8fbe220f4a47461a0612823e733",
+    "marketStatus": "active",
+    "ticker": "PyG/Kcc",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/PyG",
+    "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Kcc",
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0xe97ebaf3e2ae3bd00dabe59046fcc28ec58ea969df33a9ce95f4fc285306c2d4",
     "marketStatus": "active",
     "ticker": "WBTC/USDT",
@@ -699,6 +796,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xf34c90848357d37f84786e0d3b10b315850a830f3b6e0e4fc8e122fddb0c5d70",
+    "marketStatus": "active",
+    "ticker": "zvs/wETH",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/zvs",
+    "quoteDenom": "peggy0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "quoteToken": {
+      "name": "Wrapped Ethereum",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "wETH",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a8d72344-01e4-4471-3098-2fd58f179b00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/zvs",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/zvs",
+      "symbol": "zvs",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0xf5ca84ce63a5d19d2b044a8cb711d8b9540196ae83e77e3f5432109276e38310",
     "marketStatus": "active",
     "ticker": "jPS/USDC",
@@ -709,6 +837,15 @@
       "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "symbol": "USDClegacy",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/66ab9d16-7c2c-4a97-a85d-e070fbc86a00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/jPS",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/jPS",
+      "symbol": "jPS",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -726,6 +863,15 @@
     "ticker": "inj/FJr",
     "baseDenom": "inj",
     "quoteDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FJr",
+    "quoteToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FJr",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/FJr",
+      "symbol": "FJr",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
     "baseToken": {
       "name": "Injective",
       "address": "inj",
