@@ -39,9 +39,7 @@ Created with the following characteristics:
   source?: TokenSource // additional information apart from the on-chain data, added/hardcoded for UI/UX purposes
   tokenType: TokenType.Ibc20,
   tokenVerification:
-      TokenVerification.Verified  // metadata was hardcoded
-      || TokenVerification.Unverified
-      || TokenVerification.External // [DenomTrace](https://lcd.injective.network/swagger/#/Query/DenomTrace) was retrieved from the chain
+      TokenVerification.Verified || TokenVerification.Unverified
 
 }
 ```

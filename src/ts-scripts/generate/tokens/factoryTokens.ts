@@ -13,6 +13,7 @@ import {
 } from '../../helper/utils'
 import { getCw20Denom } from '../../helper/getter'
 import { fetchCw20Token } from '../../helper/fetchCw20Metadata'
+import { fetchIbcTokenMetaData } from '../../helper/fetchIbcDenomTrace'
 import { untaggedSymbolMeta } from '../../../data/tokens/untaggedSymbolMeta'
 
 const mainnetStaticTokensMap = tokensToDenomMapKeepCasing(
@@ -138,6 +139,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
   }
 
   try {
+    const bankIbcTokens = []
     const bankFactoryTokens = []
 
     for (const bankMetadata of bankMetadatas) {
@@ -145,6 +147,17 @@ export const generateBankFactoryTokens = async (network: Network) => {
         staticTokensMap[bankMetadata.denom] ||
         bankMetadata.denom.startsWith('share')
       ) {
+        continue
+      }
+
+      if (bankMetadata.denom.includes('ibc/')) {
+        const ibcToken = await fetchIbcTokenMetaData(
+          bankMetadata.denom,
+          network
+        )
+
+        bankIbcTokens.push(ibcToken)
+
         continue
       }
 
@@ -163,7 +176,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
         ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
         ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
         tokenType: TokenType.TokenFactory,
-        tokenVerification: TokenVerification.Internal
+        tokenVerification: TokenVerification.Unverified
       })
     }
 
@@ -173,7 +186,9 @@ export const generateBankFactoryTokens = async (network: Network) => {
 
     await updateJSONFile(
       `src/generated/tokens/factoryTokens/${getNetworkFileName(network)}.json`,
-      bankFactoryTokens.sort((a, b) => a.denom.localeCompare(b.denom))
+      [...bankFactoryTokens, ...bankIbcTokens].sort((a, b) =>
+        a.denom.localeCompare(b.denom)
+      )
     )
 
     console.log(`✅✅✅ GenerateBankFactoryTokens ${network}`)

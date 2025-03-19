@@ -96,7 +96,7 @@ const formatApiTokenMetadata = async (
           externalLogo: externalTokenMetadata.imageUrl
         }),
         tokenType: TokenType.TokenFactory,
-        tokenVerification: TokenVerification.Internal
+        tokenVerification: TokenVerification.Unverified
       })
 
       continue

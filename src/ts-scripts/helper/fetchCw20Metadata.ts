@@ -120,7 +120,7 @@ const formatCw20FactoryToken = ({
       untaggedSymbolMeta.Unknown.symbol,
     externalLogo: marketingInfo?.logo?.url || untaggedSymbolMeta.Unknown.logo,
     tokenType: TokenType.TokenFactory,
-    tokenVerification: TokenVerification.Internal
+    tokenVerification: TokenVerification.Unverified
   }
 }
 
@@ -141,7 +141,7 @@ const formatCw20Token = (
     denom: '',
     address: cw20ContractSource.address,
     tokenType: TokenType.Cw20,
-    tokenVerification: TokenVerification.Internal
+    tokenVerification: TokenVerification.Unverified
   }
 }
 

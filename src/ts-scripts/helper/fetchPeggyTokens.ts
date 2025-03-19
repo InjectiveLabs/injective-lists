@@ -27,7 +27,7 @@ const formatAlchemyToken = (
     logo: token.logo || untaggedSymbolMeta.Unknown.logo,
     address: denom.replace('peggy', ''),
     tokenType: TokenType.Erc20,
-    tokenVerification: TokenVerification.External
+    tokenVerification: TokenVerification.Unverified
   }
 }
 

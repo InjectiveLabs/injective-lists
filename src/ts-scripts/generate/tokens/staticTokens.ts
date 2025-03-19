@@ -142,7 +142,7 @@ const untaggedSymbolBaseTokens = () =>
     return {
       ...meta,
       tokenType: TokenType.Symbol,
-      tokenVerification: TokenVerification.Internal,
+      tokenVerification: TokenVerification.Verified,
       denom: meta.symbol.toLowerCase(),
       address: meta.symbol.toLowerCase()
     }

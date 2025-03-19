@@ -40,9 +40,7 @@ export const formatIbcToken = ({
   decimals: untaggedSymbolMeta.Unknown.decimals,
   symbol: denomTrace?.baseDenom || untaggedSymbolMeta.Unknown.symbol,
   tokenType: TokenType.Ibc,
-  tokenVerification: denomTrace
-    ? TokenVerification.External
-    : TokenVerification.Unverified
+  tokenVerification: TokenVerification.Unverified
 })
 
 export const fetchIbcTokenMetaData = async (

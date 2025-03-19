@@ -47,7 +47,7 @@ export const generateMitoTokens = async (network: Network) => {
         logo: 'mito.svg',
         marketId: [vault.marketId],
         tokenType: TokenType.Lp,
-        tokenVerification: TokenVerification.Internal
+        tokenVerification: TokenVerification.Verified
       }
 
       if (!market) {
