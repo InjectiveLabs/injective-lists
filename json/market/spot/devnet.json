@@ -324,6 +324,15 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/fBj",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/fBj",
+      "symbol": "fBj",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
@@ -569,6 +578,28 @@
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 1000000,
     "minNotional": 10000000000000000
+  },
+  {
+    "marketId": "0xce40766cb9e01cb84ee1fe8b4a3e446e3185fdc6912a8b369498224a1d9fbc1a",
+    "marketStatus": "active",
+    "ticker": "yAT/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/yAT",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
   },
   {
     "marketId": "0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839",
