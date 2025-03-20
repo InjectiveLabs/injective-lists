@@ -31,6 +31,7 @@ import {
 import { getMarketIdsByDenom } from '../../helper/market'
 import { symbolMeta } from '../../../data/tokens/symbolMeta'
 import { updateJSONFile, getNetworkFileName } from '../../helper/utils'
+import { verifiedTokenFactoryDenoms } from './../../../data/tokens/denoms'
 import { cryptoRankIdMap, overrideSymbolMap } from '../../../data/staticMap'
 import { untaggedSymbolMeta } from '../../../data/tokens/untaggedSymbolMeta'
 import {
@@ -77,7 +78,11 @@ const formatTokenFactoryTokens = (
       address: supplyDenom || denom,
       denom: supplyDenom || denom,
       tokenType: TokenType.TokenFactory,
-      tokenVerification: TokenVerification.Verified
+      tokenVerification: verifiedTokenFactoryDenoms.includes(
+        supplyDenom || denom
+      )
+        ? TokenVerification.Verified
+        : TokenVerification.Unverified
     })
 
     return list
@@ -234,7 +239,6 @@ const generateStaticTokens = async (network: Network) => {
         address: token.denom,
         isNative: false,
         tokenVerification: TokenVerification.Verified,
-        marketIds: getMarketIdsByDenom(token.denom, network),
         ...token,
         ...(cryptoRankIdMap[token.symbol] && {
           cryptoRankId: cryptoRankIdMap[token.symbol]
