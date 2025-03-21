@@ -186,33 +186,17 @@ export const stagingGridMarkets = [
 ]
 
 export const testnetGridMarkets = [
-  // {
-  //   slug: 'inj-usdt',
-  //   contractAddress: 'inj1djlhetddzrztjn4v0s4vt0dca3y8hwshkh37zg'
-  // },
-  // {
-  //   slug: 'atom-usdt',
-  //   contractAddress: 'inj14yr8nj6tndmr4xyw9c66feqepv59revxsm7450'
-  // },
-  // {
-  //   slug: 'atom-usdt',
-  //   contractAddress: 'inj1qzc20al6khfy5ta3m4fk0atct5k98tnny0t7he'
-  // },
-  // {
-  //   slug: 'tia-usdt',
-  //   contractAddress: 'inj18sl3ysva0czdgc2eqmqlrhfeu2v4l8vx4245ql'
-  // }
   {
     slug: 'inj-usdt',
-    contractAddress: 'inj1xkluytgalj74j8ljjf4a0y0veqpshgmpyusjlj'
+    contractAddress: 'inj1dam4fvednpyl27u7rkm3vhu3h04fx2knr09qz7'
   },
   {
     slug: 'atom-usdt',
-    contractAddress: 'inj19dj7e5r8qlqxfteyleaxv6lgsp3sm8p0hrv6cq'
+    contractAddress: 'inj1wcfsqh4t6dth8phyy30ar9pdl70xf93qyk3w6r'
   },
   {
     slug: 'tia-usdt',
-    contractAddress: 'inj15xwl7jcueglr8f8ja84efqvpqfxr053ncmn20k'
+    contractAddress: 'inj10jsngmrj3t2llkexx3zz62sk6f9mktkm5nqqgr'
   }
 
   // Add This Market Later
