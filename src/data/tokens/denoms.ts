@@ -9,6 +9,7 @@ export const mainnetDenoms = [
 ]
 
 export const verifiedTokenFactoryDenoms = [
+  'factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx',
   'factory/inj10aa0h5s0xwzv95a8pjhwluxcm5feeqygdk3lkm/sai',
   'factory/inj10q36ygr0pkz7ezajcnjd2f0tat5n737yg6g6d5/binj',
   'factory/inj127l5a2wmkyvucxdlupqyac3y0v6wqfhq03ka64/qunt',
