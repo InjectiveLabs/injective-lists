@@ -16,7 +16,6 @@ export const verifiedTokenFactoryDenoms = [
   'factory/inj16dd5xzszud3u5wqphr3tq8eaz00gjdn3d4mvj8/agent',
   'factory/inj16eckaf75gcu9uxdglyvmh63k9t0l7chd0qmu85/black',
   'factory/inj18flmwwaxxqj8m8l5zl8xhjrnah98fcjp3gcy3e/xiii',
-  'factory/inj1995xnrrtnmtdgjmx0g937vf28dwefhkhy6gy5e/phuc',
   'factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro',
   'factory/inj1fefpnm6pklz3av6zzjmr5z070779a9m4sx384v/jni',
   'factory/inj1flkktfvf8nxvk300f2z3vxglpllpw59c563pk7/spuun',
