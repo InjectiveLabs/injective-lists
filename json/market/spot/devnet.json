@@ -217,6 +217,28 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x3f6d0bb6ae69135e4edc1feead62e4ebc9f3f3a2875302acd52cfee45c320be9",
+    "marketStatus": "active",
+    "ticker": "dPh/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/dPh",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.03",
+    "takerFeeRate": "0.03",
+    "serviceProviderFee": "0.06",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
     "marketStatus": "active",
     "ticker": "QUNT/INJ",
@@ -308,6 +330,28 @@
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
+  },
+  {
+    "marketId": "0x6f697ea4955456f6261484a1d2e5f8483ae8394f83e752d2e4a7e3652e8cc79d",
+    "marketStatus": "active",
+    "ticker": "IqP/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/IqP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
   },
   {
     "marketId": "0x6fa856bca5a9298ced8da3ef7616e66081ff64e4fdd2bffa38e95cf23c1f2321",
@@ -423,6 +467,28 @@
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 100000,
     "minNotional": 1000000
+  },
+  {
+    "marketId": "0x8aba5ef888f68aaa6f3aadbd65033be7284535ffc21d0e31d6f40c9024f57389",
+    "marketStatus": "active",
+    "ticker": "dPh/INJ",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/dPh",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0
   },
   {
     "marketId": "0x8b1a4d3e8f6b559e30e40922ee3662dd78edf7042330d4d620d188699d1a9715",
