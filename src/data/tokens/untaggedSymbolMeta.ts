@@ -485,5 +485,13 @@ export const untaggedSymbolMeta = {
     symbol: 'iTSLA',
     logo: 'tsla.webp',
     coinGeckoId: ''
-  }
+  },
+
+  iGOOGL: {
+    name: 'Alphabet',
+    decimals: 6,
+    symbol: 'iGOOGL',
+    logo: 'googl.webp',
+    coinGeckoId: ''
+}
 }
