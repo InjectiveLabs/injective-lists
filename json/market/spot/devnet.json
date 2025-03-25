@@ -31,6 +31,28 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x04d88f624439d812221348c436698f4f1229b60e4e84df4015efbb96b7693700",
+    "marketStatus": "active",
+    "ticker": "Qcs/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Qcs",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa",
     "marketStatus": "active",
     "ticker": "ATOM/USDT",
@@ -346,11 +368,20 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 100,
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Pjb",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Pjb",
+      "symbol": "Pjb",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.03",
+    "takerFeeRate": "0.03",
+    "serviceProviderFee": "0.06",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 0.001,
     "minNotional": 1000000000
   },
   {
@@ -478,6 +509,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x912dc0cba0948d6940593d706fbaf818f57061365a5c06c6af0570c43db3e3f8",
+    "marketStatus": "active",
+    "ticker": "Pjb/INJ",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Pjb",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Pjb",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/Pjb",
+      "symbol": "Pjb",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0
+  },
+  {
     "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
     "marketStatus": "active",
     "ticker": "INJ/USDT",
@@ -519,6 +581,15 @@
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/DLv",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/DLv",
+      "symbol": "DLv",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -666,6 +737,15 @@
       "symbol": "INJ",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
       "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/DLv",
+      "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/DLv",
+      "symbol": "DLv",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
