@@ -144,8 +144,8 @@
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.06",
-    "maintenanceMarginRatio": "0.03",
+    "initialMarginRatio": "0.07",
+    "maintenanceMarginRatio": "0.04",
     "isPerpetual": true,
     "marketId": "0x56d0c0293c4415e2d48fc2c8503a56a0c7389247396a2ef9b0a48c01f0646705",
     "marketStatus": "active",
@@ -162,7 +162,7 @@
     },
     "makerFeeRate": "-0.01",
     "takerFeeRate": "0.5",
-    "serviceProviderFee": "0.06",
+    "serviceProviderFee": "0.07",
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.01,
     "minNotional": 1000000
@@ -333,6 +333,34 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
+  },
+  {
+    "oracleBase": "ATOM",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xd93041301e547472f57b6fe5e8dff3e740bb3411f5d022d52a4c3686e66d7ee7",
+    "marketStatus": "active",
+    "ticker": "kTPUjVkj 2",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.01",
+    "takerFeeRate": "0.5",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
     "minNotional": 1000000
   }
 ]
