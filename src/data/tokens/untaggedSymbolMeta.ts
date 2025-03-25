@@ -493,5 +493,5 @@ export const untaggedSymbolMeta = {
     symbol: 'iGOOGL',
     logo: 'googl.webp',
     coinGeckoId: ''
-}
+  }
 }
