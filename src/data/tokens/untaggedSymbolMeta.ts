@@ -493,5 +493,13 @@ export const untaggedSymbolMeta = {
     symbol: 'iGOOGL',
     logo: 'googl.webp',
     coinGeckoId: ''
+  },
+
+  JELLYJELLY: {
+    name: 'Jelly-My-Jelly',
+    decimals: 6,
+    symbol: 'JELLYJELLY',
+    logo: 'jellyjelly.webp',
+    coinGeckoId: ''
   }
 }
