@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
     '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // imstr-usdt-perp
     '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // itsla-usdt-perp
@@ -128,6 +129,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
     '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // imstr-usdt-perp
     '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // itsla-usdt-perp
