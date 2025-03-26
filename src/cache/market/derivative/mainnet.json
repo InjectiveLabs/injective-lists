@@ -743,7 +743,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -984,6 +984,34 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "JELLYJELLY/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48",
+    "marketStatus": "active",
+    "ticker": "JELLYJELLY/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 10,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
@@ -1164,7 +1192,7 @@
     "maintenanceMarginRatio": "0.095",
     "isPerpetual": false,
     "marketId": "0x64c3a57b693ede854b0a2794ed5c99546925d1fbe74d91a2e3286e4155a00dee",
-    "marketStatus": "paused",
+    "marketStatus": "expired",
     "ticker": "TIA/USDT-30NOV2023",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
@@ -2295,7 +2323,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
