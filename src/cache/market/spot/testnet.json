@@ -1116,6 +1116,68 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x30dc51e9d2f1fc22fb9d30c51f1081e0c3f25384f29e98f201be1d60ac404f04",
+    "marketStatus": "active",
+    "ticker": "hETH/USDT",
+    "baseDenom": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hETH",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hETH",
+      "address": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hETH",
+      "symbol": "hETH",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 100000,
+    "minNotional": 1000000
+  },
+  {
+    "marketId": "0x313f0549cca0ee042260abc42c772cc70d74ad6277326027a3c58cbeae7265f3",
+    "marketStatus": "active",
+    "ticker": "hTIA/USDT",
+    "baseDenom": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hTIA",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hTIA",
+      "address": "factory/inj16qyqenrsq5dsmwmc25czyvyh6lmn0llyxxldu4/hTIA",
+      "symbol": "hTIA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x31e8dc101e3f584c449854cd8a6e773b89f9a1b5fe2779b676f21b5f8e80b19c",
     "marketStatus": "active",
     "ticker": "RIBBINJ/USDT",
