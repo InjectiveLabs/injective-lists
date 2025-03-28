@@ -66,6 +66,12 @@ export const fetchValidatorImage = async ({
     })
   }
 
+  const cloudFlareImageUrl = fetchValidatorImageFromImagePaths(operatorAddress)
+
+  if (cloudFlareImageUrl) {
+    return cloudFlareImageUrl
+  }
+
   const existingValidatorImage =
     existingValidatorsImageMap[operatorAddress.toLowerCase()]
 
@@ -74,9 +80,7 @@ export const fetchValidatorImage = async ({
   }
 
   const validatorMetadata =
-    fetchValidatorImageFromImagePaths(operatorAddress) ||
-    (await fetchValidatorMetadataFromKeybase(identity)) ||
-    ''
+    (await fetchValidatorMetadataFromKeybase(identity)) || ''
 
   await updateJSONFile(
     `src/generated/validatorImageMap/${getNetworkFileName(network)}.json`,
