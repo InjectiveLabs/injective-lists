@@ -88,5 +88,6 @@ export const testnetMarketIds: string[] = [
   '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac', // gbp-usdt-perp
   '0xba9c96a1a9cc226cfe6bd9bca3a433e396569d1955393f38f2ee728cfda7ec58', // jpy-usdt-perp
   '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
-  '0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0' // arb-usdt-perp
+  '0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0', // arb-usdt-perp
+  '0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6' // inj-usdt-perp
 ]
