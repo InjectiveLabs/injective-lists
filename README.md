@@ -13,7 +13,7 @@ _Access Limitless DeFi Markets with Zero Barriers._
 
 📜 A step by step guide can be found here on [Adding a new static token](./CONTRIBUTING.md) page. Please make sure you read them before you open a PR.
 
-You can find a more information on token metadata on this [page](./ts-scripts/README.md).
+You can find more information about generating the static json files [here](./src/README.md).
 
 ---
 
@@ -21,11 +21,20 @@ You can find a more information on token metadata on this [page](./ts-scripts/RE
 
 Here are the different tokens json file you can fetch/download to integrate on your product:
 
-- Devnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/devnet.json](./json/tokens/devnet.json)
-- Testnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/testnet.json](./json/tokens/testnet.json)
 - Mainnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/mainnet.json](./json/tokens/mainnet.json)
+- Testnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/testnet.json](./json/tokens/testnet.json)
+- Devnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/devnet.json](./json/tokens/devnet.json)
+
+You can also use CDN:
+- Mainnet: [https://d36789lqgasyke.cloudfront.net/json/tokens/mainnet.json](https://d36789lqgasyke.cloudfront.net/json/tokens/mainnet.json)
+- Testnet: [https://d36789lqgasyke.cloudfront.net/json/tokens/testnet.json](https://d36789lqgasyke.cloudfront.net/json/tokens/testnet.json)
+- Devnet: [https://d36789lqgasyke.cloudfront.net/json/tokens/devnet.json](https://d36789lqgasyke.cloudfront.net/json/tokens/devnet.json)
 
 ---
+
+## ⛑ Support
+
+Reach out to us at one of the following places!
 
 - Website at <a href="https://injective.com" target="_blank">`injective.com`</a>
 - Twitter at <a href="https://twitter.com/Injective_" target="_blank">`@Injective`</a>
@@ -36,7 +45,7 @@ Here are the different tokens json file you can fetch/download to integrate on y
 
 ## 🔓 License
 
-Copyright © 2021 - 2024 Injective Labs Inc. (https://injectivelabs.org/)
+Copyright © 2021 - 2025 Injective Labs Inc. (https://injectivelabs.org/)
 
 <a href="https://iili.io/mNneZN.md.png"><img src="https://iili.io/mNneZN.md.png" style="width: 300px; max-width: 100%; height: auto" />
 

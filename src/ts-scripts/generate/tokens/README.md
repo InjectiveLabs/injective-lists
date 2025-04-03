@@ -45,7 +45,7 @@ Created with the following characteristics:
 ```
 
 ℹ️ `denomTrace` can be retrieved from the chain via this endpoint using ibcHash:
-https://lcd.injective.network/swagger/#/Query/DenomTrace
+https://sentry.lcd.injective.network/swagger/#/Query/DenomTrace
 
 ### Insurance token
 
@@ -77,9 +77,9 @@ InsuranceTokens on the frontend are overwritten with the following information:
   - https://explorer.injective.network/asset/?tokenType=insuranceFund&denom=share46
 
 ℹ️ InsuranceToken can be retrieved from the chain via market using this endpoint:
-https://lcd.injective.network/swagger/#/Query/InsuranceFund
+https://sentry.lcd.injective.network/swagger/#/Query/InsuranceFund
 ℹ️ InsuranceTokens can be retrieved from the chain via this endpoint:
-https://lcd.injective.network/swagger/#/Query/InsuranceFunds
+https://sentry.lcd.injective.network/swagger/#/Query/InsuranceFunds
 
 ### Factory token
 
@@ -91,7 +91,7 @@ These are tokens converted from a cw20 token or natively created via the [tokenF
   - e.g. `factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx`
 
 ℹ️ TokenFactory metadata can be retrieved from the chain via this endpoint:
-https://lcd.injective.network/swagger/#/Query/DenomsMetadata
+https://sentry.lcd.injective.network/swagger/#/Query/DenomsMetadata
 
 Created with the following characteristics:
 
@@ -126,9 +126,9 @@ https://sentry.explorer.grpc-web.injective.network/api/explorer/v1/wasm/inj17gku
 ℹ️ Cw20 token metadata can be retrieved using this 2 endpoints:
 
 1. fetchContractInfo
-   https://lcd.injective.network/swagger/#/Query/ContractInfo
+   https://sentry.lcd.injective.network/swagger/#/Query/ContractInfo
 2. fetchContractState
-   https://lcd.injective.network/swagger/#/Query/AllContractState
+   https://sentry.lcd.injective.network/swagger/#/Query/AllContractState
 
 ### Peggy token
 
