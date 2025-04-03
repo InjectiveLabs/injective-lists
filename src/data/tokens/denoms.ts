@@ -29,5 +29,6 @@ export const verifiedTokenFactoryDenoms = [
   'factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept',
   'factory/inj1vwn4x08hlactxj3y3kuqddafs2hhqzapruwt87/katana',
   'factory/inj1xtel2knkt8hmc9dnzpjz6kdmacgcfmlv5f308w/ninja',
-  'factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA'
+  'factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA',
+  'factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst'
 ]
