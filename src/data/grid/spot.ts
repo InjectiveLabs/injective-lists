@@ -174,6 +174,10 @@ export const mainnetGridMarkets = [
   {
     slug: 'ausd-usdc',
     contractAddress: 'inj1vhpuluzljqk7meej5l943sflds6xfc78as5xvm'
+  },
+  {
+    contractAddress: 'inj17z9n57akgmuas32g5ejq06t0up4qn0qft6j5um',
+    slug: 'saga-usdt'
   }
 ]
 
