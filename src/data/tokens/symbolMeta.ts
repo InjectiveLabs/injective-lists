@@ -2165,5 +2165,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Pedro',
     logo: 'pedro.webp',
     coinGeckoId: ''
+  },
+
+  ARST: {
+    decimals: 6,
+    name: 'ARST Finance',
+    logo: 'arst.webp',
+    symbol: 'ARST',
+    coinGeckoId: ''
   }
 }
