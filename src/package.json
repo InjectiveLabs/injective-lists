@@ -11,6 +11,7 @@
     "fetch:mito:vaults": "ts-node ./ts-scripts/fetch/mitoVaults",
     "fetch:wasm:codeIds": "ts-node ./ts-scripts/fetch/wasmCodeIds",
     "//generate": "========== generate/format data from cache data ==========",
+    "generate:configs": "ts-node ./ts-scripts/generate/configs",
     "generate:slugs": "ts-node ./ts-scripts/generate/marketSlugs",
     "generate:marketMap": "ts-node ./ts-scripts/generate/marketMap",
     "generate:tokens:mito": "ts-node ./ts-scripts/generate/mitoTokens",

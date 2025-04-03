@@ -6,7 +6,7 @@ on:
     - cron: "*/15 * * * *"
   push:
     branches:
-      - master
+      - feat/chain-upgrade
 
 jobs:
   generate:
@@ -36,42 +36,6 @@ jobs:
 
       - name: Install dependencies
         run: cd src && yarn
-
-      - name: Generate tokens
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:tokens
-          dir: "src"
-
-      - name: Generate validators
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:validators
-          dir: "src"
-
-      - name: Generate market slugs
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:slugs
-          dir: "src"
-
-      - name: Generate wasm messages
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:wasm
-          dir: "src"
-
-      - name: Generate verified denoms
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:verifiedDenoms
-          dir: "src"
-
-      - name: Generate restriction list
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:restriction
-          dir: "src"
 
       - name: Generate configs
         uses: borales/actions-yarn@v4
