@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+      - feat/chain-upgrade
 
 jobs:
   generate:
@@ -32,7 +33,7 @@ jobs:
         with:
           token: "${{ secrets.GH_TOKEN }}"
       - run: |
-          git reset --hard origin/master
+          git reset --hard origin/feat/chain-upgrade
 
       - name: Install dependencies
         run: cd src && yarn
@@ -71,6 +72,12 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:restriction
+          dir: "src"
+
+      - name: Generate restriction list
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:configs
           dir: "src"
 
       - name: Commit changes
