@@ -1,16 +1,17 @@
 {
-  "inj": {
-    "address": "inj",
-    "isNative": true,
+  "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst": {
+    "address": "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst",
+    "isNative": false,
     "tokenVerification": "verified",
-    "decimals": 18,
-    "symbol": "INJ",
-    "name": "Injective",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
-    "coinGeckoId": "injective-protocol",
-    "denom": "inj",
-    "tokenType": "native",
-    "externalLogo": "injective-v4.webp"
+    "decimals": 6,
+    "name": "ARST Finance",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/ae70d14c-06e2-4493-7a11-55eb6d3b4b00/public",
+    "symbol": "ARST",
+    "coinGeckoId": "",
+    "creator": "inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk",
+    "denom": "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst",
+    "tokenType": "tokenFactory",
+    "externalLogo": "arst.svg"
   },
   "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": {
     "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
@@ -24,6 +25,19 @@
     "denom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "tokenType": "erc20",
     "externalLogo": "usdt.png"
+  },
+  "inj": {
+    "address": "inj",
+    "isNative": true,
+    "tokenVerification": "verified",
+    "decimals": 18,
+    "symbol": "INJ",
+    "name": "Injective",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+    "coinGeckoId": "injective-protocol",
+    "denom": "inj",
+    "tokenType": "native",
+    "externalLogo": "injective-v4.webp"
   },
   "peggy0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": {
     "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
