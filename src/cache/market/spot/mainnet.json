@@ -2015,6 +2015,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x6e1f4f2d2f5c009a55868bba81f2f873564e0406ac974a75e8d9ddc7d1b489b8",
+    "marketStatus": "active",
+    "ticker": "ARST/USDT",
+    "baseDenom": "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "ARST Finance",
+      "address": "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst",
+      "symbol": "ARST",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-7,
+    "minQuantityTickSize": 1000000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x6e46898e9a7ab9ff3c33791fa62ec108935837bab642833e1d17fa44d6ad038d",
     "marketStatus": "active",
     "ticker": "NBZ/USDT",
