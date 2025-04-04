@@ -3689,6 +3689,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xac645d3572e9301ce0fdb82e52d36f880433e57f3c02b73d67527e160ba36466",
+    "marketStatus": "active",
+    "ticker": "Joe/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/Joe",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/Joe",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/Joe",
+      "symbol": "Joe",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0xacce4e7f1907773d272fc217d40232986080b76774f32eb520dfec56e1d40533",
     "marketStatus": "active",
     "ticker": "NLT3/INJ",
