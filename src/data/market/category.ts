@@ -39,6 +39,7 @@ export const mainnetCategoryMap = {
   ],
   tradfiMarkets: [
     // markets that appear in rwa category
+    '0x6e1f4f2d2f5c009a55868bba81f2f873564e0406ac974a75e8d9ddc7d1b489b8', // arst-usdt
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
     '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // imstr-usdt-perp
