@@ -32,7 +32,7 @@ jobs:
         with:
           token: "${{ secrets.GH_TOKEN }}"
       - run: |
-          git reset --hard origin/feat/chain-upgrade
+          git reset --hard origin/master
 
       - name: Install dependencies
         run: cd src && yarn
