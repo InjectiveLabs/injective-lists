@@ -87,3 +87,10 @@ export type SwapRoute = {
   source_denom: string
   target_denom: string
 }
+
+export type ChainConfig = {
+  proposalId: number
+  blockHeight: number
+  proposalMsg: string
+  disableMaintenance: boolean
+}
