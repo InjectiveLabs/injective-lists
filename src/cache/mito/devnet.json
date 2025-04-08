@@ -1,5 +1,16 @@
 [
   {
+    "slug": "mito-inj-usdt-spot-market-making",
+    "codeId": "4",
+    "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
+    "vaultName": "Mito INJ/USDT Spot Market Making",
+    "vaultType": "crates.io:vault-asmm-spot",
+    "contractAddress": "inj1238q4fdxgmwgx0cc8n76p6q7y8wmaaxt2ehwgf",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "inj1gc5wcdn9ges00w0l2cfxd7r2puyflak5phpz4w",
+    "registrationMode": "Restricted"
+  },
+  {
     "slug": "kira-inj-cpmm",
     "codeId": "5",
     "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
@@ -22,6 +33,39 @@
     "registrationMode": ""
   },
   {
+    "slug": "permissionless_vault_1",
+    "codeId": "5",
+    "marketId": "0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21",
+    "vaultName": "permissionless_vault_1",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj16ft6jxgjju0ksh5rkgy49wewxhyv3gqz9dvpmx",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "inj1gc5wcdn9ges00w0l2cfxd7r2puyflak5phpz4w",
+    "registrationMode": "Permissionless"
+  },
+  {
+    "slug": "kira-inj-cpmm",
+    "codeId": "5",
+    "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
+    "vaultName": "KIRA/INJ CPMM",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj16s4mrjsakd6275fjnrgjftn982mv9a3h8k3nnx",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "inj1gc5wcdn9ges00w0l2cfxd7r2puyflak5phpz4w",
+    "registrationMode": "Restricted"
+  },
+  {
+    "slug": "oc-bucharest",
+    "codeId": "10",
+    "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
+    "vaultName": "OC Bucharest",
+    "vaultType": "crates.io:managed-vault",
+    "contractAddress": "inj1eh48y9kwm7lk69gp0k0mhyt476s4gtg8qnqqyl",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "",
+    "registrationMode": ""
+  },
+  {
     "slug": "mito-inj-usdt-spot-market-making",
     "codeId": "4",
     "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
@@ -33,6 +77,17 @@
     "registrationMode": "Restricted"
   },
   {
+    "slug": "oc-belgrade",
+    "codeId": "10",
+    "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
+    "vaultName": "OC Belgrade",
+    "vaultType": "crates.io:managed-vault",
+    "contractAddress": "inj1gngep4ctz5ka3kswhu7993se4x2u845m0nutu3",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "",
+    "registrationMode": ""
+  },
+  {
     "slug": "oc-bucharest",
     "codeId": "10",
     "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
@@ -42,6 +97,17 @@
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "",
     "registrationMode": ""
+  },
+  {
+    "slug": "mito-atom-usdt-spot-market-making",
+    "codeId": "4",
+    "marketId": "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa",
+    "vaultName": "Mito ATOM/USDT Spot Market Making",
+    "vaultType": "crates.io:vault-asmm-spot",
+    "contractAddress": "inj1q3647qp780u7y2zvau5fn748zqxsfm4ketx0x7",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "inj1gc5wcdn9ges00w0l2cfxd7r2puyflak5phpz4w",
+    "registrationMode": "Restricted"
   },
   {
     "slug": "mito-inj-perp-market-making",
@@ -74,6 +140,17 @@
     "contractAddress": "inj1w798gp0zqv3s9hjl3jlnwxtwhykga6rnx4llty",
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1wug8sewp6cedgkmrmvhl3lf3tulagm9h5uhctd",
+    "registrationMode": "Restricted"
+  },
+  {
+    "slug": "mito-inj-perp-market-making",
+    "codeId": "3",
+    "marketId": "0x7cc8b10d7deb61e744ef83bdec2bbcf4a056867e89b062c6a453020ca82bd4e4",
+    "vaultName": "Mito INJ Perp Market Making",
+    "vaultType": "crates.io:vault-asmm-perp",
+    "contractAddress": "inj1xlxq42ua00m9383up43494p08g8nvqt6fh7sdr",
+    "notionalValueCap": "100000000000000000000000",
+    "masterContractAddress": "inj1gc5wcdn9ges00w0l2cfxd7r2puyflak5phpz4w",
     "registrationMode": "Restricted"
   }
 ]
