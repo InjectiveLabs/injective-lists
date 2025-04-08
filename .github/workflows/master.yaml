@@ -138,7 +138,6 @@ jobs:
     needs: generate
 
     steps:
-      # This is here solely for testing and running this action locally with ACT - it shouldn't be needed for running on github as the images in gh actions should already have the AWS CLI installed
       - name: Install Act dependencies
         if: ${{ env.ACT }}
         run: |
