@@ -73,6 +73,12 @@ jobs:
           cmd: generate:restriction
           dir: "src"
 
+      - name: Generate swap routes
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:swap:routes
+          dir: "src"
+
       - name: Generate configs
         uses: borales/actions-yarn@v4
         with:
