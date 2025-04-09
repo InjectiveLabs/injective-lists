@@ -4,7 +4,7 @@ import { updateJSONFile } from '../helper/utils'
 import { SwapRoute } from '../../types'
 
 const TRANSACTION_HASH =
-  '6EF7BF30E6A3959C876BA5456CFA847450B595D0D4D14FD0137EAB0907BBA56F'
+  '71F4667E43803A10163E72D0928C90AF7E18704FB6B2569906565DDBEE2261EB'
 
 export const querySwapRoutesViaTransactionHash = async (
   transactionHash: string,

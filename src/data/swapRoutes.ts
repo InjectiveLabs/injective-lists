@@ -17394,5 +17394,21 @@ export const mainnetSwapRoutes = [
       '0x6ff778593af355dc6b36d0c051d7f720dd284d35253f958a7b1d265e7df79693',
       '0x8130d65840e1f5d8350c9311beed80ab669c15695c300157df701ab1c4df27e2'
     ]
+  },
+  {
+    source_denom: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ',
+    target_denom: 'inj',
+    steps: [
+      '0x6e46898e9a7ab9ff3c33791fa62ec108935837bab642833e1d17fa44d6ad038d',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0'
+    ]
+  },
+  {
+    source_denom: 'inj',
+    target_denom: 'factory/inj1llr45x92t7jrqtxvc02gpkcqhqr82dvyzkr4mz/NBZ',
+    steps: [
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
+      '0x6e46898e9a7ab9ff3c33791fa62ec108935837bab642833e1d17fa44d6ad038d'
+    ]
   }
 ]
