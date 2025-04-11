@@ -5673,6 +5673,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xfb018a8af5f0cfdaa3c8261fe102733ad935c9f95e6f20cee3742fa2d82fef76",
+    "marketStatus": "active",
+    "ticker": "PROTOCOL/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PROTOCOL",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PROTOCOL",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PROTOCOL",
+      "symbol": "PROTOCOL",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0xfd359c044664481b486665d3f7c5798faf6c2e5b88ca46399ddef71d9ee31fe3",
     "marketStatus": "active",
     "ticker": "TEST/USDT",
