@@ -2074,7 +2074,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   TruINJ: {
     decimals: 18,
     symbol: 'TruINJ',
-    name: 'TruFin liquid staking token',
+    name: 'TruFin Liquid Staking Token',
     logo: 'truinj.svg',
     coinGeckoId: ''
   },
