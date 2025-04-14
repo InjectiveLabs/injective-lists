@@ -2,14 +2,9 @@ name: Injective list - Upload Files
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
 
 jobs:
   deploy:
-    # if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
-    if: false
     name: "Trigger upload"
     runs-on: ubuntu-latest
     env:
