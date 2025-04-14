@@ -620,6 +620,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x1b6749459dadf3bea0257b3c403b7403c0b83c4b05de89d0c55f0f8badfffa80",
+    "marketStatus": "active",
+    "ticker": "TruINJ/INJ",
+    "baseDenom": "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "TruFin liquid staking token",
+      "address": "inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq",
+      "symbol": "TruINJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/013c70ad-6dd1-42a3-04d9-806dee787d00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 10000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906",
     "marketStatus": "paused",
     "ticker": "ARB/USDT",
