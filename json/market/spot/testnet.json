@@ -3038,6 +3038,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x7eeb60fe7242abf6042dc4bc257a1b9ad45500adb5fcf20dbe3971bd213a6659",
+    "marketStatus": "active",
+    "ticker": "IS25/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/IS25",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/IS25",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/IS25",
+      "symbol": "IS25",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6f015260-c589-499f-b692-a57964af9900/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x803bcb389361b02b138d56d5b483b6d38e2fa0cfa8680462ce79fdc51b9a9277",
     "marketStatus": "active",
     "ticker": "shroom1/INJ",
