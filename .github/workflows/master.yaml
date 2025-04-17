@@ -30,6 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 1
           token: "${{ secrets.GH_TOKEN }}"
       - run: |
           git reset --hard origin/master
@@ -86,16 +87,40 @@ jobs:
           dir: "src"
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
-        with:
-          message: "chore: generate json files"
-
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
         if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
-        with:
-          message: "chore: generate json files - skip deploy"
+        run: |
+          [ -z "$(git config user.name)" ] && git config --global user.name "GitHub Actions"
+          [ -z "$(git config user.email)" ] && git config --global user.email "actions@github.com"
+
+          git add .
+          git commit -m "chore: generate json files" --no-verify
+          git push origin HEAD:master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Commit changes - skip deploy
+        if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
+        run: |
+          [ -z "$(git config user.name)" ] && git config --global user.name "GitHub Actions"
+          [ -z "$(git config user.email)" ] && git config --global user.email "actions@github.com"
+
+          git add .
+          git commit -m "chore: generate json files - skip deploy" --no-verify
+          git push origin HEAD:master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
+      #   with:
+      #     message: "chore: generate json files"
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
+      #   with:
+      #     message: "chore: generate json files - skip deploy"
 
   deployAws:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
@@ -123,8 +148,12 @@ jobs:
           verbose: true # default
           arch: amd64 # allowed values: amd64, arm64
 
-      - name: Checkout
-        uses: actions/checkout@main
+      - name: Checkout with retry
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
@@ -167,8 +196,12 @@ jobs:
           verbose: true # default
           arch: amd64 # allowed values: amd64, arm64
 
-      - name: Checkout
-        uses: actions/checkout@main
+      - name: Checkout with retry
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
