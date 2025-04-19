@@ -155,6 +155,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x0608fb665b390f3178b0f28f57b2aaedc81239abcc5ad5f1c5e65a6e516dc030",
+    "marketStatus": "active",
+    "ticker": "DRUGS/INJ",
+    "baseDenom": "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "DRUGS",
+      "address": "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS",
+      "symbol": "DRUGS",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c67b5192-c503-4254-8f2c-bbfedb8e3300/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100000,
+    "minQuantityTickSize": 100000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x0611780ba69656949525013d947713300f56c37b6175e02f26bffa495c3208fe",
     "marketStatus": "active",
     "ticker": "INJ/USDT",
