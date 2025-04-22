@@ -93,6 +93,28 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x195292913561080743bf740fc389dab3ecbc9c5218b6fb70f9d1d2ac106c8ff0",
+    "marketStatus": "active",
+    "ticker": "XKw/INJ",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/XKw",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0
+  },
+  {
     "marketId": "0x2021159081a88c9a627c66f770fb60c7be78d492509c89b203e1829d0413995a",
     "marketStatus": "active",
     "ticker": "ETHBTCTrend/USDT",
@@ -456,6 +478,28 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x8bd85bf705e04a160198a47e57590f609a4753f6678ff0dd58d8baa4ff560c2a",
+    "marketStatus": "active",
+    "ticker": "XKw/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/XKw",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.03",
+    "takerFeeRate": "0.03",
+    "serviceProviderFee": "0.06",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 1000000000
+  },
+  {
     "marketId": "0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0",
     "marketStatus": "active",
     "ticker": "INJ/USDT",
@@ -591,6 +635,72 @@
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
+  },
+  {
+    "marketId": "0xd8a95ce1bbc772f853f5e4516c2197e09e157805a16766bcc3121e833090cc92",
+    "marketStatus": "active",
+    "ticker": "gBP/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/gBP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 100,
+    "minNotional": 1000000000
+  },
+  {
+    "marketId": "0xdc155140037cb136b5a9fa47ba85bb818246d51e33a56c763677331eb0145371",
+    "marketStatus": "active",
+    "ticker": "RXW/USDT",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/RXW",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.03",
+    "takerFeeRate": "0.03",
+    "serviceProviderFee": "0.06",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000000
+  },
+  {
+    "marketId": "0xe34fd8df73fb0990ecaeca5f5bc8e779026f073f8a6718823184230ab6b6db5d",
+    "marketStatus": "active",
+    "ticker": "RXW/INJ",
+    "baseDenom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/RXW",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/efaa2c96-5463-4707-0d2b-19e5b63df000/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 0
   },
   {
     "marketId": "0xe97ebaf3e2ae3bd00dabe59046fcc28ec58ea969df33a9ce95f4fc285306c2d4",
