@@ -12,13 +12,6 @@ jobs:
       SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
 
     steps:
-      # Not entirely sure that we need this here, but it's in the deploy script so i put it here as well
-      - name: Sleep for 60s
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: juliangruber/sleep-action@v2.0.0
-        with:
-          time: 60s
-
       # This is here solely for testing and running this action locally with ACT - it shouldn't be needed for running on github as the images in gh actions should already have the AWS CLI installed
       - name: Install Act dependencies
         if: ${{ env.ACT }}
