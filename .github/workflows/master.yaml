@@ -163,6 +163,16 @@ jobs:
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
 
+      - name: Sleep for 60s
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 60s
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
   deployAwsStaging:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
     name: "Deploy AWS Staging"
@@ -171,7 +181,6 @@ jobs:
 
     steps:
       - name: Sleep for 30s
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: juliangruber/sleep-action@v2.0.0
         with:
           time: 30s
@@ -206,6 +215,15 @@ jobs:
       - name: Sync files to S3 bucket
         run: |
           aws s3 sync json s3://injective-lists/json --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+      - name: Sleep for 60s
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 60s
 
       - name: Invalidate CloudFront cache
         run: |
