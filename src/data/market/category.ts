@@ -164,10 +164,14 @@ export const mainnetCategoryMap = {
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
   ],
   meme: [
+    '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
     '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
     '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
     '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
     '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
+    '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
+    '0xdf9317eac1739a23bc385e264afde5d480c0b3d2322660b5efd206071d4e70b7', // ninja-inj
+    '0x85ccdb2b6022b0586da19a2de0a11ce9876621630778e28a5d534464cbfff238', // nonja-inj
     '0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217', // giga-inj
     '0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80', // mother-inj
     '0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88' // wif-usdt-perp
