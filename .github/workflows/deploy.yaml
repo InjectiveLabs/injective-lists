@@ -2,9 +2,6 @@ name: Injective list - Deploy UI
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
 
 jobs:
   deploy:
