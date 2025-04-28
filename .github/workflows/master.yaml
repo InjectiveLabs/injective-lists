@@ -93,6 +93,12 @@ jobs:
 
           git add .
 
+          # Check if there are any changes to commit
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
           if [[ "${{ contains(github.event.commits[0].message, 'skip deploy') }}" == "true" || "${{ github.event_name != 'push' }}" == "true" ]]; then
             git commit -m "chore: generate json files - skip deploy" --no-verify
           else

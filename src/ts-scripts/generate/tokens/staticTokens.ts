@@ -28,7 +28,6 @@ import {
   getSupplyDenom,
   getBankTokenFactoryMetadataByAddress
 } from '../../helper/getter'
-import { getMarketIdsByDenom } from '../../helper/market'
 import { symbolMeta } from '../../../data/tokens/symbolMeta'
 import { updateJSONFile, getNetworkFileName } from '../../helper/utils'
 import { verifiedTokenFactoryDenoms } from './../../../data/tokens/denoms'
