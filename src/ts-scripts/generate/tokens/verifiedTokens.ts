@@ -41,7 +41,7 @@ async function generateVerifiedTokensList(network: Network) {
   })
 
   await updateJSONFile(
-    `tokens/verified/${getNetworkFileName(network)}.json`,
+    `json/tokens/verified/${getNetworkFileName(network)}.json`,
     filteredTokenList
   )
 }
