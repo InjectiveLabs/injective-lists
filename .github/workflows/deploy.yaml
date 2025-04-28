@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
+    # if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
     name: "Trigger deployments"
     runs-on: ubuntu-latest
     permissions: write-all
@@ -24,15 +24,6 @@ jobs:
         with:
           time: 60s
 
-      - name: Deploy mito (devnet)
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: mitoFinance/mito-ui
-          token: "${{ secrets.GH_TOKEN }}"
-
       - name: Deploy mito
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
@@ -40,15 +31,6 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: mitoFinance/mito-ui
-          token: "${{ secrets.GH_TOKEN }}"
-
-      - name: Deploy bridge (devnet)
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Deploy bridge (mainnet)
@@ -60,15 +42,6 @@ jobs:
           repo: injectiveLabs/injective-bridge
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Rebuild helix (devnet)
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: injectiveLabs/injective-helix
-          token: "${{ secrets.GH_TOKEN }}"
-
       - name: Rebuild helix
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
@@ -78,15 +51,6 @@ jobs:
           repo: injectiveLabs/injective-helix
           token: "${{ secrets.GH_TOKEN }}"
 
-      - name: Deploy explorer (devnet)
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: injectiveLabs/injective-explorer
-          token: "${{ secrets.GH_TOKEN }}"
-
       - name: Deploy explorer
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
@@ -94,15 +58,6 @@ jobs:
           workflow: mainnet.yaml
           ref: master
           repo: injectiveLabs/injective-explorer
-          token: "${{ secrets.GH_TOKEN }}"
-
-      - name: Rebuild hub (devnet)
-        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
-        uses: benc-uk/workflow-dispatch@v1.2.2
-        with:
-          workflow: devnet.yml
-          ref: dev
-          repo: injectiveLabs/injective-hub
           token: "${{ secrets.GH_TOKEN }}"
 
       - name: Rebuild Hub
