@@ -501,5 +501,13 @@ export const untaggedSymbolMeta = {
     symbol: 'JELLYJELLY',
     logo: 'jellyjelly.webp',
     coinGeckoId: ''
+  },
+
+  SIGN: {
+    name: 'Sign',
+    decimals: 6,
+    symbol: 'SIGN',
+    logo: 'sign.webp',
+    coinGeckoId: 'sign-global'
   }
 }
