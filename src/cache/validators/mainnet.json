@@ -2852,6 +2852,29 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1pkyycsewsfclqq4vshge540hwnqpqvlj3p80an",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "BitGo",
+      "identity": "F2AEADF368F5FFEE",
+      "website": "https://www.bitgo.com",
+      "securityContact": "security@twinstake.io",
+      "details": "BitGo Injective staking, powered by Twinstake"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.08",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2025-04-30T08:48:52.531Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper1qkwpk4pf6txgazfs8lnjzj75pc47z9g26lww7r",
     "jailed": false,
     "status": "Bonded",
