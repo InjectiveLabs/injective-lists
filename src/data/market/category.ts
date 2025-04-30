@@ -183,6 +183,9 @@ export const mainnetCategoryMap = {
 }
 
 export const testnetCategoryMap = {
+  testCloudfront: [
+    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
+  ],
   newMarkets: [
     '0xc10e8b25979a1620a6e088ce4c141f5fd2841e2089d4c99b6e5cd8f85986dcd3', // pepe-usdt-perp
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac', // gbp-usdt-perp
@@ -220,6 +223,9 @@ export const testnetCategoryMap = {
 }
 
 export const devnetCategoryMap = {
+  testCloudfront: [
+    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
+  ],
   newMarkets: [
     '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
     '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
