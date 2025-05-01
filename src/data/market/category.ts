@@ -1,7 +1,8 @@
 export const mainnetCategoryMap = {
   testCloudfront: [
     '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a', // sign-usdt-perp
-    '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
+    '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
+    '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5' // xau-usdt-perp
   ],
   newMarkets: [
     '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a', // sign-usdt-perp
