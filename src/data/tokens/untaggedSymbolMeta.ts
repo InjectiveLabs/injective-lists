@@ -509,5 +509,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SIGN',
     logo: 'sign.webp',
     coinGeckoId: 'sign-global'
+  },
+
+  iMETA: {
+    name: 'Meta Platforms',
+    decimals: 6,
+    symbol: 'iMETA',
+    logo: 'meta.webp',
+    coinGeckoId: ''
   }
 }
