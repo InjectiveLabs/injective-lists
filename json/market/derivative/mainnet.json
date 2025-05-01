@@ -2196,6 +2196,34 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "0x78a3e3b8e676a8f73c439f5d749737034b139bbbe899ba5775216fba596607fe",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36",
+    "marketStatus": "active",
+    "ticker": "iMETA/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "HELIX_AI_INDEX/USDT",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
