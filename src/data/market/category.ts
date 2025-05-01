@@ -7,6 +7,7 @@ export const mainnetCategoryMap = {
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668' // igoogl-usdt-perp
   ],
   newMarkets: [
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a', // sign-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
@@ -30,6 +31,7 @@ export const mainnetCategoryMap = {
   ],
   iAssets: [
     // NYSE
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
     '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // imstr-usdt-perp
@@ -71,6 +73,7 @@ export const mainnetCategoryMap = {
     '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
     '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
