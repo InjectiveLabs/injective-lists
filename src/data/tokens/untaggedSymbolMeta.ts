@@ -517,5 +517,38 @@ export const untaggedSymbolMeta = {
     symbol: 'iMETA',
     logo: 'meta.webp',
     coinGeckoId: ''
+  },
+
+  iAAPL: {
+    name: 'Apple Inc',
+    decimals: 6,
+    symbol: 'iAAPL',
+    logo: 'iaapl.webp',
+    coinGeckoId: ''
+  },
+
+  iMSFT: {
+    name: 'Microsoft Corp',
+    decimals: 6,
+    symbol: 'iMSFT',
+    logo: 'imsft.webp',
+    coinGeckoId: ''
+  },
+
+  iAMZN: {
+    name: 'Amazon Inc',
+    decimals: 6,
+    symbol: 'iAMZN',
+    logo: 'iamzn.webp',
+    coinGeckoId: ''
+  },
+
+  iNFLX: {
+    name: 'Netflix Corp',
+    decimals: 6,
+    symbol: 'iNFLX',
+    logo: 'inflx.webp',
+    coinGeckoId: ''
   }
+
 }
