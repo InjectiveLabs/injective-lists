@@ -3,6 +3,10 @@ export const mainnetCategoryMap = {
     '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
   ],
   newMarkets: [
+    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
+    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
+    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf', // iamzn-usdt-perp
+    '0xe4fd69fb47edd3a7ca1436fae764055001139659d3e0df1eb7237f031737afde', // inflx-usdt-perp
     '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a', // sign-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
@@ -27,6 +31,10 @@ export const mainnetCategoryMap = {
   ],
   iAssets: [
     // NYSE
+    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
+    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
+    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf', // iamzn-usdt-perp
+    '0xe4fd69fb47edd3a7ca1436fae764055001139659d3e0df1eb7237f031737afde', // inflx-usdt-perp
     '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
     '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
@@ -41,34 +49,12 @@ export const mainnetCategoryMap = {
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
   ],
   deprecated: [
-    '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c', // sollegacy-usdt
-    '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
-    '0xcdfbfaf1f24055e89b3c7cc763b8cb46ffff08cdc38c999d01f58d64af75dca9', // aave-usdclegacy
-    '0xa43d2be9861efb0d188b136cef0ae2150f80e08ec318392df654520dd359fcd7', // grt-usdclegacy
-    '0xe0dc13205fb8b23111d8555a6402681965223135d368eeeb964681f9ff12eb2a', // inj-usdclegacy
-    '0xfe93c19c0a072c8dd208b96694e024305a7dff01bbf12cac2bfa81b246c69040', // link-usdclegacy
-    '0x5abfffe9079d53e0bf8ee9b3064b427acc3d71d6ba58a44235abe38f60115678', // matic-usdclegacy
-    '0x9a629b947b6f946af4f6076cfda67f3535d73ee3cef6176cf6d9c8d6b0a03f37', // sushi-usdclegacy
-    '0x09cc2c28fbedbdd677e07924653f8f583d0ee5886e74046e7f114210d990784b', // uni-usdclegacy
-    '0xf66f797a0ff49bd2170a04d288ca3f13b5df1c822a7b0cc4204aca64a5860666', // usdclegacy-usdcet
-    '0xabc20971099f5df5d1de138f8ea871e7e9832e3b0b54b61056eae15b09fed678', // usdclegacy-usdt
-    '0x8b1a4d3e8f6b559e30e40922ee3662dd78edf7042330d4d620d188699d1a9715', // usdt-usdclegacy
-    '0x170a06eb653548f67e94b0fcb82c5258c83b0a2b62ed24c55749d5ac77bc7621', // wbtc-usdclegacy
-    '0x01e920e081b6f3b2e5183399d5b6733bb6f80319e6be3805b95cb7236910ff0e', // weth-usdclegacy
-    '0x4fa0bd2c2adbfe077f58395c18a72f5cbf89532743e3bddf43bc7aba706b0b74', // chz-usdcet
-    '0x7fce43f1140df2e5f16977520629e32a591939081b59e8fbc1e1c4ddfa77a044', // usdcet-ldo
-    '0x66a113e1f0c57196985f8f1f1cfce2f220fa0a96bca39360c70b6788a0bc06e0', // ldo-usdcet
-    '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d', // sollegacy-usdc
-    '0xb825e2e4dbe369446e454e21c16e041cbc4d95d73f025c369f92210e82d2106f', // usdcso-usdcet
-    '0xf66f797a0ff49bd2170a04d288ca3f13b5df1c822a7b0cc4204aca64a5860666', // usdclegacy-usdcet
-    '0xda0bb7a7d8361d17a9d2327ed161748f33ecbf02738b45a7dd1d812735d1531c', // usdt-usdcet
-    '0xba33c2cdb84b9ad941f5b76c74e2710cf35f6479730903e93715f73f2f5d44be', // wmaticlegacy-usdc
-    '0x1bba49ea1eb64958a19b66c450e241f17151bc2e5ea81ed5e2793af45598b906', // arblegacy-usdt
-    '0xb9a07515a5c239fcbfa3e25eaa829a03d46c4b52b9ab8ee6be471e9eb0e9ea31', // wmaticlegacy-usdt
-    '0xb965ebede42e67af153929339040e650d5c2af26d6aa43382c110d943c627b0a', // pythlegacy-inj
-    '0xa6ec1de114a5ffa85b6b235144383ce51028a1c0c2dee7db5ff8bf14d5ca0d49' // pythlegacy-usdt
   ],
   trending: [
+    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
+    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
+    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf', // iamzn-usdt-perp
+    '0xe4fd69fb47edd3a7ca1436fae764055001139659d3e0df1eb7237f031737afde', // inflx-usdt-perp
     '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
     '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
@@ -160,7 +146,7 @@ export const mainnetCategoryMap = {
     '0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d' // pyth-usdt-perp
   ],
   ai: [
-    '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // itsla-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
