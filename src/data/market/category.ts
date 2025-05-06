@@ -1,7 +1,4 @@
 export const mainnetCategoryMap = {
-  testCloudfront: [
-    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
-  ],
   newMarkets: [
     '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
     '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
@@ -48,8 +45,7 @@ export const mainnetCategoryMap = {
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
   ],
-  deprecated: [
-  ],
+  deprecated: [],
   trending: [
     '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
     '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
@@ -123,12 +119,6 @@ export const mainnetCategoryMap = {
     '0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f', // omni-usdt
     '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced' // bnb-usdt-perp
   ],
-  layer2: [
-    '0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa', // move-usdt-perp
-    '0x1c2e5b1b4b1269ff893b4817a478fba6095a89a3e5ce0cccfcafa72b3941eeb6', // arb-usdt
-    '0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5', // arb-usdt-perp
-    '0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c' // op-usdt-perp
-  ],
   defi: [
     '0xe5bfc48fc29146d756c9dac69f096d56cc4fc5ae75c98c1ad045c3356d14eb82', // aix-usdt-perp
     '0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4', // plume-usdt-perp
@@ -155,26 +145,10 @@ export const mainnetCategoryMap = {
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
-  ],
-  meme: [
-    '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48', // jellyjelly-usdt-perp
-    '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad', // trump-usdt-perp
-    '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99', // spx-usdt-perp
-    '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9', // popcat-usdt-perp
-    '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99', // pepe-usdt-perp
-    '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
-    '0xdf9317eac1739a23bc385e264afde5d480c0b3d2322660b5efd206071d4e70b7', // ninja-inj
-    '0x85ccdb2b6022b0586da19a2de0a11ce9876621630778e28a5d534464cbfff238', // nonja-inj
-    '0xd6518f94efd32d7129eea0780d256a714d41a1f02992f346342bd64dc26a7217', // giga-inj
-    '0x9b3fa54bef33fd216b84614cd8abc3e5cc134727a511cef37d366ecaf3e03a80', // mother-inj
-    '0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88' // wif-usdt-perp
   ]
 }
 
 export const testnetCategoryMap = {
-  testCloudfront: [
-    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
-  ],
   newMarkets: [
     '0xc10e8b25979a1620a6e088ce4c141f5fd2841e2089d4c99b6e5cd8f85986dcd3', // pepe-usdt-perp
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac', // gbp-usdt-perp
@@ -205,16 +179,11 @@ export const testnetCategoryMap = {
     '0x0033118e7cf665369d4208ea03c88549f151c1303f43442413679c8c407cc0d3' // nlt2-inj
   ],
   layer1: [],
-  layer2: [],
   defi: [],
-  ai: [],
-  meme: []
+  ai: []
 }
 
 export const devnetCategoryMap = {
-  testCloudfront: [
-    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a' // sign-usdt-perp
-  ],
   newMarkets: [
     '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
     '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
@@ -244,13 +213,6 @@ export const devnetCategoryMap = {
     '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
   ],
   layer1: [],
-  layer2: [],
   defi: [],
-  ai: [],
-  meme: [
-    '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
-    '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
-    '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
-    '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
-  ]
+  ai: []
 }
