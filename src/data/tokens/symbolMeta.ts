@@ -2173,5 +2173,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'arst.svg',
     symbol: 'ARST',
     coinGeckoId: ''
+  },
+
+  USD1: {
+    decimals: 18,
+    name: 'USD1',
+    logo: 'usd1.webp',
+    symbol: 'USD1',
+    coinGeckoId: 'usd1-wlfi'
   }
 }
