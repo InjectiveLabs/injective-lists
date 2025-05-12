@@ -1736,6 +1736,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x5d58649e026acc8a69df1321191f1a49a9e3537bdedde5c0979feac0aa0e4b90",
+    "marketStatus": "active",
+    "ticker": "USD1/USDT",
+    "baseDenom": "peggy0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "USD1",
+      "address": "0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d",
+      "symbol": "USD1",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a26f5cd4-e62c-4b1b-8b39-a054abe4ad00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-16,
+    "minQuantityTickSize": 100000000000000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x5de59857f03c90cdb364edcf99963c50b732bbd7a715430fd36f35a21a8bd54b",
     "marketStatus": "active",
     "ticker": "BTORO/INJ",
