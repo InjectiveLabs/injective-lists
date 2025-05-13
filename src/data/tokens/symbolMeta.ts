@@ -2177,7 +2177,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   USD1: {
     decimals: 18,
-    name: 'World Liberty Financial Dollar',
+    name: 'World Liberty Financial USD',
     logo: 'usd1.webp',
     symbol: 'USD1',
     coinGeckoId: 'usd1-wlfi'
