@@ -459,7 +459,7 @@ export const untaggedSymbolMeta = {
     name: 'Robinhood',
     decimals: 6,
     symbol: 'iHOOD',
-    logo: 'hood.webp',
+    logo: 'ihood.webp',
     coinGeckoId: ''
   },
   
