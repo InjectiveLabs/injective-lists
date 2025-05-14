@@ -62,6 +62,10 @@ export const mainnetGridMarkets = [
   {
     slug: 'op-usdt-perp',
     contractAddress: 'inj1nm4ajyrlyqqhgzf32dvywgvshewyaw53rlwdfg'
+  },
+  {
+    slug: 'build-usdt-perp',
+    contractAddress: 'inj1hth3zy65689s3gtydhwr9a295syreyzj286x2y'
   }
 ]
 export const stagingGridMarkets = []
