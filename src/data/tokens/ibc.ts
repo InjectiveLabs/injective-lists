@@ -569,5 +569,13 @@ export const mainnetTokens: IbcTokenSource[] = [
     source: TokenSource.Cosmos,
     path: 'transfer/channel-8',
     hash: '422AB9E8C589B6782DA0C3D3BA58FF938B3C26BEB2AE4068535AE82B361D095E'
+  },
+  {
+    ...symbolMeta.LBTC,
+    baseDenom: 'uclbtc',
+    channelId: 'channel-1340',
+    path: 'transfer/channel-1/transfer/channel-1340',
+    source: TokenSource.Cosmos,
+    hash: 'B7BF60BB54433071B49D586F54BD4DED5E20BEFBBA91958E87488A761115106B'
   }
 ]
