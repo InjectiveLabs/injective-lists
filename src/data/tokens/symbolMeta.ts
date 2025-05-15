@@ -2181,5 +2181,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'usd1.webp',
     symbol: 'USD1',
     coinGeckoId: 'usd1-wlfi'
+  },
+
+  LBTC: {
+    decimals: 8,
+    name: 'Lombard Staked BTC',
+    logo: 'lbtc.svg',
+    symbol: 'LBTC',
+    coinGeckoId: 'lombard-staked-btc'
   }
 }
