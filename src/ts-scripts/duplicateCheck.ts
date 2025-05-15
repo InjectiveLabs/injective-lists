@@ -11,17 +11,14 @@ function checkForDuplicate(network: Network) {
     (list: Record<string, any>, token: Token) => {
       const denom = token.denom
 
-      if (list[denom]) {
-        return {
-          ...list,
-          [denom]: {
-            list: [...list[denom].list, token],
-            count: list[denom].count + 1
-          }
-        }
+      if (denom in list) {
+        list[denom].list.push(token)
+        list[denom].count++
+      } else {
+        list[denom] = { list: [token], count: 1 }
       }
 
-      return { ...list, [denom]: { list: [token], count: 1 } }
+      return list
     },
     {}
   )

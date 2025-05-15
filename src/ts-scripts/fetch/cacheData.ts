@@ -29,6 +29,38 @@ import { Token } from '../../types'
 
 const LIMIT = 10000
 
+async function fetchAllDenomsMetadata({
+  offset = 0,
+  network,
+  allMetadatas = []
+}: {
+  offset?: number
+  network: Network
+  allMetadatas?: any[]
+}) {
+  const endpoints = getNetworkEndpoints(network)
+  const bankApi = new ChainGrpcBankApi(endpoints.grpc)
+
+  try {
+    const response = await bankApi.fetchDenomsMetadata({ limit: LIMIT, offset })
+
+    const combinedMetadatas = [...allMetadatas, ...response.metadatas]
+
+    if (response.metadatas.length === LIMIT) {
+      return fetchAllDenomsMetadata({
+        network,
+        offset: offset + LIMIT,
+        allMetadatas: combinedMetadatas
+      })
+    }
+
+    return combinedMetadatas
+  } catch (error) {
+    console.error('Error fetching denoms metadata:', error)
+    throw error // Or handle the error as appropriate for your use case
+  }
+}
+
 const formatMetadata = (metadata: Metadata) => {
   const denom = metadata.base
   const name = denom.startsWith('factory')
@@ -65,16 +97,15 @@ const formatInsuranceFund = (insuranceFund: InsuranceFund): Token => {
 }
 
 export const fetchBankMetadata = async (network: Network) => {
-  const endpoints = getNetworkEndpoints(network)
-  const bankApi = new ChainGrpcBankApi(endpoints.grpc)
-
   try {
-    const response = await bankApi.fetchDenomsMetadata({ limit: LIMIT })
+    const metadatas = await fetchAllDenomsMetadata({
+      network
+    })
 
     // cache data in case of api error
     await updateJSONFile(
       `src/cache/bankMetadata/${getNetworkFileName(network)}.json`,
-      response.metadatas
+      metadatas
         .map(formatMetadata)
         .sort((a, b) => a.denom.localeCompare(b.denom))
     )
