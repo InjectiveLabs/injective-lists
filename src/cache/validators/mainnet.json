@@ -392,8 +392,8 @@
   },
   {
     "operatorAddress": "injvaloper13xg5mkd6maqxye07x9za0kaj756drw2r45yk5w",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Meria",
       "identity": "9A516A1CD4116BBF",
@@ -401,8 +401,8 @@
       "securityContact": "it@meria.com",
       "details": "French Crypto Investment Provider"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 118052748,
+    "unbondingTime": "2025-06-10T00:02:12.534Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -1796,7 +1796,7 @@
   {
     "operatorAddress": "injvaloper1fa558ytfnekl2zlmv7zpupam7zrcj2wkpqt90x",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Cosmic Validator | Top Uptime & Auto-compound",
       "identity": "FF4B91B50B71CEDA",
