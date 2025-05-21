@@ -112,6 +112,38 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "iLr",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x453e2e8f259a66cdfb9ecdb5dbbb544b3c19c1ba90245f3716ef190042440cbe",
+    "marketStatus": "active",
+    "ticker": "iLr/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1779360481,
+      "settlementPrice": "0"
+    }
+  },
+  {
     "oracleBase": "BTC",
     "oracleQuote": "USD",
     "oracleType": "coinbase",
@@ -168,6 +200,62 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "TwM",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0x625890a1c5d9331d286a8085bd308ba0d80b8353bf196d04cc66f8c684b64e37",
+    "marketStatus": "active",
+    "ticker": "TwM/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 2000000
+  },
+  {
+    "oracleBase": "rpj",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.02",
+    "maintenanceMarginRatio": "0.01",
+    "isPerpetual": true,
+    "marketId": "0x67feba7409b18e923cdb5bc6239515ae9dba43451c4b48bd5ef1b7a5772e634b",
+    "marketStatus": "active",
+    "ticker": "rpj/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 100000
+  },
+  {
     "oracleBase": "INJ",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -222,6 +310,38 @@
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
     "minNotional": 1000000
+  },
+  {
+    "oracleBase": "rXE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xaf55b94e45c2dfef55e9024bb385000b6fd5386d602b7ba450dbd064ae285519",
+    "marketStatus": "active",
+    "ticker": "rXE/USDT EXPIRY",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1747827880,
+      "settlementPrice": "0"
+    }
   },
   {
     "oracleBase": "UNI",
