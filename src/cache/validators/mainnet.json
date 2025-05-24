@@ -715,7 +715,7 @@
   {
     "operatorAddress": "injvaloper16gdnrnl224ylje5z9vd0vn0msym7p58f00qauj",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "BackBone Labs | Delegate for $SOUL Claim Drop",
       "identity": "9217B54948A703D6",
@@ -3106,8 +3106,8 @@
   },
   {
     "operatorAddress": "injvaloper1s28qvpfpq3525ep0surypnmwkfy8d2n237pnc4",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Injective Finance",
       "identity": "54EEBB62B7D58830",
@@ -3115,8 +3115,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 80732362,
-    "unbondingTime": "2024-08-25T20:37:20.725Z",
+    "unbondingHeight": 118591814,
+    "unbondingTime": "2025-06-14T10:09:14.482Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
