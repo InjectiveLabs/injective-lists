@@ -2945,8 +2945,8 @@
   },
   {
     "operatorAddress": "injvaloper1r3lgsyq49zvl36cnevjx3q6u2ep897rws9hauk",
-    "jailed": true,
-    "status": "UnBonding",
+    "jailed": false,
+    "status": "Bonded",
     "description": {
       "moniker": "StakeLab.zone",
       "identity": "F12B081334CBE0C6",
@@ -3383,7 +3383,7 @@
   {
     "operatorAddress": "injvaloper1v2xylfeyry808ltt0hwxggzt0fns6uwh74mku3",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "Redelegate",
       "identity": "1111111",
@@ -3391,8 +3391,8 @@
       "securityContact": "node@stakewith.us",
       "details": "Do not delegate"
     },
-    "unbondingHeight": 73415965,
-    "unbondingTime": "2024-07-01T05:30:19.591Z",
+    "unbondingHeight": 118638508,
+    "unbondingTime": "2025-06-14T19:07:46.860Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
