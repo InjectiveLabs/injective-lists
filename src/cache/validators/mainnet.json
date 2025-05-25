@@ -2187,7 +2187,7 @@
   {
     "operatorAddress": "injvaloper1kvlepclamftkwx5qqu4463jznsvru24n472cy7",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "NINJA",
       "identity": "",
@@ -3382,8 +3382,8 @@
   },
   {
     "operatorAddress": "injvaloper1v2xylfeyry808ltt0hwxggzt0fns6uwh74mku3",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Redelegate",
       "identity": "1111111",
@@ -3391,8 +3391,8 @@
       "securityContact": "node@stakewith.us",
       "details": "Do not delegate"
     },
-    "unbondingHeight": 118638508,
-    "unbondingTime": "2025-06-14T19:07:46.860Z",
+    "unbondingHeight": 118727269,
+    "unbondingTime": "2025-06-15T12:09:54.101Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
