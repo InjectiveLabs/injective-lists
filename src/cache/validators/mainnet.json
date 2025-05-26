@@ -1520,7 +1520,7 @@
   {
     "operatorAddress": "injvaloper1dknnk0nzap8h07elxays2ecldxq9elu3dzqvqr",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "<decommissioned>",
       "identity": "",
@@ -2807,8 +2807,8 @@
   },
   {
     "operatorAddress": "injvaloper1p90whzaz28ayhmqqw0ur8283tsu8ad3jfqz0s0",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "DSRV",
       "identity": "CC434B6FE536F51B",
@@ -2816,8 +2816,8 @@
       "securityContact": "validator@dsrvlabs.com",
       "details": "DSRV is an integrated blockchain solutions company with the mission of enriching the crypto ecosystem via stronger connectivity. We strive to be your gateway to a suite of all-comprehensive blockchain services. Everything distributed, served complete."
     },
-    "unbondingHeight": 66550222,
-    "unbondingTime": "2024-05-09T06:00:54.939Z",
+    "unbondingHeight": 118890282,
+    "unbondingTime": "2025-06-16T19:33:43.520Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
