@@ -2808,7 +2808,7 @@
   {
     "operatorAddress": "injvaloper1p90whzaz28ayhmqqw0ur8283tsu8ad3jfqz0s0",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "DSRV",
       "identity": "CC434B6FE536F51B",
@@ -2945,8 +2945,8 @@
   },
   {
     "operatorAddress": "injvaloper1r3lgsyq49zvl36cnevjx3q6u2ep897rws9hauk",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "StakeLab.zone",
       "identity": "F12B081334CBE0C6",
@@ -2954,8 +2954,8 @@
       "securityContact": "securite@stakelab.fr",
       "details": "Grow your assets - Staking & Relaying Hub for Cosmos ecosystem"
     },
-    "unbondingHeight": 118738509,
-    "unbondingTime": "2025-06-15T14:20:00.741Z",
+    "unbondingHeight": 118827270,
+    "unbondingTime": "2025-06-16T07:23:46.590Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
