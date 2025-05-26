@@ -2141,7 +2141,7 @@
   {
     "operatorAddress": "injvaloper1ka5clr8wmdr50cs8dcrnfsszyunlxs72r36j5e",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "coinhall.org 📈🔄",
       "identity": "0B5217ACAE18F4C9",
@@ -2186,8 +2186,8 @@
   },
   {
     "operatorAddress": "injvaloper1kvlepclamftkwx5qqu4463jznsvru24n472cy7",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "NINJA",
       "identity": "",
@@ -2195,8 +2195,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 118788511,
+    "unbondingTime": "2025-06-15T23:57:19.281Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
