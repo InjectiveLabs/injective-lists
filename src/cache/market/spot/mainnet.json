@@ -248,6 +248,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x0756abdc18272f5a5e77018bfb55cb6a006d9029ea44daf7a307fbfc6d610e42",
+    "marketStatus": "active",
+    "ticker": "PUGGO/INJ",
+    "baseDenom": "factory/inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde/PUGGO",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde/PUGGO",
+      "address": "factory/inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde/PUGGO",
+      "symbol": "PUGGO",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 100000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x09cc2c28fbedbdd677e07924653f8f583d0ee5886e74046e7f114210d990784b",
     "marketStatus": "paused",
     "ticker": "UNI/USDC",
