@@ -2189,5 +2189,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'lbtc.svg',
     symbol: 'LBTC',
     coinGeckoId: 'lombard-staked-btc'
+  },
+
+  PUGGOCTO: {
+    decimals: 18,
+    name: 'Puggo Coin',
+    logo: 'puggocto.webp',
+    symbol: 'PUGGO',
+    coinGeckoId: ''
   }
 }
