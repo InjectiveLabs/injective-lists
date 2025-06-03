@@ -549,6 +549,13 @@ export const untaggedSymbolMeta = {
     symbol: 'iNFLX',
     logo: 'inflx.webp',
     coinGeckoId: ''
+  },
+  
+  WTI: {
+    name: 'WTI Crude Oil (1M)',
+    decimals: 6,
+    symbol: 'WTI',
+    logo: 'wti.webp',
+    coinGeckoId: ''
   }
-
 }
