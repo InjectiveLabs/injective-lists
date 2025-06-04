@@ -2197,5 +2197,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'puggocto.webp',
     symbol: 'PUGGO',
     coinGeckoId: ''
+  },
+
+  LBC: {
+    decimals: 6,
+    name: 'LifeBusiness Coin',
+    logo: 'lifebusiness-coin.svg',
+    symbol: 'LBC',
+    coinGeckoId: '',
   }
 }
