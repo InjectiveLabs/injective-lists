@@ -494,5 +494,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.PUGGOCTO,
     creator: 'inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde'
+  },
+  {
+    ...symbolMeta.LBC,
+    creator: 'inj1rc7u60e0gz9x8ukwwqr7d6dh984ysqrpk2qvlv'
   }
 ]
