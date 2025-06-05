@@ -557,5 +557,13 @@ export const untaggedSymbolMeta = {
     symbol: 'WTI',
     logo: 'wti.webp',
     coinGeckoId: ''
+  },
+
+  iCRCL: {
+    name: 'Circle Internet Group Inc',
+    decimals: 6,
+    symbol: 'iCRCL',
+    logo: 'icrcl.webp',
+    coinGeckoId: ''
   }
 }
