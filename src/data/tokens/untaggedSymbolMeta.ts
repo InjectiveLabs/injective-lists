@@ -565,5 +565,13 @@ export const untaggedSymbolMeta = {
     symbol: 'iCRCL',
     logo: 'icrcl.webp',
     coinGeckoId: ''
+  },
+
+  LAUNCHCOIN: {
+    name: 'Launch Coin on Believe',
+    decimals: 6,
+    symbol: 'LAUNCHCOIN',
+    logo: 'LAUNCHCOIN.webp',
+    coinGeckoId: 'ben-pasternak'
   }
 }
