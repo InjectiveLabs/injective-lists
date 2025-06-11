@@ -571,7 +571,7 @@ export const untaggedSymbolMeta = {
     name: 'Launch Coin on Believe',
     decimals: 6,
     symbol: 'LAUNCHCOIN',
-    logo: 'LAUNCHCOIN.webp',
+    logo: 'launchcoin.webp',
     coinGeckoId: 'ben-pasternak'
   }
 }
