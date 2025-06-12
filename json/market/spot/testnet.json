@@ -1643,6 +1643,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x3ac5722a60c0d4ec1cbb186f6b7a6232ea278734e474c12be04ab27af83d74d8",
+    "marketStatus": "active",
+    "ticker": "BLEE/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLEE",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLEE",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLEE",
+      "symbol": "BLEE",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x3bf1d5a5bb1db9d3a9457568f8385dfcab4a85cf72814285b5d9b4b0787fde1e",
     "marketStatus": "active",
     "ticker": "jYd/USDT",
