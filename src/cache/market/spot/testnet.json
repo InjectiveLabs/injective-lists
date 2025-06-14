@@ -4371,6 +4371,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xb163bc23d5096c4831c80a9e9ca70b363958758e98190d2b5aa75b3801db2e3d",
+    "marketStatus": "active",
+    "ticker": "MAKU/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/MAKU",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/MAKU",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/MAKU",
+      "symbol": "MAKU",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0xb2fc45b220e857913accfa93673f8e94941be23b80db1fff273e96dbcef748de",
     "marketStatus": "active",
     "ticker": "TEST4/INJ",
