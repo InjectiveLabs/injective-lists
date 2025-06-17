@@ -577,5 +577,13 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-1/transfer/channel-1340',
     source: TokenSource.Cosmos,
     hash: 'B7BF60BB54433071B49D586F54BD4DED5E20BEFBBA91958E87488A761115106B'
+  },
+  {
+    ...symbolMeta.XRP,
+    baseDenom: 'axrp',
+    channelId: 'channel-436',
+    path: 'transfer/channel-436',
+    source: TokenSource.Cosmos,
+    hash: 'C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902'
   }
 ]
