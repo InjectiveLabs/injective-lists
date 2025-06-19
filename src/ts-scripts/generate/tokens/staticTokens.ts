@@ -9,6 +9,11 @@ import {
   testnetTokens as ibcTestnetTokens
 } from '../../../data/tokens/ibc'
 import {
+  devnetTokens as evmDevnetTokens,
+  mainnetTokens as evmMainnetTokens,
+  testnetTokens as evmTestnetTokens
+} from '../../../data/tokens/evm'
+import {
   devnetTokens as cw20DevnetTokens,
   mainnetTokens as cw20MainnetTokens,
   testnetTokens as cw20TestnetTokens
@@ -47,6 +52,21 @@ const INJ_TOKEN = {
   address: 'inj',
   tokenType: TokenType.Native,
   tokenVerification: TokenVerification.Verified
+}
+
+const formatEvmTokens = (tokens: any[], network: Network) => {
+  return tokens.map((token) => {
+    const denom = token.address.toLowerCase()
+    const supplyDenom = getSupplyDenom(denom, network)
+
+    return {
+      ...token,
+      denom: supplyDenom || denom,
+      address: (supplyDenom || denom).replace('erc20:', ''),
+      tokenType: TokenType.Erc20,
+      tokenVerification: TokenVerification.Verified
+    }
+  })
 }
 
 const formatIbcTokens = (tokens: IbcTokenSource[], network: Network) =>
@@ -153,9 +173,8 @@ const untaggedSymbolBaseTokens = () =>
   })
 
 const getDevnetStaticTokenList = () => {
-  console.log(...formatCw20Tokens(cw20DevnetTokens, Network.Devnet))
-
   return [
+    ...formatEvmTokens(evmDevnetTokens, Network.Devnet),
     ...formatIbcTokens(
       [...ibcTestnetTokens, ...ibcMainnetTokens],
       Network.Devnet
@@ -181,6 +200,7 @@ const getDevnetStaticTokenList = () => {
 
 const getTestnetStaticTokenList = () => {
   return [
+    ...formatEvmTokens(evmTestnetTokens, Network.TestnetSentry),
     ...formatIbcTokens(
       [...ibcTestnetTokens, ...ibcMainnetTokens],
       Network.TestnetSentry
@@ -206,6 +226,7 @@ const getTestnetStaticTokenList = () => {
 
 const getMainnetStaticTokenList = () => {
   return [
+    ...formatEvmTokens(evmMainnetTokens, Network.MainnetSentry),
     ...formatIbcTokens(ibcMainnetTokens, Network.MainnetSentry),
     ...formatCw20Tokens(cw20MainnetTokens, Network.MainnetSentry),
     ...formatErc20Tokens(erc20MainnetTokens, Network.MainnetSentry),
