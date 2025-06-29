@@ -3286,6 +3286,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625",
+    "marketStatus": "active",
+    "ticker": "XRP/USDT",
+    "baseDenom": "ibc/C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Ripple",
+      "address": "ibc/C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902",
+      "symbol": "XRP",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/153e4222-ffce-4d4b-bba8-426fe65ad700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-15,
+    "minQuantityTickSize": 100000000000000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xabc20971099f5df5d1de138f8ea871e7e9832e3b0b54b61056eae15b09fed678",
     "marketStatus": "paused",
     "ticker": "USDClegacy/USDT",
