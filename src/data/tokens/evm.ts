@@ -1,5 +1,4 @@
 import { symbolMeta } from './symbolMeta'
-// import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 
 export const devnetTokens = []
 
