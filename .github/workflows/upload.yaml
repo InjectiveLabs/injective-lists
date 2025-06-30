@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     name: "Trigger upload"
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-8vcpu-ubuntu-2204
     env:
       ## Github Actions
       SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
