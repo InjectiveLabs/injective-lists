@@ -1,4 +1,35 @@
 {
+  "ibc/C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902": {
+    "address": "ibc/C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "decimals": 18,
+    "symbol": "XRP",
+    "name": "Ripple",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/153e4222-ffce-4d4b-bba8-426fe65ad700/public",
+    "coinGeckoId": "ripple",
+    "baseDenom": "axrp",
+    "channelId": "channel-436",
+    "path": "transfer/channel-436",
+    "source": "cosmos",
+    "hash": "C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902",
+    "denom": "ibc/C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902",
+    "tokenType": "ibc",
+    "externalLogo": "xrp.png"
+  },
+  "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": {
+    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "decimals": 6,
+    "symbol": "USDT",
+    "name": "Tether",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+    "coinGeckoId": "tether",
+    "denom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "tokenType": "erc20",
+    "externalLogo": "usdt.png"
+  },
   "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq": {
     "address": "inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq",
     "isNative": false,
@@ -38,19 +69,6 @@
     "denom": "factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst",
     "tokenType": "tokenFactory",
     "externalLogo": "arst.svg"
-  },
-  "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": {
-    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "decimals": 6,
-    "symbol": "USDT",
-    "name": "Tether",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-    "coinGeckoId": "tether",
-    "denom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "tokenType": "erc20",
-    "externalLogo": "usdt.png"
   },
   "peggy0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": {
     "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
