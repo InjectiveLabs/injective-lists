@@ -11474,5 +11474,639 @@ export const olpConfig = {
         }
       }
     }
-  ]
+  ],
+   tokens: {
+    'WETH/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XPRT/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SOL/USDC': {
+      baseDecimals:  8,
+      quoteDecimals: 6,
+      quoteDenom:    'USDC'
+    },
+    'SOLlegacy/USDT': {
+      baseDecimals:  8,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SOL/USDT': {
+      baseDecimals:  8,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ATOM/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'INJ/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'WMATIClegacy/USDT': {
+      baseDecimals:  8,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'WMATIC/USDT': {
+      baseDecimals:  8,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'KAVA/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TIA/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'KUJI/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ENA/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'W/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'OMNI/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SAGA/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'EZETH/WETH': {
+      baseDecimals:  18,
+      quoteDecimals: 18,
+      quoteDenom:    'WETH'
+    },
+    'INJ/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BTC/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ETH/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BNB/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ATOM/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XRP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SEI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'AXL/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TIA/USDT-30NOV2023': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TIA/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'PYTH/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ZRO/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'JUP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'AVAX/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SOL/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SUI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'WIF/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'OP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ARB/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'OSMO/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'LINK/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'DOGE/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BONK/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'W/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'OMNI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XAU/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XAG/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'EUR/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'GBP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BODEN/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BTC/wUSDM Perp': {
+      baseDecimals:  0,
+      quoteDecimals: 18,
+      quoteDenom:    'wUSDM'
+    },
+    'USDY/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'AAVE/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'MKR/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TON/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'FTM/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'CRV/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'PEPE/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'APT/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TAO/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'STX/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'POPCAT/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'MOTHER/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'HDRO/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'MOODENG/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'QUNT/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'FET/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XION/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'CHILLGUY/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XMR/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'HYPE/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XION/USDT': {
+      baseDecimals:  6,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'ATH/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SPX/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'INJ/AUSD': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BTC/AUSD PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TRUMP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'MOVE/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BERA/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TRADFI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SPY/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'AIX/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'L1X/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'KAITO/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'OM/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iNVDA/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'TTI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'LTC/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iMCD/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iHOOD/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iTSLA/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iMSTR/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iCOIN/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iGOOGL/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'JELLYJELLY/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'SIGN/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iMETA/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iAMZN/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iNFLX/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iMSFT/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iAAPL/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'PLUME/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'WTI/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'iCRCL/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'LAUNCHCOIN/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'XRP/USDT': {
+      baseDecimals:  18,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    'BTC/USDTKV PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDTkv'
+    },
+    'ETH/USDTKV PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDTkv'
+    }
+  },
+  markets: {
+    '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0': 'INJ/USDT',
+    '0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034': 'WETH/USDT',
+    '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa': 'ATOM/USDT',
+    '0xc559df216747fc11540e638646c384ad977617d6d8f0ea5ffdfc18d52e58ab01': 'ATOM/USDT PERP',
+    '0x4ca0f92fc28be0c9761326016b5a1a2177dd6375558365116b5bdda9abc229ce': 'BTC/USDT PERP',
+    '0x54d4505adef6a5cef26bc403a33d595620ded4e15b9e2bc3dd489b714813366a': 'ETH/USDT PERP',
+    '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced': 'BNB/USDT PERP',
+    '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963': 'INJ/USDT PERP',
+    '0x63bafbeee644b6606afb8476dd378fba35d516c7081d6045145790af963545aa': 'XRP/USDT PERP',
+    '0x1afa358349b140e49441b6e68529578c7d2f27f06e18ef874f428457c0aaeb8b': 'SEI/USDT PERP',
+    '0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb': 'AXL/USDT PERP',
+    '0x84ba79ffde31db8273a9655eb515cb6cadfdf451b8f57b83eb3f78dca5bbbe6d': 'SOL/USDC',
+    '0xac938722067b1dfdfbf346d2434573fb26cb090d309b19af17df2c6827ceb32c': 'SOLlegacy/USDT',
+    '0x06c5a306492ddc2b8dc56969766959163287ed68a6b59baa2f42330dda0aebe0': 'SOL/USDT PERP',
+    '0x4d030dccc9564ab1536a7751c3a566fa3adcb6a08ac807edc82890f2a6ec4fed': 'XPRT/USDT',
+    '0xb9a07515a5c239fcbfa3e25eaa829a03d46c4b52b9ab8ee6be471e9eb0e9ea31': 'WMATIClegacy/USDT',
+    '0x2d8b2a2bef3782b988e16a8d718ea433d6dfebbb3b932975ca7913589cb408b5': 'KAVA/USDT',
+    '0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101': 'TIA/USDT',
+    '0x64c3a57b693ede854b0a2794ed5c99546925d1fbe74d91a2e3286e4155a00dee': 'TIA/USDT-30NOV2023',
+    '0x9066bfa1bd97685e0df4e22a104f510fb867fde7f74a52f3341c7f5f56eb889c': 'TIA/USDT PERP',
+    '0x332230109e7afb839b4750d4cf961666b608071ecb64dac55662dac37529639e': 'BTC/USDTkv PERP',
+    '0xca3682d053e8c804ea9cd322cfc0476d9016b99210fe42774a61b06e8868fef3': 'ETH/USDTkv PERP',
+    '0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d': 'PYTH/USDT PERP',
+    '0x6922cf4383294c673971dd06aa4ae5ef47f65cb4f1ec1c2af4271c5e5ca67486': 'KUJI/USDT',
+    '0x7a70d95e24ba42b99a30121e6a4ff0d6161847d5b86cbfc3d4b3a81d8e190a70': 'ZRO/USDT PERP',
+    '0x03841e74624fd885d1ee28453f921d18c211e78a0d7646c792c7903054eb152c': 'JUP/USDT PERP',
+    '0x30a1463cfb4c393c80e257ab93118cecd73c1e632dc4d2d31c12a51bc0a70bd7': 'AVAX/USDT PERP',
+    '0x18b2ca44b3d20a3b87c87d3765669b09b73b5e900693896c08394c70e79ab1e7': 'SUI/USDT PERP',
+    '0x1a6d3a59f45904e0a4a2eed269fc2f552e7e407ac90aaaeb602c31b017573f88': 'WIF/USDT PERP',
+    '0x48fcecd66ebabbf5a331178ec693b261dfae66ddfe6f552d7446744c6e78046c': 'OP/USDT PERP',
+    '0x6ddf0b8fbbd888981aafdae9fc967a12c6777aac4dd100a8257b8755c0c4b7d5': 'ARB/USDT PERP',
+    '0xcf18525b53e54ad7d27477426ade06d69d8d56d2f3bf35fe5ce2ad9eb97c2fbc': 'OSMO/USDT PERP',
+    '0xf1bc70398e9b469db459f3153433c6bd1253bd02377248ee29bd346a218e6243': 'W/USDT PERP',
+    '0x03c8da1f6aaf8aca2be26b0f4d6b89d475835c7812a1dcdb19af7dec1c6b7f60': 'LINK/USDT PERP',
+    '0x7980993e508e0efc1c2634c153a1ef90f517b74351d6406221c77c04ec4799fe': 'DOGE/USDT PERP',
+    '0x3b7fb1d9351f7fa2e6e0e5a11b3639ee5e0486c33a6a74f629c3fc3c3043efd5': 'BONK/USDT PERP',
+    '0xd9089235d2c1b07261cbb2071f4f5a7f92fa1eca940e3cad88bb671c288a972f': 'SOL/USDT',
+    '0x1c2e5b1b4b1269ff893b4817a478fba6095a89a3e5ce0cccfcafa72b3941eeb6': 'ARB/USDT',
+    '0x8cd25fdc0d7aad678eb998248f3d1771a2d27c964a7630e6ffa5406de7ea54c1': 'WMATIC/USDT',
+    '0x6ad662364885b8a4c50edfc88deeef23338b2bd0c1e4dc9b680b054afc9b6b24': 'ENA/USDT',
+    '0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb': 'W/USDT',
+    '0x4d42425fc3ccd6b61b8c4ad61134ab3cf21bdae1b665317eff671cfab79f4387': 'OMNI/USDT PERP',
+    '0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f': 'OMNI/USDT',
+    '0x960038a93b70a08f1694c4aa5c914afda329063191e65a5b698f9d0676a0abf9': 'SAGA/USDT',
+    '0xacb0dc21cddb15b686f36c3456f4223f701a2afa382006ef478d156439483b4d': 'EZETH/WETH',
+    '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5': 'XAU/USDT PERP',
+    '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052': 'XAG/USDT PERP',
+    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5': 'EUR/USDT PERP',
+    '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f': 'GBP/USDT PERP',
+    '0xf1ceea00e01327497c321679896e5e64ad2a4e4b88e7324adeec7661351b6d93': 'BODEN/USDT PERP',
+    '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295': 'FET/USDT',
+    '0x0d4c722badb032f14dfc07355258a4bcbd354cbc5d79cb5b69ddd52b1eb2f709': 'BTC/wUSDM Perp',
+    '0xd3de35e09147492a051f514f42adacd4b988268ec5c6e0cdac4cbde99ff808a2': 'USDY/USDT',
+    '0x84d6fad5c0450811f8c163560e90ba7f621506371ec17fb07885dda2a6f435ed': 'AAVE/USDT PERP',
+    '0x142d0fa4506b5f404bcfdd54567797ff6767dce07afaedc90d379665f09f0520': 'MKR/USDT PERP',
+    '0xc4068b76801bf8988b5372c64d611ce2a477f85512e5ec55270c426176bc73e2': 'TON/USDT PERP',
+    '0x4be4791338907626dd77a806c6e4dff76d1428768080fe232f32ef990c8d064f': 'FTM/USDT PERP',
+    '0xf58079e67f845907e93ab9767126a226a0759c23bee1bfc880fa8fba98f25872': 'CRV/USDT PERP',
+    '0x2d7092545081b81ba33bf817b302f9609254f15f4354016631aec3bb39461f99': 'PEPE/USDT PERP',
+    '0x5aeb66848398815d1c8485135dc539355028fb3c32d662af9eeecfd47050a1a6': 'APT/USDT PERP',
+    '0xa51b0df7a1ac2bea408fdc4f84f3d7060b62f976ab659b329b00065e5c8f2c37': 'TAO/USDT PERP',
+    '0x9bb2341e12d7357cd6865b69e491bab5ac8b087df50906a53ffa8fc3ede59f5f': 'STX/USDT PERP',
+    '0x8157dd4bf502fc688aaa722c725124da3f411d7a92c569d55f34826f9ee040a9': 'POPCAT/USDT PERP',
+    '0xa9ff3263c6a23bd1effb92f663bd8a1c9f9fa25f83f02c45364f92d77473827b': 'MOTHER/USDT PERP',
+    '0x88430553f1f41635687c0da52e6282f8c93f70ab1a92b68fda7b56b026919bd4': 'HDRO/USDT',
+    '0x65bba95527630a9648d808ebe0e7b6e0c47d1ba0283a396bd5335e4d1997d85f': 'MOODENG/USDT PERP',
+    '0xe9b16bd1bd5e7f570f8876648d0a262b003b31454fdb5263dc3ccb79c9ee8f5c': 'QUNT/USDT PERP',
+    '0x372b5c987fe8f7f84ced0d019e7ee24353877ad8cf93235ba98c970de001b3fd': 'XION/USDT PERP',
+    '0x26e978947835ce9d686d5345dec98e2c356aa17b371886dfb5a05e9bafbd89e8': 'CHILLGUY/USDT PERP',
+    '0xc0aafdb2b9e9ff378b0a8d0057a5b739083ead85aec7fa5a6db241f013f1471d': 'XMR/USDT PERP',
+    '0x785afdbdc3aec238172294613c77fc129ebff1b2a0489375c30e69e6d3ac5325': 'HYPE/USDT PERP',
+    '0x5a9c0f24d6bdd55373ec3d20bfb5c041674bab183dfff0548d1c8fedbf243ca1': 'XION/USDT',
+    '0x9540412c2611e77ea2e4c9216c9acd1f8a333492b01b3b8306ed274edeb55296': 'ATH/USDT PERP',
+    '0x2e41dac6f547b1a0e88160b35e7360913e0629bfce4f847477c9552aaa48bf99': 'SPX/USDT PERP',
+    '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e': 'INJ/AUSD',
+    '0xde9b78988c8c8e254b9dcba60d71851b3676ecfff5a736ba8f8cb10cdee04fcd': 'BTC/AUSD PERP',
+    '0xdbf50a4030bce954dc0fcd8bb4f57d122a4145ae22ba22702241b59a2604c7ad': 'TRUMP/USDT PERP',
+    '0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa': 'MOVE/USDT PERP',
+    '0x894b2bcd69a8a70950a1b996a252dd3a1b0fb64598e3a23dc38e45e1b60f5e1a': 'BERA/USDT PERP',
+    '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74': 'TRADFI/USDT PERP',
+    '0xe5bfc48fc29146d756c9dac69f096d56cc4fc5ae75c98c1ad045c3356d14eb82': 'AIX/USDT PERP',
+    '0xf12a831d2901a1c1130fb81c88c3b443c62be3cd14547625f2db8a5f2b187d2c': 'L1X/USDT PERP',
+    '0xf4c788c83bd57e4dd4ff092b8d6e6a9f55b5b7584090043e18d5b02c70fbd5f6': 'KAITO/USDT PERP',
+    '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006': 'OM/USDT PERP',
+    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1': 'iNVDA/USDT PERP',
+    '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660': 'TTI/USDT PERP',
+    '0xa5441579ece3740fd57161beb07bbe6753559173797470642bae329f60ac0b7d': 'LTC/USDT PERP',
+    '0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340': 'iMCD/USDT PERP',
+    '0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e': 'iHOOD/USDT PERP',
+    '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6': 'iTSLA/USDT PERP',
+    '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77': 'iMSTR/USDT PERP',
+    '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3': 'iCOIN/USDT PERP',
+    '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668': 'iGOOGL/USDT PERP',
+    '0x515bb3ff6bf7429c65cc779ef78dd64f3c63e7329fe6042810e89a36498f1b48': 'JELLYJELLY/USDT PERP',
+    '0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a': 'SIGN/USDT PERP',
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36': 'iMETA/USDT PERP',
+    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf': 'iAMZN/USDT PERP',
+    '0xe4fd69fb47edd3a7ca1436fae764055001139659d3e0df1eb7237f031737afde': 'iNFLX/USDT PERP',
+    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80': 'iMSFT/USDT PERP',
+    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9': 'iAAPL/USDT PERP',
+    '0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4': 'PLUME/USDT PERP',
+    '0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c': 'WTI/USDT PERP',
+    '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3': 'iCRCL/USDT PERP',
+    '0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0': 'LAUNCHCOIN/USDT PERP',
+    '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': 'XRP/USDT'
+  }
 }
