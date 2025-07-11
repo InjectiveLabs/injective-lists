@@ -883,7 +883,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'TIX',
     logo: 'tix.png',
-    coinGeckoId: '',
+    coinGeckoId: 'timeworx',
     name: 'Timeworx.io'
   },
 
