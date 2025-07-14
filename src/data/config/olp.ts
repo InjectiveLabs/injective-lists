@@ -10839,6 +10839,11 @@ export const olpConfig = {
         '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': {
           ticker: 'XRP/USDT',
           marketType: 'spot'
+        },
+        '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
+          ticker: 'PUMP/USDT PERP',
+          marketType: 'derivative',
+          startDate: '2025-07-15T00:00:00Z'
         }
       }
     },
@@ -11155,6 +11160,10 @@ export const olpConfig = {
         '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': {
           ticker: 'XRP/USDT',
           marketType: 'spot'
+        },
+        '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
+          ticker: 'PUMP/USDT PERP',
+          marketType: 'derivative'
         }
       }
     },
@@ -11471,6 +11480,10 @@ export const olpConfig = {
         '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': {
           ticker: 'XRP/USDT',
           marketType: 'spot'
+        },
+        '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
+          ticker: 'PUMP/USDT PERP',
+          marketType: 'derivative'
         }
       }
     }
@@ -11991,6 +12004,12 @@ export const olpConfig = {
       quoteDecimals: 6,
       quoteDenom:    'USDT'
     },
+    'PUMP/USDT PERP': {
+      baseDecimals:  0,
+      quoteDecimals: 6,
+      quoteDenom:    'USDT'
+    },
+    // stuff we leave for no apparent reason
     'BTC/USDTKV PERP': {
       baseDecimals:  0,
       quoteDecimals: 6,
@@ -12107,6 +12126,7 @@ export const olpConfig = {
     '0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c': 'WTI/USDT PERP',
     '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3': 'iCRCL/USDT PERP',
     '0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0': 'LAUNCHCOIN/USDT PERP',
-    '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': 'XRP/USDT'
+    '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625': 'XRP/USDT',
+    '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': 'PUMP/USDT PERP',
   }
 }
