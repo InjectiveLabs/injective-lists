@@ -573,5 +573,13 @@ export const untaggedSymbolMeta = {
     symbol: 'LAUNCHCOIN',
     logo: 'launchcoin.webp',
     coinGeckoId: 'ben-pasternak'
+  },
+  
+  PUMP: {
+    name: 'Pump.fun',
+    decimals: 6,
+    symbol: 'PUMP',
+    logo: 'pump.webp',
+    coinGeckoId: 'pump-fun'
   }
 }
