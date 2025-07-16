@@ -184,3 +184,7 @@ export const mainnetTokens = [
   },
 ];
 ```
+
+### Verifying token factory denoms
+
+To verify factory tokens, add their denoms to the verifiedTokenFactoryDenoms array in ./src/data/tokens/denoms.ts. This is a manually curated list of approved denoms.
