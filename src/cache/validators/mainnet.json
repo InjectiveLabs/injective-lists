@@ -830,7 +830,7 @@
   {
     "operatorAddress": "injvaloper17dt0hpykufxjrc7fh8rxwgv6z9kx8vlgg0qqrs",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Dojo | Delegate for Airdrop",
       "identity": "32A2E49B377D032D",
@@ -4049,8 +4049,8 @@
   },
   {
     "operatorAddress": "injvaloper1zpy3qf7us3m0pxpqkp72gzjv55t70huy33t47x",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "B-Harvest",
       "identity": "8957C5091FBF4192",
@@ -4058,8 +4058,8 @@
       "securityContact": "contact@bharvest.io",
       "details": "Provides secure validation services for dPoS networks"
     },
-    "unbondingHeight": 18726699,
-    "unbondingTime": "2022-11-30T00:31:25.423Z",
+    "unbondingHeight": 125325847,
+    "unbondingTime": "2025-08-06T07:15:58.942Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
