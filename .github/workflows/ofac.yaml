@@ -1,0 +1,41 @@
+name: Injective list - Fetch OFAC wallets
+
+on:
+  schedule:
+    - cron: "40 2 * * *" # Every day at 02:30 PM
+
+jobs:
+  generate:
+    name: "Refetch OFAC wallets"
+    runs-on: blacksmith-8vcpu-ubuntu-2204
+    permissions: write-all
+    env:
+      ## Github Actions
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      CLOUD_FLARE_API_KEY: ${{ secrets.CLOUD_FLARE_API_KEY }}
+      CLOUD_FLARE_ACCOUNT_ID: ${{ secrets.CLOUD_FLARE_ACCOUNT_ID }}
+      CLOUD_FLARE_ACCOUNT_HASH: ${{ secrets.CLOUD_FLARE_ACCOUNT_HASH }}
+      ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
+      ALCHEMY_GOERLI_KEY: ${{ secrets.ALCHEMY_GOERLI_KEY }}
+      ALCHEMY_SEPOLIA_KEY: ${{ secrets.ALCHEMY_SEPOLIA_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: "${{ secrets.GH_TOKEN }}"
+      - run: |
+          git reset --hard origin/master
+
+      - name: Install dependencies
+        run: cd src && yarn
+
+      - name: Refetch OFAC lists
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: fetch:wallets:ofac
+          dir: "src"
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: fetch ofac addresses"

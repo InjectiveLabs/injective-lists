@@ -1,0 +1,238 @@
+name: Injective list - Generate data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    if: ${{ !contains(github.event.commits[0].message, 'generate json files') }}
+    name: "Regenerate JSON files"
+    runs-on: blacksmith-8vcpu-ubuntu-2204
+    permissions: write-all
+    env:
+      ## Github Actions
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      CLOUD_FLARE_API_KEY: ${{ secrets.CLOUD_FLARE_API_KEY }}
+      CLOUD_FLARE_ACCOUNT_ID: ${{ secrets.CLOUD_FLARE_ACCOUNT_ID }}
+      CLOUD_FLARE_ACCOUNT_HASH: ${{ secrets.CLOUD_FLARE_ACCOUNT_HASH }}
+      ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
+      ALCHEMY_GOERLI_KEY: ${{ secrets.ALCHEMY_GOERLI_KEY }}
+      ALCHEMY_SEPOLIA_KEY: ${{ secrets.ALCHEMY_SEPOLIA_KEY }}
+      MAINNET_FEE_PAYER: ${{ secrets.MAINNET_FEE_PAYER }}
+      TESTNET_FEE_PAYER: ${{ secrets.TESTNET_FEE_PAYER }}
+      DEVNET_FEE_PAYER: ${{ secrets.DEVNET_FEE_PAYER }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: "${{ secrets.GH_TOKEN }}"
+      - run: |
+          git reset --hard origin/master
+
+      - name: Install dependencies
+        run: cd src && yarn
+
+      - name: Generate tokens
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:tokens
+          dir: "src"
+
+      - name: Generate validators
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:validators
+          dir: "src"
+
+      - name: Generate market slugs
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:slugs
+          dir: "src"
+
+      - name: Generate wasm messages
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:wasm
+          dir: "src"
+
+      - name: Generate verified denoms
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:verifiedDenoms
+          dir: "src"
+
+      - name: Generate restriction list
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:restriction
+          dir: "src"
+
+      - name: Generate swap routes
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:swap:routes
+          dir: "src"
+
+      - name: Generate configs
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate:configs
+          dir: "src"
+
+      - name: Commit generated files
+        run: |
+          [ -z "$(git config user.name)" ] && git config --global user.name "GitHub Actions"
+          [ -z "$(git config user.email)" ] && git config --global user.email "actions@github.com"
+
+          git add .
+
+          # Check if there are any changes to commit
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          if [[ "${{ contains(github.event.commits[0].message, 'skip deploy') }}" == "true" || "${{ github.event_name != 'push' }}" == "true" ]]; then
+            git commit -m "chore: generate json files - skip deploy" --no-verify
+          else
+            git commit -m "chore: generate json files" --no-verify
+          fi
+
+          git push origin HEAD:master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
+      #   with:
+      #     message: "chore: generate json files"
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   if: ${{ github.event_name != 'push' || contains(github.event.commits[0].message, 'skip deploy') }}
+      #   with:
+      #     message: "chore: generate json files - skip deploy"
+
+  deployAws:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
+    name: "Deploy AWS"
+    runs-on: ubuntu-latest
+    needs: generate
+
+    steps:
+      - name: Sleep for 30s
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 30s
+      # This is here solely for testing and running this action locally with ACT - it shouldn't be needed for running on github as the images in gh actions should already have the AWS CLI installed
+      - name: Install Act dependencies
+        if: ${{ env.ACT }}
+        run: |
+          apt-get update && apt-get install sudo -y && apt-get install wget -y && apt-get install unzip -y
+
+      - name: Install AWS if running locally
+        if: ${{ env.ACT }}
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2 # default
+          verbose: true # default
+          arch: amd64 # allowed values: amd64, arm64
+
+      - name: Checkout with retry
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync json s3://injective-lists/json --delete \
+          --cache-control "public, max-age=31536000, s-maxage=31536000"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+      - name: Sleep for 60s
+        if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 60s
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+  deployAwsStaging:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' && !contains(github.event.commits[0].message, 'skip deploy') }}
+    name: "Deploy AWS Staging"
+    runs-on: ubuntu-latest
+    needs: generate
+
+    steps:
+      - name: Sleep for 30s
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 30s
+
+      - name: Install Act dependencies
+        if: ${{ env.ACT }}
+        run: |
+          apt-get update && apt-get install sudo -y && apt-get install wget -y && apt-get install unzip -y
+
+      - name: Install AWS if running locally
+        if: ${{ env.ACT }}
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2 # default
+          verbose: true # default
+          arch: amd64 # allowed values: amd64, arm64
+
+      - name: Checkout with retry
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync json s3://injective-lists/json --delete \
+          --cache-control "public, max-age=31536000, s-maxage=31536000"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+
+      - name: Sleep for 60s
+        uses: juliangruber/sleep-action@v2.0.0
+        with:
+          time: 60s
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
