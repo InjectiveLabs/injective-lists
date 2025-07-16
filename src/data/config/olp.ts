@@ -10848,6 +10848,20 @@ export const olpConfig = {
       }
     },
     {
+      epochId: 'mini_epoch_250708_250804_01',
+      number: 48101,
+      startDate: '2025-07-17T00:00:00Z',
+      endDate: '2025-07-24T00:00:00Z',
+      rewardINJNum: '500',
+      markets: {
+        '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
+          ticker: 'PUMP/USDT PERP',
+          marketType: 'derivative'
+        }
+      },
+      isMiniEpoch: true
+    },
+    {
       epochId: 'epoch_250805_250901',
       number: 49,
       startDate: '2025-08-05T00:00:00Z',
