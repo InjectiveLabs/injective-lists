@@ -32,5 +32,6 @@ export const verifiedTokenFactoryDenoms = [
   'factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA',
   'factory/inj1aegme2dcy3dvk0v22wxdgd9609shyy2pgyh2kk/arst',
   'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq',
-  'factory/inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde/PUGGO'
+  'factory/inj1nw35hnkz5j74kyrfq9ejlh2u4f7y7gt7c3ckde/PUGGO',
+  'factory/inj1khttezjv9x6dpadysffpf7m00rch2ldhezz7s2/tix'
 ]
