@@ -1559,6 +1559,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Injex Finance'
   },
 
+  NEPT: {
+    decimals: 6,
+    symbol: 'NEPT',
+    name: 'Neptune',
+    logo: 'nept.png',
+    coinGeckoId: 'neptune-2'
+  },
+
   nINJ: {
     decimals: 18,
     symbol: 'nINJ',
@@ -1581,6 +1589,38 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     logo: 'nusdt.png',
     name: 'Neptune Receipt USDT'
+  },
+
+  nUSDC: {
+    decimals: 6,
+    symbol: 'nUSDC',
+    coinGeckoId: '',
+    logo: 'nusdc.png',
+    name: 'Neptune Receipt USDC'
+  },
+
+  nAUSD: {
+    decimals: 6,
+    symbol: 'nAUSD',
+    coinGeckoId: '',
+    logo: 'nausd.png',
+    name: 'Neptune Receipt AUSD'
+  },
+
+  nSOL: {
+    decimals: 8,
+    symbol: 'nSOL',
+    coinGeckoId: '',
+    logo: 'nsol.png',
+    name: 'Neptune Receipt SOL'
+  },
+
+  nTIA: {
+    decimals: 6,
+    symbol: 'nTIA',
+    coinGeckoId: '',
+    logo: 'ntia.png',
+    name: 'Neptune Receipt TIA'
   },
 
   nWETH: {
@@ -1895,14 +1935,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  nTIA: {
-    name: 'Neptune Receipt TIA',
-    logo: 'ntia.png',
-    symbol: 'nTIA',
-    decimals: 6,
-    coinGeckoId: ''
-  },
-
   PYUSD: {
     name: 'PYUSD',
     logo: 'pyusd.png',
@@ -2103,14 +2135,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  NEPT: {
-    decimals: 6,
-    symbol: 'NEPT',
-    name: 'Neptune',
-    logo: 'nept.svg',
-    coinGeckoId: ''
-  },
-
   AUSD: {
     name: 'AUSD',
     logo: 'AUSD.png',
@@ -2125,14 +2149,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'NLT2Updated',
     logo: 'unknown.png',
     coinGeckoId: ''
-  },
-
-  nUSDC: {
-    decimals: 6,
-    symbol: 'nUSDC',
-    coinGeckoId: '',
-    logo: 'nusdc.webp',
-    name: 'Neptune Receipt USDC'
   },
 
   CHIHUAHUA: {

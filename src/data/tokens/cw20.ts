@@ -265,6 +265,22 @@ export const mainnetTokens: Cw20TokenSource[] = [
     address: 'inj1cy9hes20vww2yr6crvs75gxy5hpycya2hmjg9s'
   },
   {
+    ...symbolMeta.nUSDC,
+    address: 'inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz'
+  },
+  {
+    ...symbolMeta.nAUSD,
+    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
+  },
+  {
+    ...symbolMeta.nSOL,
+    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
+  },
+  {
+    ...symbolMeta.nTIA,
+    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
+  },
+  {
     ...symbolMeta.nWETH,
     address: 'inj1kehk5nvreklhylx22p3x0yjydfsz9fv3fvg5xt'
   },
@@ -298,20 +314,12 @@ export const mainnetTokens: Cw20TokenSource[] = [
     address: 'inj10pqutl0av9ltrw9jq8d3wjwjayvz76jhfcfza0'
   },
   {
-    ...symbolMeta.nTIA,
-    address: 'inj1fzquxxxam59z6fzewy2hvvreeh3m04x83zg4vv'
-  },
-  {
     ...symbolMeta.bnUSD,
     address: 'inj1qspaxnztkkzahvp6scq6xfpgafejmj2td83r9j'
   },
   {
     ...symbolMeta.TruINJ,
     address: 'inj1x997dy6ka7y8u0r56yk2k83llspy33yet9zcnq'
-  },
-  {
-    ...symbolMeta.nUSDC,
-    address: 'inj1dafy7fv7qczzatd98dv8hekx6ssckrflswpjaz'
   },
   {
     ...symbolMeta.PEDRO,
