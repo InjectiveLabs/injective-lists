@@ -830,7 +830,7 @@
   {
     "operatorAddress": "injvaloper17dt0hpykufxjrc7fh8rxwgv6z9kx8vlgg0qqrs",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "Dojo | Delegate for Airdrop",
       "identity": "32A2E49B377D032D",
@@ -3520,8 +3520,8 @@
   },
   {
     "operatorAddress": "injvaloper1vumvzchlgfsu9fnj5xn2zpf7w888sdmjuu33qe",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Google Cloud",
       "identity": "5E317803EEB07F5C",
@@ -3529,8 +3529,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 125375849,
-    "unbondingTime": "2025-08-06T16:56:28.551Z",
+    "unbondingHeight": 125780654,
+    "unbondingTime": "2025-08-09T23:36:04.038Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
