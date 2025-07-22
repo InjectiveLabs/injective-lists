@@ -11193,6 +11193,10 @@ export const olpConfig = {
         '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
           ticker: 'PUMP/USDT PERP',
           marketType: 'derivative'
+        },
+        '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3': {
+          ticker: 'SBET/USDT PERP',
+          marketType: 'derivative'
         }
       }
     },
@@ -11488,6 +11492,10 @@ export const olpConfig = {
         },
         '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611': {
           ticker: 'PUMP/USDT PERP',
+          marketType: 'derivative'
+        },
+        '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3': {
+          ticker: 'SBET/USDT PERP',
           marketType: 'derivative'
         }
       }
