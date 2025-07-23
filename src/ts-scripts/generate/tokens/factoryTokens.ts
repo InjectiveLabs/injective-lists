@@ -167,6 +167,10 @@ export const generateBankFactoryTokens = async (network: Network) => {
         ? subDenom
         : bankMetadata.denom
 
+      const tokenType = bankMetadata.denom.startsWith('erc20:')
+        ? TokenType.Evm
+        : TokenType.TokenFactory
+
       bankFactoryTokens.push({
         ...untaggedSymbolMeta.Unknown,
         name: bankMetadata.denom,
@@ -175,7 +179,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
         decimals: bankMetadata.decimals,
         ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
         ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
-        tokenType: TokenType.TokenFactory,
+        tokenType,
         tokenVerification: TokenVerification.Unverified
       })
     }
