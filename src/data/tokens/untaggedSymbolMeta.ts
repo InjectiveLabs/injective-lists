@@ -581,5 +581,13 @@ export const untaggedSymbolMeta = {
     symbol: 'PUMP',
     logo: 'pump.webp',
     coinGeckoId: 'pump-fun'
+  },
+
+  SBET: {
+    name: 'Sharplink Gaming Inc',
+    decimals: 6,
+    symbol: 'SBET',
+    logo: 'sbet.webp',
+    coinGeckoId: ''
   }
 }
