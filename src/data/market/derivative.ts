@@ -1,4 +1,5 @@
 export const mainnetMarketIds: string[] = [
+  '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp
   '0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611', // pump-usdt-perp
   '0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c', // wti-usdt-perp
   '0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0', // launchcoin-usdt-perp
