@@ -221,7 +221,7 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync json s3://injective-lists/json --delete \
+          aws s3 sync json s3://injective-lists-staging/json --delete \
           --cache-control "public, max-age=31536000, s-maxage=31536000"
 
       - name: Invalidate CloudFront cache
