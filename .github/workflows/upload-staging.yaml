@@ -1,4 +1,4 @@
-name: Injective list - Upload Files
+name: Injective list - Upload Files (Staging)
 
 on:
   workflow_dispatch:
@@ -12,7 +12,6 @@ jobs:
       SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
 
     steps:
-      # This is here solely for testing and running this action locally with ACT - it shouldn't be needed for running on github as the images in gh actions should already have the AWS CLI installed
       - name: Install Act dependencies
         if: ${{ env.ACT }}
         run: |
@@ -34,12 +33,13 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: us-east-2
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync json s3://injective-lists/json --delete
+          aws s3 sync json s3://injective-lists-staging/json --delete \
+          --cache-control "public, max-age=31536000, s-maxage=31536000"
 
       - name: Invalidate CloudFront cache
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
