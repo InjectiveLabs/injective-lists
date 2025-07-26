@@ -2418,6 +2418,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x50bac887c02bd7aef120b589cb47a9aff67c0f1040e45f22c5072bbdba97c621",
+    "marketStatus": "active",
+    "ticker": "YOLO/USDT",
+    "baseDenom": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+      "address": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+      "symbol": "yolo",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 10000000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x52723c66612a98dd667b3fb1fd690528911f01c54b1ab9534e404ae4db38cd46",
     "marketStatus": "active",
     "ticker": "CZcool/INJ",
