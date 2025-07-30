@@ -112,6 +112,38 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x43d870826c921f038f6603c2503d8b60f2d645795baeffa18257cacd5d82fec7",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 2",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753899089,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
     "oracleBase": "BTC",
     "oracleQuote": "USD",
     "oracleType": "coinbase",
@@ -138,6 +170,38 @@
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
     "minNotional": 1000000
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x4eea8826712338674a5f53d0e30d3f9d7ce5ef3f3fbc14f379b252f28eeb592b",
+    "marketStatus": "active",
+    "ticker": "AAVE/USDT EXPIRY 4",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753900254,
+      "settlementPrice": "0"
+    }
   },
   {
     "oracleBase": "YFI",
@@ -422,6 +486,38 @@
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
     "minNotional": 1000000
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xe93d9c79d2d2cf57442569642d4b2deee8751a3bcaf90fe926f84ba40cdd9e55",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 3",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753899458,
+      "settlementPrice": "10000000"
+    }
   },
   {
     "oracleBase": "APE",
