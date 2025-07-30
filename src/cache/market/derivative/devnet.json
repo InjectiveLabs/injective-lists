@@ -84,6 +84,38 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x3a3239503791887096c8b84dbbfde5e9266fa19f7856050cd99848571a42dce1",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 5",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753900744,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
     "oracleBase": "BONK",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -180,7 +212,7 @@
     "maintenanceMarginRatio": "0.02",
     "isPerpetual": false,
     "marketId": "0x4eea8826712338674a5f53d0e30d3f9d7ce5ef3f3fbc14f379b252f28eeb592b",
-    "marketStatus": "active",
+    "marketStatus": "paused",
     "ticker": "AAVE/USDT EXPIRY 4",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
@@ -200,7 +232,7 @@
     "minNotional": 0,
     "expiryFuturesMarketInfo": {
       "expirationTimestamp": 1753900254,
-      "settlementPrice": "0"
+      "settlementPrice": "10000000"
     }
   },
   {
@@ -517,6 +549,38 @@
     "expiryFuturesMarketInfo": {
       "expirationTimestamp": 1753899458,
       "settlementPrice": "10000000"
+    }
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xeecce883c6f9747dac0dfc5d181954379e3e20bf12b301991b1b211ebf6abe30",
+    "marketStatus": "active",
+    "ticker": "AAVE/USDT EXPIRY 6",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753901137,
+      "settlementPrice": "0"
     }
   },
   {
