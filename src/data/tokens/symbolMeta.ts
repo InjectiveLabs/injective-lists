@@ -665,10 +665,34 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   STINJ: {
     decimals: 18,
-    symbol: 'STINJ',
+    symbol: 'stINJ',
     logo: 'stinj.png',
-    name: 'Stride Staked Injective',
+    name: 'Stride Staked INJ',
     coinGeckoId: 'stride-staked-injective'
+  },
+
+  STATOM: {
+    decimals: 6,
+    symbol: 'stATOM',
+    logo: 'statom.png',
+    name: 'Stride Staked ATOM',
+    coinGeckoId: 'stride-staked-atom'
+  },
+
+  STOSMO: {
+    decimals: 6,
+    symbol: 'stOSMO',
+    logo: 'stosmo.png',
+    name: 'Stride Staked OSMO',
+    coinGeckoId: 'stride-staked-osmo'
+  },
+
+  STTIA: {
+    decimals: 18,
+    symbol: 'stTIA',
+    logo: 'stia.png',
+    name: 'Stride Staked TIA',
+    coinGeckoId: 'stride-staked-tia'
   },
 
   XRP: {
