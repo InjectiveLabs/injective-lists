@@ -157,12 +157,24 @@
     "denom": "doge"
   },
   {
+    "address": "0x0000000088827d2d103ee2d9A6b781773AE03FfB",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "decimals": 18,
+    "symbol": "WINJ",
+    "name": "Wrapped INJ",
+    "logo": "injective-v4.webp",
+    "coinGeckoId": "injective-protocol",
+    "denom": "erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB",
+    "tokenType": "erc20"
+  },
+  {
     "address": "0x719fF496ddf37C56F2A958676f630f417a4084aa",
     "isNative": false,
     "tokenVerification": "verified",
     "decimals": 6,
-    "symbol": "wUSDT",
-    "name": "Tether",
+    "symbol": "DUSDT",
+    "name": "Demo Tether",
     "logo": "usdt.png",
     "coinGeckoId": "tether",
     "denom": "erc20:0x719fF496ddf37C56F2A958676f630f417a4084aa",
@@ -173,8 +185,8 @@
     "isNative": false,
     "tokenVerification": "verified",
     "decimals": 18,
-    "symbol": "wINJ",
-    "name": "Wrapped INJ",
+    "symbol": "DINJ",
+    "name": "Demo INJ",
     "logo": "injective-v4.webp",
     "coinGeckoId": "injective-protocol",
     "denom": "erc20:0xe1c64DDE0A990ac2435B05DCdac869a17fE06Bd2",
@@ -3715,18 +3727,6 @@
     "tokenType": "erc20"
   },
   {
-    "address": "0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "Unknown",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "denom": "peggy0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-    "tokenType": "erc20"
-  },
-  {
     "address": "0x44d63c7FC48385b212aB397aB91A2637ec964634",
     "isNative": false,
     "tokenVerification": "verified",
@@ -4842,6 +4842,18 @@
     "coinGeckoId": "pump-fun",
     "tokenType": "symbol",
     "denom": "pump"
+  },
+  {
+    "address": "sbet",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Sharplink Gaming Inc",
+    "decimals": 6,
+    "symbol": "SBET",
+    "logo": "sbet.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "sbet"
   },
   {
     "address": "sei",

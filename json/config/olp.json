@@ -10588,7 +10588,8 @@
         },
         "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb": {
           "ticker": "AXL/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101": {
           "ticker": "TIA/USDT",
@@ -10780,7 +10781,8 @@
         },
         "0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340": {
           "ticker": "iMCD/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e": {
           "ticker": "iHOOD/USDT PERP",
@@ -10804,7 +10806,8 @@
         },
         "0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a": {
           "ticker": "SIGN/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36": {
           "ticker": "iMETA/USDT PERP",
@@ -10828,11 +10831,13 @@
         },
         "0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4": {
           "ticker": "PLUME/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c": {
           "ticker": "WTI/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3": {
           "ticker": "iCRCL/USDT PERP",
@@ -10840,7 +10845,8 @@
         },
         "0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0": {
           "ticker": "LAUNCHCOIN/USDT PERP",
-          "marketType": "derivative"
+          "marketType": "derivative",
+          "endDate": "2025-07-27T00:00:00Z"
         },
         "0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625": {
           "ticker": "XRP/USDT",
@@ -10850,6 +10856,11 @@
           "ticker": "PUMP/USDT PERP",
           "marketType": "derivative",
           "startDate": "2025-07-15T00:00:00Z"
+        },
+        "0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3": {
+          "ticker": "SBET/USDT PERP",
+          "marketType": "derivative",
+          "startDate": "2025-07-23T00:00:00Z"
         }
       }
     },
@@ -10863,6 +10874,34 @@
         "0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611": {
           "ticker": "PUMP/USDT PERP",
           "marketType": "derivative"
+        }
+      },
+      "isMiniEpoch": true
+    },
+    {
+      "epochId": "mini_epoch_250717_250724_01",
+      "number": 48102,
+      "startDate": "2025-07-19T00:00:00Z",
+      "endDate": "2025-07-26T00:00:00Z",
+      "rewardINJNum": "500",
+      "markets": {
+        "0x63bafbeee644b6606afb8476dd378fba35d516c7081d6045145790af963545aa": {
+          "ticker": "XRP/USDT PERP",
+          "marketType": "derivative"
+        }
+      },
+      "isMiniEpoch": true
+    },
+    {
+      "epochId": "mini_epoch_250717_250724_02",
+      "number": 48103,
+      "startDate": "2025-07-19T00:00:00Z",
+      "endDate": "2025-07-26T00:00:00Z",
+      "rewardINJNum": "500",
+      "markets": {
+        "0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625": {
+          "ticker": "XRP/USDT",
+          "marketType": "spot"
         }
       },
       "isMiniEpoch": true
@@ -10921,10 +10960,6 @@
           "ticker": "KAVA/USDT",
           "marketType": "spot"
         },
-        "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb": {
-          "ticker": "AXL/USDT PERP",
-          "marketType": "derivative"
-        },
         "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101": {
           "ticker": "TIA/USDT",
           "marketType": "spot"
@@ -11113,10 +11148,6 @@
           "ticker": "LTC/USDT PERP",
           "marketType": "derivative"
         },
-        "0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340": {
-          "ticker": "iMCD/USDT PERP",
-          "marketType": "derivative"
-        },
         "0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e": {
           "ticker": "iHOOD/USDT PERP",
           "marketType": "derivative"
@@ -11135,10 +11166,6 @@
         },
         "0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668": {
           "ticker": "iGOOGL/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a": {
-          "ticker": "SIGN/USDT PERP",
           "marketType": "derivative"
         },
         "0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36": {
@@ -11161,20 +11188,8 @@
           "ticker": "iAAPL/USDT PERP",
           "marketType": "derivative"
         },
-        "0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4": {
-          "ticker": "PLUME/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c": {
-          "ticker": "WTI/USDT PERP",
-          "marketType": "derivative"
-        },
         "0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3": {
           "ticker": "iCRCL/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0": {
-          "ticker": "LAUNCHCOIN/USDT PERP",
           "marketType": "derivative"
         },
         "0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625": {
@@ -11183,6 +11198,10 @@
         },
         "0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611": {
           "ticker": "PUMP/USDT PERP",
+          "marketType": "derivative"
+        },
+        "0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3": {
+          "ticker": "SBET/USDT PERP",
           "marketType": "derivative"
         }
       }
@@ -11241,10 +11260,6 @@
           "ticker": "KAVA/USDT",
           "marketType": "spot"
         },
-        "0x4fe7aff4dd27be7cbb924336e7fe2d160387bb1750811cf165ce58d4c612aebb": {
-          "ticker": "AXL/USDT PERP",
-          "marketType": "derivative"
-        },
         "0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101": {
           "ticker": "TIA/USDT",
           "marketType": "spot"
@@ -11433,10 +11448,6 @@
           "ticker": "LTC/USDT PERP",
           "marketType": "derivative"
         },
-        "0x056fd86c5b8bde4a4f03552e281db86fc6c110a13a79b98b2011aa84bb0ec340": {
-          "ticker": "iMCD/USDT PERP",
-          "marketType": "derivative"
-        },
         "0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e": {
           "ticker": "iHOOD/USDT PERP",
           "marketType": "derivative"
@@ -11455,10 +11466,6 @@
         },
         "0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668": {
           "ticker": "iGOOGL/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0xc6c7178a6f1fa18007f81e5c8dce85be3dbce97cca68ee97321de0daf7558c6a": {
-          "ticker": "SIGN/USDT PERP",
           "marketType": "derivative"
         },
         "0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36": {
@@ -11481,20 +11488,8 @@
           "ticker": "iAAPL/USDT PERP",
           "marketType": "derivative"
         },
-        "0x3569a541bfae59b8a92215e3cb31133bff21455f1a18a1303df87fecab2839e4": {
-          "ticker": "PLUME/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0x12ea31cc591984150dd2341f593c0bd3e57e3e057e8bd692806b7ac092ac529c": {
-          "ticker": "WTI/USDT PERP",
-          "marketType": "derivative"
-        },
         "0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3": {
           "ticker": "iCRCL/USDT PERP",
-          "marketType": "derivative"
-        },
-        "0x99fb44dc75753727f89bad0e79b8b9d2a69ab3cf62730ac405cfd3611569dbc0": {
-          "ticker": "LAUNCHCOIN/USDT PERP",
           "marketType": "derivative"
         },
         "0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625": {
@@ -11503,6 +11498,10 @@
         },
         "0x2a01aab6359dd0e801716f385a74d17e0dd754c3d24238604ed7d549ddefd611": {
           "ticker": "PUMP/USDT PERP",
+          "marketType": "derivative"
+        },
+        "0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3": {
+          "ticker": "SBET/USDT PERP",
           "marketType": "derivative"
         }
       }

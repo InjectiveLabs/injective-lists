@@ -28,62 +28,6 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "rpS",
-    "oracleQuote": "USDT",
-    "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x1a68d888f3fa690890172cc3f9fccdb18b6cdb73a47b2550aa86e974d2d1629f",
-    "marketStatus": "paused",
-    "ticker": "rpS/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
-  },
-  {
-    "oracleBase": "CCj",
-    "oracleQuote": "USDT",
-    "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x1b786b42d945100b091f2f2f9dca540e1a4f180ce3109f009f3717e336052948",
-    "marketStatus": "active",
-    "ticker": "CCj/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
-  },
-  {
     "oracleBase": "SNX",
     "oracleQuote": "USD",
     "oracleType": "coinbase",
@@ -140,16 +84,16 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "Fhk",
+    "oracleBase": "AAVE",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x2b09e704a2ea111c47d0d52004ddeb1504632c016d8a950220b2ae7288b030aa",
-    "marketStatus": "active",
-    "ticker": "Fhk/USDT PERP",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x3a3239503791887096c8b84dbbfde5e9266fa19f7856050cd99848571a42dce1",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 5",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -165,7 +109,11 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753900744,
+      "settlementPrice": "10000000"
+    }
   },
   {
     "oracleBase": "BONK",
@@ -196,16 +144,16 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "DwH",
+    "oracleBase": "AAVE",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x4b43e51e61b182ff04b1ef5d183da9ca6889de6071abf7afdf2c72b77bb358b3",
-    "marketStatus": "active",
-    "ticker": "DwH/USDT PERP",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x43d870826c921f038f6603c2503d8b60f2d645795baeffa18257cacd5d82fec7",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 2",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -221,7 +169,11 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753899089,
+      "settlementPrice": "10000000"
+    }
   },
   {
     "oracleBase": "BTC",
@@ -246,6 +198,66 @@
     },
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x4eea8826712338674a5f53d0e30d3f9d7ce5ef3f3fbc14f379b252f28eeb592b",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 4",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753900254,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
+    "oracleBase": "YFI",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.03",
+    "isPerpetual": true,
+    "marketId": "0x51b846c0196af0b032bbf7b05251b9e45548264b0d60f818eb802dc499f04987",
+    "marketStatus": "active",
+    "ticker": "KIRA/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
@@ -308,34 +320,6 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "qdn",
-    "oracleQuote": "USDT",
-    "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x86624cdd8c19b7e1e572b219576a7f1ebb55d9460862b6084bcb3321334fb6aa",
-    "marketStatus": "active",
-    "ticker": "qdn/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
-  },
-  {
     "oracleBase": "ETH",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -364,16 +348,16 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "gAq",
+    "oracleBase": "KAVA",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
     "isPerpetual": true,
-    "marketId": "0xa5e820c8b6aebead83e889242ffec7cedee9fcd6dc8d2a3977bbf5fe490345cb",
+    "marketId": "0xb6405bf146155ea262afe1120653e7f1d20d8d47db4dcbfe6a499350680335e7",
     "marketStatus": "active",
-    "ticker": "gAq/USDT PERP",
+    "ticker": "KAVA/USDT PERP",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -384,12 +368,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000000000
   },
   {
     "oracleBase": "UNI",
@@ -420,16 +404,16 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "xdc",
+    "oracleBase": "kFy",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
     "isPerpetual": true,
-    "marketId": "0xb965d21dea181df8768c0dc64677621f810c1cc0ca7c4105f225f8b4bc4261b9",
+    "marketId": "0xbc47bbb6b0c73d56b22fa45b65f940280a2d0cc05ed1877297c003bd8bf4d448",
     "marketStatus": "active",
-    "ticker": "xdc/USDT PERP",
+    "ticker": "kFy/USDT PERP",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -445,35 +429,7 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
-  },
-  {
-    "oracleBase": "YMx",
-    "oracleQuote": "USDT",
-    "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0xcba401c91d5a54147a331ec0e782f0d5deded8feee585232250caa1da1a485bb",
-    "marketStatus": "paused",
-    "ticker": "YMx/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 1000000
+    "minNotional": 2000000
   },
   {
     "oracleBase": "GRT",
@@ -504,16 +460,16 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "dpy",
+    "oracleBase": "AAVE",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0xd858eea937aa3b55fe78f87032a5189de282f3373fd07992ae63a34c0c471b3a",
-    "marketStatus": "active",
-    "ticker": "dpy/USDT PERP",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xdd139a95a2b1498b95ff095014a9e3694a1f06056028be7fdc8762803776b9a1",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 1",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -529,19 +485,83 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753897779,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xe4db88a16c1eeb541238fd5c943e8699e4dad8f7e3699b6255a888a39b70c2b3",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 6",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753904357,
+      "settlementPrice": "1000000"
+    }
+  },
+  {
+    "oracleBase": "USDC",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xe8af462760bb2c312199b8b164438d3584ec248ab3c6f69de9840a07321bb367",
+    "marketStatus": "active",
+    "ticker": "USDC/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
     "minNotional": 1000000
   },
   {
-    "oracleBase": "MUH",
+    "oracleBase": "AAVE",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0xf5a80ab3ba85990ab7a6590248c572ded1bbfdc7206b314f71be8136b07e6d0f",
-    "marketStatus": "active",
-    "ticker": "MUH/USDT PERP",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xe93d9c79d2d2cf57442569642d4b2deee8751a3bcaf90fe926f84ba40cdd9e55",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 3",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
@@ -557,6 +577,70 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753899458,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 7,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xeecce883c6f9747dac0dfc5d181954379e3e20bf12b301991b1b211ebf6abe30",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY 6",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1753901137,
+      "settlementPrice": "10000000"
+    }
+  },
+  {
+    "oracleBase": "APE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xf757ebc429dca17bbb27d105e9da3b66754040f0d8242278bdeefa1ae5fbf2c7",
+    "marketStatus": "active",
+    "ticker": "QUNT/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
     "minNotional": 1000000
   }
 ]
