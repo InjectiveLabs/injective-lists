@@ -1655,6 +1655,102 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune Receipt WETH'
   },
 
+  INJ_NEPT_LP: {
+    decimals: 18,
+    symbol: 'INJ-NEPT LP',
+    coinGeckoId: '',
+    logo: 'inj-nept-lp.png',
+    name: 'Mito INJ-NEPT Liquidity Pool Token'
+  },
+
+  dATOM_nATOM_LP: {
+    decimals: 6,
+    symbol: 'dATOM-nATOM LP',
+    coinGeckoId: '',
+    logo: 'datom-natom-lp.png',
+    name: 'Astroport dATOM-nATOM Liquidity Pool Token'
+  },
+
+  USDC_nUSDC_LP: {
+    decimals: 6,
+    symbol: 'USDC-nUSDC LP',
+    coinGeckoId: '',
+    logo: 'usdc-nusdc-lp.png',
+    name: 'Astroport USDC-nUSDC Liquidity Pool Token'
+  },
+
+  nUSDC_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nUSDC-NEPT LP',
+    coinGeckoId: '',
+    logo: 'nusdc-nept-lp.png',
+    name: 'Astroport nUSDC-NEPT Liquidity Pool Token'
+  },
+
+  nUSDC_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'nUSDC-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'nusdc-nusdt-lp.png',
+    name: 'Astroport nUSDC-nUSDT Liquidity Pool Token'
+  },
+
+  USDT_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'USDT-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'usdt-nusdt-lp.png',
+    name: 'Astroport USDT-nUSDT Liquidity Pool Token'
+  },
+
+  nUSDT_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nUSDT-NEPT LP',
+    coinGeckoId: '',
+    logo: 'nusdt-nept-lp.png',
+    name: 'Astroport nUSDT-NEPT Liquidity Pool Token'
+  },
+
+  nINJ_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'nINJ-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'ninj-nusdt-lp.png',
+    name: 'Astroport nINJ-nUSDT Liquidity Pool Token'
+  },
+
+  nINJ_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nINJ-NEPT LP',
+    coinGeckoId: '',
+    logo: 'ninj-nept-lp.png',
+    name: 'Astroport nINJ-NEPT Liquidity Pool Token'
+  },
+
+  INJ_nINJ_LP: {
+    decimals: 6,
+    symbol: 'INJ-nINJ LP',
+    coinGeckoId: '',
+    logo: 'inj-ninj-lp.png',
+    name: 'Astroport INJ-nINJ Liquidity Pool Token'
+  },
+
+  nATOM_ATOM_LP: {
+    decimals: 6,
+    symbol: 'nATOM-ATOM LP',
+    coinGeckoId: '',
+    logo: 'natom-atom-lp.png',
+    name: 'Astroport nATOM-ATOM Liquidity Pool Token'
+  },
+
+  nATOM_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nATOM-NEPT LP',
+    coinGeckoId: '',
+    logo: 'natom-nept-lp.png',
+    name: 'Mito nATOM-NEPT Liquidity Pool Token'
+  },
+
   BAND: {
     decimals: 18,
     symbol: 'BAND',
