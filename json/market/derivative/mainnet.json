@@ -43,7 +43,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -71,7 +71,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -211,7 +211,7 @@
       "name": "Wrapped USDM",
       "address": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
       "symbol": "wUSDM",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/b7c93fa7-f8ca-478b-a22f-1f0693df7300/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/f788b68f-ba8e-43cc-c526-5022088b7800/public",
       "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -227,7 +227,7 @@
     "oracleBase": "0xd69731a2e74ac1ce884fc3890f7ee324b6deb66147055249568869ed700882e4",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
-    "oracleScaleFactor": 3,
+    "oracleScaleFactor": 6,
     "initialMarginRatio": "0.195",
     "maintenanceMarginRatio": "0.05",
     "isPerpetual": true,
@@ -237,19 +237,19 @@
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
-      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "oracleBase": "0x49f6b65cb1de6b10eaf75e7c03ca029c306d0357e91b5311b175084a5ad55688",
@@ -519,7 +519,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -572,16 +572,16 @@
     "ticker": "BAYC/WETH PERP",
     "quoteDenom": "peggy0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
     "quoteToken": {
-      "name": "WETH",
+      "name": "Wrapped Ethereum",
       "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-      "symbol": "WETH",
-      "logo": "https://static.alchemyapi.io/images/assets/2396.png",
+      "symbol": "wETH",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/0d22b678-a78f-4e64-5a7d-d9bd0f261f00/public",
       "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 0.0001,
@@ -712,20 +712,20 @@
     "ticker": "BTC/USDTkv PERP",
     "quoteDenom": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
     "quoteToken": {
-      "name": "Kava USDT",
-      "address": "0x0000000000000000000000000000000000000000",
+      "name": "Tether",
+      "address": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
       "symbol": "USDTkv",
-      "logo": "",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "oracleBase": "0xded84d57dbf810bf86b97936f12e1f01b8d6d01c251a4d6eac592147988d475c",
@@ -855,7 +855,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -939,7 +939,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -971,7 +971,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1027,7 +1027,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1045,7 +1045,7 @@
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
     "initialMarginRatio": "0.033333",
-    "maintenanceMarginRatio": "0.016667",
+    "maintenanceMarginRatio": "0.02",
     "isPerpetual": true,
     "marketId": "0x4d814635dc4776cc26853d3116e7e782b4cfe1c77c31c8aedad384435db08dfa",
     "marketStatus": "active",
@@ -1221,15 +1221,15 @@
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
-      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000,
     "minQuantityTickSize": 0.01,
@@ -1311,7 +1311,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1343,7 +1343,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1483,7 +1483,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1511,7 +1511,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -1527,7 +1527,7 @@
     "oracleBase": "LUNA",
     "oracleQuote": "UST",
     "oracleType": "bandibc",
-    "oracleScaleFactor": 6,
+    "oracleScaleFactor": 18,
     "initialMarginRatio": "0.095",
     "maintenanceMarginRatio": "0.05",
     "isPerpetual": true,
@@ -1537,17 +1537,17 @@
     "quoteDenom": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
     "quoteToken": {
       "name": "TerraUSD",
-      "address": "0xa47c8bf37f92abed4a126bda807a7b7498661acd",
+      "address": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
       "symbol": "UST",
-      "logo": "https://s2.coinmarketcap.com/static/img/coins/64x64/7129.png",
-      "decimals": 6,
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3a622bef-3e63-4a51-7bc2-eb1b55fbd400/public",
+      "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "0.0005",
     "takerFeeRate": "0.0012",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.01,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 0.1,
     "minNotional": 0
   },
@@ -1583,7 +1583,7 @@
     "oracleBase": "BTC/wUSDM",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
-    "oracleScaleFactor": 0,
+    "oracleScaleFactor": 18,
     "initialMarginRatio": "0.195",
     "maintenanceMarginRatio": "0.095",
     "isPerpetual": true,
@@ -1595,13 +1595,13 @@
       "name": "Wrapped USDM",
       "address": "0x57F5E098CaD7A3D1Eed53991D4d66C45C9AF7812",
       "symbol": "wUSDM",
-      "logo": "https://imagedelivery.net/DYKOWp0iCc0sIkF-2e4dNw/c7333dd4-1983-4d2c-ce65-d88c3b427800/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/f788b68f-ba8e-43cc-c526-5022088b7800/public",
       "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000000000,
     "minQuantityTickSize": 0.0001,
@@ -1723,7 +1723,7 @@
     "oracleBase": "OSMO",
     "oracleQuote": "UST",
     "oracleType": "bandibc",
-    "oracleScaleFactor": 6,
+    "oracleScaleFactor": 18,
     "initialMarginRatio": "0.195",
     "maintenanceMarginRatio": "0.05",
     "isPerpetual": true,
@@ -1735,7 +1735,7 @@
       "name": "TerraUSD",
       "address": "ibc/B448C0CA358B958301D328CCDC5D5AD642FC30A6D3AE106FF721DB315F3DDE5C",
       "symbol": "UST",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/ee227dd3-00d4-4a7f-06b7-8ace24684b00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3a622bef-3e63-4a51-7bc2-eb1b55fbd400/public",
       "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2043,7 +2043,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2153,19 +2153,19 @@
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
       "name": "Tether",
-      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://static.alchemyapi.io/images/assets/825.png",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 0.1,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "oracleBase": "0x64762254a3b5c7598b6b721dda6881991ba2cdf6c9a87f8d2ee7a40bb693f2ec",
@@ -2236,20 +2236,20 @@
     "ticker": "ETH/USDTkv PERP",
     "quoteDenom": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
     "quoteToken": {
-      "name": "Kava USDT",
-      "address": "0x0000000000000000000000000000000000000000",
+      "name": "Tether",
+      "address": "ibc/4ABBEF4C8926DDDB320AE5188CFD63267ABBCEFC0583E4AE05D6E5AA2401DDAB",
       "symbol": "USDTkv",
-      "logo": "",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000,
     "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "oracleBase": "0xd69731a2e74ac1ce884fc3890f7ee324b6deb66147055249568869ed700882e4",
@@ -2379,7 +2379,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2519,7 +2519,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2631,7 +2631,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2687,7 +2687,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2715,7 +2715,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
@@ -2743,7 +2743,7 @@
       "name": "Tether",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a0bd252b-1005-47ef-d209-7c1c4a3cbf00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
