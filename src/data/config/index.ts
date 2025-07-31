@@ -11,7 +11,7 @@ const LyoraMainnetUpgrade = {
 export const chainUpgradeConfig = {
   proposalId: 541,
   blockHeight: 127250000,
-  disableMaintenance: false,
+  disableMaintenance: true,
   proposalMsg:
     'Scheduled maintenance on July 31st, 2025 at ~14:00 UTC to implement the Injective EVM mainnet upgrade.'
 } as ChainConfig | {}
