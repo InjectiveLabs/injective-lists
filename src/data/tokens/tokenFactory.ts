@@ -502,5 +502,53 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.TIX,
     creator: 'inj1khttezjv9x6dpadysffpf7m00rch2ldhezz7s2'
+  },
+  {
+    ...symbolMeta.INJ_NEPT_LP,
+    creator: 'inj1vcqkkvqs7prqu70dpddfj7kqeqfdz5gg662qs3'
+  },
+  {
+    ...symbolMeta.dATOM_nATOM_LP,
+    creator: 'inj18ucwme9nyemev9cjhy6jtagtu4laxh7ztzeqqc'
+  },
+  {
+    ...symbolMeta.USDC_nUSDC_LP,
+    creator: 'inj1802zllqw882e965hnmc7f0rrffkfjg0mj2l4c4'
+  },
+  {
+    ...symbolMeta.nUSDC_NEPT_LP,
+    creator: 'inj1qzwm4gqpj9rehxl8dd7cqjfr9hk63urcmwran0'
+  },
+  {
+    ...symbolMeta.nUSDC_nUSDT_LP,
+    creator: 'inj1nnddrrcetnqvvf4agxdve08jm6zjfhpcgu9ltq'
+  },
+  {
+    ...symbolMeta.USDT_nUSDT_LP,
+    creator: 'inj1l4258ut9zjuvfvrzjungqq038cclksrm2hnhat'
+  },
+  {
+    ...symbolMeta.nUSDT_NEPT_LP,
+    creator: 'inj1lv24hws4anfmeh850msfpvgtxpc7tt24vymxx8'
+  },
+  {
+    ...symbolMeta.nINJ_nUSDT_LP,
+    creator: 'inj1zgjnaenn3vzs9dqz49l5hfeqvpv38cljdk52m9'
+  },
+  {
+    ...symbolMeta.nINJ_NEPT_LP,
+    creator: 'inj1nga8pt2tywk4535hzy9upylfn7kxm9cuytqt50'
+  },
+  {
+    ...symbolMeta.INJ_nINJ_LP,
+    creator: 'inj1322fsvvsp785lv2un8gwk8qkysqmn4xehu52uu'
+  },
+  {
+    ...symbolMeta.nATOM_ATOM_LP,
+    creator: 'inj15c5gy2l2zdtumxhyjrfq72y2cq5d5u4t7lp6xp'
+  },
+  {
+    ...symbolMeta.nATOM_NEPT_LP,
+    creator: 'inj12yekr4xjww5ugvme3cgneeu5awuljvlh8rh57q'
   }
 ]
