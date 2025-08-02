@@ -274,8 +274,8 @@
     "makerFeeRate": "-0.00005",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
-    "minQuantityTickSize": 10000,
+    "minPriceTickSize": 1e-10,
+    "minQuantityTickSize": 1e+22,
     "minNotional": 10000000000000000
   },
   {
@@ -3343,8 +3343,8 @@
     "makerFeeRate": "-0.00005",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
-    "minQuantityTickSize": 100000000000000000,
+    "minPriceTickSize": 1e-15,
+    "minQuantityTickSize": 1e+35,
     "minNotional": 1000000
   },
   {
