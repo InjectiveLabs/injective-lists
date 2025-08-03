@@ -16,4 +16,10 @@ const evmMainnetUpgrade = {
     'Scheduled maintenance on July 31st, 2025 at ~14:00 UTC to implement the Injective EVM mainnet upgrade.'
 }
 
-export const chainUpgradeConfig = {} as ChainConfig | {}
+export const chainUpgradeConfig = {
+  proposalId: 544,
+  blockHeight: 127714000,
+  disableMaintenance: false,
+  proposalMsg:
+    'Scheduled maintenance on August 4, 2025 at ~12:00 UTC to implement the Injective Mainnet Performance Upgrade.'
+} as ChainConfig | {}
