@@ -21,5 +21,5 @@ export const chainUpgradeConfig = {
   blockHeight: 127714000,
   disableMaintenance: false,
   proposalMsg:
-    'Scheduled maintenance on August 4, 2025 at ~15:00 UTC to implement the Injective Mainnet Performance Upgrade.'
+    'Scheduled maintenance on August 4, 2025 at ~16:00 UTC to implement the Injective Mainnet Performance Upgrade.'
 } as ChainConfig | {}
