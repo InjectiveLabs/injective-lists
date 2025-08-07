@@ -84,6 +84,38 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x267323bf128c2b8db4f6d485e04335e8b6a9d5e8ff4ea1091d82fee18542a4b0",
+    "marketStatus": "paused",
+    "ticker": "AAVE/USDT EXPIRY",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1754589859,
+      "settlementPrice": "1000000"
+    }
+  },
+  {
     "oracleBase": "KIRA",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
@@ -138,6 +170,38 @@
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 0.1,
     "minNotional": 1000000
+  },
+  {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.05",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0x3c144f7ac4811183d514e641f9b8e32432974a67cc9df9571ddecb212a5dc682",
+    "marketStatus": "active",
+    "ticker": "AAVE/USDT EXPIRY 2",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1754590166,
+      "settlementPrice": "0"
+    }
   },
   {
     "oracleBase": "BTC",
