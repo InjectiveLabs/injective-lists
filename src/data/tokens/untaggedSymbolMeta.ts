@@ -589,5 +589,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SBET',
     logo: 'sbet.webp',
     coinGeckoId: ''
+  },
+  
+  H100: {
+    name: 'Squaretower H100 Hourly',
+    decimals: 6,
+    symbol: 'H100',
+    logo: 'h100.webp',
+    coinGeckoId: ''
   }
 }
