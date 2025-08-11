@@ -37,6 +37,10 @@ export const generateMitoTokens = async (network: Network) => {
     for (const vault of mitoVaults) {
       const denom = `factory/${vault.masterContractAddress}/lp${vault.contractAddress}`
 
+      if (!vault.masterContractAddress) {
+        continue
+      }
+
       const market = getMarketById(vault.marketId, network)
 
       const mitoToken = {
