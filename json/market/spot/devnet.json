@@ -522,7 +522,7 @@
     "makerFeeRate": "0.01",
     "takerFeeRate": "0.05",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
+    "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
     "minNotional": 10000000000000000
   },
@@ -615,7 +615,7 @@
     "makerFeeRate": "0.01",
     "takerFeeRate": "0.05",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
+    "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
   },
@@ -646,7 +646,7 @@
     "makerFeeRate": "0.01",
     "takerFeeRate": "0.05",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
+    "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
   },
@@ -677,7 +677,7 @@
     "makerFeeRate": "0.01",
     "takerFeeRate": "0.05",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0,
+    "minPriceTickSize": 1e-8,
     "minQuantityTickSize": 1e+21,
     "minNotional": 10000000000000000
   },
