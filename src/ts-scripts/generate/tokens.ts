@@ -87,8 +87,8 @@ export const generateTokensList = async (network: Network) => {
       )
 
       if (
-        tokenSortingOrder > cachedTokenSortingOrder ||
-        cachedToken.decimals === 0
+        tokenSortingOrder < cachedTokenSortingOrder ||
+        (cachedToken.decimals === 0 && token.decimals > 0)
       ) {
         console.log(`===== replace duplicate ${denom} ======`)
         console.log(cachedToken)
