@@ -665,10 +665,34 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
 
   STINJ: {
     decimals: 18,
-    symbol: 'STINJ',
+    symbol: 'stINJ',
     logo: 'stinj.png',
-    name: 'Stride Staked Injective',
+    name: 'Stride Staked INJ',
     coinGeckoId: 'stride-staked-injective'
+  },
+
+  STATOM: {
+    decimals: 6,
+    symbol: 'stATOM',
+    logo: 'statom.png',
+    name: 'Stride Staked ATOM',
+    coinGeckoId: 'stride-staked-atom'
+  },
+
+  STOSMO: {
+    decimals: 6,
+    symbol: 'stOSMO',
+    logo: 'stosmo.png',
+    name: 'Stride Staked OSMO',
+    coinGeckoId: 'stride-staked-osmo'
+  },
+
+  STTIA: {
+    decimals: 18,
+    symbol: 'stTIA',
+    logo: 'stia.png',
+    name: 'Stride Staked TIA',
+    coinGeckoId: 'stride-staked-tia'
   },
 
   XRP: {
@@ -1559,6 +1583,14 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Injex Finance'
   },
 
+  NEPT: {
+    decimals: 6,
+    symbol: 'NEPT',
+    name: 'Neptune',
+    logo: 'nept.png',
+    coinGeckoId: 'neptune-2'
+  },
+
   nINJ: {
     decimals: 18,
     symbol: 'nINJ',
@@ -1583,12 +1615,140 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune Receipt USDT'
   },
 
+  nUSDC: {
+    decimals: 6,
+    symbol: 'nUSDC',
+    coinGeckoId: '',
+    logo: 'nusdc.png',
+    name: 'Neptune Receipt USDC'
+  },
+
+  nAUSD: {
+    decimals: 6,
+    symbol: 'nAUSD',
+    coinGeckoId: '',
+    logo: 'nausd.png',
+    name: 'Neptune Receipt AUSD'
+  },
+
+  nSOL: {
+    decimals: 8,
+    symbol: 'nSOL',
+    coinGeckoId: '',
+    logo: 'nsol.png',
+    name: 'Neptune Receipt SOL'
+  },
+
+  nTIA: {
+    decimals: 6,
+    symbol: 'nTIA',
+    coinGeckoId: '',
+    logo: 'ntia.png',
+    name: 'Neptune Receipt TIA'
+  },
+
   nWETH: {
     decimals: 18,
     symbol: 'nWETH',
     coinGeckoId: '',
     logo: 'nweth.png',
     name: 'Neptune Receipt WETH'
+  },
+
+  INJ_NEPT_LP: {
+    decimals: 18,
+    symbol: 'INJ-NEPT LP',
+    coinGeckoId: '',
+    logo: 'inj-nept-lp.png',
+    name: 'Mito INJ-NEPT Liquidity Pool Token'
+  },
+
+  dATOM_nATOM_LP: {
+    decimals: 6,
+    symbol: 'dATOM-nATOM LP',
+    coinGeckoId: '',
+    logo: 'datom-natom-lp.png',
+    name: 'Astroport dATOM-nATOM Liquidity Pool Token'
+  },
+
+  USDC_nUSDC_LP: {
+    decimals: 6,
+    symbol: 'USDC-nUSDC LP',
+    coinGeckoId: '',
+    logo: 'usdc-nusdc-lp.png',
+    name: 'Astroport USDC-nUSDC Liquidity Pool Token'
+  },
+
+  nUSDC_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nUSDC-NEPT LP',
+    coinGeckoId: '',
+    logo: 'nusdc-nept-lp.png',
+    name: 'Astroport nUSDC-NEPT Liquidity Pool Token'
+  },
+
+  nUSDC_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'nUSDC-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'nusdc-nusdt-lp.png',
+    name: 'Astroport nUSDC-nUSDT Liquidity Pool Token'
+  },
+
+  USDT_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'USDT-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'usdt-nusdt-lp.png',
+    name: 'Astroport USDT-nUSDT Liquidity Pool Token'
+  },
+
+  nUSDT_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nUSDT-NEPT LP',
+    coinGeckoId: '',
+    logo: 'nusdt-nept-lp.png',
+    name: 'Astroport nUSDT-NEPT Liquidity Pool Token'
+  },
+
+  nINJ_nUSDT_LP: {
+    decimals: 6,
+    symbol: 'nINJ-nUSDT LP',
+    coinGeckoId: '',
+    logo: 'ninj-nusdt-lp.png',
+    name: 'Astroport nINJ-nUSDT Liquidity Pool Token'
+  },
+
+  nINJ_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nINJ-NEPT LP',
+    coinGeckoId: '',
+    logo: 'ninj-nept-lp.png',
+    name: 'Astroport nINJ-NEPT Liquidity Pool Token'
+  },
+
+  INJ_nINJ_LP: {
+    decimals: 6,
+    symbol: 'INJ-nINJ LP',
+    coinGeckoId: '',
+    logo: 'inj-ninj-lp.png',
+    name: 'Astroport INJ-nINJ Liquidity Pool Token'
+  },
+
+  nATOM_ATOM_LP: {
+    decimals: 6,
+    symbol: 'nATOM-ATOM LP',
+    coinGeckoId: '',
+    logo: 'natom-atom-lp.png',
+    name: 'Astroport nATOM-ATOM Liquidity Pool Token'
+  },
+
+  nATOM_NEPT_LP: {
+    decimals: 6,
+    symbol: 'nATOM-NEPT LP',
+    coinGeckoId: '',
+    logo: 'natom-nept-lp.png',
+    name: 'Mito nATOM-NEPT Liquidity Pool Token'
   },
 
   BAND: {
@@ -1895,14 +2055,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  nTIA: {
-    name: 'Neptune Receipt TIA',
-    logo: 'ntia.png',
-    symbol: 'nTIA',
-    decimals: 6,
-    coinGeckoId: ''
-  },
-
   PYUSD: {
     name: 'PYUSD',
     logo: 'pyusd.png',
@@ -2103,14 +2255,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: ''
   },
 
-  NEPT: {
-    decimals: 6,
-    symbol: 'NEPT',
-    name: 'Neptune',
-    logo: 'nept.svg',
-    coinGeckoId: ''
-  },
-
   AUSD: {
     name: 'AUSD',
     logo: 'AUSD.png',
@@ -2125,14 +2269,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'NLT2Updated',
     logo: 'unknown.png',
     coinGeckoId: ''
-  },
-
-  nUSDC: {
-    decimals: 6,
-    symbol: 'nUSDC',
-    coinGeckoId: '',
-    logo: 'nusdc.webp',
-    name: 'Neptune Receipt USDC'
   },
 
   CHIHUAHUA: {

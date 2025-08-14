@@ -283,6 +283,30 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-89',
     hash: 'AC87717EA002B0123B10A05063E69BCA274BA2C44D842AEEB41558D2856DCE93'
   },
+  { 
+    ...symbolMeta.stTIA,
+    baseDenom: 'sttia',
+    channelId: 'channel-89',
+    path: 'transfer/channel-89',
+    source: TokenSource.Cosmos,
+    hash: '32F6EDA3E2B2A7F9C4A62F11935CF5D25948372A5A85281D7ABB9A2D0F0B7182',
+  },
+  {
+    ...symbolMeta.stATOM,
+    baseDenom: 'statom',
+    channelId: 'channel-89',
+    path: 'transfer/channel-89',
+    source: TokenSource.Cosmos,
+    hash: 'A8F39212ED30B6A8C2AC736665835720D3D7BE4A1D18D68566525EC25ECF1C9B',
+  },
+  {
+    ...symbolMeta.stOSMO,
+    baseDenom: 'stosmo',
+    channelId: 'channel-89',
+    path: 'transfer/channel-89',
+    source: TokenSource.Cosmos,
+    hash: '6D821F3CFAE78E9EBD872FAEC61C400C0D9B72E77FA14614CF1B775A528854FD',
+  },
   {
     ...symbolMeta.KAVA,
     isNative: true,
@@ -585,5 +609,23 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-436',
     source: TokenSource.Cosmos,
     hash: 'C3F872E2DF65D066215F3D61364A7D5342784DAB2A5B0441B9B558D692802902'
-  }
+  },
+  {
+    ...symbolMeta.WBTC,
+    baseDenom: 'ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E',
+    channelId: 'channel-436',
+    path: 'transfer/channel-1/transfer/08-wasm-1369/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/transfer/channel-436',
+    source: TokenSource.Ethereum,
+    hash: '0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E',
+    logo: 'btc-color.png',
+  },
+  {
+    ...symbolMeta.ASTRO,
+    baseDenom: 'ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
+    channelId: 'channel-177',
+    path: 'transfer/channel-177',
+    source: TokenSource.Cosmos,
+    hash: '063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8',
+  },
+  
 ]
