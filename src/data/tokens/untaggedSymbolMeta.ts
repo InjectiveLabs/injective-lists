@@ -592,7 +592,7 @@ export const untaggedSymbolMeta = {
   },
   
   H100: {
-    name: 'Squaretower H100 Hourly',
+    name: 'NVIDIA H100',
     decimals: 6,
     symbol: 'H100',
     logo: 'h100.webp',
