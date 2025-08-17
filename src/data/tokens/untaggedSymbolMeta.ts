@@ -423,10 +423,10 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'kaito'
   },
 
-  iNVDA: {
+  NVDA: {
     name: 'NVIDIA',
     decimals: 6,
-    symbol: 'iNVDA',
+    symbol: 'NVDA',
     logo: 'nvidia.webp',
     coinGeckoId: ''
   },
@@ -455,42 +455,42 @@ export const untaggedSymbolMeta = {
     coinGeckoId: ''
   },
 
-  iHOOD: {
+  HOOD: {
     name: 'Robinhood',
     decimals: 6,
-    symbol: 'iHOOD',
+    symbol: 'HOOD',
     logo: 'ihood.webp',
     coinGeckoId: ''
   },
   
-  iMSTR: {
+  MSTR: {
     name: 'Strategy',
     decimals: 6,
-    symbol: 'iMSTR',
+    symbol: 'MSTR',
     logo: 'mstr.webp',
     coinGeckoId: ''
   },
 
-  iCOIN: {
+  COIN: {
     name: 'Coinbase',
     decimals: 6,
-    symbol: 'iCOIN',
+    symbol: 'COIN',
     logo: 'coin.webp',
     coinGeckoId: ''
   },
 
-  iTSLA: {
+  TSLA: {
     name: 'Tesla',
     decimals: 6,
-    symbol: 'iTSLA',
+    symbol: 'TSLA',
     logo: 'tsla.webp',
     coinGeckoId: ''
   },
 
-  iGOOGL: {
+  GOOGL: {
     name: 'Alphabet',
     decimals: 6,
-    symbol: 'iGOOGL',
+    symbol: 'GOOGL',
     logo: 'googl.webp',
     coinGeckoId: ''
   },
@@ -511,42 +511,42 @@ export const untaggedSymbolMeta = {
     coinGeckoId: 'sign-global'
   },
 
-  iMETA: {
+  META: {
     name: 'Meta Platforms',
     decimals: 6,
-    symbol: 'iMETA',
+    symbol: 'META',
     logo: 'meta.webp',
     coinGeckoId: ''
   },
 
-  iAAPL: {
+  AAPL: {
     name: 'Apple Inc',
     decimals: 6,
-    symbol: 'iAAPL',
+    symbol: 'AAPL',
     logo: 'iaapl.webp',
     coinGeckoId: ''
   },
 
-  iMSFT: {
+  MSFT: {
     name: 'Microsoft Corp',
     decimals: 6,
-    symbol: 'iMSFT',
+    symbol: 'MSFT',
     logo: 'imsft.webp',
     coinGeckoId: ''
   },
 
-  iAMZN: {
+  AMZN: {
     name: 'Amazon Inc',
     decimals: 6,
-    symbol: 'iAMZN',
+    symbol: 'AMZN',
     logo: 'iamzn.webp',
     coinGeckoId: ''
   },
 
-  iNFLX: {
+  NFLX: {
     name: 'Netflix Corp',
     decimals: 6,
-    symbol: 'iNFLX',
+    symbol: 'NFLX',
     logo: 'inflx.webp',
     coinGeckoId: ''
   },
@@ -559,10 +559,10 @@ export const untaggedSymbolMeta = {
     coinGeckoId: ''
   },
 
-  iCRCL: {
+  CRCL: {
     name: 'Circle Internet Group Inc',
     decimals: 6,
-    symbol: 'iCRCL',
+    symbol: 'CRCL',
     logo: 'icrcl.webp',
     coinGeckoId: ''
   },
@@ -592,7 +592,7 @@ export const untaggedSymbolMeta = {
   },
   
   H100: {
-    name: 'Squaretower H100 Hourly',
+    name: 'NVIDIA H100',
     decimals: 6,
     symbol: 'H100',
     logo: 'h100.webp',
