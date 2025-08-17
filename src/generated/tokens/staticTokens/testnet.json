@@ -13,6 +13,18 @@
     "overrideSymbol": "TRUMPWIN"
   },
   {
+    "address": "aapl",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Apple Inc",
+    "decimals": 6,
+    "symbol": "AAPL",
+    "logo": "iaapl.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "aapl"
+  },
+  {
     "address": "aix",
     "isNative": false,
     "tokenVerification": "verified",
@@ -23,6 +35,18 @@
     "coinGeckoId": "",
     "tokenType": "symbol",
     "denom": "aix"
+  },
+  {
+    "address": "amzn",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Amazon Inc",
+    "decimals": 6,
+    "symbol": "AMZN",
+    "logo": "iamzn.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "amzn"
   },
   {
     "address": "apt",
@@ -131,6 +155,30 @@
     "coinGeckoId": "chill-guy",
     "tokenType": "symbol",
     "denom": "chillguy"
+  },
+  {
+    "address": "coin",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Coinbase",
+    "decimals": 6,
+    "symbol": "COIN",
+    "logo": "coin.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "coin"
+  },
+  {
+    "address": "crcl",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Circle Internet Group Inc",
+    "decimals": 6,
+    "symbol": "CRCL",
+    "logo": "icrcl.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "crcl"
   },
   {
     "address": "crv",
@@ -1984,16 +2032,40 @@
     "denom": "gold"
   },
   {
+    "address": "googl",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Alphabet",
+    "decimals": 6,
+    "symbol": "GOOGL",
+    "logo": "googl.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "googl"
+  },
+  {
     "address": "h100",
     "isNative": false,
     "tokenVerification": "verified",
-    "name": "Squaretower H100 Hourly",
+    "name": "NVIDIA H100",
     "decimals": 6,
     "symbol": "H100",
     "logo": "h100.webp",
     "coinGeckoId": "",
     "tokenType": "symbol",
     "denom": "h100"
+  },
+  {
+    "address": "hood",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Robinhood",
+    "decimals": 6,
+    "symbol": "HOOD",
+    "logo": "ihood.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "hood"
   },
   {
     "address": "hype",
@@ -2006,30 +2078,6 @@
     "coinGeckoId": "hyperliquid",
     "tokenType": "symbol",
     "denom": "hype"
-  },
-  {
-    "address": "iaapl",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Apple Inc",
-    "decimals": 6,
-    "symbol": "iAAPL",
-    "logo": "iaapl.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "iaapl"
-  },
-  {
-    "address": "iamzn",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Amazon Inc",
-    "decimals": 6,
-    "symbol": "iAMZN",
-    "logo": "iamzn.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "iamzn"
   },
   {
     "address": "ibc/00BF66BAB34873B07FB9EEEBCFACEA11FB4BB348718862AA7782D6DECC1F44C8",
@@ -3103,54 +3151,6 @@
     "tokenType": "ibc"
   },
   {
-    "address": "icoin",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Coinbase",
-    "decimals": 6,
-    "symbol": "iCOIN",
-    "logo": "coin.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "icoin"
-  },
-  {
-    "address": "icrcl",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Circle Internet Group Inc",
-    "decimals": 6,
-    "symbol": "iCRCL",
-    "logo": "icrcl.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "icrcl"
-  },
-  {
-    "address": "igoogl",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Alphabet",
-    "decimals": 6,
-    "symbol": "iGOOGL",
-    "logo": "googl.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "igoogl"
-  },
-  {
-    "address": "ihood",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Robinhood",
-    "decimals": 6,
-    "symbol": "iHOOD",
-    "logo": "ihood.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "ihood"
-  },
-  {
     "address": "imcd",
     "isNative": false,
     "tokenVerification": "verified",
@@ -3163,54 +3163,6 @@
     "denom": "imcd"
   },
   {
-    "address": "imeta",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Meta Platforms",
-    "decimals": 6,
-    "symbol": "iMETA",
-    "logo": "meta.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "imeta"
-  },
-  {
-    "address": "imsft",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Microsoft Corp",
-    "decimals": 6,
-    "symbol": "iMSFT",
-    "logo": "imsft.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "imsft"
-  },
-  {
-    "address": "imstr",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Strategy",
-    "decimals": 6,
-    "symbol": "iMSTR",
-    "logo": "mstr.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "imstr"
-  },
-  {
-    "address": "inflx",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Netflix Corp",
-    "decimals": 6,
-    "symbol": "iNFLX",
-    "logo": "inflx.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "inflx"
-  },
-  {
     "address": "inj",
     "isNative": true,
     "tokenVerification": "verified",
@@ -3221,30 +3173,6 @@
     "coinGeckoId": "injective-protocol",
     "denom": "inj",
     "tokenType": "native"
-  },
-  {
-    "address": "invda",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "NVIDIA",
-    "decimals": 6,
-    "symbol": "iNVDA",
-    "logo": "nvidia.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "invda"
-  },
-  {
-    "address": "itsla",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "name": "Tesla",
-    "decimals": 6,
-    "symbol": "iTSLA",
-    "logo": "tsla.webp",
-    "coinGeckoId": "",
-    "tokenType": "symbol",
-    "denom": "itsla"
   },
   {
     "address": "jellyjelly",
@@ -3355,6 +3283,18 @@
     "denom": "melania"
   },
   {
+    "address": "meta",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Meta Platforms",
+    "decimals": 6,
+    "symbol": "META",
+    "logo": "meta.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "meta"
+  },
+  {
     "address": "mkr",
     "isNative": false,
     "tokenVerification": "verified",
@@ -3401,6 +3341,54 @@
     "coinGeckoId": "pepe",
     "tokenType": "symbol",
     "denom": "mpepe"
+  },
+  {
+    "address": "msft",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Microsoft Corp",
+    "decimals": 6,
+    "symbol": "MSFT",
+    "logo": "imsft.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "msft"
+  },
+  {
+    "address": "mstr",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Strategy",
+    "decimals": 6,
+    "symbol": "MSTR",
+    "logo": "mstr.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "mstr"
+  },
+  {
+    "address": "nflx",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Netflix Corp",
+    "decimals": 6,
+    "symbol": "NFLX",
+    "logo": "inflx.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "nflx"
+  },
+  {
+    "address": "nvda",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "NVIDIA",
+    "decimals": 6,
+    "symbol": "NVDA",
+    "logo": "nvidia.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "nvda"
   },
   {
     "address": "om",
@@ -4986,6 +4974,18 @@
     "coinGeckoId": "official-trump",
     "tokenType": "symbol",
     "denom": "trump"
+  },
+  {
+    "address": "tsla",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Tesla",
+    "decimals": 6,
+    "symbol": "TSLA",
+    "logo": "tsla.webp",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "tsla"
   },
   {
     "address": "tti",
