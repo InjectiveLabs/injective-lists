@@ -52,11 +52,11 @@ export const mainnetGridMarkets = [
     contractAddress: 'inj1fghrw4qnsevqe7dvu6wlzr42n4z84s9ztfca88'
   },
   {
-    slug: 'itsla-usdt-perp',
+    slug: 'tsla-usdt-perp',
     contractAddress: 'inj12l7llh5am4w4ecx87an6wsq97eyd0auj5cefcq'
   },
   {
-    slug: 'imcd-usdt-perp',
+    slug: 'mcd-usdt-perp',
     contractAddress: 'inj1r96zu3wgcnwvdvhmz73sxqz430luaudmddf7ua'
   },
   {
@@ -125,5 +125,3 @@ export const devnetGridMarkets = [
     contractAddress: 'inj14zykjnz94dr9nj4v2yzpvnlrw5uurk5hhea8xw'
   }
 ]
-
-
