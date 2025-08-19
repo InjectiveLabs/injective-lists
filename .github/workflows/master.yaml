@@ -39,42 +39,49 @@ jobs:
         run: cd src && yarn
 
       - name: Generate tokens
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:tokens
           dir: "src"
 
       - name: Generate validators
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:validators
           dir: "src"
 
       - name: Generate market slugs
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:slugs
           dir: "src"
 
       - name: Generate wasm messages
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:wasm
           dir: "src"
 
       - name: Generate verified denoms
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:verifiedDenoms
           dir: "src"
 
       - name: Generate restriction list
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:restriction
           dir: "src"
 
       - name: Generate swap routes
+        if: "!contains(github.event.head_commit.message, 'fast deploy')"
         uses: borales/actions-yarn@v4
         with:
           cmd: generate:swap:routes
