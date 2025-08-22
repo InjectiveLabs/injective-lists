@@ -44,23 +44,20 @@ const generateSpotMarketMap = async (network: Network) => {
   const spotMarkets = getSpotMarketsByNetwork(network)
 
   try {
-    const marketMap = spotMarkets.reduce(
-      (list: Record<string, MarketSlugId>, market: SpotMarket) => {
-        const slug = getFormattedSpotSlug(market.ticker, network)
+    const marketMap: Record<string, MarketSlugId> = {}
 
-        if (isMainnet(network) && list[slug]) {
-          console.log(`Duplicate spot ticker ${market.ticker}`)
-        }
+    for (const market of spotMarkets) {
+      const slug = getFormattedSpotSlug(market.ticker, network)
 
-        list[market.marketId] = {
-          slug,
-          marketId: market.marketId
-        }
+      if (isMainnet(network) && marketMap[slug]) {
+        console.log(`Duplicate spot ticker ${market.ticker}`)
+      }
 
-        return list
-      },
-      {} as Record<string, MarketSlugId>
-    )
+      marketMap[market.marketId] = {
+        slug,
+        marketId: market.marketId
+      }
+    }
 
     await updateJSONFile(
       `src/generated/market/spot/slugMap/${getNetworkFileName(network)}.json`,
@@ -77,26 +74,23 @@ const generateDerivativeMarketMap = async (network: Network) => {
   const derivativeMarkets = getDerivativeMarketsByNetwork(network)
 
   try {
-    const marketMap = derivativeMarkets.reduce(
-      (list: Record<string, MarketSlugId>, market: SpotMarket) => {
-        const slug = market.ticker
-          .replace('/', '-')
-          .replace(' ', '-')
-          .toLowerCase()
+    const marketMap: Record<string, MarketSlugId> = {}
 
-        if (isMainnet(network) && list[slug]) {
-          console.log(`Duplicate derivative ticker ${market.ticker}`)
-        }
+    for (const market of derivativeMarkets) {
+      const slug = market.ticker
+        .replace('/', '-')
+        .replace(' ', '-')
+        .toLowerCase()
 
-        list[market.marketId] = {
-          slug,
-          marketId: market.marketId
-        }
+      if (isMainnet(network) && marketMap[slug]) {
+        console.log(`Duplicate derivative ticker ${market.ticker}`)
+      }
 
-        return list
-      },
-      {} as Record<string, MarketSlugId>
-    )
+      marketMap[market.marketId] = {
+        slug,
+        marketId: market.marketId
+      }
+    }
 
     await updateJSONFile(
       `src/generated/market/derivative/slugMap/${getNetworkFileName(

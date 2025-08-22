@@ -446,7 +446,7 @@ export const untaggedSymbolMeta = {
     logo: 'ltc.webp',
     coinGeckoId: 'litecoin'
   },
-  
+
   iMCD: {
     name: 'McDonalds',
     decimals: 6,
@@ -462,7 +462,7 @@ export const untaggedSymbolMeta = {
     logo: 'ihood.webp',
     coinGeckoId: ''
   },
-  
+
   MSTR: {
     name: 'Strategy',
     decimals: 6,
@@ -550,7 +550,7 @@ export const untaggedSymbolMeta = {
     logo: 'inflx.webp',
     coinGeckoId: ''
   },
-  
+
   WTI: {
     name: 'WTI Crude Oil (1M)',
     decimals: 6,
@@ -574,7 +574,7 @@ export const untaggedSymbolMeta = {
     logo: 'launchcoin.webp',
     coinGeckoId: 'ben-pasternak'
   },
-  
+
   PUMP: {
     name: 'Pump.fun',
     decimals: 6,
@@ -590,12 +590,20 @@ export const untaggedSymbolMeta = {
     logo: 'sbet.webp',
     coinGeckoId: ''
   },
-  
+
   H100: {
     name: 'NVIDIA H100',
     decimals: 6,
     symbol: 'H100',
     logo: 'h100.webp',
+    coinGeckoId: ''
+  },
+
+  WTIV5: {
+    name: 'WTI 22 September 2025 Expiry',
+    decimals: 6,
+    symbol: 'WTIV5',
+    logo: 'wtiv5.webp',
     coinGeckoId: ''
   }
 }

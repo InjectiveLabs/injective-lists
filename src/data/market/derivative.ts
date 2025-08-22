@@ -101,5 +101,6 @@ export const testnetMarketIds: string[] = [
   '0xba9c96a1a9cc226cfe6bd9bca3a433e396569d1955393f38f2ee728cfda7ec58', // jpy-usdt-perp
   '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
   '0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0', // arb-usdt-perp
-  '0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6' // inj-usdt-perp
+  '0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6', // inj-usdt-perp
+  '0xddb1e77b3ba07e5c5f9afe29249b4bd2e10f2981868a2e37a3ff366f314e3899' // wtiv5/usdt-22SEP25
 ]

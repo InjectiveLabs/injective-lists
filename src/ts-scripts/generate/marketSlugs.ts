@@ -52,12 +52,15 @@ export const generateExpiryFuturesMarketMap = async (network: Network) => {
     marketIds = [...marketIds, ...testnetExpiryFutureMarketIds]
   }
 
+  const list: Record<string, string> = {}
+
+  for (const item of filterMarketMapByMarketId(marketIds, network)) {
+    list[item.slug] = item.marketId
+  }
+
   await updateJSONFile(
     `json/helix/trading/expiryMap/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).reduce(
-      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
-      {}
-    )
+    list
   )
 }
 
@@ -76,12 +79,15 @@ export const generateSpotMarketMap = async (network: Network) => {
     marketIds = [...marketIds, ...testnetSpotMarketIds]
   }
 
+  const list: Record<string, string> = {}
+
+  for (const item of filterMarketMapByMarketId(marketIds, network)) {
+    list[item.slug] = item.marketId
+  }
+
   await updateJSONFile(
     `json/helix/trading/spotMap/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).reduce(
-      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
-      {}
-    )
+    list
   )
 }
 
@@ -100,12 +106,15 @@ export const generateDerivativeMarketMap = async (network: Network) => {
     marketIds = [...marketIds, ...testnetDerivativeMarketIds]
   }
 
+  const list: Record<string, string> = {}
+
+  for (const item of filterMarketMapByMarketId(marketIds, network)) {
+    list[item.slug] = item.marketId
+  }
+
   await updateJSONFile(
     `json/helix/trading/derivativeMap/${getNetworkFileName(network)}.json`,
-    filterMarketMapByMarketId(marketIds, network).reduce(
-      (list, { slug, marketId }) => ({ ...list, [slug]: marketId }),
-      {}
-    )
+    list
   )
 }
 
@@ -164,14 +173,15 @@ export const generateMarketCategoryMap = async (network: Network) => {
     categoryMap = testnetCategoryMap
   }
 
+  const list: Record<string, any> = {}
+
+  for (const [category, marketIds] of Object.entries(categoryMap)) {
+    list[category] = filterMarketMapByMarketId(marketIds, network)
+  }
+
   await updateJSONFile(
     `json/helix/trading/market/categoryMap/${getNetworkFileName(network)}.json`,
-    Object.entries(categoryMap).reduce((listMap, [category, marketIds]) => {
-      return {
-        ...listMap,
-        [category]: filterMarketMapByMarketId(marketIds, network)
-      }
-    }, {})
+    list
   )
 }
 

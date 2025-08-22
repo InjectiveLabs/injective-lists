@@ -46,97 +46,100 @@ export const getNetworkFileName = (network: Network) => {
 }
 
 export const denomsToDenomMap = (denoms: string[]) => {
-  return denoms.reduce((list, denom) => {
+  const result: Record<string, string> = {}
+
+  for (const denom of denoms) {
     const formattedDenom = denom.toLowerCase()
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = denom
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = denom
     }
+  }
 
-    return list
-  }, {} as Record<string, string>)
+  return result
 }
 
 export const tokensToDenomMap = (tokens: Token[]) => {
-  return tokens.reduce((list, token) => {
+  const result: Record<string, Token> = {}
+
+  for (const token of tokens) {
     const formattedDenom = token.denom.toLowerCase()
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = token
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = token
+    } else {
+      // Merge properties efficiently without spread
+      Object.assign(result[formattedDenom], token)
     }
+  }
 
-    list[formattedDenom] = { ...list[formattedDenom], ...token }
-
-    return list
-  }, {} as Record<string, Token>)
+  return result
 }
 
 export const tokensToDenomMapKeepCasing = (tokens: Token[]) => {
-  return tokens.reduce((list, token) => {
+  const result: Record<string, Token> = {}
+
+  for (const token of tokens) {
     const formattedDenom = token.denom
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = token
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = token
+    } else {
+      // Merge properties efficiently without spread
+      Object.assign(result[formattedDenom], token)
     }
+  }
 
-    list[formattedDenom] = { ...list[formattedDenom], ...token }
-
-    return list
-  }, {} as Record<string, Token>)
+  return result
 }
 
 export const tokenToAddressMap = (tokens: Token[]) => {
-  return tokens.reduce((list, token) => {
+  const result: Record<string, Token> = {}
+
+  for (const token of tokens) {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = token
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = token
+    } else {
+      // Merge properties efficiently without spread
+      Object.assign(result[formattedDenom], token)
     }
+  }
 
-    list[formattedDenom] = { ...list[formattedDenom], ...token }
-
-    return list
-  }, {} as Record<string, Token>)
+  return result
 }
 
 export const tokensToAddressMap = (tokens: Token[]) => {
-  return tokens.reduce((list, token) => {
+  const result: Record<string, Token[]> = {}
+
+  for (const token of tokens) {
     const formattedDenom = (token?.address || token.denom).toLowerCase()
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = [token]
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = [token]
+    } else {
+      result[formattedDenom].push(token)
     }
+  }
 
-    list[formattedDenom] = [...list[formattedDenom], token]
-
-    return list
-  }, {} as Record<string, Token[]>)
+  return result
 }
 
 export const bankMetadataToAddressMap = (metadatas: BankMetadata[]) => {
-  return metadatas.reduce((list, metadata) => {
+  const result: Record<string, BankMetadata[]> = {}
+
+  for (const metadata of metadatas) {
     const formattedDenom = metadata.denom
 
-    if (!list[formattedDenom]) {
-      list[formattedDenom] = [metadata]
-
-      return list
+    if (!result[formattedDenom]) {
+      result[formattedDenom] = [metadata]
+    } else {
+      result[formattedDenom].push(metadata)
     }
+  }
 
-    list[formattedDenom] = [...list[formattedDenom], metadata]
-
-    return list
-  }, {} as Record<string, BankMetadata[]>)
+  return result
 }
 
 export const isFileExist = (path: string) => {

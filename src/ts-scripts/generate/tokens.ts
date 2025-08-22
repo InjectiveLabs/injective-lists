@@ -65,53 +65,56 @@ export const generateTokensList = async (network: Network) => {
     }
   })
 
-  const tokenVerificationSortingOrder = [
-    TokenVerification.Verified,
-    TokenVerification.Internal,
-    TokenVerification.External,
-    TokenVerification.Submitted,
-    TokenVerification.Unverified
-  ]
+  const verificationOrderMap = new Map([
+    [TokenVerification.Verified, 0],
+    [TokenVerification.Internal, 1],
+    [TokenVerification.External, 2],
+    [TokenVerification.Submitted, 3],
+    [TokenVerification.Unverified, 4]
+  ])
 
-  const uniqueTokens = formattedList.reduce((list, token: Token) => {
+  const uniqueTokensMap = new Map<string, Token>()
+
+  for (const token of formattedList) {
     const denom = token.denom
+    const cachedToken = uniqueTokensMap.get(denom)
 
-    if (list[denom]) {
-      const cachedToken = list[denom]
-
-      const tokenSortingOrder = tokenVerificationSortingOrder.indexOf(
-        token.tokenVerification as TokenVerification
-      )
-      const cachedTokenSortingOrder = tokenVerificationSortingOrder.indexOf(
-        cachedToken.tokenVerification as TokenVerification
-      )
+    if (cachedToken) {
+      const tokenOrder =
+        verificationOrderMap.get(
+          token.tokenVerification as TokenVerification
+        ) ?? 4
+      const existingOrder =
+        verificationOrderMap.get(
+          cachedToken.tokenVerification as TokenVerification
+        ) ?? 4
 
       if (
-        tokenSortingOrder < cachedTokenSortingOrder ||
+        tokenOrder < existingOrder ||
         (cachedToken.decimals === 0 && token.decimals > 0)
       ) {
-        console.log(`===== replace duplicate ${denom} ======`)
-        console.log(cachedToken)
-        console.log(`===== with ======`)
-        console.log(token)
+        console.log(`Replacing duplicate: ${denom}`)
+        console.log(
+          `   OLD: ${cachedToken.symbol} (${cachedToken.tokenVerification}) - ${cachedToken.decimals} decimals`
+        )
+        console.log(
+          `   NEW: ${token.symbol} (${token.tokenVerification}) - ${token.decimals} decimals`
+        )
+        console.log('')
 
-        list[denom] = token
+        uniqueTokensMap.set(denom, token)
       }
-
-      return list
+    } else {
+      uniqueTokensMap.set(denom, token)
     }
+  }
 
-    return { ...list, [denom]: token }
-  }, {})
-
-  const sortedList = (Object.values(uniqueTokens) as Token[]).sort(
+  const sortedList = Array.from(uniqueTokensMap.values()).sort(
     (t1: Token, t2: Token) => {
-      const t1VerificationOrder = tokenVerificationSortingOrder.indexOf(
-        t1.tokenVerification as TokenVerification
-      )
-      const t2VerificationOrder = tokenVerificationSortingOrder.indexOf(
-        t2.tokenVerification as TokenVerification
-      )
+      const t1VerificationOrder =
+        verificationOrderMap.get(t1.tokenVerification as TokenVerification) ?? 4
+      const t2VerificationOrder =
+        verificationOrderMap.get(t2.tokenVerification as TokenVerification) ?? 4
 
       if (t1VerificationOrder === t2VerificationOrder) {
         return t1.denom.localeCompare(t2.denom)
@@ -134,6 +137,14 @@ export const generateTokensList = async (network: Network) => {
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }
 
+console.time('generateTokensList Devnet')
 generateTokensList(Network.Devnet)
+console.timeEnd('generateTokensList Devnet')
+
+console.time('generateTokensList TestnetSentry')
 generateTokensList(Network.TestnetSentry)
+console.timeEnd('generateTokensList TestnetSentry')
+
+console.time('generateTokensList MainnetSentry')
 generateTokensList(Network.MainnetSentry)
+console.timeEnd('generateTokensList MainnetSentry')
