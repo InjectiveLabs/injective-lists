@@ -605,5 +605,13 @@ export const untaggedSymbolMeta = {
     symbol: 'WTIV5',
     logo: 'wti.webp',
     coinGeckoId: ''
+  },
+
+  WLFI: {
+    name: 'World Liberty Financial',
+    decimals: 6,
+    symbol: 'WLFI',
+    logo: 'wlfi.webp',
+    coinGeckoId: 'world-liberty-financial'
   }
 }
