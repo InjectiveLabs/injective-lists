@@ -114,14 +114,10 @@ export const testnetGridMarkets = [
 export const devnetGridMarkets = [
   {
     slug: 'inj-usdt-perp',
-    contractAddress: 'inj1lqgdq9u8zhcvwwwz3xjswactrtq6qzpt0q78tk'
+    contractAddress: 'inj1eyfccmjm6732k7wp4p6gdjwhxjwsvje4vajxcf'
   },
   {
     slug: 'atom-usdt-perp',
-    contractAddress: 'inj1elaymnd2epmfr498h2x9p2nezc4eklv9qmmdkl'
-  },
-  {
-    slug: 'link-usdt-perp',
-    contractAddress: 'inj14zykjnz94dr9nj4v2yzpvnlrw5uurk5hhea8xw'
+    contractAddress: 'inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3'
   }
 ]

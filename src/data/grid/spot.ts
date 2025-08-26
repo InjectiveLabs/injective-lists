@@ -217,6 +217,6 @@ export const testnetGridMarkets = [
 export const devnetGridMarkets = [
   {
     slug: 'inj-usdt',
-    contractAddress: 'inj1lqgdq9u8zhcvwwwz3xjswactrtq6qzpt0q78tk'
+    contractAddress: 'inj1j08452mqwadp8xu25kn9rleyl2gufgfjqjvewe'
   }
 ]
