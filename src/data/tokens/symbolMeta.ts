@@ -666,7 +666,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   STINJ: {
     decimals: 18,
     symbol: 'stINJ',
-    logo: 'stinj.png',
+    logo: 'stinj.webp',
     name: 'Stride Staked INJ',
     coinGeckoId: 'stride-staked-injective'
   },
@@ -674,7 +674,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   STATOM: {
     decimals: 6,
     symbol: 'stATOM',
-    logo: 'statom.png',
+    logo: 'statom.webp',
     name: 'Stride Staked ATOM',
     coinGeckoId: 'stride-staked-atom'
   },
@@ -682,7 +682,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   STOSMO: {
     decimals: 6,
     symbol: 'stOSMO',
-    logo: 'stosmo.png',
+    logo: 'stosmo.webp',
     name: 'Stride Staked OSMO',
     coinGeckoId: 'stride-staked-osmo'
   },
@@ -690,7 +690,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   STTIA: {
     decimals: 18,
     symbol: 'stTIA',
-    logo: 'stia.png',
+    logo: 'stia.webp',
     name: 'Stride Staked TIA',
     coinGeckoId: 'stride-staked-tia'
   },
@@ -1587,7 +1587,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'NEPT',
     name: 'Neptune',
-    logo: 'nept.png',
+    logo: 'nept.webp',
     coinGeckoId: 'neptune-2'
   },
 
@@ -1595,7 +1595,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'nINJ',
     coinGeckoId: '',
-    logo: 'neptinj.png',
+    logo: 'neptinj.webp',
     name: 'Neptune Receipt INJ'
   },
 
@@ -1603,7 +1603,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nATOM',
     coinGeckoId: '',
-    logo: 'natom.png',
+    logo: 'natom.webp',
     name: 'Neptune Receipt ATOM'
   },
 
@@ -1611,7 +1611,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nUSDT',
     coinGeckoId: '',
-    logo: 'nusdt.png',
+    logo: 'nusdt.webp',
     name: 'Neptune Receipt USDT'
   },
 
@@ -1619,7 +1619,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nUSDC',
     coinGeckoId: '',
-    logo: 'nusdc.png',
+    logo: 'nusdc.webp',
     name: 'Neptune Receipt USDC'
   },
 
@@ -1627,7 +1627,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nAUSD',
     coinGeckoId: '',
-    logo: 'nausd.png',
+    logo: 'nausd.webp',
     name: 'Neptune Receipt AUSD'
   },
 
@@ -1635,7 +1635,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 8,
     symbol: 'nSOL',
     coinGeckoId: '',
-    logo: 'nsol.png',
+    logo: 'nsol.webp',
     name: 'Neptune Receipt SOL'
   },
 
@@ -1643,7 +1643,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nTIA',
     coinGeckoId: '',
-    logo: 'ntia.png',
+    logo: 'ntia.webp',
     name: 'Neptune Receipt TIA'
   },
 
@@ -1651,7 +1651,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'nWETH',
     coinGeckoId: '',
-    logo: 'nweth.png',
+    logo: 'nweth.webp',
     name: 'Neptune Receipt WETH'
   },
 
@@ -1659,7 +1659,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     symbol: 'INJ-NEPT LP',
     coinGeckoId: '',
-    logo: 'inj-nept-lp.png',
+    logo: 'inj-nept-lp.webp',
     name: 'Mito INJ-NEPT Liquidity Pool Token'
   },
 
@@ -1667,7 +1667,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'dATOM-nATOM LP',
     coinGeckoId: '',
-    logo: 'datom-natom-lp.png',
+    logo: 'datom-natom-lp.webp',
     name: 'Astroport dATOM-nATOM Liquidity Pool Token'
   },
 
@@ -1675,7 +1675,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'USDC-nUSDC LP',
     coinGeckoId: '',
-    logo: 'usdc-nusdc-lp.png',
+    logo: 'usdc-nusdc-lp.webp',
     name: 'Astroport USDC-nUSDC Liquidity Pool Token'
   },
 
@@ -1683,7 +1683,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nUSDC-NEPT LP',
     coinGeckoId: '',
-    logo: 'nusdc-nept-lp.png',
+    logo: 'nusdc-nept-lp.webp',
     name: 'Astroport nUSDC-NEPT Liquidity Pool Token'
   },
 
@@ -1691,7 +1691,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nUSDC-nUSDT LP',
     coinGeckoId: '',
-    logo: 'nusdc-nusdt-lp.png',
+    logo: 'nusdc-nusdt-lp.webp',
     name: 'Astroport nUSDC-nUSDT Liquidity Pool Token'
   },
 
@@ -1699,7 +1699,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'USDT-nUSDT LP',
     coinGeckoId: '',
-    logo: 'usdt-nusdt-lp.png',
+    logo: 'usdt-nusdt-lp.webp',
     name: 'Astroport USDT-nUSDT Liquidity Pool Token'
   },
 
@@ -1707,7 +1707,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nUSDT-NEPT LP',
     coinGeckoId: '',
-    logo: 'nusdt-nept-lp.png',
+    logo: 'nusdt-nept-lp.webp',
     name: 'Astroport nUSDT-NEPT Liquidity Pool Token'
   },
 
@@ -1715,7 +1715,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nINJ-nUSDT LP',
     coinGeckoId: '',
-    logo: 'ninj-nusdt-lp.png',
+    logo: 'ninj-nusdt-lp.webp',
     name: 'Astroport nINJ-nUSDT Liquidity Pool Token'
   },
 
@@ -1723,7 +1723,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nINJ-NEPT LP',
     coinGeckoId: '',
-    logo: 'ninj-nept-lp.png',
+    logo: 'ninj-nept-lp.webp',
     name: 'Astroport nINJ-NEPT Liquidity Pool Token'
   },
 
@@ -1731,7 +1731,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'INJ-nINJ LP',
     coinGeckoId: '',
-    logo: 'inj-ninj-lp.png',
+    logo: 'inj-ninj-lp.webp',
     name: 'Astroport INJ-nINJ Liquidity Pool Token'
   },
 
@@ -1739,7 +1739,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nATOM-ATOM LP',
     coinGeckoId: '',
-    logo: 'natom-atom-lp.png',
+    logo: 'natom-atom-lp.webp',
     name: 'Astroport nATOM-ATOM Liquidity Pool Token'
   },
 
@@ -1747,7 +1747,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 6,
     symbol: 'nATOM-NEPT LP',
     coinGeckoId: '',
-    logo: 'natom-nept-lp.png',
+    logo: 'natom-nept-lp.webp',
     name: 'Mito nATOM-NEPT Liquidity Pool Token'
   },
 

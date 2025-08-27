@@ -617,7 +617,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-1/transfer/08-wasm-1369/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/transfer/channel-436',
     source: TokenSource.Ethereum,
     hash: '0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E',
-    logo: 'btc-color.png',
+    logo: 'btc-color.webp',
   },
   {
     ...symbolMeta.ASTRO,
