@@ -1887,12 +1887,12 @@
     "decimals": 6,
     "symbol": "NEPT",
     "name": "Neptune",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3839fd39-0880-4fee-b927-ee55925d0f00/public",
-    "coinGeckoId": "",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/99bf5ddf-3c72-441d-c832-6c4b3965d900/public",
+    "coinGeckoId": "neptune-2",
     "creator": "inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva",
     "denom": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
     "tokenType": "tokenFactory",
-    "externalLogo": "nept.svg"
+    "externalLogo": "nept.webp"
   },
   {
     "address": "factory/inj1vwn4x08hlactxj3y3kuqddafs2hhqzapruwt87/katana",
@@ -2032,6 +2032,24 @@
     "externalLogo": "xion.png"
   },
   {
+    "address": "ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "decimals": 6,
+    "name": "ASTRO",
+    "symbol": "ASTRO",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/84915a6c-764c-4f11-f1d3-b05b0efe3400/public",
+    "coinGeckoId": "astroport-fi",
+    "baseDenom": "ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8",
+    "channelId": "channel-177",
+    "path": "transfer/channel-177",
+    "source": "cosmos",
+    "hash": "063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8",
+    "denom": "ibc/063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8",
+    "tokenType": "ibc",
+    "externalLogo": "astroport.png"
+  },
+  {
     "address": "ibc/078184C66B073F0464BA0BBD736DD601A0C637F9C42B592DDA5D6A95289D99A4",
     "isNative": false,
     "tokenVerification": "verified",
@@ -2084,6 +2102,20 @@
     "denom": "ibc/0AFCFFE18230E0E703A527F7522223D808EBB0E02FDBC84AAF8A045CD8FE0BBB",
     "tokenType": "ibc",
     "externalLogo": "sae.png"
+  },
+  {
+    "address": "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "baseDenom": "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
+    "channelId": "channel-436",
+    "path": "transfer/channel-1/transfer/08-wasm-1369/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/transfer/channel-436",
+    "source": "ethereum",
+    "hash": "0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+    "denom": "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E",
+    "tokenType": "ibc",
+    "externalLogo": "btc-color.webp"
   },
   {
     "address": "ibc/1011E4D6D4800DA9B8F21D7C207C0B0C18E54E614A8576037F066B775210709D",
@@ -2174,6 +2206,19 @@
     "denom": "ibc/300B5A980CA53175DBAC918907B47A2885CADD17042AD58209E777217D64AF20",
     "tokenType": "ibc",
     "externalLogo": "evmos.png"
+  },
+  {
+    "address": "ibc/32F6EDA3E2B2A7F9C4A62F11935CF5D25948372A5A85281D7ABB9A2D0F0B7182",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "baseDenom": "sttia",
+    "channelId": "channel-89",
+    "path": "transfer/channel-89",
+    "source": "cosmos",
+    "hash": "32F6EDA3E2B2A7F9C4A62F11935CF5D25948372A5A85281D7ABB9A2D0F0B7182",
+    "denom": "ibc/32F6EDA3E2B2A7F9C4A62F11935CF5D25948372A5A85281D7ABB9A2D0F0B7182",
+    "tokenType": "ibc",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public"
   },
   {
     "address": "ibc/34346A60A95EB030D62D6F5BDD4B745BE18E8A693372A8A347D5D53DBBB1328B",
@@ -2500,6 +2545,19 @@
     "externalLogo": "clon1.png"
   },
   {
+    "address": "ibc/6D821F3CFAE78E9EBD872FAEC61C400C0D9B72E77FA14614CF1B775A528854FD",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "baseDenom": "stosmo",
+    "channelId": "channel-89",
+    "path": "transfer/channel-89",
+    "source": "cosmos",
+    "hash": "6D821F3CFAE78E9EBD872FAEC61C400C0D9B72E77FA14614CF1B775A528854FD",
+    "denom": "ibc/6D821F3CFAE78E9EBD872FAEC61C400C0D9B72E77FA14614CF1B775A528854FD",
+    "tokenType": "ibc",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public"
+  },
+  {
     "address": "ibc/775AB5A9D31074F245BB7864B7031AC7BDC9C6C0FD64A72528A8D07203CD71F3",
     "isNative": false,
     "tokenVerification": "verified",
@@ -2662,13 +2720,26 @@
     "externalLogo": "solana.png"
   },
   {
+    "address": "ibc/A8F39212ED30B6A8C2AC736665835720D3D7BE4A1D18D68566525EC25ECF1C9B",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "baseDenom": "statom",
+    "channelId": "channel-89",
+    "path": "transfer/channel-89",
+    "source": "cosmos",
+    "hash": "A8F39212ED30B6A8C2AC736665835720D3D7BE4A1D18D68566525EC25ECF1C9B",
+    "denom": "ibc/A8F39212ED30B6A8C2AC736665835720D3D7BE4A1D18D68566525EC25ECF1C9B",
+    "tokenType": "ibc",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public"
+  },
+  {
     "address": "ibc/AC87717EA002B0123B10A05063E69BCA274BA2C44D842AEEB41558D2856DCE93",
     "isNative": true,
     "tokenVerification": "verified",
     "decimals": 18,
-    "symbol": "STINJ",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/5464313e-4632-4cfa-bfae-6d8beae70b00/public",
-    "name": "Stride Staked Injective",
+    "symbol": "stINJ",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/22979060-9e84-4c03-e48b-d03830f2d300/public",
+    "name": "Stride Staked INJ",
     "coinGeckoId": "stride-staked-injective",
     "baseDenom": "stinj",
     "channelId": "channel-89",
@@ -2677,7 +2748,7 @@
     "hash": "AC87717EA002B0123B10A05063E69BCA274BA2C44D842AEEB41558D2856DCE93",
     "denom": "ibc/AC87717EA002B0123B10A05063E69BCA274BA2C44D842AEEB41558D2856DCE93",
     "tokenType": "ibc",
-    "externalLogo": "stinj.png"
+    "externalLogo": "stinj.webp"
   },
   {
     "address": "ibc/AF921F0874131B56897A11AA3F33D5B29CD9C147A1D7C37FE8D918CB420956B2",
@@ -7061,14 +7132,14 @@
     "isNative": false,
     "tokenVerification": "unverified",
     "decimals": 18,
-    "symbol": "STINJ",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/5464313e-4632-4cfa-bfae-6d8beae70b00/public",
-    "name": "Stride Staked Injective",
+    "symbol": "stINJ",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/22979060-9e84-4c03-e48b-d03830f2d300/public",
+    "name": "Stride Staked INJ",
     "coinGeckoId": "stride-staked-injective",
     "creator": "inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z",
     "denom": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/stinj",
     "tokenType": "tokenFactory",
-    "externalLogo": "stinj.png"
+    "externalLogo": "stinj.webp"
   },
   {
     "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/test1",
