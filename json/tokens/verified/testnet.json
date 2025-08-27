@@ -170,12 +170,25 @@
     "externalLogo": "dogecoin.webp"
   },
   {
+    "address": "0x0000000088827d2d103ee2d9A6b781773AE03FfB",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "decimals": 18,
+    "symbol": "WINJ",
+    "name": "Wrapped INJ",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+    "coinGeckoId": "injective-protocol",
+    "denom": "erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB",
+    "tokenType": "erc20",
+    "externalLogo": "injective-v4.webp"
+  },
+  {
     "address": "0x719fF496ddf37C56F2A958676f630f417a4084aa",
     "isNative": false,
     "tokenVerification": "verified",
     "decimals": 6,
-    "symbol": "wUSDT",
-    "name": "Tether",
+    "symbol": "DUSDT",
+    "name": "Demo Tether",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
     "coinGeckoId": "tether",
     "denom": "erc20:0x719fF496ddf37C56F2A958676f630f417a4084aa",
@@ -187,8 +200,8 @@
     "isNative": false,
     "tokenVerification": "verified",
     "decimals": 18,
-    "symbol": "wINJ",
-    "name": "Wrapped INJ",
+    "symbol": "DINJ",
+    "name": "Demo INJ",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
     "coinGeckoId": "injective-protocol",
     "denom": "erc20:0xe1c64DDE0A990ac2435B05DCdac869a17fE06Bd2",
@@ -3939,19 +3952,6 @@
     "externalLogo": "elon.webp"
   },
   {
-    "address": "0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-    "isNative": false,
-    "tokenVerification": "verified",
-    "decimals": 0,
-    "symbol": "Unknown",
-    "name": "Unknown",
-    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
-    "coinGeckoId": "",
-    "denom": "peggy0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-    "tokenType": "erc20",
-    "externalLogo": "unknown.png"
-  },
-  {
     "address": "0x44d63c7FC48385b212aB397aB91A2637ec964634",
     "isNative": false,
     "tokenVerification": "verified",
@@ -5162,6 +5162,19 @@
     "externalLogo": "pump.webp"
   },
   {
+    "address": "sbet",
+    "isNative": false,
+    "tokenVerification": "verified",
+    "name": "Sharplink Gaming Inc",
+    "decimals": 6,
+    "symbol": "SBET",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/91a75e2a-ce94-4721-89b3-d2961f69c200/public",
+    "coinGeckoId": "",
+    "tokenType": "symbol",
+    "denom": "sbet",
+    "externalLogo": "sbet.webp"
+  },
+  {
     "address": "sei",
     "isNative": false,
     "tokenVerification": "verified",
@@ -5460,6 +5473,18 @@
     "tokenType": "insuranceFund",
     "tokenVerification": "verified",
     "name": "PUMP/USDT PERP Insurance Fund",
+    "externalLogo": "injective-v4.webp"
+  },
+  {
+    "denom": "share122",
+    "decimals": 18,
+    "coinGeckoId": "",
+    "symbol": "share122",
+    "address": "share122",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+    "tokenType": "insuranceFund",
+    "tokenVerification": "verified",
+    "name": "SBET/USDT PERP Insurance Fund",
     "externalLogo": "injective-v4.webp"
   },
   {
@@ -7580,6 +7605,18 @@
   },
   {
     "decimals": 6,
+    "symbol": "yolo",
+    "name": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+    "coinGeckoId": "",
+    "address": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+    "denom": "factory/inj1cv27h0ut5taxgnnyeyt9sumv48umlpam7kzdcl/yolo",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 6,
     "symbol": "IBJ",
     "name": "factory/inj1czcqn0a8s0zud72p9zpfrkduljp0hhjjt927fe/IBJ",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
@@ -8326,6 +8363,18 @@
   },
   {
     "decimals": 18,
+    "symbol": "bINJ",
+    "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/bINJ",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+    "coinGeckoId": "",
+    "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/bINJ",
+    "denom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/bINJ",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 18,
     "symbol": "BLEE",
     "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLEE",
     "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
@@ -8584,6 +8633,30 @@
     "coinGeckoId": "",
     "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PROTOCOL",
     "denom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PROTOCOL",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 18,
+    "symbol": "QKK",
+    "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/QKK",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+    "coinGeckoId": "",
+    "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/QKK",
+    "denom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/QKK",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified",
+    "externalLogo": "unknown.png"
+  },
+  {
+    "decimals": 18,
+    "symbol": "RIP",
+    "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/RIP",
+    "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+    "coinGeckoId": "",
+    "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/RIP",
+    "denom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/RIP",
     "tokenType": "tokenFactory",
     "tokenVerification": "unverified",
     "externalLogo": "unknown.png"

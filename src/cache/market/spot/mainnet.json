@@ -744,6 +744,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x1cadbb14bc261e07536684f54e40e254ab428bf2e0d0aae968fa2815dddc5995",
+    "marketStatus": "active",
+    "ticker": "INJX/INJ",
+    "baseDenom": "factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Injex Finance",
+      "address": "factory/inj104h3hchl7ws8lp78zpvrunvsjdwfjc02r5d0fp/injx",
+      "symbol": "INJX",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/0116c26a-f871-4675-8b38-da927c82f300/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100000,
+    "minQuantityTickSize": 100000000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x1f5d69fc3d063e2a130c29943a0c83c3e79c2ba897fe876fcd82c51ab2ea61de",
     "marketStatus": "active",
     "ticker": "sUSDe/USDe",

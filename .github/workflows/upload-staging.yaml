@@ -1,0 +1,45 @@
+name: Injective list - Upload Files (Staging)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: "Trigger upload"
+    runs-on: blacksmith-8vcpu-ubuntu-2204
+    env:
+      ## Github Actions
+      SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
+
+    steps:
+      - name: Install Act dependencies
+        if: ${{ env.ACT }}
+        run: |
+          apt-get update && apt-get install sudo -y && apt-get install wget -y && apt-get install unzip -y
+
+      - name: Install AWS if running locally
+        if: ${{ env.ACT }}
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2 # default
+          verbose: true # default
+          arch: amd64 # allowed values: amd64, arm64
+
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync json s3://injective-lists-staging/json --delete \
+          --cache-control "public, max-age=31536000, s-maxage=31536000"
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

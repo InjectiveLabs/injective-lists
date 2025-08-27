@@ -24,10 +24,6 @@ export const testnetTokens = [
   {
     ...symbolMeta.QAT,
     address: '0x5Ac3A2F6205a481C7a8984E4291E450e52cd0369'
-  },
-  {
-    ...untaggedSymbolMeta.Unknown,
-    address: '0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7'
   }
 ]
 
