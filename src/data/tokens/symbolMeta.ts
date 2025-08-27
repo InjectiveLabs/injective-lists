@@ -2205,5 +2205,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'lifebusiness-coin.svg',
     symbol: 'LBC',
     coinGeckoId: '',
+  },
+
+  OYCI: {
+    decimals: 6,
+    name: 'Oyster Cage Initiative',
+    logo: 'oyci.png',
+    symbol: 'OYCI',
+    coinGeckoId: '',
   }
 }
