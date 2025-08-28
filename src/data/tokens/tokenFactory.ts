@@ -36,7 +36,7 @@ export const testnetTokens: TokenFactorySource[] = [
     creator: 'inj17vytdwqczqz72j65saukplrktd4gyfme5agf6c'
   },
   {
-    ...symbolMeta.STINJ,
+    ...symbolMeta.stINJ,
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
   },
   {
