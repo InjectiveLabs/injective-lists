@@ -663,7 +663,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'lambo-0fcbf0f7-1a8f-470d-ba09-797d5e95d836'
   },
 
-  STINJ: {
+  stINJ: {
     decimals: 18,
     symbol: 'stINJ',
     logo: 'stinj.webp',
@@ -671,7 +671,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'stride-staked-injective'
   },
 
-  STATOM: {
+  stATOM: {
     decimals: 6,
     symbol: 'stATOM',
     logo: 'statom.webp',
@@ -679,7 +679,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'stride-staked-atom'
   },
 
-  STOSMO: {
+  stOSMO: {
     decimals: 6,
     symbol: 'stOSMO',
     logo: 'stosmo.webp',
@@ -687,7 +687,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: 'stride-staked-osmo'
   },
 
-  STTIA: {
+  stTIA: {
     decimals: 18,
     symbol: 'stTIA',
     logo: 'stia.webp',
@@ -2340,6 +2340,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'LifeBusiness Coin',
     logo: 'lifebusiness-coin.svg',
     symbol: 'LBC',
-    coinGeckoId: '',
+    coinGeckoId: ''
   }
 }
