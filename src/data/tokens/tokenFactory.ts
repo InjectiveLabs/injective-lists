@@ -504,10 +504,6 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj1khttezjv9x6dpadysffpf7m00rch2ldhezz7s2'
   },
   {
-    ...symbolMeta.INJ_NEPT_LP,
-    creator: 'inj1vcqkkvqs7prqu70dpddfj7kqeqfdz5gg662qs3'
-  },
-  {
     ...symbolMeta.dATOM_nATOM_LP,
     creator: 'inj18ucwme9nyemev9cjhy6jtagtu4laxh7ztzeqqc'
   },

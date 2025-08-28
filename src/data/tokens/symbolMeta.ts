@@ -1655,20 +1655,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     name: 'Neptune Receipt WETH'
   },
 
-  INJ_NEPT_LP: {
-    decimals: 18,
-    symbol: 'INJ-NEPT LP',
-    coinGeckoId: '',
-    logo: 'inj-nept-lp.webp',
-    name: 'Mito INJ-NEPT Liquidity Pool Token'
-  },
-
   dATOM_nATOM_LP: {
     decimals: 6,
     symbol: 'dATOM-nATOM LP',
     coinGeckoId: '',
     logo: 'datom-natom-lp.webp',
-    name: 'Astroport dATOM-nATOM Liquidity Pool Token'
+    name: 'Astroport dATOM-nATOM Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   USDC_nUSDC_LP: {
@@ -1676,7 +1669,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDC-nUSDC LP',
     coinGeckoId: '',
     logo: 'usdc-nusdc-lp.webp',
-    name: 'Astroport USDC-nUSDC Liquidity Pool Token'
+    name: 'Astroport USDC-nUSDC Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nUSDC_NEPT_LP: {
@@ -1684,7 +1678,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nUSDC-NEPT LP',
     coinGeckoId: '',
     logo: 'nusdc-nept-lp.webp',
-    name: 'Astroport nUSDC-NEPT Liquidity Pool Token'
+    name: 'Astroport nUSDC-NEPT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nUSDC_nUSDT_LP: {
@@ -1692,7 +1687,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nUSDC-nUSDT LP',
     coinGeckoId: '',
     logo: 'nusdc-nusdt-lp.webp',
-    name: 'Astroport nUSDC-nUSDT Liquidity Pool Token'
+    name: 'Astroport nUSDC-nUSDT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   USDT_nUSDT_LP: {
@@ -1700,7 +1696,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'USDT-nUSDT LP',
     coinGeckoId: '',
     logo: 'usdt-nusdt-lp.webp',
-    name: 'Astroport USDT-nUSDT Liquidity Pool Token'
+    name: 'Astroport USDT-nUSDT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nUSDT_NEPT_LP: {
@@ -1708,7 +1705,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nUSDT-NEPT LP',
     coinGeckoId: '',
     logo: 'nusdt-nept-lp.webp',
-    name: 'Astroport nUSDT-NEPT Liquidity Pool Token'
+    name: 'Astroport nUSDT-NEPT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nINJ_nUSDT_LP: {
@@ -1716,7 +1714,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nINJ-nUSDT LP',
     coinGeckoId: '',
     logo: 'ninj-nusdt-lp.webp',
-    name: 'Astroport nINJ-nUSDT Liquidity Pool Token'
+    name: 'Astroport nINJ-nUSDT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nINJ_NEPT_LP: {
@@ -1724,7 +1723,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nINJ-NEPT LP',
     coinGeckoId: '',
     logo: 'ninj-nept-lp.webp',
-    name: 'Astroport nINJ-NEPT Liquidity Pool Token'
+    name: 'Astroport nINJ-NEPT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   INJ_nINJ_LP: {
@@ -1732,7 +1732,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'INJ-nINJ LP',
     coinGeckoId: '',
     logo: 'inj-ninj-lp.webp',
-    name: 'Astroport INJ-nINJ Liquidity Pool Token'
+    name: 'Astroport INJ-nINJ Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nATOM_ATOM_LP: {
@@ -1740,7 +1741,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nATOM-ATOM LP',
     coinGeckoId: '',
     logo: 'natom-atom-lp.webp',
-    name: 'Astroport nATOM-ATOM Liquidity Pool Token'
+    name: 'Astroport nATOM-ATOM Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   nATOM_NEPT_LP: {
@@ -1748,7 +1750,8 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'nATOM-NEPT LP',
     coinGeckoId: '',
     logo: 'natom-nept-lp.webp',
-    name: 'Mito nATOM-NEPT Liquidity Pool Token'
+    name: 'Mito nATOM-NEPT Liquidity Pool Token',
+    subdenom: 'astroport/share'
   },
 
   BAND: {

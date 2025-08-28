@@ -90,7 +90,9 @@ const formatTokenFactoryTokens = (
       console.log(token)
     }
 
-    const denom = `factory/${token.creator}/${token.symbol.toLowerCase()}`
+    const subdenom = token.subdenom || token.symbol.toLowerCase()
+
+    const denom = `factory/${token.creator}/${subdenom}`
     const supplyDenom = getSupplyDenom(denom, network)
 
     list.push({
