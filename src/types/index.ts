@@ -13,6 +13,7 @@ export interface TokenSymbolMeta {
   symbol: string
   decimals: number
   coinGeckoId: string
+  subdenom?: string
 }
 
 export interface AlchemyTokenSource {

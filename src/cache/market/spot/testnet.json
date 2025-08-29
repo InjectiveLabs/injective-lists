@@ -4123,6 +4123,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xa0bb9a3465919c639bd8c65065c3e23f3557b3753c9d51b51ee239ea6d71a16c",
+    "marketStatus": "active",
+    "ticker": "TRD/INJ",
+    "baseDenom": "factory/inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj/TRD",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj/TRD",
+      "address": "factory/inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj/TRD",
+      "symbol": "TRD",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000000,
+    "minQuantityTickSize": 10000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0xa283fc94a9055a01a58bb6229b1e56a8bb54069a0debfce7fbd1e6c25a95330c",
     "marketStatus": "active",
     "ticker": "TIA/USDT",
