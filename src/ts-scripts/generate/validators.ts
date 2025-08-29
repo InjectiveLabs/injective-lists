@@ -38,6 +38,12 @@ export const generateValidatorsData = async (network: Network) => {
         description: { identity, moniker }
       } = validator
 
+      if (
+        operatorAddress === 'injvaloper1yljq5pdnx84kkg30jfmz6ddu4eyp7twyp4z40f'
+      ) {
+        console.log(validator)
+      }
+
       const validatorImageUrl = await fetchValidatorImage({
         network,
         identity,
@@ -63,6 +69,6 @@ export const generateValidatorsData = async (network: Network) => {
   }
 }
 
-generateValidatorsData(Network.Devnet)
+// generateValidatorsData(Network.Devnet)
+// generateValidatorsData(Network.TestnetSentry)
 generateValidatorsData(Network.MainnetSentry)
-generateValidatorsData(Network.TestnetSentry)

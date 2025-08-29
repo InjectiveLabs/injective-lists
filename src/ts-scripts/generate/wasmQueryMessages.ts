@@ -63,15 +63,21 @@ export const generateWasmQueryMessages = async (network: Network) => {
         [] as string[]
       )
 
-  console.log(`fetching wasm query messages for ${network} codeIds:`, [
-    ...codeIdsToFetch,
-    ...existingCodeIdsToRefetch
-  ])
+  const allCodeIdsToProcess = [...codeIdsToFetch, ...existingCodeIdsToRefetch]
 
-  await fetchWasmQueryMessages(network, [
-    ...codeIdsToFetch,
-    ...existingCodeIdsToRefetch
-  ])
+  console.log(
+    `fetching wasm query messages for ${network} codeIds:`,
+    allCodeIdsToProcess
+  )
+
+  // Early return if no code IDs to process
+  if (allCodeIdsToProcess.length === 0) {
+    console.log(`✅✅✅ No wasm query messages to fetch for ${network}`)
+
+    return
+  }
+
+  await fetchWasmQueryMessages(network, allCodeIdsToProcess)
 }
 
 export const fetchWasmQueryMessages = async (

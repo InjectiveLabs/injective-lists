@@ -32,6 +32,10 @@ export const fetchValidatorMetadataFromKeybase = async (identity?: string) => {
       data: any
     }
 
+    if (identity === '08D61484FF26B324') {
+      console.log(response.data.them?.[0]?.pictures?.primary?.url)
+    }
+
     return response.data.them?.[0]?.pictures?.primary?.url
   } catch (e) {
     console.log(`cannot fetch validator logo ${identity}:`, e)
@@ -66,21 +70,23 @@ export const fetchValidatorImage = async ({
     })
   }
 
-  const cloudFlareImageUrl = fetchValidatorImageFromImagePaths(operatorAddress)
+  // const cloudFlareImageUrl = fetchValidatorImageFromImagePaths(operatorAddress)
 
-  if (cloudFlareImageUrl) {
-    return cloudFlareImageUrl
-  }
+  // if (cloudFlareImageUrl) {
+  //   return cloudFlareImageUrl
+  // }
 
-  const existingValidatorImage =
-    existingValidatorsImageMap[operatorAddress.toLowerCase()]
+  // const existingValidatorImage =
+  //   existingValidatorsImageMap[operatorAddress.toLowerCase()]
 
-  if (existingValidatorImage) {
-    return existingValidatorImage
-  }
+  // if (existingValidatorImage) {
+  //   return existingValidatorImage
+  // }
 
   const validatorMetadata =
     (await fetchValidatorMetadataFromKeybase(identity)) || ''
+
+  // console.log({ validatorMetadata })
 
   await updateJSONFile(
     `src/generated/validatorImageMap/${getNetworkFileName(network)}.json`,
