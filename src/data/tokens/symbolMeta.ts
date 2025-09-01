@@ -2344,5 +2344,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'lifebusiness-coin.svg',
     symbol: 'LBC',
     coinGeckoId: ''
+  },
+
+  WLFI: {
+    decimals: 18,
+    name: 'World Liberty Financial',
+    logo: 'wlfi.webp',
+    symbol: 'WLFI',
+    coinGeckoId: 'world-liberty-financial'
   }
 }

@@ -390,5 +390,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.USD1,
     address: '0x8d0D000Ee44948FC98c9B98A4FA4921476f08B0d'
+  },
+  {
+    ...symbolMeta.WLFI,
+    address: '0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6'
   }
 ]
