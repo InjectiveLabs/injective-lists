@@ -600,7 +600,7 @@ export const untaggedSymbolMeta = {
   },
 
   WTIV5: {
-    name: 'WTI 22 September 2025 Expiry',
+    name: 'WTI Crude Oil (22 Sep 2025 Expiry)',
     decimals: 6,
     symbol: 'WTIV5',
     logo: 'wti.webp',
