@@ -4,8 +4,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.019231",
+    "maintenanceMarginRatio": "0.01",
     "isPerpetual": true,
     "marketId": "0x0f03542809143c7e5d3c22f56bc6e51eb2c8bab5009161b58f6f468432dfa196",
     "marketStatus": "active",
@@ -20,12 +20,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0xf9c0172ba10dfa4d19088d94f5bf61d3b54d5bd7483a322a982e1373ee8ea31b",
@@ -88,8 +88,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.019231",
+    "maintenanceMarginRatio": "0.01",
     "isPerpetual": true,
     "marketId": "0x155576f660b3b6116c1ab7a42fbf58a95adf11b3061f88f81bc8df228e7ac934",
     "marketStatus": "active",
@@ -104,20 +104,20 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
+    "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0x2d9315a88f3019f8efa88dfe9c0f0843712da0bac814461e27733f6b83eb51b3",
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.083333",
-    "maintenanceMarginRatio": "0.06",
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
     "isPerpetual": true,
     "marketId": "0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6",
     "marketStatus": "active",
@@ -132,12 +132,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
+    "makerFeeRate": "-0.00005",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0.000001
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0xed82efbfade01083ffa8f64664c86af39282c9f084877066ae72b635e77718f0",
@@ -172,8 +172,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.019231",
+    "maintenanceMarginRatio": "0.01",
     "isPerpetual": true,
     "marketId": "0x2e94326a421c3f66c15a3b663c7b1ab7fb6a5298b3a57759ecf07f0036793fc9",
     "marketStatus": "active",
@@ -188,12 +188,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 0.000001
+    "minPriceTickSize": 1000000,
+    "minQuantityTickSize": 0.0001,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "TIA",
@@ -320,8 +320,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.019231",
+    "maintenanceMarginRatio": "0.01",
     "isPerpetual": true,
     "marketId": "0x70bc8d7feab38b23d5fdfb12b9c3726e400c265edbcbf449b6c80c31d63d3a02",
     "marketStatus": "active",
@@ -336,19 +336,19 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minPriceTickSize": 100000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0x37f40d2898159e8f2e52b93cb78f47cc3829a31e525ab975c49cc5c5d9176378",
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
+    "initialMarginRatio": "0.083333",
     "maintenanceMarginRatio": "0.05",
     "isPerpetual": true,
     "marketId": "0x820bad0e0cbee65bb0eea5a99c78720c97b7b2217c47dcc0e0875e1ebb35e546",
@@ -364,12 +364,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.1,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "oracleBase": "GOLD",
@@ -432,8 +432,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
     "isPerpetual": true,
     "marketId": "0x95698a9d8ba11660f44d7001d8c6fb191552ece5d9141a05c5d9128711cdc2e0",
     "marketStatus": "active",
@@ -448,12 +448,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 0
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0xed82efbfade01083ffa8f64664c86af39282c9f084877066ae72b635e77718f0",
@@ -488,8 +488,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.009901",
+    "maintenanceMarginRatio": "0.005",
     "isPerpetual": true,
     "marketId": "0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7",
     "marketStatus": "active",
@@ -504,12 +504,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0x20a938f54b68f1f2ef18ea0328f6dd0747f8ea11486d22b021e83a900be89776",
@@ -544,8 +544,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.095",
+    "maintenanceMarginRatio": "0.025",
     "isPerpetual": true,
     "marketId": "0xc10e8b25979a1620a6e088ce4c141f5fd2841e2089d4c99b6e5cd8f85986dcd3",
     "marketStatus": "active",
@@ -560,20 +560,20 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1,
-    "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 100000,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "TIA",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
     "isPerpetual": true,
     "marketId": "0xc90e8ea048b8fe5c3174d4d0386191765db699d2bf83d0cbaf07e15462115a15",
     "marketStatus": "active",
@@ -588,12 +588,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.1,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "oracleBase": "ETH",
@@ -628,7 +628,7 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
+    "initialMarginRatio": "0.095",
     "maintenanceMarginRatio": "0.05",
     "isPerpetual": true,
     "marketId": "0xd97d0da6f6c11710ef06315971250e4e9aed4b7d4cd02059c9477ec8cf243782",
@@ -644,19 +644,19 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "WTIV5",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.05",
+    "initialMarginRatio": "0.033333",
     "maintenanceMarginRatio": "0.02",
     "isPerpetual": false,
     "marketId": "0xddb1e77b3ba07e5c5f9afe29249b4bd2e10f2981868a2e37a3ff366f314e3899",
@@ -672,8 +672,8 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
@@ -744,8 +744,8 @@
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
     "oracleScaleFactor": 6,
-    "initialMarginRatio": "0.195",
-    "maintenanceMarginRatio": "0.05",
+    "initialMarginRatio": "0.009901",
+    "maintenanceMarginRatio": "0.005",
     "isPerpetual": true,
     "marketId": "0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac",
     "marketStatus": "active",
@@ -760,12 +760,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0003",
-    "takerFeeRate": "0.003",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 100,
-    "minQuantityTickSize": 0.0001,
-    "minNotional": 0
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
   },
   {
     "oracleBase": "0x321ba4d608fa75ba76d6d73daa715abcbdeb9dba02257f05a1b59178b49f599b",
