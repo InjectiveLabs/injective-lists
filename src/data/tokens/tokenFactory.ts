@@ -90,6 +90,11 @@ export const testnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.TRD,
     creator: 'inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj'
+  },
+  {
+    ...symbolMeta.TALIS,
+    creator: 'inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3',
+    subdenom: 'Talis-3'
   }
 ]
 
