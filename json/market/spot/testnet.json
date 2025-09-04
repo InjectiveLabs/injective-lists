@@ -2759,6 +2759,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x5b6c2fa3af4d1f810184da6f0f9b13f43b3af86996ba7c8d58245aa8cb68dfb5",
+    "marketStatus": "active",
+    "ticker": "NIA/INJ",
+    "baseDenom": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+      "address": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+      "symbol": "NIA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0,
+    "minQuantityTickSize": 1000,
+    "minNotional": 10000000000000000
+  },
+  {
     "marketId": "0x5f56416526f23cf96d7a6daeac3bfa2622f6e9914cb0c53f0cee9d1790fcdb0d",
     "marketStatus": "active",
     "ticker": "BFM/inj",
