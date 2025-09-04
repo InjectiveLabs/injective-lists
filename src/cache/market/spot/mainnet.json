@@ -2449,6 +2449,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x7a0b1b3d5d85727b6e2995f71bd67cd8f79a06b3b4532506104cbae5f492b200",
+    "marketStatus": "active",
+    "ticker": "NEPT/USDT",
+    "baseDenom": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Neptune",
+      "address": "factory/inj1v3a4zznudwpukpr8y987pu5gnh4xuf7v36jhva/nept",
+      "symbol": "NEPT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/99bf5ddf-3c72-441d-c832-6c4b3965d900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x7f71c4fba375c964be8db7fc7a5275d974f8c6cdc4d758f2ac4997f106bb052b",
     "marketStatus": "active",
     "ticker": "GF/USDT",
