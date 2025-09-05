@@ -66,6 +66,54 @@ export const mainnetGridMarkets = [
   {
     slug: 'buidl-usdt-perp',
     contractAddress: 'inj1hth3zy65689s3gtydhwr9a295syreyzj286x2y'
+  },
+  {
+    slug: 'wif-usdt-perp',
+    contractAddress: 'inj1mqydvjg6kvxx70neymz9y3kvh8kmu3mumamjmx'
+  },
+  {
+    slug: 'aapl-usdt-perp',
+    contractAddress: 'inj1pj2qnfyqnekw55e2keftc8963nynkemdja5am0'
+  },
+  {
+    slug: 'w-usdt-perp',
+    contractAddress: 'inj1x0pqcn7nwf8nrl5779wa8eug82eu5qx075t8h7'
+  },
+  {
+    slug: 'aave-usdt-perp',
+    contractAddress: 'inj13eulqq9pgyazcfap4eqh3shnpmmwvdusnqh0vs'
+  },
+  {
+    slug: 'msft-usdt-perp',
+    contractAddress: 'inj10ftjexstm33hj5e9jgezgcxx387mxn4p8jnfdj'
+  },
+  {
+    slug: 'ton-usdt-perp',
+    contractAddress: 'inj1yrj3ckuun5wwl9ps2x8m6ydfnvgujt3atzurj6'
+  },
+  {
+    slug: 'nvda-usdt-perp',
+    contractAddress: 'inj1fztxspkpmamc2tmmjvk6j3yszdtgp7uj0d6ey0'
+  },
+  {
+    slug: 'stx-usdt-perp',
+    contractAddress: 'inj10sjnxnr23cjuecqwwh7nnzrfdp524ns62ttm05'
+  },
+  {
+    slug: 'coin-usdt-perp',
+    contractAddress: 'inj13jq55e9v8p74zf7curezaxur8vdt7eezus8wzw'
+  },
+  {
+    slug: 'googl-usdt-perp',
+    contractAddress: 'inj1c7mptvewxf4vnvt89f0wh2t5wv66dcz3mghu23'
+  },
+  {
+    slug: 'nflx-usdt-perp',
+    contractAddress: 'inj13aat9hahx0slchulfv9duvw46h0qtns39t9uqp'
+  },
+  {
+    slug: 'apt-usdt-perp',
+    contractAddress: 'inj1jwg3lhc6ecw0c8lmwcam6c69lkrjqxmsvhgggz'
   }
 ]
 export const stagingGridMarkets = []
