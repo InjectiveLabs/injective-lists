@@ -18,6 +18,15 @@ const testnetValidators = readJSONFile({
   path: 'src/cache/validators/testnet.json'
 })
 
+// Helper function to split array into batches
+const chunkArray = <T>(array: T[], chunkSize: number): T[][] => {
+  const chunks: T[][] = []
+  for (let i = 0; i < array.length; i += chunkSize) {
+    chunks.push(array.slice(i, i + chunkSize))
+  }
+  return chunks
+}
+
 export const generateValidatorsData = async (network: Network) => {
   let validators = devnetValidators
 
@@ -32,30 +41,35 @@ export const generateValidatorsData = async (network: Network) => {
   try {
     const validatorSources = []
 
-    for (const validator of validators) {
-      const {
-        operatorAddress,
-        description: { identity, moniker }
-      } = validator
+    // Split validators into batches of 10
+    const batches = chunkArray(validators, 10)
 
-      if (
-        operatorAddress === 'injvaloper1yljq5pdnx84kkg30jfmz6ddu4eyp7twyp4z40f'
-      ) {
-        console.log(validator)
-      }
+    // Process each batch in parallel
+    for (const batch of batches) {
+      const batchPromises = batch.map(async (validator: any) => {
+        const {
+          operatorAddress,
+          description: { identity, moniker }
+        } = validator
 
-      const validatorImageUrl = await fetchValidatorImage({
-        network,
-        identity,
-        operatorAddress
+        const validatorImageUrl = await fetchValidatorImage({
+          network,
+          identity,
+          operatorAddress
+        })
+
+        return {
+          moniker,
+          identity,
+          operatorAddress,
+          image: validatorImageUrl
+        }
       })
 
-      validatorSources.push({
-        moniker,
-        identity,
-        operatorAddress,
-        image: validatorImageUrl
-      })
+      // Wait for all validators in this batch to complete
+      const batchResults = await Promise.all(batchPromises)
+
+      validatorSources.push(...batchResults)
     }
 
     await updateJSONFile(
@@ -69,6 +83,6 @@ export const generateValidatorsData = async (network: Network) => {
   }
 }
 
-// generateValidatorsData(Network.Devnet)
-// generateValidatorsData(Network.TestnetSentry)
+generateValidatorsData(Network.Devnet)
+generateValidatorsData(Network.TestnetSentry)
 generateValidatorsData(Network.MainnetSentry)
