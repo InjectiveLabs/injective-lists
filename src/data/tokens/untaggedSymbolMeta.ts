@@ -616,7 +616,7 @@ export const untaggedSymbolMeta = {
   },
 
   CANELO: {
-    name: 'CANELO-DEF-CRAWFORD',
+    name: 'Canelo Def Crawford',
     decimals: 6,
     symbol: 'CANELO-DEF-CRAWFORD',
     logo: 'kalshi.webp',
