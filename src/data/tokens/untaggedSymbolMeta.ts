@@ -613,5 +613,13 @@ export const untaggedSymbolMeta = {
     symbol: 'WLFI',
     logo: 'wlfi.webp',
     coinGeckoId: 'world-liberty-financial'
+  },
+
+  CANELO: {
+    name: 'Canelo Def Crawford',
+    decimals: 6,
+    symbol: 'CANELO-DEF-CRAWFORD',
+    logo: 'kalshi.webp',
+    coinGeckoId: ''
   }
 }

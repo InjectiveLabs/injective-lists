@@ -2349,7 +2349,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   OYCI: {
     decimals: 6,
     name: 'Oyster Cage Initiative',
-    logo: 'oyci.png',
+    logo: 'oyci.webp',
     symbol: 'OYCI',
     coinGeckoId: ''
   },
