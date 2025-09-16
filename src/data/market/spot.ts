@@ -1,4 +1,5 @@
 export const mainnetMarketIds = [
+  '0x7a0b1b3d5d85727b6e2995f71bd67cd8f79a06b3b4532506104cbae5f492b200', // nept-usdt
   '0xa900dc57b6dc902f6459b0300c375ecbdaed48aa5f9e3af1accbfa554e65f625', // xrp-usdt
   '0x1b6749459dadf3bea0257b3c403b7403c0b83c4b05de89d0c55f0f8badfffa80', // truinj-inj
   '0x6e1f4f2d2f5c009a55868bba81f2f873564e0406ac974a75e8d9ddc7d1b489b8', // arst-usdt

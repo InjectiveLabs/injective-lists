@@ -75,6 +75,7 @@ export const mainnetCategoryMap = {
     '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1' // invda-usdt-perp
   ],
   injective: [
+    '0x7a0b1b3d5d85727b6e2995f71bd67cd8f79a06b3b4532506104cbae5f492b200', // nept-usdt
     '0x1b6749459dadf3bea0257b3c403b7403c0b83c4b05de89d0c55f0f8badfffa80', // truinj-inj
     '0xf12a831d2901a1c1130fb81c88c3b443c62be3cd14547625f2db8a5f2b187d2c', // l1x-usdt-perp
     '0x6e46898e9a7ab9ff3c33791fa62ec108935837bab642833e1d17fa44d6ad038d', // nbz-usdt
