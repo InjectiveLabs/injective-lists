@@ -621,5 +621,13 @@ export const untaggedSymbolMeta = {
     symbol: 'CANELO-DEF-CRAWFORD',
     logo: 'kalshi.webp',
     coinGeckoId: ''
+  },
+
+  SKY: {
+    name: 'Sky',
+    decimals: 6,
+    symbol: 'SKY',
+    logo: 'sky.webp',
+    coinGeckoId: 'sky'
   }
 }
