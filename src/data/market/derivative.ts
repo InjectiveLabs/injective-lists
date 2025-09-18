@@ -1,4 +1,5 @@
 export const mainnetMarketIds: string[] = [
+  '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
   '0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20', // wtiv5-usdt-22sep25
   '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
   '0x56cb0ef0b9d59125373112523b0adfc446dff989268547fa1a3379a6f98f5efd', // h100-usdt-perp
