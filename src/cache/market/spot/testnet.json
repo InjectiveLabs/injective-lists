@@ -24,7 +24,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 100,
@@ -55,11 +55,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x034bcd6e26c531cb852c6d0ae5fb3ea8db4b036816bc9980ca60008e3c2abd82",
@@ -86,11 +86,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.1,
     "minQuantityTickSize": 10000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x03799aa2d9a4ffdf2c2621244287e9fe9a79eaf9d96f07b43bf6a7d03ecda8fe",
@@ -148,7 +148,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 10,
@@ -209,12 +209,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "marketId": "0x08c2e1e900deaa72c9bb15f7429c9d7e7e48b6406e3f1f8546e71177267edb65",
@@ -303,11 +303,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 0.1,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x0a89fb09f4f064d8298470140e73462db2d2a03e2d92f2d7ff43873c88d024e5",
@@ -334,11 +334,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-12,
     "minQuantityTickSize": 1e+22,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x0c21eedb53c8c3aa48deaade4e0e9ebb7163e8f84730ee879879f84a18246388",
@@ -365,7 +365,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000000,
     "minQuantityTickSize": 10,
@@ -396,11 +396,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x129c4d20afb9b4fdcfcc0b771b6b7c394d2ef945495c8bfd676e0f523775f133",
@@ -427,11 +427,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x1317d9a942ed14983266d5243af81ba3ba92dc7becfc54b3b27e06f2a99b8dc8",
@@ -458,7 +458,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000000,
     "minQuantityTickSize": 1,
@@ -489,11 +489,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x18d6daccb801562c4ce52b74889da307711652bf2cd29cdf14e9fa7ff5144e4b",
@@ -520,7 +520,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 1000,
@@ -551,11 +551,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x1f591b062045446d17af5ab05170bbd5dbe485a424ae254bc695ee4b388ea9ab",
@@ -582,11 +582,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 0.001,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x214a9001850461789f87e488ff91027088ee882762da3970475bda4991d3eee1",
@@ -644,11 +644,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 10000000000000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x21d4ee074f37f2a310929425e58f69850fca9f734d292bfc5ee48d3c28ea1c09",
@@ -675,7 +675,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000,
     "minQuantityTickSize": 1000,
@@ -706,11 +706,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x228caaab9d60a6aefa2c5dbe2778ce25c2d641b05ddee8ef3eb6a5c91e878b71",
@@ -737,7 +737,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 100000,
@@ -768,11 +768,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x237b824d0350fbcef677131c49f5ea140c8f0a784bf3d8f10c32222b9828d6b2",
@@ -830,11 +830,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2488e99a76f86051ba4b3507889f2209bf9e5f3d590f21bcc0b8982097527200",
@@ -861,11 +861,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x25192314f6efbc77e3a94b6392341f6591ff48870928482132aea1a91e6dceec",
@@ -923,7 +923,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 10,
@@ -954,7 +954,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000,
     "minQuantityTickSize": 10000000,
@@ -985,7 +985,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 10,
@@ -1016,11 +1016,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2b1b05a99e0490dfbc88433dc15300a3f62f70119e75f03d133d4ab44ebd3d87",
@@ -1047,11 +1047,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2ca2d24127072588e1188d4571bab9323229b71aeb667505a937764e0964bf8e",
@@ -1078,11 +1078,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2d7f47811527bd721ce2e4e0ff27b0f3a281f65abcd41758baf157c8ddfcd910",
@@ -1109,7 +1109,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000000000000000,
@@ -1140,11 +1140,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2d92a74f1526c600c0913edd2c38e3ec2ffc5e458842f2cf83545528d5e51d0d",
@@ -1171,7 +1171,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-14,
     "minQuantityTickSize": 100000000000000,
@@ -1202,11 +1202,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x2da41d4f7370e6d44240480bae530661ba3ae68682089810ea29beee1984985f",
@@ -1232,12 +1232,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.000001,
-    "minQuantityTickSize": 10000000,
-    "minNotional": 0
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0x3048fe87b3b9083461bb1591509fe071fbd54919df1b693d14b12e37b48ebedc",
@@ -1264,11 +1264,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x30dc51e9d2f1fc22fb9d30c51f1081e0c3f25384f29e98f201be1d60ac404f04",
@@ -1357,11 +1357,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-9,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x325accf7e51c1549b3654ae3af7dcbe95102b9d8a5fef750c5db11275c951abb",
@@ -1450,11 +1450,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x3478082b970d60b327bee5c49be7659ef5422db888d1a6955e9bc8407e4d0a6b",
@@ -1543,11 +1543,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 100000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x36f2cd6f6bf0206f9d4fab964915b4f71f8ff6c3db22f62c8051dfed259f954d",
@@ -1574,7 +1574,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 1000000000000,
@@ -1609,7 +1609,7 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x382a1cf37bcdbccd5698753154335fa56651d64b88b054691648710c8dcf43e0",
@@ -1636,9 +1636,9 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 10000000000000,
     "minNotional": 0
   },
@@ -1698,7 +1698,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000,
     "minQuantityTickSize": 100,
@@ -1822,7 +1822,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000,
     "minQuantityTickSize": 10000,
@@ -1853,11 +1853,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x41730b203a509e9e2c5db41350bc750a3a832e9f7c17801d7f93d1e0f00dfdb6",
@@ -1883,8 +1883,8 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 10000,
@@ -1915,11 +1915,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x46a4a410cd3b4efcad6241f61f181eafb6a0aebf9798c0c2f980c93cfe14e7a8",
@@ -1946,7 +1946,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000,
     "minQuantityTickSize": 1000000,
@@ -2008,7 +2008,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 1000000,
@@ -2070,7 +2070,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 1,
@@ -2100,12 +2100,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.00001,
-    "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 10000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0x4c626cd05a87f5fc8e0d9e188f68e237d7248529ae466ea1c0f1563e1b17d866",
@@ -2132,7 +2132,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 100,
@@ -2167,7 +2167,7 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-16,
     "minQuantityTickSize": 100000000000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x4d77dee5561db21310843f94667b1bc9d3206cdcefd4e9d2e43d09169e8bb56a",
@@ -2194,11 +2194,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 0.001,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x4db3f2aedf548449bf2ed7dbbdbcbf3c03a22975cd55b2a80ab1ab1464f38bbd",
@@ -2225,7 +2225,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
@@ -2287,11 +2287,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.1,
     "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x4f792564883eed075e2077684c31ab7f100d6d037c8b7fbbe2df05584ac56243",
@@ -2318,7 +2318,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 100,
@@ -2349,7 +2349,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
@@ -2535,7 +2535,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 0.1,
@@ -2566,11 +2566,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x568efd4a77c3042faa98fd583b6cac93554dff97c4078775ed1c4bc68908f447",
@@ -2628,7 +2628,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000000,
     "minQuantityTickSize": 0.1,
@@ -2659,7 +2659,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
@@ -2690,11 +2690,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x5995f220c6c9e904bd72baf60adf05c6e2c7efa5c24eb8823aa99e5e37c9129d",
@@ -2752,11 +2752,42 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 1000000000000000000,
     "minNotional": 0
+  },
+  {
+    "marketId": "0x5b6c2fa3af4d1f810184da6f0f9b13f43b3af86996ba7c8d58245aa8cb68dfb5",
+    "marketStatus": "active",
+    "ticker": "NIA/INJ",
+    "baseDenom": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+      "address": "factory/inj1e5s9y04jevntp5xt9chwqdxktgzf7jtlmrkan3/NIA",
+      "symbol": "NIA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-8,
+    "minQuantityTickSize": 1000,
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0x5f56416526f23cf96d7a6daeac3bfa2622f6e9914cb0c53f0cee9d1790fcdb0d",
@@ -2813,12 +2844,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minQuantityTickSize": 100000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0x62b3468090c1b372f790d556cf65703af4c8084878cb00dffaf596d4d084778c",
@@ -2845,7 +2876,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-9,
     "minQuantityTickSize": 1e+21,
@@ -2867,20 +2898,20 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis-3",
+      "name": "Talis",
       "address": "factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis-3",
       "symbol": "TALIS",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/86c90182-8a8e-470b-dedf-db200f0a4600/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 10000000,
-    "minNotional": 0
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0x65aec98d4cfc51c18d84de1c13a80d21b6b40073ef0d99bfdb4ba2fa6cbdcd79",
@@ -2907,7 +2938,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000,
     "minQuantityTickSize": 1000000,
@@ -2938,7 +2969,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000000,
     "minQuantityTickSize": 0.1,
@@ -2991,20 +3022,20 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis-3",
+      "name": "Talis",
       "address": "factory/inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3/Talis-3",
       "symbol": "TALIS",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/86c90182-8a8e-470b-dedf-db200f0a4600/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 10000000,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "marketId": "0x686d143de4268cac00ff6a7e9cb713484dadf40a5c993e166f260ca8081bc942",
@@ -3031,11 +3062,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x687f3b190a4d9c9a025645b7776e9a0f402c640bb28611b2abc920af4b4e8064",
@@ -3062,7 +3093,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 100,
@@ -3093,11 +3124,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x6f25d312f2abb910952f10b87ba59bdba678ba914fa6d22f0200cc8418a69396",
@@ -3124,7 +3155,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000,
     "minQuantityTickSize": 100000000,
@@ -3155,7 +3186,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 10,
@@ -3186,7 +3217,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 1000,
@@ -3208,20 +3239,20 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "Unknown",
+      "name": "Ape Coin",
       "address": "0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-      "symbol": "Unknown",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
-      "decimals": 0,
+      "symbol": "APE",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c6970c7a-3870-480a-0ab7-6bf0d0c25700/public",
+      "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
+    "makerFeeRate": "-0.00005",
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
-    "minQuantityTickSize": 1000000000000000,
-    "minNotional": 10000
+    "minQuantityTickSize": 10000000000000000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0x7d6c4b13bad643defc092bf2579246f409393500ae88b4226455652bb82fca7a",
@@ -3341,7 +3372,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-7,
     "minQuantityTickSize": 100000000000000000000,
@@ -3403,11 +3434,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x849108f82f19d132c4f7639f816bc6fe59511c599cb12993664cce5bcc6d1ed5",
@@ -3465,7 +3496,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 10,
@@ -3498,7 +3529,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -3558,7 +3589,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000,
     "minQuantityTickSize": 1,
@@ -3589,7 +3620,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
@@ -3620,11 +3651,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x8a36130af747b111dc6a5bd5648974d9d973a72d8a17dad9071f80916cb8850d",
@@ -3651,7 +3682,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000,
     "minQuantityTickSize": 1e-7,
@@ -3682,7 +3713,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 1000000,
@@ -3713,7 +3744,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 1000000,
@@ -3744,11 +3775,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x8ec2ffe96ee948eba169f105667af827bbd57583b2f023bb81333e1097dfd523",
@@ -3806,7 +3837,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 100,
@@ -3899,11 +3930,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-10,
     "minQuantityTickSize": 10000000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x961a049fec6b058f1c8d169b94faf98a4c65c1c60777716ba5ece21c6cd598db",
@@ -3963,7 +3994,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -3992,11 +4023,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x9aa3f8a16c16f4c238daef3203fdda03bc817eb5233811ae0fefe7edd4bf27e7",
@@ -4023,7 +4054,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000,
     "minQuantityTickSize": 10000,
@@ -4054,11 +4085,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0x9f284ade13590c1a777869e25830482a8990a35040c424c6b8194e4494e11504",
@@ -4085,7 +4116,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 0.1,
@@ -4116,11 +4147,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xa0bb9a3465919c639bd8c65065c3e23f3557b3753c9d51b51ee239ea6d71a16c",
@@ -4138,7 +4169,7 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "factory/inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj/TRD",
+      "name": "TRD",
       "address": "factory/inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj/TRD",
       "symbol": "TRD",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
@@ -4177,12 +4208,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "marketId": "0xa481736bab7141853c6d824614ec60a6a5608808f562381b4171a6104c504779",
@@ -4209,11 +4240,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xa57975cc41ad8223107316d24ca60ecefb4e7a068f6dad741fd6ab260d5c6955",
@@ -4240,11 +4271,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 0.1,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xa5ec89ad51c68ae13fc52cbf7c15cdd34bce8eae249dc0a5fca33bb3b90219f2",
@@ -4333,11 +4364,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xa97182f11f1aa5339c7f4c3fe3cc1c69b39079f11b864c86d912956c5c2db75c",
@@ -4363,12 +4394,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.00001,
-    "minQuantityTickSize": 100000,
-    "minNotional": 0
+    "minPriceTickSize": 1e-13,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0xab5811fe4fa18b221216f01891775313310cfe85ea749f31bd0d2c58754710f4",
@@ -4408,11 +4439,11 @@
     "baseDenom": "inj",
     "quoteDenom": "peggy0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
     "quoteToken": {
-      "name": "Unknown",
+      "name": "Ape Coin",
       "address": "0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-      "symbol": "Unknown",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
-      "decimals": 0,
+      "symbol": "APE",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c6970c7a-3870-480a-0ab7-6bf0d0c25700/public",
+      "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
@@ -4426,7 +4457,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000000,
@@ -4488,7 +4519,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100,
     "minQuantityTickSize": 100,
@@ -4519,7 +4550,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000000,
     "minQuantityTickSize": 10,
@@ -4550,11 +4581,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xb163bc23d5096c4831c80a9e9ca70b363958758e98190d2b5aa75b3801db2e3d",
@@ -4612,7 +4643,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000,
     "minQuantityTickSize": 1000000,
@@ -4643,7 +4674,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 100,
@@ -4674,7 +4705,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 1000000000000000,
@@ -4738,7 +4769,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -4767,11 +4798,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xb9fcbbc2d98f93e0ad2e2bade9d35e94d6921059420969d3e7748daf4f5bbfff",
@@ -4798,11 +4829,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xba312c7077877e59fd71dfae320ac13cb030684974b6d9f22093ce5c4ee8d196",
@@ -4829,11 +4860,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xba7096c2c49b845e6bfc8317e88831c15786bee3149836dde55481abd5ef040b",
@@ -4860,7 +4891,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
@@ -4891,7 +4922,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 10,
@@ -4922,7 +4953,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000000000,
     "minQuantityTickSize": 100,
@@ -4984,7 +5015,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000,
     "minQuantityTickSize": 1000,
@@ -5015,7 +5046,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000000,
     "minQuantityTickSize": 0.1,
@@ -5045,8 +5076,8 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000000000000000,
@@ -5079,7 +5110,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -5139,7 +5170,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 0.1,
@@ -5170,7 +5201,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
@@ -5232,7 +5263,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000000,
     "minQuantityTickSize": 10000,
@@ -5263,7 +5294,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 1,
@@ -5294,7 +5325,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000000,
     "minQuantityTickSize": 1000000,
@@ -5324,12 +5355,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0xda7cd94ef5ee5439c67f30b4362b4a3aba67b01359efbc1ec5ac563c41fac93b",
@@ -5356,11 +5387,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xdb1ddde3a059286c9f4dcffc536403b532425ed23402ef3c40f3ba0499ddcab1",
@@ -5418,11 +5449,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xdd9f03958c3e4a5498ef04d2d7ae9f83eaef38a29570ddceea5ac0134c5cbf3e",
@@ -5449,11 +5480,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 100,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xde034796c700eee92165181eee25a0cd998117235057049f17e4d82bdf8d6835",
@@ -5513,7 +5544,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -5542,7 +5573,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 1000000000,
@@ -5573,7 +5604,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000000000,
     "minQuantityTickSize": 1000000,
@@ -5635,7 +5666,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 1000000,
@@ -5666,7 +5697,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000,
     "minQuantityTickSize": 100000000,
@@ -5697,7 +5728,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 100,
@@ -5728,11 +5759,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xe65dd2024d6dec0ea6e3d3ac896f447040d13a2678d5f39ceb630f0c1b1dce1b",
@@ -5759,7 +5790,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000,
     "minQuantityTickSize": 100000000,
@@ -5790,7 +5821,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-13,
     "minQuantityTickSize": 1000000000000000,
@@ -5821,7 +5852,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 1000000000,
@@ -5885,7 +5916,7 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-9,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
   },
@@ -5905,20 +5936,20 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "Stride Staked Injective",
+      "name": "Stride Staked INJ",
       "address": "factory/inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z/stinj",
-      "symbol": "STINJ",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/5464313e-4632-4cfa-bfae-6d8beae70b00/public",
+      "symbol": "stINJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/22979060-9e84-4c03-e48b-d03830f2d300/public",
       "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
-    "minQuantityTickSize": 10000000000000,
-    "minNotional": 0
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0xf224fd1348b3634ab7db051231304154fa98dbc4eb155e87a740274c161da579",
@@ -5976,11 +6007,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xf3298cc12f12945c9da877766d320e4056e5dfd7d3c38208a0ef2f525f7ca0a2",
@@ -5998,18 +6029,18 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "Unknown",
+      "name": "Ape Coin",
       "address": "0x44C21afAaF20c270EBbF5914Cfc3b5022173FEB7",
-      "symbol": "Unknown",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
-      "decimals": 0,
+      "symbol": "APE",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c6970c7a-3870-480a-0ab7-6bf0d0c25700/public",
+      "decimals": 18,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 0,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 0
   },
@@ -6037,12 +6068,12 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1,
-    "minQuantityTickSize": 10,
-    "minNotional": 0
+    "minPriceTickSize": 1000000000000,
+    "minQuantityTickSize": 100,
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0xf5c3c2d0f3c03451d6795877d095120f4bdc186d2bdae1d5b6a6d2e95c96eb0e",
@@ -6069,7 +6100,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 100,
@@ -6100,11 +6131,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.000001,
     "minQuantityTickSize": 10000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xf8e73c247f4fa8830963ccbb7d940a96e59c1179a69b510c1cfe223df2e5e1f2",
@@ -6131,7 +6162,7 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000000000000,
     "minQuantityTickSize": 1,
@@ -6162,11 +6193,11 @@
       "tokenType": "unknown"
     },
     "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1,
     "minQuantityTickSize": 1000000,
-    "minNotional": 0
+    "minNotional": 0.000001
   },
   {
     "marketId": "0xf9ee03f1d1c6500670747fac8b11ee34414e377e5fa3500e1079beec0d034199",
@@ -6187,6 +6218,37 @@
       "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/baos",
       "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/baos",
       "symbol": "baos",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0,
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
+  },
+  {
+    "marketId": "0xfac8fbe79777c7c278ec81e65ce9c4b03360b22a2792c5aaae1b1fa8bbdc739d",
+    "marketStatus": "active",
+    "ticker": "PIXEL/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PIXEL",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PIXEL",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/PIXEL",
+      "symbol": "PIXEL",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
       "decimals": 18,
       "coinGeckoId": "",
@@ -6285,11 +6347,11 @@
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
-    "makerFeeRate": "-0.0001",
-    "takerFeeRate": "0.001",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
-    "minQuantityTickSize": 0.001,
-    "minNotional": 0
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
   }
 ]

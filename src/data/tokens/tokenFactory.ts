@@ -86,6 +86,15 @@ export const testnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.NLT2,
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
+  },
+  {
+    ...symbolMeta.TRD,
+    creator: 'inj1pq04wwv22cchwfggwvcj3xq45yse0ln8v3qxtj'
+  },
+  {
+    ...symbolMeta.TALIS,
+    creator: 'inj1maeyvxfamtn8lfyxpjca8kuvauuf2qeu6gtxm3',
+    subdenom: 'Talis-3'
   }
 ]
 
@@ -546,5 +555,13 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.nATOM_NEPT_LP,
     creator: 'inj12yekr4xjww5ugvme3cgneeu5awuljvlh8rh57q'
+  },
+  {
+    ...symbolMeta.OYCI,
+    creator: 'inj1jdt04erw6jdmh6c939u87kldf3mvvmkedsjp3w'
+  },
+  {
+    ...symbolMeta.HPNJ,
+    creator: 'inj1ng84mfnq4z4tuh0cd7a28x0hxw75vxcm70ls9q'
   }
 ]

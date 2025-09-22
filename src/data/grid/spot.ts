@@ -182,6 +182,10 @@ export const mainnetGridMarkets = [
   {
     contractAddress: 'inj1dapczy0ucxrm0h5xtwr8g8yghrq58hwqe5mx25',
     slug: 'arst-usdt'
+  },
+  {
+    contractAddress: 'inj17emc2nvarpqzu5t34fr32jzfceynaxlj93v2va',
+    slug: 'nept-usdt'
   }
 ]
 

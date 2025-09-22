@@ -2344,5 +2344,29 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'lifebusiness-coin.svg',
     symbol: 'LBC',
     coinGeckoId: ''
+  },
+
+  OYCI: {
+    decimals: 6,
+    name: 'Oyster Cage Initiative',
+    logo: 'oyci.webp',
+    symbol: 'OYCI',
+    coinGeckoId: ''
+  },
+
+  TRD: {
+    decimals: 6,
+    name: 'TRD',
+    logo: 'unknown.png',
+    symbol: 'TRD',
+    coinGeckoId: ''
+  },
+
+  HPNJ: {
+    decimals: 8,
+    name: 'Hyper Ninja Token',
+    logo: 'HPNG.webp',
+    symbol: 'HPNJ',
+    coinGeckoId: ''
   }
 }

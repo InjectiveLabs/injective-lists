@@ -600,7 +600,7 @@ export const untaggedSymbolMeta = {
   },
 
   WTIV5: {
-    name: 'WTI 22 September 2025 Expiry',
+    name: 'WTI Crude Oil (22 Sep 25 Expiry)',
     decimals: 6,
     symbol: 'WTIV5',
     logo: 'wti.webp',
@@ -613,5 +613,21 @@ export const untaggedSymbolMeta = {
     symbol: 'WLFI',
     logo: 'wlfi.webp',
     coinGeckoId: 'world-liberty-financial'
+  },
+
+  CANELO: {
+    name: 'Canelo Def Crawford',
+    decimals: 6,
+    symbol: 'CANELO-DEF-CRAWFORD',
+    logo: 'kalshi.webp',
+    coinGeckoId: ''
+  },
+
+  SKY: {
+    name: 'Sky',
+    decimals: 6,
+    symbol: 'SKY',
+    logo: 'sky.webp',
+    coinGeckoId: 'sky'
   }
 }
