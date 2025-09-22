@@ -1,7 +1,7 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
-    '0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20', // wtiv5-usdt-22sep25
     '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
     '0x56cb0ef0b9d59125373112523b0adfc446dff989268547fa1a3379a6f98f5efd', // h100-usdt-perp
     '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp
@@ -29,15 +29,14 @@ export const mainnetCategoryMap = {
   ],
   rwa: [
     // RWA
-    '0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20', // wtiv5-usdt-22sep25
-    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
+    '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f', // gbp-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
   ],
   iAssets: [
     // NYSE
-    '0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20', // wtiv5-usdt-22sep25
+    '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25
     '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp
     '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3', // icrcl-usdt-perp
     '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
@@ -61,7 +60,6 @@ export const mainnetCategoryMap = {
   deprecated: [],
   trending: [
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
-    '0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20', // wtiv5-usdt-22sep25
     '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
     '0x56cb0ef0b9d59125373112523b0adfc446dff989268547fa1a3379a6f98f5efd', // h100-usdt-perp
     '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp

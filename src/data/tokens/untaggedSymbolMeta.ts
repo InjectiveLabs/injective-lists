@@ -629,5 +629,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SKY',
     logo: 'sky.webp',
     coinGeckoId: 'sky'
+  },
+
+  WTIX5: {
+    name: 'WTI Crude Oil (21 Oct 25 Expiry)',
+    decimals: 6,
+    symbol: 'WTIX5',
+    logo: 'wti.webp',
+    coinGeckoId: ''
   }
 }
