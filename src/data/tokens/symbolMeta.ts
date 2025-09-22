@@ -2360,5 +2360,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'unknown.png',
     symbol: 'TRD',
     coinGeckoId: ''
-  }
+  },
+   TWT2: {
+    decimals: 9,
+    symbol: 'TWT2',
+    logo: 'twt2.png',
+    coinGeckoId: '',
+    name: 'TEST RWA TOKEN'
+  },
 }
