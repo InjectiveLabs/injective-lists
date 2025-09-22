@@ -559,5 +559,9 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.OYCI,
     creator: 'inj1jdt04erw6jdmh6c939u87kldf3mvvmkedsjp3w'
+  },
+  {
+    ...symbolMeta.HPNJ,
+    creator: 'inj1ng84mfnq4z4tuh0cd7a28x0hxw75vxcm70ls9q'
   }
 ]

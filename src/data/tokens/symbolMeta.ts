@@ -2360,5 +2360,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'unknown.png',
     symbol: 'TRD',
     coinGeckoId: ''
+  },
+
+  HPNJ: {
+    decimals: 8,
+    name: 'Hyper Ninja Token',
+    logo: 'HPNG.webp',
+    symbol: 'HPNJ',
+    coinGeckoId: ''
   }
 }
