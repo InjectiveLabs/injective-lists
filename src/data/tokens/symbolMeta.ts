@@ -2365,7 +2365,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   HPNJ: {
     decimals: 8,
     name: 'Hyper Ninja Token',
-    logo: 'HPNG.webp',
+    logo: 'HPNJ.webp',
     symbol: 'HPNJ',
     coinGeckoId: ''
   }
