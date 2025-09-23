@@ -645,5 +645,13 @@ export const untaggedSymbolMeta = {
     symbol: 'ASTER',
     logo: 'aster.webp',
     coinGeckoId: 'aster-2'
+  },
+
+  XPL: {
+    name: 'Plasma',
+    decimals: 6,
+    symbol: 'XPL',
+    logo: 'xpl.webp',
+    coinGeckoId: 'plasma'
   }
 }
