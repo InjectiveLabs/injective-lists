@@ -2568,6 +2568,34 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "0xa903b5a82cb572397e3d47595d2889cf80513f5b4cf7a36b513ae10cc8b1e338",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18",
+    "marketStatus": "active",
+    "ticker": "ASTER/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "0x78a3e3b8e676a8f73c439f5d749737034b139bbbe899ba5775216fba596607fe",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
