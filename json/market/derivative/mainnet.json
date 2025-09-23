@@ -652,7 +652,7 @@
     "maintenanceMarginRatio": "0.02",
     "isPerpetual": false,
     "marketId": "0x2dd456da1f935f0e6ff645842f1488a739b0fb3a350f7cad623f44dcbb937f20",
-    "marketStatus": "active",
+    "marketStatus": "paused",
     "ticker": "WTIV5/USDT-22SEP25",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
@@ -672,7 +672,7 @@
     "minNotional": 0,
     "expiryFuturesMarketInfo": {
       "expirationTimestamp": 1758565800,
-      "settlementPrice": "0"
+      "settlementPrice": "0.815843563214"
     }
   },
   {
@@ -2338,6 +2338,38 @@
     "minPriceTickSize": 10000,
     "minQuantityTickSize": 0.01,
     "minNotional": 1000000
+  },
+  {
+    "oracleBase": "0x2e8c6b85cf4a79b6d8bce10be470eefb369810b642782cb6aa150f82362e65d1",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": false,
+    "marketId": "0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d",
+    "marketStatus": "active",
+    "ticker": "WTIX5/USDT-21OCT25",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 0,
+    "expiryFuturesMarketInfo": {
+      "expirationTimestamp": 1761071400,
+      "settlementPrice": "0"
+    }
   },
   {
     "oracleBase": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",

@@ -16,7 +16,7 @@ const validatorImagePathsMap = Object.entries(
   return { ...acc, [formattedOperatorAddress]: imageUrl as string }
 }, {} as Record<string, string>)
 
-export const fetchValidatorImageFromImagePaths = (operatorAddress: string) => {
+export const fetchHardcodedValidatorImages = (operatorAddress: string) => {
   return validatorImagePathsMap[operatorAddress.toLowerCase()]
 }
 
@@ -66,17 +66,10 @@ export const fetchValidatorImage = async ({
     })
   }
 
-  const cloudFlareImageUrl = fetchValidatorImageFromImagePaths(operatorAddress)
+  const cloudFlareImageUrl = fetchHardcodedValidatorImages(operatorAddress)
 
   if (cloudFlareImageUrl) {
     return cloudFlareImageUrl
-  }
-
-  const existingValidatorImage =
-    existingValidatorsImageMap[operatorAddress.toLowerCase()]
-
-  if (existingValidatorImage) {
-    return existingValidatorImage
   }
 
   const validatorMetadata =

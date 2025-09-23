@@ -2368,4 +2368,11 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     coinGeckoId: '',
     name: 'TEST RWA TOKEN'
   },
+  HPNJ: {
+    decimals: 8,
+    name: 'Hyper Ninja Token',
+    logo: 'HPNG.webp',
+    symbol: 'HPNJ',
+    coinGeckoId: ''
+  }
 }
