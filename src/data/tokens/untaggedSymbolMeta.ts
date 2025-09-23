@@ -637,5 +637,13 @@ export const untaggedSymbolMeta = {
     symbol: 'WTIX5',
     logo: 'wti.webp',
     coinGeckoId: ''
+  },
+
+  ASTER: {
+    name: 'Aster',
+    decimals: 6,
+    symbol: 'ASTER',
+    logo: 'aster.webp',
+    coinGeckoId: 'aster-2'
   }
 }
