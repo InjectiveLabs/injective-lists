@@ -956,6 +956,34 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "XPLUSDMARK",
+    "oracleQuote": "USDTUSD",
+    "oracleType": "stork",
+    "oracleScaleFactor": 6,
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46",
+    "marketStatus": "active",
+    "ticker": "XPL/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "0x385f64d993f7b77d8182ed5003d97c60aa3361f3cecfe711544d2d59165e9bdf",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
