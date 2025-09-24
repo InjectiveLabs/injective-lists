@@ -1,5 +1,7 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
+    '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
     '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
     '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
@@ -59,6 +61,8 @@ export const mainnetCategoryMap = {
   ],
   deprecated: [],
   trending: [
+    '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
+    '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
     '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
     '0x56cb0ef0b9d59125373112523b0adfc446dff989268547fa1a3379a6f98f5efd', // h100-usdt-perp
@@ -110,6 +114,7 @@ export const mainnetCategoryMap = {
     '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e' // inj-ausd
   ],
   layer1: [
+    '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
     '0xdcfdb105edb27c8be6cdbf25906f424d31b9db3d69876cdd9bcfc475660f1006', // om-usdt-perp
     '0xf12a831d2901a1c1130fb81c88c3b443c62be3cd14547625f2db8a5f2b187d2c', // l1x-usdt-perp
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
@@ -133,6 +138,8 @@ export const mainnetCategoryMap = {
     '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced' // bnb-usdt-perp
   ],
   defi: [
+    '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
+    '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
     '0x25f4199b79a3db374b93a695e48cdc0c48c7aac844fc7ed04a0166e21ac7a072', // wlfi-usdt-perp
     '0xe5bfc48fc29146d756c9dac69f096d56cc4fc5ae75c98c1ad045c3356d14eb82', // aix-usdt-perp
