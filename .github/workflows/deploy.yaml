@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    # if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.commits[0].message, 'generate json files') && !contains(github.event.commits[0].message, 'skip deploy') }}
+    # if: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, 'generate json files') && !contains(github.event.head_commit.message, 'skip deploy') }}
     name: "Trigger deployments"
     runs-on: blacksmith-8vcpu-ubuntu-2204
     permissions: write-all
