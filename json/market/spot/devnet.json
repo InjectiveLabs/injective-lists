@@ -28,7 +28,7 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-15,
     "minQuantityTickSize": 1000000000000000,
-    "minNotional": 0
+    "minNotional": 1000000
   },
   {
     "marketId": "0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa",
@@ -181,9 +181,9 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-15,
-    "minQuantityTickSize": 1000000000000000,
-    "minNotional": 1000000
+    "minPriceTickSize": 0.00001,
+    "minQuantityTickSize": 100000,
+    "minNotional": 1000000000000
   },
   {
     "marketId": "0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57",
@@ -244,8 +244,8 @@
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10000,
-    "minQuantityTickSize": 1000000000,
-    "minNotional": 0
+    "minQuantityTickSize": 1000000000000000,
+    "minNotional": 10000000000000000
   },
   {
     "marketId": "0x4fa0bd2c2adbfe077f58395c18a72f5cbf89532743e3bddf43bc7aba706b0b74",
@@ -336,8 +336,8 @@
     "makerFeeRate": "-0.0002",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
-    "minQuantityTickSize": 1000,
+    "minPriceTickSize": 1e-15,
+    "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
   },
   {
