@@ -14,6 +14,7 @@ export const verifiedTokenFactoryDenoms = [
   'factory/inj10aa0h5s0xwzv95a8pjhwluxcm5feeqygdk3lkm/SAI',
   'factory/inj1dxp690rd86xltejgfq2fa7f2nxtgmm5cer3hvu/bINJ',
   'factory/inj1a6xdezq7a94qwamec6n6cnup02nvewvjtz6h6e/SYN',
+  'factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS',
   'factory/inj127l5a2wmkyvucxdlupqyac3y0v6wqfhq03ka64/qunt',
   'factory/inj14lf8xm6fcvlggpa7guxzjqwjmtr24gnvf56hvz/autism',
   'factory/inj16dd5xzszud3u5wqphr3tq8eaz00gjdn3d4mvj8/agent',
