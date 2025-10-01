@@ -653,5 +653,13 @@ export const untaggedSymbolMeta = {
     symbol: 'XPL',
     logo: 'xpl.webp',
     coinGeckoId: 'plasma'
+  },
+
+  OPENAI: {
+    name: 'OpenAI',
+    decimals: 6,
+    symbol: 'OPENAI',
+    logo: 'openai.webp',
+    coinGeckoId: ''
   }
 }

@@ -1,5 +1,6 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0xae66b6a937feee33e4541853e1410658ca274bc9ef0995c2b597789eb486db29', // openai-usdt-perp
     '0x04661a095e27744f9f34b7dc950e49745e066a04bbc0bdf4689121172ab46019', // hpnj-inj
     '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
     '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
@@ -32,7 +33,8 @@ export const mainnetCategoryMap = {
   ],
   rwa: [
     // RWA
-    '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
+    '0xc8ef9da83754c8985ed7cff65aa9d4da9882f301347d0af5b40efbd95db6517d', // wtix5-usdt-21oct25
+    '0x3c5bba656074e6e84965dc7d99a218f6f514066e6ddc5046acaff59105bb6bf5', // eur-usdt-perp
     '0x5c0de20c02afe5dcc1c3c841e33bfbaa1144d8900611066141ad584eeaefbd2f', // gbp-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
@@ -62,6 +64,7 @@ export const mainnetCategoryMap = {
   ],
   deprecated: [],
   trending: [
+    '0xae66b6a937feee33e4541853e1410658ca274bc9ef0995c2b597789eb486db29', // openai-usdt-perp
     '0x04661a095e27744f9f34b7dc950e49745e066a04bbc0bdf4689121172ab46019', // hpnj-inj
     '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
     '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
@@ -161,6 +164,7 @@ export const mainnetCategoryMap = {
     '0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d' // pyth-usdt-perp
   ],
   ai: [
+    '0xae66b6a937feee33e4541853e1410658ca274bc9ef0995c2b597789eb486db29', // openai-usdt-perp
     '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
     '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // itsla-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
