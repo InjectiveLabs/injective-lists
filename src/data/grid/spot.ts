@@ -186,7 +186,11 @@ export const mainnetGridMarkets = [
   {
     contractAddress: 'inj17emc2nvarpqzu5t34fr32jzfceynaxlj93v2va',
     slug: 'nept-usdt'
-  }
+  },
+  {
+    contractAddress: 'inj1k0tdjpfthwz7t6zlghrt27lwr5zpgqvrwn6khu',
+    slug: 'hpnj-inj'
+  },
 ]
 
 export const stagingGridMarkets = [
