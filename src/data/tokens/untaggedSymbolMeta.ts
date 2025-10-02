@@ -661,5 +661,13 @@ export const untaggedSymbolMeta = {
     symbol: 'OPENAI',
     logo: 'openai.webp',
     coinGeckoId: ''
+  },
+
+  '2Z': {
+    name: 'DoubleZero',
+    decimals: 6,
+    symbol: '2Z',
+    logo: '2z.webp',
+    coinGeckoId: 'doublezero'
   }
 }
