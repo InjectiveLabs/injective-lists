@@ -6,13 +6,13 @@ import {
   getNetworkEndpoints
 } from '@injectivelabs/networks'
 import { ChainGrpcErc20Api } from '@injectivelabs/sdk-ts'
-import { readJSONFile, tokensToDenomMap } from '../helper/utils'
-import type { TokenStatic } from '@injectivelabs/sdk-ts'
-import type { Token } from '../../types'
-
-// module '/Users/leeruianthomas/Public/injective/injective-lists/src/ts-scripts/node_modules/@injectivelabs/sdk-ts/dist/cjs/index'
-
-// module '/Users/leeruianthomas/Public/injective/injective-lists/src/node_modules/.pnpm/@injectivelabs+sdk-ts@1.16.17_bufferutil@4.0.9_typescript@5.9.3_utf-8-validate@5.0.10/node_modules/@injectivelabs/sdk-ts/dist/cjs/index'
+import {
+  readJSONFile,
+  updateJSONFile,
+  tokensToDenomMap,
+  getNetworkFileName
+} from '../helper/utils'
+import type { Token, EvmToken } from '../../types'
 
 const devnetTokensMap = tokensToDenomMap(
   readJSONFile({
@@ -31,7 +31,7 @@ const mainnetTokensMap = tokensToDenomMap(
 )
 
 function getEvmChainId(network: Network) {
-  if (isMainnet(Network.MainnetSentry)) {
+  if (isMainnet(network)) {
     return EvmChainId.MainnetEvm
   }
 
@@ -50,7 +50,7 @@ function formatToEvmToken({
   token: Token
   network: Network
   evmAddress: string
-}) {
+}): EvmToken {
   return {
     name: token.name,
     address: evmAddress,
@@ -61,7 +61,7 @@ function formatToEvmToken({
   }
 }
 
-async function fetchAllMTSPairs(network: Network) {
+async function generateEvmTokensFromMTSPairs(network: Network) {
   const endpoints = getNetworkEndpoints(network)
   const erc20Api = new ChainGrpcErc20Api(endpoints.grpc)
 
@@ -78,34 +78,46 @@ async function fetchAllMTSPairs(network: Network) {
   try {
     const response = await erc20Api.fetchAllTokenPairsWithPagination()
 
-    // console.log(testnetTokensMap)
+    const evmTokenList: EvmToken[] = [
+      {
+        address: 'inj',
+        decimals: 18,
+        symbol: 'INJ',
+        name: 'Injective',
+        chainId: getEvmChainId(network),
+        logoUri:
+          'https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public'
+      }
+    ]
 
-    response.tokenPairs.forEach((tokenPair) => {
+    for (const tokenPair of response.tokenPairs) {
       const tokenMetadata = tokenMap[tokenPair.bankDenom.toLowerCase()]
+
+      if (!tokenMetadata) {
+        console.log(`Token ${tokenPair.bankDenom} not found`)
+
+        continue
+      }
+
       const evmTokenMetadata = formatToEvmToken({
         network,
         token: tokenMetadata,
         evmAddress: tokenPair.erc20Address
       })
 
-      console.log(evmTokenMetadata)
-    })
+      evmTokenList.push(evmTokenMetadata)
+    }
 
-    // const combinedMetadatas = [...allMetadatas, ...response.metadatas]
-
-    // if (response.metadatas.length === LIMIT) {
-    //   return fetchAllDenomsMetadata({
-    //     network,
-    //     offset: offset + LIMIT,
-    //     allMetadatas: combinedMetadatas
-    //   })
-    // }
-
-    // return combinedMetadatas
+    await updateJSONFile(
+      `src/generated/tokens/evm/${getNetworkFileName(network)}.json`,
+      evmTokenList.sort((a, b) => a.address.localeCompare(b.address))
+    )
   } catch (error) {
     console.error('Error fetching MTS pairs:', error)
     throw error // Or handle the error as appropriate for your use case
   }
 }
 
-fetchAllMTSPairs(Network.TestnetSentry)
+generateEvmTokensFromMTSPairs(Network.Devnet)
+generateEvmTokensFromMTSPairs(Network.TestnetSentry)
+generateEvmTokensFromMTSPairs(Network.MainnetSentry)
