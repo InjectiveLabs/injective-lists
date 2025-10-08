@@ -16,7 +16,7 @@ import {
 import {
   Network,
   getNetworkEndpoints,
-  getCw20SwapContractForNetwork
+  getCw20AdapterContractForNetwork
 } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -197,7 +197,7 @@ export const fetchValidators = async (network: Network) => {
 }
 
 export const fetchTokenCw20Denoms = async (network: Network) => {
-  const contractAddress = getCw20SwapContractForNetwork(network)
+  const contractAddress = getCw20AdapterContractForNetwork(network)
 
   const endpoints = getNetworkEndpoints(network)
   const tokenFactoryApi = new ChainGrpcTokenFactoryApi(endpoints.grpc)
