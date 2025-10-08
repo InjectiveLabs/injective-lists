@@ -30,12 +30,12 @@ importers:
       '@injectivelabs/networks':
         specifier: 1.16.16
         version: 1.16.16
-      '@injectivelabs/prettier-config':
-        specifier: 1.0.3
-        version: 1.0.3
       '@injectivelabs/sdk-ts':
         specifier: 1.16.16
         version: 1.16.16(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+      '@injectivelabs/ts-types':
+        specifier: 1.16.16
+        version: 1.16.16
       '@injectivelabs/utils':
         specifier: 1.16.16
         version: 1.16.16
@@ -234,9 +234,6 @@ packages:
 
   '@injectivelabs/olp-proto-ts@1.13.4':
     resolution: {integrity: sha512-MTltuDrPJ+mu8IonkfwBp11ZJzTw2x+nA3wzrK+T4ZzEs+fBW8SgaCoXKc5COU7IBzg3wB316QwaR1l6MrffXg==}
-
-  '@injectivelabs/prettier-config@1.0.3':
-    resolution: {integrity: sha512-WvzCXTJZp2h0K21Q94W5SkjZJVE5hFJsXe6IHXXipuOPBouaO5PMYReUzp2nKe+Xuw2clbh3F+c1n2x7aes5Bg==}
 
   '@injectivelabs/sdk-ts@1.16.16':
     resolution: {integrity: sha512-zhWPYryeh8HDGNb3mZuFHRf2B9ZF5hl4l9pMOTu8Xh5u3YscCe5qu/v+RCWbhy6LCz+J3F6Ppo4PhDJH+7CDCw==}
@@ -1375,8 +1372,6 @@ snapshots:
       google-protobuf: 3.21.4
       protobufjs: 7.5.4
       rxjs: 7.8.2
-
-  '@injectivelabs/prettier-config@1.0.3': {}
 
   '@injectivelabs/sdk-ts@1.16.16(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
     dependencies:
