@@ -35,63 +35,44 @@ jobs:
       - run: |
           git reset --hard origin/master
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: v24.4.0
+
       - name: Install dependencies
-        run: cd src && yarn
+        run: cd src && pnpm i
 
       - name: Generate tokens
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:tokens
-          dir: "src"
+        run: cd src && pnpm run generate:tokens
 
       - name: Generate validators
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:validators
-          dir: "src"
+        run: cd src && pnpm run generate:validators
 
       - name: Generate market slugs
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:slugs
-          dir: "src"
+        run: cd src && pnpm run generate:slugs
 
       - name: Generate wasm messages
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:wasm
-          dir: "src"
+        run: cd src && pnpm run generate:wasm
 
       - name: Generate verified denoms
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:verifiedDenoms
-          dir: "src"
+        run: cd src && pnpm run generate:verifiedDenoms
 
       - name: Generate restriction list
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:restriction
-          dir: "src"
+        run: cd src && pnpm run generate:restriction
 
       - name: Generate swap routes
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:swap:routes
-          dir: "src"
+        run: cd src && pnpm run generate:swap:routes
 
       - name: Generate configs
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: generate:configs
-          dir: "src"
+        run: cd src && pnpm run generate:configs
 
       - name: Commit generated files
         run: |

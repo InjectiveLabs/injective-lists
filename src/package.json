@@ -32,12 +32,12 @@
     "//validation": "========== validation scripts ==========",
     "check:duplicates": "ts-node ./duplicateCheck",
     "//combined": "========== combined scripts ==========",
-    "generate:validators": "yarn upload:validators:images && ts-node ./ts-scripts/generate/validators",
-    "generate:wasm": "yarn fetch:wasm:codeIds && yarn generate:wasm:query && yarn generate:wasm:execute",
-    "generate:tokens": "yarn fetch:cache:data && yarn generate:marketMap && yarn fetch:mito:vaults && yarn generate:tokens:static && yarn generate:tokens:factory && yarn generate:tokens:external && yarn generate:tokens:mito && yarn generate:tokens:supply && yarn upload:tokens:images && ts-node ./ts-scripts/generate/tokens && yarn generate:tokens:verified",
+    "generate:validators": "pnpm upload:validators:images && ts-node ./ts-scripts/generate/validators",
+    "generate:wasm": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query && pnpm generate:wasm:execute",
+    "generate:tokens": "pnpm fetch:cache:data && pnpm generate:marketMap && pnpm fetch:mito:vaults && pnpm generate:tokens:static && pnpm generate:tokens:factory && pnpm generate:tokens:external && pnpm generate:tokens:mito && pnpm generate:tokens:supply && pnpm upload:tokens:images && ts-node ./ts-scripts/generate/tokens && pnpm generate:tokens:verified",
     "//combinedClean": "========== combined scripts + cache cleaning ==========",
-    "generate:tokens:flush": "ts-node ./flushCw20Cache && yarn tokens:generate",
-    "generate:wasm:flush": "yarn fetch:wasm:codeIds && yarn generate:wasm:query -f && yarn generate:wasm:execute -f"
+    "generate:tokens:flush": "ts-node ./flushCw20Cache && pnpm tokens:generate",
+    "generate:wasm:flush": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query -f && pnpm generate:wasm:execute -f"
   },
   "keywords": [],
   "author": "",
@@ -51,9 +51,9 @@
     "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "@injectivelabs/utils": "1.14.43-beta.4",
-    "@injectivelabs/networks": "1.14.43-beta.2",
-    "@injectivelabs/sdk-ts": " 1.14.44-beta.6",
+    "@injectivelabs/utils": "1.16.16",
+    "@injectivelabs/networks": "1.16.16",
+    "@injectivelabs/sdk-ts": "1.16.16",
     "@injectivelabs/prettier-config": "1.0.3"
   }
 }
