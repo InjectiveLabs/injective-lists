@@ -109,7 +109,7 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
     }
 
     await updateJSONFile(
-      `src/generated/tokens/evm/${getNetworkFileName(network)}.json`,
+      `json/tokens/evm/${getNetworkFileName(network)}.json`,
       evmTokenList.sort((a, b) => a.address.localeCompare(b.address))
     )
   } catch (error) {
