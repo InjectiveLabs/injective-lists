@@ -1,6 +1,7 @@
 import {
   TokenType,
   TokenStatic,
+  TokenSource,
   TokenVerification
 } from '@injectivelabs/sdk-ts'
 import { Network } from '@injectivelabs/networks'
@@ -44,6 +45,15 @@ import {
   PeggyTokenSource,
   TokenFactorySource
 } from '../../../types'
+
+// Type assertion helper to convert between TokenSource types
+const convertTokenSource = (source: any): TokenSource | undefined => {
+  if (!source) {
+    return undefined
+  }
+
+  return source as TokenSource
+}
 
 const INJ_TOKEN = {
   isNative: true,
@@ -126,7 +136,8 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       address: token.address,
       tokenType: TokenType.Cw20,
       tokenVerification: TokenVerification.Verified,
-      decimals: token.decimals
+      decimals: token.decimals,
+      source: convertTokenSource(token.source)
     })
 
     const existingFactoryToken = getBankTokenFactoryMetadataByAddress(
@@ -144,7 +155,8 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       address: existingFactoryToken.address,
       tokenType: TokenType.TokenFactory,
       tokenVerification: TokenVerification.Verified,
-      decimals: existingFactoryToken?.decimals || token.decimals
+      decimals: existingFactoryToken?.decimals || token.decimals,
+      source: convertTokenSource(token.source)
     })
 
     return list
