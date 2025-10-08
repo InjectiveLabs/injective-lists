@@ -37,23 +37,24 @@
     "generate:tokens": "pnpm fetch:cache:data && pnpm generate:marketMap && pnpm fetch:mito:vaults && pnpm generate:tokens:static && pnpm generate:tokens:factory && pnpm generate:tokens:external && pnpm generate:tokens:mito && pnpm generate:tokens:supply && pnpm upload:tokens:images && ts-node ./ts-scripts/generate/tokens && pnpm generate:tokens:verified",
     "//combinedClean": "========== combined scripts + cache cleaning ==========",
     "generate:tokens:flush": "ts-node ./flushCw20Cache && pnpm tokens:generate",
-    "generate:wasm:flush": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query -f && pnpm generate:wasm:execute -f"
+    "generate:wasm:flush": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query -f && pnpm generate:wasm:execute -f",
+    "generate:tokens:evm": "ts-node ./ts-scripts/generate/evm",
+    "postinstall": "pnpm upgrade '@injectivelabs/*' --latest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@injectivelabs/networks": "1.16.17",
+    "@injectivelabs/sdk-ts": "1.16.17",
+    "@injectivelabs/ts-types": "1.16.17",
+    "@injectivelabs/utils": "1.16.17",
     "@types/node": "^20.11.30",
     "alchemy-sdk": "^2.6.3",
     "axios": "^1.12.2",
     "dotenv": "^16.4.5",
     "form-data": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.3",
-    "@injectivelabs/networks": "1.16.16",
-    "@injectivelabs/sdk-ts": "1.16.16",
-    "@injectivelabs/utils": "1.16.16",
-    "@injectivelabs/ts-types": "1.16.16"
-  },
-  "devDependencies": {}
+    "typescript": "^5.4.3"
+  }
 }

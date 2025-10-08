@@ -95,3 +95,12 @@ export type ChainConfig = {
   proposalMsg: string
   disableMaintenance: boolean
 }
+
+export type EvmToken = {
+  name: string
+  address: string
+  symbol: string
+  decimals: number
+  chainId: number
+  logoUri?: string
+}

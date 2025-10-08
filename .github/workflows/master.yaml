@@ -71,6 +71,10 @@ jobs:
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
         run: cd src && pnpm run generate:swap:routes
 
+      - name: Generate Evm tokens
+        if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
+        run: cd src && pnpm run generate:tokens:evm
+
       - name: Generate configs
         run: cd src && pnpm run generate:configs
 
