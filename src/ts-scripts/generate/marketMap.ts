@@ -1,4 +1,3 @@
-import { SpotMarket } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet } from '@injectivelabs/networks'
 import {
   getSpotMarketsByNetwork,
