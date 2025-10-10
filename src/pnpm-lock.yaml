@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@injectivelabs/networks':
-        specifier: 1.16.17
-        version: 1.16.17
+        specifier: 1.16.18
+        version: 1.16.18
       '@injectivelabs/sdk-ts':
-        specifier: 1.16.17
-        version: 1.16.17(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+        specifier: 1.16.18
+        version: 1.16.18(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
       '@injectivelabs/ts-types':
-        specifier: 1.16.17
-        version: 1.16.17
+        specifier: 1.16.18
+        version: 1.16.18
       '@injectivelabs/utils':
-        specifier: 1.16.17
-        version: 1.16.17
+        specifier: 1.16.18
+        version: 1.16.18
       '@types/node':
         specifier: ^20.11.30
         version: 20.19.19
@@ -207,8 +207,8 @@ packages:
   '@injectivelabs/core-proto-ts@1.16.6':
     resolution: {integrity: sha512-5BNCW3VrcFGBfQHtoMvVBAZ2KN1pFQHpFt05OXCCiBR7rW54V1gsPfV5WqnmyHwfNCk0tr3ji6Bw1DRflwItsg==}
 
-  '@injectivelabs/exceptions@1.16.17':
-    resolution: {integrity: sha512-JnLhD84SFjn9PiTaF4i/hnwvf2bi3Mj3kxmJ5U4lGoHTgVM9VVeY7lBssROBlIB0++7Shu/XojYBXtNEI7zk1Q==}
+  '@injectivelabs/exceptions@1.16.18':
+    resolution: {integrity: sha512-5iu7gse2AymJJZqDd/nBvssV3CjO5UIyBHdiFv5YBMw2U3lqbZa1ZJozP7T8qRN3Y2B7TrZ3GVhKuk6DnJ6RzA==}
 
   '@injectivelabs/grpc-web-node-http-transport@0.0.2':
     resolution: {integrity: sha512-rpyhXLiGY/UMs6v6YmgWHJHiO9l0AgDyVNv+jcutNVt4tQrmNvnpvz2wCAGOFtq5LuX/E9ChtTVpk3gWGqXcGA==}
@@ -231,20 +231,20 @@ packages:
   '@injectivelabs/mito-proto-ts@1.13.2':
     resolution: {integrity: sha512-D4qEDB4OgaV1LoYNg6FB+weVcLMu5ea0x/W/p+euIVly3qia44GmAicIbQhrkqTs2o2c+1mbK1c4eOzFxQcwhg==}
 
-  '@injectivelabs/networks@1.16.17':
-    resolution: {integrity: sha512-XaSychQdX7rvyweb8xk9NK+GVarZR2jBDE0oJU/0sq8SFDy0JibHtzxRmHS0hlUWAq43uJhMKxsc8wgT11+UxQ==}
+  '@injectivelabs/networks@1.16.18':
+    resolution: {integrity: sha512-rCw7NU1an6kfxIP+VoeoYpnIX4Em606uKKdUmD4wqQhcLa3bUzZsxyEC4tcs/p37KN5rP5IvFVYo9tlDMKGJoA==}
 
   '@injectivelabs/olp-proto-ts@1.13.4':
     resolution: {integrity: sha512-MTltuDrPJ+mu8IonkfwBp11ZJzTw2x+nA3wzrK+T4ZzEs+fBW8SgaCoXKc5COU7IBzg3wB316QwaR1l6MrffXg==}
 
-  '@injectivelabs/sdk-ts@1.16.17':
-    resolution: {integrity: sha512-rQcbEip0TADA6bxEFZ29Op0vUModIu6DQUvjL0Da5Va1V3ig7EChyGAMJq2/9VBC0sRLN0HmoZge/N1v/Q9URw==}
+  '@injectivelabs/sdk-ts@1.16.18':
+    resolution: {integrity: sha512-Hj9GLJaQXmTjctK94RNlFJMfV3B6/PYJoH/lYCIwWpRiGLkV1uguqs0SARCVeMkTkOdW2ZY1oipLrYKqCSoieA==}
 
-  '@injectivelabs/ts-types@1.16.17':
-    resolution: {integrity: sha512-roJHYjEfQp2y/Jo6GPfTLVLRi9SCVEURb/5++h+ofT5kD8utTM8Psliuh1aOILyjrsZG1aLoq7n22JQ8NzxKPQ==}
+  '@injectivelabs/ts-types@1.16.18':
+    resolution: {integrity: sha512-/u4vVCyDU1Z74lwTQuRO1d45OhDzafSrbl0I9EUeOb7pT6iZPK64kiO19rP50rWtn4pZsc74URvFfVZEldZ0HQ==}
 
-  '@injectivelabs/utils@1.16.17':
-    resolution: {integrity: sha512-4EgJBTX8NhUC74YqfirH+IqaoB2/SUu9CDLpwjdzpkFRJp3qyiWU76TOM55nKqK2wG/6mvksO2iWzvHh2TraEg==}
+  '@injectivelabs/utils@1.16.18':
+    resolution: {integrity: sha512-O6Xh4z8pcMpYhgJJJiLZcFGvgUNVZEPgkNqWnlW/Tdg4gj2WUwB8F1f7MMwKOX6ElkOj2xYhCBO8mOXt4LXQ5g==}
 
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
@@ -1333,7 +1333,7 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/exceptions@1.16.17':
+  '@injectivelabs/exceptions@1.16.18':
     dependencies:
       http-status-codes: 2.3.0
 
@@ -1364,9 +1364,9 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/networks@1.16.17':
+  '@injectivelabs/networks@1.16.18':
     dependencies:
-      '@injectivelabs/ts-types': 1.16.17
+      '@injectivelabs/ts-types': 1.16.18
 
   '@injectivelabs/olp-proto-ts@1.13.4':
     dependencies:
@@ -1375,7 +1375,7 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/sdk-ts@1.16.17(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
+  '@injectivelabs/sdk-ts@1.16.18(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@apollo/client': 3.13.9(graphql@16.11.0)
       '@cosmjs/amino': 0.33.1
@@ -1383,16 +1383,16 @@ snapshots:
       '@cosmjs/stargate': 0.33.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@injectivelabs/abacus-proto-ts': 1.14.0
       '@injectivelabs/core-proto-ts': 1.16.6
-      '@injectivelabs/exceptions': 1.16.17
+      '@injectivelabs/exceptions': 1.16.18
       '@injectivelabs/grpc-web': 0.0.1(google-protobuf@3.21.4)
       '@injectivelabs/grpc-web-node-http-transport': 0.0.2(@injectivelabs/grpc-web@0.0.1(google-protobuf@3.21.4))
       '@injectivelabs/grpc-web-react-native-transport': 0.0.2(@injectivelabs/grpc-web@0.0.1(google-protobuf@3.21.4))
       '@injectivelabs/indexer-proto-ts': 1.13.19
       '@injectivelabs/mito-proto-ts': 1.13.2
-      '@injectivelabs/networks': 1.16.17
+      '@injectivelabs/networks': 1.16.18
       '@injectivelabs/olp-proto-ts': 1.13.4
-      '@injectivelabs/ts-types': 1.16.17
-      '@injectivelabs/utils': 1.16.17
+      '@injectivelabs/ts-types': 1.16.18
+      '@injectivelabs/utils': 1.16.18
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
@@ -1421,14 +1421,14 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@injectivelabs/ts-types@1.16.17': {}
+  '@injectivelabs/ts-types@1.16.18': {}
 
-  '@injectivelabs/utils@1.16.17':
+  '@injectivelabs/utils@1.16.18':
     dependencies:
       '@bangjelkoski/store2': 2.14.3
-      '@injectivelabs/exceptions': 1.16.17
-      '@injectivelabs/networks': 1.16.17
-      '@injectivelabs/ts-types': 1.16.17
+      '@injectivelabs/exceptions': 1.16.18
+      '@injectivelabs/networks': 1.16.18
+      '@injectivelabs/ts-types': 1.16.18
       axios: 1.12.2
       bignumber.js: 9.3.1
       http-status-codes: 2.3.0
