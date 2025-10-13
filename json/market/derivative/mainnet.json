@@ -3094,6 +3094,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "MONUSDMARK",
+    "oracleQuote": "USDTUSD",
+    "oracleType": "stork",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0xf90a62bb82fdce5ae1a1388227999a78d24546541fd7c586e1e0d3f150eaf385",
+    "marketStatus": "active",
+    "ticker": "MON/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 10,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "MELANIA/USDT",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
