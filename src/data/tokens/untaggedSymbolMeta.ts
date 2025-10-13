@@ -669,5 +669,13 @@ export const untaggedSymbolMeta = {
     symbol: '2Z',
     logo: '2z.webp',
     coinGeckoId: 'doublezero'
+  },
+
+  MON: {
+    name: 'Monad',
+    decimals: 6,
+    symbol: 'MON',
+    logo: 'mon.webp',
+    coinGeckoId: 'monad'
   }
 }
