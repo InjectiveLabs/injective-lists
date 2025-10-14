@@ -677,5 +677,13 @@ export const untaggedSymbolMeta = {
     symbol: 'MON',
     logo: 'mon.webp',
     coinGeckoId: 'monad'
+  },
+
+  APR: {
+    name: 'aPriori',
+    decimals: 6,
+    symbol: 'APR',
+    logo: 'apr.webp',
+    coinGeckoId: ''
   }
 }
