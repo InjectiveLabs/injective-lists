@@ -203,6 +203,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "AAVE",
+    "oracleQuote": "USDT",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.099999",
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0x8aa7175a38e411988a7ea62dbe6eb112b16d8bc6c0fa3996e0487fc95def6fb3",
+    "marketStatus": "active",
+    "ticker": "AAVE/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "ETH",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
