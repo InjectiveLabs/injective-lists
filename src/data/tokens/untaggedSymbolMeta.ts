@@ -685,5 +685,13 @@ export const untaggedSymbolMeta = {
     symbol: 'APR',
     logo: 'apr.webp',
     coinGeckoId: ''
+  },
+
+  ANTHROPIC: {
+    name: 'Anthropic',
+    decimals: 6,
+    symbol: 'ANTHROPIC',
+    logo: 'anthropic.webp',
+    coinGeckoId: ''
   }
 }
