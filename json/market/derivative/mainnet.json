@@ -1048,6 +1048,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "ANTHROPIC/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "maintenanceMarginRatio": "0.1",
+    "isPerpetual": true,
+    "marketId": "0x49ae4f393ebfde1e9622a971d0d8ea930e28c5b1e33e0777a3d78b1f3fc9c8bc",
+    "marketStatus": "active",
+    "ticker": "ANTHROPIC/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "TIA",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
