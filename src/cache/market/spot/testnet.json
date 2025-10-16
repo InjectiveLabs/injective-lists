@@ -5828,6 +5828,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xebf507a31c5858096774fb7621e68bd1ee3d7f1e5a3b380d1217a33910d268b9",
+    "marketStatus": "active",
+    "ticker": "nBTC/USDT",
+    "baseDenom": "erc20:0x8d2C533a464AD8880eEdaAc57cEc238eFd37D1ae",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "erc20:0x8d2C533a464AD8880eEdaAc57cEc238eFd37D1ae",
+      "address": "erc20:0x8d2C533a464AD8880eEdaAc57cEc238eFd37D1ae",
+      "symbol": "nBTC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 10000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xed865fd44f1bc9d46d978db415ed00444fac4f6aef7e09e2d0235f8d140b219f",
     "marketStatus": "active",
     "ticker": "MT/INJ",
