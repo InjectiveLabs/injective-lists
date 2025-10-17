@@ -112,9 +112,10 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
       `json/tokens/evm/${getNetworkFileName(network)}.json`,
       evmTokenList.sort((a, b) => a.address.localeCompare(b.address))
     )
+
+    console.log(`EVM tokens for ${network} generated successfully!`)
   } catch (error) {
-    console.error('Error fetching MTS pairs:', error)
-    throw error // Or handle the error as appropriate for your use case
+    console.log('Error fetching MTS pairs:', error)
   }
 }
 
