@@ -693,5 +693,22 @@ export const untaggedSymbolMeta = {
     symbol: 'ANTHROPIC',
     logo: 'anthropic.webp',
     coinGeckoId: ''
+  },
+
+  WTIZ5: {
+    name: 'WTI Crude Oil (20 Nov 25 Expiry)',
+    decimals: 6,
+    symbol: 'WTIZ5',
+    logo: 'wti.webp',
+    coinGeckoId: ''
+  },
+
+  SPACEX: {
+    name: 'SpaceX',
+    decimals: 6,
+    symbol: 'SPACEX',
+    logo: 'spacex.webp',
+    coinGeckoId: ''
   }
+
 }
