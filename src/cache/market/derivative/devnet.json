@@ -2,7 +2,7 @@
   {
     "oracleBase": "COMP",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -24,14 +24,14 @@
     "makerFeeRate": "0.001",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "SNX",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -53,14 +53,14 @@
     "makerFeeRate": "-0.0002",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "LINK",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -82,14 +82,14 @@
     "makerFeeRate": "0.001",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "BONK",
     "oracleQuote": "USDT",
-    "oracleType": "PriceFeed",
+    "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.195",
@@ -111,14 +111,14 @@
     "makerFeeRate": "-0.0003",
     "takerFeeRate": "0.003",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-10,
+    "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 0.1,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "BTC",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -140,14 +140,14 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "ATOM",
     "oracleQuote": "USDT",
-    "oracleType": "PriceFeed",
+    "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.095",
@@ -169,14 +169,14 @@
     "makerFeeRate": "-0.00005",
     "takerFeeRate": "0.5",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.01,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "INJ",
     "oracleQuote": "USDT",
-    "oracleType": "PriceFeed",
+    "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -198,14 +198,14 @@
     "makerFeeRate": "-0.0001",
     "takerFeeRate": "0.001",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "ETH",
     "oracleQuote": "USDT",
-    "oracleType": "PriceFeed",
+    "oracleType": "pricefeed",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -227,14 +227,14 @@
     "makerFeeRate": "0.001",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "UNI",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -256,14 +256,14 @@
     "makerFeeRate": "-0.0002",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   },
   {
     "oracleBase": "GRT",
     "oracleQuote": "USD",
-    "oracleType": "Coinbase",
+    "oracleType": "coinbase",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0",
     "initialMarginRatio": "0.05",
@@ -285,8 +285,8 @@
     "makerFeeRate": "0.001",
     "takerFeeRate": "0.002",
     "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
+    "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
-    "minNotional": 1
+    "minNotional": 1000000
   }
 ]
