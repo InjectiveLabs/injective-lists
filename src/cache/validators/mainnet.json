@@ -70,8 +70,8 @@
   },
   {
     "operatorAddress": "injvaloper10gunj074eyp4l8n5kta4w7960nxer2ucvfrdsv",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Mblock",
       "identity": "BA3A575D29EFFBD3",
@@ -79,8 +79,8 @@
       "securityContact": "",
       "details": "force refresh validator metadata"
     },
-    "unbondingHeight": 138349872,
-    "unbondingTime": "2025-11-11T19:27:37.293Z",
+    "unbondingHeight": 138495616,
+    "unbondingTime": "2025-11-12T21:43:11.790Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -2003,7 +2003,7 @@
   {
     "operatorAddress": "injvaloper1h37jxecva2xgm78ejw3683vrw932j6nuzgdxgj",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "Talis Protocol",
       "identity": "5EBAD9ADF2300554",
