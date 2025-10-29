@@ -45,7 +45,7 @@ export const mainnetCategoryMap = {
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052' // xag-usdt-perp
   ],
-  iAssets: [
+  stocks: [
     // NYSE
     '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp
     '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3', // icrcl-usdt-perp
@@ -206,7 +206,7 @@ export const testnetCategoryMap = {
     '0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7', // eur-usdt-perp
     '0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac' // gbp-usdt-perp
   ],
-  iAssets: [
+  stocks: [
     // NYSE
   ],
   deprecated: [],
@@ -236,7 +236,7 @@ export const devnetCategoryMap = {
   rwa: [
     // RWA
   ],
-  iAssets: [
+  stocks: [
     // NYSE
   ],
   tradfiMarkets: [],
