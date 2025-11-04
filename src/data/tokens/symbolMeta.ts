@@ -2099,7 +2099,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   wUSDM: {
-    coinGeckoId: '',
+    coinGeckoId: 'wrapped-usdm',
     logo: 'wusdm.webp',
     name: 'Wrapped USDM',
     symbol: 'wUSDM',
