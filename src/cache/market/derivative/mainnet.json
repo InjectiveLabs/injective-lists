@@ -3011,6 +3011,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "0xbe9b59d178f0d6a97ab4c343bff2aa69caa1eaae3e9048a65788c529b125bb24",
+    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+    "oracleType": "pyth",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.25",
+    "initialMarginRatio": "0.083333",
+    "maintenanceMarginRatio": "0.05",
+    "isPerpetual": true,
+    "marketId": "0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11",
+    "marketStatus": "active",
+    "ticker": "ZEC/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "APR/USDT",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
