@@ -709,6 +709,13 @@ export const untaggedSymbolMeta = {
     symbol: 'SPACEX',
     logo: 'spacex.webp',
     coinGeckoId: ''
-  }
+  },
 
+  ZEC: {
+    name: 'Zcash',
+    decimals: 6,
+    symbol: 'ZEC',
+    logo: 'zec.webp',
+    coinGeckoId: 'zcash'
+  }
 }
