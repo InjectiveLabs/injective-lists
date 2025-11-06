@@ -1704,7 +1704,7 @@
   {
     "operatorAddress": "injvaloper1ee7xnhczhvu064utmdn48sh0wx7zq3pgy6frgm",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Stakecito",
       "identity": "D16E26E5C8154E17",
@@ -1772,8 +1772,8 @@
   },
   {
     "operatorAddress": "injvaloper1esud09zs5754g5nlkmrgxsfdj276xm64cgmd3w",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Imperator.co",
       "identity": "0878BA6BE556C132",
@@ -1781,8 +1781,8 @@
       "securityContact": "contact@imperator.co",
       "details": "100% refund on downtime slashing -- Professional Delegated Proof-of-Stake Network Validator"
     },
-    "unbondingHeight": 14775991,
-    "unbondingTime": "2022-09-23T15:38:37.844Z",
+    "unbondingHeight": 140484270,
+    "unbondingTime": "2025-11-27T12:36:24.835Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
