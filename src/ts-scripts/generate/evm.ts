@@ -10,9 +10,21 @@ import {
   readJSONFile,
   updateJSONFile,
   tokensToDenomMap,
-  getNetworkFileName
+  getNetworkFileName,
+  bankMetadataToAddressMap
 } from '../helper/utils'
 import type { Token, EvmToken } from '../../types'
+
+const devnetBankMetadataAddressMap = bankMetadataToAddressMap([
+  ...readJSONFile({ path: 'src/cache/bankMetadata/devnet.json' })
+])
+
+const testnetBankMetadataAddressMap = bankMetadataToAddressMap(
+  readJSONFile({ path: 'src/cache/bankMetadata/testnet.json' })
+)
+const mainnetBankMetadataAddressMap = bankMetadataToAddressMap(
+  readJSONFile({ path: 'src/cache/bankMetadata/mainnet.json' })
+)
 
 const devnetTokensMap = tokensToDenomMap(
   readJSONFile({
@@ -66,13 +78,16 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
   const erc20Api = new ChainGrpcErc20Api(endpoints.grpc)
 
   let tokenMap = devnetTokensMap
+  let bankMetadataAddressMap = devnetBankMetadataAddressMap
 
   if (isTestnet(network)) {
     tokenMap = testnetTokensMap
+    bankMetadataAddressMap = testnetBankMetadataAddressMap
   }
 
   if (isMainnet(network)) {
     tokenMap = mainnetTokensMap
+    bankMetadataAddressMap = mainnetBankMetadataAddressMap
   }
 
   try {
@@ -92,6 +107,9 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
 
     for (const tokenPair of response.tokenPairs) {
       const tokenMetadata = tokenMap[tokenPair.bankDenom.toLowerCase()]
+      const bankMetadata = bankMetadataAddressMap[tokenPair.bankDenom][0]
+
+      console.log(tokenPair.bankDenom, { bankMetadata })
 
       if (!tokenMetadata) {
         console.log(`Token ${tokenPair.bankDenom} not found`)
@@ -101,7 +119,11 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
 
       const evmTokenMetadata = formatToEvmToken({
         network,
-        token: tokenMetadata,
+        token: {
+          ...tokenMetadata,
+          ...(bankMetadata.symbol && { symbol: bankMetadata.symbol }),
+          ...(bankMetadata.decimals && { decimals: bankMetadata.decimals })
+        },
         evmAddress: tokenPair.erc20Address
       })
 
