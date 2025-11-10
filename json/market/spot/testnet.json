@@ -4464,6 +4464,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0xa9fabc15fc285e2ee0b5d6f0cf1d13c28c2f22bb9daf0607efb3c2de13638d0c",
+    "marketStatus": "active",
+    "ticker": "BLACKKAKA/INJ",
+    "baseDenom": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLACKKAKA",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLACKKAKA",
+      "address": "factory/inj1vpy9shaxkh2nqullgm74lyg4h2m6u5mzc2sq7m/BLACKKAKA",
+      "symbol": "BLACKKAKA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-9,
+    "minQuantityTickSize": 10000000000000,
+    "minNotional": 100000000000000000
+  },
+  {
     "marketId": "0xab5811fe4fa18b221216f01891775313310cfe85ea749f31bd0d2c58754710f4",
     "marketStatus": "active",
     "ticker": "INJ/wETH",
