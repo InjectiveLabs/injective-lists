@@ -1794,6 +1794,29 @@
     "minSelfDelegation": "1"
   },
   {
+    "operatorAddress": "injvaloper1ey05te3lc7uuyq8kd4c9ctwkejt2ch8uvw2pac",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "Hello Moon",
+      "identity": "ABCF908DF04A0138",
+      "website": "https://www.hellomoon.io/",
+      "securityContact": "charles@hellomoon.io",
+      "details": "Hello Moon delivers industry-leading blockchain infrastructure, staking services, and data solutions with unmatched reliability."
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2025-11-11T18:02:08.861Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1f2kdg34689x93cvw2y59z7y46dvz2fk8lhddfz",
     "jailed": false,
     "status": "Bonded",
