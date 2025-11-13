@@ -1333,6 +1333,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0x33712922dbaf5160f173a65ddfe09b1917b22b2ef5cf9f49264dcd37cfe2a87a",
+    "marketStatus": "active",
+    "ticker": "USDCpeggy/USDC",
+    "baseDenom": "peggy0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "quoteDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "USD Coin",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDClegacy",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x35a83ec8948babe4c1b8fbbf1d93f61c754fedd3af4d222fe11ce2a294cd74fb",
     "marketStatus": "active",
     "ticker": "W/USDT",
