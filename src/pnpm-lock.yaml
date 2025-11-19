@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@injectivelabs/networks':
-        specifier: 1.16.27
-        version: 1.16.27
+        specifier: 1.16.28
+        version: 1.16.28
       '@injectivelabs/sdk-ts':
-        specifier: 1.16.27
-        version: 1.16.27(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+        specifier: 1.16.28
+        version: 1.16.28(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
       '@injectivelabs/ts-types':
-        specifier: 1.16.27
-        version: 1.16.27
+        specifier: 1.16.28
+        version: 1.16.28
       '@injectivelabs/utils':
-        specifier: 1.16.27
-        version: 1.16.27
+        specifier: 1.16.28
+        version: 1.16.28
       '@types/node':
         specifier: ^20.11.30
         version: 20.19.19
@@ -207,8 +207,8 @@ packages:
   '@injectivelabs/core-proto-ts@1.16.6':
     resolution: {integrity: sha512-5BNCW3VrcFGBfQHtoMvVBAZ2KN1pFQHpFt05OXCCiBR7rW54V1gsPfV5WqnmyHwfNCk0tr3ji6Bw1DRflwItsg==}
 
-  '@injectivelabs/exceptions@1.16.27':
-    resolution: {integrity: sha512-FrMazAJ5XWITybQ0TZP6FScHYLHlnWX6Ce3xAlfojfEanph2Cc+5bK8h6tlRto/Z6kaTCr31EjC27gx8iHXVyQ==}
+  '@injectivelabs/exceptions@1.16.28':
+    resolution: {integrity: sha512-MePLkWfU3Ca4BUoEfWPUL/g6z10TTNhe7PB79CSqpSjBZsg90ImSzWuCJISzBxu9yUkvzJSPHRjxlwd3qL6B5g==}
 
   '@injectivelabs/grpc-web-node-http-transport@0.0.2':
     resolution: {integrity: sha512-rpyhXLiGY/UMs6v6YmgWHJHiO9l0AgDyVNv+jcutNVt4tQrmNvnpvz2wCAGOFtq5LuX/E9ChtTVpk3gWGqXcGA==}
@@ -225,26 +225,26 @@ packages:
     peerDependencies:
       google-protobuf: ^3.14.0
 
-  '@injectivelabs/indexer-proto-ts@1.13.26':
-    resolution: {integrity: sha512-TjdhyppluPUG+x3GM6wHZ14AJX6LWhyhN1aKV8nL+g9q7/rVXUEz+51OJBQeLIGz00JOKpdX2K9xG7pDYt9SQg==}
+  '@injectivelabs/indexer-proto-ts@1.13.27':
+    resolution: {integrity: sha512-b4mLsbiM98eJ3ileMrWw3Bi7UjGHw/7VM/R6iaY8WST1YD3UElduByilFnvRURWuceHR09RCOj/8g0VvqUlYgA==}
 
   '@injectivelabs/mito-proto-ts@1.13.2':
     resolution: {integrity: sha512-D4qEDB4OgaV1LoYNg6FB+weVcLMu5ea0x/W/p+euIVly3qia44GmAicIbQhrkqTs2o2c+1mbK1c4eOzFxQcwhg==}
 
-  '@injectivelabs/networks@1.16.27':
-    resolution: {integrity: sha512-Wjm1sMmoY8pi2zMWzvmPk2CLdp4Ez3DN4z/F+9N+8BPWH2rwuSKBnofk48kL+exoMM8XDlHWfe7d6e2oMego6g==}
+  '@injectivelabs/networks@1.16.28':
+    resolution: {integrity: sha512-Ib/hcq+5Da88LZXs3H8xn+uImla9mnGbFt+CwjLgkUxlPOv+zpn+OEnu/8e4VbtGjRTrT/dQT4rRjc5983GOzA==}
 
   '@injectivelabs/olp-proto-ts@1.13.4':
     resolution: {integrity: sha512-MTltuDrPJ+mu8IonkfwBp11ZJzTw2x+nA3wzrK+T4ZzEs+fBW8SgaCoXKc5COU7IBzg3wB316QwaR1l6MrffXg==}
 
-  '@injectivelabs/sdk-ts@1.16.27':
-    resolution: {integrity: sha512-Vk7WwSlN/Pit3oFGPFXTxGW9eE6tF63IXRhy9mzVRoE8zEE6NDS5p9JPPTxamJwNKyrtvYZyqrLw5bFE28oIFw==}
+  '@injectivelabs/sdk-ts@1.16.28':
+    resolution: {integrity: sha512-xNdjbUKlvULA/gsTrQVP5IJR3HtbarZn3eiwHb8qqXy8HmsSmdCagOdlFnPGIV7yrMYWWzRtxTbfP8b0E/pURw==}
 
-  '@injectivelabs/ts-types@1.16.27':
-    resolution: {integrity: sha512-hChtnoMQhj65g2K/uooZryRou8xtgjQO3391yY06zCv99A8HeaWQb/Tk6CmyaVfF02gi5GysPbPp2NX6JxulGw==}
+  '@injectivelabs/ts-types@1.16.28':
+    resolution: {integrity: sha512-il9fEnVns5EWpFToyEKFHxqyTc7FSJdEBcSABvmlfinTYolZlbLSTB6v/2GIVsD/9TqJwZkuL1wzcioD2LnOCA==}
 
-  '@injectivelabs/utils@1.16.27':
-    resolution: {integrity: sha512-Z+OAbXWGPB6YqieYVEXRaRlDwMGCZZiKkTkjMZZu9axik14WeMLjF9VjKISwuAeSTbbcSWXC2I1V5xyh+XTDaA==}
+  '@injectivelabs/utils@1.16.28':
+    resolution: {integrity: sha512-H3wTVLUk+mP9+C1afLFDoOymxrWU5Haa4fcA+wn+/eAknYbnzrSf+pE49apy4A9JdUSZMp+hQYZuOZn6UAIJtw==}
 
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
@@ -1333,7 +1333,7 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/exceptions@1.16.27':
+  '@injectivelabs/exceptions@1.16.28':
     dependencies:
       http-status-codes: 2.3.0
 
@@ -1350,7 +1350,7 @@ snapshots:
       browser-headers: 0.4.1
       google-protobuf: 3.21.4
 
-  '@injectivelabs/indexer-proto-ts@1.13.26':
+  '@injectivelabs/indexer-proto-ts@1.13.27':
     dependencies:
       '@injectivelabs/grpc-web': 0.0.1(google-protobuf@3.21.4)
       google-protobuf: 3.21.4
@@ -1364,9 +1364,9 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/networks@1.16.27':
+  '@injectivelabs/networks@1.16.28':
     dependencies:
-      '@injectivelabs/ts-types': 1.16.27
+      '@injectivelabs/ts-types': 1.16.28
 
   '@injectivelabs/olp-proto-ts@1.13.4':
     dependencies:
@@ -1375,7 +1375,7 @@ snapshots:
       protobufjs: 7.5.4
       rxjs: 7.8.2
 
-  '@injectivelabs/sdk-ts@1.16.27(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
+  '@injectivelabs/sdk-ts@1.16.28(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@apollo/client': 3.13.9(graphql@16.12.0)
       '@cosmjs/amino': 0.33.1
@@ -1383,16 +1383,16 @@ snapshots:
       '@cosmjs/stargate': 0.33.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@injectivelabs/abacus-proto-ts': 1.14.1
       '@injectivelabs/core-proto-ts': 1.16.6
-      '@injectivelabs/exceptions': 1.16.27
+      '@injectivelabs/exceptions': 1.16.28
       '@injectivelabs/grpc-web': 0.0.1(google-protobuf@3.21.4)
       '@injectivelabs/grpc-web-node-http-transport': 0.0.2(@injectivelabs/grpc-web@0.0.1(google-protobuf@3.21.4))
       '@injectivelabs/grpc-web-react-native-transport': 0.0.2(@injectivelabs/grpc-web@0.0.1(google-protobuf@3.21.4))
-      '@injectivelabs/indexer-proto-ts': 1.13.26
+      '@injectivelabs/indexer-proto-ts': 1.13.27
       '@injectivelabs/mito-proto-ts': 1.13.2
-      '@injectivelabs/networks': 1.16.27
+      '@injectivelabs/networks': 1.16.28
       '@injectivelabs/olp-proto-ts': 1.13.4
-      '@injectivelabs/ts-types': 1.16.27
-      '@injectivelabs/utils': 1.16.27
+      '@injectivelabs/ts-types': 1.16.28
+      '@injectivelabs/utils': 1.16.28
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
@@ -1421,14 +1421,14 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@injectivelabs/ts-types@1.16.27': {}
+  '@injectivelabs/ts-types@1.16.28': {}
 
-  '@injectivelabs/utils@1.16.27':
+  '@injectivelabs/utils@1.16.28':
     dependencies:
       '@bangjelkoski/store2': 2.14.3
-      '@injectivelabs/exceptions': 1.16.27
-      '@injectivelabs/networks': 1.16.27
-      '@injectivelabs/ts-types': 1.16.27
+      '@injectivelabs/exceptions': 1.16.28
+      '@injectivelabs/networks': 1.16.28
+      '@injectivelabs/ts-types': 1.16.28
       axios: 1.12.2
       bignumber.js: 9.3.1
       http-status-codes: 2.3.0
