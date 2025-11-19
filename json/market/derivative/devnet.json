@@ -87,35 +87,6 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "oEW",
-    "oracleQuote": "USDT",
-    "oracleType": "pricefeed",
-    "oracleScaleFactor": 6,
-    "reduceMarginRatio": "0.08",
-    "initialMarginRatio": "0.05",
-    "maintenanceMarginRatio": "0.02",
-    "isPerpetual": true,
-    "marketId": "0x31829eb9b8623f7136215f388c3e7f0cf45d2ce75445ea2a1a6e027a2565ed74",
-    "marketStatus": "active",
-    "ticker": "oEW/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 2000000
-  },
-  {
     "oracleBase": "BONK",
     "oracleQuote": "USDT",
     "oracleType": "pricefeed",
