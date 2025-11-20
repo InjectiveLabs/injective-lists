@@ -628,5 +628,13 @@ export const mainnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-177',
     source: TokenSource.Cosmos,
     hash: '063F4461F7317CFF10F50AB044E44932D22AAD84FA7107082744946E6DB7B7A8'
+  },
+  {
+    ...symbolMeta.SEDA,
+    baseDenom: 'aseda',
+    channelId: 'channel-1337',
+    path: 'transfer/channel-1337',
+    source: TokenSource.Cosmos,
+    hash: 'B81D42B07963077986BEF8721FB5FF9860BF856BD8367FC2EBE78888140A8D53'
   }
 ]

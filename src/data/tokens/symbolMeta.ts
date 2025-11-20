@@ -2368,5 +2368,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'HPNJ.webp',
     symbol: 'HPNJ',
     coinGeckoId: ''
+  },
+
+  SEDA: {
+    decimals: 18,
+    name: 'SEDA',
+    logo: 'seda.webp',
+    symbol: 'SEDA',
+    coinGeckoId: 'seda-2'
   }
 }
