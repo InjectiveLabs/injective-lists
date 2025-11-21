@@ -717,5 +717,13 @@ export const untaggedSymbolMeta = {
     symbol: 'ZEC',
     logo: 'zec.webp',
     coinGeckoId: 'zcash'
+  },
+
+  PLTR: {
+    name: 'Palantir Technologies Inc',
+    decimals: 6,
+    symbol: 'PLTR',
+    logo: 'pltr.webp',
+    coinGeckoId: ''
   }
 }
