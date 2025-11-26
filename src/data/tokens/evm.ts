@@ -28,6 +28,6 @@ export const mainnetTokens = [
     ...symbolMeta.INJ,
     symbol: 'WINJ',
     name: 'Wrapped INJ',
-    address: 'erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB/'
+    address: 'erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB'
   }
 ]
