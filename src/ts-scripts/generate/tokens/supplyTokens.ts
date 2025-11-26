@@ -94,6 +94,23 @@ export const generateSupplyToken = async (network: Network) => {
 
           continue
         }
+
+        if (!peggyToken) {
+          supplyTokens.push({
+            denom,
+            name: denom,
+            decimals: 18,
+            symbol: denom,
+            address: denom.replace('peggy', ''),
+            logo: untaggedSymbolMeta.Unknown.logo,
+            externalLogo: untaggedSymbolMeta.Unknown.logo,
+            tokenType: TokenType.Erc20,
+            tokenVerification: TokenVerification.Unverified,
+            coinGeckoId: untaggedSymbolMeta.Unknown.coinGeckoId
+          })
+
+          continue
+        }
       }
 
       if (denom.startsWith('ibc/')) {
