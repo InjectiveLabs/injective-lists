@@ -176,17 +176,6 @@
     "registrationMode": "Restricted"
   },
   {
-    "slug": "cv271-12-at",
-    "codeId": "2015",
-    "marketId": "0x37c5ffe6d1c2318a7b9efde1e82c1186d688c1c4a1ad41da9a0878d353f1c88b",
-    "vaultName": "CV271#12%@)!^!",
-    "vaultType": "crates.io:mito-vault-spot",
-    "contractAddress": "inj182tjs70u33r7vssc8tfuwwed3x4ggfeutvk0sl",
-    "notionalValueCap": "100000000000",
-    "masterContractAddress": "inj17q7ds0yh7hhtusff7gz8a5kx2uwxruttlxur96",
-    "registrationMode": ""
-  },
-  {
     "slug": "permissionless_vault_12",
     "codeId": "9212",
     "marketId": "0x65d31cba6cf75d45f8157baf34cbe703545b757bbbc2c6363055a2f46c2dd1a6",
@@ -1043,6 +1032,17 @@
     "notionalValueCap": "20000000000000000000000000",
     "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
     "registrationMode": ""
+  },
+  {
+    "slug": "nbz-usdt",
+    "codeId": "9212",
+    "marketId": "0x41730b203a509e9e2c5db41350bc750a3a832e9f7c17801d7f93d1e0f00dfdb6",
+    "vaultName": "NBZ/USDT",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj1xwcan52y7p6p6k4cqr3e895g8gk03sy0ey9sg7",
+    "notionalValueCap": "10000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Restricted"
   },
   {
     "slug": "launchpad-amm-vault",
