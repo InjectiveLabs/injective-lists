@@ -17,9 +17,9 @@ const evmMainnetUpgrade = {
 }
 
 export const chainUpgradeConfig = {
-  proposalId: 583,
-  blockHeight: 141150000,
+  proposalId: 601,
+  blockHeight: 144210000,
   disableMaintenance: true,
   proposalMsg:
-    'Scheduled maintenance on November 11th, 2025 at ~14:00 UTC to implement the Injective Altria mainnet upgrade.'
+    'Scheduled maintenance on December 3rd, 2025 at ~14:00 UTC to implement the Injective mainnet upgrade.'
 } as ChainConfig | {}
