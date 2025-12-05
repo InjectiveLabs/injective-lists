@@ -148,6 +148,10 @@ export const mainnetCategoryMap = {
     '0xc9030edef611568ec9aa48228c92e30d398abf0eb289b5fee873b0f2f3a80295', // fet-usdt
     '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0', // inj-usdt
     '0x9b9980167ecc3645ff1a5517886652d94a0825e54a77d2057cbbe3ebee015963' // inj-usdt-perp
+  ],
+  seda: [
+    '0x5c8fe180ff7b8c986d3d003f7e758b34db61feaef179a657699b212d62846887', // PLTR-USDT-PERP
+    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1' // NVDA-USDT-PERP
   ]
 }
 
@@ -183,7 +187,8 @@ export const testnetCategoryMap = {
   ],
   layer1: [],
   defi: [],
-  ai: []
+  ai: [],
+  seda: []
 }
 
 export const devnetCategoryMap = {
@@ -217,5 +222,6 @@ export const devnetCategoryMap = {
   ],
   layer1: [],
   defi: [],
-  ai: []
+  ai: [],
+  seda: []
 }
