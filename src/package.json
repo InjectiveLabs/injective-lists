@@ -34,7 +34,7 @@
     "//combined": "========== combined scripts ==========",
     "generate:validators": "pnpm upload:validators:images && ts-node ./ts-scripts/generate/validators",
     "generate:wasm": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query && pnpm generate:wasm:execute",
-    "generate:tokens": "pnpm fetch:cache:data && pnpm generate:marketMap && pnpm fetch:mito:vaults && pnpm generate:tokens:static && pnpm generate:tokens:factory && pnpm generate:tokens:external && pnpm generate:tokens:mito && pnpm generate:tokens:supply && pnpm upload:tokens:images && ts-node ./ts-scripts/generate/tokens && pnpm generate:tokens:verified",
+    "generate:tokens": "pnpm fetch:cache:data && pnpm generate:marketMap && pnpm fetch:mito:vaults && pnpm generate:tokens:static && pnpm generate:tokens:factory && pnpm generate:tokens:external && pnpm generate:tokens:mito && pnpm generate:tokens:supply && pnpm upload:tokens:images && pnpm generate:tokens:list && pnpm generate:tokens:verified",
     "//combinedClean": "========== combined scripts + cache cleaning ==========",
     "generate:tokens:flush": "ts-node ./flushCw20Cache && pnpm tokens:generate",
     "generate:wasm:flush": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query -f && pnpm generate:wasm:execute -f",

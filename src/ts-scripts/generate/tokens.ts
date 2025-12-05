@@ -62,7 +62,7 @@ export const generateTokensList = async (network: Network) => {
       ...token,
       // todo: use external logo if it looks ok on the UI
       logo: logos[token.logo] || logos[untaggedSymbolMeta.Unknown.logo],
-      externalLogo: token.externalLogo || token.logo
+      externalLogo: token.externalLogo || logos[untaggedSymbolMeta.Unknown.logo]
     }
   })
 
