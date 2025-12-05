@@ -68,7 +68,7 @@ const formatMetadata = (metadata: Metadata) => {
     : denom
 
   return {
-    name,
+    name: name.startsWith('erc20:') ? name : metadata.name || name,
     denom,
     address: isCw20ContractAddress(name) ? name : denom,
     logo: metadata.uri,
