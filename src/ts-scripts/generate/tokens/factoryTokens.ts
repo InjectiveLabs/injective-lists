@@ -14,6 +14,7 @@ import {
 import { getCw20Denom } from '../../helper/getter'
 import { fetchCw20Token } from '../../helper/fetchCw20Metadata'
 import { fetchIbcTokenMetaData } from '../../helper/fetchIbcDenomTrace'
+import { verifiedTokenFactoryDenoms } from '../../../data/tokens/denoms'
 import { untaggedSymbolMeta } from '../../../data/tokens/untaggedSymbolMeta'
 
 const mainnetStaticTokensMap = tokensToDenomMapKeepCasing(
@@ -171,6 +172,8 @@ export const generateBankFactoryTokens = async (network: Network) => {
         ? TokenType.Evm
         : TokenType.TokenFactory
 
+      const isVerified = verifiedTokenFactoryDenoms.includes(bankMetadata.denom)
+
       bankFactoryTokens.push({
         ...untaggedSymbolMeta.Unknown,
         name: bankMetadata.denom,
@@ -180,7 +183,9 @@ export const generateBankFactoryTokens = async (network: Network) => {
         ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
         ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
         tokenType,
-        tokenVerification: TokenVerification.Unverified
+        tokenVerification: isVerified
+          ? TokenVerification.Verified
+          : TokenVerification.Unverified
       })
     }
 
