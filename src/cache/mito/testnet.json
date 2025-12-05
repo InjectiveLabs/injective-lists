@@ -154,15 +154,15 @@
     "registrationMode": ""
   },
   {
-    "slug": "amm-test-wbtc",
-    "codeId": "2699",
-    "marketId": "0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e",
-    "vaultName": "amm test wbtc",
-    "vaultType": "crates.io:mito-vault-amm",
-    "contractAddress": "inj17lt3vtgtpprn877gyd694hvtgn5p3c3mt6z39l",
-    "notionalValueCap": "1000000000000",
-    "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
-    "registrationMode": ""
+    "slug": "permissionless_vault_41",
+    "codeId": "9212",
+    "marketId": "0xe3625133bcac38dd48beff27589dab963f1b65b11c4280a1f2eeaec3592077bd",
+    "vaultName": "permissionless_vault_41",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj17rv8f5tdr4xhmjyaq34fqdxdf4pkcz626xrfsx",
+    "notionalValueCap": "100000000000000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Permissionless"
   },
   {
     "slug": "launchpad-amm-vault",
@@ -407,17 +407,6 @@
     "registrationMode": ""
   },
   {
-    "slug": "gbp-boost",
-    "codeId": "2337",
-    "marketId": "0xe185b08a7ccd830a94060edd5e457d30f429aa6f0757f75a8b93aa611780cfac",
-    "vaultName": "GBP Boost",
-    "vaultType": "crates.io:mito-vault-derivatives",
-    "contractAddress": "inj1fgdlfyru0e0fk4tsxtdz6an7vfwz3g82w40qy6",
-    "notionalValueCap": "25000000000000",
-    "masterContractAddress": "inj1tcjf7r5vksr0g80pdcdada44teauwkkahelyfy",
-    "registrationMode": ""
-  },
-  {
     "slug": "permissionless_vault_27",
     "codeId": "9212",
     "marketId": "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
@@ -482,6 +471,17 @@
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj1cwx93480s73en2qxqlacte42dpusxdkgs83j0f",
     "registrationMode": ""
+  },
+  {
+    "slug": "permissionless_vault_42",
+    "codeId": "9212",
+    "marketId": "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
+    "vaultName": "permissionless_vault_42",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj1gksj938868z9czuke9l8lfeau82rurtr82gj2u",
+    "notionalValueCap": "100000000000000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Permissionless"
   },
   {
     "slug": "offchain-vault-example",
@@ -724,17 +724,6 @@
     "notionalValueCap": "100000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "registrationMode": "Restricted"
-  },
-  {
-    "slug": "eur-boost",
-    "codeId": "2337",
-    "marketId": "0xb6fd8f78b97238eb67146e9b097c131e94730c10170cbcafa82ea2fd14ff62c7",
-    "vaultName": "EUR Boost",
-    "vaultType": "crates.io:mito-vault-derivatives",
-    "contractAddress": "inj1qamlsmj22p3zkchgva2ydhegfwz3ls7m5sm7rs",
-    "notionalValueCap": "25000000000000",
-    "masterContractAddress": "inj1tcjf7r5vksr0g80pdcdada44teauwkkahelyfy",
-    "registrationMode": ""
   },
   {
     "slug": "permissionless_vault_11",
@@ -1096,6 +1085,17 @@
     "vaultType": "crates.io:vault-cpmm-spot",
     "contractAddress": "inj1zngkg023f0fqlvpc026rr0pvd4rufw8d4ywke4",
     "notionalValueCap": "1000000000000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Permissionless"
+  },
+  {
+    "slug": "permissionless_vault_43",
+    "codeId": "9212",
+    "marketId": "0x5777730c1ab6f6b1e465d41778562ada8c136c0f11ffbbdb2faa7a5bbde5d5a5",
+    "vaultName": "permissionless_vault_43",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj1zslpayzyjmd555ng7k4h2vd6wuk3xv7dnsq5gv",
+    "notionalValueCap": "100000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "registrationMode": "Permissionless"
   }
