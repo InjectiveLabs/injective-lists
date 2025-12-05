@@ -54,6 +54,7 @@ export interface Token {
   denom: string
   address: string
   tokenType: string
+  description?: string
   tokenVerification: string
   externalLogo?: string
   isNative?: boolean

@@ -180,6 +180,9 @@ export const generateBankFactoryTokens = async (network: Network) => {
         address: address,
         denom: bankMetadata.denom,
         decimals: bankMetadata.decimals,
+        ...(bankMetadata?.description && {
+          description: bankMetadata.description
+        }),
         ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
         ...(bankMetadata?.logo && { externalLogo: bankMetadata.logo }),
         tokenType,
