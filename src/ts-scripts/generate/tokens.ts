@@ -60,8 +60,9 @@ export const generateTokensList = async (network: Network) => {
   const formattedList = list.map((token) => {
     return {
       ...token,
+      // todo: use external logo if it looks ok on the UI
       logo: logos[token.logo] || logos[untaggedSymbolMeta.Unknown.logo],
-      externalLogo: token.logo
+      externalLogo: token.externalLogo || token.logo
     }
   })
 
