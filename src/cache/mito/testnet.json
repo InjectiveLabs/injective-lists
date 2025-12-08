@@ -825,17 +825,6 @@
     "registrationMode": "Permissionless"
   },
   {
-    "slug": "amm-test-wbtc",
-    "codeId": "2699",
-    "marketId": "0x1c315bd2cfcc769a8d8eca49ce7b1bc5fb0353bfcb9fa82895fe0c1c2a62306e",
-    "vaultName": "amm test wbtc",
-    "vaultType": "crates.io:mito-vault-amm",
-    "contractAddress": "inj1t9c9yggeyxfd0x8jfu869xvyksg5ytjlhmv4fz",
-    "notionalValueCap": "1000000000000",
-    "masterContractAddress": "inj1an0gxz8w2sfavu5glt32hly5m2ltz67eyx2gra",
-    "registrationMode": ""
-  },
-  {
     "slug": "permissionless_vault_14",
     "codeId": "9212",
     "marketId": "0x65aec98d4cfc51c18d84de1c13a80d21b6b40073ef0d99bfdb4ba2fa6cbdcd79",
@@ -1096,6 +1085,17 @@
     "vaultType": "crates.io:vault-cpmm-spot",
     "contractAddress": "inj1zslpayzyjmd555ng7k4h2vd6wuk3xv7dnsq5gv",
     "notionalValueCap": "100000000000000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Permissionless"
+  },
+  {
+    "slug": "permissionless_vault_44",
+    "codeId": "9212",
+    "marketId": "0xac645d3572e9301ce0fdb82e52d36f880433e57f3c02b73d67527e160ba36466",
+    "vaultName": "permissionless_vault_44",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj1zvyrht54s8d7rgmex0s3nw6vxpe5m3ly3v6xln",
+    "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "registrationMode": "Permissionless"
   }
