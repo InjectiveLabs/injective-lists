@@ -682,17 +682,6 @@
     "registrationMode": "Permissionless"
   },
   {
-    "slug": "offchain-vault-example",
-    "codeId": "2711",
-    "marketId": "0x17ef48032cb24375ba7c2e39f384e56433bcab20cbee9a7357e4cba2eb00abe6",
-    "vaultName": "offchain vault example",
-    "vaultType": "crates.io:offchain-vault",
-    "contractAddress": "inj1pwztvdkju9lcmw68t04n7vt7832s3w9clv59ws",
-    "notionalValueCap": "5000000000000",
-    "masterContractAddress": "",
-    "registrationMode": ""
-  },
-  {
     "slug": "test5-inj",
     "codeId": "9212",
     "marketId": "0x62b3468090c1b372f790d556cf65703af4c8084878cb00dffaf596d4d084778c",
@@ -809,6 +798,17 @@
     "vaultName": "permissionless_vault_10",
     "vaultType": "crates.io:vault-cpmm-spot",
     "contractAddress": "inj1t3y9mu0zk5zuu4y34lfxkq8zx08latdxa5cff5",
+    "notionalValueCap": "1000000000000000000000000",
+    "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
+    "registrationMode": "Permissionless"
+  },
+  {
+    "slug": "permissionless_vault_64",
+    "codeId": "9212",
+    "marketId": "0xf02752c2c87728af7fd10a298a8a645261859eafd0295dcda7e2c5b45c8412cf",
+    "vaultName": "permissionless_vault_64",
+    "vaultType": "crates.io:vault-cpmm-spot",
+    "contractAddress": "inj1t60fp55yz759fe0n7p0xpjfa990kxygwatu7q4",
     "notionalValueCap": "1000000000000000000000000",
     "masterContractAddress": "inj174efvalr8d9muguudh9uyd7ah7zdukqs9w4adq",
     "registrationMode": "Permissionless"
