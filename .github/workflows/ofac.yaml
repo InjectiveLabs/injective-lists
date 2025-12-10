@@ -1,34 +1,40 @@
 name: Injective list - Fetch OFAC wallets
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "40 2 * * *" # Every day at 02:30 PM
+    - cron: "40 2 * * *" # Every day at 02:40 UTC
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   generate:
     name: "Refetch OFAC wallets"
     runs-on: blacksmith-8vcpu-ubuntu-2204
-    permissions: write-all
-    env:
-      ## Github Actions
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-      CLOUD_FLARE_API_KEY: ${{ secrets.CLOUD_FLARE_API_KEY }}
-      CLOUD_FLARE_ACCOUNT_ID: ${{ secrets.CLOUD_FLARE_ACCOUNT_ID }}
-      CLOUD_FLARE_ACCOUNT_HASH: ${{ secrets.CLOUD_FLARE_ACCOUNT_HASH }}
-      ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
-      ALCHEMY_SEPOLIA_KEY: ${{ secrets.ALCHEMY_SEPOLIA_KEY }}
+    timeout-minutes: 15
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 1
+          ref: master
           token: "${{ secrets.GH_TOKEN }}"
-      - run: |
-          git reset --hard origin/master
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10.18.1
+
+      - name: Setup Node.js with cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+          cache-dependency-path: src/pnpm-lock.yaml
 
       - name: Install dependencies
         run: cd src && pnpm i

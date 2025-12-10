@@ -2,14 +2,19 @@ name: Injective list - Upload Files
 
 on:
   workflow_dispatch:
+  workflow_call:
+  schedule:
+    - cron: "0 0 * * *" # Daily at 00:00 UTC
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     name: "Trigger upload"
     runs-on: blacksmith-8vcpu-ubuntu-2204
-    env:
-      ## Github Actions
-      SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
+    timeout-minutes: 10
 
     steps:
       # This is here solely for testing and running this action locally with ACT - it shouldn't be needed for running on github as the images in gh actions should already have the AWS CLI installed
@@ -27,7 +32,9 @@ jobs:
           arch: amd64 # allowed values: amd64, arm64
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
@@ -38,7 +45,8 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync json s3://injective-lists/json --delete
+          aws s3 sync json s3://injective-lists/json --delete \
+          --cache-control "public, max-age=31536000, s-maxage=31536000"
 
       - name: Invalidate CloudFront cache
         run: |

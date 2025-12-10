@@ -2,14 +2,19 @@ name: Injective list - Upload Files (Staging)
 
 on:
   workflow_dispatch:
+  workflow_call:
+  schedule:
+    - cron: "0 0 * * *" # Daily at 00:00 UTC
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     name: "Trigger upload"
     runs-on: blacksmith-8vcpu-ubuntu-2204
-    env:
-      ## Github Actions
-      SKIP_DEPLOYMENTS: ${{ secrets.SKIP_DEPLOYMENTS }}
+    timeout-minutes: 10
 
     steps:
       - name: Install Act dependencies
@@ -26,7 +31,9 @@ jobs:
           arch: amd64 # allowed values: amd64, arm64
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
