@@ -1380,6 +1380,29 @@
     "minSelfDelegation": "1000000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1w9ay2x5d689ena6tjqlqp2rhr6ll2vx9n4apqv",
+    "jailed": false,
+    "status": "Bonded",
+    "description": {
+      "moniker": "Hex-Trust",
+      "identity": "",
+      "website": "https://hextrust.com",
+      "securityContact": "",
+      "details": "HEX Trust validator on Injective Testnet"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.075",
+        "maxRate": "0.1",
+        "maxChangeRate": "0.05"
+      },
+      "updateTime": "2025-12-10T09:44:02.726Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper1wh8yd3entpzpvgz0sakhf2fk3z24nfngcxpr6t",
     "jailed": true,
     "status": "UnBonded",
