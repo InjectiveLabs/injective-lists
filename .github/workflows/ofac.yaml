@@ -5,10 +5,6 @@ on:
   schedule:
     - cron: "40 2 * * *" # Every day at 02:40 UTC
 
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: ${{ github.event_name == 'push' }}
-
 jobs:
   generate:
     name: "Refetch OFAC wallets"
