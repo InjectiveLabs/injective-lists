@@ -17410,5 +17410,12 @@ export const mainnetSwapRoutes = [
       '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
       '0x6e46898e9a7ab9ff3c33791fa62ec108935837bab642833e1d17fa44d6ad038d'
     ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom: 'peggy0xdAC17F958D2ee523a2206206994597C13D831ec7',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7'
+    ]
   }
 ]
