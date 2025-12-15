@@ -30,6 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+          ref: master
 
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
