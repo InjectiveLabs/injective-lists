@@ -146,7 +146,6 @@ export const mainnetTokens: Cw20TokenSource[] = [
   },
   {
     ...symbolMeta.SOL,
-    decimals: 6,
     symbol: 'SOLlegacy',
     name: 'Solana (legacy)',
     address: 'inj1sthrn5ep8ls5vzz8f9gp89khhmedahhdkqa8z3'
