@@ -2982,6 +2982,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "LIT/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.8571",
+    "initialMarginRatio": "0.2857",
+    "maintenanceMarginRatio": "0.2",
+    "isPerpetual": true,
+    "marketId": "0xe80a9831d803cbac31f66d07f82c76b8959575261e3290a8ea16e1fa241e76fa",
+    "marketStatus": "active",
+    "ticker": "LIT/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "QUNT/USDT",
     "oracleQuote": "InjectiveLabs",
     "oracleType": "provider",
