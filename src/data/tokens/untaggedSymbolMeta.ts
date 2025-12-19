@@ -725,5 +725,13 @@ export const untaggedSymbolMeta = {
     symbol: 'PLTR',
     logo: 'pltr.webp',
     coinGeckoId: ''
+  },
+
+  LIT: {
+    name: 'Lighter',
+    decimals: 6,
+    symbol: 'LIT',
+    logo: 'lit.webp',
+    coinGeckoId: 'lighter'
   }
 }
