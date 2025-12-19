@@ -261,9 +261,9 @@
     "minNotional": 0.000001
   },
   {
-    "oracleBase": "0x49f6b65cb1de6b10eaf75e7c03ca029c306d0357e91b5311b175084a5ad55688",
-    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-    "oracleType": "pyth",
+    "oracleBase": "AAPL/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0.099999",
     "initialMarginRatio": "0.033333",
@@ -845,9 +845,9 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "0x16dad506d7db8da01c87581c87ca897a012a153557d4d578c3b9c9e1bc0632f1",
-    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-    "oracleType": "pyth",
+    "oracleBase": "TSLA/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0.099999",
     "initialMarginRatio": "0.033333",
@@ -903,9 +903,9 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "0x9695e2b96ea7b3859da9ed25b7a46a920a776e2fdae19a7bcfdf2b219230452d",
-    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-    "oracleType": "pyth",
+    "oracleBase": "TTI/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0.099999",
     "initialMarginRatio": "0.033333",
@@ -2046,9 +2046,9 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "0x5a48c03e9b9cb337801073ed9d166817473697efff0d138874e0f6a33d6d5aa6",
-    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-    "oracleType": "pyth",
+    "oracleBase": "GOOGL/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0.099999",
     "initialMarginRatio": "0.033333",
@@ -2895,9 +2895,9 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "0x78a3e3b8e676a8f73c439f5d749737034b139bbbe899ba5775216fba596607fe",
-    "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-    "oracleType": "pyth",
+    "oracleBase": "META/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
     "oracleScaleFactor": 6,
     "reduceMarginRatio": "0.099999",
     "initialMarginRatio": "0.083333",
@@ -2979,6 +2979,35 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 100000,
     "minQuantityTickSize": 0.0001,
+    "minNotional": 1000000
+  },
+  {
+    "oracleBase": "LIT/USDT",
+    "oracleQuote": "InjectiveLabs",
+    "oracleType": "provider",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.8571",
+    "initialMarginRatio": "0.2857",
+    "maintenanceMarginRatio": "0.2",
+    "isPerpetual": true,
+    "marketId": "0xe80a9831d803cbac31f66d07f82c76b8959575261e3290a8ea16e1fa241e76fa",
+    "marketStatus": "active",
+    "ticker": "LIT/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.1,
     "minNotional": 1000000
   },
   {

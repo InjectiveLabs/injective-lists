@@ -253,6 +253,29 @@
     "minSelfDelegation": "1"
   },
   {
+    "operatorAddress": "injvaloper12ymzkwejwyjzptlltp4hewq6z4uwwluev26krf",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "Nansen | Stake to Stack Points",
+      "identity": "B833F689F4C9727A61CB4628B9A66E826BCF9A28",
+      "website": "https://nansen.ai",
+      "securityContact": "stake@nansen.ai",
+      "details": "Nansen is a leading on-chain analytics platform founded in 2020, and is now one of the most trusted names in crypto, serving traders and institutions. Disclaimer: delegating comes with slashing risks"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2025-12-19T09:11:34.485Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper134dct56cq5v7uerxcy2cn4m06mqf4dxrlgpp24",
     "jailed": false,
     "status": "Bonded",
@@ -782,6 +805,29 @@
     "minSelfDelegation": "1"
   },
   {
+    "operatorAddress": "injvaloper16jkt2gcm8qfxzjj8j6pvyc045ga82pmthz58mp",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "Hex Trust",
+      "identity": "1737CC41D30DCCC7",
+      "website": "https://hextrust.com",
+      "securityContact": "",
+      "details": "Hex Trust is a fully licensed digital asset custodian dedicated to providing solutions for protocols, foundations, financial institutions, and the Web3 ecosystem."
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.075",
+        "maxRate": "1",
+        "maxChangeRate": "1"
+      },
+      "updateTime": "2025-12-17T12:43:59.105Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper173h9qv2vqvnjd58wel9y8rf33vpzfklhhj8lg6",
     "jailed": true,
     "status": "UnBonded",
@@ -853,7 +899,7 @@
   {
     "operatorAddress": "injvaloper17dt0hpykufxjrc7fh8rxwgv6z9kx8vlgg0qqrs",
     "jailed": true,
-    "status": "UnBonding",
+    "status": "UnBonded",
     "description": {
       "moniker": "Dojo | Delegate for Airdrop",
       "identity": "32A2E49B377D032D",
@@ -3613,7 +3659,7 @@
   {
     "operatorAddress": "injvaloper1vqz7mgm47xhx25xu5g9qagnz48naks6pk6fmg2",
     "jailed": true,
-    "status": "UnBonding",
+    "status": "UnBonded",
     "description": {
       "moniker": "ECO Stake 🌱 | REStake.app",
       "identity": "5992A6D423A406D6",
