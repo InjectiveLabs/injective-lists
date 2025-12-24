@@ -733,5 +733,13 @@ export const untaggedSymbolMeta = {
     symbol: 'LIT',
     logo: 'lit.webp',
     coinGeckoId: 'lighter'
+  },
+
+  MEGA: {
+    name: 'MegaETH',
+    decimals: 6,
+    symbol: 'MEGA',
+    logo: 'mega.webp',
+    coinGeckoId: 'megaeth'
   }
 }
