@@ -25,7 +25,7 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: mitoFinance/mito-ui
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.MITO_GH_TOKEN }}"
 
       - name: Deploy bridge (mainnet)
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
@@ -34,7 +34,7 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-bridge
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.BRIDGE_GH_TOKEN }}"
 
       - name: Rebuild helix
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
@@ -43,7 +43,7 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-helix
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.HELIX_GH_TOKEN }}"
 
       - name: Deploy explorer
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
@@ -52,7 +52,7 @@ jobs:
           workflow: mainnet.yaml
           ref: master
           repo: injectiveLabs/injective-explorer
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.EXPLORER_GH_TOKEN }}"
 
       - name: Rebuild Hub
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
@@ -61,16 +61,16 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-hub
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.HUB_GH_TOKEN }}"
 
-      - name: Deploy OLP (mainnet)
+      - name: Deploy Trading UI (mainnet)
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
           workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-dmm-v2
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.TRADING_UI_GH_TOKEN }}"
 
       - name: Deploy Admin UI (mainnet)
         if: ${{ env.SKIP_DEPLOYMENTS != 'true' }}
@@ -79,4 +79,4 @@ jobs:
           workflow: mainnet.yml
           ref: master
           repo: injectiveLabs/injective-admin-ui
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.ADMIN_UI_GH_TOKEN }}"

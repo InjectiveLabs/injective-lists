@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 1
           ref: master
-          token: "${{ secrets.GH_TOKEN }}"
+          token: "${{ secrets.LIST_GH_TOKEN }}"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
