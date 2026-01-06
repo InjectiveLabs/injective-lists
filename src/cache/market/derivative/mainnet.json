@@ -522,6 +522,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "MEGAUSD",
+    "oracleQuote": "USDTUSD",
+    "oracleType": "stork",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.8571",
+    "initialMarginRatio": "0.2857",
+    "maintenanceMarginRatio": "0.2",
+    "isPerpetual": true,
+    "marketId": "0x231fdee35c40cc8028e2c59f45f78511b9e9ef3438e90054fb3f0d6beecb9dc4",
+    "marketStatus": "active",
+    "ticker": "MEGA/USDT PERP",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100,
+    "minQuantityTickSize": 1,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "0xd41369178d64f41d51ca95465c144a2c74d2fff30be69164835911943fa64c3e",
     "oracleQuote": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
     "oracleType": "pyth",
