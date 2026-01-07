@@ -1,10 +1,10 @@
 export const mainnetCategoryMap = {
   newMarkets: [
+    '0x231fdee35c40cc8028e2c59f45f78511b9e9ef3438e90054fb3f0d6beecb9dc4', // megaeth-usdt-perp
     '0xe80a9831d803cbac31f66d07f82c76b8959575261e3290a8ea16e1fa241e76fa', // lit-usdt-perp
     '0x5c8fe180ff7b8c986d3d003f7e758b34db61feaef179a657699b212d62846887', // pltr-usdt-perp
     '0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11', // zec-usdt-perp
     '0xb065484fd2f840709af4b53d9b5f6b1e36451c58c619c2b48c2a4f10dfa1155a', // spacex-usdt-perp
-    '0xefae35bb70165a67953413cdd429a61a04feb9c3275edc2334adb1c8e693f3d8', // apr-usdt-perp
     '0x49ae4f393ebfde1e9622a971d0d8ea930e28c5b1e33e0777a3d78b1f3fc9c8bc', // anthropic-usdt-perp
     '0xf90a62bb82fdce5ae1a1388227999a78d24546541fd7c586e1e0d3f150eaf385' // mon-usdt-perp
   ],
@@ -19,19 +19,18 @@ export const mainnetCategoryMap = {
     // NYSE
     '0x5c8fe180ff7b8c986d3d003f7e758b34db61feaef179a657699b212d62846887', // pltr-usdt-perp
     '0xa64335c69ee025897d00880752971320c8bf35fa7346c58cd208bb8e996e95e3', // sbet-usdt-perp
-    '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3', // icrcl-usdt-perp
-    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // iaapl-usdt-perp
-    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // imsft-usdt-perp
-    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf', // iamzn-usdt-perp
-    '0xe4fd69fb47edd3a7ca1436fae764055001139659d3e0df1eb7237f031737afde', // inflx-usdt-perp
-    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // imeta-usdt-perp
-    '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // igoogl-usdt-perp
-    '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // icoin-usdt-perp
-    '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // imstr-usdt-perp
-    '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // itsla-usdt-perp
-    '0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e', // ihood-usdt-perp
+    '0x8a325bd4bd29e20eb182fbc6acca2224f5f4067a29e9feb44f60b01f8e5dd0f3', // crcl-usdt-perp
+    '0x0db9bd22e4c6d4ef0a504f85708944056f5ecf82d753b9154c7be88b8c2ec5e9', // aapl-usdt-perp
+    '0x0aa743f5462513333f15ae0799ef8d9c000f3b26a75a0b6fe7cd62e3e17bcf80', // msft-usdt-perp
+    '0x8a2b6067a2eb2712222e42a52e75f85b5c8d67f66d45c76a700f763c723f4caf', // amzn-usdt-perp
+    '0xe12d934dfcd58f5f633b6cb6eb4cce91e950124469bb3996282e9d9d0cb96e36', // meta-usdt-perp
+    '0x96408895e808e45d95de88784092683963f415985823b8336605e6fc6de97668', // googl-usdt-perp
+    '0x329e14c73ef0712dd1359d56476f3dd9c1c032f9c755556e5bd0cb536fb479d3', // coin-usdt-perp
+    '0x9f70beeed6a8ea48b1eab7a608a2af600d432ee6eda7fba2965875a8e9702b77', // mstr-usdt-perp
+    '0x36374ac84498d300f99010e2ea693bea12479be910570fc49e986c5f899dccf6', // tsla-usdt-perp
+    '0xc785a40ccb958e8df31ab18c0788f8443cefc5cbf6aca989ca721214b31fd76e', // hood-usdt-perp
     '0x37d4e69a77cdca055615d55c088d5bdf1bc75801e2c00a925e0b2dae62b5d660', // tti-usdt-perp
-    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // invda-usdt-perp
+    '0x1e8369b298705c468c1a313a729bae0dbd4410587465cc69276bf8ba4e0231c1', // nvda-usdt-perp
     '0x2236b4cd97300c79fca5c2fff4b647ab24a6d48c1554255ff8ec7cf29429ba74', // tradfi-usdt-perp
     '0x0160a0c8ecbf5716465b9fc22bceeedf6e92dcdc688e823bbe1af3b22a84e5b5', // xau-usdt-perp
     '0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052', // xag-usdt-perp
@@ -40,6 +39,7 @@ export const mainnetCategoryMap = {
   ],
   deprecated: [],
   trending: [
+    '0x231fdee35c40cc8028e2c59f45f78511b9e9ef3438e90054fb3f0d6beecb9dc4', // megaeth-usdt-perp
     '0xe80a9831d803cbac31f66d07f82c76b8959575261e3290a8ea16e1fa241e76fa', // lit-usdt-perp
     '0x5c8fe180ff7b8c986d3d003f7e758b34db61feaef179a657699b212d62846887', // pltr-usdt-perp
     '0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11', // zec-usdt-perp
@@ -85,6 +85,7 @@ export const mainnetCategoryMap = {
     '0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e' // inj-ausd
   ],
   layer1: [
+    '0x231fdee35c40cc8028e2c59f45f78511b9e9ef3438e90054fb3f0d6beecb9dc4', // megaeth-usdt-perp
     '0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11', // zec-usdt-perp
     '0xf90a62bb82fdce5ae1a1388227999a78d24546541fd7c586e1e0d3f150eaf385', // mon-usdt-perp
     '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
@@ -111,8 +112,8 @@ export const mainnetCategoryMap = {
     '0x1c79dac019f73e4060494ab1b4fcba734350656d6fc4d474f6a238c13c6f9ced' // bnb-usdt-perp
   ],
   defi: [
+    '0x231fdee35c40cc8028e2c59f45f78511b9e9ef3438e90054fb3f0d6beecb9dc4', // megaeth-usdt-perp
     '0xe80a9831d803cbac31f66d07f82c76b8959575261e3290a8ea16e1fa241e76fa', // lit-usdt-perp
-    '0xefae35bb70165a67953413cdd429a61a04feb9c3275edc2334adb1c8e693f3d8', // apr-usdt-perp
     '0xdfd641eef7668118e219c909562f97282b9d21fa15927284723f0a8b493efb18', // aster-usdt-perp
     '0x48513ec7f4b20058f8d3ed50143a862720ddcc06a16e531225589f4d7d823e46', // xpl-usdt-perp
     '0xb7b7946c5152b045c453769a0b442b8a42415ed9bb95ba5f59203bf40c5f2f03', // sky-usdt-perp
