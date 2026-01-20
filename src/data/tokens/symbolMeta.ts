@@ -170,7 +170,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   },
 
   CEL: {
-    decimals: 4,
+    decimals: 18,
     symbol: 'CEL',
     name: 'Celsius',
     logo: 'cel.png',

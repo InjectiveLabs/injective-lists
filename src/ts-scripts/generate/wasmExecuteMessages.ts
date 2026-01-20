@@ -152,6 +152,5 @@ export const fetchWasmExecuteMessages = async (
   }
 }
 
-generateWasmExecuteMessages(Network.Devnet)
 generateWasmExecuteMessages(Network.TestnetSentry)
 generateWasmExecuteMessages(Network.MainnetSentry)

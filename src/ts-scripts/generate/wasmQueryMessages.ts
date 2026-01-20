@@ -133,6 +133,5 @@ export const testMsg = (value: string): string[] => {
     : []
 }
 
-generateWasmQueryMessages(Network.Devnet)
 generateWasmQueryMessages(Network.TestnetSentry)
 generateWasmQueryMessages(Network.MainnetSentry)
