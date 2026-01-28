@@ -2361,7 +2361,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'TRD',
     coinGeckoId: ''
   },
-
+   TWT2: {
+    decimals: 9,
+    symbol: 'TWT2',
+    logo: 'twt2.png',
+    coinGeckoId: '',
+    name: 'TEST RWA TOKEN'
+  },
   HPNJ: {
     decimals: 8,
     name: 'Hyper Ninja Token',
