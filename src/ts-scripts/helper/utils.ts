@@ -1,9 +1,14 @@
 import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { ChainId } from '@injectivelabs/ts-types'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import { TokenType, isCw20ContractAddress } from '@injectivelabs/sdk-ts'
 import { existsSync, writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { Token, BankMetadata } from '../../types'
+
+// ES module polyfill for __dirname
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 export const getTokenType = (denom: string): TokenType => {
   if (!denom) {
