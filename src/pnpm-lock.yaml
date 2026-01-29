@@ -787,8 +787,8 @@ packages:
     resolution: {integrity: sha512-Z6czzLq4u8fPOyx7TU6X3dvUZVvoJmxSQ+IcrlmagKhilxlhZgxPK6C5Jqbkw1IDUmFTM+cz9QDnnLTwDz/2gQ==}
     engines: {node: '>=6.14.2'}
 
-  viem@2.45.0:
-    resolution: {integrity: sha512-iVA9qrAgRdtpWa80lCZ6Jri6XzmLOwwA1wagX2HnKejKeliFLpON0KOdyfqvcy+gUpBVP59LBxP2aKiL3aj8fg==}
+  viem@2.45.1:
+    resolution: {integrity: sha512-LN6Pp7vSfv50LgwhkfSbIXftAM5J89lP9x8TeDa8QM7o41IxlHrDh0F9X+FfnCWtsz11pEVV5sn+yBUoOHNqYA==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -1356,7 +1356,7 @@ snapshots:
       http-status-codes: 2.3.0
       rxjs: 7.8.2
       snakecase-keys: 5.5.0
-      viem: 2.45.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+      viem: 2.45.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -1850,7 +1850,7 @@ snapshots:
     dependencies:
       node-gyp-build: 4.8.4
 
-  viem@2.45.0(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10):
+  viem@2.45.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
