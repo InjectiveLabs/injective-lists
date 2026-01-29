@@ -257,11 +257,11 @@
     "jailed": false,
     "status": "UnBonded",
     "description": {
-      "moniker": "Nansen | Stake to Stack Points",
+      "moniker": "DO NOT DELEGATE",
       "identity": "B833F689F4C9727A61CB4628B9A66E826BCF9A28",
-      "website": "https://nansen.ai",
-      "securityContact": "stake@nansen.ai",
-      "details": "Nansen is a leading on-chain analytics platform founded in 2020, and is now one of the most trusted names in crypto, serving traders and institutions. Disclaimer: delegating comes with slashing risks"
+      "website": "",
+      "securityContact": "aaa@aaa.com",
+      "details": "DO NOT DELEGATE"
     },
     "unbondingHeight": 0,
     "unbondingTime": "1970-01-01T00:00:00.000Z",
@@ -484,8 +484,8 @@
   },
   {
     "operatorAddress": "injvaloper145cktyaw3ec7nwt3nyawvx5yy9l58ppy9fhltx",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonded",
     "description": {
       "moniker": "A41",
       "identity": "87D9921253A2A9EB",
@@ -493,8 +493,8 @@
       "securityContact": "dev@a41.io",
       "details": "A41 is a blockchain infrastructure company. We provide staking service on multichain. Stake your token with us now and earn rewards!"
     },
-    "unbondingHeight": 143342609,
-    "unbondingTime": "2025-12-18T08:01:50.669Z",
+    "unbondingHeight": 148083103,
+    "unbondingTime": "2026-01-21T09:47:59.831Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -715,7 +715,7 @@
   {
     "operatorAddress": "injvaloper15y9lns6gnhcp8jlkfqmxqgtlff4racajqst5ar",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "GalaxyDigital",
       "identity": "1718CFB46A0EC7FA",
@@ -723,8 +723,8 @@
       "securityContact": "bci@galaxy.com",
       "details": "Galaxy is a digital asset and blockchain leader helping institutions, startups, and qualified individuals shape a changing economy. We provide platform solutions custom-made for a digitally native ecosystem."
     },
-    "unbondingHeight": 144342674,
-    "unbondingTime": "2025-12-25T14:08:39.666Z",
+    "unbondingHeight": 151092950,
+    "unbondingTime": "2026-02-12T08:38:59.877Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -807,7 +807,7 @@
   {
     "operatorAddress": "injvaloper16jkt2gcm8qfxzjj8j6pvyc045ga82pmthz58mp",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Hex Trust",
       "identity": "1737CC41D30DCCC7",
@@ -815,8 +815,8 @@
       "securityContact": "",
       "details": "Hex Trust is a fully licensed digital asset custodian dedicated to providing solutions for protocols, foundations, financial institutions, and the Web3 ecosystem."
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 151091281,
+    "unbondingTime": "2026-02-12T08:22:05.588Z",
     "commission": {
       "commissionRates": {
         "rate": "0.075",
@@ -1194,6 +1194,29 @@
       "updateTime": "2023-03-12T22:12:13.259Z"
     },
     "minSelfDelegation": "1"
+  },
+  {
+    "operatorAddress": "injvaloper18rcjqc8hae244u7ex0qtceszry0qyqetzv0g3r",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "do not delegate - test",
+      "identity": "76A963AF086B6030",
+      "website": "https://test.com",
+      "securityContact": "test@test.test",
+      "details": "test123"
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.100000000000000006",
+        "maxRate": "0.200000000000000011",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2026-01-22T10:53:17.156Z"
+    },
+    "minSelfDelegation": "100000000000000000"
   },
   {
     "operatorAddress": "injvaloper195htudzwkmgn64wvyp7e474ul9t62ws9sr3rhn",
@@ -1909,6 +1932,29 @@
     "minSelfDelegation": "1"
   },
   {
+    "operatorAddress": "injvaloper1f68rd44mhx5lu9nz4lkq9wjeucj0gcja66sy8l",
+    "jailed": false,
+    "status": "Bonded",
+    "description": {
+      "moniker": "miPool",
+      "identity": "3FBD726BDD9ABA10",
+      "website": "https://mipool.one/",
+      "securityContact": "",
+      "details": "miPool has established in 2016 and has been mining major cryptocurrencies and developing blockchain infrastructure technology mainly in Asia."
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "1",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2025-12-29T15:51:41.964Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1fa558ytfnekl2zlmv7zpupam7zrcj2wkpqt90x",
     "jailed": true,
     "status": "UnBonded",
@@ -2072,7 +2118,7 @@
   {
     "operatorAddress": "injvaloper1h37jxecva2xgm78ejw3683vrw932j6nuzgdxgj",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "Talis Protocol",
       "identity": "5EBAD9ADF2300554",
@@ -2080,8 +2126,8 @@
       "securityContact": "eloi@talis.art",
       "details": ""
     },
-    "unbondingHeight": 145012892,
-    "unbondingTime": "2025-12-30T09:45:00.175Z",
+    "unbondingHeight": 148488025,
+    "unbondingTime": "2026-01-24T08:47:09.226Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -2829,6 +2875,29 @@
     "minSelfDelegation": "1000000000000000"
   },
   {
+    "operatorAddress": "injvaloper1nm48eujr28u3htqrjumfwhytn63rmca2prtklt",
+    "jailed": false,
+    "status": "Bonded",
+    "description": {
+      "moniker": "Nansen | Stake to Stack Points",
+      "identity": "B833F689F4C9727A61CB4628B9A66E826BCF9A28",
+      "website": "https://nansen.ai",
+      "securityContact": "stake@nansen.ai",
+      "details": "Nansen is a leading on-chain analytics platform founded in 2020, and is now one of the most trusted names in crypto, serving traders and institutions. Disclaimer: delegating comes with slashing risks"
+    },
+    "unbondingHeight": 148068053,
+    "unbondingTime": "2026-01-21T07:10:57.814Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.1"
+      },
+      "updateTime": "2025-12-23T08:09:09.986Z"
+    },
+    "minSelfDelegation": "1"
+  },
+  {
     "operatorAddress": "injvaloper1nngrhnm65wm8pu7wkah6hfs3vpd0xw463ydd65",
     "jailed": false,
     "status": "Bonded",
@@ -3015,7 +3084,7 @@
   {
     "operatorAddress": "injvaloper1pff5lusdc9htm0z96l02a0yh9e6erphrllndet",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "gumi",
       "identity": "33BAF13D389CB79F",
@@ -3023,8 +3092,8 @@
       "securityContact": "",
       "details": "One of the largest Japanese game publisher.As pioneers in the creation of entertainment using new technologies, gumi will continue to deliver surprises and excitement to the world.Creating a new business ecosystem through decentralization and capitalization of digital data."
     },
-    "unbondingHeight": 99118279,
-    "unbondingTime": "2025-01-10T08:46:43.591Z",
+    "unbondingHeight": 150591279,
+    "unbondingTime": "2026-02-08T17:36:17.777Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -3084,7 +3153,7 @@
   {
     "operatorAddress": "injvaloper1qndvee93f30q3ra2hncasphm22k97vpr89zusa",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "TokenStation.app",
       "identity": "a6589b8682518887aa48d6c70db924368a1bbbc6",
@@ -3092,8 +3161,8 @@
       "securityContact": "team@tokenstation.app",
       "details": ""
     },
-    "unbondingHeight": 101708349,
-    "unbondingTime": "2025-01-31T08:03:13.757Z",
+    "unbondingHeight": 151716499,
+    "unbondingTime": "2026-02-16T19:41:25.943Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
@@ -3245,13 +3314,13 @@
   {
     "operatorAddress": "injvaloper1rqqpyuka5dxulzjslnzjld2ltcw5095rr0jz07",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Innovating Capital",
-      "identity": "",
-      "website": "",
-      "securityContact": "",
-      "details": ""
+      "identity": "5EAF80354857733B",
+      "website": "https://innovating.capital/",
+      "securityContact": "validator@innovating.capital",
+      "details": "Innovating Capital is a premier technology fund investing in the next frontier of Web3."
     },
     "unbondingHeight": 65357515,
     "unbondingTime": "2024-04-27T20:24:02.223Z",
@@ -3520,8 +3589,8 @@
   },
   {
     "operatorAddress": "injvaloper1u8npsgrcyk4csp0cpzecwkvcqw4e6thqzcrvp7",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonded",
     "description": {
       "moniker": "Hex Trust",
       "identity": "DEA21069031BB3F4",
@@ -3529,8 +3598,8 @@
       "securityContact": "",
       "details": "Hex Trust is a fully licensed digital asset custodian dedicated to providing solutions for protocols, foundations, financial institutions, and the Web3 ecosystem."
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 146998210,
+    "unbondingTime": "2026-01-13T13:52:00.797Z",
     "commission": {
       "commissionRates": {
         "rate": "0.075",
@@ -3983,11 +4052,11 @@
     "jailed": false,
     "status": "Bonded",
     "description": {
-      "moniker": "Smart Stake 📈📊",
+      "moniker": "Smart Stake",
       "identity": "6A3420419E670ED6",
       "website": "https://smartstake.io",
       "securityContact": "info@smartstake.io",
-      "details": "⚡ Smart Stake runs high-performance bare-metal servers & provides 📊 advanced analytics with AI-powered insights for the community. 🤝 Building interchain dashboards. 🔁 Auto-compound via restake.app. 🛡️ Reliable uptime. 💰 5% commission. t.me/SmartStake"
+      "details": "Smart Stake runs reliability-first infrastructure with proactive monitoring and alerting for strong uptime. We publish AI-assisted analytics on networks, validators, relayers, and decentralization for transparency. Auto-compound via restake.app. Contact: t.me/SmartStake"
     },
     "unbondingHeight": 0,
     "unbondingTime": "1970-01-01T00:00:00.000Z",
@@ -4071,11 +4140,34 @@
     "minSelfDelegation": "1"
   },
   {
+    "operatorAddress": "injvaloper1yc8kjs50gkr56hf7hw7uj7tm8u5qdukwx8ge07",
+    "jailed": false,
+    "status": "UnBonded",
+    "description": {
+      "moniker": "KoreaUniversity BRI",
+      "identity": "EC4E091F8AA436D4",
+      "website": "https://web3.korea.ac.kr",
+      "securityContact": "",
+      "details": "KU BRI is an interdisciplinary institute uniting research centers across informatics, engineering, business, medical science and law, and cybersecurity, conducting research on foundational and applied blockchain technologies in collaboration with academia and industry."
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "commission": {
+      "commissionRates": {
+        "rate": "0.05",
+        "maxRate": "1",
+        "maxChangeRate": "0.2"
+      },
+      "updateTime": "2026-01-27T10:41:52.398Z"
+    },
+    "minSelfDelegation": "1000000000000000000"
+  },
+  {
     "operatorAddress": "injvaloper1yljq5pdnx84kkg30jfmz6ddu4eyp7twyp4z40f",
     "jailed": false,
     "status": "Bonded",
     "description": {
-      "moniker": "Ready Block",
+      "moniker": "Core ONE",
       "identity": "08D61484FF26B324",
       "website": "https://readyblock.io",
       "securityContact": "",
