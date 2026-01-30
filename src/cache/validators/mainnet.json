@@ -806,8 +806,8 @@
   },
   {
     "operatorAddress": "injvaloper16jkt2gcm8qfxzjj8j6pvyc045ga82pmthz58mp",
-    "jailed": true,
-    "status": "UnBonding",
+    "jailed": false,
+    "status": "Bonded",
     "description": {
       "moniker": "Hex Trust",
       "identity": "1737CC41D30DCCC7",
@@ -3153,7 +3153,7 @@
   {
     "operatorAddress": "injvaloper1qndvee93f30q3ra2hncasphm22k97vpr89zusa",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "TokenStation.app",
       "identity": "a6589b8682518887aa48d6c70db924368a1bbbc6",
@@ -3161,8 +3161,8 @@
       "securityContact": "team@tokenstation.app",
       "details": ""
     },
-    "unbondingHeight": 151716499,
-    "unbondingTime": "2026-02-16T19:41:25.943Z",
+    "unbondingHeight": 152184678,
+    "unbondingTime": "2026-02-20T05:05:18.025Z",
     "commission": {
       "commissionRates": {
         "rate": "0.1",
