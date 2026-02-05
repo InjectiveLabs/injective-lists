@@ -121,7 +121,7 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
         network,
         token: {
           ...tokenMetadata,
-          ...(bankMetadata.display && { name: bankMetadata.display }),
+          ...(bankMetadata.name && { name: bankMetadata.name }),
           ...(bankMetadata.symbol && { symbol: bankMetadata.symbol }),
           ...(bankMetadata.decimals && { decimals: bankMetadata.decimals })
         },

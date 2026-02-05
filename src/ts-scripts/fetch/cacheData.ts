@@ -19,6 +19,7 @@ import {
   getCw20AdapterContractForNetwork
 } from '@injectivelabs/networks'
 import {
+  isDenom,
   readJSONFile,
   updateJSONFile,
   getNetworkFileName
@@ -63,14 +64,17 @@ async function fetchAllDenomsMetadata({
 
 const formatMetadata = (metadata: Metadata) => {
   const denom = metadata.base
-  const name = denom.startsWith('factory')
+  const formattedName = denom.startsWith('factory')
     ? [...denom.split('/')].pop() || denom
     : denom
 
+  const name =
+    [metadata.name, metadata.display, formattedName].filter(
+      (value) => !isDenom(value)
+    )?.[0] || formattedName
+
   return {
-    name: name.startsWith('erc20:')
-      ? metadata.display || name
-      : metadata.name || name,
+    name,
     denom,
     address: isCw20ContractAddress(name) ? name : denom,
     logo: metadata.uri,

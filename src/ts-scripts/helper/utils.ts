@@ -34,6 +34,49 @@ export const getTokenType = (denom: string): TokenType => {
   return TokenType.Unknown
 }
 
+export const isDenom = (denom: string): boolean => {
+  if (!denom) {
+    return false
+  }
+
+  // Native: inj
+  if (denom === 'inj') {
+    return true
+  }
+
+  // IBC denoms: ibc/...
+  if (denom.startsWith('ibc/')) {
+    return true
+  }
+
+  // ERC20/Peggy denoms: peggy0x... or 0x...
+  if (denom.startsWith('peggy') || denom.startsWith('0x')) {
+    return true
+  }
+
+  // EVM denoms: erc20:0x...
+  if (denom.startsWith('erc20:')) {
+    return true
+  }
+
+  // Token factory denoms: factory/...
+  if (denom.startsWith('factory/')) {
+    return true
+  }
+
+  // CW20 contract addresses: inj1... (bech32 format)
+  if (isCw20ContractAddress(denom)) {
+    return true
+  }
+
+  // Insurance fund shares: share followed by numbers
+  if (/^share\d+$/.test(denom)) {
+    return true
+  }
+
+  return false
+}
+
 export const getNetworkFileName = (network: Network) => {
   if (network === Network.Staging) {
     return 'staging'
