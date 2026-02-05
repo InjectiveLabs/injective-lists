@@ -181,15 +181,11 @@ export const fetchValidators = async (network: Network) => {
     const formattedValidators = validators.map((validator) => {
       const { tokens, delegatorShares, ...restOfValidator } = validator
 
-<<<<<<< Updated upstream
       const unbondingTime = new Date(
         Number(restOfValidator.unbondingTime.seconds) * 1000 +
           restOfValidator.unbondingTime.nanos / 1_000_000
       )
       restOfValidator.unbondingTime = unbondingTime.toISOString()
-=======
-      console.log(validator.operatorAddress, validator.description.moniker)
->>>>>>> Stashed changes
 
       return restOfValidator
     })
