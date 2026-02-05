@@ -176,7 +176,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
 
       bankFactoryTokens.push({
         ...untaggedSymbolMeta.Unknown,
-        name: bankMetadata.name || bankMetadata.denom,
+        name: bankMetadata.name || bankMetadata.display || bankMetadata.denom,
         address: address,
         denom: bankMetadata.denom,
         decimals: bankMetadata.decimals,
