@@ -2117,8 +2117,8 @@
   },
   {
     "operatorAddress": "injvaloper1h37jxecva2xgm78ejw3683vrw932j6nuzgdxgj",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Talis Protocol",
       "identity": "5EBAD9ADF2300554",
@@ -2126,8 +2126,8 @@
       "securityContact": "eloi@talis.art",
       "details": ""
     },
-    "unbondingHeight": 148488025,
-    "unbondingTime": "2026-01-24T08:47:09.226Z",
+    "unbondingHeight": 153184101,
+    "unbondingTime": "2026-02-27T12:40:14.300Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
@@ -3153,7 +3153,7 @@
   {
     "operatorAddress": "injvaloper1qndvee93f30q3ra2hncasphm22k97vpr89zusa",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "TokenStation.app",
       "identity": "a6589b8682518887aa48d6c70db924368a1bbbc6",
