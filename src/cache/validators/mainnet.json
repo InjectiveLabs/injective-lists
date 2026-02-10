@@ -4026,8 +4026,8 @@
   },
   {
     "operatorAddress": "injvaloper1xnhwtlx47guamp36wkmnk6h4y7eqqn7jr8xcve",
-    "jailed": true,
-    "status": "UnBonding",
+    "jailed": false,
+    "status": "Bonded",
     "description": {
       "moniker": "Injective Foundation",
       "identity": "B024F5396537D7A2",
@@ -4280,7 +4280,7 @@
   {
     "operatorAddress": "injvaloper1z4z0erxx80cex9kgrk5ynk6gczs0qvale6ae48",
     "jailed": false,
-    "status": "Bonded",
+    "status": "UnBonding",
     "description": {
       "moniker": "$MAX injective",
       "identity": "F0E1AD996922183A",
@@ -4288,8 +4288,8 @@
       "securityContact": "Maxoninjective@gmail.com",
       "details": "The MAX Validator, in honor of the co-founders best friend and beloved canine MAX, provides users with the highest tier of APY rewards while returning commissions to the MAX community."
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 153698805,
+    "unbondingTime": "2026-03-03T06:50:34.884Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
