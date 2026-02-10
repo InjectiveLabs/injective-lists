@@ -1269,7 +1269,7 @@
     "jailed": false,
     "status": "Bonded",
     "description": {
-      "moniker": "SCV-Security",
+      "moniker": "SCV-Security | Staking Rebates https://inj.scv.services",
       "identity": "135E966C9A604B66",
       "website": "https://scv.services",
       "securityContact": "contact@scv.services",
@@ -4026,8 +4026,8 @@
   },
   {
     "operatorAddress": "injvaloper1xnhwtlx47guamp36wkmnk6h4y7eqqn7jr8xcve",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Injective Foundation",
       "identity": "B024F5396537D7A2",
@@ -4035,8 +4035,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": "1970-01-01T00:00:00.000Z",
+    "unbondingHeight": 153684103,
+    "unbondingTime": "2026-03-03T04:12:53.884Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
@@ -4280,7 +4280,7 @@
   {
     "operatorAddress": "injvaloper1z4z0erxx80cex9kgrk5ynk6gczs0qvale6ae48",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "$MAX injective",
       "identity": "F0E1AD996922183A",
