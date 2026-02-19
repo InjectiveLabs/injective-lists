@@ -19,7 +19,7 @@ const evmMainnetUpgrade = {
 export const chainUpgradeConfig = {
   proposalId: 619,
   blockHeight: 154983000,
-  disableMaintenance: false,
+  disableMaintenance: true,
   proposalMsg:
     'Scheduled maintenance on February 19th, 2026 at ~15:00 UTC to implement the Injective Real-Time EVM Mainnet upgrade.'
 } as ChainConfig | {}
