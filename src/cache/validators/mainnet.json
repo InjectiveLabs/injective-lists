@@ -2601,7 +2601,7 @@
   {
     "operatorAddress": "injvaloper1m5lqvd8kr2s7lx3j2c7cfa33hxrqa3cth9pd56",
     "jailed": false,
-    "status": "UnBonding",
+    "status": "Bonded",
     "description": {
       "moniker": "Tané",
       "identity": "A8709BB7ABF23A73",
@@ -3911,8 +3911,8 @@
   },
   {
     "operatorAddress": "injvaloper1x2k4l6k57c2rqhyzdef6y9galutn7psegeqylz",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "5.0 Validator | Airdrop ",
       "identity": "EC771B7A05CDF1D4",
@@ -3920,8 +3920,8 @@
       "securityContact": "5.0validator@protonmail.com",
       "details": "Secure & Robust Validator. Autocompound available on Restake, support builders, support us."
     },
-    "unbondingHeight": 155019021,
-    "unbondingTime": "2026-03-12T23:17:27.689Z",
+    "unbondingHeight": 155132699,
+    "unbondingTime": "2026-03-13T19:31:28.232Z",
     "commission": {
       "commissionRates": {
         "rate": "0.05",
