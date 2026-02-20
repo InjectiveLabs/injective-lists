@@ -2601,7 +2601,7 @@
   {
     "operatorAddress": "injvaloper1m5lqvd8kr2s7lx3j2c7cfa33hxrqa3cth9pd56",
     "jailed": false,
-    "status": "UnBonded",
+    "status": "Bonded",
     "description": {
       "moniker": "Tané",
       "identity": "A8709BB7ABF23A73",
@@ -4026,8 +4026,8 @@
   },
   {
     "operatorAddress": "injvaloper1xnhwtlx47guamp36wkmnk6h4y7eqqn7jr8xcve",
-    "jailed": false,
-    "status": "Bonded",
+    "jailed": true,
+    "status": "UnBonding",
     "description": {
       "moniker": "Injective Foundation",
       "identity": "B024F5396537D7A2",
@@ -4035,8 +4035,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 153684103,
-    "unbondingTime": "2026-03-03T04:12:53.884Z",
+    "unbondingHeight": 155033061,
+    "unbondingTime": "2026-03-13T01:57:12.060Z",
     "commission": {
       "commissionRates": {
         "rate": "1",
