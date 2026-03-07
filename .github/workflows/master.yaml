@@ -83,6 +83,10 @@ jobs:
         if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
         run: pnpm run generate:tokens:evm
 
+      - name: Fetch Bff tokens
+        if: ${{ !contains(github.event.head_commit.message, 'fast deploy') }}
+        run: pnpm run fetch:bff:tokens
+
       - name: Generate configs
         run: pnpm run generate:configs
 

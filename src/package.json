@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "//fetch": "========== fetch & cache data ==========",
+    "fetch:bff:tokens": "tsx ./ts-scripts/fetch/bffTokens.ts",
     "fetch:cache:data": "tsx ./ts-scripts/fetch/cacheData.ts",
     "fetch:swap:routes": "tsx ./ts-scripts/fetch/swapRoutes.ts",
     "fetch:wallets:ofac": "tsx ./ts-scripts/fetch/ofacList.ts",
