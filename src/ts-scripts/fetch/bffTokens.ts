@@ -7,6 +7,7 @@ const PAGE_LIMIT = 1000
 const MAX_RETRIES = 5
 const INITIAL_DELAY = 3000
 const BATCH_CONCURRENCY = 5
+const REQUEST_TIMEOUT = 5000
 
 interface BFFTokenResponse {
   data: any[]
@@ -43,7 +44,9 @@ const fetchPage = async (
   page: number
 ): Promise<BFFTokenResponse> => {
   const url = `${BASE_URL}?network=${network}&page=${page}&limit=${PAGE_LIMIT}`
-  const { data } = await axios.get<BFFTokenResponse>(url)
+  const { data } = await axios.get<BFFTokenResponse>(url, {
+    timeout: REQUEST_TIMEOUT
+  })
 
   if (data.error) throw new Error(data.error)
   if (!Array.isArray(data.data))
@@ -83,9 +86,15 @@ const fetchAllTokens = async (network: Network): Promise<any[]> => {
           `    ✓ Page ${batch[j]}: ${result.value.data.length} tokens`
         )
       } else {
-        console.error(`    ✗ Page ${batch[j]}: ${result.reason.message}`)
+        throw new Error(`Failed to fetch page ${batch[j]}: ${result.reason.message}`)
       }
     }
+  }
+
+  if (tokens.length !== total) {
+    throw new Error(
+      `Token count mismatch: expected ${total} tokens but got ${tokens.length}`
+    )
   }
 
   console.log(`  ✓ Fetched ${tokens.length} ${network} tokens`)
@@ -112,11 +121,17 @@ const main = async (): Promise<void> => {
 
   const results = await Promise.allSettled(networks.map(fetchBFFTokens))
 
+  const hasFailures = results.some((result) => result.status === 'rejected')
+
   results.forEach((result, i) => {
     if (result.status === 'rejected') {
       console.error(`Failed to fetch ${networks[i]} tokens:`, result.reason)
     }
   })
+
+  if (hasFailures) {
+    process.exit(1)
+  }
 
   console.log('Done!')
 }
