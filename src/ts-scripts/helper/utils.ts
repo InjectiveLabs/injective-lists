@@ -235,7 +235,7 @@ export const readJSONFile = ({
   }
 }
 
-export const updateJSONFile = (path: string, data: any) => {
+export const updateJSONFile = (path: string, data: any): void => {
   const rootDir = findRootDirectory(__dirname)
   const filePath = `${rootDir}/${path}`
   const dirPath = dirname(filePath)
@@ -244,14 +244,14 @@ export const updateJSONFile = (path: string, data: any) => {
     try {
       mkdirSync(dirPath, { recursive: true })
     } catch (e: any) {
-      console.log('error creating directory', e)
+      throw new Error(`Error creating directory ${dirPath}: ${e.message}`)
     }
   }
 
   try {
     writeFileSync(filePath, JSON.stringify(data, null, 2))
   } catch (e: any) {
-    console.error(`Error updating JSON file: ${path}`, e)
+    throw new Error(`Error writing JSON file ${path}: ${e.message}`)
   }
 }
 
