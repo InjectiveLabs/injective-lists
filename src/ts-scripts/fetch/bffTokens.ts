@@ -7,7 +7,7 @@ const PAGE_LIMIT = 1000
 const MAX_RETRIES = 5
 const INITIAL_DELAY = 3000
 const BATCH_CONCURRENCY = 5
-const REQUEST_TIMEOUT = 5000
+const REQUEST_TIMEOUT = 30000
 
 interface BFFTokenResponse {
   data: any[]

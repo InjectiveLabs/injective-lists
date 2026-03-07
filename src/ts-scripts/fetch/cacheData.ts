@@ -183,8 +183,6 @@ export const fetchValidators = async (network: Network) => {
     })
 
     const formattedValidators = validators.map((validator) => {
-      console.log('validator', validator)
-
       return validator
     })
 
