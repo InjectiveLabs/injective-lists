@@ -6,7 +6,7 @@ const BASE_URL = 'https://staging.bff-api.injective.network/api/v1/tokens'
 const PAGE_LIMIT = 1000
 const MAX_RETRIES = 5
 const INITIAL_DELAY = 3000
-const BATCH_CONCURRENCY = 5
+const BATCH_CONCURRENCY = 10
 const REQUEST_TIMEOUT = 30000
 
 interface BFFTokenResponse {
@@ -86,7 +86,9 @@ const fetchAllTokens = async (network: Network): Promise<any[]> => {
           `    ✓ Page ${batch[j]}: ${result.value.data.length} tokens`
         )
       } else {
-        throw new Error(`Failed to fetch page ${batch[j]}: ${result.reason.message}`)
+        throw new Error(
+          `Failed to fetch page ${batch[j]}: ${result.reason.message}`
+        )
       }
     }
   }
