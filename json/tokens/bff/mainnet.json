@@ -453,6 +453,37 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "network": "mainnet",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "description": "",
+    "logo": null,
+    "tokenType": "erc20",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "USDC",
+        "exponent": 6,
+        "aliases": [
+          "USDC"
+        ]
+      }
+    ],
+    "base": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "display": "USDC",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "erc20:0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
     "network": "mainnet",
     "name": "WETH",
@@ -479,6 +510,30 @@
     ],
     "base": "erc20:0xe9aBA835f813ca05E50A6C0ce65D0D74390F7dE7",
     "display": "WETH",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
+    "denom": "erc20:0xfAFF041A2e6820fcE6d076C546ad608102F657d5",
+    "network": "mainnet",
+    "name": "",
+    "symbol": "",
+    "decimals": 0,
+    "description": "",
+    "logo": null,
+    "tokenType": "erc20",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "erc20:0xfAFF041A2e6820fcE6d076C546ad608102F657d5",
+        "exponent": 0,
+        "aliases": []
+      }
+    ],
+    "base": "erc20:0xfAFF041A2e6820fcE6d076C546ad608102F657d5",
+    "display": "",
     "isActive": true,
     "uriStatus": "valid"
   },
