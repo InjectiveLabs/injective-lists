@@ -741,5 +741,13 @@ export const untaggedSymbolMeta = {
     symbol: 'MEGA',
     logo: 'megaeth.webp',
     coinGeckoId: 'megaeth'
+  },
+
+  USOIL: {
+    name: 'WTI Crude Oil (CFD)',
+    decimals: 6,
+    symbol: 'USOIL',
+    logo: 'wti.webp',
+    coinGeckoId: ''
   }
 }
