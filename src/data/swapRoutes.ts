@@ -17417,5 +17417,60 @@ export const mainnetSwapRoutes = [
     steps: [
       '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7'
     ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom:
+      'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom:
+      'factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0xa508cb32923323679f29a032c70342c147c17d0145625922b0ef22e955c844c0',
+      '0x1b1e062b3306f26ae3af3c354a10c1cf38b00dcb42917f038ba3fc14978b1dd8'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom:
+      'ibc/A8F39212ED30B6A8C2AC736665835720D3D7BE4A1D18D68566525EC25ECF1C9B',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0x0511ddc4e6586f3bfe1acb2dd905f8b8a82c97e1edaef654b12ca7e6031ca0fa',
+      '0x264e75a68804efa0f4279b097563a0e167cb9aea143001f6ee0c28877cc879f2'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom: 'peggy0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0xd1956e20d74eeb1febe31cd37060781ff1cb266f49e0512b446a5fafa9a16034'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom:
+      'ibc/F51BB221BAA275F2EBF654F70B005627D7E713AFFD6D86AFD1E43CAA886149F4',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0x35fd4fa9291ea68ce5eef6e0ea8567c7744c1891c2059ef08580ba2e7a31f101'
+    ]
+  },
+  {
+    source_denom: 'factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd',
+    target_denom:
+      'ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97',
+    steps: [
+      '0xae91b4f0c34ed3e7fbd9fbec1a9acbc74d53892de5e79e8da8f9537471dbd6b7',
+      '0xd9089235d2c1b07261cbb2071f4f5a7f92fa1eca940e3cad88bb671c288a972f'
+    ]
   }
 ]
