@@ -1,4 +1,5 @@
 import {
+  Address,
   Metadata,
   TokenType,
   SpotMarket,
@@ -18,6 +19,12 @@ import {
   getNetworkEndpoints,
   getCw20AdapterContractForNetwork
 } from '@injectivelabs/networks'
+import {
+  uint8ArrayToHex,
+  base64ToUint8Array,
+  BECH32_ADDR_CONS_PREFIX,
+  sha256
+} from '@injectivelabs/sdk-ts'
 import {
   isDenom,
   readJSONFile,
@@ -183,7 +190,20 @@ export const fetchValidators = async (network: Network) => {
     })
 
     const formattedValidators = validators.map((validator) => {
-      return validator
+      if (!validator.consensusPubKey) {
+        return { ...validator, valconsAddress: '' }
+      }
+
+      const pubKeyBytes = base64ToUint8Array(validator.consensusPubKey)
+      const addressBytes = sha256(pubKeyBytes).slice(0, 20)
+      const addressHex = uint8ArrayToHex(addressBytes)
+
+      const valconsAddress = Address.fromHex(
+        addressHex,
+        BECH32_ADDR_CONS_PREFIX
+      ).bech32Address
+
+      return { ...validator, valconsAddress }
     })
 
     // cache data in case of api error
