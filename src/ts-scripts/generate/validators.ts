@@ -48,6 +48,7 @@ export const generateValidatorsData = async (network: Network) => {
     for (const batch of batches) {
       const batchPromises = batch.map(async (validator: any) => {
         const {
+          valconsAddress,
           operatorAddress,
           description: { identity, moniker }
         } = validator
@@ -61,6 +62,7 @@ export const generateValidatorsData = async (network: Network) => {
         return {
           moniker,
           identity,
+          valconsAddress,
           operatorAddress,
           image: validatorImageUrl
         }
