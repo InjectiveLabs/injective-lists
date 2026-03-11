@@ -3069,6 +3069,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x67462ddc4a045e175da8d8310f59a6c33c9994ef98ced0a31ffd977af9da9703",
+    "marketStatus": "active",
+    "ticker": "USDT/USDC",
+    "baseDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 10000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x686d143de4268cac00ff6a7e9cb713484dadf40a5c993e166f260ca8081bc942",
     "marketStatus": "active",
     "ticker": "MT1/USDT",
