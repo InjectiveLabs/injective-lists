@@ -191,6 +191,10 @@ export const mainnetGridMarkets = [
     contractAddress: 'inj1k0tdjpfthwz7t6zlghrt27lwr5zpgqvrwn6khu',
     slug: 'hpnj-inj'
   },
+  {
+    contractAddress: 'inj1cr35mf6u8lh5na5n20pcsat3ja58sx6pdl8vlj',
+    slug: 'statom-atom'
+  }
 ]
 
 export const stagingGridMarkets = [
