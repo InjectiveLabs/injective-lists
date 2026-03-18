@@ -1,4 +1,4 @@
-import { TokenVerification } from '@injectivelabs/sdk-ts'
+import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -43,15 +43,18 @@ const mainnetTokens = [
 
 // filter out tokens that are not in the supply to optimize coinGecko API calls on devnet indexer
 const devnetFilteredTokens = devnetTokens.filter((token) => {
-  return devnetSupplyDenoms.includes(token.denom)
+  return (
+    devnetSupplyDenoms.includes(token.denom) ||
+    token.tokenType === TokenType.Symbol
+  )
 })
 
 export const generateTokensList = async (network: Network) => {
   const list = isMainnet(network)
     ? mainnetTokens
     : isTestnet(network)
-    ? testnetTokens
-    : devnetFilteredTokens
+      ? testnetTokens
+      : devnetFilteredTokens
 
   const logos = readJSONFile({
     path: 'src/data/tokenImagePaths.json'
