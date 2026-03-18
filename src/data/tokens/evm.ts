@@ -1,7 +1,12 @@
 import { symbolMeta } from './symbolMeta'
 import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 
-export const devnetTokens = []
+export const devnetTokens = [
+  {
+    ...symbolMeta.USDC,
+    address: 'erc20:0x6158f339719672a528B22b8A988EfF3f733a1e47'
+  }
+]
 
 export const testnetTokens = [
   {
