@@ -57,7 +57,8 @@ export const devnetMarketIds = [
   '0x2d3b8d8833dda54a717adea9119134556848105fd6028e9a4a526e4e5a122a57', // kira-inj
   '0x42edf70cc37e155e9b9f178e04e18999bc8c404bd7b638cc4cbf41da8ef45a21', // qunt-inj
   '0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597', // hdro-inj
-  '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839' // black-inj
+  '0xd166688623206f9931307285678e9ff17cecd80a27d7b781dd88cecfba3b1839', // black-inj
+  '0x5efdcc4b3a949b3fc78c8c2055d1e46f8a6fe8130627012554047fb3a511345b' // usdc-usdt
 ]
 
 export const stagingMarketIds = [

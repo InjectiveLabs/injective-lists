@@ -4,7 +4,7 @@ import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 export const devnetTokens = [
   {
     ...symbolMeta.USDC,
-    address: 'erc20:0x6158f339719672a528B22b8A988EfF3f733a1e47'
+    address: 'erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a'
   }
 ]
 
@@ -46,5 +46,9 @@ export const mainnetTokens = [
     symbol: 'WINJ',
     name: 'Wrapped INJ',
     address: 'erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB'
+  },
+  {
+    ...symbolMeta.USDC,
+    address: 'erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a'
   }
 ]
