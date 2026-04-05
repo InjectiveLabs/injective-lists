@@ -32,10 +32,6 @@ export const testnetTokens = [
     address: 'erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d'
   },
   {
-    ...symbolMeta.USDC,
-    address: 'erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d'
-  },
-  {
     ...untaggedSymbolMeta.Unknown,
     decimals: 18,
     symbol: 'erc20:0xD8F3573F6dC7bedD4C5246F2aAe90df47854A229',
