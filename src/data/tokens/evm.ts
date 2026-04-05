@@ -29,7 +29,10 @@ export const testnetTokens = [
   },
   {
     ...symbolMeta.USDC,
-    symbol: 'USDC',
+    address: 'erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d'
+  },
+  {
+    ...symbolMeta.USDC,
     address: 'erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d'
   },
   {

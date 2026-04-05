@@ -109,8 +109,6 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
       const tokenMetadata = tokenMap[tokenPair.bankDenom.toLowerCase()]
       const bankMetadata = bankMetadataAddressMap[tokenPair.bankDenom][0]
 
-      console.log(tokenPair.bankDenom, { bankMetadata })
-
       if (!tokenMetadata) {
         console.log(`Token ${tokenPair.bankDenom} not found`)
 
