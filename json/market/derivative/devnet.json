@@ -1189,35 +1189,6 @@
     "minNotional": 1000000
   },
   {
-    "oracleBase": "0x00084edc844a6f88449c59c8cfcdb2225799a2330503472cb0bc4f9369a717fa",
-    "oracleQuote": "USD",
-    "oracleType": "chainlinkdatastreams",
-    "oracleScaleFactor": 6,
-    "reduceMarginRatio": "0.05",
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x2de359149a679c2c9b3717bc52180fe492b339ba2454e5ddb14aa3cff13c1cc5",
-    "marketStatus": "active",
-    "ticker": "GUS/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 100000
-  },
-  {
     "oracleBase": "DOT",
     "oracleQuote": "USDC",
     "oracleType": "pricefeed",
@@ -2260,35 +2231,6 @@
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.001,
     "minNotional": 1000000
-  },
-  {
-    "oracleBase": "0x00039d9e45394f473ab1f050a1b963e6b05351e52d71e507509ada0c95ed75b8",
-    "oracleQuote": "USD",
-    "oracleType": "chainlinkdatastreams",
-    "oracleScaleFactor": 6,
-    "reduceMarginRatio": "0.05",
-    "initialMarginRatio": "0.02",
-    "maintenanceMarginRatio": "0.01",
-    "isPerpetual": true,
-    "marketId": "0x5e5fcab0b023aa708c2573c26834cab2914f059a5d6e5547faede78f3d5dc77e",
-    "marketStatus": "active",
-    "ticker": "zug/USDT PERP",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0.0001",
-    "takerFeeRate": "0.002",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 10000,
-    "minQuantityTickSize": 0.01,
-    "minNotional": 100000
   },
   {
     "oracleBase": "HYPE",
