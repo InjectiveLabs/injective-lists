@@ -55,9 +55,9 @@
   },
   {
     "operatorAddress": "injvaloper1q8nh58utz78ree7e4cnxnvmyt0mrq5wwxfth3j",
-    "jailed": false,
+    "jailed": true,
     "consensusPubKey": "fdVmcgIktuXJvJc3wladqAWfPk/NY1wMHHZAUmpB1Pw=",
-    "status": "Bonded",
+    "status": "UnBonding",
     "tokens": "100",
     "delegatorShares": "100000000000000000000",
     "description": {
@@ -67,8 +67,8 @@
       "securityContact": "",
       "details": ""
     },
-    "unbondingHeight": 0,
-    "unbondingTime": 0,
+    "unbondingHeight": 135847,
+    "unbondingTime": 1778682521,
     "commission": {
       "commissionRates": {
         "rate": "0.1",
