@@ -17,9 +17,9 @@ const evmMainnetUpgrade = {
 }
 
 export const chainUpgradeConfig = {
-  proposalId: 628,
-  blockHeight: 161472000,
-  disableMaintenance: true,
+  proposalId: 632,
+  blockHeight: 164394000,
+  disableMaintenance: false,
   proposalMsg:
-    'Scheduled maintenance on April 7th, 2026 at ~14:00 UTC to implement the Real-Time USDC Mainnet upgrade.'
+    'Scheduled maintenance on April 28th, 2026 at ~14:00 UTC to implement the Injective Mainnet Performance Upgrade.'
 } as ChainConfig | {}
