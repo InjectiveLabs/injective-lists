@@ -107,7 +107,6 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
 
     for (const tokenPair of response.tokenPairs) {
       const tokenMetadata = tokenMap[tokenPair.bankDenom.toLowerCase()]
-      const bankMetadata = bankMetadataAddressMap[tokenPair.bankDenom][0]
 
       if (!tokenMetadata) {
         console.log(`Token ${tokenPair.bankDenom} not found`)
@@ -115,13 +114,15 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
         continue
       }
 
+      const bankMetadata = bankMetadataAddressMap[tokenPair.bankDenom]?.[0]
+
       const evmTokenMetadata = formatToEvmToken({
         network,
         token: {
           ...tokenMetadata,
-          ...(bankMetadata.name && { name: bankMetadata.name }),
-          ...(bankMetadata.symbol && { symbol: bankMetadata.symbol }),
-          ...(bankMetadata.decimals && { decimals: bankMetadata.decimals })
+          ...(bankMetadata?.name && { name: bankMetadata.name }),
+          ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
+          ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals })
         },
         evmAddress: tokenPair.erc20Address
       })
@@ -129,7 +130,7 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
       evmTokenList.push(evmTokenMetadata)
     }
 
-    await updateJSONFile(
+    updateJSONFile(
       `json/tokens/evm/${getNetworkFileName(network)}.json`,
       evmTokenList.sort((a, b) => a.address.localeCompare(b.address))
     )
