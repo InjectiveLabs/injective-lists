@@ -45,9 +45,5 @@ export const mainnetTokens = [
     symbol: 'WINJ',
     name: 'Wrapped INJ',
     address: 'erc20:0x0000000088827d2d103ee2d9A6b781773AE03FfB'
-  },
-  {
-    ...symbolMeta.USDC,
-    address: 'erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a'
   }
 ]

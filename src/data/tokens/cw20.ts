@@ -112,24 +112,28 @@ export const mainnetTokens: Cw20TokenSource[] = [
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (legacy)',
     symbol: 'USDCso',
     source: TokenSource.Solana,
     address: 'inj12pwnhtv7yat2s30xuf4gdk9qm85v4j3e60dgvu'
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (legacy)',
     symbol: 'USDCarb',
     source: TokenSource.Arbitrum,
     address: 'inj1lmcfftadjkt4gt3lcvmz6qn4dhx59dv2m7yv8r'
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (legacy)',
     symbol: 'USDCbsc',
     source: TokenSource.BinanceSmartChain,
     address: 'inj1dngqzz6wphf07fkdam7dn55t8t3r6qenewy9zu'
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (legacy)',
     symbol: 'USDCpoly',
     source: TokenSource.Polygon,
     address: 'inj19s2r64ghfqq3py7f5dr0ynk8yj0nmngca3yvy3'

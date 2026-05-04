@@ -57,6 +57,7 @@ export const mainnetTokens: IbcTokenSource[] = [
     ...symbolMeta.USDC,
     baseDenom: 'uusdc',
     isNative: true,
+    symbol: 'USDCnb',
     channelId: 'channel-148',
     source: TokenSource.Cosmos,
     path: 'transfer/channel-148',
