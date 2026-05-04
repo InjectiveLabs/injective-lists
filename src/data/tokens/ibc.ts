@@ -46,6 +46,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (Legacy)',
     symbol: 'axlUSDC',
     baseDenom: 'uusdc',
     channelId: 'channel-84',
@@ -55,6 +56,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (Legacy)',
     baseDenom: 'uusdc',
     isNative: true,
     symbol: 'USDCnb',
@@ -65,6 +67,7 @@ export const mainnetTokens: IbcTokenSource[] = [
   },
   {
     ...symbolMeta.USDC,
+    name: 'USD Coin (Legacy)',
     symbol: 'USDCgateway',
     channelId: 'channel-183',
     path: 'transfer/channel-183',
