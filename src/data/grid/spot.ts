@@ -92,8 +92,12 @@ export const mainnetGridMarkets = [
     contractAddress: 'inj1ar6vmwfft83gzhqrl62r9l93tlclup8ss0suam'
   },
   {
-    slug: 'usdc-usdt',
+    slug: 'usdcnb-usdc',
     contractAddress: 'inj16ppjvumwvlur8e6r8le39j7wjrrh8dnjevx72h'
+  },
+  {
+    contractAddress: 'inj1ke59yqpz23dh4mheyh8fypnutnynhekdzrlkjh',
+    slug: 'usdc-usdt'
   },
   {
     slug: 'pyth-inj',
