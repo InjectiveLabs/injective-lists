@@ -3164,7 +3164,7 @@
   {
     "marketId": "0x9c8a91a894f773792b1e8d0b6a8224a6b748753738e9945020ee566266f817be",
     "marketStatus": "active",
-    "ticker": "USDC/USDT",
+    "ticker": "USDCnb/USDT",
     "baseDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
@@ -3177,9 +3177,9 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "USD Coin",
+      "name": "USD Coin (Legacy)",
       "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
-      "symbol": "USDC",
+      "symbol": "USDCnb",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
       "decimals": 6,
       "coinGeckoId": "",
@@ -3189,7 +3189,7 @@
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 100000,
+    "minQuantityTickSize": 1000000,
     "minNotional": 1000000
   },
   {
