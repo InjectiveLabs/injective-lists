@@ -203,6 +203,35 @@
     "minNotional": 1000000
   },
   {
+    "oracleBase": "qaBTC",
+    "oracleQuote": "USDC",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.099999",
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0x210872df482ca8c49614d8628edab01e8fee3006b9564e1d7260df446e633190",
+    "marketStatus": "active",
+    "ticker": "qaBTC/USDC PERP",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "minNotional": 1000000
+  },
+  {
     "oracleBase": "0xed82efbfade01083ffa8f64664c86af39282c9f084877066ae72b635e77718f0",
     "oracleQuote": "0x1fc18861232290221461220bd4e2acd1dcdfbc89c84092c93c18bdc7756c1588",
     "oracleType": "pyth",
@@ -966,6 +995,35 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 10,
     "minQuantityTickSize": 0.1,
+    "minNotional": 1000000
+  },
+  {
+    "oracleBase": "qaETH",
+    "oracleQuote": "USDC",
+    "oracleType": "pricefeed",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.099999",
+    "initialMarginRatio": "0.033333",
+    "maintenanceMarginRatio": "0.02",
+    "isPerpetual": true,
+    "marketId": "0xe28d0df0c491337b19be8bbe3fdd018b9a0e537c4f44accefda3ad7a6f272c8d",
+    "marketStatus": "active",
+    "ticker": "qaETH/USDC PERP",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
     "minNotional": 1000000
   },
   {
