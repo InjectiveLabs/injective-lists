@@ -1984,6 +1984,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x5efdcc4b3a949b3fc78c8c2055d1e46f8a6fe8130627012554047fb3a511345b",
+    "marketStatus": "active",
+    "ticker": "USDC/USDT",
+    "baseDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x609376b88fd2e6e37ffc2ac9d6858633ab1d6c90ec6d100f9d205d38e531f8ac",
     "marketStatus": "demolished",
     "ticker": "AUSD/USDC",
@@ -4307,6 +4338,37 @@
     "minPriceTickSize": 0.0001,
     "minQuantityTickSize": 1000000000000000,
     "minNotional": 10000000000000000
+  },
+  {
+    "marketId": "0xce1d6d6cc747beac4df163329c35f91f4d3397d9549c5e2fe6a29ea3a043063a",
+    "marketStatus": "active",
+    "ticker": "USDC/USDCnb",
+    "baseDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+    "quoteToken": {
+      "name": "USD Coin (Legacy)",
+      "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
+      "symbol": "USDCnb",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0xcf38a5187b543552160e0af476b252c3dcac08fa4134866ac663afaf13f65b75",
