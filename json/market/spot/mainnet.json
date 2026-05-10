@@ -3007,6 +3007,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x9a0dc673e14f7c7e38ee3ef36cfea218c08b20dc97ea63398e77e688f923e263",
+    "marketStatus": "active",
+    "ticker": "AUSD/USDC",
+    "baseDenom": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "AUSD",
+      "address": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+      "symbol": "AUSD",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3da8315b-d806-4c5f-81f3-5fda01634900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 10000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x9a629b947b6f946af4f6076cfda67f3535d73ee3cef6176cf6d9c8d6b0a03f37",
     "marketStatus": "paused",
     "ticker": "SUSHI/USDC",
