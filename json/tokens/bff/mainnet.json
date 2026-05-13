@@ -7018,6 +7018,30 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "ibc/7C678660E9DA2C9B85690BDC32B42E524EA16DCDBCDED089CE332E2883116159",
+    "network": "mainnet",
+    "name": "transfer/channel-1/transfer/08-wasm-1369/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 IBC token",
+    "symbol": "TRANSFER/08-WASM-1369/0XA0B86991C6218B36C1D19D4A2E9EB0CE3606EB48",
+    "decimals": 0,
+    "description": "IBC token from transfer/channel-1/transfer/08-wasm-1369/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "logo": null,
+    "tokenType": "ibc",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "transfer/08-wasm-1369/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "exponent": 0,
+        "aliases": []
+      }
+    ],
+    "base": "ibc/7C678660E9DA2C9B85690BDC32B42E524EA16DCDBCDED089CE332E2883116159",
+    "display": "transfer/channel-1/transfer/08-wasm-1369/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "ibc/7CF12F727C8C8A6589016D8565830B6DE0D87F70ED1A2C80270B2ABC77426DE7",
     "network": "mainnet",
     "name": "transfer/channel-8/transfer/channel-72/uluna IBC token",
@@ -14564,7 +14588,7 @@
     ],
     "base": "peggy0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
     "display": "peggy0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
-    "isActive": false,
+    "isActive": true,
     "uriStatus": "valid"
   },
   {
