@@ -10446,5 +10446,37 @@
     "staker_state",
     "all_staker",
     "voting_power"
+  ],
+  "1999": [
+    "config",
+    "pending_migration",
+    "pending_owner_rotation"
+  ],
+  "2000": [],
+  "2001": [
+    "config",
+    "pending_owner_rotation",
+    "pending_farm_code_id_update",
+    "farm",
+    "farm_by_addr",
+    "farms",
+    "farm_count"
+  ],
+  "2002": [
+    "config",
+    "simulate_zap",
+    "keepers",
+    "is_keeper"
+  ],
+  "2003": [
+    "config",
+    "stats",
+    "lock",
+    "locks_by_owner",
+    "locks_by_creator",
+    "locks_by_denom",
+    "all_locks",
+    "claimable",
+    "claimable_many"
   ]
 }

@@ -12390,5 +12390,44 @@
     "unstake",
     "deposit_reward",
     "stake"
+  ],
+  "1999": [
+    "propose",
+    "apply",
+    "cancel",
+    "propose_new_owner",
+    "apply_owner_rotation",
+    "cancel_owner_proposal"
+  ],
+  "2000": [],
+  "2001": [
+    "create_farm",
+    "update_config",
+    "propose_update_farm_code_id",
+    "apply_update_farm_code_id",
+    "cancel_update_farm_code_id_proposal",
+    "propose_new_owner",
+    "apply_owner_rotation",
+    "cancel_owner_proposal"
+  ],
+  "2002": [
+    "zap",
+    "receive",
+    "zap_balance",
+    "add_keeper",
+    "remove_keeper",
+    "update_config",
+    "sweep",
+    "callback"
+  ],
+  "2003": [
+    "lock",
+    "lock_cw20",
+    "receive",
+    "extend",
+    "top_up",
+    "transfer_owner",
+    "withdraw",
+    "update_config"
   ]
 }
