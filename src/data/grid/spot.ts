@@ -198,6 +198,34 @@ export const mainnetGridMarkets = [
   {
     contractAddress: 'inj1cr35mf6u8lh5na5n20pcsat3ja58sx6pdl8vlj',
     slug: 'statom-atom'
+  },
+  {
+    slug: 'atom-usdc',
+    contractAddress: 'inj1v3kl2ve7fsx8nx4nuvz7xd9vghxev6l220g8yg'
+  },
+  {
+    slug: 'ausd-usdc',
+    contractAddress: 'inj1zmryuwcy9m80t535zvjydnw5rs6fkldceu2p8e'
+  },
+  {
+    slug: 'hdro-usdc',
+    contractAddress: 'inj13k2n987huutmdq7hrp50mtkpej7aldw7dzjyxp'
+  },
+  {
+    slug: 'inj-usdc',
+    contractAddress: 'inj1a573wahqyjzrpzs2r9egfenmdfynnwgrje9c6f'
+  },
+  {
+    slug: 'sol-usdc',
+    contractAddress: 'inj1dx8kuevhq7m7g9a2e4es83ps62htr5g3y7azgr'
+  },
+  {
+    slug: 'weth-usdc',
+    contractAddress: 'inj1xzkeyvg3sgccz83qeq9hdj7ql4n2yewnpazcku'
+  },
+  {
+    slug: 'xion-usdc',
+    contractAddress: 'inj1jncgjgum339yl8rpnpdmd35lc82dfn8apcq7v0'
   }
 ]
 
