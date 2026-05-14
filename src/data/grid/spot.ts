@@ -204,10 +204,6 @@ export const mainnetGridMarkets = [
     contractAddress: 'inj1v3kl2ve7fsx8nx4nuvz7xd9vghxev6l220g8yg'
   },
   {
-    slug: 'ausd-usdc',
-    contractAddress: 'inj1zmryuwcy9m80t535zvjydnw5rs6fkldceu2p8e'
-  },
-  {
     slug: 'hdro-usdc',
     contractAddress: 'inj13k2n987huutmdq7hrp50mtkpej7aldw7dzjyxp'
   },
