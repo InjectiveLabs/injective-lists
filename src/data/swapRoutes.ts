@@ -17496,5 +17496,21 @@ export const mainnetSwapRoutes = [
     steps: [
       '0xce1d6d6cc747beac4df163329c35f91f4d3397d9549c5e2fe6a29ea3a043063a'
     ]
+  },
+  {
+    source_denom:
+      'ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E',
+    target_denom: 'inj',
+    steps: [
+      '0xce1d6d6cc747beac4df163329c35f91f4d3397d9549c5e2fe6a29ea3a043063a',
+      '0xa8c14f892f7f7d2516442220a05b652d5afee3f57a5495981dfad7c99ef78e84'
+    ]
+  },
+  {
+    source_denom: 'inj',
+    target_denom: 'erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a',
+    steps: [
+      '0xa8c14f892f7f7d2516442220a05b652d5afee3f57a5495981dfad7c99ef78e84'
+    ]
   }
 ]
