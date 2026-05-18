@@ -17792,6 +17792,35 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "share170",
+    "network": "mainnet",
+    "name": "BTC/USDC PERP Insurance Fund",
+    "symbol": "share170",
+    "decimals": 18,
+    "description": "Insurance fund for BTC/USDC PERP market",
+    "logo": null,
+    "tokenType": "insuranceFund",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "share170",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "BTC/USDC PERP",
+        "exponent": 18,
+        "aliases": []
+      }
+    ],
+    "base": "share170",
+    "display": "BTC/USDC PERP",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "share18",
     "network": "mainnet",
     "name": "BONK/USDT PERP Insurance Fund",
