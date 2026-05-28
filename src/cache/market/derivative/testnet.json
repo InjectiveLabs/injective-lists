@@ -1060,6 +1060,35 @@
     }
   },
   {
+    "ticker": "qaATOM/USDC PERP",
+    "marketId": "0xfc7c2e30d9e544849f49e4f6dc39f35445f05b5fb05b51a542e79b29473bb7d8",
+    "oracleBase": "qaATOM",
+    "oracleType": "pricefeed",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "oracleQuote": "USDC",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0",
+    "takerFeeRate": "0.0005",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.099999",
+    "initialMarginRatio": "0.033333",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.02",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.01,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "BTC/USDC PERP",
     "marketId": "0xfd704649cf3a516c0c145ab0111717c44640d8dbe52a462ae35cadf2f6df1515",
     "oracleBase": "0x00037da06d56d083fe599397a4769a042d63aa73dc4ef57709d31e9971a5b439",
