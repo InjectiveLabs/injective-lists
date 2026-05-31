@@ -17,9 +17,9 @@ const evmMainnetUpgrade = {
 }
 
 export const chainUpgradeConfig = {
-  proposalId: 632,
-  blockHeight: 164394000,
-  disableMaintenance: true,
+  proposalId: 650,
+  blockHeight: 169334500,
+  disableMaintenance: false,
   proposalMsg:
-    'Scheduled maintenance on April 28th, 2026 at ~14:00 UTC to implement the Injective Mainnet Performance Upgrade.'
+    'Scheduled maintenance on June 4th, 2026 at ~14:00 UTC to implement the Injective Vulcan Mainnet Upgrade.'
 } as ChainConfig | {}
