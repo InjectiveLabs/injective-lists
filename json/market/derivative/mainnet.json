@@ -566,6 +566,38 @@
     }
   },
   {
+    "ticker": "MEW/USDC PERP",
+    "marketId": "0x13fb9aa5ce257057788895abaf1ee863b597157190730ba57b8473b0dbff06ad",
+    "oracleBase": "0x514aed52ca5294177f20187ae883cec4a018619772ddce41efcc36a6448f5d5d",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 0.1,
+    "minQuantityTickSize": 1000,
+    "openNotionalCap": {
+      "cap": "250000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "WIF/USDC PERP",
     "marketId": "0x142846ceefba05b25d0da3faa67ce6f29a73bf1b2da30d87129b3a16a20d76ec",
     "oracleBase": "0x0003d5a1e39f957e312e307d535c8c28315172442ae0c39d9488e908c3762c85",
@@ -1301,6 +1333,38 @@
     "minNotional": 1000000,
     "minPriceTickSize": 1000,
     "minQuantityTickSize": 0.1,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "FLOKI/USDC PERP",
+    "marketId": "0x2c9eff4eccf72313b9cc30a7067c0a0ba3157c9567e73f2f2d6371aaff71ffcb",
+    "oracleBase": "0x6b1381ce7e874dc5410b197ac8348162c0dd6c0d4c9cd6322672d6c2b1d58293",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 100000,
+    "openNotionalCap": {
+      "cap": "750000"
+    },
     "quoteToken": {
       "coinGeckoId": "",
       "name": "USD Coin",
@@ -2089,6 +2153,38 @@
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "symbol": "USDT",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "BONK/USDC PERP",
+    "marketId": "0x3bb319ec24cf525578a20b60e1d1354197873fe328b830af94e363e267508a12",
+    "oracleBase": "0x72b021217ca3fe68922a19aaf990109cb9d84e9ad004b4d2025ad6f529314419",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 100000,
+    "openNotionalCap": {
+      "cap": "750000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
       "decimals": 6,
       "tokenType": "unknown"
     }
@@ -4332,6 +4428,38 @@
     "minQuantityTickSize": 10,
     "openNotionalCap": {
       "cap": "750000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "DEGEN/USDC PERP",
+    "marketId": "0x991af9eb71da2f67e8e57575ae37fa2fccda6058ccc626969d241197ac0ebd44",
+    "oracleBase": "0x9c93e4a22c56885af427ac4277437e756e7ec403fbc892f975d497383bb33560",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1,
+    "minQuantityTickSize": 100,
+    "openNotionalCap": {
+      "cap": "250000"
     },
     "quoteToken": {
       "coinGeckoId": "",
@@ -6654,6 +6782,38 @@
     }
   },
   {
+    "ticker": "LAYER/USDC PERP",
+    "marketId": "0xed6d8aad45b25a6ba782ea90b3a82d7ed1ac62d7e88f52b52d9ba0b2ff046d5c",
+    "oracleBase": "0x3c987d95da67ceb12705b22448200568c15b6242796cacc21c11f622e74cfffb",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 10,
+    "openNotionalCap": {
+      "cap": "250000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "XAG/USDT PERP",
     "marketId": "0xedc48ec071136eeb858b11ba50ba87c96e113400e29670fecc0a18d588238052",
     "oracleBase": "0xf2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e",
@@ -6736,6 +6896,38 @@
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
       "symbol": "USDT",
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "BRETT/USDC PERP",
+    "marketId": "0xef711a98876a7a44812984434ef64f68bf91baf7bae84bc190aa30de766c08df",
+    "oracleBase": "0x9b5729efe3d68e537cdcb2ca70444dea5f06e1660b562632609757076d0b9448",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1,
+    "minQuantityTickSize": 100,
+    "openNotionalCap": {
+      "cap": "250000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
       "decimals": 6,
       "tokenType": "unknown"
     }
@@ -6973,6 +7165,38 @@
     }
   },
   {
+    "ticker": "POPCAT/USDC PERP",
+    "marketId": "0xf58bcf3fd958661227f8cad01066fd9ac902cad5a4f390f6408af4803019ec36",
+    "oracleBase": "0xb9312a7ee50e189ef045aa3c7842e099b061bd9bdc99ac645956c3b660dc8cce",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10,
+    "minQuantityTickSize": 10,
+    "openNotionalCap": {
+      "cap": "250000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "STX/USDC PERP",
     "marketId": "0xf62b4cc0cbac41c195d3a5c2a43df4045c0d99274caf1a6e69c19ef31f72356a",
     "oracleBase": "0xec7a775f46379b5e943c3526b1c8d54cd49749176b0b98e02dde68d1bd335c17",
@@ -7170,6 +7394,38 @@
     "minQuantityTickSize": 1,
     "openNotionalCap": {
       "cap": "1000000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "BOME/USDC PERP",
+    "marketId": "0xfd8d4d82d3ff91cd266d493b2d99dc49b8eeafdf9fa38bc3f1b804eb6b2e7af4",
+    "oracleBase": "0x30e4780570973e438fdb3f1b7ad22618b2fc7333b65c7853a7ca144c39052f7a",
+    "oracleType": "pyth",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 0.1,
+    "minQuantityTickSize": 1000,
+    "openNotionalCap": {
+      "cap": "250000"
     },
     "quoteToken": {
       "coinGeckoId": "",
