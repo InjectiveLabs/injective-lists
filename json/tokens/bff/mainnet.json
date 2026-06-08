@@ -22113,6 +22113,35 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "share304",
+    "network": "mainnet",
+    "name": "SPCX/USDC PERP Insurance Fund",
+    "symbol": "share304",
+    "decimals": 18,
+    "description": "Insurance fund for SPCX/USDC PERP market",
+    "logo": null,
+    "tokenType": "insuranceFund",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "share304",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "SPCX/USDC PERP",
+        "exponent": 18,
+        "aliases": []
+      }
+    ],
+    "base": "share304",
+    "display": "SPCX/USDC PERP",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "share31",
     "network": "mainnet",
     "name": "BTC/USDTkv PERP Insurance Fund",
