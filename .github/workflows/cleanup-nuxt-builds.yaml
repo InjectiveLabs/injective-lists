@@ -1,0 +1,278 @@
+name: Cleanup Nuxt build assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      bucket:
+        description: S3 bucket name without s3:// or path prefix
+        required: false
+        type: string
+      nuxt-prefix:
+        default: www/_nuxt/
+        description: S3 prefix that contains Nuxt assets
+        required: false
+        type: string
+      keep-builds:
+        default: '2'
+        description: Number of latest Nuxt builds to keep
+        required: false
+        type: string
+      minimum-age-days:
+        default: '14'
+        description: Do not delete assets newer than this many days
+        required: false
+        type: string
+      dry-run:
+        default: true
+        description: Show what would be deleted without deleting it
+        required: false
+        type: boolean
+jobs:
+  cleanup:
+    name: Cleanup stale Nuxt assets
+    runs-on: blacksmith-8vcpu-ubuntu-2204
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    env:
+      TARGET_BUCKET: ${{ inputs.bucket || vars.NUXT_BUILD_CLEANUP_BUCKET }}
+      NUXT_PREFIX: ${{ inputs.nuxt-prefix || vars.NUXT_BUILD_CLEANUP_PREFIX || 'www/_nuxt/' }}
+      KEEP_BUILDS: ${{ inputs.keep-builds || vars.NUXT_BUILD_CLEANUP_KEEP_BUILDS || '2' }}
+      MINIMUM_AGE_DAYS: ${{ inputs.minimum-age-days || vars.NUXT_BUILD_CLEANUP_MINIMUM_AGE_DAYS || '14' }}
+      DRY_RUN: ${{ inputs.dry-run || 'false' }}
+
+    steps:
+      - name: Install Act dependencies
+        if: ${{ env.ACT }}
+        run: |
+          apt-get update && apt-get install sudo -y && apt-get install wget -y && apt-get install unzip -y
+
+      - name: Install AWS if running locally
+        if: ${{ env.ACT }}
+        uses: unfor19/install-aws-cli-action@v1
+        with:
+          version: 2
+          verbose: true
+          arch: amd64
+
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.NUXT_BUILD_CLEANUP_AWS_REGION || 'us-east-1' }}
+
+      - name: Cleanup old Nuxt assets
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+          import tempfile
+          from datetime import datetime, timedelta, timezone
+
+          bucket = os.environ['TARGET_BUCKET'].strip()
+          prefix = os.environ['NUXT_PREFIX'].strip().lstrip('/')
+          keep_builds = int(os.environ['KEEP_BUILDS'])
+          minimum_age_days = int(os.environ['MINIMUM_AGE_DAYS'])
+          dry_run = os.environ['DRY_RUN'].lower() == 'true'
+
+          if not bucket:
+            print('TARGET_BUCKET is required. Set workflow input bucket or repo variable NUXT_BUILD_CLEANUP_BUCKET.')
+            sys.exit(1)
+
+          if keep_builds < 2:
+            print('KEEP_BUILDS must be at least 2.')
+            sys.exit(1)
+
+          if not prefix.endswith('/'):
+            prefix += '/'
+
+          builds_meta_prefix = f'{prefix}builds/meta/'
+          protected_keys = {
+            f'{prefix}builds/latest.json',
+            f'{prefix}manifest.json'
+          }
+
+          def run_aws(args, capture_json=True):
+            result = subprocess.run(
+              ['aws', *args],
+              check=True,
+              text=True,
+              capture_output=True
+            )
+
+            if not capture_json:
+              return result.stdout
+
+            return json.loads(result.stdout or '{}')
+
+          def list_objects(list_prefix):
+            continuation_token = None
+
+            while True:
+              args = [
+                's3api',
+                'list-objects-v2',
+                '--bucket',
+                bucket,
+                '--prefix',
+                list_prefix
+              ]
+
+              if continuation_token:
+                args.extend(['--continuation-token', continuation_token])
+
+              page = run_aws(args)
+
+              for item in page.get('Contents', []):
+                yield item
+
+              if not page.get('IsTruncated'):
+                return
+
+              continuation_token = page['NextContinuationToken']
+
+          def parse_aws_time(value):
+            return datetime.fromisoformat(value.replace('Z', '+00:00'))
+
+          def load_s3_text(key):
+            result = subprocess.run(
+              ['aws', 's3', 'cp', f's3://{bucket}/{key}', '-'],
+              text=True,
+              capture_output=True
+            )
+
+            if result.returncode != 0:
+              return ''
+
+            return result.stdout
+
+          def collect_current_manifest_assets():
+            manifest_text = load_s3_text(f'{prefix}manifest.json')
+
+            if not manifest_text:
+              return set()
+
+            try:
+              manifest = json.loads(manifest_text)
+            except json.JSONDecodeError:
+              return set()
+
+            assets = set()
+
+            def visit(value):
+              if isinstance(value, dict):
+                for child in value.values():
+                  visit(child)
+
+                return
+
+              if isinstance(value, list):
+                for child in value:
+                  visit(child)
+
+                return
+
+              if not isinstance(value, str):
+                return
+
+              normalized_value = value.lstrip('/')
+
+              if normalized_value.startswith('_nuxt/'):
+                assets.add(f'{prefix}{normalized_value.removeprefix("_nuxt/")}')
+
+              if re.search(r'\.(js|css|woff2?|png|jpe?g|webp|svg)$', value):
+                assets.add(f'{prefix}{value.split("/")[-1]}')
+
+            visit(manifest)
+
+            return assets
+
+          meta_objects = [
+            item for item in list_objects(builds_meta_prefix)
+            if item['Key'].endswith('.json')
+          ]
+          meta_objects.sort(key=lambda item: parse_aws_time(item['LastModified']), reverse=True)
+
+          if len(meta_objects) <= keep_builds:
+            print(f'Found {len(meta_objects)} build metadata files; nothing to delete.')
+            sys.exit(0)
+
+          kept_meta_objects = meta_objects[:keep_builds]
+          protected_keys.update(item['Key'] for item in kept_meta_objects)
+          protected_keys.update(collect_current_manifest_assets())
+
+          oldest_kept_build_time = parse_aws_time(kept_meta_objects[-1]['LastModified'])
+          build_cutoff = oldest_kept_build_time - timedelta(hours=1)
+          age_cutoff = datetime.now(timezone.utc) - timedelta(days=minimum_age_days)
+          delete_cutoff = min(build_cutoff, age_cutoff)
+
+          print(f'Bucket: s3://{bucket}')
+          print(f'Nuxt prefix: {prefix}')
+          print(f'Keeping latest build metadata files:')
+          for item in kept_meta_objects:
+            print(f'  - {item["Key"]} ({item["LastModified"]})')
+          print(f'Deleting objects older than {delete_cutoff.isoformat()}')
+          print(f'Dry run: {dry_run}')
+
+          candidates = []
+
+          for item in list_objects(prefix):
+            key = item['Key']
+
+            if key in protected_keys:
+              continue
+
+            if key.endswith('/'):
+              continue
+
+            if parse_aws_time(item['LastModified']) >= delete_cutoff:
+              continue
+
+            candidates.append({
+              'Key': key,
+              'LastModified': item['LastModified'],
+              'Size': item.get('Size', 0)
+            })
+
+          if not candidates:
+            print('No stale Nuxt assets found.')
+            sys.exit(0)
+
+          print(f'Found {len(candidates)} stale Nuxt assets.')
+          for item in candidates[:100]:
+            print(f'  - {item["Key"]} ({item["LastModified"]}, {item["Size"]} bytes)')
+
+          if len(candidates) > 100:
+            print(f'  ... and {len(candidates) - 100} more')
+
+          if dry_run:
+            print('Dry run enabled; no objects deleted.')
+            sys.exit(0)
+
+          for index in range(0, len(candidates), 1000):
+            batch = candidates[index:index + 1000]
+            delete_payload = {
+              'Objects': [{'Key': item['Key']} for item in batch],
+              'Quiet': True
+            }
+
+            with tempfile.NamedTemporaryFile(mode='w') as payload_file:
+              json.dump(delete_payload, payload_file)
+              payload_file.flush()
+              run_aws(
+                [
+                  's3api',
+                  'delete-objects',
+                  '--bucket',
+                  bucket,
+                  '--delete',
+                  f'file://{payload_file.name}'
+                ]
+              )
+
+          print(f'Deleted {len(candidates)} stale Nuxt assets.')
+          PY
