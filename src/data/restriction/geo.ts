@@ -20,8 +20,7 @@ export const restrictedCountries: string[] = [
   'ML',
   'GW',
   'BI',
-  'ZW',
-  'UA'
+  'ZW'
 ]
 
 // Replace UA when we have support for region-based restrictions
