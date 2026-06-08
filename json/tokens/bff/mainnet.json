@@ -22142,6 +22142,35 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "share305",
+    "network": "mainnet",
+    "name": "RKLB/USDC PERP Insurance Fund",
+    "symbol": "share305",
+    "decimals": 18,
+    "description": "Insurance fund for RKLB/USDC PERP market",
+    "logo": null,
+    "tokenType": "insuranceFund",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "share305",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "RKLB/USDC PERP",
+        "exponent": 18,
+        "aliases": []
+      }
+    ],
+    "base": "share305",
+    "display": "RKLB/USDC PERP",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "share31",
     "network": "mainnet",
     "name": "BTC/USDTkv PERP Insurance Fund",
