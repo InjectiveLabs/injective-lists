@@ -561,7 +561,11 @@ export const mainnetTokens: TokenFactorySource[] = [
     creator: 'inj1jdt04erw6jdmh6c939u87kldf3mvvmkedsjp3w'
   },
   {
-    ...symbolMeta.HPNJ,
+    ...symbolMeta.TWT2,
+    creator: 'inj13we6l25kpzws8nlw0rnd30zejgcgq078fn4fag'
+  },
+  {
+     ...symbolMeta.HPNJ,
     creator: 'inj1ng84mfnq4z4tuh0cd7a28x0hxw75vxcm70ls9q'
   }
 ]
