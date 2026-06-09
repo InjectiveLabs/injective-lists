@@ -242498,5 +242498,48 @@
     "config",
     "fee_for_pool",
     "all_fees"
+  ],
+  "39595": [
+    "get_config",
+    "get_slot0",
+    "get_tick_info",
+    "quote",
+    "quote_exact_output",
+    "get_position",
+    "get_all_positions",
+    "get_tick_bitmap",
+    "get_total_liquidity",
+    "get_fee_growth_inside",
+    "get_protocol_fees",
+    "get_protocol_fee_config",
+    "get_dynamic_fee"
+  ],
+  "39596": [
+    "get_pool",
+    "get_all_pools",
+    "get_config",
+    "get_fee_tiers",
+    "get_creation_auth",
+    "is_flash_borrower",
+    "flash_borrowers"
+  ],
+  "39597": [
+    "position",
+    "owner_of",
+    "approval",
+    "approvals",
+    "num_tokens",
+    "nft_info",
+    "all_nft_info",
+    "tokens",
+    "position_with_fees"
+  ],
+  "39598": [
+    "simulate_route",
+    "config",
+    "fee_for_pool",
+    "all_fees",
+    "is_flash_signer",
+    "flash_signers"
   ]
 }
