@@ -12575,5 +12575,61 @@
     "remove_executor",
     "set_fee_recipient",
     "set_neptune_market"
+  ],
+  "2039": [
+    "mint",
+    "swap",
+    "swap_exact_input",
+    "swap_exact_output",
+    "burn",
+    "collect",
+    "receive",
+    "set_fee_protocol",
+    "update_protocol_fee_config",
+    "collect_protocol",
+    "flash"
+  ],
+  "2040": [
+    "create_pool",
+    "update_config",
+    "propose_owner",
+    "accept_owner",
+    "propose_pool_code_id",
+    "accept_pool_code_id",
+    "enable_fee_amount",
+    "authorize_creation",
+    "cancel_creation_auth",
+    "authorize_flash_borrower",
+    "revoke_flash_borrower",
+    "set_flash_unrestricted"
+  ],
+  "2041": [
+    "mint_position",
+    "increase_liquidity",
+    "decrease_liquidity",
+    "collect",
+    "burn",
+    "transfer_nft",
+    "send_nft",
+    "approve",
+    "revoke",
+    "approve_all",
+    "revoke_all"
+  ],
+  "2042": [
+    "execute_route",
+    "receive",
+    "update_admin",
+    "set_fee",
+    "remove_fee",
+    "update_fee_collector",
+    "emergency_withdraw",
+    "register_tax_token",
+    "deregister_tax_token",
+    "authorize_flash_signer",
+    "revoke_flash_signer",
+    "set_flash_unrestricted",
+    "flash_route",
+    "flash_callback"
   ]
 }
