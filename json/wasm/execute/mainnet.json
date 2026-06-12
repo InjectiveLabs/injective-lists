@@ -12631,5 +12631,52 @@
     "set_flash_unrestricted",
     "flash_route",
     "flash_callback"
+  ],
+  "2043": [
+    "receive",
+    "update_config",
+    "update_liquidation_config",
+    "add_asset_config",
+    "update_asset_config",
+    "deposit",
+    "deposit_hook",
+    "force_deposit",
+    "withdraw",
+    "withdraw_hook",
+    "force_withdraw",
+    "borrow",
+    "borrow_hook",
+    "repay",
+    "repay_hook",
+    "force_repay",
+    "withdraw_fee",
+    "report_liquidation_account",
+    "register_liquidation_items",
+    "report_process_liquidation",
+    "report_end_liquidation",
+    "add_collateral",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
+  ],
+  "2044": [
+    "execute_strategy",
+    "receive_flash_loan",
+    "execute_flash_strategy",
+    "sweep_funds",
+    "update_owner",
+    "add_executor",
+    "remove_executor",
+    "set_fee_recipient",
+    "set_neptune_market"
+  ],
+  "2045": [
+    "update_config",
+    "report_liquidation",
+    "register_liquidation_items",
+    "process_liquidation",
+    "process_liquidation_hook",
+    "end_liquidation",
+    "approve_admin_nominee",
+    "reject_admin_nominee"
   ]
 }
