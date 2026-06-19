@@ -414,6 +414,35 @@
     }
   },
   {
+    "ticker": "LIV-PERP",
+    "marketId": "0x4d57b65966a7391751581c699df8c441efff3d2c51e4827db2c6b5dc88ecedb5",
+    "oracleBase": "LIV.INDEX",
+    "oracleType": "provider",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "oracleQuote": "N10Labs",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.1",
+    "initialMarginRatio": "0.1",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.05",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "TRUCPI/USDT PERP",
     "marketId": "0x707fb74431a16c71e54d5cd2301daff1a464e1a854c0fef4bca3fe6c0a5b47d1",
     "oracleBase": "TRUCPI",
