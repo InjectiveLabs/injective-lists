@@ -4547,6 +4547,35 @@
     }
   },
   {
+    "ticker": "BRENT/USDC PERP",
+    "marketId": "0x866b2956aa0062d65cd85f338da3eb08b7c1276ce62dbc22c09bea000f946c3f",
+    "oracleBase": "6e962ec02192495d286856c188a13710af7fc5552e4ba1b55164f60e122d63fe",
+    "oracleType": "sedafast",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "21dcb1b310f5f85541b17c86371c643f49fe80dca780204d442769a80b0ff51c",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.1",
+    "initialMarginRatio": "0.033333",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.02",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "WLD/USDC PERP",
     "marketId": "0x86a0c374e7abb7cfb916c1b40b0c6018d1ad0d657f12225acee776834add738d",
     "oracleBase": "104",
@@ -4864,6 +4893,35 @@
     "openNotionalCap": {
       "cap": "250000"
     },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
+    "ticker": "WTI/USDC PERP",
+    "marketId": "0x9031f3e31fb47dab2cee18fe514e72775228fe2ab869420e59376776fab09af8",
+    "oracleBase": "5d7b9fdaa7f6d839903e0a52d3c1549e509dc101f7a8180cf2bfbdd537871128",
+    "oracleType": "sedafast",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "21dcb1b310f5f85541b17c86371c643f49fe80dca780204d442769a80b0ff51c",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.1",
+    "initialMarginRatio": "0.033333",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.02",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
     "quoteToken": {
       "coinGeckoId": "",
       "name": "USD Coin",
