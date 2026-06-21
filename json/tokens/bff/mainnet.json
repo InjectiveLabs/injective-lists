@@ -22171,6 +22171,64 @@
   },
   {
     "tokenVerification": "verified",
+    "denom": "share306",
+    "network": "mainnet",
+    "name": "BRENT/USDC PERP Insurance Fund",
+    "symbol": "share306",
+    "decimals": 18,
+    "description": "Insurance fund for BRENT/USDC PERP market",
+    "logo": null,
+    "tokenType": "insuranceFund",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "share306",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "BRENT/USDC PERP",
+        "exponent": 18,
+        "aliases": []
+      }
+    ],
+    "base": "share306",
+    "display": "BRENT/USDC PERP",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
+    "denom": "share307",
+    "network": "mainnet",
+    "name": "WTI/USDC PERP Insurance Fund",
+    "symbol": "share307",
+    "decimals": 18,
+    "description": "Insurance fund for WTI/USDC PERP market",
+    "logo": null,
+    "tokenType": "insuranceFund",
+    "isNative": false,
+    "creator": null,
+    "denomUnits": [
+      {
+        "denom": "share307",
+        "exponent": 0,
+        "aliases": []
+      },
+      {
+        "denom": "WTI/USDC PERP",
+        "exponent": 18,
+        "aliases": []
+      }
+    ],
+    "base": "share307",
+    "display": "WTI/USDC PERP",
+    "isActive": true,
+    "uriStatus": "valid"
+  },
+  {
+    "tokenVerification": "verified",
     "denom": "share31",
     "network": "mainnet",
     "name": "BTC/USDTkv PERP Insurance Fund",
