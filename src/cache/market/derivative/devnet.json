@@ -5510,6 +5510,35 @@
     }
   },
   {
+    "ticker": "EYP/USDT PERP",
+    "marketId": "0xcf86bbb04cd10b6084d567722bc74093addc46ae5429ea8c8d4be3eef661221c",
+    "oracleBase": "EYP",
+    "oracleType": "provider",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "oracleQuote": "InjectiveLabs",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.05",
+    "initialMarginRatio": "0.02",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.01",
+    "minNotional": 100000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "Tether",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "symbol": "USDT",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "BLUR/USDC PERP",
     "marketId": "0xd3ee25f741c2e6692bb7694df01e3f063b66972d4e810abb93c2601941ac9796",
     "oracleBase": "BLUR",
