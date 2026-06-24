@@ -4275,6 +4275,38 @@
     }
   },
   {
+    "ticker": "AFRM/USDC PERP",
+    "marketId": "0x6e002abe9615c5b05f2c822cf6e349f336d36d2009ca602d0c01f2bce2566424",
+    "oracleBase": "2704",
+    "oracleType": "pythpro",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "7",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.545454",
+    "initialMarginRatio": "0.181818",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.1",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "openNotionalCap": {
+      "cap": "250000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "XTZ/USDC PERP",
     "marketId": "0x762997886d8c2e159a2edf372dfa5a4e679b37e89cffb3a4717812062f8b651d",
     "oracleBase": "61",
