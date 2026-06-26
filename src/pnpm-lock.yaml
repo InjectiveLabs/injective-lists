@@ -473,8 +473,8 @@ packages:
   bn.js@5.2.2:
     resolution: {integrity: sha512-v2YAxEmKaBLahNwE1mjp4WON6huMNeuDvagFZW+ASCuA/ku0bXR9hSMw0XpiqMoA3+rmnyck/tPRSFQkoC9Cuw==}
 
-  bn.js@5.2.3:
-    resolution: {integrity: sha512-EAcmnPkxpntVL+DS7bO1zhcZNvCkxqtkd0ZY53h06GNQ3DEkkGZ/gKgmDv6DdZQGj9BgfSPKtJJ7Dp1GPP8f7w==}
+  bn.js@5.2.4:
+    resolution: {integrity: sha512-QL7sb18rJ1PbdsKsqPA0guxL563vIMwRHgzNrW/uzQuRGN1Cjqd/wonUBAVqHox9KwzHA6vCbM0lXx3k4iQMow==}
 
   brorand@1.1.0:
     resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
@@ -919,7 +919,7 @@ snapshots:
       '@cosmjs/math': 0.33.1
       '@cosmjs/utils': 0.33.1
       '@noble/hashes': 1.8.0
-      bn.js: 5.2.3
+      bn.js: 5.2.4
       elliptic: 6.6.1
       libsodium-wrappers-sumo: 0.7.16
 
@@ -936,7 +936,7 @@ snapshots:
 
   '@cosmjs/math@0.33.1':
     dependencies:
-      bn.js: 5.2.3
+      bn.js: 5.2.4
 
   '@cosmjs/proto-signing@0.33.0':
     dependencies:
@@ -1562,7 +1562,7 @@ snapshots:
 
   bn.js@5.2.2: {}
 
-  bn.js@5.2.3: {}
+  bn.js@5.2.4: {}
 
   brorand@1.1.0: {}
 
