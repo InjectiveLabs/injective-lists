@@ -12726,5 +12726,35 @@
     "provide_crank_funds",
     "set_manual_price",
     "perform_deferred_exec"
+  ],
+  "2049": [
+    "register_launch",
+    "deliver_to_seeder",
+    "refund_failed_launch",
+    "renounce_denom_admin",
+    "update_admin",
+    "accept_admin",
+    "update_keeper",
+    "update_forwarder",
+    "set_paused",
+    "update_refund_deadline",
+    "update_decimals",
+    "set_verify_seeder_derivation"
+  ],
+  "2050": [
+    "create_sink",
+    "create_locker",
+    "settle",
+    "refund",
+    "update_admin",
+    "accept_admin",
+    "update_sink_code_id",
+    "set_paused",
+    "update_choice_factory",
+    "update_clmm_addresses",
+    "force_refund",
+    "callback",
+    "collect_fees",
+    "update_treasury"
   ]
 }
