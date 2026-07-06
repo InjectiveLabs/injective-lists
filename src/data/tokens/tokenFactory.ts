@@ -563,5 +563,10 @@ export const mainnetTokens: TokenFactorySource[] = [
   {
     ...symbolMeta.HPNJ,
     creator: 'inj1ng84mfnq4z4tuh0cd7a28x0hxw75vxcm70ls9q'
+  },
+  {
+    ...symbolMeta.HELIXPOINT,
+    creator: 'inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte',
+    subdenom: 'shroom_8_be9bddf36b94db69'
   }
 ]
