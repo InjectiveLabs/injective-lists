@@ -30,11 +30,18 @@ jobs:
       DEVNET_FEE_PAYER: ${{ secrets.DEVNET_FEE_PAYER }}
 
     steps:
+      - name: Create GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
           ref: master
-          token: "${{ secrets.LIST_GH_TOKEN }}"
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -112,7 +119,7 @@ jobs:
 
           git push origin HEAD:master
         env:
-          GH_TOKEN: ${{ secrets.LIST_GH_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
   deployAws:
     if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && !contains(github.event.head_commit.message, 'skip deploy')) }}
