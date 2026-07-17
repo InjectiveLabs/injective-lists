@@ -855,8 +855,8 @@ packages:
     resolution: {integrity: sha512-/REy6amwPZl44DDzvRCkaI1q1bIiQB0mEFQLUrhz3z2EK91cp3n72rAjUlrTP0zV22HJIUOVHQGPxhFRjxjt+Q==}
     engines: {node: '>=4.0.0'}
 
-  ws@7.5.12:
-    resolution: {integrity: sha512-1xGnbYN3zbog9CwuNDQULNRrTCLIn46/WmpR1f0w6PsCYQHkylZr5vkd6kfMZYV6pRnQkcPNRyiA8LsrNKyhpg==}
+  ws@7.5.13:
+    resolution: {integrity: sha512-rsKI6xDBFVf4r/x8XyChGK04QR/XHroxs/jUcoWvtEZM8TPU/X/uIY9B1CsSzYws9ZJb/6bbBu7dPhFW00CAoA==}
     engines: {node: '>=8.3.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -945,8 +945,8 @@ snapshots:
   '@cosmjs/socket@0.39.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@cosmjs/stream': 0.39.0
-      isomorphic-ws: 4.0.1(ws@7.5.12(bufferutil@4.0.9)(utf-8-validate@5.0.10))
-      ws: 7.5.12(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      isomorphic-ws: 4.0.1(ws@7.5.13(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+      ws: 7.5.13(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       xstream: 11.14.0
     transitivePeerDependencies:
       - bufferutil
@@ -1831,9 +1831,9 @@ snapshots:
 
   is-typedarray@1.0.0: {}
 
-  isomorphic-ws@4.0.1(ws@7.5.12(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
+  isomorphic-ws@4.0.1(ws@7.5.13(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
     dependencies:
-      ws: 7.5.12(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      ws: 7.5.13(bufferutil@4.0.9)(utf-8-validate@5.0.10)
 
   isows@1.0.7(ws@8.21.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)):
     dependencies:
@@ -1977,7 +1977,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ws@7.5.12(bufferutil@4.0.9)(utf-8-validate@5.0.10):
+  ws@7.5.13(bufferutil@4.0.9)(utf-8-validate@5.0.10):
     optionalDependencies:
       bufferutil: 4.0.9
       utf-8-validate: 5.0.10
