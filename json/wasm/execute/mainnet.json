@@ -12822,5 +12822,55 @@
     "set_fee_recipient",
     "set_neptune_market"
   ],
-  "2060": []
+  "2060": [],
+  "2061": [
+    "receive",
+    "bond",
+    "unbond",
+    "bond_hook",
+    "unbond_hook",
+    "claim_reward",
+    "claim_point",
+    "claim_reward_hook",
+    "claim_point_hook",
+    "update_config",
+    "cast_vote",
+    "update_global_reward_index",
+    "update_user_reward_index",
+    "withdraw_remain_reward",
+    "approve_admin_nominee"
+  ],
+  "2062": [
+    "receive",
+    "update_staking_config",
+    "update_poll_config",
+    "claim_reward",
+    "claim_unstaked_token",
+    "cast_vote",
+    "end_poll",
+    "execute_poll",
+    "expire",
+    "run_execution",
+    "bond",
+    "unbond",
+    "unstake",
+    "deposit_reward",
+    "stake"
+  ],
+  "2063": [
+    "receive",
+    "unbond",
+    "unbond_boost",
+    "claim_reward",
+    "update_config",
+    "cast_vote",
+    "withdraw_remain_reward",
+    "approve_admin_nominee",
+    "transfer_fee",
+    "transfer_fee_hook",
+    "compute_reward",
+    "tokenize",
+    "tokenize_hook",
+    "detokenize_hook"
+  ]
 }
