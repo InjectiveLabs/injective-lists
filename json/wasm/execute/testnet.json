@@ -293820,5 +293820,39 @@
     "cleanup_closed_positions",
     "claim_dao_rewards",
     "claim_pending_payout"
+  ],
+  "39723": [
+    "receive",
+    "unbond",
+    "unbond_boost",
+    "claim_reward",
+    "update_config",
+    "cast_vote",
+    "withdraw_remain_reward",
+    "approve_admin_nominee",
+    "transfer_fee",
+    "transfer_fee_hook",
+    "compute_reward",
+    "tokenize",
+    "tokenize_hook",
+    "detokenize_hook"
+  ],
+  "39724": [],
+  "39725": [
+    "receive",
+    "bond",
+    "unbond",
+    "bond_hook",
+    "unbond_hook",
+    "claim_reward",
+    "claim_point",
+    "claim_reward_hook",
+    "claim_point_hook",
+    "update_config",
+    "cast_vote",
+    "update_global_reward_index",
+    "update_user_reward_index",
+    "withdraw_remain_reward",
+    "approve_admin_nominee"
   ]
 }
