@@ -1147,37 +1147,6 @@
     "minNotional": 1000000
   },
   {
-    "marketId": "0x2b8d00cd254c8fbd16427301305dcfc03d6769f862ae8e150b52171d879fca98",
-    "marketStatus": "active",
-    "ticker": "SOL/USDC",
-    "baseDenom": "ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "Solana",
-      "address": "ibc/A8B0B746B5AB736C2D8577259B510D56B8AF598008F68041E3D634BCDE72BE97",
-      "symbol": "SOL",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a2bb754a-3f7f-4652-da38-4e794980d100/public",
-      "decimals": 8,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 1000000,
-    "minNotional": 1000000
-  },
-  {
     "marketId": "0x2be72879bb90ec8cbbd7510d0eed6a727f6c2690ce7f1397982453d552f9fe8f",
     "marketStatus": "active",
     "ticker": "OMNI/USDT",
@@ -1396,21 +1365,21 @@
   },
   {
     "marketId": "0x33712922dbaf5160f173a65ddfe09b1917b22b2ef5cf9f49264dcd37cfe2a87a",
-    "marketStatus": "demolished",
+    "marketStatus": "active",
     "ticker": "USDCpeggy/USDC",
     "baseDenom": "peggy0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     "quoteDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
     "quoteToken": {
-      "name": "USD Coin (Legacy)",
+      "name": "USD Coin",
       "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
-      "symbol": "USDCnb",
+      "symbol": "USDC",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
       "decimals": 6,
       "coinGeckoId": "",
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "USD Coin (Legacy)",
+      "name": "USD Coin",
       "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "symbol": "USDClegacy",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
@@ -1516,37 +1485,6 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-18,
     "minQuantityTickSize": 1000000000000,
-    "minNotional": 1000000
-  },
-  {
-    "marketId": "0x3e99b4180237f552a793a6b973fafc655c386afebe5b254109c864b80e31abcb",
-    "marketStatus": "active",
-    "ticker": "WETH/USDC",
-    "baseDenom": "peggy0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "Wrapped Ethereum",
-      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-      "symbol": "wETH",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/0d22b678-a78f-4e64-5a7d-d9bd0f261f00/public",
-      "decimals": 18,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-13,
-    "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
   },
   {
@@ -1984,37 +1922,6 @@
     "minNotional": 1000000
   },
   {
-    "marketId": "0x5dcbc0b845e7db25292eb67fd2204dafd7d618b9b32fdc307ad38f20041a0b1f",
-    "marketStatus": "active",
-    "ticker": "HDRO/USDC",
-    "baseDenom": "factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "Hydro",
-      "address": "factory/inj1etz0laas6h7vemg3qtd67jpr6lh8v7xz7gfzqw/hdro",
-      "symbol": "HDRO",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7b3d3481-c799-46b9-3eec-6cf518edef00/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.00001,
-    "minQuantityTickSize": 10000000,
-    "minNotional": 1000000
-  },
-  {
     "marketId": "0x5de59857f03c90cdb364edcf99963c50b732bbd7a715430fd36f35a21a8bd54b",
     "marketStatus": "active",
     "ticker": "BTORO/INJ",
@@ -2077,37 +1984,6 @@
     "minNotional": 1000000
   },
   {
-    "marketId": "0x5efdcc4b3a949b3fc78c8c2055d1e46f8a6fe8130627012554047fb3a511345b",
-    "marketStatus": "active",
-    "ticker": "USDC/USDT",
-    "baseDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
-    "quoteToken": {
-      "name": "Tether",
-      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-      "symbol": "USDT",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 10000,
-    "minNotional": 1000000
-  },
-  {
     "marketId": "0x609376b88fd2e6e37ffc2ac9d6858633ab1d6c90ec6d100f9d205d38e531f8ac",
     "marketStatus": "demolished",
     "ticker": "AUSD/USDC",
@@ -2135,37 +2011,6 @@
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 100000,
-    "minNotional": 1000000
-  },
-  {
-    "marketId": "0x633dcbb32a71112117583d5aaa1774538d2eaaba8f04a3a0602fdfb9ac163392",
-    "marketStatus": "active",
-    "ticker": "ATOM/USDC",
-    "baseDenom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "Cosmos",
-      "address": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
-      "symbol": "ATOM",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/68519b3d-1179-45f3-711d-be5d2ec00e00/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
     "minQuantityTickSize": 100000,
     "minNotional": 1000000
   },
@@ -3131,37 +2976,6 @@
     "minNotional": 1000000
   },
   {
-    "marketId": "0x9a0dc673e14f7c7e38ee3ef36cfea218c08b20dc97ea63398e77e688f923e263",
-    "marketStatus": "active",
-    "ticker": "AUSD/USDC",
-    "baseDenom": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "AUSD",
-      "address": "factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
-      "symbol": "AUSD",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/3da8315b-d806-4c5f-81f3-5fda01634900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.001,
-    "minQuantityTickSize": 10000,
-    "minNotional": 1000000
-  },
-  {
     "marketId": "0x9a629b947b6f946af4f6076cfda67f3535d73ee3cef6176cf6d9c8d6b0a03f37",
     "marketStatus": "paused",
     "ticker": "SUSHI/USDC",
@@ -3349,8 +3163,8 @@
   },
   {
     "marketId": "0x9c8a91a894f773792b1e8d0b6a8224a6b748753738e9945020ee566266f817be",
-    "marketStatus": "demolished",
-    "ticker": "USDCnb/USDT",
+    "marketStatus": "active",
+    "ticker": "USDC/USDT",
     "baseDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
     "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
     "quoteToken": {
@@ -3363,9 +3177,9 @@
       "tokenType": "unknown"
     },
     "baseToken": {
-      "name": "USD Coin (Legacy)",
+      "name": "USD Coin",
       "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
-      "symbol": "USDCnb",
+      "symbol": "USDC",
       "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
       "decimals": 6,
       "coinGeckoId": "",
@@ -3375,7 +3189,7 @@
     "takerFeeRate": "0.0005",
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 1000000,
+    "minQuantityTickSize": 100000,
     "minNotional": 1000000
   },
   {
@@ -3624,37 +3438,6 @@
     "serviceProviderFee": "0.4",
     "minPriceTickSize": 1e-16,
     "minQuantityTickSize": 10000000000000000000,
-    "minNotional": 1000000
-  },
-  {
-    "marketId": "0xa8c14f892f7f7d2516442220a05b652d5afee3f57a5495981dfad7c99ef78e84",
-    "marketStatus": "active",
-    "ticker": "INJ/USDC",
-    "baseDenom": "inj",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "Injective",
-      "address": "inj",
-      "symbol": "INJ",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
-      "decimals": 18,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 1e-15,
-    "minQuantityTickSize": 1000000000000000,
     "minNotional": 1000000
   },
   {
@@ -4526,37 +4309,6 @@
     "minNotional": 10000000000000000
   },
   {
-    "marketId": "0xce1d6d6cc747beac4df163329c35f91f4d3397d9549c5e2fe6a29ea3a043063a",
-    "marketStatus": "active",
-    "ticker": "USDC/USDCnb",
-    "baseDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteDenom": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
-    "quoteToken": {
-      "name": "USD Coin (Legacy)",
-      "address": "ibc/2CBC2EA121AE42563B08028466F37B600F2D7D4282342DE938283CC3FB2BC00E",
-      "symbol": "USDCnb",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 10000,
-    "minNotional": 1000000
-  },
-  {
     "marketId": "0xcf38a5187b543552160e0af476b252c3dcac08fa4134866ac663afaf13f65b75",
     "marketStatus": "active",
     "ticker": "INJA/INJ",
@@ -5392,37 +5144,6 @@
     "minPriceTickSize": 0.00001,
     "minQuantityTickSize": 10000000000000,
     "minNotional": 10000000000000000
-  },
-  {
-    "marketId": "0xedca759312ecf6c0a7a14216c87be0854c351843fd18cc54bfd1dda14eeda1b7",
-    "marketStatus": "active",
-    "ticker": "XION/USDC",
-    "baseDenom": "ibc/00BF66BAB34873B07FB9EEEBCFACEA11FB4BB348718862AA7782D6DECC1F44C8",
-    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-    "quoteToken": {
-      "name": "USD Coin",
-      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
-      "symbol": "USDC",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "baseToken": {
-      "name": "XION",
-      "address": "ibc/00BF66BAB34873B07FB9EEEBCFACEA11FB4BB348718862AA7782D6DECC1F44C8",
-      "symbol": "XION",
-      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a4e0dce2-f6a7-4f72-b14d-6d4698966600/public",
-      "decimals": 6,
-      "coinGeckoId": "",
-      "tokenType": "unknown"
-    },
-    "makerFeeRate": "0",
-    "takerFeeRate": "0.0005",
-    "serviceProviderFee": "0.4",
-    "minPriceTickSize": 0.0001,
-    "minQuantityTickSize": 1000000,
-    "minNotional": 1000000
   },
   {
     "marketId": "0xee25f87facc4952d06b93d44ebb0e9eebf9ee1b39c6c7dcf6b14445b6bb6097e",
