@@ -5084,6 +5084,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0xc34ec9222ea69565d406a3b5912d8c8fb61dd188960e9f6f698f0f3f04c2113c",
+    "marketStatus": "active",
+    "ticker": "ACME/INJ",
+    "baseDenom": "factory/inj1uua8tktjemese9fatavs80jsp6rese4uppxlfq/acme",
+    "quoteDenom": "inj",
+    "quoteToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Acme Industries",
+      "address": "factory/inj1uua8tktjemese9fatavs80jsp6rese4uppxlfq/acme",
+      "symbol": "ACME",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 100000000,
+    "minQuantityTickSize": 10000,
+    "minNotional": 100000000000000000
+  },
+  {
     "marketId": "0xc5ebb7a57f0a2d769485d8db420631240a232c8d0c316f6639920111811e15c7",
     "marketStatus": "active",
     "ticker": "FWOI/INJ",
