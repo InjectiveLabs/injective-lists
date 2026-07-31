@@ -12926,5 +12926,70 @@
     "set_flash_unrestricted",
     "flash_route",
     "flash_callback"
+  ],
+  "2068": [
+    "set_config",
+    "update_asset",
+    "update_prices"
+  ],
+  "2069": [
+    "set_config"
+  ],
+  "2070": [
+    "receive_flash_loan",
+    "withdraw_assets",
+    "set_config"
+  ],
+  "2071": [
+    "set_config",
+    "next_control_outputs",
+    "next_control_outputs_internal",
+    "add_asset",
+    "update_asset"
+  ],
+  "2072": [
+    "set_config",
+    "set_params",
+    "update_exchange",
+    "liquidate_account",
+    "receive_flash_loan",
+    "redeem_assets",
+    "rebalance",
+    "withdraw",
+    "withdraw_all"
+  ],
+  "2073": [
+    "receive",
+    "set_config",
+    "update_market_asset",
+    "update_collateral_asset",
+    "lend",
+    "borrow",
+    "borrow_flash_loan",
+    "return",
+    "return_flash_loan",
+    "assert_flash_loan_repaid",
+    "deposit_collateral",
+    "withdraw_collateral",
+    "liquidate",
+    "set_params",
+    "distribute_interest",
+    "claim_war_chest",
+    "claim_rewards",
+    "distribute_rewards",
+    "inject"
+  ],
+  "2074": [
+    "bond",
+    "unbond",
+    "rebond",
+    "claim_unbonded",
+    "claim_rewards",
+    "claim_token_unlock",
+    "create_token_unlock",
+    "reclaim_token_unlock",
+    "cascade",
+    "set_params",
+    "set_config"
   ]
 }
