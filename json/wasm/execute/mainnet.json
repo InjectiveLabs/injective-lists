@@ -12991,5 +12991,59 @@
     "cascade",
     "set_params",
     "set_config"
+  ],
+  "2075": [
+    "receive",
+    "set_config",
+    "update_market_asset",
+    "update_collateral_asset",
+    "lend",
+    "borrow",
+    "borrow_flash_loan",
+    "return",
+    "return_flash_loan",
+    "assert_flash_loan_repaid",
+    "deposit_collateral",
+    "withdraw_collateral",
+    "liquidate",
+    "set_params",
+    "distribute_interest",
+    "claim_war_chest",
+    "claim_rewards",
+    "distribute_rewards",
+    "inject"
+  ],
+  "2076": [
+    "set_config",
+    "update_asset",
+    "update_prices"
+  ],
+  "2077": [
+    "set_config"
+  ],
+  "2078": [
+    "set_config",
+    "next_control_outputs",
+    "next_control_outputs_internal",
+    "add_asset",
+    "update_asset"
+  ],
+  "2079": [
+    "receive_flash_loan",
+    "withdraw_assets",
+    "set_config"
+  ],
+  "2080": [
+    "bond",
+    "unbond",
+    "rebond",
+    "claim_unbonded",
+    "claim_rewards",
+    "claim_token_unlock",
+    "create_token_unlock",
+    "reclaim_token_unlock",
+    "cascade",
+    "set_params",
+    "set_config"
   ]
 }
