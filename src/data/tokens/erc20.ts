@@ -262,6 +262,7 @@ export const mainnetTokens = [
   },
   {
     ...symbolMeta.ORAI,
+    symbol: 'ORAIerc20',
     address: '0x4c11249814f11b9346808179Cf06e71ac328c1b5'
   },
   {
