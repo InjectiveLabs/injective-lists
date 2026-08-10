@@ -2376,5 +2376,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'seda.webp',
     symbol: 'SEDA',
     coinGeckoId: 'seda-2'
+  },
+
+  HELIXPOINT: {
+    decimals: 18,
+    name: 'HELIXPOINT',
+    logo: 'helixpoint.png',
+    symbol: 'HELIXPOINT',
+    coinGeckoId: ''
   }
 }
