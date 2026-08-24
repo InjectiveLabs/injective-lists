@@ -2376,5 +2376,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'seda.webp',
     symbol: 'SEDA',
     coinGeckoId: 'seda-2'
+  },
+
+  MOTION: {
+    decimals: 18,
+    name: 'MOTION',
+    logo: 'motion.webp',
+    symbol: 'MOTION',
+    coinGeckoId: ''
   }
 }
