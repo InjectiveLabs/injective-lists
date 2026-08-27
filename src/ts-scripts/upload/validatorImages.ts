@@ -1,6 +1,6 @@
 import axios from 'axios'
 import 'dotenv/config'
-import * as FormData from 'form-data'
+import FormData from 'form-data'
 import { readdirSync, createReadStream, existsSync } from 'node:fs'
 import { readJSONFile, updateJSONFile } from '../helper/utils'
 
