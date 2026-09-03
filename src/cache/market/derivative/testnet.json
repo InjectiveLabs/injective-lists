@@ -1145,5 +1145,34 @@
       "decimals": 6,
       "tokenType": "unknown"
     }
+  },
+  {
+    "ticker": "ARS-PERP",
+    "marketId": "0xff9d0b6ca88ecaa58f54cc134a3be66710406ef5f8313e72670a998ef817b59d",
+    "oracleBase": "ARS.INDEX",
+    "oracleType": "provider",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "oracleQuote": "N10Labs",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.1",
+    "initialMarginRatio": "0.1",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.04",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USD Coin",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "symbol": "USDC",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
   }
 ]
