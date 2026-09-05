@@ -568,5 +568,10 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.MOTION,
     creator: 'inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte',
     subdenom: 'shroom_0_3b4d31d5571b97db'
+  },
+  {
+    ...symbolMeta.ZZTOP,
+    creator: 'inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte',
+    subdenom: 'shroom_157_99c09d972f9c1f79'
   }
 ]

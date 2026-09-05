@@ -36,5 +36,6 @@ export const verifiedTokenFactoryDenoms = [
   'factory/inj1khttezjv9x6dpadysffpf7m00rch2ldhezz7s2/tix',
   'factory/inj1ng84mfnq4z4tuh0cd7a28x0hxw75vxcm70ls9q/HPNJ',
   'factory/inj1yd399ux0qwydh9aser43qllky260vj0edn4fww/papl0',
-  'factory/inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte/shroom_0_3b4d31d5571b97db'
+  'factory/inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte/shroom_0_3b4d31d5571b97db',
+  'factory/inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte/shroom_157_99c09d972f9c1f79'
 ]
