@@ -2384,5 +2384,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'motion.webp',
     symbol: 'MOTION',
     coinGeckoId: ''
+  },
+
+  ZZTOP: {
+    decimals: 18,
+    name: 'zztop',
+    logo: 'zztop.webp',
+    symbol: 'ZZTOP',
+    coinGeckoId: ''
   }
 }
