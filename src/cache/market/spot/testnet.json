@@ -2852,6 +2852,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x608882b4a1c682f736ecd67b234b08ce830bd4f2f5fc971acd38810e8f0ebc98",
+    "marketStatus": "active",
+    "ticker": "KRWS/USDT",
+    "baseDenom": "factory/inj1g3jt0j349rjmlrszvjsyt53d369q8pmhhqdynk/krws",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Won e-money (sim)",
+      "address": "factory/inj1g3jt0j349rjmlrszvjsyt53d369q8pmhhqdynk/krws",
+      "symbol": "KRWS",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.000001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x62b3468090c1b372f790d556cf65703af4c8084878cb00dffaf596d4d084778c",
     "marketStatus": "active",
     "ticker": "TEST5/INJ",
@@ -4867,6 +4898,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xb73162a93ea94def4396b82a3f61f4d895eaa915770b0219b79c1ff2ee34f675",
+    "marketStatus": "active",
+    "ticker": "EURS/USDT",
+    "baseDenom": "factory/inj1g3jt0j349rjmlrszvjsyt53d369q8pmhhqdynk/eurs",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Euro e-money (sim)",
+      "address": "factory/inj1g3jt0j349rjmlrszvjsyt53d369q8pmhhqdynk/eurs",
+      "symbol": "EURS",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xb7594d3002ff76019c6a57648447a3ad6698a65148219ae75dfc691aaed6559a",
     "marketStatus": "active",
     "ticker": "WDS/INJ",
@@ -5051,6 +5113,37 @@
     "minPriceTickSize": 0.001,
     "minQuantityTickSize": 10000000000000,
     "minNotional": 0
+  },
+  {
+    "marketId": "0xbec70a814d177c4ceb81b95a47348610715a61a18ae4072c99ff0cf1978f47e4",
+    "marketStatus": "active",
+    "ticker": "GOLDS/USDT",
+    "baseDenom": "erc20:0xf3509E260054D2A1547Ccc3Ad477D1D9210348bf",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Gold Security 1g",
+      "address": "erc20:0xf3509E260054D2A1547Ccc3Ad477D1D9210348bf",
+      "symbol": "GOLDS",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.01,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0xc0dd65c8371760699431c5ebbf4e507f9bbf8641483a719bd63c716fe585494a",
