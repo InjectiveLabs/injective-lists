@@ -426190,13 +426190,23 @@
     "decimals": 0
   },
   {
-    "name": "JPY Stablecoin",
+    "name": "JPY Stablecoin (Deprecated)",
     "denom": "peggy0x307cBa674f0fE9A5A5b084Dd58006EB604A24025",
     "address": "peggy0x307cBa674f0fE9A5A5b084Dd58006EB604A24025",
     "logo": "",
+    "symbol": "JPYSC-DEPRECATED",
+    "display": "JPYSC-DEPRECATED",
+    "description": "DEPRECATED: legacy JPYSC test denom. Superseded by peggy0x724E5d02cD9852343fdD18DDaAc3671AaBc7CC8a.",
+    "decimals": 18
+  },
+  {
+    "name": "JPY Stablecoin",
+    "denom": "peggy0x724E5d02cD9852343fdD18DDaAc3671AaBc7CC8a",
+    "address": "peggy0x724E5d02cD9852343fdD18DDaAc3671AaBc7CC8a",
+    "logo": "",
     "symbol": "JPYSC",
     "display": "JPYSC",
-    "description": "Japanese yen stablecoin",
+    "description": "Japanese yen stablecoin bridged from Ethereum Sepolia via Peggy. Canonical JPYSC denom on Injective testnet (MTS ERC20: 0x482585e059A0e627755951aa663347C50Db0498F).",
     "decimals": 18
   },
   {
