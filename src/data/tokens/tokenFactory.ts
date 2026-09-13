@@ -573,5 +573,10 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.ZZTOP,
     creator: 'inj13j2rpnlwl30c02d4pzukykwfeyyhelvry9cqte',
     subdenom: 'shroom_157_99c09d972f9c1f79'
+  },
+  {
+    ...symbolMeta.T42,
+    creator: 'inj1dg3nxn4z36p2sqem4cy2jsdjf4ytk8cn256jjx',
+    subdenom: 'T42'
   }
 ]
