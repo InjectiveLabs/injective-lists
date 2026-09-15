@@ -2392,5 +2392,13 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     logo: 'zztop.webp',
     symbol: 'ZZTOP',
     coinGeckoId: ''
-  }
+ },
+
+  T42: {
+    decimals: 6,
+    name: 'TeaForTwo',
+    logo: 't42.png',
+    symbol: 'T42',
+    coinGeckoId: '',
+  },
 }
