@@ -2397,7 +2397,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   T42: {
     decimals: 6,
     name: 'TeaForTwo',
-    logo: 't42.png',
+    logo: 't42.webp',
     symbol: 'T42',
     coinGeckoId: '',
   },
