@@ -1189,9 +1189,9 @@
   },
   {
     "operatorAddress": "injvaloper1lmvgqd2c2pnx7nxtr97hry35yhpw7sd8qcpcf2",
-    "jailed": false,
+    "jailed": true,
     "consensusPubKey": "qlnvhc0OZKkLZlNSNQe0QKAz+mv3QQX/zKkg/nTYnw4=",
-    "status": "Bonded",
+    "status": "UnBonding",
     "tokens": "3061.894171179846384039",
     "delegatorShares": "3061894171179846384039",
     "description": {
@@ -1201,8 +1201,8 @@
       "securityContact": "",
       "details": "OKCoin Japan Injective testnet validator"
     },
-    "unbondingHeight": 0,
-    "unbondingTime": 0,
+    "unbondingHeight": 140206997,
+    "unbondingTime": 1791336694,
     "commission": {
       "commissionRates": {
         "rate": "0.1",
