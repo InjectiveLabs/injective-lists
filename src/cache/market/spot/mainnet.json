@@ -5425,6 +5425,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xec3222e1fd00d13ab5acca5a02b2795cd794177f27c73d88fbc14bcc8285a637",
+    "marketStatus": "active",
+    "ticker": "PAPL0/USDC",
+    "baseDenom": "factory/inj1yd399ux0qwydh9aser43qllky260vj0edn4fww/papl0",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Pineapple Financial Digital Mortgages",
+      "address": "factory/inj1yd399ux0qwydh9aser43qllky260vj0edn4fww/papl0",
+      "symbol": "PAPL0",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 100000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xed680640e95239c5104bbc7c5f6449009f47e325889c9a46b0116990f40041da",
     "marketStatus": "active",
     "ticker": "NLT/INJ",
