@@ -248,6 +248,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x440ab856ce09a18f5b2915a182f61ba9837581eb3e91c38321fa8552deaa9e7e",
+    "marketStatus": "active",
+    "ticker": "KIRA/USDC",
+    "baseDenom": "factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "KIRA",
+      "address": "factory/inj1xy3kvlr4q4wdd6lrelsrw2fk2ged0any44hhwq/KIRA",
+      "symbol": "KIRA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/a72625d9-a6a3-4d5e-60eb-31f57f4a8900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0x4fa0bd2c2adbfe077f58395c18a72f5cbf89532743e3bddf43bc7aba706b0b74",
     "marketStatus": "active",
     "ticker": "CHZ/USDC",
