@@ -15,8 +15,8 @@ importers:
         specifier: 1.20.45
         version: 1.20.45(bufferutil@4.0.9)(google-protobuf@3.21.4)(typescript@5.9.3)(utf-8-validate@5.0.10)
       '@injectivelabs/ts-types':
-        specifier: 1.20.45
-        version: 1.20.45
+        specifier: 1.20.46
+        version: 1.20.46
       '@injectivelabs/utils':
         specifier: 1.20.45
         version: 1.20.45
@@ -370,6 +370,9 @@ packages:
 
   '@injectivelabs/ts-types@1.20.45':
     resolution: {integrity: sha512-0c1HzuPlG/UjpXA9CH6ImYFJGkD++dKx33C2igsJetuz7RkKrU6pn6MCpxETNvmdyJbX5mSaG0nUzc75RKxJZQ==}
+
+  '@injectivelabs/ts-types@1.20.46':
+    resolution: {integrity: sha512-rSpKThw7uDnN6U70T6jVl8ChTSkzffd9QkjrbcpZUfyx3njEzTqmXZ5UEcvRaTEJQprwX/uCwKJcLKDqn0tt3A==}
 
   '@injectivelabs/utils@1.20.45':
     resolution: {integrity: sha512-VeWgNsOuZVgSEvAMLLiUYw0itap7KiiTMxprkNPUdvGXYMdc+/Ag1hdgBn86Xt2WZBmYbKVWegmC/+GIpDMw6w==}
@@ -1422,6 +1425,8 @@ snapshots:
       '@protobuf-ts/runtime-rpc': 2.11.1
 
   '@injectivelabs/ts-types@1.20.45': {}
+
+  '@injectivelabs/ts-types@1.20.46': {}
 
   '@injectivelabs/utils@1.20.45':
     dependencies:
