@@ -589,6 +589,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xc0be2107c66b7d92916617fd70fb49bf9d0ef40d84ea97980947684bcc45e7d1",
+    "marketStatus": "active",
+    "ticker": "BLACK/USDC",
+    "baseDenom": "factory/inj16eckaf75gcu9uxdglyvmh63k9t0l7chd0qmu85/black",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "BLACK",
+      "address": "factory/inj16eckaf75gcu9uxdglyvmh63k9t0l7chd0qmu85/black",
+      "symbol": "BLACK",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7d9f06d3-442a-4d33-74c1-8389bb2fb400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.001,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xc8fafa1fcab27e16da20e98b4dc9dda45320418c27db80663b21edac72f3b597",
     "marketStatus": "active",
     "ticker": "HDRO/INJ",
