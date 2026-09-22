@@ -638,6 +638,35 @@
     }
   },
   {
+    "ticker": "KAVA/USDT 4 PERP",
+    "marketId": "0x11c4c9a3b5abe961a1a12ccfe264b0796ba5883bb28311c6bfdf1448bd536645",
+    "oracleBase": "KAVA",
+    "oracleType": "pricefeed",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "oracleQuote": "USDT",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.15",
+    "initialMarginRatio": "0.05",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.02",
+    "minNotional": 1000000,
+    "minPriceTickSize": 1000,
+    "minQuantityTickSize": 0.001,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "Tether",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "symbol": "USDT",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "CATI/USDC PERP",
     "marketId": "0x130b4bd90d7532e651b4bd796767bfb4f346507aeff1cf808e49e4d378af77f9",
     "oracleBase": "CATI",
