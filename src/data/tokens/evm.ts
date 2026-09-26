@@ -49,5 +49,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.USDC,
     address: 'erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a'
+  },
+  {
+    ...symbolMeta.CULT,
+    address: 'erc20:0xdEE6087768357313Bd724A28b8326D6656f2Be00'
   }
 ]
