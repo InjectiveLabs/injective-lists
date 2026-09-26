@@ -4991,6 +4991,37 @@
     "minNotional": 1000000000000000000
   },
   {
+    "marketId": "0xb7c0a906cb5069fbb73cc3b6ad9a9df26d3b7cf0718a554bacbaf855943dc215",
+    "marketStatus": "active",
+    "ticker": "SYNBT/USDT",
+    "baseDenom": "factory/inj1gqteaw22n7k5hwarry7mgkmwzuu5etlr2vgzfv/synbotest",
+    "quoteDenom": "peggy0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0x87aB3B4C8661e07D6372361211B96ed4Dc36B1B5",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "SYNBO Test",
+      "address": "factory/inj1gqteaw22n7k5hwarry7mgkmwzuu5etlr2vgzfv/synbotest",
+      "symbol": "SYNBT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-15,
+    "minQuantityTickSize": 1000000000000000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xb8fbde21c0d6774796188c0957e2c51bcc23898ef02a480dacdbf42043f650ac",
     "marketStatus": "active",
     "ticker": "UPE/USDT",
