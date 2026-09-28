@@ -2405,7 +2405,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
   CULT: {
     decimals: 18,
     name: 'Cult of Anons',
-    logo: 'cult.png',
+    logo: 'cult.webp',
     symbol: 'CULT',
     coinGeckoId: '',
   },
