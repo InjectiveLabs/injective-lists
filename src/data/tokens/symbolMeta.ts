@@ -2409,4 +2409,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'CULT',
     coinGeckoId: '',
   },
+
+  DOJOFUN: {
+    decimals: 18,
+    name: 'DojoFun',
+    logo: 'dojofun.png',
+    symbol: 'DOJO',
+    coinGeckoId: '',
+  },
 }
