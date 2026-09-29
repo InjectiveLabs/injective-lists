@@ -53,5 +53,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.CULT,
     address: 'erc20:0xdEE6087768357313Bd724A28b8326D6656f2Be00'
+  },
+  {
+    ...symbolMeta.DOJOFUN,
+    address: 'erc20:0xe5970650A11F1bD3D713C55500111F5Fe090826C'
   }
 ]
