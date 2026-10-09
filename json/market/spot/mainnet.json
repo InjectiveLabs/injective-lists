@@ -5022,6 +5022,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xd7f369059b61b667a00f3b7cd2fab50a61f65738c07557003572c3eee8608fa9",
+    "marketStatus": "active",
+    "ticker": "JINJA/USDT",
+    "baseDenom": "factory/inj12jfl3ju06xac9nl2ly5y849an4qtm4ayau4sxe/JINJA",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "quoteToken": {
+      "name": "Tether",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "MEOWJINJA",
+      "address": "factory/inj12jfl3ju06xac9nl2ly5y849an4qtm4ayau4sxe/JINJA",
+      "symbol": "JINJA",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/63a231c0-d1c3-4901-1e28-7c4410dfaa00/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.00001,
+    "minQuantityTickSize": 1000000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xd8c9c5764541b54b0c77305280e5aaa00f5ceda69dc5ae1b69634ac07c1581c7",
     "marketStatus": "active",
     "ticker": "COKE/INJ",
