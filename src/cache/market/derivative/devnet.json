@@ -2842,6 +2842,35 @@
     }
   },
   {
+    "ticker": "CGOyZpNZWc/USDT PERP",
+    "marketId": "0x61fa113bd830500bd3118ef515c0e32c557def76a94fd16cd14d3b28fb17c6d0",
+    "oracleBase": "CGOyZpNZWc",
+    "oracleType": "provider",
+    "quoteDenom": "peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "oracleQuote": "InjectiveLabs",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.0001",
+    "takerFeeRate": "0.002",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.1",
+    "initialMarginRatio": "0.1",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.05",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.01,
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "Tether",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/e46e1742-fb16-4393-cc40-83b20e875400/public",
+      "symbol": "USDT",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "FLUID/USDC PERP",
     "marketId": "0x64ae368021bade7f1820ba02a01c65ea7e9027cd66943df2ed4736e95fb76e31",
     "oracleBase": "FLUID",
