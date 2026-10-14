@@ -2417,4 +2417,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'DOJO',
     coinGeckoId: '',
   },
+
+  SPROUT: {
+    decimals: 18,
+    name: 'Sprout',
+    logo: 'sprout.webp',
+    symbol: 'SPROUT',
+    coinGeckoId: ''
+  },
 }
