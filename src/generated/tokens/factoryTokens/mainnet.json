@@ -683,17 +683,6 @@
   },
   {
     "decimals": 18,
-    "symbol": "SPROUT",
-    "name": "Sprout",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "address": "erc20:0x503f2A7bAc1E2ff2800Aa92EdB82abeF0bFA631E",
-    "denom": "erc20:0x503f2A7bAc1E2ff2800Aa92EdB82abeF0bFA631E",
-    "tokenType": "evm",
-    "tokenVerification": "unverified"
-  },
-  {
-    "decimals": 18,
     "symbol": "PIP",
     "name": "pip",
     "logo": "unknown.png",
@@ -25353,6 +25342,18 @@
     "denom": "factory/inj1s0tcn9c42fz3fpfdy7pargxj4rwrcp0aushf2p/INJ",
     "description": "BBDGH",
     "externalLogo": "ipfs://bafkreiaa5xqsk7zmjhgzc7tb7qgycs5dzvshvwvgktmdva6ofaxh3p3bw4",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified"
+  },
+  {
+    "decimals": 18,
+    "symbol": "INJ",
+    "name": "Injective Test Alias",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "address": "factory/inj1s2465quu7w7cwa9mz4g028cyjqxf4svym8mlt0/ctfalias20261014",
+    "denom": "factory/inj1s2465quu7w7cwa9mz4g028cyjqxf4svym8mlt0/ctfalias20261014",
+    "description": "CTF denomination-resolution test; not native INJ",
     "tokenType": "tokenFactory",
     "tokenVerification": "unverified"
   },
