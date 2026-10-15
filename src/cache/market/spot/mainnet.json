@@ -4340,6 +4340,37 @@
     "minNotional": 10000000000000000
   },
   {
+    "marketId": "0xc1c21135b722b6944740186ebd4eeeaaf60c0ae265adb225e3d4c072ad8b362b",
+    "marketStatus": "active",
+    "ticker": "NEXO/WBTC",
+    "baseDenom": "peggy0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+    "quoteDenom": "peggy0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "quoteToken": {
+      "name": "Wrapped Bitcoin",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "symbol": "wBTC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/fd572a96-9202-40e2-9999-587f5bdd2300/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Nexo",
+      "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+      "symbol": "NEXO",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6a1f295b-2ddc-46a1-37e0-5078cd4d8200/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-18,
+    "minQuantityTickSize": 10000000000000000,
+    "minNotional": 100
+  },
+  {
     "marketId": "0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934",
     "marketStatus": "active",
     "ticker": "SHROOM/INJ",
