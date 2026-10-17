@@ -2425,4 +2425,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SPROUT',
     coinGeckoId: ''
   },
+
+  PIP: {
+    decimals: 18,
+    name: 'Pip',
+    logo: 'pip.webp',
+    symbol: 'PIP',
+    coinGeckoId: ''
+  },
 }
