@@ -1192,8 +1192,8 @@
     "jailed": false,
     "consensusPubKey": "qlnvhc0OZKkLZlNSNQe0QKAz+mv3QQX/zKkg/nTYnw4=",
     "status": "Bonded",
-    "tokens": "3061.894171179846384039",
-    "delegatorShares": "3061894171179846384039",
+    "tokens": "3050.894171179846384039",
+    "delegatorShares": "3050894171179846384039",
     "description": {
       "moniker": "okj-inj-testnet",
       "identity": "",
@@ -1564,6 +1564,33 @@
     },
     "minSelfDelegation": "1",
     "valconsAddress": "injvalcons1c739zv8vu8m93uvgrx6vnpfsxnnkg5xyc3vckg"
+  },
+  {
+    "operatorAddress": "injvaloper1u9fn08zw0lx9cpwstypram65r9phznzn80744v",
+    "jailed": false,
+    "consensusPubKey": "mP5nZbV5tGXBbmA69dC4j7eeHYqbnjHTE4tyYLTW/0s=",
+    "status": "Bonded",
+    "tokens": "13",
+    "delegatorShares": "13000000000000000000",
+    "description": {
+      "moniker": "okj-inj-testnet-2",
+      "identity": "",
+      "website": "",
+      "securityContact": "",
+      "details": ""
+    },
+    "unbondingHeight": 0,
+    "unbondingTime": 0,
+    "commission": {
+      "commissionRates": {
+        "rate": "0.1",
+        "maxRate": "0.2",
+        "maxChangeRate": "0.01"
+      },
+      "updateTime": "2026-10-19T08:33:32.357Z"
+    },
+    "minSelfDelegation": "1000000000000000000",
+    "valconsAddress": "injvalcons10l35u73v3507yhhh3ufskyqeup7y5ger67nh6g"
   },
   {
     "operatorAddress": "injvaloper1v5aeurkd73u8g4g543jq8v92pwh62hpvcd3we4",
