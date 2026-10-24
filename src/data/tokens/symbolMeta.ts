@@ -2425,4 +2425,165 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SPROUT',
     coinGeckoId: ''
   },
+
+  // Swimmer Finance stock tokens. CoinGecko IDs are proposed reference-price proxies.
+  COINs: {
+    decimals: 18,
+    name: 'Coinbase Global, Inc. Class A Common Stock - Swimmer',
+    symbol: 'COINs',
+    logo: 'swimmer-coins.svg',
+    coinGeckoId: 'coinbase-xstock'
+  },
+
+  NVDAs: {
+    decimals: 18,
+    name: 'NVIDIA Corporation - Swimmer',
+    symbol: 'NVDAs',
+    logo: 'swimmer-nvdas.svg',
+    coinGeckoId: 'nvidia-xstock'
+  },
+
+  TSLAs: {
+    decimals: 18,
+    name: 'Tesla, Inc. - Swimmer',
+    symbol: 'TSLAs',
+    logo: 'swimmer-tslas.svg',
+    coinGeckoId: 'tesla-xstock'
+  },
+
+  GOOGLs: {
+    decimals: 18,
+    name: 'Alphabet Inc. Class A Common Stock - Swimmer',
+    symbol: 'GOOGLs',
+    logo: 'swimmer-googls.svg',
+    coinGeckoId: 'alphabet-xstock'
+  },
+
+  AAPLs: {
+    decimals: 18,
+    name: 'Apple Inc. - Swimmer',
+    symbol: 'AAPLs',
+    logo: 'swimmer-aapls.svg',
+    coinGeckoId: 'apple-xstock'
+  },
+
+  METAs: {
+    decimals: 18,
+    name: 'Meta Platforms, Inc. Class A Common Stock - Swimmer',
+    symbol: 'METAs',
+    logo: 'swimmer-metas.svg',
+    coinGeckoId: 'meta-xstock'
+  },
+
+  COSTs: {
+    decimals: 18,
+    name: 'Costco Wholesale Corporation Common Stock - Swimmer',
+    symbol: 'COSTs',
+    logo: 'swimmer-costs.svg',
+    coinGeckoId: 'costco-ondo-tokenized-stock'
+  },
+
+  MSFTs: {
+    decimals: 18,
+    name: 'Microsoft Corp. - Swimmer',
+    symbol: 'MSFTs',
+    logo: 'swimmer-msfts.svg',
+    coinGeckoId: 'microsoft-xstock'
+  },
+
+  MCDs: {
+    decimals: 18,
+    name: 'McDonald\'s Corporation - Swimmer',
+    symbol: 'MCDs',
+    logo: 'swimmer-mcds.svg',
+    coinGeckoId: 'mcdonald-s-xstock'
+  },
+
+  SPCXs: {
+    decimals: 18,
+    name: 'SpaceX - Swimmer',
+    symbol: 'SPCXs',
+    logo: 'swimmer-spcxs.svg',
+    coinGeckoId: 'spacex-xstocks'
+  },
+
+  PYPLs: {
+    decimals: 18,
+    name: 'PayPal Holdings, Inc. Common Stock - Swimmer',
+    symbol: 'PYPLs',
+    logo: 'swimmer-pypls.svg',
+    coinGeckoId: 'paypal-xstock'
+  },
+
+  AMCs: {
+    decimals: 18,
+    name: 'AMC Entertainment - Swimmer',
+    symbol: 'AMCs',
+    logo: 'swimmer-amcs.svg',
+    coinGeckoId: 'amc-entertainment-holdings-bstocks-tokenized-stock'
+  },
+
+  ALABs: {
+    decimals: 18,
+    name: 'Astera Labs, Inc. - Swimmer',
+    symbol: 'ALABs',
+    logo: 'swimmer-alabs.svg',
+    coinGeckoId: 'astera-labs-ondo-tokenized'
+  },
+
+  BAs: {
+    decimals: 18,
+    name: 'Boeing Company - Swimmer',
+    symbol: 'BAs',
+    logo: 'swimmer-bas.svg',
+    coinGeckoId: 'boeing-ondo-tokenized-stock'
+  },
+
+  PANWs: {
+    decimals: 18,
+    name: 'Palo Alto Networks, Inc. - Swimmer',
+    symbol: 'PANWs',
+    logo: 'swimmer-panws.svg',
+    coinGeckoId: 'palo-alto-networks-ondo-tokenized-stock'
+  },
+
+  DELLs: {
+    decimals: 18,
+    name: 'Dell Technologies Inc. - Swimmer',
+    symbol: 'DELLs',
+    logo: 'swimmer-dells.svg',
+    coinGeckoId: 'dell-technologies-ondo-tokenized'
+  },
+
+  NBISs: {
+    decimals: 18,
+    name: 'Nebius Group N.V. - Swimmer',
+    symbol: 'NBISs',
+    logo: 'swimmer-nbiss.svg',
+    coinGeckoId: 'nebius-group-ondo-tokenized'
+  },
+
+  AMPXs: {
+    decimals: 18,
+    name: 'Amprius Technologies, Inc. - Swimmer',
+    symbol: 'AMPXs',
+    logo: 'swimmer-ampxs.svg',
+    coinGeckoId: 'amprius-technologies-rstock'
+  },
+
+  CARs: {
+    decimals: 18,
+    name: 'Avis Budget Group, Inc. - Swimmer',
+    symbol: 'CARs',
+    logo: 'swimmer-cars.svg',
+    coinGeckoId: ''
+  },
+
+  MRNAs: {
+    decimals: 18,
+    name: 'Moderna, Inc. - Swimmer',
+    symbol: 'MRNAs',
+    logo: 'swimmer-mrnas.svg',
+    coinGeckoId: 'moderna-xstock'
+  }
 }
