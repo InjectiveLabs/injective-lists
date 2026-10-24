@@ -2425,4 +2425,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SPROUT',
     coinGeckoId: ''
   },
+
+  INJIVA: {
+    decimals: 18,
+    name: 'Injective Waifu - INJIVA',
+    logo: 'injiva.webp',
+    symbol: 'INJIVA',
+    coinGeckoId: ''
+  },
 }
