@@ -2431,7 +2431,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Coinbase Global, Inc. Class A Common Stock - Swimmer',
     symbol: 'COINs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-coins.svg',
     coinGeckoId: 'coinbase-xstock'
   },
 
@@ -2439,7 +2439,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'NVIDIA Corporation - Swimmer',
     symbol: 'NVDAs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-nvdas.svg',
     coinGeckoId: 'nvidia-xstock'
   },
 
@@ -2447,7 +2447,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Tesla, Inc. - Swimmer',
     symbol: 'TSLAs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-tslas.svg',
     coinGeckoId: 'tesla-xstock'
   },
 
@@ -2455,7 +2455,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Alphabet Inc. Class A Common Stock - Swimmer',
     symbol: 'GOOGLs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-googls.svg',
     coinGeckoId: 'alphabet-xstock'
   },
 
@@ -2463,7 +2463,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Apple Inc. - Swimmer',
     symbol: 'AAPLs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-aapls.svg',
     coinGeckoId: 'apple-xstock'
   },
 
@@ -2471,7 +2471,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Meta Platforms, Inc. Class A Common Stock - Swimmer',
     symbol: 'METAs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-metas.svg',
     coinGeckoId: 'meta-xstock'
   },
 
@@ -2479,7 +2479,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Costco Wholesale Corporation Common Stock - Swimmer',
     symbol: 'COSTs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-costs.svg',
     coinGeckoId: 'costco-ondo-tokenized-stock'
   },
 
@@ -2487,7 +2487,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Microsoft Corp. - Swimmer',
     symbol: 'MSFTs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-msfts.svg',
     coinGeckoId: 'microsoft-xstock'
   },
 
@@ -2495,7 +2495,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'McDonald\'s Corporation - Swimmer',
     symbol: 'MCDs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-mcds.svg',
     coinGeckoId: 'mcdonald-s-xstock'
   },
 
@@ -2503,7 +2503,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'SpaceX - Swimmer',
     symbol: 'SPCXs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-spcxs.svg',
     coinGeckoId: 'spacex-xstocks'
   },
 
@@ -2511,7 +2511,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'PayPal Holdings, Inc. Common Stock - Swimmer',
     symbol: 'PYPLs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-pypls.svg',
     coinGeckoId: 'paypal-xstock'
   },
 
@@ -2519,7 +2519,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'AMC Entertainment - Swimmer',
     symbol: 'AMCs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-amcs.svg',
     coinGeckoId: 'amc-entertainment-holdings-bstocks-tokenized-stock'
   },
 
@@ -2527,7 +2527,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Astera Labs, Inc. - Swimmer',
     symbol: 'ALABs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-alabs.svg',
     coinGeckoId: 'astera-labs-ondo-tokenized'
   },
 
@@ -2535,7 +2535,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Boeing Company - Swimmer',
     symbol: 'BAs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-bas.svg',
     coinGeckoId: 'boeing-ondo-tokenized-stock'
   },
 
@@ -2543,7 +2543,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Palo Alto Networks, Inc. - Swimmer',
     symbol: 'PANWs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-panws.svg',
     coinGeckoId: 'palo-alto-networks-ondo-tokenized-stock'
   },
 
@@ -2551,7 +2551,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Dell Technologies Inc. - Swimmer',
     symbol: 'DELLs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-dells.svg',
     coinGeckoId: 'dell-technologies-ondo-tokenized'
   },
 
@@ -2559,7 +2559,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Nebius Group N.V. - Swimmer',
     symbol: 'NBISs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-nbiss.svg',
     coinGeckoId: 'nebius-group-ondo-tokenized'
   },
 
@@ -2567,7 +2567,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Amprius Technologies, Inc. - Swimmer',
     symbol: 'AMPXs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-ampxs.svg',
     coinGeckoId: 'amprius-technologies-rstock'
   },
 
@@ -2575,7 +2575,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Avis Budget Group, Inc. - Swimmer',
     symbol: 'CARs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-cars.svg',
     coinGeckoId: ''
   },
 
@@ -2583,7 +2583,7 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     decimals: 18,
     name: 'Moderna, Inc. - Swimmer',
     symbol: 'MRNAs',
-    logo: 'swimmer.png',
+    logo: 'swimmer-mrnas.svg',
     coinGeckoId: 'moderna-xstock'
   }
 }
