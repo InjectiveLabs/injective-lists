@@ -4,31 +4,8 @@ import {
   TokenSource,
   TokenVerification
 } from '@injectivelabs/sdk-ts'
-import { Network } from '@injectivelabs/networks'
-import {
-  mainnetTokens as ibcMainnetTokens,
-  testnetTokens as ibcTestnetTokens
-} from '../../../data/tokens/ibc'
-import {
-  devnetTokens as evmDevnetTokens,
-  mainnetTokens as evmMainnetTokens,
-  testnetTokens as evmTestnetTokens
-} from '../../../data/tokens/evm'
-import {
-  devnetTokens as cw20DevnetTokens,
-  mainnetTokens as cw20MainnetTokens,
-  testnetTokens as cw20TestnetTokens
-} from '../../../data/tokens/cw20'
-import {
-  devnetTokens as erc20DevnetTokens,
-  mainnetTokens as erc20MainnetTokens,
-  testnetTokens as erc20TestnetTokens
-} from '../../../data/tokens/erc20'
-import {
-  devnetTokens as tokenFactoryDevnetTokens,
-  mainnetTokens as tokenFactoryMainnetTokens,
-  testnetTokens as tokenFactoryTestnetTokens
-} from '../../../data/tokens/tokenFactory'
+import { Network, isMainnet } from '@injectivelabs/networks'
+import { getStaticTokenSources } from '../../helper/staticTokenSources'
 import {
   getCw20Denom,
   getSupplyDenom,
@@ -154,7 +131,9 @@ const formatCw20Tokens = (tokens: Cw20TokenSource[], network: Network) => {
       address: existingFactoryToken.address,
       tokenType: TokenType.TokenFactory,
       tokenVerification: TokenVerification.Verified,
-      decimals: existingFactoryToken?.decimals || token.decimals,
+      decimals: isMainnet(network)
+        ? existingFactoryToken.decimals || token.decimals
+        : existingFactoryToken.decimals ?? token.decimals,
       source: convertTokenSource(token.source)
     })
 
@@ -186,85 +165,15 @@ const untaggedSymbolBaseTokens = () =>
     }
   })
 
-const getDevnetStaticTokenList = () => {
-  return [
-    ...formatEvmTokens(evmDevnetTokens, Network.Devnet),
-    ...formatIbcTokens(
-      [...ibcTestnetTokens, ...ibcMainnetTokens],
-      Network.Devnet
-    ),
-    ...formatCw20Tokens(
-      [...cw20DevnetTokens, ...cw20TestnetTokens, ...cw20MainnetTokens],
-      Network.Devnet
-    ),
-    ...formatErc20Tokens(
-      [...erc20DevnetTokens, ...erc20TestnetTokens, ...erc20MainnetTokens],
-      Network.Devnet
-    ),
-    ...formatTokenFactoryTokens(
-      [
-        ...tokenFactoryDevnetTokens,
-        ...tokenFactoryTestnetTokens,
-        ...tokenFactoryMainnetTokens
-      ],
-      Network.Devnet
-    )
-  ]
-}
-
-const getTestnetStaticTokenList = () => {
-  return [
-    ...formatEvmTokens(evmTestnetTokens, Network.TestnetSentry),
-    ...formatIbcTokens(
-      [...ibcTestnetTokens, ...ibcMainnetTokens],
-      Network.TestnetSentry
-    ),
-    ...formatCw20Tokens(
-      [...cw20TestnetTokens, ...cw20DevnetTokens, ...cw20MainnetTokens],
-      Network.TestnetSentry
-    ),
-    ...formatErc20Tokens(
-      [...erc20TestnetTokens, ...erc20DevnetTokens, ...erc20MainnetTokens],
-      Network.TestnetSentry
-    ),
-    ...formatTokenFactoryTokens(
-      [
-        ...tokenFactoryTestnetTokens,
-        ...tokenFactoryDevnetTokens,
-        ...tokenFactoryMainnetTokens
-      ],
-      Network.TestnetSentry
-    )
-  ]
-}
-
-const getMainnetStaticTokenList = () => {
-  return [
-    ...formatEvmTokens(evmMainnetTokens, Network.MainnetSentry),
-    ...formatIbcTokens(ibcMainnetTokens, Network.MainnetSentry),
-    ...formatCw20Tokens(cw20MainnetTokens, Network.MainnetSentry),
-    ...formatErc20Tokens(erc20MainnetTokens, Network.MainnetSentry),
-    ...formatTokenFactoryTokens(
-      tokenFactoryMainnetTokens,
-      Network.MainnetSentry
-    )
-  ]
-}
-
 const generateStaticTokens = async (network: Network) => {
-  let list = [] as any
-
-  if (network === Network.Devnet) {
-    list = getDevnetStaticTokenList()
-  }
-
-  if (network === Network.TestnetSentry) {
-    list = getTestnetStaticTokenList()
-  }
-
-  if (network === Network.MainnetSentry) {
-    list = getMainnetStaticTokenList()
-  }
+  const sources = getStaticTokenSources(network)
+  const list = [
+    ...formatEvmTokens(sources.evm, network),
+    ...formatIbcTokens(sources.ibc, network),
+    ...formatCw20Tokens(sources.cw20, network),
+    ...formatErc20Tokens(sources.erc20, network),
+    ...formatTokenFactoryTokens(sources.factory, network)
+  ]
 
   await updateJSONFile(
     `src/generated/tokens/staticTokens/${getNetworkFileName(network)}.json`,

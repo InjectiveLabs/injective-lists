@@ -1,6 +1,7 @@
+import { pathToFileURL } from 'node:url'
 import axios from 'axios'
 import { updateJSONFile, getNetworkFileName } from './../helper/utils'
-import { Network } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 
 const BASE_URL = 'https://staging.bff-api.injective.network/api/v1/tokens'
 const PAGE_LIMIT = 1000
@@ -104,6 +105,8 @@ const fetchAllTokens = async (network: Network): Promise<any[]> => {
 }
 
 export const fetchBFFTokens = async (network: Network): Promise<void> => {
+  if (!isMainnet(network)) return
+
   try {
     const tokens = await fetchAllTokens(network)
     const filePath = `json/tokens/bff/${getNetworkFileName(network)}.json`
@@ -117,7 +120,7 @@ export const fetchBFFTokens = async (network: Network): Promise<void> => {
 }
 
 const main = async (): Promise<void> => {
-  const networks: Network[] = [Network.Mainnet, Network.Testnet]
+  const networks: Network[] = [Network.Mainnet]
 
   console.log('Starting BFF token fetch...')
 
@@ -138,7 +141,9 @@ const main = async (): Promise<void> => {
   console.log('Done!')
 }
 
-main().catch((error) => {
-  console.error('Fatal error:', error)
-  process.exit(1)
-})
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error('Fatal error:', error)
+    process.exit(1)
+  })
+}

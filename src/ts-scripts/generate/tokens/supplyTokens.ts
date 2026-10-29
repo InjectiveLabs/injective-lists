@@ -1,5 +1,6 @@
+import { pathToFileURL } from 'node:url'
 import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
   updateJSONFile,
@@ -17,32 +18,13 @@ const mainnetStaticTokensMap = tokensToDenomMap([
   ...readJSONFile({ path: 'src/generated/tokens/externalTokens.json' })
 ])
 
-const devnetStaticTokensMap = tokensToDenomMap(
-  readJSONFile({ path: 'src/generated/tokens/staticTokens/devnet.json' })
-)
-const testnetStaticTokensMap = tokensToDenomMap(
-  readJSONFile({ path: 'src/generated/tokens/staticTokens/testnet.json' })
-)
-
 export const generateSupplyToken = async (network: Network) => {
-  let supplyDenoms = readJSONFile({
-    path: 'src/cache/bankSupplyDenoms/devnet.json'
+  if (!isMainnet(network)) return
+
+  const supplyDenoms = readJSONFile({
+    path: 'src/cache/bankSupplyDenoms/mainnet.json'
   })
-  let existingStaticTokensMap = devnetStaticTokensMap
-
-  if (isTestnet(network)) {
-    supplyDenoms = readJSONFile({
-      path: 'src/cache/bankSupplyDenoms/testnet.json'
-    })
-    existingStaticTokensMap = testnetStaticTokensMap
-  }
-
-  if (isMainnet(network)) {
-    supplyDenoms = readJSONFile({
-      path: 'src/cache/bankSupplyDenoms/mainnet.json'
-    })
-    existingStaticTokensMap = mainnetStaticTokensMap
-  }
+  const existingStaticTokensMap = mainnetStaticTokensMap
 
   try {
     const filteredDenoms = supplyDenoms.filter(
@@ -143,6 +125,6 @@ export const generateSupplyToken = async (network: Network) => {
   }
 }
 
-generateSupplyToken(Network.Devnet)
-generateSupplyToken(Network.MainnetSentry)
-generateSupplyToken(Network.TestnetSentry)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  generateSupplyToken(Network.MainnetSentry)
+}

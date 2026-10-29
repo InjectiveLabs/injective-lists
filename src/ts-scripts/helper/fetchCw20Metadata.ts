@@ -9,8 +9,7 @@ import {
 } from '@injectivelabs/sdk-ts'
 import {
   Network,
-  isDevnet,
-  isTestnet,
+  isMainnet,
   getNetworkEndpoints
 } from '@injectivelabs/networks'
 import { getBankTokenFactoryMetadataByAddress } from './getter'
@@ -20,10 +19,6 @@ import { Cw20ContractSource, BankMetadata } from '../../types'
 
 const mainnetWasmApi = new ChainGrpcWasmApi(
   getNetworkEndpoints(Network.MainnetSentry).grpc
-)
-
-const testnetWasmApi = new ChainGrpcWasmApi(
-  getNetworkEndpoints(Network.TestnetSentry).grpc
 )
 
 const fetchContractDetails = async (address: string, network: Network) => {
@@ -42,31 +37,25 @@ const fetchContractDetails = async (address: string, network: Network) => {
     return cachedCw20Token
   }
 
-  const wasmApi = isTestnet(network) ? testnetWasmApi : mainnetWasmApi
-
-  const contractInfoResponse = (await wasmApi
+  const contractInfoResponse = (await mainnetWasmApi
     .fetchContractInfo(address)
     .catch((e: any) => {
-      if (!isDevnet(network)) {
-        console.warn(
-          `Peggy: Failed to fetch cw20 contract info for address: ${address} on ${network}`,
-          e
-        )
-      }
+      console.warn(
+        `Peggy: Failed to fetch cw20 contract info for address: ${address} on ${network}`,
+        e
+      )
     })) as ContractInfo | undefined
 
-  const contractStateResponse = (await wasmApi
+  const contractStateResponse = (await mainnetWasmApi
     .fetchContractState({
       contractAddress: address,
       pagination: { reverse: true }
     })
     .catch((e: any) => {
-      if (!isDevnet(network)) {
-        console.warn(
-          `Peggy: Failed to fetch cw20 token state for address: ${address} on ${network}`,
-          e
-        )
-      }
+      console.warn(
+        `Peggy: Failed to fetch cw20 token state for address: ${address} on ${network}`,
+        e
+      )
     })) as ContractStateWithPagination | undefined
 
   const cw20ContractSource: Cw20ContractSource = {
@@ -149,6 +138,8 @@ export const fetchCw20FactoryToken = async (
   denom: string,
   network: Network
 ) => {
+  if (!isMainnet(network)) return
+
   const bankMetadata = getBankTokenFactoryMetadataByAddress(denom, network)
 
   if (!bankMetadata) {
@@ -171,12 +162,14 @@ export const fetchCw20FactoryToken = async (
 }
 
 export const fetchCw20Token = async (denom: string, network: Network) => {
+  if (!isMainnet(network)) return
+
   try {
     const address = isCw20ContractAddress(denom)
       ? denom
       : denom.split('/').pop()
 
-    if (!address || isDevnet(network) || !isCw20ContractAddress(address)) {
+    if (!address || !isCw20ContractAddress(address)) {
       return
     }
 
