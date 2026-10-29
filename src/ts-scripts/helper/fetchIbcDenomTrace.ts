@@ -17,10 +17,6 @@ const mainnetIbcApi = new ChainGrpcIbcApi(
   getNetworkEndpoints(Network.MainnetSentry).grpc
 )
 
-const testnetIbcApi = new ChainGrpcIbcApi(
-  getNetworkEndpoints(Network.TestnetSentry).grpc
-)
-
 export const formatIbcToken = ({
   denom,
   denomTrace
@@ -47,7 +43,7 @@ export const fetchIbcTokenMetaData = async (
   denom: string,
   network: Network
 ) => {
-  if (!denom.startsWith('ibc')) {
+  if (!isMainnet(network) || !denom.startsWith('ibc')) {
     return
   }
 
@@ -64,10 +60,8 @@ export const fetchIbcTokenMetaData = async (
     return formatIbcToken({ denom, denomTrace: existingIbcDenomTrace })
   }
 
-  const ibcApi = isMainnet(network) ? mainnetIbcApi : testnetIbcApi
-
   try {
-    const denomTrace = await ibcApi.fetchDenomTrace(hash)
+    const denomTrace = await mainnetIbcApi.fetchDenomTrace(hash)
 
     if (!denomTrace) {
       return formatIbcToken({ denom })

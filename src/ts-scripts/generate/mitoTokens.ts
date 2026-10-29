@@ -1,5 +1,6 @@
+import { pathToFileURL } from 'node:url'
 import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
   updateJSONFile,
@@ -12,24 +13,10 @@ const mainnetVaults = readJSONFile({
   path: 'src/cache/mito/mainnet.json'
 })
 
-const testnetVaults = readJSONFile({
-  path: 'src/cache/mito/testnet.json'
-})
-
-const devnetVaults = readJSONFile({
-  path: 'src/cache/mito/devnet.json'
-})
-
 export const generateMitoTokens = async (network: Network) => {
-  let mitoVaults = devnetVaults
+  if (!isMainnet(network)) return
 
-  if (isTestnet(network)) {
-    mitoVaults = testnetVaults
-  }
-
-  if (isMainnet(network)) {
-    mitoVaults = mainnetVaults
-  }
+  const mitoVaults = mainnetVaults
 
   try {
     const mitoTokens = []
@@ -86,6 +73,6 @@ export const generateMitoTokens = async (network: Network) => {
   }
 }
 
-generateMitoTokens(Network.Devnet)
-generateMitoTokens(Network.TestnetSentry)
-generateMitoTokens(Network.MainnetSentry)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  generateMitoTokens(Network.MainnetSentry)
+}

@@ -5,6 +5,8 @@ These static tokens are generated via data from a few different files in the [da
 
 Follow the steps below to add/update token-metadata on the injective-list repo.
 
+Testnet and devnet final lists use only these curated sources, native INJ, and symbol entries. Add network-specific metadata to the appropriate array in `src/data/tokens/`; see [network inheritance and generation](./src/README.md#maintaining-testnet-and-devnet-tokens). Inclusion alone does not mark a factory token verified. BFF and Mito non-mainnet snapshots require separate manual entries and are pruned against the final list on every generation.
+
 ## Step 1: Create SymbolMeta entry
 
 The [symbolMeta.ts](./src/data/tokens/symbolMeta.ts) file contains the symbolMeta details unique to each symbol with the following interface:

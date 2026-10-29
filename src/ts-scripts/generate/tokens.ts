@@ -1,4 +1,4 @@
-import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
+import { TokenVerification } from '@injectivelabs/sdk-ts'
 import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
@@ -7,29 +7,14 @@ import {
 } from '../helper/utils'
 import { untaggedSymbolMeta } from '../../data/tokens/untaggedSymbolMeta'
 import { Token } from '../../types'
+import { pruneTokenSnapshots } from '../helper/tokenSnapshots'
 
-const devnetSupplyDenoms = readJSONFile({
-  path: 'src/cache/bankSupplyDenoms/devnet.json'
+const devnetTokens = readJSONFile({
+  path: 'src/generated/tokens/staticTokens/devnet.json'
 })
-
-const devnetTokens = [
-  ...readJSONFile({ path: 'src/generated/tokens/staticTokens/devnet.json' }),
-  ...readJSONFile({
-    path: 'src/generated/tokens/bankSupplyTokens/devnet.json'
-  }),
-  ...readJSONFile({ path: 'src/generated/tokens/cw20Tokens/devnet.json' }),
-  ...readJSONFile({ path: 'src/generated/tokens/factoryTokens/devnet.json' }),
-  ...readJSONFile({ path: 'src/generated/tokens/mito/devnet.json' })
-]
-const testnetTokens = [
-  ...readJSONFile({ path: 'src/generated/tokens/staticTokens/testnet.json' }),
-  ...readJSONFile({
-    path: 'src/generated/tokens/bankSupplyTokens/testnet.json'
-  }),
-  ...readJSONFile({ path: 'src/generated/tokens/cw20Tokens/testnet.json' }),
-  ...readJSONFile({ path: 'src/generated/tokens/factoryTokens/testnet.json' }),
-  ...readJSONFile({ path: 'src/generated/tokens/mito/testnet.json' })
-]
+const testnetTokens = readJSONFile({
+  path: 'src/generated/tokens/staticTokens/testnet.json'
+})
 const mainnetTokens = [
   ...readJSONFile({ path: 'src/generated/tokens/staticTokens/mainnet.json' }),
   ...readJSONFile({
@@ -41,26 +26,18 @@ const mainnetTokens = [
   ...readJSONFile({ path: 'src/generated/tokens/factoryTokens/mainnet.json' })
 ]
 
-// filter out tokens that are not in the supply to optimize coinGecko API calls on devnet indexer
-const devnetFilteredTokens = devnetTokens.filter((token) => {
-  return (
-    devnetSupplyDenoms.includes(token.denom) ||
-    token.tokenType === TokenType.Symbol
-  )
-})
-
 export const generateTokensList = async (network: Network) => {
   const list = isMainnet(network)
     ? mainnetTokens
     : isTestnet(network)
       ? testnetTokens
-      : devnetFilteredTokens
+      : devnetTokens
 
   const logos = readJSONFile({
     path: 'src/data/tokenImagePaths.json'
   }) as Record<string, string>
 
-  const formattedList = list.map((token) => {
+  const formattedList = list.map((token: Token) => {
     return {
       ...token,
       // todo: use external logo if it looks ok on the UI
@@ -137,6 +114,10 @@ export const generateTokensList = async (network: Network) => {
 
   // backward compatibility for sdk-go users
   await updateJSONFile(`tokens/${getNetworkFileName(network)}.json`, sortedList)
+
+  if (!isMainnet(network)) {
+    pruneTokenSnapshots(network, sortedList)
+  }
 
   console.log(`✅✅✅ GenerateTokens ${network}`)
 }

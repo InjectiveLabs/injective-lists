@@ -23,12 +23,6 @@ const mainnetBankMetadataAddressMap = bankMetadataToAddressMap(
   readJSONFile({ path: 'src/cache/bankMetadata/mainnet.json' })
 )
 
-const devnetInsuranceFundsMap = tokensToDenomMap(
-  readJSONFile({ path: 'src/cache/insuranceFunds/devnet.json' })
-)
-const testnetInsuranceFundsMap = tokensToDenomMap(
-  readJSONFile({ path: 'src/cache/insuranceFunds/testnet.json' })
-)
 const mainnetInsuranceFundsMap = tokensToDenomMap(
   readJSONFile({ path: 'src/cache/insuranceFunds/mainnet.json' })
 )
@@ -108,12 +102,6 @@ export const getInsuranceFundToken = (
   if (isMainnet(network)) {
     return mainnetInsuranceFundsMap[formattedDenom]
   }
-
-  if (isTestnet(network)) {
-    return testnetInsuranceFundsMap[formattedDenom]
-  }
-
-  return devnetInsuranceFundsMap[formattedDenom]
 }
 
 export const getCw20Denom = (

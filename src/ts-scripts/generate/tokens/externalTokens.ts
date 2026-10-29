@@ -4,7 +4,6 @@ import {
   isCw20ContractAddress
 } from '@injectivelabs/sdk-ts'
 import { Network } from '@injectivelabs/networks'
-import { HttpRestClient } from '@injectivelabs/utils'
 import {
   readJSONFile,
   updateJSONFile,
@@ -133,42 +132,11 @@ const formatApiTokenMetadata = async (
   return externalTokens
 }
 
-const getExternalTokens = async () => {
-  const path = 'src/cache/externalTokensSource.json'
-
-  try {
-    const externalTokenMetadataApi = new HttpRestClient(
-      'https://api.tfm.com/api/v1/ibc/chain/injective-1/',
-      {
-        timeout: 2000
-      }
-    )
-
-    const response = (await externalTokenMetadataApi.get('tokens')) as {
-      data: ApiTokenMetadata[]
-    }
-
-    if (!response.data || !Array.isArray(response.data)) {
-      return
-    }
-
-    await updateJSONFile(path, response.data)
-
-    return response.data
-  } catch (e) {
-    console.log(
-      'Error fetching external tokens from api.tfm.com, using cache data'
-    )
-    console.log(e)
-
-    return readJSONFile({ path })
-  }
-}
-
 const generateExternalTokens = async () => {
   try {
-    const externalTokensSource =
-      (await getExternalTokens()) as ApiTokenMetadata[]
+    const externalTokensSource = readJSONFile({
+      path: 'src/cache/externalTokensSource.json'
+    }) as ApiTokenMetadata[]
 
     const tokens = await formatApiTokenMetadata(externalTokensSource)
 

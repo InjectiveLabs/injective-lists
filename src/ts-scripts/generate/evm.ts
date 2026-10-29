@@ -5,7 +5,8 @@ import {
   isTestnet,
   getNetworkEndpoints
 } from '@injectivelabs/networks'
-import { ChainGrpcErc20Api } from '@injectivelabs/sdk-ts'
+import { ChainGrpcErc20Api, TokenType } from '@injectivelabs/sdk-ts'
+import { pathToFileURL } from 'node:url'
 import {
   readJSONFile,
   updateJSONFile,
@@ -14,6 +15,8 @@ import {
   bankMetadataToAddressMap
 } from '../helper/utils'
 import type { Token, EvmToken } from '../../types'
+import { getCuratedBankDenoms } from '../helper/staticTokenSources'
+import { devnetHardcodedCw20Denoms } from '../../data/tokens/cw20'
 
 const devnetBankMetadataAddressMap = bankMetadataToAddressMap([
   ...readJSONFile({ path: 'src/cache/bankMetadata/devnet.json' })
@@ -73,7 +76,7 @@ function formatToEvmToken({
   }
 }
 
-async function generateEvmTokensFromMTSPairs(network: Network) {
+export async function generateEvmTokensFromMTSPairs(network: Network) {
   const endpoints = getNetworkEndpoints(network)
   const erc20Api = new ChainGrpcErc20Api(endpoints.grpc)
 
@@ -91,7 +94,52 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
   }
 
   try {
-    const response = await erc20Api.fetchAllTokenPairsWithPagination()
+    let tokenPairs: { bankDenom: string; erc20Address: string }[]
+
+    if (isMainnet(network)) {
+      tokenPairs = (await erc20Api.fetchAllTokenPairsWithPagination()).tokenPairs
+    } else {
+      const path = `src/cache/evmTokenPairs/${getNetworkFileName(network)}.json`
+      const cw20Denoms = readJSONFile({
+        path: `src/cache/cw20Denoms/${getNetworkFileName(network)}.json`
+      })
+      const curatedDenoms = new Set(
+        getCuratedBankDenoms(network, [
+          ...cw20Denoms,
+          ...(network === Network.Devnet ? devnetHardcodedCw20Denoms : [])
+        ]).map(denom => denom.toLowerCase())
+      )
+      const cached = new Map<string, { bankDenom: string; erc20Address: string }>(
+        readJSONFile({ path }).map((pair: any) => [pair.bankDenom, pair])
+      )
+      tokenPairs = []
+
+      const tokens = Object.values(tokenMap).filter(token =>
+        token.tokenType !== TokenType.Symbol &&
+        curatedDenoms.has(token.denom.toLowerCase())
+      )
+      for (let i = 0; i < tokens.length; i += 10) {
+        await Promise.all(tokens.slice(i, i + 10).map(async (token) => {
+          try {
+            const pair = await erc20Api.fetchTokenPairByDenom(token.denom)
+            if (pair?.bankDenom === token.denom) {
+              tokenPairs.push({
+                bankDenom: pair.bankDenom,
+                erc20Address: pair.erc20Address
+              })
+            }
+          } catch {
+            const previous = cached.get(token.denom)
+            if (previous) tokenPairs.push(previous)
+          }
+        }))
+      }
+
+      updateJSONFile(
+        path,
+        tokenPairs.sort((a, b) => a.bankDenom.localeCompare(b.bankDenom))
+      )
+    }
 
     const evmTokenList: EvmToken[] = [
       {
@@ -105,7 +153,7 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
       }
     ]
 
-    for (const tokenPair of response.tokenPairs) {
+    for (const tokenPair of tokenPairs) {
       const tokenMetadata = tokenMap[tokenPair.bankDenom.toLowerCase()]
 
       if (!tokenMetadata) {
@@ -122,7 +170,9 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
           ...tokenMetadata,
           ...(bankMetadata?.name && { name: bankMetadata.name }),
           ...(bankMetadata?.symbol && { symbol: bankMetadata.symbol }),
-          ...(bankMetadata?.decimals && { decimals: bankMetadata.decimals })
+          decimals: isMainnet(network)
+            ? bankMetadata?.decimals || tokenMetadata.decimals
+            : bankMetadata?.decimals ?? tokenMetadata.decimals
         },
         evmAddress: tokenPair.erc20Address
       })
@@ -141,6 +191,8 @@ async function generateEvmTokensFromMTSPairs(network: Network) {
   }
 }
 
-generateEvmTokensFromMTSPairs(Network.Devnet)
-generateEvmTokensFromMTSPairs(Network.TestnetSentry)
-generateEvmTokensFromMTSPairs(Network.MainnetSentry)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  generateEvmTokensFromMTSPairs(Network.Devnet)
+  generateEvmTokensFromMTSPairs(Network.TestnetSentry)
+  generateEvmTokensFromMTSPairs(Network.MainnetSentry)
+}
