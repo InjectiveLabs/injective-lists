@@ -65,5 +65,9 @@ export const mainnetTokens = [
   {
     ...symbolMeta.PIP,
     address: 'erc20:0x3856aB1462eF49A6cD2A861179a2f7f9f201C01A'
+  },
+  {
+    ...symbolMeta.BALLZ,
+    address: 'erc20:0x8004EE309a84dFa63500b33aE5e61B7a690a68D8'
   }
 ]
