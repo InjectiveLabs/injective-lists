@@ -2433,4 +2433,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'PIP',
     coinGeckoId: ''
   },
+
+  BALLZ: {
+    decimals: 18,
+    name: 'Balls of $Nonja',
+    logo: 'ballz.webp',
+    symbol: 'BALLZ',
+    coinGeckoId: ''
+  },
 }
