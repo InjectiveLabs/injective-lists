@@ -41,8 +41,7 @@
     "//combinedClean": "========== combined scripts + cache cleaning ==========",
     "generate:tokens:flush": "tsx ./ts-scripts/flushCw20Cache.ts && pnpm generate:tokens",
     "generate:wasm:flush": "pnpm fetch:wasm:codeIds && pnpm generate:wasm:query -f && pnpm generate:wasm:execute -f",
-    "generate:tokens:evm": "tsx ./ts-scripts/generate/evm.ts",
-    "postinstall": "pnpm upgrade '@injectivelabs/*' --latest"
+    "generate:tokens:evm": "tsx ./ts-scripts/generate/evm.ts"
   },
   "keywords": [],
   "author": "",
