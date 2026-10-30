@@ -2441,4 +2441,12 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'BALLZ',
     coinGeckoId: ''
   },
+
+  INJIVA: {
+    decimals: 18,
+    name: 'Injective Waifu - INJIVA',
+    logo: 'injiva.webp',
+    symbol: 'INJIVA',
+    coinGeckoId: ''
+  },
 }
