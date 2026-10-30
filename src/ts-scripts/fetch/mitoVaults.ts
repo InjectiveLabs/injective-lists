@@ -1,28 +1,16 @@
+import { pathToFileURL } from 'node:url'
 import { IndexerGrpcMitoApi } from '@injectivelabs/sdk-ts'
-import { Network, isDevnet, isTestnet } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import { updateJSONFile, getNetworkFileName } from '../helper/utils'
 
-const MITO_DEVNET_API_ENDPOINT = 'https://devnet.api.ninja.injective.dev'
-const MITO_TESTNET_API_ENDPOINT =
-  'https://k8s.testnet.mito.grpc-web.injective.network'
 const MITO_MAINNET_API_ENDPOINT =
   'https://k8s.global.mainnet.mito.grpc-web.injective.network'
 
-const getMitoApiEndpoint = (network: Network): string => {
-  if (isDevnet(network)) {
-    return MITO_DEVNET_API_ENDPOINT
-  }
-
-  if (isTestnet(network)) {
-    return MITO_TESTNET_API_ENDPOINT
-  }
-
-  return MITO_MAINNET_API_ENDPOINT
-}
-
 export const fetchMitoVaults = async (network: Network) => {
+  if (!isMainnet(network)) return
+
   try {
-    const endpoint = getMitoApiEndpoint(network)
+    const endpoint = MITO_MAINNET_API_ENDPOINT
     const mitoApi = new IndexerGrpcMitoApi(endpoint)
 
     const response = await mitoApi.fetchVaults({ limit: 100 })
@@ -61,6 +49,6 @@ export const fetchMitoVaults = async (network: Network) => {
   }
 }
 
-fetchMitoVaults(Network.Devnet)
-fetchMitoVaults(Network.TestnetSentry)
-fetchMitoVaults(Network.MainnetSentry)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  fetchMitoVaults(Network.MainnetSentry)
+}

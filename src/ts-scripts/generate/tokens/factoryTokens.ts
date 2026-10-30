@@ -1,10 +1,11 @@
+import { pathToFileURL } from 'node:url'
 import {
   TokenType,
   TokenStatic,
   TokenVerification,
   isCw20ContractAddress
 } from '@injectivelabs/sdk-ts'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import {
   readJSONFile,
   updateJSONFile,
@@ -23,74 +24,20 @@ const mainnetStaticTokensMap = tokensToDenomMapKeepCasing(
   })
 )
 
-const testnetStaticTokensMap = tokensToDenomMapKeepCasing(
-  readJSONFile({
-    path: 'src/generated/tokens/staticTokens/testnet.json'
-  })
-)
-
-const devnetStaticTokensMap = tokensToDenomMapKeepCasing(
-  readJSONFile({
-    path: 'src/generated/tokens/staticTokens/devnet.json'
-  })
-)
-
 const mainnetBankFactoryTokens = readJSONFile({
   path: 'src/cache/bankMetadata/mainnet.json'
 })
-const testnetBankFactoryTokens = readJSONFile({
-  path: 'src/cache/bankMetadata/testnet.json'
-})
-const devnetBankFactoryTokens = readJSONFile({
-  path: 'src/cache/bankMetadata/devnet.json'
-})
-
 const mainnetCw20Denoms = readJSONFile({
   path: 'src/cache/cw20Denoms/mainnet.json'
 })
-const testnetCw20Denoms = readJSONFile({
-  path: 'src/cache/cw20Denoms/testnet.json'
-})
-const devnetCw20Denoms = readJSONFile({
-  path: 'src/cache/cw20Denoms/devnet.json'
-})
-
-const getStaticTokensMap = (network: Network) => {
-  if (isMainnet(network)) {
-    return mainnetStaticTokensMap
-  }
-
-  if (isTestnet(network)) {
-    return testnetStaticTokensMap
-  }
-
-  return devnetStaticTokensMap
-}
-
-const getBankFactoryDenoms = (network: Network) => {
-  if (isMainnet(network)) {
-    return mainnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
-  }
-
-  if (isTestnet(network)) {
-    return testnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
-  }
-
-  return devnetBankFactoryTokens.map((token: TokenStatic) => token.denom)
-}
-
 export const generateCw20FactoryTokens = async (network: Network) => {
-  let denoms = devnetCw20Denoms
-  const staticTokensMap = getStaticTokensMap(network)
-  const bankMetadataDenoms = getBankFactoryDenoms(network)
+  if (!isMainnet(network)) return
 
-  if (isTestnet(network)) {
-    denoms = testnetCw20Denoms
-  }
-
-  if (isMainnet(network)) {
-    denoms = mainnetCw20Denoms
-  }
+  const denoms = mainnetCw20Denoms
+  const staticTokensMap = mainnetStaticTokensMap
+  const bankMetadataDenoms = mainnetBankFactoryTokens.map(
+    (token: TokenStatic) => token.denom
+  )
 
   try {
     const cw20FactoryTokens = []
@@ -128,16 +75,10 @@ export const generateCw20FactoryTokens = async (network: Network) => {
 }
 
 export const generateBankFactoryTokens = async (network: Network) => {
-  let bankMetadatas = devnetBankFactoryTokens
-  const staticTokensMap = getStaticTokensMap(network)
+  if (!isMainnet(network)) return
 
-  if (isTestnet(network)) {
-    bankMetadatas = testnetBankFactoryTokens
-  }
-
-  if (isMainnet(network)) {
-    bankMetadatas = mainnetBankFactoryTokens
-  }
+  const bankMetadatas = mainnetBankFactoryTokens
+  const staticTokensMap = mainnetStaticTokensMap
 
   try {
     const bankIbcTokens = []
@@ -209,10 +150,7 @@ export const generateBankFactoryTokens = async (network: Network) => {
   }
 }
 
-generateCw20FactoryTokens(Network.Devnet)
-generateCw20FactoryTokens(Network.TestnetSentry)
-generateCw20FactoryTokens(Network.MainnetSentry)
-
-generateBankFactoryTokens(Network.Devnet)
-generateBankFactoryTokens(Network.TestnetSentry)
-generateBankFactoryTokens(Network.MainnetSentry)
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  generateCw20FactoryTokens(Network.MainnetSentry)
+  generateBankFactoryTokens(Network.MainnetSentry)
+}

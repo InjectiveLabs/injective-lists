@@ -199,6 +199,17 @@
   },
   {
     "decimals": 18,
+    "symbol": "RWA",
+    "name": "Retarded Woke Anon",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "address": "erc20:0x1be2e4D07337C8ef3d28Dab665816672175986df",
+    "denom": "erc20:0x1be2e4D07337C8ef3d28Dab665816672175986df",
+    "tokenType": "evm",
+    "tokenVerification": "unverified"
+  },
+  {
+    "decimals": 18,
     "symbol": "INJUICE",
     "name": "INJECTIVE IN JUICE",
     "logo": "unknown.png",
@@ -480,17 +491,6 @@
     "coinGeckoId": "",
     "address": "erc20:0x38427dA3fB2Ec0C42826D74f2bfB8Ff62c83B154",
     "denom": "erc20:0x38427dA3fB2Ec0C42826D74f2bfB8Ff62c83B154",
-    "tokenType": "evm",
-    "tokenVerification": "unverified"
-  },
-  {
-    "decimals": 18,
-    "symbol": "PIP",
-    "name": "Pip",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "address": "erc20:0x3856aB1462eF49A6cD2A861179a2f7f9f201C01A",
-    "denom": "erc20:0x3856aB1462eF49A6cD2A861179a2f7f9f201C01A",
     "tokenType": "evm",
     "tokenVerification": "unverified"
   },
@@ -1255,17 +1255,6 @@
   },
   {
     "decimals": 18,
-    "symbol": "BALLZ",
-    "name": "Balls of $Nonja",
-    "logo": "unknown.png",
-    "coinGeckoId": "",
-    "address": "erc20:0x8004EE309a84dFa63500b33aE5e61B7a690a68D8",
-    "denom": "erc20:0x8004EE309a84dFa63500b33aE5e61B7a690a68D8",
-    "tokenType": "evm",
-    "tokenVerification": "unverified"
-  },
-  {
-    "decimals": 18,
     "symbol": "ts2",
     "name": "tst2",
     "logo": "unknown.png",
@@ -1789,6 +1778,17 @@
     "coinGeckoId": "",
     "address": "erc20:0xB50684d40bAEb0478FfB40A6991B9c888Dd5514f",
     "denom": "erc20:0xB50684d40bAEb0478FfB40A6991B9c888Dd5514f",
+    "tokenType": "evm",
+    "tokenVerification": "unverified"
+  },
+  {
+    "decimals": 18,
+    "symbol": "IKIWI",
+    "name": "The Illustrious Kiwi",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "address": "erc20:0xb5D136AeA737695F122EB87Aa17b7e6C20bf12eA",
+    "denom": "erc20:0xb5D136AeA737695F122EB87Aa17b7e6C20bf12eA",
     "tokenType": "evm",
     "tokenVerification": "unverified"
   },
@@ -4019,6 +4019,17 @@
     "denom": "factory/inj13gc95nsrtv3da5x6ujmktekaljwhj5npl2nszl/ELON",
     "description": "ELON IS HERE AND READY TO TAKE OVER INJECTIVE AS ELON ALWAYS HAS AN OBSESSION WITH SPACE IT IS ONLY RIGHT THAT THE MOON IS WHERE WE WILL LAND GIVING YOU MANY Xs https://twitter.com/ElonInj https://t.me/INJELONPORTAL https://injelon.xyz",
     "externalLogo": "https://ipfs.moralis.io:2053/ipfs/QmYLKM9N6V3iWPhNrpY8KP7r5kfSLYeH5SD8GCfzc5SWKX/INJECTIVEELON.webp",
+    "tokenType": "tokenFactory",
+    "tokenVerification": "unverified"
+  },
+  {
+    "decimals": 6,
+    "symbol": "uLP",
+    "name": "choice liquidity token",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "address": "factory/inj13h39d5m3yhz2a2var6ufrn9y8yx55jevpgz69c/lp",
+    "denom": "factory/inj13h39d5m3yhz2a2var6ufrn9y8yx55jevpgz69c/lp",
     "tokenType": "tokenFactory",
     "tokenVerification": "unverified"
   },
@@ -41786,6 +41797,21 @@
     "coinGeckoId": "",
     "decimals": 0,
     "symbol": "factory:kujira1qk00h5atutpsv900x202pxx42npjr9thg58dnqpa72f2p7m2luase444a7:uusk",
+    "tokenType": "ibc",
+    "tokenVerification": "unverified"
+  },
+  {
+    "hash": "591E790A55B4F861215E40D737A5142A8F6E7B6C6744F537B2F445A0F959C73B",
+    "denom": "ibc/591E790A55B4F861215E40D737A5142A8F6E7B6C6744F537B2F445A0F959C73B",
+    "address": "ibc/591E790A55B4F861215E40D737A5142A8F6E7B6C6744F537B2F445A0F959C73B",
+    "path": "transfer/channel-452/transfer/channel-6/transfer/channel-220",
+    "baseDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "channelId": "channel-220",
+    "name": "Unknown",
+    "logo": "unknown.png",
+    "coinGeckoId": "",
+    "decimals": 0,
+    "symbol": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
     "tokenType": "ibc",
     "tokenVerification": "unverified"
   },

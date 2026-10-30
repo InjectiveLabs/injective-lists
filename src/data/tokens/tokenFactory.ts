@@ -45,6 +45,8 @@ export const testnetTokens: TokenFactorySource[] = [
   },
   {
     ...symbolMeta.ZEN,
+    subdenom: 'uzen',
+    decimals: 0,
     creator: 'inj17gkuet8f6pssxd8nycm3qr9d9y699rupv6397z'
   },
   {

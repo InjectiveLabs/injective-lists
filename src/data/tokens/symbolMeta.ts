@@ -2425,7 +2425,6 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'SPROUT',
     coinGeckoId: ''
   },
-
   // Swimmer Finance stock tokens. CoinGecko IDs are proposed reference-price proxies.
   COINs: {
     decimals: 18,
@@ -2585,5 +2584,28 @@ export const symbolMeta: Record<string, TokenSymbolMeta> = {
     symbol: 'MRNAs',
     logo: 'swimmer-mrnas.svg',
     coinGeckoId: 'moderna-xstock'
-  }
+  },
+  PIP: {
+    decimals: 18,
+    name: 'Pip',
+    logo: 'pip.webp',
+    symbol: 'PIP',
+    coinGeckoId: ''
+  },
+
+  BALLZ: {
+    decimals: 18,
+    name: 'Balls of $Nonja',
+    logo: 'ballz.webp',
+    symbol: 'BALLZ',
+    coinGeckoId: ''
+  },
+
+  INJIVA: {
+    decimals: 18,
+    name: 'Injective Waifu - INJIVA',
+    logo: 'injiva.webp',
+    symbol: 'INJIVA',
+    coinGeckoId: ''
+  },
 }

@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { Network, isMainnet, isTestnet } from '@injectivelabs/networks'
+import { Network, isMainnet } from '@injectivelabs/networks'
 import { Alchemy, Network as AlchemyNetwork } from 'alchemy-sdk'
 import { TokenType, TokenVerification } from '@injectivelabs/sdk-ts'
 import {
@@ -16,36 +16,9 @@ const alchemyMainnet = new Alchemy({
   network: AlchemyNetwork.ETH_MAINNET
 })
 
-const alchemySepolia = new Alchemy({
-  apiKey: process.env.ALCHEMY_SEPOLIA_KEY,
-  network: AlchemyNetwork.ETH_SEPOLIA
-})
-
 const mainnetBankMetadataAddressMap = bankMetadataToAddressMap(
   readJSONFile({ path: 'src/cache/bankMetadata/mainnet.json' })
 )
-const testnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'src/cache/bankMetadata/testnet.json' })
-)
-const devnetBankMetadataAddressMap = bankMetadataToAddressMap(
-  readJSONFile({ path: 'src/cache/bankMetadata/devnet.json' })
-)
-
-const getBankMetadataForDenom = (
-  denom: string,
-  network: Network
-): BankMetadata | undefined => {
-  if (isMainnet(network)) {
-    return mainnetBankMetadataAddressMap[denom]?.[0]
-  }
-
-  if (isTestnet(network)) {
-    return testnetBankMetadataAddressMap[denom]?.[0]
-  }
-
-  return devnetBankMetadataAddressMap[denom]?.[0]
-}
-
 /*
   Bank metadata (curated on-chain, can be updated/renamed by chain
   governance, e.g. deprecating a denom) always takes priority over the
@@ -83,7 +56,9 @@ export const fetchPeggyTokenMetaData = async (
   denom: string,
   network: Network
 ) => {
-  const bankMetadata = getBankMetadataForDenom(denom, network)
+  if (!isMainnet(network)) return
+
+  const bankMetadata = mainnetBankMetadataAddressMap[denom]?.[0]
 
   const existingPeggyTokensMap = readJSONFile({
     path: `src/generated/tokens/peggyTokens/${getNetworkFileName(
@@ -98,15 +73,13 @@ export const fetchPeggyTokenMetaData = async (
     return applyBankMetadataOverrides(existingPeggyToken, bankMetadata)
   }
 
-  const alchemy = isMainnet(network) ? alchemyMainnet : alchemySepolia
-
   const formattedDenom = denom.replace('peggy', '')
 
   if (!formattedDenom.startsWith('0x')) {
     return
   }
 
-  const token = (await alchemy.core
+  const token = (await alchemyMainnet.core
     .getTokenMetadata(formattedDenom)
     .catch(() => {
       console.warn(

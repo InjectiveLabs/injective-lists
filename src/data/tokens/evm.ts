@@ -61,5 +61,17 @@ export const mainnetTokens = [
   {
     ...symbolMeta.SPROUT,
     address: 'erc20:0x503f2A7bAc1E2ff2800Aa92EdB82abeF0bFA631E'
+  },
+  {
+    ...symbolMeta.PIP,
+    address: 'erc20:0x3856aB1462eF49A6cD2A861179a2f7f9f201C01A'
+  },
+  {
+    ...symbolMeta.BALLZ,
+    address: 'erc20:0x8004EE309a84dFa63500b33aE5e61B7a690a68D8'
+  },
+  {
+    ...symbolMeta.INJIVA,
+    address: 'erc20:0xc3dD627938376fFe1a0a11b1E8F9ab8B61D8ACcF'
   }
 ]
