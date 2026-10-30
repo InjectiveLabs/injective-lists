@@ -580,5 +580,105 @@ export const mainnetTokens: TokenFactorySource[] = [
     ...symbolMeta.T42,
     creator: 'inj1dg3nxn4z36p2sqem4cy2jsdjf4ytk8cn256jjx',
     subdenom: 'T42'
+  },
+  {
+    ...symbolMeta.COINs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'COIN.SVIM'
+  },
+  {
+    ...symbolMeta.NVDAs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'NVDA.SVIM'
+  },
+  {
+    ...symbolMeta.TSLAs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'TSLA.SVIM'
+  },
+  {
+    ...symbolMeta.GOOGLs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'GOOGL.SVIM'
+  },
+  {
+    ...symbolMeta.AAPLs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'AAPL.SVIM'
+  },
+  {
+    ...symbolMeta.METAs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'META.SVIM'
+  },
+  {
+    ...symbolMeta.COSTs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'COST.SVIM'
+  },
+  {
+    ...symbolMeta.MSFTs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'MSFT.SVIM'
+  },
+  {
+    ...symbolMeta.MCDs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'MCD.SVIM'
+  },
+  {
+    ...symbolMeta.SPCXs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'SPCX.SVIM'
+  },
+  {
+    ...symbolMeta.PYPLs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'PYPL.SVIM'
+  },
+  {
+    ...symbolMeta.AMCs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'AMC.SVIM'
+  },
+  {
+    ...symbolMeta.ALABs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'ALAB.SVIM'
+  },
+  {
+    ...symbolMeta.BAs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'BA.SVIM'
+  },
+  {
+    ...symbolMeta.PANWs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'PANW.SWIMMER'
+  },
+  {
+    ...symbolMeta.DELLs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'DELL.SVIM'
+  },
+  {
+    ...symbolMeta.NBISs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'NBIS.SWIMMER'
+  },
+  {
+    ...symbolMeta.AMPXs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'AMPX.SVIM'
+  },
+  {
+    ...symbolMeta.CARs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'CAR.SVIM'
+  },
+  {
+    ...symbolMeta.MRNAs,
+    creator: 'inj1wjj53mxu4pyx2sc5gqkelra3jg222qyv7rjuy3',
+    subdenom: 'MRNA.SWIMMER'
   }
 ]
