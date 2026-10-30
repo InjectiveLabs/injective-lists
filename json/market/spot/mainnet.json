@@ -2387,6 +2387,37 @@
     "minNotional": 1000000
   },
   {
+    "marketId": "0x6d5b6d3917729c6d21de7b21f67be82af960d1f839efd7c06434becb96da49ad",
+    "marketStatus": "active",
+    "ticker": "INJ/WBTC",
+    "baseDenom": "inj",
+    "quoteDenom": "peggy0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "quoteToken": {
+      "name": "Wrapped Bitcoin",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "symbol": "wBTC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/fd572a96-9202-40e2-9999-587f5bdd2300/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.00005",
+    "takerFeeRate": "0.0005",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-18,
+    "minQuantityTickSize": 10000000000000000,
+    "minNotional": 100
+  },
+  {
     "marketId": "0x6de141d12691dd13fffcc4e3ceeb09191ff445e1f10dfbecedc63a1e365fb6cd",
     "marketStatus": "active",
     "ticker": "ZIG/INJ",
@@ -4371,6 +4402,37 @@
     "minNotional": 100
   },
   {
+    "marketId": "0xc5ca8193511007c79061e6741d3a884641cd1d236b7044f2b6b3aa716fe82bce",
+    "marketStatus": "active",
+    "ticker": "WBTC/USDC",
+    "baseDenom": "peggy0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Wrapped Bitcoin",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "symbol": "wBTC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/fd572a96-9202-40e2-9999-587f5bdd2300/public",
+      "decimals": 8,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 0.0001,
+    "minQuantityTickSize": 1000,
+    "minNotional": 1000000
+  },
+  {
     "marketId": "0xc6b6d6627aeed8b9c29810163bed47d25c695d51a2aa8599fc5e39b2d88ef934",
     "marketStatus": "active",
     "ticker": "SHROOM/INJ",
@@ -5268,6 +5330,37 @@
     "minPriceTickSize": 1000000,
     "minQuantityTickSize": 10000000,
     "minNotional": 10000000000000000
+  },
+  {
+    "marketId": "0xe00699ce1511bf16f84c372b3dedabf4a9030a5c57475ea7f2baf52f9558e411",
+    "marketStatus": "active",
+    "ticker": "NEXO/USDC",
+    "baseDenom": "peggy0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Nexo",
+      "address": "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206",
+      "symbol": "NEXO",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/6a1f295b-2ddc-46a1-37e0-5078cd4d8200/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-16,
+    "minQuantityTickSize": 10000000000000000,
+    "minNotional": 1000000
   },
   {
     "marketId": "0xe03df6e1571acb076c3d8f22564a692413b6843ad2df67411d8d8e56449c7ff4",
