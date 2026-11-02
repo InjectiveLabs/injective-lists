@@ -1,4 +1,4 @@
-import { TokenSource } from '@injectivelabs/sdk-ts'
+import { TokenSource, TokenVerification } from '@injectivelabs/sdk-ts'
 import { symbolMeta } from './symbolMeta'
 import { untaggedSymbolMeta } from './untaggedSymbolMeta'
 import { IbcTokenSource } from '../../types'
@@ -30,6 +30,16 @@ export const testnetTokens: IbcTokenSource[] = [
     path: 'transfer/channel-489',
     source: TokenSource.Cosmos,
     hash: 'DAB0823884DB5785F08EE136EE9EB362E166F4C7455716641B03E93CE7F14193'
+  },
+  {
+    ...symbolMeta.ATOM,
+    isNative: true,
+    baseDenom: 'uatom',
+    channelId: 'channel-77118',
+    path: 'transfer/channel-77118',
+    source: TokenSource.Cosmos,
+    hash: '592943F1554136A0EE4C26CD84E835A80FA70B5A12609E8807332AC68E7D2446',
+    tokenVerification: TokenVerification.Unverified
   }
 ]
 

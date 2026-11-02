@@ -2,7 +2,8 @@ import {
   TokenInfo,
   TokenSource,
   ContractInfo,
-  MarketingInfo
+  MarketingInfo,
+  TokenVerification
 } from '@injectivelabs/sdk-ts'
 
 export * from './chain'
@@ -34,6 +35,7 @@ export interface IbcTokenSource extends TokenSymbolMeta {
   path: string
   baseDenom: string
   hash: string
+  tokenVerification?: TokenVerification
 }
 
 export interface Cw20TokenSource extends TokenSymbolMeta {
