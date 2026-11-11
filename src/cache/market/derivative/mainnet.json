@@ -6607,6 +6607,38 @@
     }
   },
   {
+    "ticker": "ANT/USDC PERP",
+    "marketId": "0x87ec50155e8843b5d7e979ee21139a07423858ff8a6d74741a2d199702031cce",
+    "oracleBase": "ANT/USDC",
+    "oracleType": "provider",
+    "quoteDenom": "erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+    "oracleQuote": "InjectiveLabs",
+    "isPerpetual": true,
+    "marketStatus": "active",
+    "makerFeeRate": "0.000001",
+    "takerFeeRate": "0.000001",
+    "oracleScaleFactor": 6,
+    "reduceMarginRatio": "0.25",
+    "initialMarginRatio": "0.083333",
+    "serviceProviderFee": "0.4",
+    "maintenanceMarginRatio": "0.05",
+    "minNotional": 1000000,
+    "minPriceTickSize": 10000,
+    "minQuantityTickSize": 0.001,
+    "openNotionalCap": {
+      "cap": "500000"
+    },
+    "quoteToken": {
+      "coinGeckoId": "",
+      "name": "USDC",
+      "logo": "",
+      "symbol": "USDC",
+      "address": "0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "decimals": 6,
+      "tokenType": "unknown"
+    }
+  },
+  {
     "ticker": "PYTH/USDT PERP",
     "marketId": "0x887beca72224f88fb678a13a1ae91d39c53a05459fd37ef55005eb68f745d46d",
     "oracleBase": "0x0bbf28e9a841a1cc788f6a361b17ca072d0ea3098a1e5df1c3922d06719579ff",
