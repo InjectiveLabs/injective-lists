@@ -372,6 +372,37 @@
     "minNotional": 0
   },
   {
+    "marketId": "0x0f6ee483a7f7f633fe6e3f03d34e01e129b5a5023eb7b0fe1e8a56e5ac8779a6",
+    "marketStatus": "active",
+    "ticker": "INJ/USDC",
+    "baseDenom": "inj",
+    "quoteDenom": "erc20:0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+    "quoteToken": {
+      "name": "USD Coin",
+      "address": "0x0C382e685bbeeFE5d3d9C29e29E341fEE8E84C5d",
+      "symbol": "USDC",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/c09b0eff-fd4a-4756-e5c9-f6bf8ac0c900/public",
+      "decimals": 6,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "baseToken": {
+      "name": "Injective",
+      "address": "inj",
+      "symbol": "INJ",
+      "logo": "https://imagedelivery.net/lPzngbR8EltRfBOi_WYaXw/7123d071-0def-459a-16b9-d85e8ea04700/public",
+      "decimals": 18,
+      "coinGeckoId": "",
+      "tokenType": "unknown"
+    },
+    "makerFeeRate": "-0.0001",
+    "takerFeeRate": "0.001",
+    "serviceProviderFee": "0.4",
+    "minPriceTickSize": 1e-16,
+    "minQuantityTickSize": 100000000000000,
+    "minNotional": 10000
+  },
+  {
     "marketId": "0x0fa5dc6555f18bc81b6b01e31d30eb16ae5e19d4e4a22e08e60a18e23d6c5fd2",
     "marketStatus": "active",
     "ticker": "GRAY/USDT",
