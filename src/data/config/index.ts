@@ -17,9 +17,9 @@ const evmMainnetUpgrade = {
 }
 
 export const chainUpgradeConfig = {
-  proposalId: 714,
-  blockHeight: 191270000,
-  disableMaintenance: true,
+  proposalId: 717,
+  blockHeight: 193145000,
+  disableMaintenance: false,
   proposalMsg:
-    'Scheduled maintenance on November 11th, 2026 at ~12:30 UTC to implement the Injective Institutional Readiness Mainnet Upgrade.'
+    'Scheduled maintenance on November 24th, 2026 at ~14:30 UTC to implement the Injective Veyra Mainnet Upgrade.'
 } as ChainConfig | {}
