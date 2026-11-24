@@ -1,4 +1,4 @@
-import { ChainConfig } from './../../types'
+import type { ChainConfig } from '../../types'
 
 const LyoraMainnetUpgrade = {
   proposalId: 518,
@@ -16,10 +16,13 @@ const evmMainnetUpgrade = {
     'Scheduled maintenance on July 31st, 2025 at ~14:00 UTC to implement the Injective EVM mainnet upgrade.'
 }
 
-export const chainUpgradeConfig = {
+export const chainUpgradeConfig: ChainConfig | Record<string, never> = {
   proposalId: 717,
-  blockHeight: 191270000,
+  blockHeight: 193145000,
   disableMaintenance: false,
   proposalMsg:
-    'Scheduled maintenance on November 24th, 2026 at ~14:30 UTC to implement the Injective Veyra Mainnet Upgrade.'
-} as ChainConfig | {}
+    'Scheduled maintenance on November 24th, 2026 at ~14:30 UTC to implement the Injective Veyra Mainnet Upgrade.',
+  explorer: false,
+  trueCurrent: false,
+  hub: false
+}

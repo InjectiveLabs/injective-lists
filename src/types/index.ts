@@ -97,6 +97,9 @@ export type ChainConfig = {
   blockHeight: number
   proposalMsg: string
   disableMaintenance: boolean
+  explorer?: boolean
+  trueCurrent?: boolean
+  hub?: boolean
 }
 
 export type EvmToken = {
