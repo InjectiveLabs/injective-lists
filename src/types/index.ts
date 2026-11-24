@@ -100,6 +100,8 @@ export type ChainConfig = {
   explorer?: boolean
   trueCurrent?: boolean
   hub?: boolean
+  helix?: boolean
+  bridge?: boolean
 }
 
 export type EvmToken = {

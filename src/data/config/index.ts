@@ -21,7 +21,9 @@ export const chainUpgradeConfig: ChainConfig | Record<string, never> = {
   disableMaintenance: true,
   proposalMsg:
     'Scheduled maintenance on November 24th, 2026 at ~14:30 UTC to implement the Injective Veyra Mainnet Upgrade.',
-  explorer: true,
+  explorer: false,
   trueCurrent: false,
-  hub: true
+  hub: false,
+  helix: false,
+  bridge: false
 }
