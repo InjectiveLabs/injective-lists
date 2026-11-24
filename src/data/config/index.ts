@@ -17,8 +17,8 @@ const evmMainnetUpgrade = {
 }
 
 export const chainUpgradeConfig = {
-  proposalId: 717,
-  blockHeight: 193145000,
+  // proposalId: 717,
+  blockHeight: 127250000, // 193145000,
   disableMaintenance: false,
   proposalMsg:
     'Scheduled maintenance on November 24th, 2026 at ~14:30 UTC to implement the Injective Veyra Mainnet Upgrade.'
