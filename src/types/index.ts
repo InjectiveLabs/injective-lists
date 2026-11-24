@@ -93,7 +93,7 @@ export type SwapRoute = {
 }
 
 export type ChainConfig = {
-  proposalId: number
+  proposalId?: number
   blockHeight: number
   proposalMsg: string
   disableMaintenance: boolean
